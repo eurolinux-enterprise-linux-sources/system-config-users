@@ -1,6 +1,41 @@
-diff -up system-config-users-1.2.106/po/as.po.translations system-config-users-1.2.106/po/as.po
---- system-config-users-1.2.106/po/as.po.translations	2011-01-26 17:42:20.000000000 +0100
-+++ system-config-users-1.2.106/po/as.po	2011-04-27 11:05:53.880406527 +0200
+From d71a102e69e237cd4a3906e527b2a8c52290fca5 Mon Sep 17 00:00:00 2001
+From: Nils Philippsen <nils@redhat.com>
+Date: Tue, 28 Aug 2012 15:07:17 +0200
+Subject: [PATCH] patch: translations
+
+Squashed commit of the following:
+
+commit 31ad1770a816f7d28a3b079194319de848543813
+Author: Nils Philippsen <nils@redhat.com>
+Date:   Mon Jul 9 10:58:30 2012 +0200
+
+    apply fix to Japanese translation (by Naomi Nakakita)
+    (cherry picked from commit 4c196cc358a4b1c2142a32a2b292ae0b0e845b68)
+
+    Conflicts:
+    	po/ja.po
+
+commit d3c66b59b1c8b19976c7afdd3face3dec1428682
+Author: Nils Philippsen <nils@redhat.com>
+Date:   Wed Apr 27 11:11:10 2011 +0200
+
+    include updated Assamese translations (#629469)
+
+commit eb0a9026b7d337ae6e20759d05c9931774f33899
+Author: Nils Philippsen <nils@redhat.com>
+Date:   Tue Apr 19 15:00:33 2011 +0200
+
+    include updated Korean translations (#629469)
+---
+ po/as.po | 452 +++++++++++++++++++++++++++++----------------------------------
+ po/ja.po |  13 +-
+ po/ko.po | 228 +++++++++++++-------------------
+ 3 files changed, 304 insertions(+), 389 deletions(-)
+
+diff --git a/po/as.po b/po/as.po
+index 6d6a238..4e96ee1 100644
+--- a/po/as.po
++++ b/po/as.po
 @@ -5,39 +5,39 @@
  # Amitakhya Phukan <amitakhya.phukan@gmail.com>, 2006.
  # Amitakhya Phukan <aphukan@redhat.com>, 2006, 2007, 2008.
@@ -280,7 +315,7 @@ diff -up system-config-users-1.2.106/po/as.po.translations system-config-users-1
  
  #: ../src/mainWindow.py:168
  msgid "Full Name"
-@@ -238,19 +245,19 @@ msgstr "প্ৰৱেশৰ শ্ব�
+@@ -238,19 +245,19 @@ msgstr "প্ৰৱেশৰ শ্বেল"
  
  #: ../src/mainWindow.py:176
  msgid "Home Directory"
@@ -490,7 +525,7 @@ diff -up system-config-users-1.2.106/po/as.po.translations system-config-users-1
  
  #. This uid already exists, so complain
  #: ../src/userWindow.py:267
-@@ -436,40 +436,43 @@ msgstr "uid %s ইতিমধ্যে 
+@@ -436,40 +436,43 @@ msgstr "uid %s ইতিমধ্যে ব্যৱহৃত ।"
  msgid ""
  "Error finding suitable user id not exceeding maximum value of %(maxid)s."
  msgstr ""
@@ -542,7 +577,7 @@ diff -up system-config-users-1.2.106/po/as.po.translations system-config-users-1
  
  #: ../src/system-config-users.py:38
  msgid "system-config-users requires a currently running X server."
-@@ -478,7 +481,7 @@ msgstr "system-config-users ক এট�
+@@ -478,7 +481,7 @@ msgstr "system-config-users ক এটা বৰ্ত্তমানে চল
  #: ../src/userGroupCheck.py:55
  #, python-format
  msgid "The user name must not exceed %d characters."
@@ -675,7 +710,7 @@ diff -up system-config-users-1.2.106/po/as.po.translations system-config-users-1
  msgstr "'%s' নামত অবৈধ আখৰ আছে । অনুগ্ৰহ কৰি অকল UTF-৮ আখৰ ব্যৱহাৰ কৰক ।"
  
  #. have to check for colons since /etc/passwd is a colon delimited file
-@@ -584,7 +599,7 @@ msgstr "'%s' নামত এটা ক'
+@@ -584,7 +599,7 @@ msgstr "'%s' নামত এটা ক'ল'ন আছে । অনুগ্ৰ
  
  #: ../src/userGroupCheck.py:213
  msgid "Please enter a home directory."
@@ -781,7 +816,7 @@ diff -up system-config-users-1.2.106/po/as.po.translations system-config-users-1
  
  #: system-config-users.gladestrings:12 system-config-users.gladestrings:63
  msgid "_Full Name:"
-@@ -670,11 +686,11 @@ msgstr "সম্পূৰ্ণ না�
+@@ -670,11 +686,11 @@ msgstr "সম্পূৰ্ণ নাম (_F):"
  
  #: system-config-users.gladestrings:13
  msgid "Pass_word:"
@@ -795,7 +830,7 @@ diff -up system-config-users-1.2.106/po/as.po.translations system-config-users-1
  
  #: system-config-users.gladestrings:15 system-config-users.gladestrings:66
  msgid "_Login Shell:"
-@@ -690,7 +706,7 @@ msgstr "SELinux ৰ ভূমিকা (
+@@ -690,7 +706,7 @@ msgstr "SELinux ৰ ভূমিকা (_E):"
  
  #: system-config-users.gladestrings:18
  msgid "_User Data"
@@ -823,7 +858,7 @@ diff -up system-config-users-1.2.106/po/as.po.translations system-config-users-1
  
  #: system-config-users.gladestrings:27
  msgid "Days before change a_llowed:"
-@@ -738,43 +754,43 @@ msgstr "হিচাপবহি নি�
+@@ -738,43 +754,43 @@ msgstr "হিচাপবহি নিষ্ক্ৰীয় হোৱাৰ প
  
  #: system-config-users.gladestrings:31
  msgid "Password last changed on..."
@@ -891,7 +926,7 @@ diff -up system-config-users-1.2.106/po/as.po.translations system-config-users-1
  
  #: system-config-users.gladestrings:45
  msgid "_Edit"
-@@ -802,15 +818,15 @@ msgstr "বিষয়বস্তু (_C)
+@@ -802,15 +818,15 @@ msgstr "বিষয়বস্তু (_C)"
  
  #: system-config-users.gladestrings:50
  msgid "Edit properties"
@@ -910,7 +945,7 @@ diff -up system-config-users-1.2.106/po/as.po.translations system-config-users-1
  
  #: system-config-users.gladestrings:53
  msgid "Reload"
-@@ -834,27 +850,27 @@ msgstr "পৰিস্ৰাৱক প�
+@@ -834,27 +850,27 @@ msgstr "পৰিস্ৰাৱক প্ৰয়োগ কৰক (_A)"
  
  #: system-config-users.gladestrings:59
  msgid "U_sers"
@@ -1015,7 +1050,7 @@ diff -up system-config-users-1.2.106/po/as.po.translations system-config-users-1
  
  #: system-config-users.gladestrings:85
  msgid "Automatically assigned _GID must be highest"
-@@ -930,11 +946,11 @@ msgstr "স্বয়ংক্ৰিয় �
+@@ -930,11 +946,11 @@ msgstr "স্বয়ংক্ৰিয় ভাবে নিযুক্ত কৰ
  
  #: system-config-users.gladestrings:86
  msgid "Prefer that private group GID is the _same as UID"
@@ -1029,7 +1064,7 @@ diff -up system-config-users-1.2.106/po/as.po.translations system-config-users-1
  
  #: system-config-users.gladestrings:89
  msgid "Copyright © 2001-2007 Red Hat, Inc."
-@@ -942,74 +958,24 @@ msgstr "স্বত্ত্বাধ�
+@@ -942,74 +958,24 @@ msgstr "স্বত্ত্বাধিকাৰ © 2001-2007 Red Hat, Inc."
  
  #: system-config-users.gladestrings:90
  msgid "Manages users and groups on your system."
@@ -1042,19 +1077,17 @@ diff -up system-config-users-1.2.106/po/as.po.translations system-config-users-1
 -"it under the terms of the GNU General Public License as published by the "
 -"Free Software Foundation; either version 2 of the License, or (at your "
 -"option) any later version.\n"
--"\n"
++"system-config-users is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
+ "\n"
 -"system-config-users is distributed in the hope that it will be useful, but "
 -"WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
 -"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
 -"more details.\n"
--"\n"
++"system-config-users is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n"
+ "\n"
 -"You should have received a copy of the GNU General Public License along with "
 -"system-config-users; if not, write to the Free Software Foundation, Inc., 51 "
 -"Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
-+"system-config-users is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
-+"\n"
-+"system-config-users is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n"
-+"\n"
 +"You should have received a copy of the GNU General Public License along with system-config-users; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
  msgstr ""
 -"হলো সৰ্বমোট সাধাৰণ পাবলিক মুক্ত সৰ্বমোট হলো সৰ্বমোট সাধাৰণ পাবলিক উল্লিখিত সময় "
@@ -1118,9 +1151,44 @@ diff -up system-config-users-1.2.106/po/as.po.translations system-config-users-1
 +msgstr ""
 +"অমিতাক্ষ ফুকন (aphukan@fedoraproject.org), নীলমদ্যুতি গোস্বামী "
 +"(ngoswami@redhat.com)"
-diff -up system-config-users-1.2.106/po/ko.po.translations system-config-users-1.2.106/po/ko.po
---- system-config-users-1.2.106/po/ko.po.translations	2011-01-26 17:42:20.000000000 +0100
-+++ system-config-users-1.2.106/po/ko.po	2011-04-27 11:05:22.067695444 +0200
+diff --git a/po/ja.po b/po/ja.po
+index 922948b..508e4fc 100644
+--- a/po/ja.po
++++ b/po/ja.po
+@@ -12,14 +12,15 @@
+ # Kiyoto Hashida <khashida@redhat.com>, 2008, 2009, 2010.
+ # Hajime Taira <htaira@redhat.com>, 2010.
+ # Makoto Mizukami <makoto@fedoraporject.org>, 2008, 2010.
++# Naomi Nakakita <nnakakit@redhat.com>, 2012.
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: ja\n"
+-"Report-Msgid-Bugs-To: \n"
++"Project-Id-Version: system-config-users\n"
++"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-users/\n"
+ "POT-Creation-Date: 2010-11-30 16:08+0100\n"
+-"PO-Revision-Date: 2010-12-07 15:10+0900\n"
+-"Last-Translator: Kiyoto Hashida <khashida@redhat.com>\n"
+-"Language-Team: Japanese <jp@li.org>\n"
++"PO-Revision-Date: 2012-02-14 09:00+0000\n"
++"Last-Translator: Naomi Nakakita <nnakakit@redhat.com>\n"
++"Language-Team: Japanese <trans-ja@lists.fedoraproject.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+@@ -850,7 +851,7 @@ msgstr "ヘルプ"
+ 
+ #: system-config-users.gladestrings:57
+ msgid "Sea_rch filter:"
+-msgstr "フィルターの探索(_R):"
++msgstr "フィルター検索(_R):"
+ 
+ #: system-config-users.gladestrings:58
+ msgid "_Apply filter"
+diff --git a/po/ko.po b/po/ko.po
+index 4d00d77..5366d21 100644
+--- a/po/ko.po
++++ b/po/ko.po
 @@ -1,30 +1,21 @@
 -# translation of system-config-users.master.ko.po to
 -# translation of ko.po to
@@ -1163,7 +1231,7 @@ diff -up system-config-users-1.2.106/po/ko.po.translations system-config-users-1
  
  #: ../src/groupProperties.py:108 ../src/groupWindow.py:108
  #: ../src/userGroupCheck.py:64
-@@ -97,25 +88,27 @@ msgid "The year is out of range.  Please
+@@ -97,25 +88,27 @@ msgid "The year is out of range.  Please select a different year."
  msgstr "입력하신 년도가 범위에 벗어납니다.  다른 년도를 선택하십시오."
  
  #: ../src/userProperties.py:504
@@ -1197,7 +1265,7 @@ diff -up system-config-users-1.2.106/po/ko.po.translations system-config-users-1
  msgstr "암호 변경 요청 기간을 %(min)d 에서 %(max)d 까지로 지정합니다. "
  
  #: ../src/userProperties.py:517
-@@ -127,11 +120,9 @@ msgstr "암호 변경이 요청되기 �
+@@ -127,11 +120,9 @@ msgstr "암호 변경이 요청되기 몇 일 전에 사용자에게 경고 메
  #: ../src/userProperties.py:519
  #, python-format
  msgid ""
@@ -1223,7 +1291,7 @@ diff -up system-config-users-1.2.106/po/ko.po.translations system-config-users-1
  
  #: ../src/userProperties.py:593
  #, python-format
-@@ -184,16 +175,15 @@ msgstr "GID가 500 이하인 그룹은 �
+@@ -184,16 +175,15 @@ msgstr "GID가 500 이하인 그룹은 만들지 않는게 좋습니다. 그래
  
  #: ../src/groupWindow.py:160 ../src/userWindow.py:287
  #, python-format
@@ -1263,7 +1331,7 @@ diff -up system-config-users-1.2.106/po/ko.po.translations system-config-users-1
  
  #: ../src/mainWindow.py:578 system-config-users.gladestrings:88
  msgid "system-config-users"
-@@ -341,9 +324,7 @@ msgstr "- 설치된 소프트웨어 패�
+@@ -341,9 +324,7 @@ msgstr "- 설치된 소프트웨어 패키지가 이 디렉토리를 포함하
  msgid ""
  "- A system user owns this directory and removing it may impair the system's "
  "integrity."
@@ -1274,7 +1342,7 @@ diff -up system-config-users-1.2.106/po/ko.po.translations system-config-users-1
  
  #: ../src/mainWindow.py:661
  msgid "- This directory doesn't exist or isn't writable."
-@@ -359,9 +340,7 @@ msgstr "- 사용자 '%s'는 이 디렉�
+@@ -359,9 +340,7 @@ msgstr "- 사용자 '%s'는 이 디렉토리의 소유자가 아닙니다."
  msgid ""
  "<b>There are currently processes running that are owned by '%s'!</b>  This "
  "user is probably still logged in.  "
@@ -1285,7 +1353,7 @@ diff -up system-config-users-1.2.106/po/ko.po.translations system-config-users-1
  
  #: ../src/mainWindow.py:672
  #, python-format
-@@ -376,11 +355,10 @@ msgstr "%(user)s의 홈 디렉토리 ('%
+@@ -376,11 +355,10 @@ msgstr "%(user)s의 홈 디렉토리 ('%(homedir)s') 와 임시 파일을 삭제
  #: ../src/mainWindow.py:683
  #, python-format
  msgid ""
@@ -1320,7 +1388,7 @@ diff -up system-config-users-1.2.106/po/ko.po.translations system-config-users-1
  "%(reason)s"
  
  #: ../src/mainWindow.py:764
-@@ -431,7 +407,8 @@ msgstr "uid %s는 이미 사용되고 �
+@@ -431,7 +407,8 @@ msgstr "uid %s는 이미 사용되고 있습니다."
  
  #: ../src/userWindow.py:285
  #, python-format
@@ -1330,7 +1398,7 @@ diff -up system-config-users-1.2.106/po/ko.po.translations system-config-users-1
  msgstr "최대 %(maxid)s를 초과하지 않는 적절한 uid를 찾는 동안 오류가 발생했습니다. "
  
  #: ../src/userWindow.py:297
-@@ -456,15 +433,16 @@ msgstr "현재 있는 그룹에 추가�
+@@ -456,15 +433,16 @@ msgstr "현재 있는 그룹에 추가함"
  msgid "Add to the 'users' group"
  msgstr "'users' 그룹에 추가함"
  
@@ -1350,7 +1418,7 @@ diff -up system-config-users-1.2.106/po/ko.po.translations system-config-users-1
  
  #: ../src/system-config-users.py:38
  msgid "system-config-users requires a currently running X server."
-@@ -480,9 +458,7 @@ msgstr "사용자명은 %d 글자보다 
+@@ -480,9 +458,7 @@ msgstr "사용자명은 %d 글자보다 길어서는 안됩니다."
  msgid ""
  "The user name '%s' contains whitespace. Please do not include whitespace in "
  "the user name."
@@ -1405,7 +1473,7 @@ diff -up system-config-users-1.2.106/po/ko.po.translations system-config-users-1
  
  #: ../src/userGroupCheck.py:65
  #, python-format
-@@ -527,17 +503,15 @@ msgstr "그룹 이름은 %d 글자 보�
+@@ -527,17 +503,15 @@ msgstr "그룹 이름은 %d 글자 보다 길어서는 안됩니다."
  #: ../src/userGroupCheck.py:66
  #, python-format
  msgid ""
@@ -1451,7 +1519,7 @@ diff -up system-config-users-1.2.106/po/ko.po.translations system-config-users-1
  
  #: ../src/userGroupCheck.py:185
  #, python-format
-@@ -566,7 +541,9 @@ msgstr "선택하신 암호가 취약합
+@@ -566,7 +541,9 @@ msgstr "선택하신 암호가 취약합니다: %s. 그래도 사용하겠습니
  #. have to check for whitespace for gecos, since whitespace is ok
  #: ../src/userGroupCheck.py:196
  #, python-format
@@ -1462,7 +1530,7 @@ diff -up system-config-users-1.2.106/po/ko.po.translations system-config-users-1
  msgstr "이름 '%s'에 잘못된 문자가 포함되어 있습니다.  UTF-8 문자만 사용하기 바랍니다."
  
  #. have to check for colons since /etc/passwd is a colon delimited file
-@@ -585,36 +562,28 @@ msgstr "홈 디렉토리를 입력해 �
+@@ -585,36 +562,28 @@ msgstr "홈 디렉토리를 입력해 주십시오."
  msgid ""
  "The directory name '%s' contains a colon.  Please do not use colons in the "
  "directory name."
@@ -1541,7 +1609,7 @@ diff -up system-config-users-1.2.106/po/ko.po.translations system-config-users-1
  
  #: system-config-users.gladestrings:62
  msgid "_User Name:"
-@@ -899,11 +868,9 @@ msgstr "<b>사용자 및 그룹 목록</
+@@ -899,11 +868,9 @@ msgstr "<b>사용자 및 그룹 목록</b>  "
  
  #: system-config-users.gladestrings:82
  msgid ""
@@ -1556,7 +1624,7 @@ diff -up system-config-users-1.2.106/po/ko.po.translations system-config-users-1
  
  #: system-config-users.gladestrings:83
  msgid "Automatically assigned _UID must be highest"
-@@ -913,9 +880,7 @@ msgstr "가장 높은 UID를 자동으�
+@@ -913,9 +880,7 @@ msgstr "가장 높은 UID를 자동으로 할당(_U)"
  msgid ""
  "Ensure that a new group gets a higher GID than all existing groups, if not "
  "set manually."
@@ -1567,7 +1635,7 @@ diff -up system-config-users-1.2.106/po/ko.po.translations system-config-users-1
  
  #: system-config-users.gladestrings:85
  msgid "Automatically assigned _GID must be highest"
-@@ -939,37 +904,20 @@ msgstr "시스템 상의 사용자 및 �
+@@ -939,37 +904,20 @@ msgstr "시스템 상의 사용자 및 그룹 관리 "
  
  #: system-config-users.gladestrings:91
  msgid ""
@@ -1575,39 +1643,34 @@ diff -up system-config-users-1.2.106/po/ko.po.translations system-config-users-1
 -"it under the terms of the GNU General Public License as published by the "
 -"Free Software Foundation; either version 2 of the License, or (at your "
 -"option) any later version.\n"
--"\n"
++"system-config-users is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
+ "\n"
 -"system-config-users is distributed in the hope that it will be useful, but "
 -"WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
 -"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
 -"more details.\n"
--"\n"
++"system-config-users is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n"
+ "\n"
 -"You should have received a copy of the GNU General Public License along with "
 -"system-config-users; if not, write to the Free Software Foundation, Inc., 51 "
 -"Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
--msgstr ""
++"You should have received a copy of the GNU General Public License along with system-config-users; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+ msgstr ""
 -"system-config-users는 자유 소프트웨어입니다; 소프트웨어의 피양도자는 자유 소"
 -"프트웨어 재단이 공표한 GNU 일반 공중 사용 허가서 2판 또는 그 이후 판을 임의"
 -"로 선택해서, 그 규정에 따라 프로그램을 개작하거나 재배포할 수 있습니다.\n"
--"\n"
++"system-config-users는 자유 소프트웨어입니다; 소프트웨어의 피양도자는 자유 소프트웨어 재단이 공표한 GNU 일반 공중 사용 허가서 2판 또는 그 이후 판을 임의로 선택해서, 그 규정에 따라 프로그램을 개작하거나 재배포할 수 있습니다.\n"
+ "\n"
 -"system-config-users는 유용하게 사용될 수 있으리라는 희망에서 배포되고 있지"
 -"만, 특정한 목적에 맞는 적합성 여부나 판매용으로 사용할 수 있으리라는 묵시적"
 -"인 보증을 포함한 어떠한 형태의 보증도 제공하지 않습니다. 보다 자세한 사항에 "
 -"대해서는 GNU 일반 공중 사용 허가서를 참고하시기 바랍니다.\n"
--"\n"
++"system-config-users는 유용하게 사용될 수 있으리라는 희망에서 배포되고 있지만, 특정한 목적에 맞는 적합성 여부나 판매용으로 사용할 수 있으리라는 묵시적인 보증을 포함한 어떠한 형태의 보증도 제공하지 않습니다. 보다 자세한 사항에 대해서는 GNU 일반 공중 사용 허가서를 참고하시기 바랍니다.\n"
+ "\n"
 -"GNU 일반 공중 사용 허가서는 system-config-users와 함께 제공됩니다. 만약, 이 "
 -"문서가 누락되어 있다면 자유 소프트웨어 재단으로 문의하시기 바랍니다. (자유 소"
 -"프트웨어 재단: Free Software Foundation, Inc.,  51 Franklin Street, Fifth "
 -"Floor, Boston, MA 02110-130159 USA "
-+"system-config-users is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
-+"\n"
-+"system-config-users is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n"
-+"\n"
-+"You should have received a copy of the GNU General Public License along with system-config-users; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
-+msgstr ""
-+"system-config-users는 자유 소프트웨어입니다; 소프트웨어의 피양도자는 자유 소프트웨어 재단이 공표한 GNU 일반 공중 사용 허가서 2판 또는 그 이후 판을 임의로 선택해서, 그 규정에 따라 프로그램을 개작하거나 재배포할 수 있습니다.\n"
-+"\n"
-+"system-config-users는 유용하게 사용될 수 있으리라는 희망에서 배포되고 있지만, 특정한 목적에 맞는 적합성 여부나 판매용으로 사용할 수 있으리라는 묵시적인 보증을 포함한 어떠한 형태의 보증도 제공하지 않습니다. 보다 자세한 사항에 대해서는 GNU 일반 공중 사용 허가서를 참고하시기 바랍니다.\n"
-+"\n"
 +"GNU 일반 공중 사용 허가서는 system-config-users와 함께 제공됩니다. 만약, 이 문서가 누락되어 있다면 자유 소프트웨어 재단으로 문의하시기 바랍니다. (자유 소프트웨어 재단: Free Software Foundation, Inc.,  51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA "
  
  #: system-config-users.gladestrings:96
@@ -1616,3 +1679,6 @@ diff -up system-config-users-1.2.106/po/ko.po.translations system-config-users-1
  "김은주 <eukim@redhat.com>, 2006, 2007\n"
  "오현석 <hoh@redhat.com>, 2010"
 -
+-- 
+1.7.11.4
+

@@ -1,0 +1,38 @@
+From e41ea953854eb12375563e64f353da8d63f7cfb7 Mon Sep 17 00:00:00 2001
+From: Nils Philippsen <nils@redhat.com>
+Date: Wed, 29 Aug 2012 11:30:20 +0200
+Subject: [PATCH] patch: expiration-date
+
+Squashed commit of the following:
+
+commit f99978d74a43e8f2c3f45abf62e9b9d4780e920b
+Author: Nils Philippsen <nils@redhat.com>
+Date:   Tue Sep 6 13:16:08 2011 +0200
+
+    correctly calculate expiration dates before the epoch (#735933)
+    (cherry picked from commit 57ba7b55d6d6606792ec2bf444fe62958ff15b0c)
+---
+ src/userProperties.py | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/src/userProperties.py b/src/userProperties.py
+index ecfc916..91fe56f 100644
+--- a/src/userProperties.py
++++ b/src/userProperties.py
+@@ -483,10 +483,10 @@ class userProperties:
+             daysTillExpire = tmp / seconds
+             fraction, integer = math.modf(daysTillExpire)
+ 
+-            if fraction == 0.0:
+-                daysTillExpire = integer
++            if fraction <= 0.0:
++                daysTillExpire = int(integer)
+             else:
+-                daysTillExpire = integer + 1
++                daysTillExpire = int(integer) + 1
+ 
+             self.userEnt.set(libuser.SHADOWEXPIRE, daysTillExpire)
+         else:
+-- 
+1.7.11.4
+

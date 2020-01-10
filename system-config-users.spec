@@ -36,7 +36,7 @@
 Summary: A graphical interface for administering users and groups
 Name: system-config-users
 Version: 1.2.106
-Release: 5%{?dist}
+Release: 7%{?dist}
 URL: http://fedorahosted.org/%{name}
 License: GPLv2+
 Group: Applications/System
@@ -45,7 +45,9 @@ BuildArch: noarch
 Source: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
 Patch0: system-config-users-1.2.106-selinux.patch
 Patch1: system-config-users-1.2.106-filter.patch
-Patch2: system-config-users-1.2.106-translations.patch
+Patch2: system-config-users-1.2.106-inactive-default-expiration.patch
+Patch3: system-config-users-1.2.106-translations.patch
+Patch4: system-config-users-1.2.106-expiration-date.patch
 BuildRequires: desktop-file-utils
 BuildRequires: gettext
 BuildRequires: intltool
@@ -96,11 +98,13 @@ users and groups.  It depends on the libuser library.
 %prep
 %setup -q
 
-# no backup, this patch only removes a file
+# no backup, this patch just removes a file
 %patch0 -p1
 
 %patch1 -p1 -b .filter
-%patch2 -p1 -b .translations
+%patch2 -p1 -b .inactive-default-expiration
+%patch3 -p1 -b .translations
+%patch4 -p1 -b .expiration-date
 
 %build
 make %{?with_console_util:CONSOLE_USE_CONFIG_UTIL=1} %{?_smp_mflags}
@@ -132,6 +136,13 @@ rm -rf $RPM_BUILD_ROOT
 %config(noreplace) %{_sysconfdir}/sysconfig/system-config-users
 
 %changelog
+* Wed Aug 29 2012 Nils Philippsen <nils@redhat.com> - 1.2.106-7
+- correctly calculate expiration dates before the epoch (#736037)
+
+* Tue Aug 28 2012 Nils Philippsen <nils@redhat.com> - 1.2.106-6
+- fix account expiration if inactive default is set (#841886)
+- apply fix to Japanese translation (by Naomi Nakakita, #801652)
+
 * Wed Apr 27 2011 Nils Philippsen <nils@redhat.com> - 1.2.106-5
 - include updated Assamese translations (#629469)
 

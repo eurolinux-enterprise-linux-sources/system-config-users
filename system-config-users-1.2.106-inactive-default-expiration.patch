@@ -1,0 +1,57 @@
+From f177c1d4ddbad5e44c273a2b236c7e614ef296df Mon Sep 17 00:00:00 2001
+From: Nils Philippsen <nils@redhat.com>
+Date: Tue, 28 Aug 2012 14:38:50 +0200
+Subject: [PATCH] patch: inactive-default-expiration
+
+Squashed commit of the following:
+
+commit bac158d910347202d5efd7ea2284cc3a04989925
+Author: Nils Philippsen <nils@redhat.com>
+Date:   Wed Aug 15 14:19:01 2012 +0200
+
+    catch specific exceptions
+    (cherry picked from commit cef0f4e39a8847895b170dafbcd106d8611aed27)
+
+commit 143a7c2a8637882044dd1288412e5f92c01fc553
+Author: Nils Philippsen <nils@redhat.com>
+Date:   Wed Aug 15 14:18:21 2012 +0200
+
+    fix account expiration if inactive default is set
+    (cherry picked from commit c2bc12db63216eba68633e8d587233043d72f915)
+---
+ src/userProperties.py | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/src/userProperties.py b/src/userProperties.py
+index b541ae4..ecfc916 100644
+--- a/src/userProperties.py
++++ b/src/userProperties.py
+@@ -55,6 +55,7 @@ class userProperties:
+     pwInactiveMin = -1
+     pwInactiveUnset = -1
+     pwInactiveMax = 99999
++    pwExpireUnset = -1
+ 
+     def __init__(self, parent, user_clist, group_clist, xml, selinuxEnabled):
+         self.parent = parent
+@@ -232,7 +233,7 @@ class userProperties:
+ 
+             if expire:
+                 try:
+-                    if int(expire[0]) != self.pwInactiveDefault:
++                    if int(expire[0]) != self.pwExpireUnset:
+                         self.accountExpireCheck.set_active(True)
+                         days = int (self.userEnt.get(libuser.SHADOWEXPIRE)[0])
+                         tmp = days * int(24 * 60 * 60)
+@@ -243,7 +244,7 @@ class userProperties:
+                         self.accountMonthEntry.set_text(month)
+                         self.accountDayEntry.set_text(day)
+                         self.accountYearEntry.set_text(year)
+-                except:
++                except (KeyError, ValueError):
+                     self.accountExpireCheck.set_active(False)
+ 
+             min = self.userEnt.get (libuser.SHADOWMIN, [self.pwAllowDefault])
+-- 
+1.7.11.4
+
