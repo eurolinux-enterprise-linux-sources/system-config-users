@@ -36,7 +36,7 @@
 Summary: A graphical interface for administering users and groups
 Name: system-config-users
 Version: 1.2.106
-Release: 8%{?dist}
+Release: 9%{?dist}
 URL: http://fedorahosted.org/%{name}
 License: GPLv2+
 Group: Applications/System
@@ -48,6 +48,7 @@ Patch1: system-config-users-1.2.106-filter.patch
 Patch2: system-config-users-1.2.106-translations.patch
 Patch3: system-config-users-1.2.106-expiration-date.patch
 Patch4: system-config-users-1.2.106-inactive-default-expiration.patch
+Patch5: system-config-users-1.2.106-avoid-deleting-primary-group.patch
 BuildRequires: desktop-file-utils
 BuildRequires: gettext
 BuildRequires: intltool
@@ -105,6 +106,7 @@ users and groups.  It depends on the libuser library.
 %patch2 -p1 -b .translations
 %patch3 -p1 -b .expiration-date
 %patch4 -p1 -b .inactive-default-expiration
+%patch5 -p1 -b .avoid-deleting-primary-group
 
 %build
 make %{?with_console_util:CONSOLE_USE_CONFIG_UTIL=1} %{?_smp_mflags}
@@ -136,6 +138,9 @@ rm -rf $RPM_BUILD_ROOT
 %config(noreplace) %{_sysconfdir}/sysconfig/system-config-users
 
 %changelog
+* Thu Sep 08 2016 Than Ngo <than@redhat.com> - 1.2.106-9
+- don't delete primary groups when other members associated with it
+
 * Wed Apr 22 2015 Nils Philippsen <nils@redhat.com> - 1.2.106-8
 - fix disabling account expiration (#981910, patch by Miloslav Trmač)
 

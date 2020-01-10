@@ -1,0 +1,13 @@
+diff -up system-config-users-1.2.106/src/mainWindow.py.avoid-deleting-primary-group system-config-users-1.2.106/src/mainWindow.py
+--- system-config-users-1.2.106/src/mainWindow.py.avoid-deleting-primary-group	2016-09-08 12:12:18.088336969 +0200
++++ system-config-users-1.2.106/src/mainWindow.py	2016-09-08 12:53:38.256785803 +0200
+@@ -732,7 +732,8 @@ class mainWindow:
+ 
+                 #Let's check out the user's primary group
+                 groupEnt = self.ADMIN.lookupGroupById(userEnt.get(libuser.GIDNUMBER)[0])
+-                if groupEnt != None and len(groupEnt.get(libuser.MEMBERNAME)) == 0:
++                if groupEnt != None and len(set(self.ADMIN.enumerateUsersByGroup(
++                    groupEnt.get(libuser.GROUPNAME)[0])) - set([user])) == 0:
+                     #Get the user's primary group.  If there's no one besides that user in the group,
+                     #delete it.
+ 
