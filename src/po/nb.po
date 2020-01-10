@@ -1,0 +1,994 @@
+# Norwegian translation of system-config-users.
+# Copyright (C) 2001 Free Software Foundation.
+# Kjartan Maraas <kmaraas@gnome.org>, 2001-2010.
+# Espen Stefansen <espenas@gmail.com>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-users 1.2.76\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-20 16:08+0200\n"
+"PO-Revision-Date: 2010-03-15 18:38+0100\n"
+"Last-Translator: Kjartan Maraas <kmaraas@broadpark.no>\n"
+"Language-Team: Norwegian <i18n-nb@lister.ping.uio.no>\n"
+"Language: no\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/groupProperties.py:108 ../src/groupWindow.py:108
+#: ../src/userGroupCheck.py:61
+msgid "Please enter a group name."
+msgstr "Vennligst oppgi et gruppenavn."
+
+#: ../src/groupProperties.py:122
+#, python-format
+msgid "The group '%s' already exists. Please choose a different name."
+msgstr "Gruppen «%s» eksisterer allerede. Vennligst velg et annet navn."
+
+#: ../src/groupProperties.py:164 ../src/mainWindow.py:760
+#, python-format
+msgid "You cannot remove user '%s' from their primary group."
+msgstr "Du kan ikke fjerne bruker «%s» fra primærgruppen."
+
+#: ../src/groupWindow.py:116
+#, python-format
+msgid "A group with name '%s' already exists."
+msgstr "En gruppe med navnet «%s» eksisterer allerede."
+
+#. This uid already exists, so complain
+#. This (chosen) gid already exists, so complain
+#: ../src/groupWindow.py:131 ../src/userWindow.py:292
+#, python-format
+msgid "The gid %s is already in use."
+msgstr "GID %s er allerede i bruk."
+
+#: ../src/groupWindow.py:138
+msgid ""
+"Creating a group with a GID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+msgstr ""
+"Det anbefales ikke å opprette grupper med GID mindre enn 500. Er du sikker "
+"på at du vil gjøre dette?"
+
+#: ../src/groupWindow.py:160 ../src/userWindow.py:305
+#, python-format
+msgid ""
+"Error finding suitable group id not exceeding maximum value of %(maxid)s."
+msgstr ""
+
+#: ../src/mainWindow.py:80
+msgid ""
+"The help viewer could not be found. To be able to view help you need to "
+"install the 'yelp' package."
+msgstr ""
+"Program for visning av hjelp ble ikke funnet. Du må installere pakken «yelp» "
+"for å kunne vise hjelp."
+
+#: ../src/mainWindow.py:95
+#, python-format
+msgid "No helper application for the URL '%(url)s can be found."
+msgstr "Hjelpeprogram for URL «%(url)s» ble ikke funnet."
+
+#: ../src/mainWindow.py:120
+#, python-format
+msgid "Error saving settings to %s"
+msgstr "Feil under lagring av innstillinger til %s"
+
+#: ../src/mainWindow.py:130
+msgid "Users and Groups"
+msgstr "Brukere og grupper"
+
+#: ../src/mainWindow.py:131
+msgid "Add or remove users and groups"
+msgstr "Legg til eller fjern brukere og grupper"
+
+#: ../src/mainWindow.py:156
+msgid "User Name"
+msgstr "Brukernavn"
+
+#: ../src/mainWindow.py:160
+msgid "User ID"
+msgstr "Bruker-ID"
+
+#: ../src/mainWindow.py:164
+msgid "Primary Group"
+msgstr "Primær gruppe"
+
+#: ../src/mainWindow.py:168
+msgid "Full Name"
+msgstr "Fullt navn"
+
+#: ../src/mainWindow.py:172
+msgid "Login Shell"
+msgstr "Login-skall"
+
+#: ../src/mainWindow.py:176
+msgid "Home Directory"
+msgstr "Hjemmekatalog"
+
+#: ../src/mainWindow.py:194
+msgid "Group Name"
+msgstr "Gruppenavn"
+
+#: ../src/mainWindow.py:198
+msgid "Group ID"
+msgstr "Gruppe-ID"
+
+#: ../src/mainWindow.py:202
+msgid "Group Members"
+msgstr "Gruppemedlemmer"
+
+#: ../src/mainWindow.py:436
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the user '%(user)s'.\n"
+"\n"
+msgstr ""
+"Kunne ikke finne den numeriske IDen til brukeren «%(user)s».\n"
+"\n"
+
+#: ../src/mainWindow.py:437
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these users:\n"
+"%(users)s\n"
+"\n"
+msgstr ""
+"Kunne ikke finne de numeriske IDene til følgende brukere:\n"
+"%(users)s\n"
+"\n"
+
+#: ../src/mainWindow.py:448
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the group '%(group)s'.\n"
+"\n"
+msgstr ""
+"Kunne ikke finne den numeriske IDen til gruppen «%(group)s».\n"
+"\n"
+
+#: ../src/mainWindow.py:449
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these groups:\n"
+"%(groups)s\n"
+"\n"
+msgstr ""
+"Kunne ikke finne de numeriske IDene til følgende grupper:\n"
+"%(groups)s\n"
+"\n"
+
+#: ../src/mainWindow.py:459
+#, python-format
+msgid ""
+"%(msg_users)s%(msg_groups)s\n"
+"In most cases this is caused by inconsistencies in the user or group "
+"database, e.g. between the files /etc/passwd, /etc/group and their "
+"respective shadow files /etc/shadow and /etc/gshadow. I will try to ignore "
+"these entries and continue for now, but please fix these inconsistencies as "
+"soon as possible."
+msgstr ""
+"%(msg_users)s%(msg_groups)s\n"
+"I de fleste tilfeller er dette forårsaket av mangel på sammenheng i bruker- "
+"eller gruppe-databasen, f.eks. mellom filene /etc/passwd, /etc/group og "
+"deres respektive skygge-filer /etc/shadow og /etc/gshadow/. Vil forsøke å "
+"ignorere disse innslagene og fortsette for øyeblikket, men vennligst fiks "
+"dette snarest."
+
+#: ../src/mainWindow.py:578 system-config-users.gladestrings:89
+msgid "system-config-users"
+msgstr "system-config-users"
+
+#: ../src/mainWindow.py:588
+#, python-format
+msgid "Copyright © %(years)s %(holder)s <%(email)s>"
+msgstr "Opphavsrett © %(years)s %(holder)s <%(email)s>"
+
+#: ../src/mainWindow.py:590
+#, python-format
+msgid "Copyright © %(years)s %(holder)s"
+msgstr "Opphavsrett © %(years)s %(holder)s"
+
+#: ../src/mainWindow.py:598
+#, python-format
+msgid "%(author)s <%(email)s>"
+msgstr "%(author)s <%(email)s"
+
+#: ../src/mainWindow.py:600
+#, python-format
+msgid "%(author)s"
+msgstr "%(author)s"
+
+#: ../src/mainWindow.py:648
+msgid "Deleting the root user is not allowed."
+msgstr "Sletting av root-brukeren er ikke tillatt."
+
+#: ../src/mainWindow.py:657
+msgid "- An installed software package contains this directory."
+msgstr "- En installert programvarepakke inneholder denne katalogen."
+
+#: ../src/mainWindow.py:659
+msgid ""
+"- A system user owns this directory and removing it may impair the system's "
+"integrity."
+msgstr ""
+"- En systembruker eier denne katalogen og systemets integritet kan ødelegges "
+"hvis den fjernes."
+
+#: ../src/mainWindow.py:661
+msgid "- This directory doesn't exist or isn't writable."
+msgstr "- Denne katalogen eksisterer ikke eller er ikke skrivbar."
+
+#: ../src/mainWindow.py:663
+#, python-format
+msgid "- The user '%s' doesn't own this directory."
+msgstr "- Bruker «%s» eier ikke denne katalogen."
+
+#: ../src/mainWindow.py:670
+#, python-format
+msgid ""
+"<b>There are currently processes running that are owned by '%s'!</b>  This "
+"user is probably still logged in.  "
+msgstr ""
+"<b>Det finnes kjørende prosesser som eies av «%s»!</b> Denne brukeren er "
+"sannsynligvis fremdeles logget på."
+
+#: ../src/mainWindow.py:672
+#, python-format
+msgid "Do you really want to remove the user '%s'?"
+msgstr "Er du sikker på at du ønsker å fjerne bruker «%s»?"
+
+#: ../src/mainWindow.py:681
+#, python-format
+msgid "Delete %(user)s's home directory ('%(homedir)s') and temporary files."
+msgstr ""
+"Slett hjemmekatalog («%(homedir)s») og midlertidige filer for %(user)s."
+
+#: ../src/mainWindow.py:683
+#, python-format
+msgid ""
+"Delete %(user)s's home directory ('%(homedir)s'), mail spool "
+"('%(mailspool)s') and temporary files."
+msgstr ""
+"Slett hjemmekatalog («%(homedir)s»), e-post («%(mailspool)s») og "
+"midlertidige filer for bruker %(user)s."
+
+#: ../src/mainWindow.py:690
+#, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for this reason:\n"
+"%(reason)s"
+msgstr ""
+"Vil ikke slette hjemmekatalogen («%(homedir)s») for brukeren «%(user)s» av "
+"følgende grunn:\n"
+"%(reason)s"
+
+#: ../src/mainWindow.py:691
+#, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for these reasons:\n"
+"%(reason)s"
+msgstr ""
+"Vil ikke slette hjemmekatalogen («%(homedir)s») for brukeren «%(user)s» av "
+"følgende grunner:\n"
+"%(reason)s"
+
+#: ../src/mainWindow.py:764
+#, python-format
+msgid "Are you sure you want to delete the group '%s'?"
+msgstr "Er du sikker på at du ønsker å slette gruppen «%s»?"
+
+#: ../src/system-config-users.py:38
+msgid "system-config-users requires a currently running X server."
+msgstr "system-config-users krever at du kjører en X-tjener."
+
+#: ../src/userGroupCheck.py:51 ../src/userProperties.py:295
+msgid "Please enter a user name."
+msgstr "Vennligst oppgi et gruppenavn."
+
+#: ../src/userGroupCheck.py:52
+#, python-format
+msgid "The user name must not exceed %d characters."
+msgstr "Brukernavnet må ha ikke ha mer enn %d tegn."
+
+#: ../src/userGroupCheck.py:53
+#, python-format
+msgid ""
+"The user name '%s' contains whitespace. Please do not include whitespace in "
+"the user name."
+msgstr ""
+"Brukernavnet «%s» inneholder mellomrom. Vennligst ikke bruk mellomrom i "
+"brukernavnet."
+
+#: ../src/userGroupCheck.py:54
+#, python-format
+msgid ""
+"The user name '%s' contains a dollar sign which is not at the end. Please "
+"use dollar signs only at the end of user names to indicate Samba machine "
+"accounts."
+msgstr ""
+"Brukernavn «%s» inneholder et dollartegn som ikke er plassert på slutten. "
+"Dollartegn skal kun brukes til slutt i brukernavn for å indikere Samba-"
+"maskinkontoer."
+
+#: ../src/userGroupCheck.py:55
+#, python-format
+msgid ""
+"The user name '%s' contains a trailing dollar sign. This should only be used "
+"for Samba machine accounts, using this for a normal user account can cause "
+"problems with some software. Is the account in question a Samba machine "
+"account?"
+msgstr ""
+"Brukernavnet «%s» inneholder et dollartegn på slutten. Dette bør kun brukes "
+"med maskinkontoer i Samba. Hvis du gjør dette med en vanlig brukerkonto kan "
+"det skape problemer med noen programmer. Er kontoen en Samba-maskinkonto?"
+
+#: ../src/userGroupCheck.py:56
+#, python-format
+msgid ""
+"The user name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr ""
+"Brukernavnet «%(name)s» inneholder et ugyldig tegn i posisjon %(position)d."
+
+#: ../src/userGroupCheck.py:57
+msgid ""
+"Using all numbers as the user name can cause confusion about whether the "
+"user name or numerical user id is meant. Do you really want to use a "
+"numerical-only user name?"
+msgstr ""
+"Brukernavn som består utelukkende av tall kan skape forvirring om hvorvidt "
+"brukernavn eller numerisk ident er tenkt brukt. Vil du virkelig bruke et "
+"brukernavn som består utelukkende av tall?"
+
+#: ../src/userGroupCheck.py:62
+#, python-format
+msgid "The group name must not exceed %d characters."
+msgstr "Gruppenavnet må ikke overstige %d tegn."
+
+#: ../src/userGroupCheck.py:63
+#, python-format
+msgid ""
+"The group name '%s' contains whitespace. Please do not include whitespace in "
+"the group name."
+msgstr ""
+"Gruppenavnet «%s» inneholder mellomrom. Vennligst ikke bruk mellomrom i "
+"gruppenavnet."
+
+#: ../src/userGroupCheck.py:64
+#, python-format
+msgid ""
+"The group name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr ""
+"Gruppenavnet «%(name)s» inneholder et ugyldig tegn i posisjon %(position)d."
+
+#: ../src/userGroupCheck.py:65
+msgid ""
+"Using all numbers as the group name can cause confusion about whether the "
+"group name or numerical group id is meant. Do you really want to use a "
+"numerical-only group name?"
+msgstr ""
+"Gruppenavn som består utelukkende av tall kan skape forvirring om hvorvidt "
+"gruppenavn eller numerisk gruppe-ID er tenkt brukt. Vil du virkelig bruke et "
+"gruppenavn som består utelukkende av tall?"
+
+#: ../src/userGroupCheck.py:144
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr "Passordet inneholder ugyldige tegn. Vennligst bruk kun ASCII-tegn."
+
+#: ../src/userGroupCheck.py:167
+#, python-format
+msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
+msgstr "Det valgte passordet er for svakt: %s. Vil du fortsatt bruke det?"
+
+#. have to check for whitespace for gecos, since whitespace is ok
+#: ../src/userGroupCheck.py:178
+#, python-format
+msgid ""
+"The name '%s' contains invalid characters.  Please use only UTF-8 characters."
+msgstr "Navnet «%s» inneholder ugyldige tegn. Vennligst bruk kun UTF-8-tegn."
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: ../src/userGroupCheck.py:186
+#, python-format
+msgid "The name '%s' contains a colon.  Please do not use colons in the name."
+msgstr "Navnet «%s» inneholder et kolon. Vennligst ikke bruk kolon i navnet."
+
+#: ../src/userGroupCheck.py:195
+msgid "Please enter a home directory."
+msgstr "Vennligst oppgi en hjemmekatalog."
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: ../src/userGroupCheck.py:202
+#, python-format
+msgid ""
+"The directory name '%s' contains a colon.  Please do not use colons in the "
+"directory name."
+msgstr ""
+"Katalognavnet «%s» inneholder et kolon. Vennligst ikke bruk kolon i "
+"katalognavnet."
+
+#: ../src/userGroupCheck.py:211
+#, python-format
+msgid ""
+"The directory name '%s' doesn't begin with a '/'. Please specify an absolute "
+"path for the home directory."
+msgstr ""
+"Katalognavnet «%s» begynner ikke med '/'. Spesifiser en absolutt sti for "
+"hjemmekatalogen."
+
+#: ../src/userGroupCheck.py:217
+#, python-format
+msgid ""
+"The directory name '%s' has path components which are too long. Please use "
+"shorter path components for the home directory."
+msgstr ""
+"Katalognavnet «%s» har en komponent i stien som er for lang. Vennligst bruk "
+"en kortere komponent i stien til hjemmekatalogen."
+
+#: ../src/userGroupCheck.py:224
+#, python-format
+msgid ""
+"The directory name '%s' contains empty path components. Please specify a "
+"home directory name without empty path components."
+msgstr ""
+"Katalognavnet «%s» inneholder tomme komponenter i stien. Vennligst "
+"spesifiser en hjemmekatalog uten tomme komponenter i stien."
+
+#: ../src/userGroupCheck.py:233
+#, python-format
+msgid ""
+"The directory name '%s' contains illegal path components. Please don't use "
+"'.' or '..' as path components for the home directory."
+msgstr ""
+"Katalognavnet «%s» inneholder ugyldige komponenter i stien. Ikke bruk «.» "
+"eller «..» som komponent i stien til hjemmekatalogen."
+
+#: ../src/userGroupCheck.py:241
+#, python-format
+msgid ""
+"The directory name '%s' cannot be created ('%s' is not writable). Please "
+"chose a writable location."
+msgstr ""
+
+#: ../src/userProperties.py:108 ../src/userWindow.py:82
+msgid "User"
+msgstr "Bruker"
+
+#: ../src/userProperties.py:108 ../src/userWindow.py:82
+msgid "Staff"
+msgstr "Medarbeidere"
+
+#: ../src/userProperties.py:109 ../src/userWindow.py:83
+msgid "System Administrator"
+msgstr "Systemadministrator"
+
+#: ../src/userProperties.py:139
+msgid "Primary Group:"
+msgstr "Primærgruppe:"
+
+#: ../src/userProperties.py:314
+#, python-format
+msgid "The user '%s' already exists. Please choose a different name."
+msgstr "Brukeren «%s» eksisterer allerede. Vennligst velg et annet navn."
+
+#: ../src/userProperties.py:336 ../src/userWindow.py:193
+msgid "Please enter a password for the user."
+msgstr "Vennligst oppgi et passord for brukeren."
+
+#: ../src/userProperties.py:345 ../src/userWindow.py:201
+msgid "The password is too short.  Please use at least 6 characters."
+msgstr "Passordet er for kort. Vennligst bruk minst 6 tegn."
+
+#: ../src/userProperties.py:354
+msgid "Passwords do not match."
+msgstr "Passordene er ikke like."
+
+#: ../src/userProperties.py:431
+msgid "Please select at least one group for the user."
+msgstr "Vennligst velg minst en gruppe for brukeren."
+
+#: ../src/userProperties.py:450
+msgid "Please specify the month that the password will expire."
+msgstr "Vennligst oppgi måneden når passordet skal utløpe."
+
+#: ../src/userProperties.py:458
+msgid "Please specify the day that the password will expire."
+msgstr "Vennligst oppgi dagen når passordet skal utløpe."
+
+#: ../src/userProperties.py:466
+msgid "Please specify the year that the password will expire."
+msgstr "Vennligst oppgi året når passordet skal utløpe."
+
+#. mktime will throw an OverflowError if the year is too big.
+#: ../src/userProperties.py:482
+msgid "The year is out of range.  Please select a different year."
+msgstr "Året er utenfor gyldig område. Vennligst velg et annet år."
+
+#: ../src/userProperties.py:511
+msgid ""
+"Please specify the number of days before changing the password is allowed."
+msgstr "Vennligst oppgi antall dager før endring av passordet tillates."
+
+#: ../src/userProperties.py:513
+#, python-format
+msgid ""
+"The number of days before changing the password is allowed must be between "
+"%(min)d and %(max)d."
+msgstr ""
+"Antall dager før endring av passordet er tillatt, må være mellom %(min)d og "
+"%(max)d."
+
+#: ../src/userProperties.py:518
+msgid ""
+"Please specify the number of days before changing the password is required."
+msgstr "Vennligst oppgi antall dager før endring av passordet kreves."
+
+#: ../src/userProperties.py:520
+#, python-format
+msgid ""
+"The number of days before changing the password is required must be between "
+"%(min)d and %(max)d."
+msgstr ""
+"Antall dager før endring av passordet er nødvendig, må være mellom %(min)d "
+"og %(max)d."
+
+#: ../src/userProperties.py:524
+msgid ""
+"Please specify the number of days to warn the user before changing the "
+"password is required."
+msgstr ""
+"Vennligst oppgi antall dager bruker skal få advarsel før endring av "
+"passordet kreves."
+
+#: ../src/userProperties.py:526
+#, python-format
+msgid ""
+"The number of days to warn the user before changing the password is required "
+"must be between %(min)d and %(max)d."
+msgstr ""
+"Antall dager en bruker skal få advarsel før endring av passordet er "
+"nødvendig, må være mellom %(min)d og %(max)d"
+
+#: ../src/userProperties.py:532
+msgid ""
+"Please specify the number of days until the user account becomes inactive "
+"after password has expired."
+msgstr ""
+"Vennligst oppgi antal dager før brukerkontoen blir inaktiv hvis passordet "
+"har utløpt."
+
+#: ../src/userProperties.py:534
+#, python-format
+msgid ""
+"The number of days until the user account becomes inactive after the "
+"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
+"means the account won't become inactive."
+msgstr ""
+"Antall dager før brukerkontoen blir inaktiv hvis passordet har utløpt, må "
+"være mellom %(min)d og %(max)d. Er den satt til -1 vil det si at kontoen "
+"ikke vil bli inaktiv."
+
+#: ../src/userProperties.py:592
+#, python-format
+msgid ""
+"Unlocking the user failed because:\n"
+"\n"
+"%(errmsg)s"
+msgstr ""
+
+#: ../src/userProperties.py:595
+msgid "Unlocking the user failed due to an unknown reason."
+msgstr ""
+
+#: ../src/userWindow.py:210
+msgid "The passwords do not match."
+msgstr "Passordene er ikke like."
+
+#. The user name is blank, so complain
+#: ../src/userWindow.py:241
+msgid "Please specify a user name"
+msgstr "Vennligst oppgi et brukernavn"
+
+#. This user already exists, so complain
+#: ../src/userWindow.py:249
+#, python-format
+msgid "An account with username '%s' already exists."
+msgstr "En konto med brukernavn «%s» eksisterer allerede."
+
+#. This uid already exists, so complain
+#: ../src/userWindow.py:285
+#, python-format
+msgid "The uid %s is already in use."
+msgstr "UID %s er allerede i bruk."
+
+#: ../src/userWindow.py:303
+#, python-format
+msgid ""
+"Error finding suitable user id not exceeding maximum value of %(maxid)s."
+msgstr ""
+
+#: ../src/userWindow.py:315
+msgid ""
+"Creating a user with a UID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+msgstr ""
+"Det anbefales ikke å opprette brukere med UID mindre enn 500. Er du sikker "
+"på at du vil gjøre dette?"
+
+#: ../src/userWindow.py:345
+msgid "A group with this gid already exists.  What would you like to do?"
+msgstr ""
+"En gruppe med dette navnet (gid) eksisterer allerede. Hva vil du gjøre?"
+
+#: ../src/userWindow.py:347
+msgid "A group with this name already exists.  What would you like to do?"
+msgstr "En gruppe med dette navnet eksisterer allerede. Hva vil du gjøre?"
+
+#: ../src/userWindow.py:351
+msgid "Add to the existing group"
+msgstr "Legg til i eksisterende gruppe"
+
+#: ../src/userWindow.py:352
+msgid "Add to the 'users' group"
+msgstr "Legg til i gruppen 'users'"
+
+#. Uh-oh.  It looks like /etc/group and /etc/gshadow are out of sync.  Give up and quit.
+#: ../src/userWindow.py:434
+msgid ""
+"The system group database cannot be read.  This problem is most likely "
+"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
+"now."
+msgstr ""
+"Systemets gruppedatabase kan ikke leses. Dette problemet er mest sannsynlig "
+"forårsaket av at /etc/group og /etc/gshadow ikke stemmer overens. Programmet "
+"vil avslutte nå."
+
+#.
+#. * Translatable strings file generated by Glade.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#: system-config-users.gladestrings:7
+msgid "Add New Group"
+msgstr "Legg til ny gruppe"
+
+#: system-config-users.gladestrings:8 system-config-users.gladestrings:38
+msgid "_Group Name:"
+msgstr "_Gruppenavn:"
+
+#: system-config-users.gladestrings:9 system-config-users.gladestrings:74
+msgid "Specify g_roup ID manually:"
+msgstr "Spesifiser g_ruppe-ID manuelt"
+
+#: system-config-users.gladestrings:10
+msgid "User Properties"
+msgstr "Egenskaper for bruker"
+
+#: system-config-users.gladestrings:11
+msgid "User _Name:"
+msgstr "Bruker_navn:"
+
+#: system-config-users.gladestrings:12 system-config-users.gladestrings:64
+msgid "_Full Name:"
+msgstr "_Fullt navn:"
+
+#: system-config-users.gladestrings:13
+msgid "Pass_word:"
+msgstr "Pass_ord:"
+
+#: system-config-users.gladestrings:14 system-config-users.gladestrings:66
+msgid "Confir_m Password:"
+msgstr ""
+
+#: system-config-users.gladestrings:15 system-config-users.gladestrings:67
+msgid "_Login Shell:"
+msgstr "_Login-skall:"
+
+#: system-config-users.gladestrings:16
+msgid "_Home Directory:"
+msgstr "_Hjemmekatalog:"
+
+#: system-config-users.gladestrings:17 system-config-users.gladestrings:68
+msgid "S_ELinux role:"
+msgstr "S_ELinux-rolle:"
+
+#: system-config-users.gladestrings:18
+msgid "_User Data"
+msgstr "Br_ukerdata"
+
+#: system-config-users.gladestrings:19
+msgid "_Enable account expiration"
+msgstr "Aktiv_er utløp av konto"
+
+#: system-config-users.gladestrings:20
+msgid "Account e_xpires (YYYY-MM-DD):"
+msgstr "Konto utl_øper (ÅÅÅÅ-MM-DD):"
+
+#: system-config-users.gladestrings:21 system-config-users.gladestrings:29
+msgid "     "
+msgstr "     "
+
+#: system-config-users.gladestrings:22 system-config-users.gladestrings:23
+msgid "-"
+msgstr "-"
+
+#: system-config-users.gladestrings:24
+msgid "_Local password is locked"
+msgstr "_Lokalt passord er låst"
+
+#: system-config-users.gladestrings:25
+msgid "_Account Info"
+msgstr "_Kontoinformasjon"
+
+#: system-config-users.gladestrings:26
+msgid "User last changed password on:"
+msgstr "Bruker endret passord sist:"
+
+#: system-config-users.gladestrings:27
+msgid "Unknown"
+msgstr "Ukjent"
+
+#: system-config-users.gladestrings:28
+msgid "_Enable password expiration"
+msgstr "Aktiv_er utløp av passord"
+
+#: system-config-users.gladestrings:30
+msgid "Days before change a_llowed:"
+msgstr "Dager før endring ti_llates:"
+
+#: system-config-users.gladestrings:31
+msgid "Days before change _required:"
+msgstr "Dager før endring k_reves:"
+
+#: system-config-users.gladestrings:32
+msgid "Days _warning before change:"
+msgstr "Dager med ad_varsel før endring:"
+
+#: system-config-users.gladestrings:33
+msgid "Days before account _inactive:"
+msgstr "Dager før konto gjøres _inaktiv:"
+
+#: system-config-users.gladestrings:34
+msgid "_Password Info"
+msgstr "_Passordinformasjon"
+
+#: system-config-users.gladestrings:35
+msgid "Select the groups that the user will be a member of:"
+msgstr "Velg grupper som brukeren skal være medlem av:"
+
+#: system-config-users.gladestrings:36
+msgid "_Groups"
+msgstr "_Grupper"
+
+#: system-config-users.gladestrings:37
+msgid "Group Properties"
+msgstr "Egenskaper for gruppe"
+
+#: system-config-users.gladestrings:39
+msgid "Group _Data"
+msgstr "Gruppe_data"
+
+#: system-config-users.gladestrings:40
+msgid "Select the users to join this group:"
+msgstr "Velg brukere som skal bli medlem av denne gruppen:"
+
+#: system-config-users.gladestrings:41
+msgid "Group _Users"
+msgstr "Grupper br_ukere"
+
+#: system-config-users.gladestrings:42
+msgid "User Manager"
+msgstr "Brukerkonfigurasjon"
+
+#: system-config-users.gladestrings:43
+msgid "_File"
+msgstr "_Fil"
+
+#: system-config-users.gladestrings:44 system-config-users.gladestrings:49
+msgid "Add _User"
+msgstr "Legg til br_uker"
+
+#: system-config-users.gladestrings:45 system-config-users.gladestrings:50
+msgid "Add _Group"
+msgstr "Legg til _gruppe"
+
+#: system-config-users.gladestrings:46
+msgid "_Edit"
+msgstr "R_ediger"
+
+#: system-config-users.gladestrings:47 system-config-users.gladestrings:57
+msgid "_Help"
+msgstr "_Hjelp"
+
+#: system-config-users.gladestrings:48
+msgid "_Contents"
+msgstr "_Innhold"
+
+#: system-config-users.gladestrings:51
+msgid "Edit properties"
+msgstr "Rediger egenskaper"
+
+#: system-config-users.gladestrings:52
+msgid "Proper_ties"
+msgstr "E_genskaper"
+
+#: system-config-users.gladestrings:53
+msgid "_Delete"
+msgstr "_Slett"
+
+#: system-config-users.gladestrings:54
+msgid "Reload"
+msgstr "Les på nytt"
+
+#: system-config-users.gladestrings:55
+msgid "_Refresh"
+msgstr "_Oppdater"
+
+#: system-config-users.gladestrings:56
+msgid "Help"
+msgstr "Hjelp"
+
+#: system-config-users.gladestrings:58
+msgid "Sea_rch filter:"
+msgstr "Søkefilte_r:"
+
+#: system-config-users.gladestrings:59
+msgid "_Apply filter"
+msgstr "_Bruk filter"
+
+#: system-config-users.gladestrings:60
+msgid "U_sers"
+msgstr "B_rukere"
+
+#: system-config-users.gladestrings:61
+msgid "Gr_oups"
+msgstr "Gr_upper"
+
+#: system-config-users.gladestrings:62
+msgid "Add New User"
+msgstr "Legg til ny bruker"
+
+#: system-config-users.gladestrings:63
+msgid "_User Name:"
+msgstr "Br_ukernavn:"
+
+#: system-config-users.gladestrings:65
+msgid "_Password:"
+msgstr "_Passord:"
+
+#: system-config-users.gladestrings:69
+msgid "Create _home directory"
+msgstr "Opprett _hjemmekatalog"
+
+#: system-config-users.gladestrings:70
+msgid "    "
+msgstr "    "
+
+#: system-config-users.gladestrings:71
+msgid "Home _Directory:"
+msgstr "Hjemme_katalog:"
+
+#: system-config-users.gladestrings:72
+msgid "Create a private _group for the user"
+msgstr "Opprett en privat _gruppe for brukeren"
+
+#: system-config-users.gladestrings:73
+msgid "Specify u_ser ID manually:"
+msgstr "Spesifiser _bruker-ID manuelt"
+
+#: system-config-users.gladestrings:75
+msgid "About system-config-users"
+msgstr "Om system-config-users"
+
+#: system-config-users.gladestrings:76
+msgid "<b>system-config-users</b>"
+msgstr "<b>system-config-users</b>"
+
+#: system-config-users.gladestrings:77
+msgid "Version @VERSION@"
+msgstr "Versjon @VERSION@"
+
+#: system-config-users.gladestrings:78
+msgid "Copyright (c) 2001 - 2005 Red Hat, Inc."
+msgstr "Opphavsrett © 2001 - 2005 Red Hat, Inc."
+
+#: system-config-users.gladestrings:79
+msgid "This software is distributed under the GNU General Public License."
+msgstr ""
+"Denne programvaren distribueres under betingelsene gitt i General Public "
+"License."
+
+#: system-config-users.gladestrings:80
+msgid "Preferences"
+msgstr "Brukervalg"
+
+#: system-config-users.gladestrings:81
+msgid "_Hide system users and groups"
+msgstr "_Skjul systembrukere og grupper"
+
+#: system-config-users.gladestrings:82
+msgid "<b>User and Group Lists</b>"
+msgstr "<b>Lister med brukere og grupper</b>"
+
+#: system-config-users.gladestrings:83
+msgid ""
+"Ensure that a new user gets a higher UID than all existing users, if not set "
+"manually."
+msgstr ""
+"Sjekk at en ny bruker får en høyere UID enn alle eksisterende brukere, hvis "
+"ikke sett manuelt."
+
+#: system-config-users.gladestrings:84
+msgid "Automatically assigned _UID must be highest"
+msgstr "Automatisk tildelt _UID må være den høyeste"
+
+#: system-config-users.gladestrings:85
+msgid ""
+"Ensure that a new group gets a higher GID than all existing groups, if not "
+"set manually."
+msgstr ""
+"Sjekk at en ny gruppe får en høyere GID enn alle eksisterende grupper, hvis "
+"ikke sett manuelt."
+
+#: system-config-users.gladestrings:86
+msgid "Automatically assigned _GID must be highest"
+msgstr "Automatisk tildelt _GID må være den høyeste"
+
+#: system-config-users.gladestrings:87
+msgid "Prefer that private group GID is the _same as UID"
+msgstr "Foretrekk at den GID for privat gruppe er den _samme som UID"
+
+#: system-config-users.gladestrings:88
+msgid "<b>New Users</b>"
+msgstr "<b>Nye brukere</b>"
+
+#: system-config-users.gladestrings:90
+msgid "Copyright © 2001-2007 Red Hat, Inc."
+msgstr "Opphavsrett © 2001-2007 Red Hat, Inc."
+
+#: system-config-users.gladestrings:91
+msgid "Manages users and groups on your system."
+msgstr "Håndter brukere og grupper på ditt system."
+
+#: system-config-users.gladestrings:92
+msgid ""
+"system-config-users is free software; you can redistribute it and/or modify "
+"it under the terms of the GNU General Public License as published by the "
+"Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version.\n"
+"\n"
+"system-config-users is distributed in the hope that it will be useful, but "
+"WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"system-config-users; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+msgstr ""
+"system-config-users er fri programvare. Du kan redistribuere og/eller endre "
+"programmet under betingelsene gitt i GNU General Public License som utgitt "
+"av Free Software Foundation; enten versjon 2 av lisensen, eller (hvis du "
+"ønsker det) enhver senere versjon.\n"
+"\n"
+"system-config-users distribueres i håp om at programmet er nyttig, men uten "
+"NOEN GARANTI, ikke engang implisitt garanti om at det er SALGBART eller "
+"PASSER ET BESTEMT FORMÅL. Se GNU General Public License for detaljer.\n"
+"\n"
+"Du skal ha mottatt en kopi av GNU General Public License sammen med system-"
+"config-users. Hvis dette ikke er tilfelle, kan du skrive til Free Software "
+"Foundation, Inc. 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+
+#: system-config-users.gladestrings:97
+msgid "translator-credits"
+msgstr "Kjartan Maraas <kmaraas@broadpark.no>"
+
+#~ msgid "Con_firm Password:"
+#~ msgstr "Bekre_ft passord:"
+
+#~ msgid "C_onfirm Password:"
+#~ msgstr "Be_kreft passord:"

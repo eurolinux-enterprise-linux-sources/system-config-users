@@ -1,0 +1,6 @@
+system-config-users-*.tar.bz2
+system-config-users.desktop.in.h
+system-config-users.console
+*.bak
+*.pyc
+*.pyo

@@ -1,0 +1,1006 @@
+# translation of cy.po to Cymraeg
+# translation of system-config-users.pot to Cymraeg
+# This file is distributed under the same license as the system-config-users package.
+# Copyright (C) 2004 Alan Cox
+# Translation by Owain Green <owaing@oceanfree.net>, 2004.
+# Dafydd Walters <dwalters@dragontechnology.com>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cy\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-20 16:08+0200\n"
+"PO-Revision-Date: 2004-11-11 10:31+0000\n"
+"Last-Translator: Dafydd Walters <dwalters@dragontechnology.com>\n"
+"Language-Team: Cymraeg <cy@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0.2\n"
+
+#: ../src/groupProperties.py:108 ../src/groupWindow.py:108
+#: ../src/userGroupCheck.py:61
+msgid "Please enter a group name."
+msgstr "Rhowch enw grŵp os gwelwch yn dda."
+
+#: ../src/groupProperties.py:122
+#, fuzzy, python-format
+msgid "The group '%s' already exists. Please choose a different name."
+msgstr "Mae'r flwyddyn y tu hwnt i'r amrediad.  Dewiswch flwyddyn wahanol."
+
+#: ../src/groupProperties.py:164 ../src/mainWindow.py:760
+#, python-format
+msgid "You cannot remove user '%s' from their primary group."
+msgstr "Ni allwch waredu'r defnyddiwr '%s' o'i grŵp cynradd."
+
+#: ../src/groupWindow.py:116
+#, python-format
+msgid "A group with name '%s' already exists."
+msgstr "Mae grŵp â'r enw '%s' yn bodoli eisioes."
+
+#. This uid already exists, so complain
+#. This (chosen) gid already exists, so complain
+#: ../src/groupWindow.py:131 ../src/userWindow.py:292
+#, python-format
+msgid "The gid %s is already in use."
+msgstr "Mae'r dynodiad grŵp (gid) %s mewn defnydd eisioes."
+
+#: ../src/groupWindow.py:138
+msgid ""
+"Creating a group with a GID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+msgstr ""
+"Ni argymellir creu grŵp â GID llai na 500. A ydych yn sicr eich bod am wneud "
+"hyn?"
+
+#: ../src/groupWindow.py:160 ../src/userWindow.py:305
+#, python-format
+msgid ""
+"Error finding suitable group id not exceeding maximum value of %(maxid)s."
+msgstr ""
+
+#: ../src/mainWindow.py:80
+msgid ""
+"The help viewer could not be found. To be able to view help you need to "
+"install the 'yelp' package."
+msgstr ""
+
+#: ../src/mainWindow.py:95
+#, python-format
+msgid "No helper application for the URL '%(url)s can be found."
+msgstr ""
+
+#: ../src/mainWindow.py:120
+#, python-format
+msgid "Error saving settings to %s"
+msgstr "Gwall wrth gadw gosodiadau i %s"
+
+#: ../src/mainWindow.py:130
+msgid "Users and Groups"
+msgstr "Defnyddwyr a Grŵpiau"
+
+#: ../src/mainWindow.py:131
+msgid "Add or remove users and groups"
+msgstr "Ychwanegu neu waredu defnydwydd a grwpiau"
+
+#: ../src/mainWindow.py:156
+msgid "User Name"
+msgstr "Enw Defnyddiwr"
+
+#: ../src/mainWindow.py:160
+msgid "User ID"
+msgstr "Dynodiad Defnyddiwr"
+
+#: ../src/mainWindow.py:164
+msgid "Primary Group"
+msgstr "Grŵp Cynradd"
+
+#: ../src/mainWindow.py:168
+msgid "Full Name"
+msgstr "Enw Llawn"
+
+#: ../src/mainWindow.py:172
+msgid "Login Shell"
+msgstr "Plisgyn Mewngofnodi"
+
+#: ../src/mainWindow.py:176
+msgid "Home Directory"
+msgstr "Cyfeiriadur Cartref"
+
+#: ../src/mainWindow.py:194
+msgid "Group Name"
+msgstr "Enw Grŵp"
+
+#: ../src/mainWindow.py:198
+msgid "Group ID"
+msgstr "Dynodiad Grŵp"
+
+#: ../src/mainWindow.py:202
+msgid "Group Members"
+msgstr "Aelodau Grŵp"
+
+#: ../src/mainWindow.py:436
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the user '%(user)s'.\n"
+"\n"
+msgstr ""
+
+#: ../src/mainWindow.py:437
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these users:\n"
+"%(users)s\n"
+"\n"
+msgstr ""
+
+#: ../src/mainWindow.py:448
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the group '%(group)s'.\n"
+"\n"
+msgstr ""
+
+#: ../src/mainWindow.py:449
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these groups:\n"
+"%(groups)s\n"
+"\n"
+msgstr ""
+
+#: ../src/mainWindow.py:459
+#, python-format
+msgid ""
+"%(msg_users)s%(msg_groups)s\n"
+"In most cases this is caused by inconsistencies in the user or group "
+"database, e.g. between the files /etc/passwd, /etc/group and their "
+"respective shadow files /etc/shadow and /etc/gshadow. I will try to ignore "
+"these entries and continue for now, but please fix these inconsistencies as "
+"soon as possible."
+msgstr ""
+
+#: ../src/mainWindow.py:578 system-config-users.gladestrings:89
+msgid "system-config-users"
+msgstr ""
+
+#: ../src/mainWindow.py:588
+#, python-format
+msgid "Copyright © %(years)s %(holder)s <%(email)s>"
+msgstr ""
+
+#: ../src/mainWindow.py:590
+#, python-format
+msgid "Copyright © %(years)s %(holder)s"
+msgstr ""
+
+#: ../src/mainWindow.py:598
+#, python-format
+msgid "%(author)s <%(email)s>"
+msgstr ""
+
+#: ../src/mainWindow.py:600
+#, python-format
+msgid "%(author)s"
+msgstr ""
+
+#: ../src/mainWindow.py:648
+msgid "Deleting the root user is not allowed."
+msgstr "Ni ellir dileu'r defnyddiwr gwraidd."
+
+#: ../src/mainWindow.py:657
+msgid "- An installed software package contains this directory."
+msgstr ""
+
+#: ../src/mainWindow.py:659
+msgid ""
+"- A system user owns this directory and removing it may impair the system's "
+"integrity."
+msgstr ""
+
+#: ../src/mainWindow.py:661
+msgid "- This directory doesn't exist or isn't writable."
+msgstr ""
+
+#: ../src/mainWindow.py:663
+#, python-format
+msgid "- The user '%s' doesn't own this directory."
+msgstr ""
+
+#: ../src/mainWindow.py:670
+#, python-format
+msgid ""
+"<b>There are currently processes running that are owned by '%s'!</b>  This "
+"user is probably still logged in.  "
+msgstr ""
+"<b>Mae yna prosesau'n redeg sy'n perchen i '%s'!</b>  Mae'n debyg bod y "
+"defnyddiwr yma wedi'i mewngofnodi o hyd."
+
+#: ../src/mainWindow.py:672
+#, python-format
+msgid "Do you really want to remove the user '%s'?"
+msgstr "A ydych yn sicr eich bod am ddileu'r defnyddiwr '%s'?"
+
+#: ../src/mainWindow.py:681
+#, fuzzy, python-format
+msgid "Delete %(user)s's home directory ('%(homedir)s') and temporary files."
+msgstr "Dileu cyfeiriadur cartref ('%s') %s a ffeiliau dros dro."
+
+#: ../src/mainWindow.py:683
+#, fuzzy, python-format
+msgid ""
+"Delete %(user)s's home directory ('%(homedir)s'), mail spool "
+"('%(mailspool)s') and temporary files."
+msgstr ""
+"Dileu cyfeiriadur cartref ('%s') a sbŵl post ('%s') %s a ffeiliau dros dro."
+
+#: ../src/mainWindow.py:690
+#, fuzzy, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for this reason:\n"
+"%(reason)s"
+msgstr ""
+"Fe wna i ddim dileu cyfeiriadur cartref ('%s') %s achos:\n"
+"%s"
+
+#: ../src/mainWindow.py:691
+#, fuzzy, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for these reasons:\n"
+"%(reason)s"
+msgstr ""
+"Fe wna i ddim dileu cyfeiriadur cartref ('%s') %s achos:\n"
+"%s"
+
+#: ../src/mainWindow.py:764
+#, python-format
+msgid "Are you sure you want to delete the group '%s'?"
+msgstr "A ydych yn sicr eich bod am ddileu'r grŵp '%s'?"
+
+#: ../src/system-config-users.py:38
+msgid "system-config-users requires a currently running X server."
+msgstr "Mae angen gweinydd X sy'n rhedeg yn gyfredol ar system-config-users."
+
+#: ../src/userGroupCheck.py:51 ../src/userProperties.py:295
+msgid "Please enter a user name."
+msgstr "Rhowch enw defnyddiwr."
+
+#: ../src/userGroupCheck.py:52
+#, python-format
+msgid "The user name must not exceed %d characters."
+msgstr ""
+
+#: ../src/userGroupCheck.py:53
+#, python-format
+msgid ""
+"The user name '%s' contains whitespace. Please do not include whitespace in "
+"the user name."
+msgstr ""
+"Mae'r enw defnyddiwr '%s' yn cynnwys gofod gwyn.  Peidiwch â chynnwys gofod "
+"gwyn yn yr enw defnyddiwr."
+
+#: ../src/userGroupCheck.py:54
+#, python-format
+msgid ""
+"The user name '%s' contains a dollar sign which is not at the end. Please "
+"use dollar signs only at the end of user names to indicate Samba machine "
+"accounts."
+msgstr ""
+
+#: ../src/userGroupCheck.py:55
+#, python-format
+msgid ""
+"The user name '%s' contains a trailing dollar sign. This should only be used "
+"for Samba machine accounts, using this for a normal user account can cause "
+"problems with some software. Is the account in question a Samba machine "
+"account?"
+msgstr ""
+
+#: ../src/userGroupCheck.py:56
+#, fuzzy, python-format
+msgid ""
+"The user name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr ""
+"Mae'r enw '%s' yn cynnwys nodau annilys.  Defnyddiwch nodau UTF-8 yn unig os "
+"gwelwch yn dda."
+
+#: ../src/userGroupCheck.py:57
+msgid ""
+"Using all numbers as the user name can cause confusion about whether the "
+"user name or numerical user id is meant. Do you really want to use a "
+"numerical-only user name?"
+msgstr ""
+
+#: ../src/userGroupCheck.py:62
+#, python-format
+msgid "The group name must not exceed %d characters."
+msgstr ""
+
+#: ../src/userGroupCheck.py:63
+#, python-format
+msgid ""
+"The group name '%s' contains whitespace. Please do not include whitespace in "
+"the group name."
+msgstr ""
+"Mae'r enw grŵp '%s' yn cynnwys gofod gwyn.  Peidiwch â chynnwys gofod gwyn "
+"yn yr enw grŵp."
+
+#: ../src/userGroupCheck.py:64
+#, fuzzy, python-format
+msgid ""
+"The group name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr ""
+"Mae'r enw '%s' yn cynnwys nodau annilys.  Defnyddiwch nodau UTF-8 yn unig os "
+"gwelwch yn dda."
+
+#: ../src/userGroupCheck.py:65
+msgid ""
+"Using all numbers as the group name can cause confusion about whether the "
+"group name or numerical group id is meant. Do you really want to use a "
+"numerical-only group name?"
+msgstr ""
+
+#: ../src/userGroupCheck.py:144
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Mae'r cyfrinair yn cynnwys nodau annilys.  Defnyddiwch nodau ASCII yn unig "
+"os gwelwch yn dda."
+
+#: ../src/userGroupCheck.py:167
+#, python-format
+msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
+msgstr ""
+
+#. have to check for whitespace for gecos, since whitespace is ok
+#: ../src/userGroupCheck.py:178
+#, python-format
+msgid ""
+"The name '%s' contains invalid characters.  Please use only UTF-8 characters."
+msgstr ""
+"Mae'r enw '%s' yn cynnwys nodau annilys.  Defnyddiwch nodau UTF-8 yn unig os "
+"gwelwch yn dda."
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: ../src/userGroupCheck.py:186
+#, python-format
+msgid "The name '%s' contains a colon.  Please do not use colons in the name."
+msgstr ""
+"Mae'r enw '%s' yn cynnwys gorwahannod.  Peidiwch â defnyddio gorwahannodau "
+"yn yr enw os gwelwch yn dda."
+
+#: ../src/userGroupCheck.py:195
+msgid "Please enter a home directory."
+msgstr "Rhowch gyfeiriadur cartref os gwelwch yn dda."
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: ../src/userGroupCheck.py:202
+#, python-format
+msgid ""
+"The directory name '%s' contains a colon.  Please do not use colons in the "
+"directory name."
+msgstr ""
+"Mae'r enw cyfeiriadur '%s' yn cynnwys gorwahannod.  Peidiwch â defnyddio "
+"gorwahannodau yn yr enw cyfeiriadur os gwelwch yn dda."
+
+#: ../src/userGroupCheck.py:211
+#, fuzzy, python-format
+msgid ""
+"The directory name '%s' doesn't begin with a '/'. Please specify an absolute "
+"path for the home directory."
+msgstr ""
+"Mae'r enw cyfeiriadur '%s' yn cynnwys gorwahannod.  Peidiwch â defnyddio "
+"gorwahannodau yn yr enw cyfeiriadur os gwelwch yn dda."
+
+#: ../src/userGroupCheck.py:217
+#, fuzzy, python-format
+msgid ""
+"The directory name '%s' has path components which are too long. Please use "
+"shorter path components for the home directory."
+msgstr ""
+"Mae'r enw cyfeiriadur '%s' yn cynnwys gorwahannod.  Peidiwch â defnyddio "
+"gorwahannodau yn yr enw cyfeiriadur os gwelwch yn dda."
+
+#: ../src/userGroupCheck.py:224
+#, fuzzy, python-format
+msgid ""
+"The directory name '%s' contains empty path components. Please specify a "
+"home directory name without empty path components."
+msgstr ""
+"Mae'r enw cyfeiriadur '%s' yn cynnwys gorwahannod.  Peidiwch â defnyddio "
+"gorwahannodau yn yr enw cyfeiriadur os gwelwch yn dda."
+
+#: ../src/userGroupCheck.py:233
+#, fuzzy, python-format
+msgid ""
+"The directory name '%s' contains illegal path components. Please don't use "
+"'.' or '..' as path components for the home directory."
+msgstr ""
+"Mae'r enw cyfeiriadur '%s' yn cynnwys gorwahannod.  Peidiwch â defnyddio "
+"gorwahannodau yn yr enw cyfeiriadur os gwelwch yn dda."
+
+#: ../src/userGroupCheck.py:241
+#, python-format
+msgid ""
+"The directory name '%s' cannot be created ('%s' is not writable). Please "
+"chose a writable location."
+msgstr ""
+
+#: ../src/userProperties.py:108 ../src/userWindow.py:82
+msgid "User"
+msgstr "D_efnyddiwr"
+
+#: ../src/userProperties.py:108 ../src/userWindow.py:82
+msgid "Staff"
+msgstr "Staff"
+
+#: ../src/userProperties.py:109 ../src/userWindow.py:83
+msgid "System Administrator"
+msgstr "Gweinyddwr y system"
+
+#: ../src/userProperties.py:139
+msgid "Primary Group:"
+msgstr "Grŵp Cynradd:"
+
+#: ../src/userProperties.py:314
+#, fuzzy, python-format
+msgid "The user '%s' already exists. Please choose a different name."
+msgstr "Mae'r flwyddyn y tu hwnt i'r amrediad.  Dewiswch flwyddyn wahanol."
+
+#: ../src/userProperties.py:336 ../src/userWindow.py:193
+msgid "Please enter a password for the user."
+msgstr "Rhowch gyfrinair ar gyfer y defnyddiwr."
+
+#: ../src/userProperties.py:345 ../src/userWindow.py:201
+msgid "The password is too short.  Please use at least 6 characters."
+msgstr "Mae'r cyfrinair rhy fyr.  Defnyddiwch o leiaf 6 nod."
+
+#: ../src/userProperties.py:354
+msgid "Passwords do not match."
+msgstr "Nid yw'r cyfrineiriau'n cydweddu."
+
+#: ../src/userProperties.py:431
+msgid "Please select at least one group for the user."
+msgstr "Dewiswch o leiaf un grŵp ar gyfer y defnyddiwr."
+
+#: ../src/userProperties.py:450
+msgid "Please specify the month that the password will expire."
+msgstr "Penodwch y mis y daw'r cyfrinair i ben."
+
+#: ../src/userProperties.py:458
+msgid "Please specify the day that the password will expire."
+msgstr "Penodwch y diwrnod y daw'r cyfrinair i ben."
+
+#: ../src/userProperties.py:466
+msgid "Please specify the year that the password will expire."
+msgstr "Penodwch y flwyddyn y daw'r cyfrinair i ben."
+
+#. mktime will throw an OverflowError if the year is too big.
+#: ../src/userProperties.py:482
+msgid "The year is out of range.  Please select a different year."
+msgstr "Mae'r flwyddyn y tu hwnt i'r amrediad.  Dewiswch flwyddyn wahanol."
+
+#: ../src/userProperties.py:511
+msgid ""
+"Please specify the number of days before changing the password is allowed."
+msgstr "Penodwch y nifer o ddyddiau cyn y caniateir newid y cyfrinair."
+
+#: ../src/userProperties.py:513
+#, fuzzy, python-format
+msgid ""
+"The number of days before changing the password is allowed must be between "
+"%(min)d and %(max)d."
+msgstr "Penodwch y nifer o ddyddiau cyn y caniateir newid y cyfrinair."
+
+#: ../src/userProperties.py:518
+msgid ""
+"Please specify the number of days before changing the password is required."
+msgstr "Penodwch y nifer o ddyddiau cyn y mynnir newid y cyfrinair."
+
+#: ../src/userProperties.py:520
+#, fuzzy, python-format
+msgid ""
+"The number of days before changing the password is required must be between "
+"%(min)d and %(max)d."
+msgstr "Penodwch y nifer o ddyddiau cyn y mynnir newid y cyfrinair."
+
+#: ../src/userProperties.py:524
+msgid ""
+"Please specify the number of days to warn the user before changing the "
+"password is required."
+msgstr ""
+"Penodwch y nifer o ddyddiau i rybuddio'r defnyddiwr cyn y mynnir newid y "
+"cyfrinair."
+
+#: ../src/userProperties.py:526
+#, fuzzy, python-format
+msgid ""
+"The number of days to warn the user before changing the password is required "
+"must be between %(min)d and %(max)d."
+msgstr ""
+"Penodwch y nifer o ddyddiau i rybuddio'r defnyddiwr cyn y mynnir newid y "
+"cyfrinair."
+
+#: ../src/userProperties.py:532
+msgid ""
+"Please specify the number of days until the user account becomes inactive "
+"after password has expired."
+msgstr ""
+"Penodwch y nifer o ddyddiau cyn i'r gyfrif ddefnyddiwr ddod yn anweithredol "
+"wedi i'r cyfrinair ddod i ben."
+
+#: ../src/userProperties.py:534
+#, fuzzy, python-format
+msgid ""
+"The number of days until the user account becomes inactive after the "
+"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
+"means the account won't become inactive."
+msgstr ""
+"Penodwch y nifer o ddyddiau cyn i'r gyfrif ddefnyddiwr ddod yn anweithredol "
+"wedi i'r cyfrinair ddod i ben."
+
+#: ../src/userProperties.py:592
+#, python-format
+msgid ""
+"Unlocking the user failed because:\n"
+"\n"
+"%(errmsg)s"
+msgstr ""
+
+#: ../src/userProperties.py:595
+msgid "Unlocking the user failed due to an unknown reason."
+msgstr ""
+
+#: ../src/userWindow.py:210
+msgid "The passwords do not match."
+msgstr "Nid yw'r cyfrineiriau'n cydweddu."
+
+#. The user name is blank, so complain
+#: ../src/userWindow.py:241
+msgid "Please specify a user name"
+msgstr "Penodwch enw defnyddiwr"
+
+#. This user already exists, so complain
+#: ../src/userWindow.py:249
+#, python-format
+msgid "An account with username '%s' already exists."
+msgstr "Mae cyfrif â'r enw defnyddiwr '%s' yn bodoli eisioes."
+
+#. This uid already exists, so complain
+#: ../src/userWindow.py:285
+#, python-format
+msgid "The uid %s is already in use."
+msgstr "Mae'r uid %s mewn defnydd yn barod."
+
+#: ../src/userWindow.py:303
+#, python-format
+msgid ""
+"Error finding suitable user id not exceeding maximum value of %(maxid)s."
+msgstr ""
+
+#: ../src/userWindow.py:315
+msgid ""
+"Creating a user with a UID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+msgstr ""
+"Ni argymellir creu defnyddiwr â UID llai na 500. A ydych yn sicr eich bod am "
+"wneud hyn?"
+
+#: ../src/userWindow.py:345
+#, fuzzy
+msgid "A group with this gid already exists.  What would you like to do?"
+msgstr "Mae grŵp â'r enw yma'n bodoli'n barod.  Beth hoffech ei wneud?"
+
+#: ../src/userWindow.py:347
+msgid "A group with this name already exists.  What would you like to do?"
+msgstr "Mae grŵp â'r enw yma'n bodoli'n barod.  Beth hoffech ei wneud?"
+
+#: ../src/userWindow.py:351
+msgid "Add to the existing group"
+msgstr "Ychwanegu at y grŵp cyfredol"
+
+#: ../src/userWindow.py:352
+msgid "Add to the 'users' group"
+msgstr "Ychwanegu at y grŵp 'defnyddwyr'"
+
+#. Uh-oh.  It looks like /etc/group and /etc/gshadow are out of sync.  Give up and quit.
+#: ../src/userWindow.py:434
+msgid ""
+"The system group database cannot be read.  This problem is most likely "
+"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
+"now."
+msgstr ""
+"Ni ellir darllen y cronfa ddata grwpiau system.  Mwy na thebyg achoswyd y "
+"broblem yma gan anghydweddiad rhwng /etc/passwd ac /etc/shadow.  Bydd y "
+"raglen yn gorffen nawr."
+
+#.
+#. * Translatable strings file generated by Glade.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#: system-config-users.gladestrings:7
+msgid "Add New Group"
+msgstr ""
+
+#: system-config-users.gladestrings:8 system-config-users.gladestrings:38
+msgid "_Group Name:"
+msgstr "Enw _Grŵp:"
+
+#: system-config-users.gladestrings:9 system-config-users.gladestrings:74
+#, fuzzy
+msgid "Specify g_roup ID manually:"
+msgstr "_Penodi dynodiad grŵp â llaw"
+
+#: system-config-users.gladestrings:10
+msgid "User Properties"
+msgstr "Priodweddau Defnyddiwr"
+
+#: system-config-users.gladestrings:11
+msgid "User _Name:"
+msgstr "Enw _Defnyddiwr:"
+
+#: system-config-users.gladestrings:12 system-config-users.gladestrings:64
+msgid "_Full Name:"
+msgstr "Enw _Llawn:"
+
+#: system-config-users.gladestrings:13
+msgid "Pass_word:"
+msgstr ""
+
+#: system-config-users.gladestrings:14 system-config-users.gladestrings:66
+msgid "Confir_m Password:"
+msgstr ""
+
+#: system-config-users.gladestrings:15 system-config-users.gladestrings:67
+msgid "_Login Shell:"
+msgstr "_Plisgyn Mewngofnodi:"
+
+#: system-config-users.gladestrings:16
+msgid "_Home Directory:"
+msgstr "_Cyfeiriadur Cartref:"
+
+#: system-config-users.gladestrings:17 system-config-users.gladestrings:68
+msgid "S_ELinux role:"
+msgstr "Swyddogaeth _SELinux:"
+
+#: system-config-users.gladestrings:18
+msgid "_User Data"
+msgstr "Data _Defnyddiwr"
+
+#: system-config-users.gladestrings:19
+msgid "_Enable account expiration"
+msgstr "_Galluogi darfod y cyfrif"
+
+#: system-config-users.gladestrings:20
+msgid "Account e_xpires (YYYY-MM-DD):"
+msgstr ""
+
+#: system-config-users.gladestrings:21 system-config-users.gladestrings:29
+msgid "     "
+msgstr "     "
+
+#: system-config-users.gladestrings:22 system-config-users.gladestrings:23
+msgid "-"
+msgstr "-"
+
+#: system-config-users.gladestrings:24
+msgid "_Local password is locked"
+msgstr "Cyfrinair _lleol ar glo"
+
+#: system-config-users.gladestrings:25
+msgid "_Account Info"
+msgstr "Gwybodaeth _Cyfrif"
+
+#: system-config-users.gladestrings:26
+msgid "User last changed password on:"
+msgstr "Newidodd y defnyddiwr y cyfrinair ddiwethaf ar:"
+
+#: system-config-users.gladestrings:27
+msgid "Unknown"
+msgstr "Anhysbys"
+
+#: system-config-users.gladestrings:28
+msgid "_Enable password expiration"
+msgstr "_Galluogi darfod cyfrinair"
+
+#: system-config-users.gladestrings:30
+msgid "Days before change a_llowed:"
+msgstr "_Nifer o ddyddiau cyn caniateir newid:"
+
+#: system-config-users.gladestrings:31
+msgid "Days before change _required:"
+msgstr "Nifer o ddyddiau cyn _mynnir newid:"
+
+#: system-config-users.gladestrings:32
+msgid "Days _warning before change:"
+msgstr "Dyddiau o _rybudd cyn newid:"
+
+#: system-config-users.gladestrings:33
+msgid "Days before account _inactive:"
+msgstr "Dyddiau cyn cyfrif _anweithredol:"
+
+#: system-config-users.gladestrings:34
+msgid "_Password Info"
+msgstr "Gwybodaeth _Gyfrinair"
+
+#: system-config-users.gladestrings:35
+msgid "Select the groups that the user will be a member of:"
+msgstr "Dewiswch y grŵpiau y bydd y defnyddiwr yn aelod ohonynt:"
+
+#: system-config-users.gladestrings:36
+msgid "_Groups"
+msgstr "_Grŵpiau"
+
+#: system-config-users.gladestrings:37
+msgid "Group Properties"
+msgstr "Priodweddau Grŵp"
+
+#: system-config-users.gladestrings:39
+msgid "Group _Data"
+msgstr "_Data Grŵp"
+
+#: system-config-users.gladestrings:40
+msgid "Select the users to join this group:"
+msgstr "Dewiswch y defnyddwyr i ymuno â'r grŵp yma:"
+
+#: system-config-users.gladestrings:41
+msgid "Group _Users"
+msgstr "_Defnyddwyr Grŵp"
+
+#: system-config-users.gladestrings:42
+msgid "User Manager"
+msgstr "Rheolwr Defnyddwyr"
+
+#: system-config-users.gladestrings:43
+msgid "_File"
+msgstr "_Ffeil"
+
+#: system-config-users.gladestrings:44 system-config-users.gladestrings:49
+msgid "Add _User"
+msgstr "Ychwanegu _Defnyddiwr"
+
+#: system-config-users.gladestrings:45 system-config-users.gladestrings:50
+msgid "Add _Group"
+msgstr "Ychwanegu _Grŵp"
+
+#: system-config-users.gladestrings:46
+msgid "_Edit"
+msgstr "_Golygu"
+
+#: system-config-users.gladestrings:47 system-config-users.gladestrings:57
+msgid "_Help"
+msgstr "_Cymorth"
+
+#: system-config-users.gladestrings:48
+msgid "_Contents"
+msgstr "_Cynnwys"
+
+#: system-config-users.gladestrings:51
+msgid "Edit properties"
+msgstr "Golygu priodweddau"
+
+#: system-config-users.gladestrings:52
+msgid "Proper_ties"
+msgstr "Priod_weddau"
+
+#: system-config-users.gladestrings:53
+msgid "_Delete"
+msgstr "_Dileu"
+
+#: system-config-users.gladestrings:54
+msgid "Reload"
+msgstr "Ail-lwytho"
+
+#: system-config-users.gladestrings:55
+msgid "_Refresh"
+msgstr "_Ailfywio"
+
+#: system-config-users.gladestrings:56
+msgid "Help"
+msgstr "Cymorth"
+
+#: system-config-users.gladestrings:58
+msgid "Sea_rch filter:"
+msgstr ""
+
+#: system-config-users.gladestrings:59
+msgid "_Apply filter"
+msgstr "_Gweithredoli hidlen"
+
+#: system-config-users.gladestrings:60
+msgid "U_sers"
+msgstr "D_efnyddwyr"
+
+#: system-config-users.gladestrings:61
+msgid "Gr_oups"
+msgstr "G_rŵpiau"
+
+#: system-config-users.gladestrings:62
+msgid "Add New User"
+msgstr ""
+
+#: system-config-users.gladestrings:63
+msgid "_User Name:"
+msgstr "_Enw Defnyddiwr:"
+
+#: system-config-users.gladestrings:65
+msgid "_Password:"
+msgstr "+Cyfrinair:"
+
+#: system-config-users.gladestrings:69
+msgid "Create _home directory"
+msgstr "_Creu cyfeiriadur cartref"
+
+#: system-config-users.gladestrings:70
+msgid "    "
+msgstr "    "
+
+#: system-config-users.gladestrings:71
+msgid "Home _Directory:"
+msgstr "_Cyfeiriadur Cartref:"
+
+#: system-config-users.gladestrings:72
+msgid "Create a private _group for the user"
+msgstr "Creu grŵp _preifat ar gyfer y defnyddiwr"
+
+#: system-config-users.gladestrings:73
+#, fuzzy
+msgid "Specify u_ser ID manually:"
+msgstr "_Penodi dynodiad defnyddiwr â llaw"
+
+#: system-config-users.gladestrings:75
+msgid "About system-config-users"
+msgstr ""
+
+#: system-config-users.gladestrings:76
+msgid "<b>system-config-users</b>"
+msgstr ""
+
+#: system-config-users.gladestrings:77
+msgid "Version @VERSION@"
+msgstr ""
+
+#: system-config-users.gladestrings:78
+msgid "Copyright (c) 2001 - 2005 Red Hat, Inc."
+msgstr ""
+
+#: system-config-users.gladestrings:79
+msgid "This software is distributed under the GNU General Public License."
+msgstr ""
+
+#: system-config-users.gladestrings:80
+msgid "Preferences"
+msgstr "Hoffterau"
+
+#: system-config-users.gladestrings:81
+msgid "_Hide system users and groups"
+msgstr "_Cuddio defnyddwyr a grwpiau system"
+
+#: system-config-users.gladestrings:82
+msgid "<b>User and Group Lists</b>"
+msgstr ""
+
+#: system-config-users.gladestrings:83
+msgid ""
+"Ensure that a new user gets a higher UID than all existing users, if not set "
+"manually."
+msgstr ""
+
+#: system-config-users.gladestrings:84
+msgid "Automatically assigned _UID must be highest"
+msgstr ""
+
+#: system-config-users.gladestrings:85
+msgid ""
+"Ensure that a new group gets a higher GID than all existing groups, if not "
+"set manually."
+msgstr ""
+
+#: system-config-users.gladestrings:86
+msgid "Automatically assigned _GID must be highest"
+msgstr ""
+
+#: system-config-users.gladestrings:87
+#, fuzzy
+msgid "Prefer that private group GID is the _same as UID"
+msgstr "Creu grŵp _preifat ar gyfer y defnyddiwr"
+
+#: system-config-users.gladestrings:88
+msgid "<b>New Users</b>"
+msgstr "<b>Defnyddiwr Newydd</b>"
+
+#: system-config-users.gladestrings:90
+msgid "Copyright © 2001-2007 Red Hat, Inc."
+msgstr ""
+
+#: system-config-users.gladestrings:91
+msgid "Manages users and groups on your system."
+msgstr ""
+
+#: system-config-users.gladestrings:92
+msgid ""
+"system-config-users is free software; you can redistribute it and/or modify "
+"it under the terms of the GNU General Public License as published by the "
+"Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version.\n"
+"\n"
+"system-config-users is distributed in the hope that it will be useful, but "
+"WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"system-config-users; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+msgstr ""
+
+#: system-config-users.gladestrings:97
+msgid "translator-credits"
+msgstr ""
+
+#~ msgid "Con_firm Password:"
+#~ msgstr "_Gwirio Cyfrinair:"
+
+#, fuzzy
+#~ msgid "C_onfirm Password:"
+#~ msgstr "_Gwirio Cyfrinair:"
+
+#~ msgid "Create New Group"
+#~ msgstr "Creu Grŵp Newydd"
+
+#~ msgid "New User"
+#~ msgstr "Defnyddiwr Newydd"
+
+#~ msgid "New Group"
+#~ msgstr "Grŵp Newydd"
+
+#~ msgid "Delete"
+#~ msgstr "Dileu"
+
+#~ msgid "Create New User"
+#~ msgstr "Creu Defnyddiwr Newydd"
+
+#~ msgid "Logon Information Required"
+#~ msgstr "Angen Gwybodaeth Mewngofnodi"
+
+#~ msgid "_Search filter:"
+#~ msgstr "_Hidlen chwilio:"
+
+#~ msgid "Account _expires (YYYY-MM-DD):"
+#~ msgstr "_Darfoda'r gyfrif (BBBB-MM-DD):"
+
+#~ msgid "<b>User and Group List</b>"
+#~ msgstr "<b>Rhestr Defnyddwyr a Grŵpiau</b>"
+
+#~ msgid "Help is not available."
+#~ msgstr "Nid oes cymorth ar gael."
+
+#, fuzzy
+#~ msgid "_Specify group ID manually:"
+#~ msgstr "_Penodi dynodiad grŵp â llaw"
+
+#~ msgid "G_ID:"
+#~ msgstr "G_ID:"
+
+#~ msgid "U_ID:"
+#~ msgstr "_UID:"
+
+#~ msgid ""
+#~ "The user database cannot be read.  This problem is most likely caused by "
+#~ "a mismatch between /etc/passwd and /etc/shadow or /etc/group and /etc/"
+#~ "gshadow.  The program will exit now."
+#~ msgstr ""
+#~ "Ni ellir darllen y cronfa ddata defnyddwyr.  Mwy na thebyg achoswyd y "
+#~ "broblem yma gan anghydweddiad rhwng /etc/passwd neu /etc/group ac /etc/"
+#~ "gshadow.  Bydd y raglen yn gorffen nawr."
+
+#~ msgid ""
+#~ "I won't delete %s's home directory ('%s') due to these reasons:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Fe wna i ddim dileu cyfeiriadur cartref ('%s') %s achos:\n"
+#~ "%s"

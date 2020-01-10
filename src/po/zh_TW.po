@@ -1,0 +1,959 @@
+# translation of system-config-users.master.po to Traditional Chinese
+# translation of system-config-users.master.po to
+# Translation of system-config-users to Chinese (traditional)
+# Copyright (C) 2002 Red Hat Inc.
+#
+# Ben Wu <hpwu@redhat.com>, 2002,2003, 2004.
+# Chester Cheng <ccheng@redhat.com>, 2004, 2005, 2006.
+# Leah Liu <weliu@redhat.com>, 2005.
+# Waika Liu <wliu@redhat.com>, 2005.
+# Walter Cheuk <wwycheuk@netvigator.com>, 2006.
+# Terry Chuang <tchuang@redhat.com>, 2008, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-users.master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-20 16:08+0200\n"
+"PO-Revision-Date: 2009-12-08 11:16+1000\n"
+"Last-Translator: Terry Chuang <tchuang@redhat.com>\n"
+"Language-Team: Traditional Chinese <zh@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.1\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../src/groupProperties.py:108 ../src/groupWindow.py:108
+#: ../src/userGroupCheck.py:61
+msgid "Please enter a group name."
+msgstr "請輸入群組名稱。"
+
+#: ../src/groupProperties.py:122
+#, python-format
+msgid "The group '%s' already exists. Please choose a different name."
+msgstr "群組「%s」已存在。請選擇不同的名稱。"
+
+#: ../src/groupProperties.py:164 ../src/mainWindow.py:760
+#, python-format
+msgid "You cannot remove user '%s' from their primary group."
+msgstr "不能將使用者「%s」從他們的主群組移除。"
+
+#: ../src/groupWindow.py:116
+#, python-format
+msgid "A group with name '%s' already exists."
+msgstr "已有名為「%s」的群組。"
+
+#. This uid already exists, so complain
+#. This (chosen) gid already exists, so complain
+#: ../src/groupWindow.py:131 ../src/userWindow.py:292
+#, python-format
+msgid "The gid %s is already in use."
+msgstr "gid %s 已被使用。"
+
+#: ../src/groupWindow.py:138
+msgid ""
+"Creating a group with a GID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+msgstr "不建議建立使用小於 500 的 GID 的群組。確定要如此做嗎？"
+
+#: ../src/groupWindow.py:160 ../src/userWindow.py:305
+#, python-format
+msgid ""
+"Error finding suitable group id not exceeding maximum value of %(maxid)s."
+msgstr ""
+
+#: ../src/mainWindow.py:80
+msgid ""
+"The help viewer could not be found. To be able to view help you need to "
+"install the 'yelp' package."
+msgstr "無法找到協助檢視程式。若要檢視協助的話，您必須安裝「yelp」這個套件。"
+
+#: ../src/mainWindow.py:95
+#, python-format
+msgid "No helper application for the URL '%(url)s can be found."
+msgstr "找不到 '%(url)s 這個 URL 的協助應用程式。"
+
+#: ../src/mainWindow.py:120
+#, python-format
+msgid "Error saving settings to %s"
+msgstr "儲存設定至 %s 時發生錯誤"
+
+#: ../src/mainWindow.py:130
+msgid "Users and Groups"
+msgstr "使用者與群組"
+
+#: ../src/mainWindow.py:131
+msgid "Add or remove users and groups"
+msgstr "新增或移除使用者與群組"
+
+#: ../src/mainWindow.py:156
+msgid "User Name"
+msgstr "使用者名稱"
+
+#: ../src/mainWindow.py:160
+msgid "User ID"
+msgstr "使用者 ID"
+
+#: ../src/mainWindow.py:164
+msgid "Primary Group"
+msgstr "主群組"
+
+#: ../src/mainWindow.py:168
+msgid "Full Name"
+msgstr "全名"
+
+#: ../src/mainWindow.py:172
+msgid "Login Shell"
+msgstr "登入的 Shell"
+
+#: ../src/mainWindow.py:176
+msgid "Home Directory"
+msgstr "家目錄"
+
+#: ../src/mainWindow.py:194
+msgid "Group Name"
+msgstr "群組名稱"
+
+#: ../src/mainWindow.py:198
+msgid "Group ID"
+msgstr "群組 ID"
+
+#: ../src/mainWindow.py:202
+msgid "Group Members"
+msgstr "群組成員"
+
+#: ../src/mainWindow.py:436
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the user '%(user)s'.\n"
+"\n"
+msgstr ""
+"我無法找到使用者「%(user)s」的數字 ID。\n"
+"\n"
+
+#: ../src/mainWindow.py:437
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these users:\n"
+"%(users)s\n"
+"\n"
+msgstr ""
+"我無法找到這些使用者的數字 ID：\n"
+"%(users)s\n"
+"\n"
+
+#: ../src/mainWindow.py:448
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the group '%(group)s'.\n"
+"\n"
+msgstr ""
+"我無法找到群組「%(group)s」的數字 ID。\n"
+"\n"
+
+#: ../src/mainWindow.py:449
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these groups:\n"
+"%(groups)s\n"
+"\n"
+msgstr ""
+"我無法找到這些群組的數字 ID：\n"
+"%(groups)s\n"
+"\n"
+
+#: ../src/mainWindow.py:459
+#, python-format
+msgid ""
+"%(msg_users)s%(msg_groups)s\n"
+"In most cases this is caused by inconsistencies in the user or group "
+"database, e.g. between the files /etc/passwd, /etc/group and their "
+"respective shadow files /etc/shadow and /etc/gshadow. I will try to ignore "
+"these entries and continue for now, but please fix these inconsistencies as "
+"soon as possible."
+msgstr ""
+"%(msg_users)s%(msg_groups)s\n"
+"在大部分情況下，這是因為用戶或群組資料庫中不一致所造成的（例如檔案 /etc/"
+"passwd、/etc/group 和它們相應的 shadow 檔案 /etc/shadow 與 /etc/gshadow 之間"
+"的不一致性）。我希望略過這些項目並繼續進行，不過請儘快修正這些不一致性。"
+
+#: ../src/mainWindow.py:578 system-config-users.gladestrings:89
+msgid "system-config-users"
+msgstr "system-config-users"
+
+#: ../src/mainWindow.py:588
+#, python-format
+msgid "Copyright © %(years)s %(holder)s <%(email)s>"
+msgstr "版權所有 © %(years)s %(holder)s <%(email)s>"
+
+#: ../src/mainWindow.py:590
+#, python-format
+msgid "Copyright © %(years)s %(holder)s"
+msgstr "版權所有 © %(years)s %(holder)s"
+
+#: ../src/mainWindow.py:598
+#, python-format
+msgid "%(author)s <%(email)s>"
+msgstr "%(author)s <%(email)s>"
+
+#: ../src/mainWindow.py:600
+#, python-format
+msgid "%(author)s"
+msgstr "%(author)s"
+
+#: ../src/mainWindow.py:648
+msgid "Deleting the root user is not allowed."
+msgstr "不允許刪除 root 使用者。"
+
+#: ../src/mainWindow.py:657
+msgid "- An installed software package contains this directory."
+msgstr "- 某個已安裝的軟體套件包含此目錄。"
+
+#: ../src/mainWindow.py:659
+msgid ""
+"- A system user owns this directory and removing it may impair the system's "
+"integrity."
+msgstr "- 某個系統使用者擁有此目錄，移除它可能會損及系統的整全性。"
+
+#: ../src/mainWindow.py:661
+msgid "- This directory doesn't exist or isn't writable."
+msgstr "- 沒有這目錄，或不可寫入。"
+
+#: ../src/mainWindow.py:663
+#, python-format
+msgid "- The user '%s' doesn't own this directory."
+msgstr "- 這個目錄並不由「%s」使用者擁有。"
+
+#: ../src/mainWindow.py:670
+#, python-format
+msgid ""
+"<b>There are currently processes running that are owned by '%s'!</b>  This "
+"user is probably still logged in.  "
+msgstr ""
+"<b>目前還有「%s」使用者所擁有的進程正在執行！</b>該使用者可能還在登入狀態中。"
+
+#: ../src/mainWindow.py:672
+#, python-format
+msgid "Do you really want to remove the user '%s'?"
+msgstr "確定要刪除「%s」使用者嗎？"
+
+#: ../src/mainWindow.py:681
+#, python-format
+msgid "Delete %(user)s's home directory ('%(homedir)s') and temporary files."
+msgstr "刪除 %(user)s 的家目錄（「%(homedir)s」）與暫存檔案。"
+
+#: ../src/mainWindow.py:683
+#, python-format
+msgid ""
+"Delete %(user)s's home directory ('%(homedir)s'), mail spool "
+"('%(mailspool)s') and temporary files."
+msgstr ""
+"刪除 %(user)s 的家目錄（「%(homedir)s」）、郵件 spool（「'%(mailspool)s」）及"
+"暫存檔案。"
+
+#: ../src/mainWindow.py:690
+#, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for this reason:\n"
+"%(reason)s"
+msgstr ""
+"因為以下原因不會刪除 %(user)s 的家目錄（「%(homedir)s」）：\n"
+"%(reason)s"
+
+#: ../src/mainWindow.py:691
+#, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for these reasons:\n"
+"%(reason)s"
+msgstr ""
+"因為以下原因不會刪除 %(user)s 的家目錄（「%(homedir)s」）：\n"
+"%(reason)s"
+
+#: ../src/mainWindow.py:764
+#, python-format
+msgid "Are you sure you want to delete the group '%s'?"
+msgstr "確定要刪除「%s」群組嗎？"
+
+#: ../src/system-config-users.py:38
+msgid "system-config-users requires a currently running X server."
+msgstr "system-config-users 需要正在執行的 X 伺服器。"
+
+#: ../src/userGroupCheck.py:51 ../src/userProperties.py:295
+msgid "Please enter a user name."
+msgstr "請輸入使用者名稱。"
+
+#: ../src/userGroupCheck.py:52
+#, python-format
+msgid "The user name must not exceed %d characters."
+msgstr "使用者名稱必須少於 %d 個字元。"
+
+#: ../src/userGroupCheck.py:53
+#, python-format
+msgid ""
+"The user name '%s' contains whitespace. Please do not include whitespace in "
+"the user name."
+msgstr "使用者名稱「%s」含有空白字元。請勿在使用者名稱中包含空白字元。"
+
+#: ../src/userGroupCheck.py:54
+#, python-format
+msgid ""
+"The user name '%s' contains a dollar sign which is not at the end. Please "
+"use dollar signs only at the end of user names to indicate Samba machine "
+"accounts."
+msgstr ""
+"使用者名稱「%s」含有不在結尾的貨幣符號（$）。請只在使用者名稱結尾才使用金錢符"
+"號，來表明 Samba 機器帳號。"
+
+#: ../src/userGroupCheck.py:55
+#, python-format
+msgid ""
+"The user name '%s' contains a trailing dollar sign. This should only be used "
+"for Samba machine accounts, using this for a normal user account can cause "
+"problems with some software. Is the account in question a Samba machine "
+"account?"
+msgstr ""
+
+#: ../src/userGroupCheck.py:56
+#, python-format
+msgid ""
+"The user name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr "使用者名稱「%(name)s」在位置 %(position)d 含有無效的字元。"
+
+#: ../src/userGroupCheck.py:57
+msgid ""
+"Using all numbers as the user name can cause confusion about whether the "
+"user name or numerical user id is meant. Do you really want to use a "
+"numerical-only user name?"
+msgstr ""
+"使用全部數字為使用者名稱，會使人無法知道正在使用的是使用者名稱還是使用者的數"
+"字 ID 。是否確定使用只有數字的使用者名稱？"
+
+#: ../src/userGroupCheck.py:62
+#, python-format
+msgid "The group name must not exceed %d characters."
+msgstr "群組名稱必須少於 %d 個字元。"
+
+#: ../src/userGroupCheck.py:63
+#, python-format
+msgid ""
+"The group name '%s' contains whitespace. Please do not include whitespace in "
+"the group name."
+msgstr "群組名稱「%s」包含空白字元，請勿在群組名稱中包含空白字元。"
+
+#: ../src/userGroupCheck.py:64
+#, python-format
+msgid ""
+"The group name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr "群組名稱「%(name)s」在位置 %(position)d 含有無效的字元。"
+
+#: ../src/userGroupCheck.py:65
+msgid ""
+"Using all numbers as the group name can cause confusion about whether the "
+"group name or numerical group id is meant. Do you really want to use a "
+"numerical-only group name?"
+msgstr ""
+"使用全部數字為群組名稱，會使人無法知道正在使用的是群組名稱還是群組的數字 "
+"ID 。是否確定使用只有數字的群組名稱？"
+
+#: ../src/userGroupCheck.py:144
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr "密碼中含有無效的字元。在此您只能使用 ASCII 字元。"
+
+#: ../src/userGroupCheck.py:167
+#, python-format
+msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
+msgstr "您所選擇的密碼安全性過低：%s。請問您是否還是要使用這組密碼？"
+
+#. have to check for whitespace for gecos, since whitespace is ok
+#: ../src/userGroupCheck.py:178
+#, python-format
+msgid ""
+"The name '%s' contains invalid characters.  Please use only UTF-8 characters."
+msgstr "名稱「%s」含有無效的字元。在此您只能使用 UTF-8 字元。"
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: ../src/userGroupCheck.py:186
+#, python-format
+msgid "The name '%s' contains a colon.  Please do not use colons in the name."
+msgstr "名稱「%s」含有冒號。請勿在名稱裡使用冒號。"
+
+#: ../src/userGroupCheck.py:195
+msgid "Please enter a home directory."
+msgstr "請輸入家目錄。"
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: ../src/userGroupCheck.py:202
+#, python-format
+msgid ""
+"The directory name '%s' contains a colon.  Please do not use colons in the "
+"directory name."
+msgstr "目錄名稱「%s」含有冒號。請勿在目錄名稱裡使用冒號。"
+
+#: ../src/userGroupCheck.py:211
+#, python-format
+msgid ""
+"The directory name '%s' doesn't begin with a '/'. Please specify an absolute "
+"path for the home directory."
+msgstr "目錄名稱「%s」不以「/」作為起始。請為家目錄指定一個絕對路徑。"
+
+#: ../src/userGroupCheck.py:217
+#, python-format
+msgid ""
+"The directory name '%s' has path components which are too long. Please use "
+"shorter path components for the home directory."
+msgstr "目錄名稱「%s」含有過長的路徑元件。請使用較短的家目錄路徑元件。"
+
+#: ../src/userGroupCheck.py:224
+#, python-format
+msgid ""
+"The directory name '%s' contains empty path components. Please specify a "
+"home directory name without empty path components."
+msgstr "目錄名稱「%s」含有一個空的路徑。請指定一個不含空路徑元件的家目錄名稱。"
+
+#: ../src/userGroupCheck.py:233
+#, python-format
+msgid ""
+"The directory name '%s' contains illegal path components. Please don't use "
+"'.' or '..' as path components for the home directory."
+msgstr ""
+"目錄名稱「%s」含有不合規定的路徑元件。請勿在家目錄名稱裡使用「.」或「..」。"
+
+#: ../src/userGroupCheck.py:241
+#, python-format
+msgid ""
+"The directory name '%s' cannot be created ('%s' is not writable). Please "
+"chose a writable location."
+msgstr ""
+
+#: ../src/userProperties.py:108 ../src/userWindow.py:82
+msgid "User"
+msgstr "使用者"
+
+#: ../src/userProperties.py:108 ../src/userWindow.py:82
+msgid "Staff"
+msgstr "職員"
+
+#: ../src/userProperties.py:109 ../src/userWindow.py:83
+msgid "System Administrator"
+msgstr "系統管理員"
+
+#: ../src/userProperties.py:139
+msgid "Primary Group:"
+msgstr "主群組："
+
+#: ../src/userProperties.py:314
+#, python-format
+msgid "The user '%s' already exists. Please choose a different name."
+msgstr "用戶「%s」已存在。請選擇不同的名稱。"
+
+#: ../src/userProperties.py:336 ../src/userWindow.py:193
+msgid "Please enter a password for the user."
+msgstr "請為這個使用者輸入密碼。"
+
+#: ../src/userProperties.py:345 ../src/userWindow.py:201
+msgid "The password is too short.  Please use at least 6 characters."
+msgstr "密碼太短了，至少您得使用 6 個字元。"
+
+#: ../src/userProperties.py:354
+msgid "Passwords do not match."
+msgstr "密碼不符。"
+
+#: ../src/userProperties.py:431
+msgid "Please select at least one group for the user."
+msgstr "請為這個使用者至少選取一個群組。"
+
+#: ../src/userProperties.py:450
+msgid "Please specify the month that the password will expire."
+msgstr "請指定密碼失效的月份。"
+
+#: ../src/userProperties.py:458
+msgid "Please specify the day that the password will expire."
+msgstr "請指定密碼失效的日期。"
+
+#: ../src/userProperties.py:466
+msgid "Please specify the year that the password will expire."
+msgstr "請指定密碼失效的年份。"
+
+#. mktime will throw an OverflowError if the year is too big.
+#: ../src/userProperties.py:482
+msgid "The year is out of range.  Please select a different year."
+msgstr "您指定的年份超過系統的範圍，請選擇另一個年份。"
+
+#: ../src/userProperties.py:511
+msgid ""
+"Please specify the number of days before changing the password is allowed."
+msgstr "請指定在允許改變密碼前的天數。"
+
+#: ../src/userProperties.py:513
+#, python-format
+msgid ""
+"The number of days before changing the password is allowed must be between "
+"%(min)d and %(max)d."
+msgstr "允許改變密碼前的天數必須介於 %(min)d 和 %(max)d 之間。"
+
+#: ../src/userProperties.py:518
+msgid ""
+"Please specify the number of days before changing the password is required."
+msgstr "請指定在需要改變密碼前的天數。"
+
+#: ../src/userProperties.py:520
+#, python-format
+msgid ""
+"The number of days before changing the password is required must be between "
+"%(min)d and %(max)d."
+msgstr "密碼需要改變前的天數必須介於 %(min)d 和 %(max)d 之間。"
+
+#: ../src/userProperties.py:524
+msgid ""
+"Please specify the number of days to warn the user before changing the "
+"password is required."
+msgstr "請指定需要變更密碼前要警告使用者的天數。"
+
+#: ../src/userProperties.py:526
+#, python-format
+msgid ""
+"The number of days to warn the user before changing the password is required "
+"must be between %(min)d and %(max)d."
+msgstr "需要變更密碼前要警告使用者的天數必須介於 %(min)d 和 %(max)d 之間。"
+
+#: ../src/userProperties.py:532
+msgid ""
+"Please specify the number of days until the user account becomes inactive "
+"after password has expired."
+msgstr "請指定在密碼過期後使用者帳號失效的天數。"
+
+#: ../src/userProperties.py:534
+#, python-format
+msgid ""
+"The number of days until the user account becomes inactive after the "
+"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
+"means the account won't become inactive."
+msgstr ""
+"在密碼過期後使用者帳號失效的天數必須介於 %(min)d 和 %(max)d 之間。將它設為 "
+"-1 即代表該帳號不會失效。"
+
+#: ../src/userProperties.py:592
+#, python-format
+msgid ""
+"Unlocking the user failed because:\n"
+"\n"
+"%(errmsg)s"
+msgstr ""
+
+#: ../src/userProperties.py:595
+msgid "Unlocking the user failed due to an unknown reason."
+msgstr ""
+
+#: ../src/userWindow.py:210
+msgid "The passwords do not match."
+msgstr "密碼不符。"
+
+#. The user name is blank, so complain
+#: ../src/userWindow.py:241
+msgid "Please specify a user name"
+msgstr "請指定使用者名稱"
+
+#. This user already exists, so complain
+#: ../src/userWindow.py:249
+#, python-format
+msgid "An account with username '%s' already exists."
+msgstr "已有名稱為「%s」的使用者帳號。"
+
+#. This uid already exists, so complain
+#: ../src/userWindow.py:285
+#, python-format
+msgid "The uid %s is already in use."
+msgstr "uid %s 已經被使用了。"
+
+#: ../src/userWindow.py:303
+#, python-format
+msgid ""
+"Error finding suitable user id not exceeding maximum value of %(maxid)s."
+msgstr ""
+
+#: ../src/userWindow.py:315
+msgid ""
+"Creating a user with a UID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+msgstr "不建議建立使用小於 500 的 UID 的使用者。確定要如此做嗎？"
+
+#: ../src/userWindow.py:345
+msgid "A group with this gid already exists.  What would you like to do?"
+msgstr "已有使用此 gid 的群組。請問您希望怎麼做？"
+
+#: ../src/userWindow.py:347
+msgid "A group with this name already exists.  What would you like to do?"
+msgstr "已有使用這個名稱的群組。要怎樣做？"
+
+#: ../src/userWindow.py:351
+msgid "Add to the existing group"
+msgstr "加入至現有的群組"
+
+#: ../src/userWindow.py:352
+msgid "Add to the 'users' group"
+msgstr "加入至「使用者」群組"
+
+#. Uh-oh.  It looks like /etc/group and /etc/gshadow are out of sync.  Give up and quit.
+#: ../src/userWindow.py:434
+msgid ""
+"The system group database cannot be read.  This problem is most likely "
+"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
+"now."
+msgstr ""
+"無法讀取系統中的群組資料庫，似乎是 /etc/group 與 /etc/gshadow 檔案不一致。程"
+"式即將關閉。"
+
+#.
+#. * Translatable strings file generated by Glade.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#: system-config-users.gladestrings:7
+msgid "Add New Group"
+msgstr ""
+
+#: system-config-users.gladestrings:8 system-config-users.gladestrings:38
+msgid "_Group Name:"
+msgstr "群組名稱(_G)："
+
+#: system-config-users.gladestrings:9 system-config-users.gladestrings:74
+msgid "Specify g_roup ID manually:"
+msgstr "手動指定群組 ID(_r)："
+
+#: system-config-users.gladestrings:10
+msgid "User Properties"
+msgstr "使用者屬性"
+
+#: system-config-users.gladestrings:11
+msgid "User _Name:"
+msgstr "使用者名稱(_N)："
+
+#: system-config-users.gladestrings:12 system-config-users.gladestrings:64
+msgid "_Full Name:"
+msgstr "全名(_F)："
+
+#: system-config-users.gladestrings:13
+msgid "Pass_word:"
+msgstr ""
+
+#: system-config-users.gladestrings:14 system-config-users.gladestrings:66
+msgid "Confir_m Password:"
+msgstr ""
+
+#: system-config-users.gladestrings:15 system-config-users.gladestrings:67
+msgid "_Login Shell:"
+msgstr "登入的 Shell(_L)："
+
+#: system-config-users.gladestrings:16
+msgid "_Home Directory:"
+msgstr "家目錄(_H)："
+
+#: system-config-users.gladestrings:17 system-config-users.gladestrings:68
+msgid "S_ELinux role:"
+msgstr "S_ELinux 角色："
+
+#: system-config-users.gladestrings:18
+msgid "_User Data"
+msgstr "使用者資料(_U)"
+
+#: system-config-users.gladestrings:19
+msgid "_Enable account expiration"
+msgstr "啟用帳號有效期限限制(_E)"
+
+#: system-config-users.gladestrings:20
+msgid "Account e_xpires (YYYY-MM-DD):"
+msgstr "帳號的有效期限會於（YYYY-MM-DD）到期："
+
+#: system-config-users.gladestrings:21 system-config-users.gladestrings:29
+msgid "     "
+msgstr "     "
+
+#: system-config-users.gladestrings:22 system-config-users.gladestrings:23
+msgid "-"
+msgstr "-"
+
+#: system-config-users.gladestrings:24
+msgid "_Local password is locked"
+msgstr "本機密碼已鎖定(_L)"
+
+#: system-config-users.gladestrings:25
+msgid "_Account Info"
+msgstr "帳號資訊(_A)"
+
+#: system-config-users.gladestrings:26
+msgid "User last changed password on:"
+msgstr "使用者上次更改密碼時間："
+
+#: system-config-users.gladestrings:27
+msgid "Unknown"
+msgstr "不明"
+
+#: system-config-users.gladestrings:28
+msgid "_Enable password expiration"
+msgstr "啟用密碼有效期限限制(_E)"
+
+#: system-config-users.gladestrings:30
+msgid "Days before change a_llowed:"
+msgstr "允許改變前的天數(_L)："
+
+#: system-config-users.gladestrings:31
+msgid "Days before change _required:"
+msgstr "需要更改前的天數(_R)："
+
+#: system-config-users.gladestrings:32
+msgid "Days _warning before change:"
+msgstr "更改前的警告天數(_W)："
+
+#: system-config-users.gladestrings:33
+msgid "Days before account _inactive:"
+msgstr "帳號失效前的天數(_I)："
+
+#: system-config-users.gladestrings:34
+msgid "_Password Info"
+msgstr "密碼資訊(_P)"
+
+#: system-config-users.gladestrings:35
+msgid "Select the groups that the user will be a member of:"
+msgstr "選取這個使用者將隸屬的群組："
+
+#: system-config-users.gladestrings:36
+msgid "_Groups"
+msgstr "群組(_G)"
+
+#: system-config-users.gladestrings:37
+msgid "Group Properties"
+msgstr "群組屬性"
+
+#: system-config-users.gladestrings:39
+msgid "Group _Data"
+msgstr "群組資料(_D)"
+
+#: system-config-users.gladestrings:40
+msgid "Select the users to join this group:"
+msgstr "選取要加入這個群組的使用者："
+
+#: system-config-users.gladestrings:41
+msgid "Group _Users"
+msgstr "群組使用者(_U)"
+
+#: system-config-users.gladestrings:42
+msgid "User Manager"
+msgstr "使用者管理員"
+
+#: system-config-users.gladestrings:43
+msgid "_File"
+msgstr "檔案(_F)"
+
+#: system-config-users.gladestrings:44 system-config-users.gladestrings:49
+msgid "Add _User"
+msgstr "新增使用者(_U)"
+
+#: system-config-users.gladestrings:45 system-config-users.gladestrings:50
+msgid "Add _Group"
+msgstr "新增群組(_G)"
+
+#: system-config-users.gladestrings:46
+msgid "_Edit"
+msgstr "離開(_E)"
+
+#: system-config-users.gladestrings:47 system-config-users.gladestrings:57
+msgid "_Help"
+msgstr "說明(_H)"
+
+#: system-config-users.gladestrings:48
+msgid "_Contents"
+msgstr "內容(_C)"
+
+#: system-config-users.gladestrings:51
+msgid "Edit properties"
+msgstr "編輯屬性"
+
+#: system-config-users.gladestrings:52
+msgid "Proper_ties"
+msgstr "屬性(_T)"
+
+#: system-config-users.gladestrings:53
+msgid "_Delete"
+msgstr "刪除(_D)"
+
+#: system-config-users.gladestrings:54
+msgid "Reload"
+msgstr "重新載入"
+
+#: system-config-users.gladestrings:55
+msgid "_Refresh"
+msgstr "重新整理(_R)"
+
+#: system-config-users.gladestrings:56
+msgid "Help"
+msgstr "說明"
+
+#: system-config-users.gladestrings:58
+msgid "Sea_rch filter:"
+msgstr "搜尋過濾器(_r)："
+
+#: system-config-users.gladestrings:59
+msgid "_Apply filter"
+msgstr "套用過濾器(_A)"
+
+#: system-config-users.gladestrings:60
+msgid "U_sers"
+msgstr "使用者(_S)"
+
+#: system-config-users.gladestrings:61
+msgid "Gr_oups"
+msgstr "群組(_O)"
+
+#: system-config-users.gladestrings:62
+msgid "Add New User"
+msgstr ""
+
+#: system-config-users.gladestrings:63
+msgid "_User Name:"
+msgstr "使用者名稱(_U)："
+
+#: system-config-users.gladestrings:65
+msgid "_Password:"
+msgstr "密碼(_P)："
+
+#: system-config-users.gladestrings:69
+msgid "Create _home directory"
+msgstr "建立家目錄(_H)"
+
+#: system-config-users.gladestrings:70
+msgid "    "
+msgstr "    "
+
+#: system-config-users.gladestrings:71
+msgid "Home _Directory:"
+msgstr "家目錄(_D)："
+
+#: system-config-users.gladestrings:72
+msgid "Create a private _group for the user"
+msgstr "為這個使用者建立私有群組(_G)"
+
+#: system-config-users.gladestrings:73
+msgid "Specify u_ser ID manually:"
+msgstr "手動指定使用者 ID(_s)："
+
+#: system-config-users.gladestrings:75
+msgid "About system-config-users"
+msgstr "關於 system-config-users"
+
+#: system-config-users.gladestrings:76
+msgid "<b>system-config-users</b>"
+msgstr "<b>system-config-users</b>"
+
+#: system-config-users.gladestrings:77
+msgid "Version @VERSION@"
+msgstr "版本 @VERSION@"
+
+#: system-config-users.gladestrings:78
+msgid "Copyright (c) 2001 - 2005 Red Hat, Inc."
+msgstr "版權所有（c）2001 - 2005 Red Hat, Inc."
+
+#: system-config-users.gladestrings:79
+msgid "This software is distributed under the GNU General Public License."
+msgstr "本軟體依據 GNU 一般公眾授權（General Public License）散佈。"
+
+#: system-config-users.gladestrings:80
+msgid "Preferences"
+msgstr "偏好設定"
+
+#: system-config-users.gladestrings:81
+msgid "_Hide system users and groups"
+msgstr "隱藏系統使用者與群組(_H)"
+
+#: system-config-users.gladestrings:82
+msgid "<b>User and Group Lists</b>"
+msgstr "<b>用戶和群組清單</b>"
+
+#: system-config-users.gladestrings:83
+msgid ""
+"Ensure that a new user gets a higher UID than all existing users, if not set "
+"manually."
+msgstr "如不手動設定的話，確保新使用者的 UID 比所有現有使用者的高。"
+
+#: system-config-users.gladestrings:84
+msgid "Automatically assigned _UID must be highest"
+msgstr "自動指派的 _UID 必須是最高的(_U)"
+
+#: system-config-users.gladestrings:85
+msgid ""
+"Ensure that a new group gets a higher GID than all existing groups, if not "
+"set manually."
+msgstr "如不手動設定的話，確保新群組的 GID 比所有現有群組的 GID 高。"
+
+#: system-config-users.gladestrings:86
+msgid "Automatically assigned _GID must be highest"
+msgstr "自動指派的 _GID 必須是最高的(_G)"
+
+#: system-config-users.gladestrings:87
+msgid "Prefer that private group GID is the _same as UID"
+msgstr "私有群組的 GID 最好和 UID 一樣(_s)"
+
+#: system-config-users.gladestrings:88
+msgid "<b>New Users</b>"
+msgstr "<b>新使用者</b>"
+
+#: system-config-users.gladestrings:90
+msgid "Copyright © 2001-2007 Red Hat, Inc."
+msgstr "版權所有 © 2001-2007 Red Hat, Inc."
+
+#: system-config-users.gladestrings:91
+msgid "Manages users and groups on your system."
+msgstr "管理您系統上的用戶與群組。"
+
+#: system-config-users.gladestrings:92
+msgid ""
+"system-config-users is free software; you can redistribute it and/or modify "
+"it under the terms of the GNU General Public License as published by the "
+"Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version.\n"
+"\n"
+"system-config-users is distributed in the hope that it will be useful, but "
+"WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"system-config-users; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+msgstr ""
+"system-config-users 為免費軟體；您可將它重新發佈與 / 或將它進行修改，您必須同"
+"意自由軟件基金會（Free Software Foundation）的 GNU 通用公共許可證（GNU "
+"General Public License）的授權條款；許可證版本 2 或任何更新的版本。\n"
+"\n"
+"system-config-users 是為了方便社群使用，不過卻不含任何使用上的保証；甚至沒有"
+"任何適銷性上以及特定使用對象的保証。欲取得更多詳細資訊請參閱 GNU 通用公共許可"
+"證。\n"
+"\n"
+"當您取得 system-config-users 時，您應同時取得了一份 GNU 通用公共許可證。若沒"
+"有的話，請聯絡自由軟件基金會（Free Software Foundation, Inc., 51 Franklin "
+"Street, Fifth Floor, Boston, MA 02110-130159 USA）。"
+
+#: system-config-users.gladestrings:97
+msgid "translator-credits"
+msgstr "譯者姓名：莊佳儒（tchuang@redhat.com）"
+
+#~ msgid "C_onfirm Password:"
+#~ msgstr "密碼確認(_o)："
+
+#~ msgid "Create New Group"
+#~ msgstr "建立新群組"
+
+#~ msgid "New User"
+#~ msgstr "新使用者"
+
+#~ msgid "New Group"
+#~ msgstr "新群組"
+
+#~ msgid "Delete"
+#~ msgstr "刪除"
+
+#~ msgid "Create New User"
+#~ msgstr "建立新使用者"

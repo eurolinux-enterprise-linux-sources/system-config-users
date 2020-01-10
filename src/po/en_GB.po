@@ -1,0 +1,1021 @@
+# English (British) translation.
+# Copyright (C) 2007 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Abigail Brady <morwen@evilmagic.org>, Bastien Nocera <hadess@hadess.net>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-20 16:08+0200\n"
+"PO-Revision-Date: 2007-06-13 16:15+0000\n"
+"Last-Translator: Abigail Brady <morwen@evilmagic.org>\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;;\n"
+
+#: ../src/groupProperties.py:108 ../src/groupWindow.py:108
+#: ../src/userGroupCheck.py:61
+msgid "Please enter a group name."
+msgstr "Please enter a group name."
+
+#: ../src/groupProperties.py:122
+#, fuzzy, python-format
+msgid "The group '%s' already exists. Please choose a different name."
+msgstr "The year is out of range.  Please select a different year."
+
+#: ../src/groupProperties.py:164 ../src/mainWindow.py:760
+#, python-format
+msgid "You cannot remove user '%s' from their primary group."
+msgstr "You cannot remove user '%s' from their primary group."
+
+#: ../src/groupWindow.py:116
+#, python-format
+msgid "A group with name '%s' already exists."
+msgstr "A group with name '%s' already exists."
+
+#. This uid already exists, so complain
+#. This (chosen) gid already exists, so complain
+#: ../src/groupWindow.py:131 ../src/userWindow.py:292
+#, python-format
+msgid "The gid %s is already in use."
+msgstr "The gid %s is already in use."
+
+#: ../src/groupWindow.py:138
+msgid ""
+"Creating a group with a GID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+msgstr ""
+"Creating a group with a GID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+
+#: ../src/groupWindow.py:160 ../src/userWindow.py:305
+#, python-format
+msgid ""
+"Error finding suitable group id not exceeding maximum value of %(maxid)s."
+msgstr ""
+
+#: ../src/mainWindow.py:80
+msgid ""
+"The help viewer could not be found. To be able to view help you need to "
+"install the 'yelp' package."
+msgstr ""
+
+#: ../src/mainWindow.py:95
+#, python-format
+msgid "No helper application for the URL '%(url)s can be found."
+msgstr ""
+
+#: ../src/mainWindow.py:120
+#, python-format
+msgid "Error saving settings to %s"
+msgstr "Error saving settings to %s"
+
+#: ../src/mainWindow.py:130
+msgid "Users and Groups"
+msgstr "Users and Groups"
+
+#: ../src/mainWindow.py:131
+msgid "Add or remove users and groups"
+msgstr "Add or remove users and groups"
+
+#: ../src/mainWindow.py:156
+msgid "User Name"
+msgstr "User Name"
+
+#: ../src/mainWindow.py:160
+msgid "User ID"
+msgstr "User ID"
+
+#: ../src/mainWindow.py:164
+msgid "Primary Group"
+msgstr "Primary Group"
+
+#: ../src/mainWindow.py:168
+msgid "Full Name"
+msgstr "Full Name"
+
+#: ../src/mainWindow.py:172
+msgid "Login Shell"
+msgstr "Login Shell"
+
+#: ../src/mainWindow.py:176
+msgid "Home Directory"
+msgstr "Home Directory"
+
+#: ../src/mainWindow.py:194
+msgid "Group Name"
+msgstr "Group Name"
+
+#: ../src/mainWindow.py:198
+msgid "Group ID"
+msgstr "Group ID"
+
+#: ../src/mainWindow.py:202
+msgid "Group Members"
+msgstr "Group Members"
+
+#: ../src/mainWindow.py:436
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the user '%(user)s'.\n"
+"\n"
+msgstr ""
+
+#: ../src/mainWindow.py:437
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these users:\n"
+"%(users)s\n"
+"\n"
+msgstr ""
+
+#: ../src/mainWindow.py:448
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the group '%(group)s'.\n"
+"\n"
+msgstr ""
+
+#: ../src/mainWindow.py:449
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these groups:\n"
+"%(groups)s\n"
+"\n"
+msgstr ""
+
+#: ../src/mainWindow.py:459
+#, python-format
+msgid ""
+"%(msg_users)s%(msg_groups)s\n"
+"In most cases this is caused by inconsistencies in the user or group "
+"database, e.g. between the files /etc/passwd, /etc/group and their "
+"respective shadow files /etc/shadow and /etc/gshadow. I will try to ignore "
+"these entries and continue for now, but please fix these inconsistencies as "
+"soon as possible."
+msgstr ""
+
+#: ../src/mainWindow.py:578 system-config-users.gladestrings:89
+#, fuzzy
+msgid "system-config-users"
+msgstr "About system-config-users"
+
+#: ../src/mainWindow.py:588
+#, python-format
+msgid "Copyright © %(years)s %(holder)s <%(email)s>"
+msgstr "Copyright © %(years)s %(holder)s <%(email)s>"
+
+#: ../src/mainWindow.py:590
+#, python-format
+msgid "Copyright © %(years)s %(holder)s"
+msgstr "Copyright © %(years)s %(holder)s"
+
+#: ../src/mainWindow.py:598
+#, python-format
+msgid "%(author)s <%(email)s>"
+msgstr ""
+
+#: ../src/mainWindow.py:600
+#, python-format
+msgid "%(author)s"
+msgstr ""
+
+#: ../src/mainWindow.py:648
+msgid "Deleting the root user is not allowed."
+msgstr "Deleting the root user is not allowed."
+
+#: ../src/mainWindow.py:657
+msgid "- An installed software package contains this directory."
+msgstr "- An installed software package contains this directory."
+
+#: ../src/mainWindow.py:659
+msgid ""
+"- A system user owns this directory and removing it may impair the system's "
+"integrity."
+msgstr ""
+"- A system user owns this directory and removing it may impair the system's "
+"integrity."
+
+#: ../src/mainWindow.py:661
+msgid "- This directory doesn't exist or isn't writable."
+msgstr "- This directory doesn't exist or isn't writable."
+
+#: ../src/mainWindow.py:663
+#, python-format
+msgid "- The user '%s' doesn't own this directory."
+msgstr "- The user '%s' doesn't own this directory."
+
+#: ../src/mainWindow.py:670
+#, python-format
+msgid ""
+"<b>There are currently processes running that are owned by '%s'!</b>  This "
+"user is probably still logged in.  "
+msgstr ""
+"<b>There are currently processes running that are owned by '%s'!</b>  This "
+"user is probably still logged in.  "
+
+#: ../src/mainWindow.py:672
+#, python-format
+msgid "Do you really want to remove the user '%s'?"
+msgstr "Do you really want to remove the user '%s'?"
+
+#: ../src/mainWindow.py:681
+#, python-format
+msgid "Delete %(user)s's home directory ('%(homedir)s') and temporary files."
+msgstr "Delete %(user)s's home directory ('%(homedir)s') and temporary files."
+
+#: ../src/mainWindow.py:683
+#, python-format
+msgid ""
+"Delete %(user)s's home directory ('%(homedir)s'), mail spool "
+"('%(mailspool)s') and temporary files."
+msgstr ""
+"Delete %(user)s's home directory ('%(homedir)s'), mail spool "
+"('%(mailspool)s') and temporary files."
+
+#: ../src/mainWindow.py:690
+#, fuzzy, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for this reason:\n"
+"%(reason)s"
+msgstr ""
+"I will not delete %(user)s's home directory ('%(homedir)s') for this "
+"reason:\n"
+"%(reason)s"
+
+#: ../src/mainWindow.py:691
+#, fuzzy, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for these reasons:\n"
+"%(reason)s"
+msgstr ""
+"I will not delete %(user)s's home directory ('%(homedir)s') for this "
+"reason:\n"
+"%(reason)s"
+
+#: ../src/mainWindow.py:764
+#, python-format
+msgid "Are you sure you want to delete the group '%s'?"
+msgstr "Are you sure you want to delete the group '%s'?"
+
+#: ../src/system-config-users.py:38
+msgid "system-config-users requires a currently running X server."
+msgstr "system-config-users requires a currently running X server."
+
+#: ../src/userGroupCheck.py:51 ../src/userProperties.py:295
+msgid "Please enter a user name."
+msgstr "Please enter a user name."
+
+#: ../src/userGroupCheck.py:52
+#, python-format
+msgid "The user name must not exceed %d characters."
+msgstr "The user name must not exceed %d characters."
+
+#: ../src/userGroupCheck.py:53
+#, python-format
+msgid ""
+"The user name '%s' contains whitespace. Please do not include whitespace in "
+"the user name."
+msgstr ""
+"The user name '%s' contains whitespace. Please do not include whitespace in "
+"the user name."
+
+#: ../src/userGroupCheck.py:54
+#, python-format
+msgid ""
+"The user name '%s' contains a dollar sign which is not at the end. Please "
+"use dollar signs only at the end of user names to indicate Samba machine "
+"accounts."
+msgstr ""
+"The user name '%s' contains a dollar sign which is not at the end. Please "
+"use dollar signs only at the end of user names to indicate Samba machine "
+"accounts."
+
+#: ../src/userGroupCheck.py:55
+#, python-format
+msgid ""
+"The user name '%s' contains a trailing dollar sign. This should only be used "
+"for Samba machine accounts, using this for a normal user account can cause "
+"problems with some software. Is the account in question a Samba machine "
+"account?"
+msgstr ""
+
+#: ../src/userGroupCheck.py:56
+#, python-format
+msgid ""
+"The user name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr ""
+"The user name '%(name)s' contains an invalid character at position "
+"%(position)d."
+
+#: ../src/userGroupCheck.py:57
+msgid ""
+"Using all numbers as the user name can cause confusion about whether the "
+"user name or numerical user id is meant. Do you really want to use a "
+"numerical-only user name?"
+msgstr ""
+"Using all numbers as the user name can cause confusion about whether the "
+"user name or numerical user id is meant. Do you really want to use a "
+"numerical-only user name?"
+
+#: ../src/userGroupCheck.py:62
+#, python-format
+msgid "The group name must not exceed %d characters."
+msgstr "The group name must not exceed %d characters."
+
+#: ../src/userGroupCheck.py:63
+#, python-format
+msgid ""
+"The group name '%s' contains whitespace. Please do not include whitespace in "
+"the group name."
+msgstr ""
+"The group name '%s' contains whitespace. Please do not include whitespace in "
+"the group name."
+
+#: ../src/userGroupCheck.py:64
+#, python-format
+msgid ""
+"The group name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr ""
+"The group name '%(name)s' contains an invalid character at position "
+"%(position)d."
+
+#: ../src/userGroupCheck.py:65
+msgid ""
+"Using all numbers as the group name can cause confusion about whether the "
+"group name or numerical group id is meant. Do you really want to use a "
+"numerical-only group name?"
+msgstr ""
+"Using all numbers as the group name can cause confusion about whether the "
+"group name or numerical group id is meant. Do you really want to use a "
+"numerical-only group name?"
+
+#: ../src/userGroupCheck.py:144
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"The password contains invalid characters.  Please use only ASCII characters."
+
+#: ../src/userGroupCheck.py:167
+#, python-format
+msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
+msgstr "The chosen password is too weak: %s. Do you want to use it anyway?"
+
+#. have to check for whitespace for gecos, since whitespace is ok
+#: ../src/userGroupCheck.py:178
+#, python-format
+msgid ""
+"The name '%s' contains invalid characters.  Please use only UTF-8 characters."
+msgstr ""
+"The name '%s' contains invalid characters.  Please use only UTF-8 characters."
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: ../src/userGroupCheck.py:186
+#, python-format
+msgid "The name '%s' contains a colon.  Please do not use colons in the name."
+msgstr "The name '%s' contains a colon.  Please do not use colons in the name."
+
+#: ../src/userGroupCheck.py:195
+msgid "Please enter a home directory."
+msgstr "Please enter a home directory."
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: ../src/userGroupCheck.py:202
+#, python-format
+msgid ""
+"The directory name '%s' contains a colon.  Please do not use colons in the "
+"directory name."
+msgstr ""
+"The directory name '%s' contains a colon.  Please do not use colons in the "
+"directory name."
+
+#: ../src/userGroupCheck.py:211
+#, fuzzy, python-format
+msgid ""
+"The directory name '%s' doesn't begin with a '/'. Please specify an absolute "
+"path for the home directory."
+msgstr ""
+"The directory name '%s' contains a colon.  Please do not use colons in the "
+"directory name."
+
+#: ../src/userGroupCheck.py:217
+#, fuzzy, python-format
+msgid ""
+"The directory name '%s' has path components which are too long. Please use "
+"shorter path components for the home directory."
+msgstr ""
+"The directory name '%s' contains a colon.  Please do not use colons in the "
+"directory name."
+
+#: ../src/userGroupCheck.py:224
+#, fuzzy, python-format
+msgid ""
+"The directory name '%s' contains empty path components. Please specify a "
+"home directory name without empty path components."
+msgstr ""
+"The directory name '%s' contains a colon.  Please do not use colons in the "
+"directory name."
+
+#: ../src/userGroupCheck.py:233
+#, fuzzy, python-format
+msgid ""
+"The directory name '%s' contains illegal path components. Please don't use "
+"'.' or '..' as path components for the home directory."
+msgstr ""
+"The directory name '%s' contains a colon.  Please do not use colons in the "
+"directory name."
+
+#: ../src/userGroupCheck.py:241
+#, python-format
+msgid ""
+"The directory name '%s' cannot be created ('%s' is not writable). Please "
+"chose a writable location."
+msgstr ""
+
+#: ../src/userProperties.py:108 ../src/userWindow.py:82
+msgid "User"
+msgstr "User"
+
+#: ../src/userProperties.py:108 ../src/userWindow.py:82
+msgid "Staff"
+msgstr "Staff"
+
+#: ../src/userProperties.py:109 ../src/userWindow.py:83
+msgid "System Administrator"
+msgstr "System Administrator"
+
+#: ../src/userProperties.py:139
+msgid "Primary Group:"
+msgstr "Primary Group:"
+
+#: ../src/userProperties.py:314
+#, fuzzy, python-format
+msgid "The user '%s' already exists. Please choose a different name."
+msgstr "The year is out of range.  Please select a different year."
+
+#: ../src/userProperties.py:336 ../src/userWindow.py:193
+msgid "Please enter a password for the user."
+msgstr "Please enter a password for the user."
+
+#: ../src/userProperties.py:345 ../src/userWindow.py:201
+msgid "The password is too short.  Please use at least 6 characters."
+msgstr "The password is too short.  Please use at least 6 characters."
+
+#: ../src/userProperties.py:354
+msgid "Passwords do not match."
+msgstr "Passwords do not match."
+
+#: ../src/userProperties.py:431
+msgid "Please select at least one group for the user."
+msgstr "Please select at least one group for the user."
+
+#: ../src/userProperties.py:450
+msgid "Please specify the month that the password will expire."
+msgstr "Please specify the month that the password will expire."
+
+#: ../src/userProperties.py:458
+msgid "Please specify the day that the password will expire."
+msgstr "Please specify the day that the password will expire."
+
+#: ../src/userProperties.py:466
+msgid "Please specify the year that the password will expire."
+msgstr "Please specify the year that the password will expire."
+
+#. mktime will throw an OverflowError if the year is too big.
+#: ../src/userProperties.py:482
+msgid "The year is out of range.  Please select a different year."
+msgstr "The year is out of range.  Please select a different year."
+
+#: ../src/userProperties.py:511
+msgid ""
+"Please specify the number of days before changing the password is allowed."
+msgstr ""
+"Please specify the number of days before changing the password is allowed."
+
+#: ../src/userProperties.py:513
+#, fuzzy, python-format
+msgid ""
+"The number of days before changing the password is allowed must be between "
+"%(min)d and %(max)d."
+msgstr ""
+"Please specify the number of days before changing the password is allowed."
+
+#: ../src/userProperties.py:518
+msgid ""
+"Please specify the number of days before changing the password is required."
+msgstr ""
+"Please specify the number of days before changing the password is required."
+
+#: ../src/userProperties.py:520
+#, fuzzy, python-format
+msgid ""
+"The number of days before changing the password is required must be between "
+"%(min)d and %(max)d."
+msgstr ""
+"Please specify the number of days before changing the password is required."
+
+#: ../src/userProperties.py:524
+msgid ""
+"Please specify the number of days to warn the user before changing the "
+"password is required."
+msgstr ""
+"Please specify the number of days to warn the user before changing the "
+"password is required."
+
+#: ../src/userProperties.py:526
+#, fuzzy, python-format
+msgid ""
+"The number of days to warn the user before changing the password is required "
+"must be between %(min)d and %(max)d."
+msgstr ""
+"Please specify the number of days to warn the user before changing the "
+"password is required."
+
+#: ../src/userProperties.py:532
+msgid ""
+"Please specify the number of days until the user account becomes inactive "
+"after password has expired."
+msgstr ""
+"Please specify the number of days until the user account becomes inactive "
+"after password has expired."
+
+#: ../src/userProperties.py:534
+#, fuzzy, python-format
+msgid ""
+"The number of days until the user account becomes inactive after the "
+"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
+"means the account won't become inactive."
+msgstr ""
+"Please specify the number of days until the user account becomes inactive "
+"after password has expired."
+
+#: ../src/userProperties.py:592
+#, python-format
+msgid ""
+"Unlocking the user failed because:\n"
+"\n"
+"%(errmsg)s"
+msgstr ""
+
+#: ../src/userProperties.py:595
+msgid "Unlocking the user failed due to an unknown reason."
+msgstr ""
+
+#: ../src/userWindow.py:210
+msgid "The passwords do not match."
+msgstr "The passwords do not match."
+
+#. The user name is blank, so complain
+#: ../src/userWindow.py:241
+msgid "Please specify a user name"
+msgstr "Please specify a user name"
+
+#. This user already exists, so complain
+#: ../src/userWindow.py:249
+#, python-format
+msgid "An account with username '%s' already exists."
+msgstr "An account with username '%s' already exists."
+
+#. This uid already exists, so complain
+#: ../src/userWindow.py:285
+#, python-format
+msgid "The uid %s is already in use."
+msgstr "The uid %s is already in use."
+
+#: ../src/userWindow.py:303
+#, python-format
+msgid ""
+"Error finding suitable user id not exceeding maximum value of %(maxid)s."
+msgstr ""
+
+#: ../src/userWindow.py:315
+msgid ""
+"Creating a user with a UID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+msgstr ""
+"Creating a user with a UID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+
+#: ../src/userWindow.py:345
+msgid "A group with this gid already exists.  What would you like to do?"
+msgstr "A group with this gid already exists.  What would you like to do?"
+
+#: ../src/userWindow.py:347
+msgid "A group with this name already exists.  What would you like to do?"
+msgstr "A group with this name already exists.  What would you like to do?"
+
+#: ../src/userWindow.py:351
+msgid "Add to the existing group"
+msgstr "Add to the existing group"
+
+#: ../src/userWindow.py:352
+msgid "Add to the 'users' group"
+msgstr "Add to the 'users' group"
+
+#. Uh-oh.  It looks like /etc/group and /etc/gshadow are out of sync.  Give up and quit.
+#: ../src/userWindow.py:434
+msgid ""
+"The system group database cannot be read.  This problem is most likely "
+"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
+"now."
+msgstr ""
+"The system group database cannot be read.  This problem is most likely "
+"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
+"now."
+
+#.
+#. * Translatable strings file generated by Glade.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#: system-config-users.gladestrings:7
+msgid "Add New Group"
+msgstr ""
+
+#: system-config-users.gladestrings:8 system-config-users.gladestrings:38
+msgid "_Group Name:"
+msgstr "_Group Name:"
+
+#: system-config-users.gladestrings:9 system-config-users.gladestrings:74
+#, fuzzy
+msgid "Specify g_roup ID manually:"
+msgstr "_Specify group ID manually"
+
+#: system-config-users.gladestrings:10
+msgid "User Properties"
+msgstr "User Properties"
+
+#: system-config-users.gladestrings:11
+msgid "User _Name:"
+msgstr "User _Name:"
+
+#: system-config-users.gladestrings:12 system-config-users.gladestrings:64
+msgid "_Full Name:"
+msgstr "_Full Name:"
+
+#: system-config-users.gladestrings:13
+msgid "Pass_word:"
+msgstr ""
+
+#: system-config-users.gladestrings:14 system-config-users.gladestrings:66
+msgid "Confir_m Password:"
+msgstr ""
+
+#: system-config-users.gladestrings:15 system-config-users.gladestrings:67
+msgid "_Login Shell:"
+msgstr "_Login Shell:"
+
+#: system-config-users.gladestrings:16
+msgid "_Home Directory:"
+msgstr "_Home Directory:"
+
+#: system-config-users.gladestrings:17 system-config-users.gladestrings:68
+msgid "S_ELinux role:"
+msgstr "S_ELinux role:"
+
+#: system-config-users.gladestrings:18
+msgid "_User Data"
+msgstr "_User Data"
+
+#: system-config-users.gladestrings:19
+msgid "_Enable account expiration"
+msgstr "_Enable account expiration"
+
+#: system-config-users.gladestrings:20
+msgid "Account e_xpires (YYYY-MM-DD):"
+msgstr ""
+
+#: system-config-users.gladestrings:21 system-config-users.gladestrings:29
+msgid "     "
+msgstr "     "
+
+#: system-config-users.gladestrings:22 system-config-users.gladestrings:23
+msgid "-"
+msgstr "-"
+
+#: system-config-users.gladestrings:24
+msgid "_Local password is locked"
+msgstr "_Local password is locked"
+
+#: system-config-users.gladestrings:25
+msgid "_Account Info"
+msgstr "_Account Info"
+
+#: system-config-users.gladestrings:26
+msgid "User last changed password on:"
+msgstr "User last changed password on:"
+
+#: system-config-users.gladestrings:27
+msgid "Unknown"
+msgstr "Unknown"
+
+#: system-config-users.gladestrings:28
+msgid "_Enable password expiration"
+msgstr "_Enable password expiration"
+
+#: system-config-users.gladestrings:30
+msgid "Days before change a_llowed:"
+msgstr "Days before change a_llowed:"
+
+#: system-config-users.gladestrings:31
+msgid "Days before change _required:"
+msgstr "Days before change _required:"
+
+#: system-config-users.gladestrings:32
+msgid "Days _warning before change:"
+msgstr "Days _warning before change:"
+
+#: system-config-users.gladestrings:33
+msgid "Days before account _inactive:"
+msgstr "Days before account _inactive:"
+
+#: system-config-users.gladestrings:34
+msgid "_Password Info"
+msgstr "_Password Info"
+
+#: system-config-users.gladestrings:35
+msgid "Select the groups that the user will be a member of:"
+msgstr "Select the groups that the user will be a member of:"
+
+#: system-config-users.gladestrings:36
+msgid "_Groups"
+msgstr "_Groups"
+
+#: system-config-users.gladestrings:37
+msgid "Group Properties"
+msgstr "Group Properties"
+
+#: system-config-users.gladestrings:39
+msgid "Group _Data"
+msgstr "Group _Data"
+
+#: system-config-users.gladestrings:40
+msgid "Select the users to join this group:"
+msgstr "Select the users to join this group:"
+
+#: system-config-users.gladestrings:41
+msgid "Group _Users"
+msgstr "Group _Users"
+
+#: system-config-users.gladestrings:42
+msgid "User Manager"
+msgstr "User Manager"
+
+#: system-config-users.gladestrings:43
+msgid "_File"
+msgstr "_File"
+
+#: system-config-users.gladestrings:44 system-config-users.gladestrings:49
+msgid "Add _User"
+msgstr "Add _User"
+
+#: system-config-users.gladestrings:45 system-config-users.gladestrings:50
+msgid "Add _Group"
+msgstr "Add _Group"
+
+#: system-config-users.gladestrings:46
+msgid "_Edit"
+msgstr "_Edit"
+
+#: system-config-users.gladestrings:47 system-config-users.gladestrings:57
+msgid "_Help"
+msgstr "_Help"
+
+#: system-config-users.gladestrings:48
+msgid "_Contents"
+msgstr "_Contents"
+
+#: system-config-users.gladestrings:51
+msgid "Edit properties"
+msgstr "Edit properties"
+
+#: system-config-users.gladestrings:52
+msgid "Proper_ties"
+msgstr "Proper_ties"
+
+#: system-config-users.gladestrings:53
+msgid "_Delete"
+msgstr "_Delete"
+
+#: system-config-users.gladestrings:54
+msgid "Reload"
+msgstr "Reload"
+
+#: system-config-users.gladestrings:55
+msgid "_Refresh"
+msgstr "_Refresh"
+
+#: system-config-users.gladestrings:56
+msgid "Help"
+msgstr "Help"
+
+#: system-config-users.gladestrings:58
+msgid "Sea_rch filter:"
+msgstr ""
+
+#: system-config-users.gladestrings:59
+msgid "_Apply filter"
+msgstr "_Apply filter"
+
+#: system-config-users.gladestrings:60
+msgid "U_sers"
+msgstr "U_sers"
+
+#: system-config-users.gladestrings:61
+msgid "Gr_oups"
+msgstr "Gr_oups"
+
+#: system-config-users.gladestrings:62
+msgid "Add New User"
+msgstr ""
+
+#: system-config-users.gladestrings:63
+msgid "_User Name:"
+msgstr "_User Name:"
+
+#: system-config-users.gladestrings:65
+msgid "_Password:"
+msgstr "_Password:"
+
+#: system-config-users.gladestrings:69
+msgid "Create _home directory"
+msgstr "Create _home directory"
+
+#: system-config-users.gladestrings:70
+msgid "    "
+msgstr "    "
+
+#: system-config-users.gladestrings:71
+msgid "Home _Directory:"
+msgstr "Home _Directory:"
+
+#: system-config-users.gladestrings:72
+msgid "Create a private _group for the user"
+msgstr "Create a private _group for the user"
+
+#: system-config-users.gladestrings:73
+#, fuzzy
+msgid "Specify u_ser ID manually:"
+msgstr "_Specify user ID manually"
+
+#: system-config-users.gladestrings:75
+msgid "About system-config-users"
+msgstr "About system-config-users"
+
+#: system-config-users.gladestrings:76
+msgid "<b>system-config-users</b>"
+msgstr "<b>system-config-users</b>"
+
+#: system-config-users.gladestrings:77
+msgid "Version @VERSION@"
+msgstr "Version @VERSION@"
+
+#: system-config-users.gladestrings:78
+msgid "Copyright (c) 2001 - 2005 Red Hat, Inc."
+msgstr "Copyright (c) 2001 - 2005 Red Hat, Inc."
+
+#: system-config-users.gladestrings:79
+msgid "This software is distributed under the GNU General Public License."
+msgstr "This software is distributed under the GNU General Public License."
+
+#: system-config-users.gladestrings:80
+msgid "Preferences"
+msgstr "Preferences"
+
+#: system-config-users.gladestrings:81
+msgid "_Hide system users and groups"
+msgstr "_Hide system users and groups"
+
+#: system-config-users.gladestrings:82
+msgid "<b>User and Group Lists</b>"
+msgstr ""
+
+#: system-config-users.gladestrings:83
+#, fuzzy
+msgid ""
+"Ensure that a new user gets a higher UID than all existing users, if not set "
+"manually."
+msgstr ""
+"Ensure that a new user gets has a higher UID than all existing users, if not "
+"set manually."
+
+#: system-config-users.gladestrings:84
+msgid "Automatically assigned _UID must be highest"
+msgstr "Automatically assigned _UID must be highest"
+
+#: system-config-users.gladestrings:85
+#, fuzzy
+msgid ""
+"Ensure that a new group gets a higher GID than all existing groups, if not "
+"set manually."
+msgstr ""
+"Ensure that a new group gets has a higher GID than all existing groups, if "
+"not set manually."
+
+#: system-config-users.gladestrings:86
+msgid "Automatically assigned _GID must be highest"
+msgstr "Automatically assigned _GID must be highest"
+
+#: system-config-users.gladestrings:87
+#, fuzzy
+msgid "Prefer that private group GID is the _same as UID"
+msgstr "Prefer that private group _GID is the same as UID"
+
+#: system-config-users.gladestrings:88
+msgid "<b>New Users</b>"
+msgstr "<b>New Users</b>"
+
+#: system-config-users.gladestrings:90
+#, fuzzy
+msgid "Copyright © 2001-2007 Red Hat, Inc."
+msgstr "Copyright (c) 2001 - 2005 Red Hat, Inc."
+
+#: system-config-users.gladestrings:91
+msgid "Manages users and groups on your system."
+msgstr ""
+
+#: system-config-users.gladestrings:92
+msgid ""
+"system-config-users is free software; you can redistribute it and/or modify "
+"it under the terms of the GNU General Public License as published by the "
+"Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version.\n"
+"\n"
+"system-config-users is distributed in the hope that it will be useful, but "
+"WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"system-config-users; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+msgstr ""
+
+#: system-config-users.gladestrings:97
+msgid "translator-credits"
+msgstr ""
+
+#~ msgid "Con_firm Password:"
+#~ msgstr "Con_firm Password:"
+
+#, fuzzy
+#~ msgid "C_onfirm Password:"
+#~ msgstr "Conf_irm Password:"
+
+#~ msgid "Create New Group"
+#~ msgstr "Create New Group"
+
+#~ msgid "New User"
+#~ msgstr "New User"
+
+#~ msgid "New Group"
+#~ msgstr "New Group"
+
+#~ msgid "Delete"
+#~ msgstr "Delete"
+
+#~ msgid "Create New User"
+#~ msgstr "Create New User"
+
+#~ msgid "Logon Information Required"
+#~ msgstr "Logon Information Required"
+
+#~ msgid "_Search filter:"
+#~ msgstr "_Search filter:"
+
+#~ msgid "Account _expires (YYYY-MM-DD):"
+#~ msgstr "Account _expires (YYYY-MM-DD):"
+
+#~ msgid "<b>User and Group List</b>"
+#~ msgstr "<b>User and Group List</b>"
+
+#~ msgid "Version %s"
+#~ msgstr "Version %s"
+
+#~ msgid "Help is not available."
+#~ msgstr "Help is not available."
+
+#, fuzzy
+#~ msgid "_Specify group ID manually:"
+#~ msgstr "_Specify group ID manually"
+
+#~ msgid "G_ID:"
+#~ msgstr "G_ID:"
+
+#~ msgid "U_ID:"
+#~ msgstr "U_ID:"
+
+#~ msgid ""
+#~ "The user database cannot be read.  This problem is most likely caused by "
+#~ "a mismatch between /etc/passwd and /etc/shadow or /etc/group and /etc/"
+#~ "gshadow.  The program will exit now."
+#~ msgstr ""
+#~ "The user database cannot be read.  This problem is most likely caused by "
+#~ "a mismatch between /etc/passwd and /etc/shadow or /etc/group and /etc/"
+#~ "gshadow.  The program will exit now."

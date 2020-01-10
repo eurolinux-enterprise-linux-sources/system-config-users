@@ -1,0 +1,1043 @@
+# Translation of system-config-users to Dutch.
+# Copyright (C) 2002-2009 Free Software Foundation, Inc.
+# This file is distributed under the same license as the system-config-users package.
+# Taco Witte <T.C.Witte@phys.uu.nl>, 2002.
+# Tino Meinen <a.t.meinen@chello.nl>. 2003.
+# Peter van Egdom <p.van.egdom@gmail.com>, 2003-2009.
+# R.E. van der Luit <nippur@fedoraproject.org>, 2009.
+# Geert Warrink <geert.warrink@onsnet.nu>, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-users.master.nl\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-20 16:08+0200\n"
+"PO-Revision-Date: 2010-07-21 11:32+0200\n"
+"Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
+"Language-Team: Fedora\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.6.1\n"
+
+#: ../src/groupProperties.py:108 ../src/groupWindow.py:108
+#: ../src/userGroupCheck.py:61
+msgid "Please enter a group name."
+msgstr "Voer een groepsnaam in."
+
+#: ../src/groupProperties.py:122
+#, python-format
+msgid "The group '%s' already exists. Please choose a different name."
+msgstr "De groep '%s' bestaat al. Kies een andere naam."
+
+#: ../src/groupProperties.py:164 ../src/mainWindow.py:760
+#, python-format
+msgid "You cannot remove user '%s' from their primary group."
+msgstr ""
+"Je kunt de gebruiker '%s' niet verwijderen uit zijn/haar primaire groep."
+
+#: ../src/groupWindow.py:116
+#, python-format
+msgid "A group with name '%s' already exists."
+msgstr "Er bestaat al een groep met de naam '%s'."
+
+#. This uid already exists, so complain
+#. This (chosen) gid already exists, so complain
+#: ../src/groupWindow.py:131 ../src/userWindow.py:292
+#, python-format
+msgid "The gid %s is already in use."
+msgstr "De gid %s is al in gebruik."
+
+#: ../src/groupWindow.py:138
+msgid ""
+"Creating a group with a GID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+msgstr ""
+"Het aanmaken van een groep met een GID lager dan 500 wordt niet aangeraden. "
+"Weet je zeker dat je dit wilt doen?"
+
+#: ../src/groupWindow.py:160 ../src/userWindow.py:305
+#, python-format
+msgid ""
+"Error finding suitable group id not exceeding maximum value of %(maxid)s."
+msgstr ""
+"Fout bij het zoeken naar een geschikte groep id die de maximum waarde %"
+"(maxid)s niet overschrijdt."
+
+#: ../src/mainWindow.py:80
+msgid ""
+"The help viewer could not be found. To be able to view help you need to "
+"install the 'yelp' package."
+msgstr ""
+"De hulp weergave kon niet worden gevonden. Om de hulp te tonen moet je het "
+"'yelp' pakket installeren."
+
+#: ../src/mainWindow.py:95
+#, python-format
+msgid "No helper application for the URL '%(url)s can be found."
+msgstr "Voor de URL '%(url)s kan geen hulp toepassing worden gevonden."
+
+#: ../src/mainWindow.py:120
+#, python-format
+msgid "Error saving settings to %s"
+msgstr "Fout bij opslaan instellingen naar %s"
+
+#: ../src/mainWindow.py:130
+msgid "Users and Groups"
+msgstr "Gebruikers en groepen"
+
+#: ../src/mainWindow.py:131
+msgid "Add or remove users and groups"
+msgstr "Gebruikers en groepen toevoegen of verwijderen"
+
+#: ../src/mainWindow.py:156
+msgid "User Name"
+msgstr "Gebruikersnaam"
+
+#: ../src/mainWindow.py:160
+msgid "User ID"
+msgstr "Gebruikers ID"
+
+#: ../src/mainWindow.py:164
+msgid "Primary Group"
+msgstr "Primaire groep"
+
+#: ../src/mainWindow.py:168
+msgid "Full Name"
+msgstr "Volledige naam"
+
+#: ../src/mainWindow.py:172
+msgid "Login Shell"
+msgstr "Inlog shell"
+
+#: ../src/mainWindow.py:176
+msgid "Home Directory"
+msgstr "Persoonlijke map"
+
+#: ../src/mainWindow.py:194
+msgid "Group Name"
+msgstr "Groepsnaam"
+
+#: ../src/mainWindow.py:198
+msgid "Group ID"
+msgstr "Groep ID"
+
+#: ../src/mainWindow.py:202
+msgid "Group Members"
+msgstr "Groepsleden"
+
+#: ../src/mainWindow.py:436
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the user '%(user)s'.\n"
+"\n"
+msgstr ""
+"Ik kon het numeriek ID van de gebruiker '%(user)s' niet vinden.\n"
+"\n"
+
+#: ../src/mainWindow.py:437
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these users:\n"
+"%(users)s\n"
+"\n"
+msgstr ""
+"Ik kon de numerieke ID's van deze gebruikers:\n"
+"%(users)s\n"
+"niet vinden\n"
+
+#: ../src/mainWindow.py:448
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the group '%(group)s'.\n"
+"\n"
+msgstr ""
+"Ik kon het numeriek ID van de groep '%(group)s' niet vinden.\n"
+"\n"
+
+#: ../src/mainWindow.py:449
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these groups:\n"
+"%(groups)s\n"
+"\n"
+msgstr ""
+"Ik kon de numerieke ID's van deze groepen:\n"
+"%(groups)s\n"
+"niet vinden\n"
+
+#: ../src/mainWindow.py:459
+#, python-format
+msgid ""
+"%(msg_users)s%(msg_groups)s\n"
+"In most cases this is caused by inconsistencies in the user or group "
+"database, e.g. between the files /etc/passwd, /etc/group and their "
+"respective shadow files /etc/shadow and /etc/gshadow. I will try to ignore "
+"these entries and continue for now, but please fix these inconsistencies as "
+"soon as possible."
+msgstr ""
+"%(msg_users)s%(msg_groups)s\n"
+"In de meeste gevallen wordt dit veroorzaakt door inconsistenties in de "
+"gebruiker of groep database, bijvoorbeeld tussen de bestanden /etc/passwd, /"
+"etc/group en hun respectievelijke schaduwbestanden /etc/shadow en /etc/"
+"gshadow. Ik zal deze items proberen te negeren en verder gaan. Probeer deze "
+"inconsistenties wel zo snel mogelijk te repareren."
+
+#: ../src/mainWindow.py:578 system-config-users.gladestrings:89
+msgid "system-config-users"
+msgstr "system-config-users"
+
+#: ../src/mainWindow.py:588
+#, python-format
+msgid "Copyright © %(years)s %(holder)s <%(email)s>"
+msgstr "Copyright © %(years)s %(holder)s <%(email)s>"
+
+#: ../src/mainWindow.py:590
+#, python-format
+msgid "Copyright © %(years)s %(holder)s"
+msgstr "Copyright © %(years)s %(holder)s"
+
+#: ../src/mainWindow.py:598
+#, python-format
+msgid "%(author)s <%(email)s>"
+msgstr "%(author)s <%(email)s>"
+
+#: ../src/mainWindow.py:600
+#, python-format
+msgid "%(author)s"
+msgstr "%(author)s"
+
+#: ../src/mainWindow.py:648
+msgid "Deleting the root user is not allowed."
+msgstr "Het verwijderen van de root gebruiker is niet toegestaan."
+
+#: ../src/mainWindow.py:657
+msgid "- An installed software package contains this directory."
+msgstr "- Een geïnstalleerd softwarepakket bevat deze map."
+
+#: ../src/mainWindow.py:659
+msgid ""
+"- A system user owns this directory and removing it may impair the system's "
+"integrity."
+msgstr ""
+"- Een systeem gebruiker is de eigenaar van deze map en het verwijderen ervan "
+"kan de integriteit van het systeem in gevaar brengen."
+
+#: ../src/mainWindow.py:661
+msgid "- This directory doesn't exist or isn't writable."
+msgstr "- Deze map bestaat niet of is niet beschrijfbaar."
+
+#: ../src/mainWindow.py:663
+#, python-format
+msgid "- The user '%s' doesn't own this directory."
+msgstr "- De gebruiker '%s' is geen eigenaar van deze map."
+
+#: ../src/mainWindow.py:670
+#, python-format
+msgid ""
+"<b>There are currently processes running that are owned by '%s'!</b>  This "
+"user is probably still logged in.  "
+msgstr ""
+"<b>Er zijn op dit moment processen actief die eigendom zijn van '%s'!</b>  "
+"Deze gebruiker is waarschijnlijk nog ingelogd.  "
+
+#: ../src/mainWindow.py:672
+#, python-format
+msgid "Do you really want to remove the user '%s'?"
+msgstr "Weet je zeker dat je de gebruiker '%s' wilt verwijderen?"
+
+#: ../src/mainWindow.py:681
+#, python-format
+msgid "Delete %(user)s's home directory ('%(homedir)s') and temporary files."
+msgstr ""
+"Persoonlijke map van %(user)s ('%(homedir)s') en de tijdelijke bestanden "
+"verwijderen."
+
+#: ../src/mainWindow.py:683
+#, python-format
+msgid ""
+"Delete %(user)s's home directory ('%(homedir)s'), mail spool ('%(mailspool)"
+"s') and temporary files."
+msgstr ""
+"Persoonlijke map van %(user)s ('%(homedir)s'), de mail spool ('%(mailspool)"
+"s') en de tijdelijke bestanden verwijderen."
+
+#: ../src/mainWindow.py:690
+#, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for this reason:\n"
+"%(reason)s"
+msgstr ""
+"Ik zal de persoonlijke map van %(user)s ('%(homedir)s') niet verwijderen "
+"wegens de volgende reden:\n"
+"%(reason)s"
+
+#: ../src/mainWindow.py:691
+#, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for these reasons:\n"
+"%(reason)s"
+msgstr ""
+"Ik zal de persoonlijke map van %(user)s ('%(homedir)s') niet verwijderen "
+"wegens de volgende redenen:\n"
+"%(reason)s"
+
+#: ../src/mainWindow.py:764
+#, python-format
+msgid "Are you sure you want to delete the group '%s'?"
+msgstr "Weet je zeker dat je de groep '%s' wilt verwijderen?"
+
+#: ../src/system-config-users.py:38
+msgid "system-config-users requires a currently running X server."
+msgstr "system-config-users vereist een draaiende X server."
+
+#: ../src/userGroupCheck.py:51 ../src/userProperties.py:295
+msgid "Please enter a user name."
+msgstr "Voer een gebruikersnaam in."
+
+#: ../src/userGroupCheck.py:52
+#, python-format
+msgid "The user name must not exceed %d characters."
+msgstr "De gebruikersnaam mag niet langer dan %d karakters zijn."
+
+#: ../src/userGroupCheck.py:53
+#, python-format
+msgid ""
+"The user name '%s' contains whitespace. Please do not include whitespace in "
+"the user name."
+msgstr ""
+"De gebruikersnaam '%s' bevat spaties of tabs. Gebruik deze niet in de "
+"gebruikersnaam."
+
+#: ../src/userGroupCheck.py:54
+#, python-format
+msgid ""
+"The user name '%s' contains a dollar sign which is not at the end. Please "
+"use dollar signs only at the end of user names to indicate Samba machine "
+"accounts."
+msgstr ""
+"De gebruikersnaam '%s' bevat een dollar teken dat niet aan het einde staat. "
+"Gebruik dollar tekens alleen aan het einde van gebruikersnamen om aan te "
+"geven dat dit Samba machine accounts zijn."
+
+#: ../src/userGroupCheck.py:55
+#, python-format
+msgid ""
+"The user name '%s' contains a trailing dollar sign. This should only be used "
+"for Samba machine accounts, using this for a normal user account can cause "
+"problems with some software. Is the account in question a Samba machine "
+"account?"
+msgstr ""
+"De gebruikersnaam '%s' bevat een dollar teken. Dit moet alleen gebruikt "
+"worden voor Samba machine accounts, het gebruik hiervan voor een gewone "
+"gebruikersnaam kan problemen geven met sommige programma&#39;s. Is dit "
+"account een Samba machine account?"
+
+#: ../src/userGroupCheck.py:56
+#, python-format
+msgid ""
+"The user name '%(name)s' contains an invalid character at position %"
+"(position)d."
+msgstr ""
+"De gebruikersnaam '%(name)s' bevat een ongeldig karakter op positie %"
+"(position)d."
+
+#: ../src/userGroupCheck.py:57
+msgid ""
+"Using all numbers as the user name can cause confusion about whether the "
+"user name or numerical user id is meant. Do you really want to use a "
+"numerical-only user name?"
+msgstr ""
+"Het alleen gebruiken van getallen in de gebruikersnaam kan leiden tot "
+"vergissingen of er een gebruikersnaam of een numeriek gebruikers ID wordt "
+"bedoeld. Wil je echt een gebruikersnaam met alleen getallen gebruiken?"
+
+#: ../src/userGroupCheck.py:62
+#, python-format
+msgid "The group name must not exceed %d characters."
+msgstr "De groepsnaam mag niet langer dan %d karakters zijn."
+
+#: ../src/userGroupCheck.py:63
+#, python-format
+msgid ""
+"The group name '%s' contains whitespace. Please do not include whitespace in "
+"the group name."
+msgstr ""
+"De groepsnaam '%s' bevat spaties of tabs. Gebruik deze niet in de groepsnaam."
+
+#: ../src/userGroupCheck.py:64
+#, python-format
+msgid ""
+"The group name '%(name)s' contains an invalid character at position %"
+"(position)d."
+msgstr ""
+"De groepsnaam '%(name)s' bevat een ongeldig karakter op positie %(position)d."
+
+#: ../src/userGroupCheck.py:65
+msgid ""
+"Using all numbers as the group name can cause confusion about whether the "
+"group name or numerical group id is meant. Do you really want to use a "
+"numerical-only group name?"
+msgstr ""
+"Het alleen gebruiken van getallen in de groepsnaam kan leiden tot "
+"vergissingen of er een groepsnaam of een numeriek groep-ID wordt bedoeld. "
+"Wil je echt een groepsnaam met alleen getallen gebruiken?"
+
+#: ../src/userGroupCheck.py:144
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Het wachtwoord bevat ongeldige karakters.  Gebruik alleen ASCII karakters."
+
+#: ../src/userGroupCheck.py:167
+#, python-format
+msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
+msgstr "Het gekozen wachtwoord is te zwak: %s. Wil je het toch gebruiken?"
+
+#. have to check for whitespace for gecos, since whitespace is ok
+#: ../src/userGroupCheck.py:178
+#, python-format
+msgid ""
+"The name '%s' contains invalid characters.  Please use only UTF-8 characters."
+msgstr ""
+"De naam '%s' bevat ongeldige karakters.  Gebruik alleen UTF-8 karakters."
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: ../src/userGroupCheck.py:186
+#, python-format
+msgid "The name '%s' contains a colon.  Please do not use colons in the name."
+msgstr ""
+"De naam '%s' bevat een dubbele punt.  Gebruik deze tekens niet in de naam."
+
+#: ../src/userGroupCheck.py:195
+msgid "Please enter a home directory."
+msgstr "Geef een persoonlijke map op."
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: ../src/userGroupCheck.py:202
+#, python-format
+msgid ""
+"The directory name '%s' contains a colon.  Please do not use colons in the "
+"directory name."
+msgstr ""
+"De map naam '%s' bevat een dubbele punt.  Gebruik deze tekens niet in de map "
+"naam."
+
+#: ../src/userGroupCheck.py:211
+#, python-format
+msgid ""
+"The directory name '%s' doesn't begin with a '/'. Please specify an absolute "
+"path for the home directory."
+msgstr ""
+"De ma pnaam '%s' begint niet met een '/'. Geef een absoluut pad op voor de "
+"persoonlijke map."
+
+#: ../src/userGroupCheck.py:217
+#, python-format
+msgid ""
+"The directory name '%s' has path components which are too long. Please use "
+"shorter path components for the home directory."
+msgstr ""
+"De map naam '%s' heeft elementen in het pad die te lang zijn. Gebruik "
+"kortere elementen in het pad voor de persoonlijke map."
+
+#: ../src/userGroupCheck.py:224
+#, python-format
+msgid ""
+"The directory name '%s' contains empty path components. Please specify a "
+"home directory name without empty path components."
+msgstr ""
+"De map naam '%s' bevat lege elementen in het pad. Geef een naam op van de "
+"persoonlijke map zonder lege elementen."
+
+#: ../src/userGroupCheck.py:233
+#, python-format
+msgid ""
+"The directory name '%s' contains illegal path components. Please don't use "
+"'.' or '..' as path components for the home directory."
+msgstr ""
+"De map naam '%s' bevat ongeldige elementen in het pad. Gebruik geen '.' of "
+"'..' als elementen in het pad voor de persoonlijke map."
+
+#: ../src/userGroupCheck.py:241
+#, python-format
+msgid ""
+"The directory name '%s' cannot be created ('%s' is not writable). Please "
+"chose a writable location."
+msgstr ""
+"De de map naam '%s' kan niet worden aangemaakt ('%s' is niet beschrijfbaar). "
+"Kies een beschrijfbare locatie."
+
+#: ../src/userProperties.py:108 ../src/userWindow.py:82
+msgid "User"
+msgstr "Gebruiker"
+
+#: ../src/userProperties.py:108 ../src/userWindow.py:82
+msgid "Staff"
+msgstr "Personeel"
+
+#: ../src/userProperties.py:109 ../src/userWindow.py:83
+msgid "System Administrator"
+msgstr "Systeembeheerder"
+
+#: ../src/userProperties.py:139
+msgid "Primary Group:"
+msgstr "Primaire groep:"
+
+#: ../src/userProperties.py:314
+#, python-format
+msgid "The user '%s' already exists. Please choose a different name."
+msgstr "De gebruiker '%s' bestaat al. Kies een andere naam."
+
+#: ../src/userProperties.py:336 ../src/userWindow.py:193
+msgid "Please enter a password for the user."
+msgstr "Voer een wachtwoord in voor de gebruiker."
+
+#: ../src/userProperties.py:345 ../src/userWindow.py:201
+msgid "The password is too short.  Please use at least 6 characters."
+msgstr "Het wachtwoord is te kort.  Gebruik tenminste 6 karakters."
+
+#: ../src/userProperties.py:354
+msgid "Passwords do not match."
+msgstr "Wachtwoorden komen niet overeen."
+
+#: ../src/userProperties.py:431
+msgid "Please select at least one group for the user."
+msgstr "Selecteer tenminste één groep voor de gebruiker."
+
+#: ../src/userProperties.py:450
+msgid "Please specify the month that the password will expire."
+msgstr "Geef de maand waarop het wachtwoord zal verlopen."
+
+#: ../src/userProperties.py:458
+msgid "Please specify the day that the password will expire."
+msgstr "Geef de dag waarop het wachtwoord zal verlopen."
+
+#: ../src/userProperties.py:466
+msgid "Please specify the year that the password will expire."
+msgstr "Geef het jaar waarop het wachtwoord zal verlopen."
+
+#. mktime will throw an OverflowError if the year is too big.
+#: ../src/userProperties.py:482
+msgid "The year is out of range.  Please select a different year."
+msgstr "Het jaar valt buiten het bereik. Geef een ander jaar."
+
+#: ../src/userProperties.py:511
+msgid ""
+"Please specify the number of days before changing the password is allowed."
+msgstr ""
+"Geef het aantal dagen op voordat het wijzigen van het wachtwoord is "
+"toegestaan."
+
+#: ../src/userProperties.py:513
+#, python-format
+msgid ""
+"The number of days before changing the password is allowed must be between %"
+"(min)d and %(max)d."
+msgstr ""
+"Het aantal dagen voordat het wijzigen van het wachtwoord is toegestaan moet "
+"tussen %(min)d en %(max)d liggen."
+
+#: ../src/userProperties.py:518
+msgid ""
+"Please specify the number of days before changing the password is required."
+msgstr "Geef het aantal dagen op waarna het wachtwoord moet worden gewijzigd."
+
+#: ../src/userProperties.py:520
+#, python-format
+msgid ""
+"The number of days before changing the password is required must be between %"
+"(min)d and %(max)d."
+msgstr ""
+"Het aantal dagen voordat het wachtwoord moet worden gewijzigd moet tussen %"
+"(min)d en %(max)d liggen."
+
+#: ../src/userProperties.py:524
+msgid ""
+"Please specify the number of days to warn the user before changing the "
+"password is required."
+msgstr ""
+"Geef het aantal dagen op waarin de gebruiker wordt gewaarschuwd zijn "
+"wachtwoord te wijzigen."
+
+#: ../src/userProperties.py:526
+#, python-format
+msgid ""
+"The number of days to warn the user before changing the password is required "
+"must be between %(min)d and %(max)d."
+msgstr ""
+"Het aantal dagen voordat de gebruiker wordt gewaarschuwd zijn wachtwoord te "
+"wijzigen moet tussen %(min)d en %(max)d liggen."
+
+#: ../src/userProperties.py:532
+msgid ""
+"Please specify the number of days until the user account becomes inactive "
+"after password has expired."
+msgstr ""
+"Geef het aantal dagen op waarna het gebruiker account inactief wordt als het "
+"wachtwoord is verlopen."
+
+#: ../src/userProperties.py:534
+#, python-format
+msgid ""
+"The number of days until the user account becomes inactive after the "
+"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
+"means the account won't become inactive."
+msgstr ""
+"Het aantal dagen voordat het gebruiker account inactief wordt als het "
+"wachtwoord is verlopen moet tussen %(min)d en %(max)d liggen. Door het op -1 "
+"te zetten betekent dat het gebruiker account niet inactief wordt."
+
+#: ../src/userProperties.py:592
+#, python-format
+msgid ""
+"Unlocking the user failed because:\n"
+"\n"
+"%(errmsg)s"
+msgstr ""
+"De-blokkeren van de gebruiker is mislukt omdat:\n"
+"\n"
+"%(errmsg)s"
+
+#: ../src/userProperties.py:595
+msgid "Unlocking the user failed due to an unknown reason."
+msgstr "Het de-blokkeren van de gebruiker is mislukt door een onbekende reden."
+
+#: ../src/userWindow.py:210
+msgid "The passwords do not match."
+msgstr "De wachtwoorden komen niet overeen."
+
+#. The user name is blank, so complain
+#: ../src/userWindow.py:241
+msgid "Please specify a user name"
+msgstr "Geef een gebruikersnaam op"
+
+#. This user already exists, so complain
+#: ../src/userWindow.py:249
+#, python-format
+msgid "An account with username '%s' already exists."
+msgstr "Er bestaat al een account met gebruikersnaam '%s'."
+
+#. This uid already exists, so complain
+#: ../src/userWindow.py:285
+#, python-format
+msgid "The uid %s is already in use."
+msgstr "Het uid %s is al in gebruik."
+
+#: ../src/userWindow.py:303
+#, python-format
+msgid ""
+"Error finding suitable user id not exceeding maximum value of %(maxid)s."
+msgstr ""
+"Fout bij het zoeken naar een geschikte gebruiker id die de maximum waarde %"
+"(maxid)s niet overschrijdt."
+
+#: ../src/userWindow.py:315
+msgid ""
+"Creating a user with a UID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+msgstr ""
+"Het aanmaken van een gebruiker met een UID lager dan 500 wordt niet "
+"aangeraden.  Weet je zeker dat je dit wilt doen?"
+
+#: ../src/userWindow.py:345
+msgid "A group with this gid already exists.  What would you like to do?"
+msgstr "Er bestaat al een groep met deze gid.  Wat wil je doen?"
+
+#: ../src/userWindow.py:347
+msgid "A group with this name already exists.  What would you like to do?"
+msgstr "Er bestaat al een groep met deze naam.  Wat wil je doen?"
+
+#: ../src/userWindow.py:351
+msgid "Add to the existing group"
+msgstr "Toevoegen aan de bestaande groep"
+
+#: ../src/userWindow.py:352
+msgid "Add to the 'users' group"
+msgstr "Toevoegen aan de 'users' groep"
+
+#. Uh-oh.  It looks like /etc/group and /etc/gshadow are out of sync.  Give up and quit.
+#: ../src/userWindow.py:434
+msgid ""
+"The system group database cannot be read.  This problem is most likely "
+"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
+"now."
+msgstr ""
+"De systeem groep database kan niet worden gelezen.  Het ziet er naar uit "
+"dat /etc/group en /etc/gshadow niet overeen komen.  Het programma zal nu "
+"afsluiten."
+
+#.
+#. * Translatable strings file generated by Glade.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#: system-config-users.gladestrings:7
+msgid "Add New Group"
+msgstr "Voeg nieuwe groep toe"
+
+#: system-config-users.gladestrings:8 system-config-users.gladestrings:38
+msgid "_Group Name:"
+msgstr "_Groepsnaam:"
+
+#: system-config-users.gladestrings:9 system-config-users.gladestrings:74
+msgid "Specify g_roup ID manually:"
+msgstr "G_roep-ID handmatig opgeven:"
+
+#: system-config-users.gladestrings:10
+msgid "User Properties"
+msgstr "Gebruiker eigenschappen"
+
+#: system-config-users.gladestrings:11
+msgid "User _Name:"
+msgstr "G_ebruikersnaam:"
+
+#: system-config-users.gladestrings:12 system-config-users.gladestrings:64
+msgid "_Full Name:"
+msgstr "_Volledige naam:"
+
+#: system-config-users.gladestrings:13
+msgid "Pass_word:"
+msgstr "Wacht_woord:"
+
+#: system-config-users.gladestrings:14 system-config-users.gladestrings:66
+msgid "Confir_m Password:"
+msgstr "_Bevestig wachtwoord:"
+
+#: system-config-users.gladestrings:15 system-config-users.gladestrings:67
+msgid "_Login Shell:"
+msgstr "In_log shell:"
+
+#: system-config-users.gladestrings:16
+msgid "_Home Directory:"
+msgstr "_Persoonlijke map:"
+
+#: system-config-users.gladestrings:17 system-config-users.gladestrings:68
+msgid "S_ELinux role:"
+msgstr "S_ELinux rol:"
+
+#: system-config-users.gladestrings:18
+msgid "_User Data"
+msgstr "_Gebruikersgegevens"
+
+#: system-config-users.gladestrings:19
+msgid "_Enable account expiration"
+msgstr "Account _verloop aanzetten"
+
+#: system-config-users.gladestrings:20
+msgid "Account e_xpires (YYYY-MM-DD):"
+msgstr "Account verloopt _op (JJJJ-MM-DD):"
+
+#: system-config-users.gladestrings:21 system-config-users.gladestrings:29
+msgid "     "
+msgstr "     "
+
+#: system-config-users.gladestrings:22 system-config-users.gladestrings:23
+msgid "-"
+msgstr "-"
+
+#: system-config-users.gladestrings:24
+msgid "_Local password is locked"
+msgstr "_Lokaal wachtwoord is geblokkeerd"
+
+#: system-config-users.gladestrings:25
+msgid "_Account Info"
+msgstr "_Account informatie"
+
+#: system-config-users.gladestrings:26
+msgid "User last changed password on:"
+msgstr "Gebruiker veranderde wachtwoord laatst op:"
+
+#: system-config-users.gladestrings:27
+msgid "Unknown"
+msgstr "Onbekend"
+
+#: system-config-users.gladestrings:28
+msgid "_Enable password expiration"
+msgstr "Wachtwoord verloop _aanzetten"
+
+#: system-config-users.gladestrings:30
+msgid "Days before change a_llowed:"
+msgstr "Dagen voordat verandering is _toegestaan:"
+
+#: system-config-users.gladestrings:31
+msgid "Days before change _required:"
+msgstr "Dagen voordat verandering is _vereist:"
+
+#: system-config-users.gladestrings:32
+msgid "Days _warning before change:"
+msgstr "Dagen _waarschuwen voor wijziging:"
+
+# in overeenstemming met andere strings: gedeactiveerd ipv inactief
+# Misschien korter: dagen tot deactivering account:
+#: system-config-users.gladestrings:33
+msgid "Days before account _inactive:"
+msgstr "Dagen voordat account _inactief wordt:"
+
+#: system-config-users.gladestrings:34
+msgid "_Password Info"
+msgstr "_Wachtwoord informatie"
+
+#: system-config-users.gladestrings:35
+msgid "Select the groups that the user will be a member of:"
+msgstr "Selecteer de groepen waarvan de gebruiker lid zal zijn:"
+
+#: system-config-users.gladestrings:36
+msgid "_Groups"
+msgstr "_Groepen"
+
+#: system-config-users.gladestrings:37
+msgid "Group Properties"
+msgstr "Groep eigenschappen"
+
+#: system-config-users.gladestrings:39
+msgid "Group _Data"
+msgstr "Groep gege_vens"
+
+#: system-config-users.gladestrings:40
+msgid "Select the users to join this group:"
+msgstr "Selecteer de gebruikers die lid moeten worden van deze groep:"
+
+#: system-config-users.gladestrings:41
+msgid "Group _Users"
+msgstr "Groep _gebruikers"
+
+#: system-config-users.gladestrings:42
+msgid "User Manager"
+msgstr "Gebruikers beheerder"
+
+#: system-config-users.gladestrings:43
+msgid "_File"
+msgstr "_Bestand"
+
+#: system-config-users.gladestrings:44 system-config-users.gladestrings:49
+msgid "Add _User"
+msgstr "_Gebruiker toevoegen"
+
+#: system-config-users.gladestrings:45 system-config-users.gladestrings:50
+msgid "Add _Group"
+msgstr "_Groep toevoegen"
+
+#: system-config-users.gladestrings:46
+msgid "_Edit"
+msgstr "B_ewerken"
+
+#: system-config-users.gladestrings:47 system-config-users.gladestrings:57
+msgid "_Help"
+msgstr "_Hulp"
+
+#: system-config-users.gladestrings:48
+msgid "_Contents"
+msgstr "_Inhoud"
+
+#: system-config-users.gladestrings:51
+msgid "Edit properties"
+msgstr "Eigenschappen bewerken"
+
+#: system-config-users.gladestrings:52
+msgid "Proper_ties"
+msgstr "Eigenscha_ppen"
+
+#: system-config-users.gladestrings:53
+msgid "_Delete"
+msgstr "_Verwijderen"
+
+#: system-config-users.gladestrings:54
+msgid "Reload"
+msgstr "Herladen"
+
+#: system-config-users.gladestrings:55
+msgid "_Refresh"
+msgstr "_Verversen"
+
+#: system-config-users.gladestrings:56
+msgid "Help"
+msgstr "Hulp"
+
+#: system-config-users.gladestrings:58
+msgid "Sea_rch filter:"
+msgstr "Zoek filte_r:"
+
+#: system-config-users.gladestrings:59
+msgid "_Apply filter"
+msgstr "Filter _toepassen"
+
+#: system-config-users.gladestrings:60
+msgid "U_sers"
+msgstr "Gebr_uikers"
+
+#: system-config-users.gladestrings:61
+msgid "Gr_oups"
+msgstr "Gr_oepen"
+
+#: system-config-users.gladestrings:62
+msgid "Add New User"
+msgstr "Voeg nieuwe gebruiker toe"
+
+#: system-config-users.gladestrings:63
+msgid "_User Name:"
+msgstr "_Gebruikersnaam:"
+
+#: system-config-users.gladestrings:65
+msgid "_Password:"
+msgstr "_Wachtwoord:"
+
+#: system-config-users.gladestrings:69
+msgid "Create _home directory"
+msgstr "Persoonlijke map _aanmaken"
+
+#: system-config-users.gladestrings:70
+msgid "    "
+msgstr "    "
+
+#: system-config-users.gladestrings:71
+msgid "Home _Directory:"
+msgstr "Persoonlijke _map:"
+
+#: system-config-users.gladestrings:72
+msgid "Create a private _group for the user"
+msgstr "Een _privé groep voor de gebruiker aanmaken"
+
+#: system-config-users.gladestrings:73
+msgid "Specify u_ser ID manually:"
+msgstr "Gebruiker ID handmatig _opgeven:"
+
+#: system-config-users.gladestrings:75
+msgid "About system-config-users"
+msgstr "Over system-config-users"
+
+#: system-config-users.gladestrings:76
+msgid "<b>system-config-users</b>"
+msgstr "<b>system-config-users</b>"
+
+#: system-config-users.gladestrings:77
+msgid "Version @VERSION@"
+msgstr "Versie @VERSION@"
+
+#: system-config-users.gladestrings:78
+msgid "Copyright (c) 2001 - 2005 Red Hat, Inc."
+msgstr "Copyright (c) 2001 - 2005 Red Hat, Inc."
+
+#: system-config-users.gladestrings:79
+msgid "This software is distributed under the GNU General Public License."
+msgstr "Deze software wordt verspreid onder de GNU General Public License."
+
+#: system-config-users.gladestrings:80
+msgid "Preferences"
+msgstr "Voorkeuren"
+
+#: system-config-users.gladestrings:81
+msgid "_Hide system users and groups"
+msgstr "Systeem gebruikers en groepen ve_rbergen"
+
+#: system-config-users.gladestrings:82
+msgid "<b>User and Group Lists</b>"
+msgstr "Gebruiker en groep lijst"
+
+#: system-config-users.gladestrings:83
+msgid ""
+"Ensure that a new user gets a higher UID than all existing users, if not set "
+"manually."
+msgstr ""
+"Zorg ervoor dat een nieuwe gebruiker een hoger UID krijgt dan alle bestaande "
+"gebruikers, als dat niet zo is stel dat dan handmatig in."
+
+#: system-config-users.gladestrings:84
+msgid "Automatically assigned _UID must be highest"
+msgstr "Automatisch toegekend _UID moet het hoogst zijn"
+
+#: system-config-users.gladestrings:85
+msgid ""
+"Ensure that a new group gets a higher GID than all existing groups, if not "
+"set manually."
+msgstr ""
+"Zorg ervoor dat een nieuwe groep een hoger GID krijgt dan alle bestaande "
+"groepen, als dat niet zo is stel dat dan handmatig in."
+
+#: system-config-users.gladestrings:86
+msgid "Automatically assigned _GID must be highest"
+msgstr "Automatisch toegekend _GID moet het hoogst zijn"
+
+#: system-config-users.gladestrings:87
+msgid "Prefer that private group GID is the _same as UID"
+msgstr "Voorkeur voor privé groep _GID gelijk aan het UID"
+
+#: system-config-users.gladestrings:88
+msgid "<b>New Users</b>"
+msgstr "<b>Nieuwe gebruikers</b>"
+
+#: system-config-users.gladestrings:90
+msgid "Copyright © 2001-2007 Red Hat, Inc."
+msgstr "Copyright © 2001-2007 Red Hat, Inc."
+
+#: system-config-users.gladestrings:91
+msgid "Manages users and groups on your system."
+msgstr "Beheert gebruikers en groepen op jouw systeem."
+
+#: system-config-users.gladestrings:92
+msgid ""
+"system-config-users is free software; you can redistribute it and/or modify "
+"it under the terms of the GNU General Public License as published by the "
+"Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version.\n"
+"\n"
+"system-config-users is distributed in the hope that it will be useful, but "
+"WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"system-config-users; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+msgstr ""
+"system-config-users is vrije software; Je kunt het verspreiden en/of "
+"wijzigen onder de bepalingen van de GNU General Public License, zoals "
+"uitgegeven door de Free Software Foundation; zowel versie 2 van de licentie, "
+"of (naar vrije keuze) een latere versie.\n"
+"\n"
+"system-config-users is verspreid met de hoop dat het nuttig zal zijn, maar "
+"ZONDER ENIGE GARANTIE; zelfs zonder de impliciete garantie van "
+"VERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL. Zie de GNU General "
+"Public License voor meer details.\n"
+"\n"
+"Je zou een kopie van de GNU General Public License, samen met dit programma, "
+"ontvangen moeten hebben; indien dat niet het geval is kun je schrijven naar "
+"de Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, "
+"MA 02110-130159 USA"
+
+#: system-config-users.gladestrings:97
+msgid "translator-credits"
+msgstr ""
+"Taco Witte <T.C.Witte@phys.uu.nl>\n"
+"Tino Meinen <a.t.meinen@chello.nl>\n"
+"Peter van Egdom <p.van.egdom@gmail.com>\n"
+"R.E. van der Luit <nippur@fedoraproject.org>\n"
+"Geert Warrink <geert.warrink@onsnet.nu>"
+
+#~ msgid "Con_firm Password:"
+#~ msgstr "Be_vestig wachtwoord:"
+
+#~ msgid "C_onfirm Password:"
+#~ msgstr "Wachtwoord _bevestigen:"
+
+#~ msgid "Create New Group"
+#~ msgstr "Nieuwe groep aanmaken"
+
+#~ msgid "New User"
+#~ msgstr "Nieuwe gebruiker"
+
+#~ msgid "New Group"
+#~ msgstr "Nieuwe groep"
+
+#~ msgid "Delete"
+#~ msgstr "Verwijderen"
+
+#~ msgid "Create New User"
+#~ msgstr "Nieuwe gebruiker aanmaken"
+
+#~ msgid "Logon Information Required"
+#~ msgstr "Aanmeldinformatie vereist"
+
+#~ msgid "_Search filter:"
+#~ msgstr "_Zoekfilter:"

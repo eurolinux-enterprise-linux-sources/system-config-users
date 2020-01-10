@@ -1,0 +1,11 @@
+ABOUT-NLS
+Makefile
+Makefile.in
+aclocal.m4
+config.cache
+config.log
+config.status
+configure
+*.tar.gz
+*.spec
+system-config-users.desktop

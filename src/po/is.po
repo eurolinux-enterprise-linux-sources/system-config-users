@@ -1,0 +1,992 @@
+# translation of system-config-users.master.is.po to Icelandic
+# Icelandic translation of system-config-users
+# Copyright (C) 2001 Red Hat
+#
+# Richard Allen <ra@ra.is>, 2001.
+# Sveinn í Felli <sveinki@nett.is>, 2008, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-users.master.is\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-20 16:08+0200\n"
+"PO-Revision-Date: 2010-05-05 08:51+0000\n"
+"Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
+"Language-Team: Icelandic <rglug@rglug.org>\n"
+"Language: is\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.1\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../src/groupProperties.py:108 ../src/groupWindow.py:108
+#: ../src/userGroupCheck.py:61
+msgid "Please enter a group name."
+msgstr "Vinsamlegast gefðu upp heiti hóps."
+
+#: ../src/groupProperties.py:122
+#, python-format
+msgid "The group '%s' already exists. Please choose a different name."
+msgstr "Hópurinn '%s' er þegar til. Veldu eitthvað annað nafn."
+
+#: ../src/groupProperties.py:164 ../src/mainWindow.py:760
+#, python-format
+msgid "You cannot remove user '%s' from their primary group."
+msgstr "Það er ekki hægt að fjarlægja notandann '%s' úr aðalhópnum hanns."
+
+#: ../src/groupWindow.py:116
+#, python-format
+msgid "A group with name '%s' already exists."
+msgstr "Hópur með heitinu '%s' er þegar til."
+
+#. This uid already exists, so complain
+#. This (chosen) gid already exists, so complain
+#: ../src/groupWindow.py:131 ../src/userWindow.py:292
+#, python-format
+msgid "The gid %s is already in use."
+msgstr "Hópnúmerið %s er þegar í notkun."
+
+#: ../src/groupWindow.py:138
+msgid ""
+"Creating a group with a GID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+msgstr ""
+"Ekki er mælt með því að búa til hópa með lægra GID en 500. Ertu viss um að "
+"þú viljir gera þetta?"
+
+#: ../src/groupWindow.py:160 ../src/userWindow.py:305
+#, python-format
+msgid ""
+"Error finding suitable group id not exceeding maximum value of %(maxid)s."
+msgstr ""
+
+#: ../src/mainWindow.py:80
+msgid ""
+"The help viewer could not be found. To be able to view help you need to "
+"install the 'yelp' package."
+msgstr ""
+"Hjálparskoðarinn fannst ekki. Til að geta skoðað hjálparskjölin þarftu að "
+"setja upp 'yelp' pakkann."
+
+#: ../src/mainWindow.py:95
+#, python-format
+msgid "No helper application for the URL '%(url)s can be found."
+msgstr ""
+"Enginn hjálparskoðari fannst sem getur meðhöndlað slóðina (URL) '%(url)s."
+
+#: ../src/mainWindow.py:120
+#, python-format
+msgid "Error saving settings to %s"
+msgstr "Villa kom upp við að vista stillingum í %s"
+
+#: ../src/mainWindow.py:130
+msgid "Users and Groups"
+msgstr "Notendur og hópar"
+
+#: ../src/mainWindow.py:131
+msgid "Add or remove users and groups"
+msgstr "Bæta við eða eyða notendum og hópum"
+
+#: ../src/mainWindow.py:156
+msgid "User Name"
+msgstr "Notandanafn"
+
+#: ../src/mainWindow.py:160
+msgid "User ID"
+msgstr "Notandanúmer"
+
+#: ../src/mainWindow.py:164
+msgid "Primary Group"
+msgstr "Aðalhópur"
+
+#: ../src/mainWindow.py:168
+msgid "Full Name"
+msgstr "Fullt nafn"
+
+#: ../src/mainWindow.py:172
+msgid "Login Shell"
+msgstr "Skel"
+
+#: ../src/mainWindow.py:176
+msgid "Home Directory"
+msgstr "Heimasvæði"
+
+#: ../src/mainWindow.py:194
+msgid "Group Name"
+msgstr "Heiti hóps"
+
+#: ../src/mainWindow.py:198
+msgid "Group ID"
+msgstr "Hópsnúmer"
+
+#: ../src/mainWindow.py:202
+msgid "Group Members"
+msgstr "Meðlimir hóps"
+
+#: ../src/mainWindow.py:436
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the user '%(user)s'.\n"
+"\n"
+msgstr ""
+"Gat ekki fundið auðkennisnúmer (ID) notandans '%(user)s'.\n"
+"\n"
+
+#: ../src/mainWindow.py:437
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these users:\n"
+"%(users)s\n"
+"\n"
+msgstr ""
+"Gat ekki fundið auðkennisnúmer (ID) þessara notenda:\n"
+"%(users)s\n"
+"\n"
+
+#: ../src/mainWindow.py:448
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the group '%(group)s'.\n"
+"\n"
+msgstr ""
+"Gat ekki fundið auðkennisnúmer (ID) hópsins '%(group)s'.\n"
+"\n"
+
+#: ../src/mainWindow.py:449
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these groups:\n"
+"%(groups)s\n"
+"\n"
+msgstr ""
+"Gat ekki fundið auðkennisnúmer (ID) þessara hópa:\n"
+"%(groups)s\n"
+"\n"
+
+#: ../src/mainWindow.py:459
+#, python-format
+msgid ""
+"%(msg_users)s%(msg_groups)s\n"
+"In most cases this is caused by inconsistencies in the user or group "
+"database, e.g. between the files /etc/passwd, /etc/group and their "
+"respective shadow files /etc/shadow and /etc/gshadow. I will try to ignore "
+"these entries and continue for now, but please fix these inconsistencies as "
+"soon as possible."
+msgstr ""
+"%(msg_users)s%(msg_groups)s\n"
+"Í flestum tilfellum er um að ræða ósamræmi í gagnagrunnum notenda eða hópa, "
+"t.d. milli skránna /etc/passwd, /etc/group og 'skuggaskráa' þeirra /etc/"
+"shadow og /etc/gshadow. Reynt verður að hunsa þessar færslur og halda áfram "
+"núna, en reyndu samt að laga þetta ósamræmi eins fljótt og auðið er."
+
+#: ../src/mainWindow.py:578 system-config-users.gladestrings:89
+msgid "system-config-users"
+msgstr "system-config-users"
+
+#: ../src/mainWindow.py:588
+#, python-format
+msgid "Copyright © %(years)s %(holder)s <%(email)s>"
+msgstr "Copyright © %(years)s %(holder)s <%(email)s>"
+
+#: ../src/mainWindow.py:590
+#, python-format
+msgid "Copyright © %(years)s %(holder)s"
+msgstr "Höfundarréttur© %(years)s %(holder)s"
+
+#: ../src/mainWindow.py:598
+#, python-format
+msgid "%(author)s <%(email)s>"
+msgstr "%(author)s <%(email)s>"
+
+#: ../src/mainWindow.py:600
+#, python-format
+msgid "%(author)s"
+msgstr "%(author)s"
+
+#: ../src/mainWindow.py:648
+msgid "Deleting the root user is not allowed."
+msgstr "Það er ekki hægt að eyða rótarnotandanum."
+
+#: ../src/mainWindow.py:657
+msgid "- An installed software package contains this directory."
+msgstr "- Þessi mappa er hluti af uppsettum hugbúnaðarpakka."
+
+#: ../src/mainWindow.py:659
+msgid ""
+"- A system user owns this directory and removing it may impair the system's "
+"integrity."
+msgstr ""
+"- Þessi mappa tilheyrir kerfisnotanda og það gæti skaðað vélina ef henni er "
+"eytt"
+
+#: ../src/mainWindow.py:661
+msgid "- This directory doesn't exist or isn't writable."
+msgstr "- Þessi mappa er ekki til eða er ekki ritanleg."
+
+#: ../src/mainWindow.py:663
+#, python-format
+msgid "- The user '%s' doesn't own this directory."
+msgstr "- Notandinn '%s' á ekki þessa möppu."
+
+#: ../src/mainWindow.py:670
+#, python-format
+msgid ""
+"<b>There are currently processes running that are owned by '%s'!</b>  This "
+"user is probably still logged in.  "
+msgstr ""
+"<b>Það eru í gangi ferli í eigu '%s'!</b>  Þessi notandi er líkast til enn "
+"tengdur.  "
+
+#: ../src/mainWindow.py:672
+#, python-format
+msgid "Do you really want to remove the user '%s'?"
+msgstr "Ertu viss um að þú viljir eyða notandanum '%s'?"
+
+#: ../src/mainWindow.py:681
+#, python-format
+msgid "Delete %(user)s's home directory ('%(homedir)s') and temporary files."
+msgstr ""
+"Eyða heimasvæði notandans %(user)s ('%(homedir)s') og tímabundnum skrám."
+
+#: ../src/mainWindow.py:683
+#, python-format
+msgid ""
+"Delete %(user)s's home directory ('%(homedir)s'), mail spool "
+"('%(mailspool)s') and temporary files."
+msgstr ""
+"Eyða heimasvæði notandans %(user)s ('%(homedir)s'), tölvupósti "
+"('%(mailspool)s') og tímabundnum skrám."
+
+#: ../src/mainWindow.py:690
+#, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for this reason:\n"
+"%(reason)s"
+msgstr ""
+"Heimamöppu notandans %(user)s ('%(homedir)s') verður ekki eytt vegna:\n"
+"%(reason)s"
+
+#: ../src/mainWindow.py:691
+#, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for these reasons:\n"
+"%(reason)s"
+msgstr ""
+"Heimamöppu notandans %(user)s ('%(homedir)s') verður ekki eytt vegna:\n"
+"%(reason)s"
+
+#: ../src/mainWindow.py:764
+#, python-format
+msgid "Are you sure you want to delete the group '%s'?"
+msgstr "Ertu viss um að þú viljir eyða hópnum '%s'?"
+
+#: ../src/system-config-users.py:38
+msgid "system-config-users requires a currently running X server."
+msgstr "system-config-users þarfnast X þjóns."
+
+#: ../src/userGroupCheck.py:51 ../src/userProperties.py:295
+msgid "Please enter a user name."
+msgstr "Vinsamlegast gefðu upp notandaheiti."
+
+#: ../src/userGroupCheck.py:52
+#, python-format
+msgid "The user name must not exceed %d characters."
+msgstr "Notandaheitið má ekki vera lengra en %d stafir."
+
+#: ../src/userGroupCheck.py:53
+#, python-format
+msgid ""
+"The user name '%s' contains whitespace. Please do not include whitespace in "
+"the user name."
+msgstr ""
+"Notandaheitið '%s' inniheldur orðabil. Vinsamlegast notið ekki orðabil í "
+"heitum."
+
+#: ../src/userGroupCheck.py:54
+#, python-format
+msgid ""
+"The user name '%s' contains a dollar sign which is not at the end. Please "
+"use dollar signs only at the end of user names to indicate Samba machine "
+"accounts."
+msgstr ""
+"Notandaheitið '%s' inniheldur dollaramerki sem er ekki á enda heitisins. "
+"vinsamlegast notið dollaramerki eingöngu á endanum til þess að gefa til "
+"kynna að um Samba vélarnotanda sé að ræða."
+
+#: ../src/userGroupCheck.py:55
+#, python-format
+msgid ""
+"The user name '%s' contains a trailing dollar sign. This should only be used "
+"for Samba machine accounts, using this for a normal user account can cause "
+"problems with some software. Is the account in question a Samba machine "
+"account?"
+msgstr ""
+"Notandaheitið '%s' inniheldur dollaramerki á enda heitisins. Slíkt ætti "
+"eingöngu að nota fyrir aðgang fyrir aðrar tölvur, ef þetta er notað fyrir "
+"venjulegan notanda er hætta á vandræðum með ýmis forrit. Er þessi tiltekni "
+"aðgangur fyrir vélaraðgang?"
+
+#: ../src/userGroupCheck.py:56
+#, python-format
+msgid ""
+"The user name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr ""
+"Notandaheitið '%(name)s' inniheldur ógilda staf á staðsetningu %(position)d."
+
+#: ../src/userGroupCheck.py:57
+msgid ""
+"Using all numbers as the user name can cause confusion about whether the "
+"user name or numerical user id is meant. Do you really want to use a "
+"numerical-only user name?"
+msgstr ""
+"Þegar notandaheiti inniheldur aðeins tölustafi getur komið upp ruglingur um "
+"hvort átt er við notandaheiti eða tölulegt notandanúmer. Viltu halda áfram "
+"með notandaheitið sem tölustafi eingöngu?"
+
+#: ../src/userGroupCheck.py:62
+#, python-format
+msgid "The group name must not exceed %d characters."
+msgstr "Heiti hópa má ekki vera lengra en %d stafir."
+
+#: ../src/userGroupCheck.py:63
+#, python-format
+msgid ""
+"The group name '%s' contains whitespace. Please do not include whitespace in "
+"the group name."
+msgstr ""
+"Hópsheitið '%s' inniheldur orðabil. Vinsamlegast notið ekki orðabil í "
+"hópsheitum."
+
+#: ../src/userGroupCheck.py:64
+#, python-format
+msgid ""
+"The group name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr ""
+"Hópsheitið '%(name)s' inniheldur ógildann staf á staðsetningu %(position)d."
+
+#: ../src/userGroupCheck.py:65
+msgid ""
+"Using all numbers as the group name can cause confusion about whether the "
+"group name or numerical group id is meant. Do you really want to use a "
+"numerical-only group name?"
+msgstr ""
+"Þegar hópsheiti inniheldur aðeins tölustafi getur komið upp ruglingur um "
+"hvort átt er við hópsheiti eða tölulegt hópsnúmer. Viltu halda áfram með "
+"hópsheiti sem tölustafi eingöngu?"
+
+#: ../src/userGroupCheck.py:144
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr ""
+"Lykilorðið inniheldur ógilda stafi.  Vinsamlegast notið eingöngu ASCII tákn."
+
+#: ../src/userGroupCheck.py:167
+#, python-format
+msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
+msgstr "Lykilorðið er ekki nægilega sterkt: %s. Viltu virkilega nota það?"
+
+#. have to check for whitespace for gecos, since whitespace is ok
+#: ../src/userGroupCheck.py:178
+#, python-format
+msgid ""
+"The name '%s' contains invalid characters.  Please use only UTF-8 characters."
+msgstr ""
+"Heitið '%s' inniheldur ógilda stafi. Notaðu vinsamlegast einungis UTF-8 "
+"stafi."
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: ../src/userGroupCheck.py:186
+#, python-format
+msgid "The name '%s' contains a colon.  Please do not use colons in the name."
+msgstr "Heitið '%s' er með tvípúnkti. Vinsamlegast notið það ekki heitum."
+
+#: ../src/userGroupCheck.py:195
+msgid "Please enter a home directory."
+msgstr "Vinsamlegast gefðu upp heimasvæði."
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: ../src/userGroupCheck.py:202
+#, python-format
+msgid ""
+"The directory name '%s' contains a colon.  Please do not use colons in the "
+"directory name."
+msgstr ""
+"Möppuheitið '%s' inniheldur tvípúnkt. Vinsamlegast notið það ekki í "
+"möppuheitum."
+
+#: ../src/userGroupCheck.py:211
+#, python-format
+msgid ""
+"The directory name '%s' doesn't begin with a '/'. Please specify an absolute "
+"path for the home directory."
+msgstr ""
+"Möppuheitið '%s' byrjar ekki með '/'. Notaðu algilda slóð fyrir heimamöppuna."
+
+#: ../src/userGroupCheck.py:217
+#, python-format
+msgid ""
+"The directory name '%s' has path components which are too long. Please use "
+"shorter path components for the home directory."
+msgstr ""
+"Möppuheitið '%s' inniheldur of löng atriði í slóð. Notaðu styttri slóð fyrir "
+"heimamöppuna."
+
+#: ../src/userGroupCheck.py:224
+#, python-format
+msgid ""
+"The directory name '%s' contains empty path components. Please specify a "
+"home directory name without empty path components."
+msgstr ""
+"Möppuheitið '%s' inniheldur auð atriði í slóð. Tiltaktu heimamöppuheiti án "
+"eyða í slóðinni."
+
+#: ../src/userGroupCheck.py:233
+#, python-format
+msgid ""
+"The directory name '%s' contains illegal path components. Please don't use "
+"'.' or '..' as path components for the home directory."
+msgstr ""
+"Möppuheitið '%s' inniheldur ógild atriði í slóð. Ekki nota '.' or '..' í "
+"slóðum fyrir heimamöppuna."
+
+#: ../src/userGroupCheck.py:241
+#, python-format
+msgid ""
+"The directory name '%s' cannot be created ('%s' is not writable). Please "
+"chose a writable location."
+msgstr ""
+
+#: ../src/userProperties.py:108 ../src/userWindow.py:82
+msgid "User"
+msgstr "Notandi"
+
+#: ../src/userProperties.py:108 ../src/userWindow.py:82
+msgid "Staff"
+msgstr "Starfsfólk"
+
+#: ../src/userProperties.py:109 ../src/userWindow.py:83
+msgid "System Administrator"
+msgstr "Kerfisstjóri"
+
+#: ../src/userProperties.py:139
+msgid "Primary Group:"
+msgstr "Aðalhópur:"
+
+#: ../src/userProperties.py:314
+#, python-format
+msgid "The user '%s' already exists. Please choose a different name."
+msgstr "Notandinn '%s' er þegar til. Veldu eitthvað annað nafn."
+
+#: ../src/userProperties.py:336 ../src/userWindow.py:193
+msgid "Please enter a password for the user."
+msgstr "Sláðu inn lykilorð fyrir þennann notanda."
+
+#: ../src/userProperties.py:345 ../src/userWindow.py:201
+msgid "The password is too short.  Please use at least 6 characters."
+msgstr "Lykilorðið er of stutt. Notaðu amk 6 stafi."
+
+#: ../src/userProperties.py:354
+msgid "Passwords do not match."
+msgstr "Lykilorðin stemma ekki."
+
+#: ../src/userProperties.py:431
+msgid "Please select at least one group for the user."
+msgstr "Veldu amk. einn hóp fyrir notandann."
+
+#: ../src/userProperties.py:450
+msgid "Please specify the month that the password will expire."
+msgstr "Gefðu upp mánuðinn þegar lykilorðið rennur úr gildi."
+
+#: ../src/userProperties.py:458
+msgid "Please specify the day that the password will expire."
+msgstr "Gefðu upp dagsetninguna þegar lykilorðið rennur út."
+
+#: ../src/userProperties.py:466
+msgid "Please specify the year that the password will expire."
+msgstr "Gefðu upp árið sem lykilorðið rennur úr gildi."
+
+#. mktime will throw an OverflowError if the year is too big.
+#: ../src/userProperties.py:482
+msgid "The year is out of range.  Please select a different year."
+msgstr "Árið er ógilt. Veldu eitthvað annað ár."
+
+#: ../src/userProperties.py:511
+msgid ""
+"Please specify the number of days before changing the password is allowed."
+msgstr ""
+"Gefðu upp fjölda daga sem þarf að líða áður en breyta má lykilorðinu aftur."
+
+#: ../src/userProperties.py:513
+#, python-format
+msgid ""
+"The number of days before changing the password is allowed must be between "
+"%(min)d and %(max)d."
+msgstr ""
+"Gefðu upp fjölda daga sem þarf að líða áður en breyta má lykilorðinu aftur. "
+"Þetta verður að vera á milli %(min)d og %(max)d."
+
+#: ../src/userProperties.py:518
+msgid ""
+"Please specify the number of days before changing the password is required."
+msgstr ""
+"Gefðu upp fjölda daga sem þurfa að líða áður en breyta þarf lykilorðinu."
+
+#: ../src/userProperties.py:520
+#, python-format
+msgid ""
+"The number of days before changing the password is required must be between "
+"%(min)d and %(max)d."
+msgstr ""
+"Gefðu upp fjölda daga sem þurfa að líða áður en breyta þarf lykilorðinu. "
+"Þetta verður að vera á milli %(min)d og %(max)d."
+
+#: ../src/userProperties.py:524
+msgid ""
+"Please specify the number of days to warn the user before changing the "
+"password is required."
+msgstr ""
+"Gefðu upp dagafjöldann sem notandinn er aðvaraður um að hann þurfi að skipta "
+"um lykilorð."
+
+#: ../src/userProperties.py:526
+#, python-format
+msgid ""
+"The number of days to warn the user before changing the password is required "
+"must be between %(min)d and %(max)d."
+msgstr ""
+"Gefðu upp dagafjöldann sem notandinn er aðvaraður um að hann þurfi að skipta "
+"um lykilorð. Þetta verður að vera á milli %(min)d og %(max)d."
+
+#: ../src/userProperties.py:532
+msgid ""
+"Please specify the number of days until the user account becomes inactive "
+"after password has expired."
+msgstr ""
+"Gefðu upp dagafjöldann áður en aðgangurinn verður óvirkur eftir að "
+"lykilorðið rennur út."
+
+#: ../src/userProperties.py:534
+#, python-format
+msgid ""
+"The number of days until the user account becomes inactive after the "
+"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
+"means the account won't become inactive."
+msgstr ""
+"Gefðu upp dagafjöldann áður en aðgangurinn verður óvirkur eftir að "
+"lykilorðið rennur út. Þetta verður að vera á milli %(min)d og %(max)d. Með "
+"því að setja þetta á -1 þýðir að aðgangurinn rennur ekki út."
+
+#: ../src/userProperties.py:592
+#, python-format
+msgid ""
+"Unlocking the user failed because:\n"
+"\n"
+"%(errmsg)s"
+msgstr ""
+
+#: ../src/userProperties.py:595
+msgid "Unlocking the user failed due to an unknown reason."
+msgstr ""
+
+#: ../src/userWindow.py:210
+msgid "The passwords do not match."
+msgstr "Lykilorðin stemma ekki."
+
+#. The user name is blank, so complain
+#: ../src/userWindow.py:241
+msgid "Please specify a user name"
+msgstr "Gefðu upp notandanafn"
+
+#. This user already exists, so complain
+#: ../src/userWindow.py:249
+#, python-format
+msgid "An account with username '%s' already exists."
+msgstr "Notandi með notandanafninu '%s' er þegar til."
+
+#. This uid already exists, so complain
+#: ../src/userWindow.py:285
+#, python-format
+msgid "The uid %s is already in use."
+msgstr "Notandanúmerið %s er þegar í notkun."
+
+#: ../src/userWindow.py:303
+#, python-format
+msgid ""
+"Error finding suitable user id not exceeding maximum value of %(maxid)s."
+msgstr ""
+
+#: ../src/userWindow.py:315
+msgid ""
+"Creating a user with a UID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+msgstr ""
+"Ekki er mælt með því að búa til notendur með lægra UID en 500. Ertu viss um "
+"að þú viljir gera þetta?"
+
+#: ../src/userWindow.py:345
+msgid "A group with this gid already exists.  What would you like to do?"
+msgstr "Hópur með þessu gid er þegar til. Hvað viltu gera?"
+
+#: ../src/userWindow.py:347
+msgid "A group with this name already exists.  What would you like to do?"
+msgstr "Hópur með þessu heiti er þegar til. Hvað viltu gera?"
+
+#: ../src/userWindow.py:351
+msgid "Add to the existing group"
+msgstr "Bæta í hóp sem er þegar til"
+
+#: ../src/userWindow.py:352
+msgid "Add to the 'users' group"
+msgstr "Bæta honum í 'users' hópinn"
+
+#. Uh-oh.  It looks like /etc/group and /etc/gshadow are out of sync.  Give up and quit.
+#: ../src/userWindow.py:434
+msgid ""
+"The system group database cannot be read.  This problem is most likely "
+"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
+"now."
+msgstr ""
+"Ekki er hægt að lesa hópagagnagrunninn. Ástæða þess er líklega sú að "
+"skránum /etc/group og /etc/gshadow ber ekki saman. Forritið mun því hætta."
+
+#.
+#. * Translatable strings file generated by Glade.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#: system-config-users.gladestrings:7
+msgid "Add New Group"
+msgstr "Bæta við nýjum hóp"
+
+#: system-config-users.gladestrings:8 system-config-users.gladestrings:38
+msgid "_Group Name:"
+msgstr "H_eiti hóps:"
+
+#: system-config-users.gladestrings:9 system-config-users.gladestrings:74
+msgid "Specify g_roup ID manually:"
+msgstr "_Gefa upp hópsnúmer (GID) handvirkt"
+
+#: system-config-users.gladestrings:10
+msgid "User Properties"
+msgstr "Eiginleikar notanda"
+
+#: system-config-users.gladestrings:11
+msgid "User _Name:"
+msgstr "Notanda_heiti:"
+
+#: system-config-users.gladestrings:12 system-config-users.gladestrings:64
+msgid "_Full Name:"
+msgstr "_Fullt nafn:"
+
+#: system-config-users.gladestrings:13
+msgid "Pass_word:"
+msgstr "Lykil_orð:"
+
+#: system-config-users.gladestrings:14 system-config-users.gladestrings:66
+msgid "Confir_m Password:"
+msgstr "Stað_festa lykilorð:"
+
+#: system-config-users.gladestrings:15 system-config-users.gladestrings:67
+msgid "_Login Shell:"
+msgstr "_Skel:"
+
+#: system-config-users.gladestrings:16
+msgid "_Home Directory:"
+msgstr "_Heimasvæði:"
+
+#: system-config-users.gladestrings:17 system-config-users.gladestrings:68
+msgid "S_ELinux role:"
+msgstr "S_ELinux hæutverk:"
+
+#: system-config-users.gladestrings:18
+msgid "_User Data"
+msgstr "_Notandagögn"
+
+#: system-config-users.gladestrings:19
+msgid "_Enable account expiration"
+msgstr "Nota úr_eldun notanda"
+
+#: system-config-users.gladestrings:20
+msgid "Account e_xpires (YYYY-MM-DD):"
+msgstr "Auðkenni úreldist (YYYY-MM-DD):"
+
+#: system-config-users.gladestrings:21 system-config-users.gladestrings:29
+msgid "     "
+msgstr "     "
+
+#: system-config-users.gladestrings:22 system-config-users.gladestrings:23
+msgid "-"
+msgstr "-"
+
+#: system-config-users.gladestrings:24
+msgid "_Local password is locked"
+msgstr "_Lykilorðaskráin er læst"
+
+#: system-config-users.gladestrings:25
+msgid "_Account Info"
+msgstr "_Upplýsingar um notanda"
+
+#: system-config-users.gladestrings:26
+msgid "User last changed password on:"
+msgstr "Notandinn breytti síðast lykilorðinu:"
+
+#: system-config-users.gladestrings:27
+msgid "Unknown"
+msgstr "Óþekkt"
+
+#: system-config-users.gladestrings:28
+msgid "_Enable password expiration"
+msgstr "_Nota úreldun lykilorða"
+
+#: system-config-users.gladestrings:30
+msgid "Days before change a_llowed:"
+msgstr "Dagar uns breyta _má lykilorði:"
+
+#: system-config-users.gladestrings:31
+msgid "Days before change _required:"
+msgstr "Dagar uns _breytingar er þörf:"
+
+#: system-config-users.gladestrings:32
+msgid "Days _warning before change:"
+msgstr "Fjöldi daga sem er _aðvarað:"
+
+#: system-config-users.gladestrings:33
+msgid "Days before account _inactive:"
+msgstr "Dagar uns notandinn verður ó_virkur:"
+
+#: system-config-users.gladestrings:34
+msgid "_Password Info"
+msgstr "_Lykilorðaupplýsingar"
+
+#: system-config-users.gladestrings:35
+msgid "Select the groups that the user will be a member of:"
+msgstr "Veldu hópana sem notandinn mun vera í:"
+
+#: system-config-users.gladestrings:36
+msgid "_Groups"
+msgstr "_Hópar"
+
+#: system-config-users.gladestrings:37
+msgid "Group Properties"
+msgstr "Eiginleikar hóps"
+
+#: system-config-users.gladestrings:39
+msgid "Group _Data"
+msgstr "Hóps_gögn"
+
+#: system-config-users.gladestrings:40
+msgid "Select the users to join this group:"
+msgstr "Veldu notendur í þennann hóp:"
+
+#: system-config-users.gladestrings:41
+msgid "Group _Users"
+msgstr "Hóp_notendur"
+
+#: system-config-users.gladestrings:42
+msgid "User Manager"
+msgstr "Notandastjórinn"
+
+#: system-config-users.gladestrings:43
+msgid "_File"
+msgstr "_Skrá"
+
+#: system-config-users.gladestrings:44 system-config-users.gladestrings:49
+msgid "Add _User"
+msgstr "Bæta við _notanda"
+
+#: system-config-users.gladestrings:45 system-config-users.gladestrings:50
+msgid "Add _Group"
+msgstr "Bæta við _hóp"
+
+#: system-config-users.gladestrings:46
+msgid "_Edit"
+msgstr "_Sýsla"
+
+#: system-config-users.gladestrings:47 system-config-users.gladestrings:57
+msgid "_Help"
+msgstr "_Hjálp"
+
+#: system-config-users.gladestrings:48
+msgid "_Contents"
+msgstr "_Yfirlit"
+
+#: system-config-users.gladestrings:51
+msgid "Edit properties"
+msgstr "Breyta eiginleikum"
+
+#: system-config-users.gladestrings:52
+msgid "Proper_ties"
+msgstr "_Eiginleikar"
+
+#: system-config-users.gladestrings:53
+msgid "_Delete"
+msgstr "_Eyða"
+
+#: system-config-users.gladestrings:54
+msgid "Reload"
+msgstr "Hressa"
+
+#: system-config-users.gladestrings:55
+msgid "_Refresh"
+msgstr "_Hressa"
+
+#: system-config-users.gladestrings:56
+msgid "Help"
+msgstr "Hjálp"
+
+#: system-config-users.gladestrings:58
+msgid "Sea_rch filter:"
+msgstr "Leita_rsía:"
+
+#: system-config-users.gladestrings:59
+msgid "_Apply filter"
+msgstr "_Nota síu"
+
+#: system-config-users.gladestrings:60
+msgid "U_sers"
+msgstr "_Notendur"
+
+#: system-config-users.gladestrings:61
+msgid "Gr_oups"
+msgstr "_Hópar"
+
+#: system-config-users.gladestrings:62
+msgid "Add New User"
+msgstr "Bæta við nýjum notanda"
+
+#: system-config-users.gladestrings:63
+msgid "_User Name:"
+msgstr "_Notandaheiti:"
+
+#: system-config-users.gladestrings:65
+msgid "_Password:"
+msgstr "_Lykilorð:"
+
+#: system-config-users.gladestrings:69
+msgid "Create _home directory"
+msgstr "Búa til _heimasvæði"
+
+#: system-config-users.gladestrings:70
+msgid "    "
+msgstr "    "
+
+#: system-config-users.gladestrings:71
+msgid "Home _Directory:"
+msgstr "Heima_svæði:"
+
+#: system-config-users.gladestrings:72
+msgid "Create a private _group for the user"
+msgstr "Búa til _einkahóp fyrir þennann notanda"
+
+#: system-config-users.gladestrings:73
+msgid "Specify u_ser ID manually:"
+msgstr "_Gefa upp notandanúmer handvirkt"
+
+#: system-config-users.gladestrings:75
+msgid "About system-config-users"
+msgstr "Um system-config-users"
+
+#: system-config-users.gladestrings:76
+msgid "<b>system-config-users</b>"
+msgstr "<b>system-config-users</b>"
+
+#: system-config-users.gladestrings:77
+msgid "Version @VERSION@"
+msgstr "Útgáfa @VERSION@"
+
+#: system-config-users.gladestrings:78
+msgid "Copyright (c) 2001 - 2005 Red Hat, Inc."
+msgstr "Höfundarréttur (c) 2001 - 2005 Red Hat, Inc."
+
+#: system-config-users.gladestrings:79
+msgid "This software is distributed under the GNU General Public License."
+msgstr "Þessum hugbúnaði er dreyft samkvæmt skilmálum GNU leyfisins."
+
+#: system-config-users.gladestrings:80
+msgid "Preferences"
+msgstr "Eiginleikar"
+
+#: system-config-users.gladestrings:81
+msgid "_Hide system users and groups"
+msgstr "_Fela kerfisnotendur og kerfishópa"
+
+#: system-config-users.gladestrings:82
+msgid "<b>User and Group Lists</b>"
+msgstr "<b>Listi með notendum og hópum</b>"
+
+#: system-config-users.gladestrings:83
+msgid ""
+"Ensure that a new user gets a higher UID than all existing users, if not set "
+"manually."
+msgstr ""
+"Tryggja að nýjir notendur fái hærra UID en allir notendur sem fyrir eru ef "
+"þetta ekki sett handvirkt."
+
+#: system-config-users.gladestrings:84
+msgid "Automatically assigned _UID must be highest"
+msgstr "Útgefið _UID verður að vera hæst"
+
+#: system-config-users.gladestrings:85
+msgid ""
+"Ensure that a new group gets a higher GID than all existing groups, if not "
+"set manually."
+msgstr ""
+"Tryggja að nýjir hópar fái hærra GID en allir hópar sem fyrir eru ef þetta "
+"er ekki sett handvirkt."
+
+#: system-config-users.gladestrings:86
+msgid "Automatically assigned _GID must be highest"
+msgstr "Útgefið _GID verður að vera hæst"
+
+#: system-config-users.gladestrings:87
+msgid "Prefer that private group GID is the _same as UID"
+msgstr "Reyna að hafa GID einkahópsins sama og UID notanda"
+
+#: system-config-users.gladestrings:88
+msgid "<b>New Users</b>"
+msgstr "<b>Nýir notendur</b>"
+
+#: system-config-users.gladestrings:90
+msgid "Copyright © 2001-2007 Red Hat, Inc."
+msgstr "Höfundarréttur (c) 2001 - 2007 Red Hat, Inc."
+
+#: system-config-users.gladestrings:91
+msgid "Manages users and groups on your system."
+msgstr "Stjórnar notendum og hópum á kerfinu þínu."
+
+#: system-config-users.gladestrings:92
+msgid ""
+"system-config-users is free software; you can redistribute it and/or modify "
+"it under the terms of the GNU General Public License as published by the "
+"Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version.\n"
+"\n"
+"system-config-users is distributed in the hope that it will be useful, but "
+"WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"system-config-users; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+msgstr ""
+"system-config-users er frjáls hugbúnaður; þú mátt dreifa honum og/eða breyta "
+"samkvæmt skilmálum í almenna GNU GPL notkunarleyfinu eins og það er gefið út "
+"af Frjálsu hugbúnaðarstofnuninni; annaðhvort útgáfu 2 af GPL-leyfinu, eða "
+"(ef þér sýnist svo) einhverja nýrri útgáfu leyfisins.\n"
+"\n"
+"system-config-users er dreift í þeirri von að hann geti verið gagnlegur, en "
+"ÁN ALLRAR ÁBYRGÐAR; einnig án þeirrar ábyrgðar sem gefin er í skyn með "
+"SELJANLEIKA eða EIGINLEIKUM TIL TILTEKINNA NOTA. Sjá almenna GNU GPL "
+"notkunarleyfið fyrir nánari upplýsingar.\n"
+"\n"
+"Það ætti að hafa fylgt afrit af almenna GNU GPL notkunarleyfinu með "
+"forritinu; ef ekki skrifið þá Fjálsu hugbúnarstofnuninni: Free Software "
+"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, "
+"USA."
+
+#: system-config-users.gladestrings:97
+msgid "translator-credits"
+msgstr "Sveinn í Felli"

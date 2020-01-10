@@ -1,0 +1,1010 @@
+# translation of bs.po to Bosnian
+# Adnan Hodzic <AbsintheSyringe@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: bs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-20 16:08+0200\n"
+"PO-Revision-Date: 2007-01-24 17:39+0100\n"
+"Last-Translator: Adnan Hodzic <AbsintheSyringe@gmail.com>\n"
+"Language-Team: Bosnian <lokal@linux.org.ba>\n"
+"Language: bs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"X-Poedit-Language: Bosnian\n"
+"X-Poedit-Country: BOSNIA\n"
+
+#: ../src/groupProperties.py:108 ../src/groupWindow.py:108
+#: ../src/userGroupCheck.py:61
+msgid "Please enter a group name."
+msgstr "Unesite naziv grupe."
+
+#: ../src/groupProperties.py:122
+#, fuzzy, python-format
+msgid "The group '%s' already exists. Please choose a different name."
+msgstr "Godina je izvan raspona. Odaberite drugu godinu."
+
+#: ../src/groupProperties.py:164 ../src/mainWindow.py:760
+#, python-format
+msgid "You cannot remove user '%s' from their primary group."
+msgstr "Korisnika '%s' ne možete ukloniti iz njegove primarne grupe."
+
+#: ../src/groupWindow.py:116
+#, python-format
+msgid "A group with name '%s' already exists."
+msgstr "Grupa s imenom '%s' već postoji."
+
+#. This uid already exists, so complain
+#. This (chosen) gid already exists, so complain
+#: ../src/groupWindow.py:131 ../src/userWindow.py:292
+#, python-format
+msgid "The gid %s is already in use."
+msgstr "GID %s već je u upotrebi."
+
+#: ../src/groupWindow.py:138
+msgid ""
+"Creating a group with a GID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+msgstr ""
+"Izrada grupe kojoj je GID manji od 500 nije preporučljiva. Jeste li sigurni "
+"da želite to učiniti?"
+
+#: ../src/groupWindow.py:160 ../src/userWindow.py:305
+#, python-format
+msgid ""
+"Error finding suitable group id not exceeding maximum value of %(maxid)s."
+msgstr ""
+
+#: ../src/mainWindow.py:80
+msgid ""
+"The help viewer could not be found. To be able to view help you need to "
+"install the 'yelp' package."
+msgstr ""
+
+#: ../src/mainWindow.py:95
+#, python-format
+msgid "No helper application for the URL '%(url)s can be found."
+msgstr ""
+
+#: ../src/mainWindow.py:120
+#, python-format
+msgid "Error saving settings to %s"
+msgstr "Pogreška pri spremanja postavki u %s"
+
+#: ../src/mainWindow.py:130
+msgid "Users and Groups"
+msgstr "Korisnici i grupe"
+
+#: ../src/mainWindow.py:131
+msgid "Add or remove users and groups"
+msgstr "Dodavanje ili uklanjanje korisnika i grupa"
+
+#: ../src/mainWindow.py:156
+msgid "User Name"
+msgstr "Korisničko ime"
+
+#: ../src/mainWindow.py:160
+msgid "User ID"
+msgstr "ID korisnika"
+
+#: ../src/mainWindow.py:164
+msgid "Primary Group"
+msgstr "Primarna grupa"
+
+#: ../src/mainWindow.py:168
+msgid "Full Name"
+msgstr "Puno ime"
+
+#: ../src/mainWindow.py:172
+msgid "Login Shell"
+msgstr "Ljuska za prijavu u sistem"
+
+#: ../src/mainWindow.py:176
+msgid "Home Directory"
+msgstr "Korisnička mapa"
+
+#: ../src/mainWindow.py:194
+msgid "Group Name"
+msgstr "Naziv grupe"
+
+#: ../src/mainWindow.py:198
+msgid "Group ID"
+msgstr "ID grupe"
+
+#: ../src/mainWindow.py:202
+msgid "Group Members"
+msgstr "Članovi grupe"
+
+#: ../src/mainWindow.py:436
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the user '%(user)s'.\n"
+"\n"
+msgstr ""
+
+#: ../src/mainWindow.py:437
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these users:\n"
+"%(users)s\n"
+"\n"
+msgstr ""
+
+#: ../src/mainWindow.py:448
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the group '%(group)s'.\n"
+"\n"
+msgstr ""
+
+#: ../src/mainWindow.py:449
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these groups:\n"
+"%(groups)s\n"
+"\n"
+msgstr ""
+
+#: ../src/mainWindow.py:459
+#, python-format
+msgid ""
+"%(msg_users)s%(msg_groups)s\n"
+"In most cases this is caused by inconsistencies in the user or group "
+"database, e.g. between the files /etc/passwd, /etc/group and their "
+"respective shadow files /etc/shadow and /etc/gshadow. I will try to ignore "
+"these entries and continue for now, but please fix these inconsistencies as "
+"soon as possible."
+msgstr ""
+
+#: ../src/mainWindow.py:578 system-config-users.gladestrings:89
+#, fuzzy
+msgid "system-config-users"
+msgstr "O programu system-config-users"
+
+#: ../src/mainWindow.py:588
+#, fuzzy, python-format
+msgid "Copyright © %(years)s %(holder)s <%(email)s>"
+msgstr "Autorska prava (c) %s %s <%s>"
+
+#: ../src/mainWindow.py:590
+#, fuzzy, python-format
+msgid "Copyright © %(years)s %(holder)s"
+msgstr "Autorska prava (c) %s %s"
+
+#: ../src/mainWindow.py:598
+#, python-format
+msgid "%(author)s <%(email)s>"
+msgstr ""
+
+#: ../src/mainWindow.py:600
+#, python-format
+msgid "%(author)s"
+msgstr ""
+
+#: ../src/mainWindow.py:648
+msgid "Deleting the root user is not allowed."
+msgstr "Uklanjanje root korisnika nije dopušteno."
+
+#: ../src/mainWindow.py:657
+msgid "- An installed software package contains this directory."
+msgstr "- Instalirani softverski paket sadrži ovu mapu."
+
+#: ../src/mainWindow.py:659
+msgid ""
+"- A system user owns this directory and removing it may impair the system's "
+"integrity."
+msgstr ""
+"- Ova mapa pripada sistemskom korisniku i njezino uklanjanje može ugroziti "
+"cjelovitost sistema."
+
+#: ../src/mainWindow.py:661
+msgid "- This directory doesn't exist or isn't writable."
+msgstr "- Ova datoteka ne postoji ili zapisivanje nije moguće."
+
+#: ../src/mainWindow.py:663
+#, python-format
+msgid "- The user '%s' doesn't own this directory."
+msgstr "- Korisnik '%s' nije vlasnik ove mape."
+
+#: ../src/mainWindow.py:670
+#, python-format
+msgid ""
+"<b>There are currently processes running that are owned by '%s'!</b>  This "
+"user is probably still logged in.  "
+msgstr ""
+"<b>Trenutno postoje aktivni postupci čiji je vlasnik '%s'!</b>  Ovaj je "
+"korisnik vjerojatno još uvijek prijavljen u sistem."
+
+#: ../src/mainWindow.py:672
+#, python-format
+msgid "Do you really want to remove the user '%s'?"
+msgstr "Želite li zaista ukloniti korisnika '%s'?"
+
+#: ../src/mainWindow.py:681
+#, fuzzy, python-format
+msgid "Delete %(user)s's home directory ('%(homedir)s') and temporary files."
+msgstr "Izbriši mapu korisnika %s ('%s') i privremene datoteke."
+
+#: ../src/mainWindow.py:683
+#, fuzzy, python-format
+msgid ""
+"Delete %(user)s's home directory ('%(homedir)s'), mail spool "
+"('%(mailspool)s') and temporary files."
+msgstr ""
+"Izbriši mapu korisnika %s ('%s'), skladište pošte ('%s') i privremene "
+"datoteke."
+
+#: ../src/mainWindow.py:690
+#, fuzzy, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for this reason:\n"
+"%(reason)s"
+msgstr ""
+"Mapu korisnika %s ('%s') ne želim izbrisati iz razloga:\n"
+"%s"
+
+#: ../src/mainWindow.py:691
+#, fuzzy, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for these reasons:\n"
+"%(reason)s"
+msgstr ""
+"Mapu korisnika %s ('%s') ne želim izbrisati iz razloga:\n"
+"%s"
+
+#: ../src/mainWindow.py:764
+#, python-format
+msgid "Are you sure you want to delete the group '%s'?"
+msgstr "Jeste li sigurni da želite izbrisati grupu '%s'?"
+
+#: ../src/system-config-users.py:38
+msgid "system-config-users requires a currently running X server."
+msgstr "Program system-config-users zahtjeva aktivan X server."
+
+#: ../src/userGroupCheck.py:51 ../src/userProperties.py:295
+msgid "Please enter a user name."
+msgstr "Unesite korisničko ime."
+
+#: ../src/userGroupCheck.py:52
+#, python-format
+msgid "The user name must not exceed %d characters."
+msgstr "Ime korisnika mora biti kraće od %d znakova."
+
+#: ../src/userGroupCheck.py:53
+#, python-format
+msgid ""
+"The user name '%s' contains whitespace. Please do not include whitespace in "
+"the user name."
+msgstr ""
+"Korisničko ime '%s' sadrži prazna polja (razmake). Ne upotrebljavajte "
+"razmake u imenu."
+
+#: ../src/userGroupCheck.py:54
+#, python-format
+msgid ""
+"The user name '%s' contains a dollar sign which is not at the end. Please "
+"use dollar signs only at the end of user names to indicate Samba machine "
+"accounts."
+msgstr ""
+"Korisničko ime '%s' sadrži znak dolara koji nije na završetku imena. Znak "
+"dolara upotrebljavajte samo na završetku korisničkih imena da biste "
+"naznačili naloge Samba sistema."
+
+#: ../src/userGroupCheck.py:55
+#, python-format
+msgid ""
+"The user name '%s' contains a trailing dollar sign. This should only be used "
+"for Samba machine accounts, using this for a normal user account can cause "
+"problems with some software. Is the account in question a Samba machine "
+"account?"
+msgstr ""
+
+#: ../src/userGroupCheck.py:56
+#, fuzzy, python-format
+msgid ""
+"The user name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr "Korisničko ime '%s' sadrži nedozvoljeni znak na položaju %d."
+
+#: ../src/userGroupCheck.py:57
+msgid ""
+"Using all numbers as the user name can cause confusion about whether the "
+"user name or numerical user id is meant. Do you really want to use a "
+"numerical-only user name?"
+msgstr ""
+"Upotreba samo brojki u korisničkom imenu može izazvati zabunu o upotrebi kao "
+"korisničkog imena ili ID oznake korisnika. Želite li zaista upotrijebiti "
+"korisničko ime koje sadrži samo brojke?"
+
+#: ../src/userGroupCheck.py:62
+#, python-format
+msgid "The group name must not exceed %d characters."
+msgstr "Naziv grupe ne smije imati više od %d znakova."
+
+#: ../src/userGroupCheck.py:63
+#, python-format
+msgid ""
+"The group name '%s' contains whitespace. Please do not include whitespace in "
+"the group name."
+msgstr ""
+"Naziv grupe '%s' sadrži prazna polja (razmake). Ne upotrebljavajte razmake u "
+"nazivu grupa."
+
+#: ../src/userGroupCheck.py:64
+#, fuzzy, python-format
+msgid ""
+"The group name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr "Naziv grupe '%s' sadrži nedozvoljeni znak na položaju %d."
+
+#: ../src/userGroupCheck.py:65
+msgid ""
+"Using all numbers as the group name can cause confusion about whether the "
+"group name or numerical group id is meant. Do you really want to use a "
+"numerical-only group name?"
+msgstr ""
+"Upotreba samo brojki u nazivu grupe može izazvati zabunu o upotrebi kao "
+"naziva grupe ili ID oznake grupe. Želite li zaista upotrijebiti naziv grupe "
+"koji sadrži samo brojke?"
+
+#: ../src/userGroupCheck.py:144
+msgid ""
+"The password contains invalid characters.  Please use only ASCII characters."
+msgstr "Lozinka sadrži neispravne znakove. Upotrebljavajte samo ASCII znakove."
+
+#: ../src/userGroupCheck.py:167
+#, python-format
+msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
+msgstr ""
+
+#. have to check for whitespace for gecos, since whitespace is ok
+#: ../src/userGroupCheck.py:178
+#, python-format
+msgid ""
+"The name '%s' contains invalid characters.  Please use only UTF-8 characters."
+msgstr ""
+"Ime '%s' sadrži nedozvoljene znakove. Upotrebljavajte samo UTF-8 znakove. "
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: ../src/userGroupCheck.py:186
+#, python-format
+msgid "The name '%s' contains a colon.  Please do not use colons in the name."
+msgstr "Ime '%s' sadrži dvotočku. Ne upotrebljavajte dvotočke u imenu."
+
+#: ../src/userGroupCheck.py:195
+msgid "Please enter a home directory."
+msgstr "Unesite korisnički mapu."
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: ../src/userGroupCheck.py:202
+#, python-format
+msgid ""
+"The directory name '%s' contains a colon.  Please do not use colons in the "
+"directory name."
+msgstr ""
+"Naziv mape '%s' sadrži dvotočku. Ne upotrebljavajte dvotočku u nazivima mapa."
+
+#: ../src/userGroupCheck.py:211
+#, fuzzy, python-format
+msgid ""
+"The directory name '%s' doesn't begin with a '/'. Please specify an absolute "
+"path for the home directory."
+msgstr ""
+"Naziv mape '%s' sadrži dvotočku. Ne upotrebljavajte dvotočku u nazivima mapa."
+
+#: ../src/userGroupCheck.py:217
+#, fuzzy, python-format
+msgid ""
+"The directory name '%s' has path components which are too long. Please use "
+"shorter path components for the home directory."
+msgstr ""
+"Naziv mape '%s' sadrži dvotočku. Ne upotrebljavajte dvotočku u nazivima mapa."
+
+#: ../src/userGroupCheck.py:224
+#, fuzzy, python-format
+msgid ""
+"The directory name '%s' contains empty path components. Please specify a "
+"home directory name without empty path components."
+msgstr ""
+"Naziv mape '%s' sadrži dvotočku. Ne upotrebljavajte dvotočku u nazivima mapa."
+
+#: ../src/userGroupCheck.py:233
+#, fuzzy, python-format
+msgid ""
+"The directory name '%s' contains illegal path components. Please don't use "
+"'.' or '..' as path components for the home directory."
+msgstr ""
+"Naziv mape '%s' sadrži dvotočku. Ne upotrebljavajte dvotočku u nazivima mapa."
+
+#: ../src/userGroupCheck.py:241
+#, python-format
+msgid ""
+"The directory name '%s' cannot be created ('%s' is not writable). Please "
+"chose a writable location."
+msgstr ""
+
+#: ../src/userProperties.py:108 ../src/userWindow.py:82
+msgid "User"
+msgstr "Korisnik"
+
+#: ../src/userProperties.py:108 ../src/userWindow.py:82
+msgid "Staff"
+msgstr "Osoblje"
+
+#: ../src/userProperties.py:109 ../src/userWindow.py:83
+msgid "System Administrator"
+msgstr "Administrator sistema"
+
+#: ../src/userProperties.py:139
+msgid "Primary Group:"
+msgstr "Primarna grupa:"
+
+#: ../src/userProperties.py:314
+#, fuzzy, python-format
+msgid "The user '%s' already exists. Please choose a different name."
+msgstr "Godina je izvan raspona. Odaberite drugu godinu."
+
+#: ../src/userProperties.py:336 ../src/userWindow.py:193
+msgid "Please enter a password for the user."
+msgstr "Unesite lozinku za korisnika."
+
+#: ../src/userProperties.py:345 ../src/userWindow.py:201
+msgid "The password is too short.  Please use at least 6 characters."
+msgstr "Lozinka je prekratka. Upotrijebite najmanje 6 znakova."
+
+#: ../src/userProperties.py:354
+msgid "Passwords do not match."
+msgstr "Lozinke se ne podudaraju."
+
+#: ../src/userProperties.py:431
+msgid "Please select at least one group for the user."
+msgstr "Odaberite najmanje jednu grupu za korisnika."
+
+#: ../src/userProperties.py:450
+msgid "Please specify the month that the password will expire."
+msgstr "Odredite mjesec zastarijevanja lozinke."
+
+#: ../src/userProperties.py:458
+msgid "Please specify the day that the password will expire."
+msgstr "Odredite datum na koji će lozinka zastarjeti."
+
+#: ../src/userProperties.py:466
+msgid "Please specify the year that the password will expire."
+msgstr "Odredite godinu zastarijevanja lozinke."
+
+#. mktime will throw an OverflowError if the year is too big.
+#: ../src/userProperties.py:482
+msgid "The year is out of range.  Please select a different year."
+msgstr "Godina je izvan raspona. Odaberite drugu godinu."
+
+#: ../src/userProperties.py:511
+msgid ""
+"Please specify the number of days before changing the password is allowed."
+msgstr "Odredite broj dana prije nego što izmjena lozinke bude dopuštena."
+
+#: ../src/userProperties.py:513
+#, fuzzy, python-format
+msgid ""
+"The number of days before changing the password is allowed must be between "
+"%(min)d and %(max)d."
+msgstr "Odredite broj dana prije nego što izmjena lozinke bude dopuštena."
+
+#: ../src/userProperties.py:518
+msgid ""
+"Please specify the number of days before changing the password is required."
+msgstr "Odredite broj dana prije nego što promjena lozinke postane potrebnom."
+
+#: ../src/userProperties.py:520
+#, fuzzy, python-format
+msgid ""
+"The number of days before changing the password is required must be between "
+"%(min)d and %(max)d."
+msgstr "Odredite broj dana prije nego što promjena lozinke postane potrebnom."
+
+#: ../src/userProperties.py:524
+msgid ""
+"Please specify the number of days to warn the user before changing the "
+"password is required."
+msgstr ""
+"Odredite koliko je dana prije potrebe promijene lozinke potrebno upozoriti "
+"korisnika."
+
+#: ../src/userProperties.py:526
+#, fuzzy, python-format
+msgid ""
+"The number of days to warn the user before changing the password is required "
+"must be between %(min)d and %(max)d."
+msgstr ""
+"Odredite koliko je dana prije potrebe promijene lozinke potrebno upozoriti "
+"korisnika."
+
+#: ../src/userProperties.py:532
+msgid ""
+"Please specify the number of days until the user account becomes inactive "
+"after password has expired."
+msgstr ""
+"Odredite koliko dana nakon isteka lozinke korisnički račun postaje vrijediti."
+
+#: ../src/userProperties.py:534
+#, fuzzy, python-format
+msgid ""
+"The number of days until the user account becomes inactive after the "
+"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
+"means the account won't become inactive."
+msgstr ""
+"Odredite koliko dana nakon isteka lozinke korisnički račun postaje vrijediti."
+
+#: ../src/userProperties.py:592
+#, python-format
+msgid ""
+"Unlocking the user failed because:\n"
+"\n"
+"%(errmsg)s"
+msgstr ""
+
+#: ../src/userProperties.py:595
+msgid "Unlocking the user failed due to an unknown reason."
+msgstr ""
+
+#: ../src/userWindow.py:210
+msgid "The passwords do not match."
+msgstr "Lozinke se ne podudaraju."
+
+#. The user name is blank, so complain
+#: ../src/userWindow.py:241
+msgid "Please specify a user name"
+msgstr "Odredite korisničko ime"
+
+#. This user already exists, so complain
+#: ../src/userWindow.py:249
+#, python-format
+msgid "An account with username '%s' already exists."
+msgstr "Nalog s korisničkim imenom '%s' već postoji."
+
+#. This uid already exists, so complain
+#: ../src/userWindow.py:285
+#, python-format
+msgid "The uid %s is already in use."
+msgstr "UID %s već se upotrebljava."
+
+#: ../src/userWindow.py:303
+#, python-format
+msgid ""
+"Error finding suitable user id not exceeding maximum value of %(maxid)s."
+msgstr ""
+
+#: ../src/userWindow.py:315
+msgid ""
+"Creating a user with a UID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+msgstr ""
+"Stvaranje korisnika kojem je GID manji od 500 nije preporučljiva. Jeste li "
+"sigurni da želite to učiniti?"
+
+#: ../src/userWindow.py:345
+#, fuzzy
+msgid "A group with this gid already exists.  What would you like to do?"
+msgstr "Grupa s ovim nazivom već postoji. Što želite učiniti?"
+
+#: ../src/userWindow.py:347
+msgid "A group with this name already exists.  What would you like to do?"
+msgstr "Grupa s ovim nazivom već postoji. Što želite učiniti?"
+
+#: ../src/userWindow.py:351
+msgid "Add to the existing group"
+msgstr "Dodaj postojećoj grupi"
+
+#: ../src/userWindow.py:352
+msgid "Add to the 'users' group"
+msgstr "Dodaj u korisničku grupu"
+
+#. Uh-oh.  It looks like /etc/group and /etc/gshadow are out of sync.  Give up and quit.
+#: ../src/userWindow.py:434
+msgid ""
+"The system group database cannot be read.  This problem is most likely "
+"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
+"now."
+msgstr ""
+"Nije moguće čitati iz sistemske grupe baze podataka. Najvjerojatniji uzrok "
+"problema je nepodudaranje u datotekama /etc/group i /etc/gshadow. Program će "
+"završiti s radom."
+
+#.
+#. * Translatable strings file generated by Glade.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#: system-config-users.gladestrings:7
+msgid "Add New Group"
+msgstr ""
+
+#: system-config-users.gladestrings:8 system-config-users.gladestrings:38
+msgid "_Group Name:"
+msgstr "_Naziv grupe:"
+
+#: system-config-users.gladestrings:9 system-config-users.gladestrings:74
+#, fuzzy
+msgid "Specify g_roup ID manually:"
+msgstr "_ID grupe odredite ručno"
+
+#: system-config-users.gladestrings:10
+msgid "User Properties"
+msgstr "Korisničke postavke"
+
+#: system-config-users.gladestrings:11
+msgid "User _Name:"
+msgstr "_Korisničko ime:"
+
+#: system-config-users.gladestrings:12 system-config-users.gladestrings:64
+msgid "_Full Name:"
+msgstr "_Puno ime:"
+
+#: system-config-users.gladestrings:13
+msgid "Pass_word:"
+msgstr ""
+
+#: system-config-users.gladestrings:14 system-config-users.gladestrings:66
+msgid "Confir_m Password:"
+msgstr ""
+
+#: system-config-users.gladestrings:15 system-config-users.gladestrings:67
+msgid "_Login Shell:"
+msgstr "Ljuska za prijavu _u sistem:"
+
+#: system-config-users.gladestrings:16
+msgid "_Home Directory:"
+msgstr "_Korisnička mapa:"
+
+#: system-config-users.gladestrings:17 system-config-users.gladestrings:68
+msgid "S_ELinux role:"
+msgstr "S_ELinux uloga:"
+
+#: system-config-users.gladestrings:18
+msgid "_User Data"
+msgstr "_Korisnički podaci"
+
+#: system-config-users.gladestrings:19
+msgid "_Enable account expiration"
+msgstr "Omogući zastarijevanje naloga."
+
+#: system-config-users.gladestrings:20
+msgid "Account e_xpires (YYYY-MM-DD):"
+msgstr ""
+
+#: system-config-users.gladestrings:21 system-config-users.gladestrings:29
+msgid "     "
+msgstr "     "
+
+#: system-config-users.gladestrings:22 system-config-users.gladestrings:23
+msgid "-"
+msgstr "-"
+
+#: system-config-users.gladestrings:24
+msgid "_Local password is locked"
+msgstr "_Lokalna je lozinka zaključana"
+
+#: system-config-users.gladestrings:25
+msgid "_Account Info"
+msgstr "_Podaci o nalogu"
+
+#: system-config-users.gladestrings:26
+msgid "User last changed password on:"
+msgstr "Korisnik je posljednji put izmijenio lozinku:"
+
+#: system-config-users.gladestrings:27
+msgid "Unknown"
+msgstr "Nepoznato"
+
+#: system-config-users.gladestrings:28
+msgid "_Enable password expiration"
+msgstr "_Omogući zastarijevanje lozinke"
+
+#: system-config-users.gladestrings:30
+msgid "Days before change a_llowed:"
+msgstr "Broj dana prije dopuštene izmjene:"
+
+#: system-config-users.gladestrings:31
+msgid "Days before change _required:"
+msgstr "Broj dana prije potrebe za izmjenom:"
+
+#: system-config-users.gladestrings:32
+msgid "Days _warning before change:"
+msgstr "Broja dani upozorenja na izmjenu:"
+
+#: system-config-users.gladestrings:33
+msgid "Days before account _inactive:"
+msgstr "Broj dana prije zastarijevanja naloga:"
+
+#: system-config-users.gladestrings:34
+msgid "_Password Info"
+msgstr "_Podaci o lozinki"
+
+#: system-config-users.gladestrings:35
+msgid "Select the groups that the user will be a member of:"
+msgstr "Odaberite grupe u kojima će korisnik biti članom:"
+
+#: system-config-users.gladestrings:36
+msgid "_Groups"
+msgstr "_Grupe"
+
+#: system-config-users.gladestrings:37
+msgid "Group Properties"
+msgstr "Svojstva grupe"
+
+#: system-config-users.gladestrings:39
+msgid "Group _Data"
+msgstr "Po_daci o grupi"
+
+#: system-config-users.gladestrings:40
+msgid "Select the users to join this group:"
+msgstr "Odaberite korisnike za ovu grupu:"
+
+#: system-config-users.gladestrings:41
+msgid "Group _Users"
+msgstr "_Korisnici grupe"
+
+#: system-config-users.gladestrings:42
+msgid "User Manager"
+msgstr "Upravljanje korisnicima"
+
+#: system-config-users.gladestrings:43
+msgid "_File"
+msgstr "_Datoteke"
+
+#: system-config-users.gladestrings:44 system-config-users.gladestrings:49
+msgid "Add _User"
+msgstr "Dodaj _korisnika"
+
+#: system-config-users.gladestrings:45 system-config-users.gladestrings:50
+msgid "Add _Group"
+msgstr "Dodaj _grupu"
+
+#: system-config-users.gladestrings:46
+msgid "_Edit"
+msgstr "_Uredi"
+
+#: system-config-users.gladestrings:47 system-config-users.gladestrings:57
+msgid "_Help"
+msgstr "_Pomoć"
+
+#: system-config-users.gladestrings:48
+msgid "_Contents"
+msgstr "_Sadržaj"
+
+#: system-config-users.gladestrings:51
+msgid "Edit properties"
+msgstr "Uredi svojstva"
+
+#: system-config-users.gladestrings:52
+msgid "Proper_ties"
+msgstr "_Svojstva"
+
+#: system-config-users.gladestrings:53
+msgid "_Delete"
+msgstr "_Izbriši"
+
+#: system-config-users.gladestrings:54
+msgid "Reload"
+msgstr "Ponovno učitaj"
+
+#: system-config-users.gladestrings:55
+msgid "_Refresh"
+msgstr "_Osvježi"
+
+#: system-config-users.gladestrings:56
+msgid "Help"
+msgstr "Pomoć"
+
+#: system-config-users.gladestrings:58
+msgid "Sea_rch filter:"
+msgstr ""
+
+#: system-config-users.gladestrings:59
+msgid "_Apply filter"
+msgstr "Primjeni filtar"
+
+#: system-config-users.gladestrings:60
+msgid "U_sers"
+msgstr "K_orisnici"
+
+#: system-config-users.gladestrings:61
+msgid "Gr_oups"
+msgstr "Gr_upe"
+
+#: system-config-users.gladestrings:62
+msgid "Add New User"
+msgstr ""
+
+#: system-config-users.gladestrings:63
+msgid "_User Name:"
+msgstr "_Korisničko ime:"
+
+#: system-config-users.gladestrings:65
+msgid "_Password:"
+msgstr "_Lozinka:"
+
+#: system-config-users.gladestrings:69
+msgid "Create _home directory"
+msgstr "Izradi _korisničku mapu"
+
+#: system-config-users.gladestrings:70
+msgid "    "
+msgstr "    "
+
+#: system-config-users.gladestrings:71
+msgid "Home _Directory:"
+msgstr "Korisnička _mapa:"
+
+#: system-config-users.gladestrings:72
+msgid "Create a private _group for the user"
+msgstr "Izradi privatnu grupu za korisnika"
+
+#: system-config-users.gladestrings:73
+#, fuzzy
+msgid "Specify u_ser ID manually:"
+msgstr "ID korisnika odredi ručno"
+
+#: system-config-users.gladestrings:75
+msgid "About system-config-users"
+msgstr "O programu system-config-users"
+
+#: system-config-users.gladestrings:76
+msgid "<b>system-config-users</b>"
+msgstr "<b>system-config-users</b>"
+
+#: system-config-users.gladestrings:77
+msgid "Version @VERSION@"
+msgstr "Verzija @VERSION@"
+
+#: system-config-users.gladestrings:78
+msgid "Copyright (c) 2001 - 2005 Red Hat, Inc."
+msgstr "Autorska prava (c) 2001 - 2005 Red Hat, Inc."
+
+#: system-config-users.gladestrings:79
+msgid "This software is distributed under the GNU General Public License."
+msgstr "Ovaj se softver distribuira pod pravilima GNU opće javne licence."
+
+#: system-config-users.gladestrings:80
+msgid "Preferences"
+msgstr "Postavke"
+
+#: system-config-users.gladestrings:81
+msgid "_Hide system users and groups"
+msgstr "_Sakrij sistemske korisnike i grupe"
+
+#: system-config-users.gladestrings:82
+msgid "<b>User and Group Lists</b>"
+msgstr ""
+
+#: system-config-users.gladestrings:83
+#, fuzzy
+msgid ""
+"Ensure that a new user gets a higher UID than all existing users, if not set "
+"manually."
+msgstr ""
+"Osiguraj da novi korisnici dobiju viši UID od svih ostalih postojećih "
+"korisnika. Ako nije, zadaj ručno."
+
+#: system-config-users.gladestrings:84
+msgid "Automatically assigned _UID must be highest"
+msgstr "Automatski dodijeljeni _UID mora biti najvišim"
+
+#: system-config-users.gladestrings:85
+#, fuzzy
+msgid ""
+"Ensure that a new group gets a higher GID than all existing groups, if not "
+"set manually."
+msgstr ""
+"Osiguraj da novi korisnici dobiju viši GID od svih postojećih grupa. Ako "
+"nije, zadaj ručno."
+
+#: system-config-users.gladestrings:86
+msgid "Automatically assigned _GID must be highest"
+msgstr "Automatski dodijeljeni _GID mora biti najvišim"
+
+#: system-config-users.gladestrings:87
+#, fuzzy
+msgid "Prefer that private group GID is the _same as UID"
+msgstr "Preferiraj da je _GID privatne grupe isti kao i UID"
+
+#: system-config-users.gladestrings:88
+msgid "<b>New Users</b>"
+msgstr "<b>Novi korisnik</b>"
+
+#: system-config-users.gladestrings:90
+#, fuzzy
+msgid "Copyright © 2001-2007 Red Hat, Inc."
+msgstr "Autorska prava (c) 2001 - 2005 Red Hat, Inc."
+
+#: system-config-users.gladestrings:91
+msgid "Manages users and groups on your system."
+msgstr ""
+
+#: system-config-users.gladestrings:92
+msgid ""
+"system-config-users is free software; you can redistribute it and/or modify "
+"it under the terms of the GNU General Public License as published by the "
+"Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version.\n"
+"\n"
+"system-config-users is distributed in the hope that it will be useful, but "
+"WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
+"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"system-config-users; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+msgstr ""
+
+#: system-config-users.gladestrings:97
+msgid "translator-credits"
+msgstr ""
+
+#~ msgid "Con_firm Password:"
+#~ msgstr "_Potvrdite lozinku:"
+
+#, fuzzy
+#~ msgid "C_onfirm Password:"
+#~ msgstr "_Potvrdite lozinku:"
+
+#~ msgid "Create New Group"
+#~ msgstr "Izradi novu grupu"
+
+#~ msgid "New User"
+#~ msgstr "Novi korisnik"
+
+#~ msgid "New Group"
+#~ msgstr "Nova grupa"
+
+#~ msgid "Delete"
+#~ msgstr "Izbriši"
+
+#~ msgid "Create New User"
+#~ msgstr "Izradite novog korisnika"
+
+#~ msgid "Logon Information Required"
+#~ msgstr "Potrebni su podaci o prijavi u sistem"
+
+#~ msgid "_Search filter:"
+#~ msgstr "Filtar pretraživanja:"
+
+#~ msgid "Account _expires (YYYY-MM-DD):"
+#~ msgstr "Račun zastarijeva (GGGG-MM-DD):"
+
+#~ msgid "<b>User and Group List</b>"
+#~ msgstr "<b>Korisnici i grupe</b>"
+
+#~ msgid "Version %s"
+#~ msgstr "Verzija %s"
+
+#~ msgid "Help is not available."
+#~ msgstr "Pomoć nije dostupna."
+
+#, fuzzy
+#~ msgid "_Specify group ID manually:"
+#~ msgstr "_ID grupe odredite ručno"
+
+#~ msgid "G_ID:"
+#~ msgstr "G_ID:"
+
+#~ msgid "U_ID:"
+#~ msgstr "U_ID:"
+
+#~ msgid ""
+#~ "The user database cannot be read.  This problem is most likely caused by "
+#~ "a mismatch between /etc/passwd and /etc/shadow or /etc/group and /etc/"
+#~ "gshadow.  The program will exit now."
+#~ msgstr ""
+#~ "Nije moguće čitati iz korisničke baze podataka. Najvjerojatniji uzrok "
+#~ "problema je nepodudaranje u datotekama /etc/passwd i /etc/shadow. Program "
+#~ "će završiti s radom."
+
+#~ msgid ""
+#~ "I won't delete %s's home directory ('%s') due to these reasons:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Mapu korisnika %s ('%s') ne želim izbrisati iz razloga:\n"
+#~ "%s"
