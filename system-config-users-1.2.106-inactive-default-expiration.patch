@@ -1,9 +1,20 @@
-From f177c1d4ddbad5e44c273a2b236c7e614ef296df Mon Sep 17 00:00:00 2001
+From 07999529b91b3ffdf33b2a35b9a7b242bda4d237 Mon Sep 17 00:00:00 2001
 From: Nils Philippsen <nils@redhat.com>
-Date: Tue, 28 Aug 2012 14:38:50 +0200
+Date: Wed, 22 Apr 2015 17:43:51 +0200
 Subject: [PATCH] patch: inactive-default-expiration
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
 
 Squashed commit of the following:
+
+commit ee2cf1323af0b1e459edbece056a5e935001f604
+Author: Miloslav Trmač <mitr@redhat.com>
+Date:   Thu Nov 8 12:32:38 2012 +0100
+
+    Fix disabling account expiration
+
+    (cherry picked from commit 559b189a503f1de8415f0cd76903bdd884ae9e85)
 
 commit bac158d910347202d5efd7ea2284cc3a04989925
 Author: Nils Philippsen <nils@redhat.com>
@@ -19,11 +30,11 @@ Date:   Wed Aug 15 14:18:21 2012 +0200
     fix account expiration if inactive default is set
     (cherry picked from commit c2bc12db63216eba68633e8d587233043d72f915)
 ---
- src/userProperties.py | 5 +++--
- 1 file changed, 3 insertions(+), 2 deletions(-)
+ src/userProperties.py | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
 
 diff --git a/src/userProperties.py b/src/userProperties.py
-index b541ae4..ecfc916 100644
+index ca7bdec..a3a5302 100644
 --- a/src/userProperties.py
 +++ b/src/userProperties.py
 @@ -55,6 +55,7 @@ class userProperties:
@@ -52,6 +63,15 @@ index b541ae4..ecfc916 100644
                      self.accountExpireCheck.set_active(False)
  
              min = self.userEnt.get (libuser.SHADOWMIN, [self.pwAllowDefault])
+@@ -489,7 +490,7 @@ class userProperties:
+ 
+             self.userEnt.set(libuser.SHADOWEXPIRE, daysTillExpire)
+         else:
+-            self.userEnt.set(libuser.SHADOWEXPIRE, self.pwInactiveDefault)
++            self.userEnt.set(libuser.SHADOWEXPIRE, self.pwExpireUnset)
+ 
+         if self.pwExpireCheck.get_active():
+             allowed = string.strip(self.pwAllowEntry.get_text())
 -- 
-1.7.11.4
+2.1.0
 
