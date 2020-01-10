@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # userGroupCheck.py - code to make sure that the user/group input is valid
-# Copyright © 2001 - 2005, 2007 - 2009 Red Hat, Inc.
+# Copyright © 2001 - 2005, 2007 - 2010 Red Hat, Inc.
 # Copyright © 2001 - 2003 Brent Fox <bfox@redhat.com>
 # Copyright © 2004 - 2005 Nils Philippsen <nils@redhat.com>
 #
@@ -23,6 +23,7 @@
 # Nils Philippsen <nils@redhat.com>
 
 import os
+import errno
 import string
 import libuser
 import messageDialog
@@ -41,6 +42,8 @@ try:
         have_cracklib_2_8_13 = False
 except ImportError:
     pass
+
+import selinux
 
 maxusernamelength = libuser.UT_NAMESIZE - 1
 maxgroupnamelength = libuser.UT_NAMESIZE - 1
@@ -139,12 +142,27 @@ def isGroupnameOk(candidate, widget):
     return isUserGroupNameOk ('group', candidate, widget)
 
 def isPasswordOk(candidate, widget):
+    non_ascii = False
+
     for i in candidate:
-        if i not in string.ascii_letters and i not in string.digits and i not in string.punctuation and i not in string.whitespace:
-            messageDialog.show_message_dialog(_("The password contains invalid characters.  "
-                                                "Please use only ASCII characters."))
-            widget.set_text("")
-            widget.grab_focus()
+        if (i not in string.ascii_letters and
+                i not in string.digits and
+                i not in string.punctuation and
+                i not in string.whitespace):
+            non_ascii = True
+            break
+
+    if non_ascii:
+        rc = messageDialog.show_confirm_dialog(
+                _("The chosen password contains characters which may be "
+                  "hard or impossible to type in certain situations. To "
+                  "ensure the password can be typed everywhere use only "
+                  "unaccented Latin letters (A-Z, a-z), digits (0-9), "
+                  "punctuation characters (e.g. comma, full stop) and the "
+                  "space character in the password. Do you want to use "
+                  "this password anyway?"))
+
+        if rc != gtk.RESPONSE_YES:
             return False
 
     # if cracklib is available, check the password for weaknesses
@@ -172,7 +190,7 @@ def isPasswordOk(candidate, widget):
 
 def isNameOk(candidate, widget):
     try:
-        dummy = candidate.decode ('utf-8')
+        candidate.decode ('utf-8')
     except UnicodeDecodeError:
         #have to check for whitespace for gecos, since whitespace is ok
         messageDialog.show_message_dialog(_("The name '%s' contains invalid characters.  "
@@ -237,11 +255,26 @@ def isHomedirOk(candidate, widget, need_homedir = True):
 
     parent_dir = "/".join(str_split[:-1]) or "/"
 
-    if need_homedir and not os.access(parent_dir, os.W_OK):
-        messageDialog.show_message_dialog (_("The directory name '%s' cannot be created ('%s' is not writable). Please chose a writable location.") % (candidate, parent_dir))
-        widget.set_text("")
-        widget.grab_focus()
-        return False
+    if need_homedir:
+        # os.access() sometimes says a directory is writable, but it's not
+        # (autofs roots, procfs, sysfs, ...), so simply attempt to create it.
+        try:
+            os.mkdir(candidate, 0700)
+        except Exception, exc:
+            # Ignore if the directory exists already.
+            if not (isinstance(exc, OSError) and exc.errno == errno.EEXIST):
+                messageDialog.show_message_dialog(
+                        _("The directory '%(dir)s' cannot be created "
+                          "('%(parent_dir)s' is not writable). Please choose "
+                          "a writable location.") % {
+                              'dir': candidate,
+                              'parent_dir': parent_dir})
+                widget.set_text("")
+                widget.grab_focus()
+                return False
+        else:
+            if selinux.is_selinux_enabled():
+                selinux.restorecon(candidate)
 
     return True
 

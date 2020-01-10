@@ -1,6 +1,0 @@
-Makefile
-Makefile.in
-POTFILES
-POTFILES-RHL
-*.gmo
-po2tbl.sed

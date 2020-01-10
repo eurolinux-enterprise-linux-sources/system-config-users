@@ -1,11 +1,11 @@
-From dc7d757ebd8827013523294e4870869b92d0a55a Mon Sep 17 00:00:00 2001
+From d8209995e9b80af5e6f6aad95b8f53f4be452540 Mon Sep 17 00:00:00 2001
 From: Nils Philippsen <nils@redhat.com>
-Date: Wed, 9 Feb 2011 17:16:54 +0100
-Subject: [PATCH] patch: selinux-module
+Date: Tue, 1 Feb 2011 12:43:13 +0100
+Subject: [PATCH] patch: selinux
 
 Squashed commit of the following:
 
-commit ec97c3c9add05d756cb06f92bddaf4d3468261f9
+commit 3f8486d26a27b919a54898e185ead23a18339807
 Author: Nils Philippsen <nils@redhat.com>
 Date:   Mon Jan 31 12:16:10 2011 +0100
 
@@ -13,8 +13,6 @@ Date:   Mon Jan 31 12:16:10 2011 +0100
 
     presence of this module blocks use of system-wide one (#646876)
     (cherry picked from commit b3fc3280cda4f69884b31f8103344092e4eeb8d4)
-
-    Signed-off-by: Nils Philippsen <nils@redhat.com>
 ---
  src/selinux.py |  134 --------------------------------------------------------
  1 files changed, 0 insertions(+), 134 deletions(-)

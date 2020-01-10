@@ -1,4 +1,4 @@
-# translation of ko.po to Korean
+# translation of system-config-users.master.ko.po to
 # translation of ko.po to
 # translation of ko.po to
 # Copyright (C) 2001 Red Hat, Inc.
@@ -7,18 +7,19 @@
 # Michelle Ji Yeen Kim <mkim@redhat.com>, 2005, 2006.
 # Eunju Kim <eukim@redhat.com>, 2006, 2007, 2008, 2009.
 # Hyunsok Oh <hoh@redhat.com>, 2010.
+# Eun-Ju Kim <eukim@redhat.com>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: ko\n"
+"Project-Id-Version: system-config-users.master.ko\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-20 16:08+0200\n"
-"PO-Revision-Date: 2010-04-06 11:58+1000\n"
-"Last-Translator: Hyunsok Oh <hoh@redhat.com>\n"
-"Language-Team: Korean <ko@li.org>\n"
-"Language: ko\n"
+"POT-Creation-Date: 2010-11-30 16:08+0100\n"
+"PO-Revision-Date: 2010-12-07 16:07+1000\n"
+"Last-Translator: Eun-Ju Kim <eukim@redhat.com>\n"
+"Language-Team:  <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ko\n"
 "Generated-By: pygettext.py 1.1\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms:  nplurals=1; plural=0;\n"
@@ -26,7 +27,7 @@ msgstr ""
 "\n"
 
 #: ../src/groupProperties.py:108 ../src/groupWindow.py:108
-#: ../src/userGroupCheck.py:61
+#: ../src/userGroupCheck.py:64
 msgid "Please enter a group name."
 msgstr "그룹 이름을 입력해 주십시오."
 
@@ -40,6 +41,129 @@ msgstr "'%s' 그룹이 이미 존재합니다. 다른 이름을 선택해 주십
 msgid "You cannot remove user '%s' from their primary group."
 msgstr "사용자 '%s'를 기본 그룹에서 제거할 수 없습니다."
 
+#: ../src/userProperties.py:113 ../src/userWindow.py:85
+msgid "User"
+msgstr "사용자"
+
+#: ../src/userProperties.py:113 ../src/userWindow.py:85
+msgid "Staff"
+msgstr "직원"
+
+#: ../src/userProperties.py:114 ../src/userWindow.py:86
+msgid "System Administrator"
+msgstr "시스템 관리자"
+
+#: ../src/userProperties.py:144
+msgid "Primary Group:"
+msgstr "기본 그룹:"
+
+#: ../src/userProperties.py:226
+#, python-format
+msgid "Password last changed on: %x"
+msgstr "마지막으로 변경된 암호: %x "
+
+#: ../src/userProperties.py:306 ../src/userGroupCheck.py:54
+msgid "Please enter a user name."
+msgstr "사용자 이름을 입력하십시오."
+
+#: ../src/userProperties.py:325
+#, python-format
+msgid "The user '%s' already exists. Please choose a different name."
+msgstr "사용자 '%s'이/가 이미 존재합니다. 다른 이름을 선택하십시오. "
+
+#: ../src/userProperties.py:346
+msgid "Passwords do not match."
+msgstr "암호가 일치하지 않습니다."
+
+#: ../src/userProperties.py:423
+msgid "Please select at least one group for the user."
+msgstr "이 사용자를 위해 최소한 한 그룹을 선택하십시오. "
+
+#: ../src/userProperties.py:442
+msgid "Please specify the month that the password will expire."
+msgstr "암호가 만료될 월기간을 (month)로 지정하십시오."
+
+#: ../src/userProperties.py:450
+msgid "Please specify the day that the password will expire."
+msgstr "암호가 만료될 날짜를 지정하십시오."
+
+#: ../src/userProperties.py:458
+msgid "Please specify the year that the password will expire."
+msgstr "암호가 만료될 년(year)을 지정하십시오."
+
+#. mktime will throw an OverflowError if the year is too big.
+#: ../src/userProperties.py:474
+msgid "The year is out of range.  Please select a different year."
+msgstr "입력하신 년도가 범위에 벗어납니다.  다른 년도를 선택하십시오."
+
+#: ../src/userProperties.py:504
+msgid "Please specify the number of days before changing the password is allowed."
+msgstr "몇 일이 지난 후 암호 변경을 허용할 것인지 지정하십시오."
+
+#: ../src/userProperties.py:506
+#, python-format
+msgid ""
+"The number of days before changing the password is allowed must be between %"
+"(min)d and %(max)d."
+msgstr "암호 변경 가능 기간을 %(min)d 에서 %(max)d 까지로 지정합니다. "
+
+#: ../src/userProperties.py:511
+msgid "Please specify the number of days before changing the password is required."
+msgstr "몇 일이 지난 후 암호 변경을 요청할 것인지 지정하십시오."
+
+#: ../src/userProperties.py:513
+#, python-format
+msgid ""
+"The number of days before changing the password is required must be between %"
+"(min)d and %(max)d."
+msgstr "암호 변경 요청 기간을 %(min)d 에서 %(max)d 까지로 지정합니다. "
+
+#: ../src/userProperties.py:517
+msgid ""
+"Please specify the number of days to warn the user before changing the "
+"password is required."
+msgstr "암호 변경이 요청되기 몇 일 전에 사용자에게 경고 메시지를 보낼지 지정하십시오."
+
+#: ../src/userProperties.py:519
+#, python-format
+msgid ""
+"The number of days to warn the user before changing the password is required "
+"must be between %(min)d and %(max)d."
+msgstr ""
+"암호 변경 요청 전에 사용자에게 보낼 경고 메시지에 대한 기간을 %(min)d 에서 %"
+"(max)d 까지로 지정합니다."
+
+#: ../src/userProperties.py:525
+msgid ""
+"Please specify the number of days until the user account becomes inactive "
+"after password has expired."
+msgstr "암호가 만료된 후 몇일 후에 사용자 계정을 비활성화할 것인지 지정해 주십시오."
+
+#: ../src/userProperties.py:527
+#, python-format
+msgid ""
+"The number of days until the user account becomes inactive after the "
+"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
+"means the account won't become inactive."
+msgstr ""
+"암호가 만료된 후 사용자 계정을 비활성화시키기 까지의 기간을 %(min)d 에서 %"
+"(max)d로 지정합니다. -1로 설정할 경우, 계정은 비활성화되지 않습니다. "
+
+#: ../src/userProperties.py:593
+#, python-format
+msgid ""
+"Unlocking the user failed because:\n"
+"\n"
+"%(errmsg)s"
+msgstr ""
+"다음과 같은 이유로 사용자 잠금 해제 실패:\n"
+"\n"
+"%(errmsg)s"
+
+#: ../src/userProperties.py:596
+msgid "Unlocking the user failed due to an unknown reason."
+msgstr "알려지지 않은 이유로 사용자 잠금 해제가 실패하였습니다.  "
+
 #: ../src/groupWindow.py:116
 #, python-format
 msgid "A group with name '%s' already exists."
@@ -47,7 +171,7 @@ msgstr "'%s' 이름의 그룹이 이미 존재합니다."
 
 #. This uid already exists, so complain
 #. This (chosen) gid already exists, so complain
-#: ../src/groupWindow.py:131 ../src/userWindow.py:292
+#: ../src/groupWindow.py:131 ../src/userWindow.py:274
 #, python-format
 msgid "The gid %s is already in use."
 msgstr "gid %s는 이미 사용 중 입니다."
@@ -56,14 +180,12 @@ msgstr "gid %s는 이미 사용 중 입니다."
 msgid ""
 "Creating a group with a GID less than 500 is not recommended.  Are you sure "
 "you want to do this?"
-msgstr ""
-"GID가 500 이하인 그룹은 만들지 않는게 좋습니다. 그래도 계속 하시겠습니까?"
+msgstr "GID가 500 이하인 그룹은 만들지 않는게 좋습니다. 그래도 계속 하시겠습니까?"
 
-#: ../src/groupWindow.py:160 ../src/userWindow.py:305
+#: ../src/groupWindow.py:160 ../src/userWindow.py:287
 #, python-format
-msgid ""
-"Error finding suitable group id not exceeding maximum value of %(maxid)s."
-msgstr ""
+msgid "Error finding suitable group id not exceeding maximum value of %(maxid)s."
+msgstr "최대 %(maxid)s 를 초과하지 않는 적절한 GID를 검색하는 동안 오류가 발생했습니다. "
 
 #: ../src/mainWindow.py:80
 msgid ""
@@ -183,7 +305,7 @@ msgstr ""
 "gshadow의 불일치 때문입니다. 지금은 이를 무시하고 계속 진행하지만, 빠른 시일 "
 "안에 이런 불일치를 수정하기 바랍니다. "
 
-#: ../src/mainWindow.py:578 system-config-users.gladestrings:89
+#: ../src/mainWindow.py:578 system-config-users.gladestrings:88
 msgid "system-config-users"
 msgstr "system-config-users"
 
@@ -254,8 +376,8 @@ msgstr "%(user)s의 홈 디렉토리 ('%(homedir)s') 와 임시 파일을 삭제
 #: ../src/mainWindow.py:683
 #, python-format
 msgid ""
-"Delete %(user)s's home directory ('%(homedir)s'), mail spool "
-"('%(mailspool)s') and temporary files."
+"Delete %(user)s's home directory ('%(homedir)s'), mail spool ('%(mailspool)"
+"s') and temporary files."
 msgstr ""
 "%(user)s의 홈디렉토리 ('%(homedir)s'), 메일 스풀 ('%(mailspool)s') 및 임시 파"
 "일을 삭제합니다. "
@@ -285,21 +407,75 @@ msgstr ""
 msgid "Are you sure you want to delete the group '%s'?"
 msgstr "'%s' 그룹을 삭제하겠습니까?"
 
+#. The passwords don't match, so complain
+#: ../src/userWindow.py:192
+msgid "The passwords do not match."
+msgstr "암호가 일치하지 않습니다."
+
+#. The user name is blank, so complain
+#: ../src/userWindow.py:223
+msgid "Please specify a user name"
+msgstr "사용자명을 기재해 주십시오."
+
+#. This user already exists, so complain
+#: ../src/userWindow.py:231
+#, python-format
+msgid "An account with username '%s' already exists."
+msgstr " '%s' 사용자명 계정이 이미 존재합니다."
+
+#. This uid already exists, so complain
+#: ../src/userWindow.py:267
+#, python-format
+msgid "The uid %s is already in use."
+msgstr "uid %s는 이미 사용되고 있습니다."
+
+#: ../src/userWindow.py:285
+#, python-format
+msgid "Error finding suitable user id not exceeding maximum value of %(maxid)s."
+msgstr "최대 %(maxid)s를 초과하지 않는 적절한 uid를 찾는 동안 오류가 발생했습니다. "
+
+#: ../src/userWindow.py:297
+msgid ""
+"Creating a user with a UID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+msgstr "UID가 500 이하인 사용자를 생성하지 않는게 좋습니다. 그래도 계속하시겠습니까?"
+
+#: ../src/userWindow.py:327
+msgid "A group with this gid already exists.  What would you like to do?"
+msgstr "gid를 사용한 그룹이 이미 존재합니다.  어떻게 하시겠습니까?"
+
+#: ../src/userWindow.py:329
+msgid "A group with this name already exists.  What would you like to do?"
+msgstr "이 이름의 그룹이 이미 존재합니다.  어떻게 하시겠습니까?"
+
+#: ../src/userWindow.py:333
+msgid "Add to the existing group"
+msgstr "현재 있는 그룹에 추가함"
+
+#: ../src/userWindow.py:334
+msgid "Add to the 'users' group"
+msgstr "'users' 그룹에 추가함"
+
+#. Uh-oh.  It looks like /etc/group and /etc/gshadow are out of sync.  Give up and quit.
+#: ../src/userWindow.py:416
+msgid ""
+"The system group database cannot be read.  This problem is most likely "
+"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
+"now."
+msgstr ""
+"시스템 그룹 데이터베이스를 읽을 수 없습니다.  /etc/group 파일과 /etc/gshadow "
+"파일이 일치하지 않아 문제가 발생한 것 같습니다.  프로그램을 종료합니다."
+
 #: ../src/system-config-users.py:38
 msgid "system-config-users requires a currently running X server."
-msgstr ""
-"system-config-users 프로그램을 시작하려면 X 서버가 실행중이어야 합니다."
+msgstr "system-config-users 프로그램을 시작하려면 X 서버가 실행중이어야 합니다."
 
-#: ../src/userGroupCheck.py:51 ../src/userProperties.py:295
-msgid "Please enter a user name."
-msgstr "사용자 이름을 입력하십시오."
-
-#: ../src/userGroupCheck.py:52
+#: ../src/userGroupCheck.py:55
 #, python-format
 msgid "The user name must not exceed %d characters."
 msgstr "사용자명은 %d 글자보다 길어서는 안됩니다."
 
-#: ../src/userGroupCheck.py:53
+#: ../src/userGroupCheck.py:56
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace. Please do not include whitespace in "
@@ -308,7 +484,7 @@ msgstr ""
 "사용자명 '%s'에 빈 공간이 포함되어 있습니다. 사용자명에 빈 공간이 있어서는 안"
 "됩니다."
 
-#: ../src/userGroupCheck.py:54
+#: ../src/userGroupCheck.py:57
 #, python-format
 msgid ""
 "The user name '%s' contains a dollar sign which is not at the end. Please "
@@ -318,24 +494,23 @@ msgstr ""
 "'%s' 사용자명에서 달러 기호가 마지막 위치에 있지 않습니다. Samba 계정을 표시"
 "하기 위해서는 달러 기호를 사용자명 마지막 위치에 사용해야 합니다."
 
-#: ../src/userGroupCheck.py:55
+#: ../src/userGroupCheck.py:58
 #, python-format
 msgid ""
 "The user name '%s' contains a trailing dollar sign. This should only be used "
 "for Samba machine accounts, using this for a normal user account can cause "
 "problems with some software. Is the account in question a Samba machine "
 "account?"
-msgstr ""
+msgstr "사용자 이름 '%s' 뒤에 달러 사인이 붙어 있습니다. 이는 Samba 시스템 계정에 대해서만 사용해야 하며, 일반 사용자 계정에 대해 이를 사용하는 경우 일부 소프트웨어에 문제가 발생할 수 있습니다. 이 계정은 Samba 컴퓨터 계정입니까? "
 
-#: ../src/userGroupCheck.py:56
+#: ../src/userGroupCheck.py:59
 #, python-format
 msgid ""
-"The user name '%(name)s' contains an invalid character at position "
-"%(position)d."
-msgstr ""
-"사용자명 '%(name)s'의 %(position)d 위치에 잘못된 문자가 포함되어 있습니다."
+"The user name '%(name)s' contains an invalid character at position %"
+"(position)d."
+msgstr "사용자명 '%(name)s'의 %(position)d 위치에 잘못된 문자가 포함되어 있습니다."
 
-#: ../src/userGroupCheck.py:57
+#: ../src/userGroupCheck.py:60
 msgid ""
 "Using all numbers as the user name can cause confusion about whether the "
 "user name or numerical user id is meant. Do you really want to use a "
@@ -344,12 +519,12 @@ msgstr ""
 "사용자명에 숫자만 사용하게되면 사용자명인지 사용자 id인지 혼동될 수 있습니"
 "다. 그래도 숫자로만된 사용자명을 사용하겠습니까?"
 
-#: ../src/userGroupCheck.py:62
+#: ../src/userGroupCheck.py:65
 #, python-format
 msgid "The group name must not exceed %d characters."
 msgstr "그룹 이름은 %d 글자 보다 길어서는 안됩니다."
 
-#: ../src/userGroupCheck.py:63
+#: ../src/userGroupCheck.py:66
 #, python-format
 msgid ""
 "The group name '%s' contains whitespace. Please do not include whitespace in "
@@ -358,15 +533,14 @@ msgstr ""
 "그룹 이름 '%s'에 빈 공간이 포함되어 있습니다. 그룹 이름에 빈 공간이 있어서는 "
 "안됩니다."
 
-#: ../src/userGroupCheck.py:64
+#: ../src/userGroupCheck.py:67
 #, python-format
 msgid ""
-"The group name '%(name)s' contains an invalid character at position "
-"%(position)d."
-msgstr ""
-"그룹 이름 '%(name)s'의 %(position)d 위치에 잘못된 문자가 포함되어 있습니다."
+"The group name '%(name)s' contains an invalid character at position %"
+"(position)d."
+msgstr "그룹 이름 '%(name)s'의 %(position)d 위치에 잘못된 문자가 포함되어 있습니다."
 
-#: ../src/userGroupCheck.py:65
+#: ../src/userGroupCheck.py:68
 msgid ""
 "Using all numbers as the group name can cause confusion about whether the "
 "group name or numerical group id is meant. Do you really want to use a "
@@ -375,38 +549,38 @@ msgstr ""
 "그룹명에 숫자만 사용하게되면 그룹명인지 그룹 id인지 혼동될 수 있습니다. 그래"
 "도 숫자로만된 그룹명을 사용하겠습니까?"
 
-#: ../src/userGroupCheck.py:144
+#: ../src/userGroupCheck.py:157
 msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr ""
-"암호에 잘못된 문자가 포함되어 있습니다.  ASCII 문자만 사용하기 바랍니다."
+"The chosen password contains characters which may be hard or impossible to "
+"type in certain situations. To ensure the password can be typed everywhere "
+"use only unaccented Latin letters (A-Z, a-z), digits (0-9), punctuation "
+"characters (e.g. comma, full stop) and the space character in the password. "
+"Do you want to use this password anyway?"
+msgstr "지정하신 암호에 특정한 경우 입력하기 어렵거나 불가능한 문자가 들어 있습니다. 암호에 액센트가 붙지 않는 라틴 문자 (A-Z, a-z), 숫자 (0-9), 부호 (예: 콤마, 마침표), 공백 문자만이 사용되어 어디서든지 입력 가능한 지를 확인합니다. 정말로 이 암호를 사용하시겠습니까?  "
 
-#: ../src/userGroupCheck.py:167
+#: ../src/userGroupCheck.py:185
 #, python-format
 msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
 msgstr "선택하신 암호가 취약합니다: %s. 그래도 사용하겠습니까?"
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/userGroupCheck.py:178
+#: ../src/userGroupCheck.py:196
 #, python-format
-msgid ""
-"The name '%s' contains invalid characters.  Please use only UTF-8 characters."
-msgstr ""
-"이름 '%s'에 잘못된 문자가 포함되어 있습니다.  UTF-8 문자만 사용하기 바랍니다."
+msgid "The name '%s' contains invalid characters.  Please use only UTF-8 characters."
+msgstr "이름 '%s'에 잘못된 문자가 포함되어 있습니다.  UTF-8 문자만 사용하기 바랍니다."
 
 #. have to check for colons since /etc/passwd is a colon delimited file
-#: ../src/userGroupCheck.py:186
+#: ../src/userGroupCheck.py:204
 #, python-format
 msgid "The name '%s' contains a colon.  Please do not use colons in the name."
-msgstr ""
-"이름 '%s'에 콜론(:)이 포함되어 있습니다.  이름에 콜론을 사용하지 마십시오."
+msgstr "이름 '%s'에 콜론(:)이 포함되어 있습니다.  이름에 콜론을 사용하지 마십시오."
 
-#: ../src/userGroupCheck.py:195
+#: ../src/userGroupCheck.py:213
 msgid "Please enter a home directory."
 msgstr "홈 디렉토리를 입력해 주십시오."
 
 #. have to check for colons since /etc/passwd is a colon delimited file
-#: ../src/userGroupCheck.py:202
+#: ../src/userGroupCheck.py:220
 #, python-format
 msgid ""
 "The directory name '%s' contains a colon.  Please do not use colons in the "
@@ -415,7 +589,7 @@ msgstr ""
 "디렉토리 이름 '%s'에 콜론(:)이 포함되어 있습니다.  디렉토리 이름에 콜론을 사"
 "용하지 마십시오."
 
-#: ../src/userGroupCheck.py:211
+#: ../src/userGroupCheck.py:229
 #, python-format
 msgid ""
 "The directory name '%s' doesn't begin with a '/'. Please specify an absolute "
@@ -424,7 +598,7 @@ msgstr ""
 "디렉토리 이름 '%s'이/가 '/'로 시작하지 않습니다..  홈 디렉토리에 해당하는 완"
 "전 경로를 지정하십시오. "
 
-#: ../src/userGroupCheck.py:217
+#: ../src/userGroupCheck.py:235
 #, python-format
 msgid ""
 "The directory name '%s' has path components which are too long. Please use "
@@ -433,7 +607,7 @@ msgstr ""
 "디렉토리 이름 '%s'에 있는 경로 중 너무 긴 것이 있습니다. 홈 디렉토리에 대해 "
 "짧은 경로를 사용하십시오."
 
-#: ../src/userGroupCheck.py:224
+#: ../src/userGroupCheck.py:242
 #, python-format
 msgid ""
 "The directory name '%s' contains empty path components. Please specify a "
@@ -442,7 +616,7 @@ msgstr ""
 "디렉토리 이름 '%s'에 있는 경로 중 공백이 있습니다.  공백 없이 홈 디렉토리 이"
 "름을 지정하십시오. "
 
-#: ../src/userGroupCheck.py:233
+#: ../src/userGroupCheck.py:251
 #, python-format
 msgid ""
 "The directory name '%s' contains illegal path components. Please don't use "
@@ -451,195 +625,12 @@ msgstr ""
 "디렉토리 이름 '%s'에 있는 경로 중 잘못된 문자가 있습니다.  홈 디렉토리에 대"
 "해 '.' 또는 '..'을 사용하지 마십시오. "
 
-#: ../src/userGroupCheck.py:241
+#: ../src/userGroupCheck.py:267
 #, python-format
 msgid ""
-"The directory name '%s' cannot be created ('%s' is not writable). Please "
-"chose a writable location."
-msgstr ""
-
-#: ../src/userProperties.py:108 ../src/userWindow.py:82
-msgid "User"
-msgstr "사용자"
-
-#: ../src/userProperties.py:108 ../src/userWindow.py:82
-msgid "Staff"
-msgstr "직원"
-
-#: ../src/userProperties.py:109 ../src/userWindow.py:83
-msgid "System Administrator"
-msgstr "시스템 관리자"
-
-#: ../src/userProperties.py:139
-msgid "Primary Group:"
-msgstr "기본 그룹:"
-
-#: ../src/userProperties.py:314
-#, python-format
-msgid "The user '%s' already exists. Please choose a different name."
-msgstr "사용자 '%s'이/가 이미 존재합니다. 다른 이름을 선택하십시오. "
-
-#: ../src/userProperties.py:336 ../src/userWindow.py:193
-msgid "Please enter a password for the user."
-msgstr "이 사용자의 암호를 기입하십시오."
-
-#: ../src/userProperties.py:345 ../src/userWindow.py:201
-msgid "The password is too short.  Please use at least 6 characters."
-msgstr "암호가 너무 짧습니다.  암호는 최소한 6 글자로 구성되야 합니다."
-
-#: ../src/userProperties.py:354
-msgid "Passwords do not match."
-msgstr "암호가 일치하지 않습니다."
-
-#: ../src/userProperties.py:431
-msgid "Please select at least one group for the user."
-msgstr "이 사용자를 위해 최소한 한 그룹을 선택하십시오. "
-
-#: ../src/userProperties.py:450
-msgid "Please specify the month that the password will expire."
-msgstr "암호가 만료될 월기간을 (month)로 지정하십시오."
-
-#: ../src/userProperties.py:458
-msgid "Please specify the day that the password will expire."
-msgstr "암호가 만료될 날짜를 지정하십시오."
-
-#: ../src/userProperties.py:466
-msgid "Please specify the year that the password will expire."
-msgstr "암호가 만료될 년(year)을 지정하십시오."
-
-#. mktime will throw an OverflowError if the year is too big.
-#: ../src/userProperties.py:482
-msgid "The year is out of range.  Please select a different year."
-msgstr "입력하신 년도가 범위에 벗어납니다.  다른 년도를 선택하십시오."
-
-#: ../src/userProperties.py:511
-msgid ""
-"Please specify the number of days before changing the password is allowed."
-msgstr "몇 일이 지난 후 암호 변경을 허용할 것인지 지정하십시오."
-
-#: ../src/userProperties.py:513
-#, python-format
-msgid ""
-"The number of days before changing the password is allowed must be between "
-"%(min)d and %(max)d."
-msgstr "암호 변경 가능 기간을 %(min)d 에서 %(max)d 까지로 지정합니다. "
-
-#: ../src/userProperties.py:518
-msgid ""
-"Please specify the number of days before changing the password is required."
-msgstr "몇 일이 지난 후 암호 변경을 요청할 것인지 지정하십시오."
-
-#: ../src/userProperties.py:520
-#, python-format
-msgid ""
-"The number of days before changing the password is required must be between "
-"%(min)d and %(max)d."
-msgstr "암호 변경 요청 기간을 %(min)d 에서 %(max)d 까지로 지정합니다. "
-
-#: ../src/userProperties.py:524
-msgid ""
-"Please specify the number of days to warn the user before changing the "
-"password is required."
-msgstr ""
-"암호 변경이 요청되기 몇 일 전에 사용자에게 경고 메시지를 보낼지 지정하십시오."
-
-#: ../src/userProperties.py:526
-#, python-format
-msgid ""
-"The number of days to warn the user before changing the password is required "
-"must be between %(min)d and %(max)d."
-msgstr ""
-"암호 변경 요청 전에 사용자에게 보낼 경고 메시지에 대한 기간을 %(min)d 에서 "
-"%(max)d 까지로 지정합니다."
-
-#: ../src/userProperties.py:532
-msgid ""
-"Please specify the number of days until the user account becomes inactive "
-"after password has expired."
-msgstr ""
-"암호가 만료된 후 몇일 후에 사용자 계정을 비활성화할 것인지 지정해 주십시오."
-
-#: ../src/userProperties.py:534
-#, python-format
-msgid ""
-"The number of days until the user account becomes inactive after the "
-"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
-"means the account won't become inactive."
-msgstr ""
-"암호가 만료된 후 사용자 계정을 비활성화시키기 까지의 기간을 %(min)d 에서 "
-"%(max)d로 지정합니다. -1로 설정할 경우, 계정은 비활성화되지 않습니다. "
-
-#: ../src/userProperties.py:592
-#, python-format
-msgid ""
-"Unlocking the user failed because:\n"
-"\n"
-"%(errmsg)s"
-msgstr ""
-
-#: ../src/userProperties.py:595
-msgid "Unlocking the user failed due to an unknown reason."
-msgstr ""
-
-#: ../src/userWindow.py:210
-msgid "The passwords do not match."
-msgstr "암호가 일치하지 않습니다."
-
-#. The user name is blank, so complain
-#: ../src/userWindow.py:241
-msgid "Please specify a user name"
-msgstr "사용자명을 기재해 주십시오."
-
-#. This user already exists, so complain
-#: ../src/userWindow.py:249
-#, python-format
-msgid "An account with username '%s' already exists."
-msgstr " '%s' 사용자명 계정이 이미 존재합니다."
-
-#. This uid already exists, so complain
-#: ../src/userWindow.py:285
-#, python-format
-msgid "The uid %s is already in use."
-msgstr "uid %s는 이미 사용되고 있습니다."
-
-#: ../src/userWindow.py:303
-#, python-format
-msgid ""
-"Error finding suitable user id not exceeding maximum value of %(maxid)s."
-msgstr ""
-
-#: ../src/userWindow.py:315
-msgid ""
-"Creating a user with a UID less than 500 is not recommended.  Are you sure "
-"you want to do this?"
-msgstr ""
-"UID가 500 이하인 사용자를 생성하지 않는게 좋습니다. 그래도 계속하시겠습니까?"
-
-#: ../src/userWindow.py:345
-msgid "A group with this gid already exists.  What would you like to do?"
-msgstr "gid를 사용한 그룹이 이미 존재합니다.  어떻게 하시겠습니까?"
-
-#: ../src/userWindow.py:347
-msgid "A group with this name already exists.  What would you like to do?"
-msgstr "이 이름의 그룹이 이미 존재합니다.  어떻게 하시겠습니까?"
-
-#: ../src/userWindow.py:351
-msgid "Add to the existing group"
-msgstr "현재 있는 그룹에 추가함"
-
-#: ../src/userWindow.py:352
-msgid "Add to the 'users' group"
-msgstr "'users' 그룹에 추가함"
-
-#. Uh-oh.  It looks like /etc/group and /etc/gshadow are out of sync.  Give up and quit.
-#: ../src/userWindow.py:434
-msgid ""
-"The system group database cannot be read.  This problem is most likely "
-"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
-"now."
-msgstr ""
-"시스템 그룹 데이터베이스를 읽을 수 없습니다.  /etc/group 파일과 /etc/gshadow "
-"파일이 일치하지 않아 문제가 발생한 것 같습니다.  프로그램을 종료합니다."
+"The directory '%(dir)s' cannot be created ('%(parent_dir)s' is not "
+"writable). Please choose a writable location."
+msgstr "'%(dir)s' 디렉토리를 생성할 수 없습니다 ('%(parent_dir)s'은/는 쓰기 불가능합니다). 쓰기 가능한 위치를 선택해 주십시오.  "
 
 #.
 #. * Translatable strings file generated by Glade.
@@ -648,13 +639,13 @@ msgstr ""
 #.
 #: system-config-users.gladestrings:7
 msgid "Add New Group"
-msgstr ""
+msgstr "새 그룹 추가 "
 
-#: system-config-users.gladestrings:8 system-config-users.gladestrings:38
+#: system-config-users.gladestrings:8 system-config-users.gladestrings:37
 msgid "_Group Name:"
 msgstr "그룹 이름(_G):"
 
-#: system-config-users.gladestrings:9 system-config-users.gladestrings:74
+#: system-config-users.gladestrings:9 system-config-users.gladestrings:73
 msgid "Specify g_roup ID manually:"
 msgstr "수동으로 그룹 ID 지정 (_R):"
 
@@ -666,19 +657,19 @@ msgstr "사용자 등록정보"
 msgid "User _Name:"
 msgstr "사용자명(_N):"
 
-#: system-config-users.gladestrings:12 system-config-users.gladestrings:64
+#: system-config-users.gladestrings:12 system-config-users.gladestrings:63
 msgid "_Full Name:"
 msgstr "이름(_F):"
 
 #: system-config-users.gladestrings:13
 msgid "Pass_word:"
-msgstr ""
+msgstr "암호(_W): "
 
-#: system-config-users.gladestrings:14 system-config-users.gladestrings:66
+#: system-config-users.gladestrings:14 system-config-users.gladestrings:65
 msgid "Confir_m Password:"
-msgstr ""
+msgstr "암호 확인(_M):  "
 
-#: system-config-users.gladestrings:15 system-config-users.gladestrings:67
+#: system-config-users.gladestrings:15 system-config-users.gladestrings:66
 msgid "_Login Shell:"
 msgstr "로그인 쉘(_L):"
 
@@ -686,7 +677,7 @@ msgstr "로그인 쉘(_L):"
 msgid "_Home Directory:"
 msgstr "홈 디렉토리(_H):"
 
-#: system-config-users.gladestrings:17 system-config-users.gladestrings:68
+#: system-config-users.gladestrings:17 system-config-users.gladestrings:67
 msgid "S_ELinux role:"
 msgstr "S_ELinux 역할:"
 
@@ -702,7 +693,7 @@ msgstr "계정이 기한 만기되도록 함(_E)"
 msgid "Account e_xpires (YYYY-MM-DD):"
 msgstr "계정 만료일 (YYYY-MM-DD) (_X):  "
 
-#: system-config-users.gladestrings:21 system-config-users.gladestrings:29
+#: system-config-users.gladestrings:21
 msgid "     "
 msgstr "     "
 
@@ -719,194 +710,194 @@ msgid "_Account Info"
 msgstr "계정 정보(_A)"
 
 #: system-config-users.gladestrings:26
-msgid "User last changed password on:"
-msgstr "사용자의 최종 암호 변경일:"
-
-#: system-config-users.gladestrings:27
-msgid "Unknown"
-msgstr "알 수 없음"
-
-#: system-config-users.gladestrings:28
 msgid "_Enable password expiration"
 msgstr "암호가 기한 만기되도록 함(_E)"
 
-#: system-config-users.gladestrings:30
+#: system-config-users.gladestrings:27
 msgid "Days before change a_llowed:"
 msgstr "변경전 허용일(_L):"
 
-#: system-config-users.gladestrings:31
+#: system-config-users.gladestrings:28
 msgid "Days before change _required:"
 msgstr "암호 변경 만기일(_R):"
 
-#: system-config-users.gladestrings:32
+#: system-config-users.gladestrings:29
 msgid "Days _warning before change:"
 msgstr "암호 변경 경고일(_W):"
 
-#: system-config-users.gladestrings:33
+#: system-config-users.gladestrings:30
 msgid "Days before account _inactive:"
 msgstr "계정 정지 만기일(_I):"
 
-#: system-config-users.gladestrings:34
+#: system-config-users.gladestrings:31
+msgid "Password last changed on..."
+msgstr "마지막으로 변경된 암호... "
+
+#: system-config-users.gladestrings:32
+msgid "Force password change on next login"
+msgstr "다음번 로그인 시 암호 변경 강제 "
+
+#: system-config-users.gladestrings:33
 msgid "_Password Info"
 msgstr "암호 정보(_P)"
 
-#: system-config-users.gladestrings:35
+#: system-config-users.gladestrings:34
 msgid "Select the groups that the user will be a member of:"
 msgstr "사용자가 속할 그룹을 선택:"
 
-#: system-config-users.gladestrings:36
+#: system-config-users.gladestrings:35
 msgid "_Groups"
 msgstr "그룹(_G)"
 
-#: system-config-users.gladestrings:37
+#: system-config-users.gladestrings:36
 msgid "Group Properties"
 msgstr "그룹 등록정보"
 
-#: system-config-users.gladestrings:39
+#: system-config-users.gladestrings:38
 msgid "Group _Data"
 msgstr "그룹 데이터(_D)"
 
-#: system-config-users.gladestrings:40
+#: system-config-users.gladestrings:39
 msgid "Select the users to join this group:"
 msgstr "이 그룹에 속하는 사용자 선택:"
 
-#: system-config-users.gladestrings:41
+#: system-config-users.gladestrings:40
 msgid "Group _Users"
 msgstr "그룹 사용자(_U)"
 
-#: system-config-users.gladestrings:42
+#: system-config-users.gladestrings:41
 msgid "User Manager"
 msgstr "사용자 관리자"
 
-#: system-config-users.gladestrings:43
+#: system-config-users.gladestrings:42
 msgid "_File"
 msgstr "파일(_F)"
 
-#: system-config-users.gladestrings:44 system-config-users.gladestrings:49
+#: system-config-users.gladestrings:43 system-config-users.gladestrings:48
 msgid "Add _User"
 msgstr "사용자 추가(_U)"
 
-#: system-config-users.gladestrings:45 system-config-users.gladestrings:50
+#: system-config-users.gladestrings:44 system-config-users.gladestrings:49
 msgid "Add _Group"
 msgstr "그룹 추가(_G)"
 
-#: system-config-users.gladestrings:46
+#: system-config-users.gladestrings:45
 msgid "_Edit"
 msgstr "편집(_E)"
 
-#: system-config-users.gladestrings:47 system-config-users.gladestrings:57
+#: system-config-users.gladestrings:46 system-config-users.gladestrings:56
 msgid "_Help"
 msgstr "도움말(_H)"
 
-#: system-config-users.gladestrings:48
+#: system-config-users.gladestrings:47
 msgid "_Contents"
 msgstr "내용(_C)"
 
-#: system-config-users.gladestrings:51
+#: system-config-users.gladestrings:50
 msgid "Edit properties"
 msgstr "등록정보 편집"
 
-#: system-config-users.gladestrings:52
+#: system-config-users.gladestrings:51
 msgid "Proper_ties"
 msgstr "등록정보(_T)"
 
-#: system-config-users.gladestrings:53
+#: system-config-users.gladestrings:52
 msgid "_Delete"
 msgstr "삭제(_D)"
 
-#: system-config-users.gladestrings:54
+#: system-config-users.gladestrings:53
 msgid "Reload"
 msgstr "다시읽기"
 
-#: system-config-users.gladestrings:55
+#: system-config-users.gladestrings:54
 msgid "_Refresh"
 msgstr "새로고침(_R)"
 
-#: system-config-users.gladestrings:56
+#: system-config-users.gladestrings:55
 msgid "Help"
 msgstr "도움말"
 
-#: system-config-users.gladestrings:58
+#: system-config-users.gladestrings:57
 msgid "Sea_rch filter:"
 msgstr "필터 검색(_R):  "
 
-#: system-config-users.gladestrings:59
+#: system-config-users.gladestrings:58
 msgid "_Apply filter"
 msgstr "필터 적용(_A)"
 
-#: system-config-users.gladestrings:60
+#: system-config-users.gladestrings:59
 msgid "U_sers"
 msgstr "사용자(_S)"
 
-#: system-config-users.gladestrings:61
+#: system-config-users.gladestrings:60
 msgid "Gr_oups"
 msgstr "그룹(_O)"
 
-#: system-config-users.gladestrings:62
+#: system-config-users.gladestrings:61
 msgid "Add New User"
-msgstr ""
+msgstr "새 사자 추가 "
 
-#: system-config-users.gladestrings:63
+#: system-config-users.gladestrings:62
 msgid "_User Name:"
 msgstr "사용자명(_U):"
 
-#: system-config-users.gladestrings:65
+#: system-config-users.gladestrings:64
 msgid "_Password:"
 msgstr "암호(_P):"
 
-#: system-config-users.gladestrings:69
+#: system-config-users.gladestrings:68
 msgid "Create _home directory"
 msgstr "홈 디렉토리 생성(_H)"
 
-#: system-config-users.gladestrings:70
+#: system-config-users.gladestrings:69
 msgid "    "
 msgstr "    "
 
-#: system-config-users.gladestrings:71
+#: system-config-users.gladestrings:70
 msgid "Home _Directory:"
 msgstr "홈 디렉토리(_D):"
 
-#: system-config-users.gladestrings:72
+#: system-config-users.gladestrings:71
 msgid "Create a private _group for the user"
 msgstr "사용자의 개인 그룹 생성(_G)"
 
-#: system-config-users.gladestrings:73
+#: system-config-users.gladestrings:72
 msgid "Specify u_ser ID manually:"
 msgstr "수동으로 사용자 아이디 지정(_S):"
 
-#: system-config-users.gladestrings:75
+#: system-config-users.gladestrings:74
 msgid "About system-config-users"
 msgstr "system-config-users 정보"
 
-#: system-config-users.gladestrings:76
+#: system-config-users.gladestrings:75
 msgid "<b>system-config-users</b>"
 msgstr "<b>system-config-users</b>"
 
-#: system-config-users.gladestrings:77
+#: system-config-users.gladestrings:76
 msgid "Version @VERSION@"
 msgstr "Version @VERSION@"
 
-#: system-config-users.gladestrings:78
+#: system-config-users.gladestrings:77
 msgid "Copyright (c) 2001 - 2005 Red Hat, Inc."
 msgstr "Copyright (c) 2001 - 2005 Red Hat, Inc."
 
-#: system-config-users.gladestrings:79
+#: system-config-users.gladestrings:78
 msgid "This software is distributed under the GNU General Public License."
 msgstr "이 소프트웨어는 GNU General Public License 하에 배포됩니다. "
 
-#: system-config-users.gladestrings:80
+#: system-config-users.gladestrings:79
 msgid "Preferences"
 msgstr "기본 설정"
 
-#: system-config-users.gladestrings:81
+#: system-config-users.gladestrings:80
 msgid "_Hide system users and groups"
 msgstr "시스템 사용자와 그룹 감추기(_H)"
 
-#: system-config-users.gladestrings:82
+#: system-config-users.gladestrings:81
 msgid "<b>User and Group Lists</b>"
 msgstr "<b>사용자 및 그룹 목록</b>  "
 
-#: system-config-users.gladestrings:83
+#: system-config-users.gladestrings:82
 msgid ""
 "Ensure that a new user gets a higher UID than all existing users, if not set "
 "manually."
@@ -914,11 +905,11 @@ msgstr ""
 "수동으로 설정하지 않을 경우, 새로운 사용자가 기존 사용자보다 높은 UID를 갖는"
 "지를 확인합니다."
 
-#: system-config-users.gladestrings:84
+#: system-config-users.gladestrings:83
 msgid "Automatically assigned _UID must be highest"
 msgstr "가장 높은 UID를 자동으로 할당(_U)"
 
-#: system-config-users.gladestrings:85
+#: system-config-users.gladestrings:84
 msgid ""
 "Ensure that a new group gets a higher GID than all existing groups, if not "
 "set manually."
@@ -926,27 +917,27 @@ msgstr ""
 "수동으로 설정하지 않을 경우, 새로운 그룹이 기존 그룹보다 높은 GID를 갖는지를 "
 "확인합니다."
 
-#: system-config-users.gladestrings:86
+#: system-config-users.gladestrings:85
 msgid "Automatically assigned _GID must be highest"
 msgstr "가장 높은 GID를 자동으로 할당(_G)"
 
-#: system-config-users.gladestrings:87
+#: system-config-users.gladestrings:86
 msgid "Prefer that private group GID is the _same as UID"
 msgstr "개인 그룹 GID를 UID와 같게 설정(_S) "
 
-#: system-config-users.gladestrings:88
+#: system-config-users.gladestrings:87
 msgid "<b>New Users</b>"
 msgstr "<b>새로운 사용자</b>"
 
-#: system-config-users.gladestrings:90
+#: system-config-users.gladestrings:89
 msgid "Copyright © 2001-2007 Red Hat, Inc."
 msgstr "Copyright © 2001-2007 Red Hat, Inc."
 
-#: system-config-users.gladestrings:91
+#: system-config-users.gladestrings:90
 msgid "Manages users and groups on your system."
 msgstr "시스템 상의 사용자 및 그룹 관리 "
 
-#: system-config-users.gladestrings:92
+#: system-config-users.gladestrings:91
 msgid ""
 "system-config-users is free software; you can redistribute it and/or modify "
 "it under the terms of the GNU General Public License as published by the "
@@ -976,26 +967,9 @@ msgstr ""
 "프트웨어 재단: Free Software Foundation, Inc.,  51 Franklin Street, Fifth "
 "Floor, Boston, MA 02110-130159 USA "
 
-#: system-config-users.gladestrings:97
+#: system-config-users.gladestrings:96
 msgid "translator-credits"
 msgstr ""
 "김은주 <eukim@redhat.com>, 2006, 2007\n"
 "오현석 <hoh@redhat.com>, 2010"
 
-#~ msgid "Create New Group"
-#~ msgstr "새 그룹 추가"
-
-#~ msgid "C_onfirm Password:"
-#~ msgstr "암호확인(_M):"
-
-#~ msgid "New User"
-#~ msgstr "새 사용자 추가"
-
-#~ msgid "New Group"
-#~ msgstr "새 그룹"
-
-#~ msgid "Delete"
-#~ msgstr "삭제"
-
-#~ msgid "Create New User"
-#~ msgstr "새 사용자 추가"

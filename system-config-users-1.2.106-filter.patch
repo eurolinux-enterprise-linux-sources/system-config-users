@@ -1,0 +1,51 @@
+From 7dccffaa4f3f4ce6c2757dbd7a076f5d402a6899 Mon Sep 17 00:00:00 2001
+From: Nils Philippsen <nils@redhat.com>
+Date: Tue, 1 Feb 2011 12:43:29 +0100
+Subject: [PATCH] patch: filter
+
+Squashed commit of the following:
+
+commit 06cee104eae03d4805278cb9b5875bddda920b15
+Author: Nils Philippsen <nils@redhat.com>
+Date:   Mon Jan 31 14:23:23 2011 +0100
+
+    search for substrings (#674047)
+    (cherry picked from commit 692f20665c43878dd0357e4c1d037c68700f3997)
+---
+ src/mainWindow.py |   12 +++++++-----
+ 1 files changed, 7 insertions(+), 5 deletions(-)
+
+diff --git a/src/mainWindow.py b/src/mainWindow.py
+index c7c413e..21802ff 100755
+--- a/src/mainWindow.py
++++ b/src/mainWindow.py
+@@ -1,7 +1,7 @@
+ # -*- coding: utf-8 -*-
+ #
+ # mainWindow.py - main interface window for redhat-config-users
+-# Copyright © 2001 - 2010 Red Hat, Inc.
++# Copyright © 2001 - 2011 Red Hat, Inc.
+ # Copyright © 2001 - 2003 Brent Fox <bfox@redhat.com>
+ #
+ # This program is free software; you can redistribute it and/or modify
+@@ -838,11 +838,13 @@ class mainWindow:
+         if len(filter) == 0:
+             filter = ''
+         else:
+-            index = string.find(filter, '*')
+-            length = len(filter) - 1
+-
+-            if index != length:
++            # search for substrings
++            if not filter.endswith("*"):
+                 filter = filter + "*"
++
++            if not filter.startswith("*"):
++                filter = "*" + filter
++
+         return filter
+ 
+     def on_filterSystemUsersGroupsCheckButton_toggled (self, *args):
+-- 
+1.7.4
+

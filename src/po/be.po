@@ -1,98 +1,100 @@
-# translation of pl.po to Polish
-# Radosław Zawartko <radzaw@lnet.szn.pl>, 2004.
-# Andrzej Olszewski <andrzej.olszewski@ifj.edu.pl>, 2004.
-# Tom Berner <tom@man.lodz.pl>, 2004.
-# Rajmund Paczkowski <Rajmund.Paczkowski@gmail.com>, 2004.
-# Tom Berner <tom@lodz.pl>, 2005.
-# Piotr Drąg <piotrdrag@gmail.com>, 2007.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the system-config-users package.
+# FIRST AUTHOR <defascat@tut.by>, 2010.
+# Andrey Panasyuk <defascat@tut.by>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: pl\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-11-30 16:08+0100\n"
-"PO-Revision-Date: 2010-12-01 09:11+0100\n"
-"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
-"Language-Team: Polish <trans-pl@lists.fedoraproject.org>\n"
-"Language: pl\n"
+"PO-Revision-Date: 2010-10-28 11:45+0300\n"
+"Last-Translator: Andrey Panasyuk <defascat@tut.by>\n"
+"Language-Team: Belorussian\n"
+"Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Virtaal 0.6.1\n"
 
 #: ../src/groupProperties.py:108 ../src/groupWindow.py:108
 #: ../src/userGroupCheck.py:64
 msgid "Please enter a group name."
-msgstr "Proszę podać nazwę grupy."
+msgstr "Калі ласка, ўвядзіце назву групы."
 
 #: ../src/groupProperties.py:122
 #, python-format
 msgid "The group '%s' already exists. Please choose a different name."
-msgstr "Grupa \"%s\" już istnieje. Proszę podać wybrać inną nazwę."
+msgstr "Група '%s' ужо існуе. Каклі ласка, абярыце іншае імя."
 
 #: ../src/groupProperties.py:164 ../src/mainWindow.py:760
 #, python-format
 msgid "You cannot remove user '%s' from their primary group."
-msgstr "Nie można usunąć użytkownika \"%s\" z jego podstawowej grupy."
+msgstr "Вы не можаце выдаліць карыстальніка '%s' з яго асноўнай групы."
 
 #: ../src/userProperties.py:113 ../src/userWindow.py:85
 msgid "User"
-msgstr "Użytkownik"
+msgstr "Карыстальнік"
 
 #: ../src/userProperties.py:113 ../src/userWindow.py:85
 msgid "Staff"
-msgstr "Personel"
+msgstr "Персанал"
 
 #: ../src/userProperties.py:114 ../src/userWindow.py:86
 msgid "System Administrator"
-msgstr "Administrator systemu"
+msgstr "Сістэмны Адміністратар"
 
 #: ../src/userProperties.py:144
 msgid "Primary Group:"
-msgstr "Podstawowa grupa:"
+msgstr "Галоўная Група:"
 
 #: ../src/userProperties.py:226
 #, python-format
 msgid "Password last changed on: %x"
-msgstr "Ostatnia zmiana hasła: %x"
+msgstr ""
 
 #: ../src/userProperties.py:306 ../src/userGroupCheck.py:54
 msgid "Please enter a user name."
-msgstr "Proszę podać nazwę użytkownika."
+msgstr "Калі ласка, ўвядзіце імя"
 
 #: ../src/userProperties.py:325
 #, python-format
 msgid "The user '%s' already exists. Please choose a different name."
-msgstr "Użytkownik \"%s\" już istnieje. Proszę wybrać inną nazwę."
+msgstr "Карыстальнік '%s' ўжо існуе. Калі ласка, абярыце іншае імя."
 
 #: ../src/userProperties.py:346
 msgid "Passwords do not match."
-msgstr "Hasła się nie zgadzają."
+msgstr "Паролі не супадаюць."
 
 #: ../src/userProperties.py:423
 msgid "Please select at least one group for the user."
-msgstr "Proszę wybrać przynajmniej jedną grupę dla użytkownika."
+msgstr "Калі ласка, абярыце па меньшая меры адну групу для карыстальніка."
 
 #: ../src/userProperties.py:442
 msgid "Please specify the month that the password will expire."
-msgstr "Proszę podać miesiąc, w którym hasło wygaśnie."
+msgstr "Калі ласка, абярыце месяц, калі пароль перастане дзейнічаць."
 
 #: ../src/userProperties.py:450
 msgid "Please specify the day that the password will expire."
-msgstr "Proszę podać dzień, w którym hasło wygaśnie."
+msgstr "Калі ласка, абярыце дзень, калі пароль перастане дзейнічаць."
 
 #: ../src/userProperties.py:458
 msgid "Please specify the year that the password will expire."
-msgstr "Proszę podać rok, w którym hasło wygaśnie."
+msgstr "Калі ласка, абярыце год, калі пароль перастане дзейнічаць."
 
 #. mktime will throw an OverflowError if the year is too big.
 #: ../src/userProperties.py:474
 msgid "The year is out of range.  Please select a different year."
-msgstr "Rok jest spoza zakresu. Proszę wybrać inny rok."
+msgstr "Год па за межамі. Калі ласка, абярыце іншы год."
 
 #: ../src/userProperties.py:504
 msgid ""
 "Please specify the number of days before changing the password is allowed."
-msgstr "Proszę podać, po upływie ilu dni dozwolona będzie zmiana hasła."
+msgstr ""
+"Калі ласка, абярыце колькасць дзён перад тым, як змена пароля будзе "
+"дазволена."
 
 #: ../src/userProperties.py:506
 #, python-format
@@ -100,13 +102,15 @@ msgid ""
 "The number of days before changing the password is allowed must be between "
 "%(min)d and %(max)d."
 msgstr ""
-"Liczba dni przed pozwoleniem na zmianę hasła musi być między %(min)d a "
-"%(max)d."
+"Колькасць дзён перад тым, як змена пароля будзе дазволена, павінна быць "
+"паміж %(min)d і %(max)d."
 
 #: ../src/userProperties.py:511
 msgid ""
 "Please specify the number of days before changing the password is required."
-msgstr "Proszę podać, po upływie ilu dni wymagana będzie zmiana hasła."
+msgstr ""
+"Калі ласка, абярыце колькасць дзён перад тым, як змена пароля будзе "
+"запатрабавана."
 
 #: ../src/userProperties.py:513
 #, python-format
@@ -114,16 +118,16 @@ msgid ""
 "The number of days before changing the password is required must be between "
 "%(min)d and %(max)d."
 msgstr ""
-"Liczba dni przed tym, zanim zmiana hasła będzie wymagana musi być między "
-"%(min)d a %(max)d."
+"Колькасць дзён перад тым, як змена пароля будзе запатрабавана, павінна быць "
+"паміж %(min)d і %(max)d."
 
 #: ../src/userProperties.py:517
 msgid ""
 "Please specify the number of days to warn the user before changing the "
 "password is required."
 msgstr ""
-"Proszę podać, na ile dni przed terminem wymaganej zmiany hasła ostrzegać "
-"użytkownika."
+"Калі ласка, абярыце колькасць дзён для папярэджвання карыстальніка аб "
+"надыходзячым патрабаванні змяніць пароль."
 
 #: ../src/userProperties.py:519
 #, python-format
@@ -131,16 +135,16 @@ msgid ""
 "The number of days to warn the user before changing the password is required "
 "must be between %(min)d and %(max)d."
 msgstr ""
-"Liczba dni przed ostrzeżeniem użytkownika o tym, że zmiana hasła będzie "
-"wymagana musi być między %(min)d a %(max)d."
+"The number of days to warn the user before changing the password is required "
+"must be between %(min)d and %(max)d."
 
 #: ../src/userProperties.py:525
 msgid ""
 "Please specify the number of days until the user account becomes inactive "
 "after password has expired."
 msgstr ""
-"Proszę podać, po upływie ilu dni od wygaśnięcia hasła konto użytkownika "
-"stanie się nieaktywne."
+"Калі ласка, абярыце колькасць дзён, пасля якой карыстальнік стане неактыўным "
+"пасля таго як пароль скончыў сваё дзеянне."
 
 #: ../src/userProperties.py:527
 #, python-format
@@ -149,9 +153,9 @@ msgid ""
 "password has expired must be between %(min)d and %(max)d. Setting it to -1 "
 "means the account won't become inactive."
 msgstr ""
-"Liczba dni, zanim konto użytkownika stanie się nieaktywne po wygaśnięciu "
-"hasła musi być między %(min)d a %(max)d. Ustawienie na -1 oznacza, że konto "
-"nie stanie się automatycznie nieaktywne."
+"Колькасць дзён, пасля якой карыстальнік стане неактыўным пасля таго як "
+"пароль скончыў сваё дзеянне, павінна быць паміж %(min)d і %(max)d. Значэнне "
+"-1 значыць што аккаунт будзе заставацца актыўным."
 
 #: ../src/userProperties.py:593
 #, python-format
@@ -160,103 +164,101 @@ msgid ""
 "\n"
 "%(errmsg)s"
 msgstr ""
-"Odblokowanie użytkownika nie powiodło się, poniważ:\n"
+"Разблакіравнне карыстальніка не атрымалася:\n"
 "\n"
 "%(errmsg)s"
 
 #: ../src/userProperties.py:596
 msgid "Unlocking the user failed due to an unknown reason."
-msgstr "Odblokowanie użytkownika nie powiodło się z nieznanego powodu."
+msgstr "Разблакіравнне карыстальніка не атрымалася па невядомай прычыне."
 
 #: ../src/groupWindow.py:116
 #, python-format
 msgid "A group with name '%s' already exists."
-msgstr "Grupa o nazwie \"%s\" już istnieje."
+msgstr "Група з назвай '%s' ужо існуе."
 
 #. This uid already exists, so complain
 #. This (chosen) gid already exists, so complain
 #: ../src/groupWindow.py:131 ../src/userWindow.py:274
 #, python-format
 msgid "The gid %s is already in use."
-msgstr "GID %s jest już używany."
+msgstr "Групавы ідэнтыфікатар %s ужо выкарыстоўваецца"
 
 #: ../src/groupWindow.py:138
 msgid ""
 "Creating a group with a GID less than 500 is not recommended.  Are you sure "
 "you want to do this?"
 msgstr ""
-"Tworzenie grupy z GID mniejszym niż 500 nie jest zalecane. Na pewno to "
-"zrobić?"
+"Стварэнне группы з ідэнтэфікатарам меншым за 500 не рэкамендавана. Вы "
+"ўпэўненыя што збіраецеся зрабіць гэта?"
 
 #: ../src/groupWindow.py:160 ../src/userWindow.py:287
 #, python-format
 msgid ""
 "Error finding suitable group id not exceeding maximum value of %(maxid)s."
-msgstr ""
-"Błąd podczas wyszukiwania odpowiedniego identyfikatora grupy "
-"nieprzekraczającego maksymalnej wartości %(maxid)s."
+msgstr "Памылка пошуку ідэнтыфікатара групы меншага за %(maxid)s"
 
 #: ../src/mainWindow.py:80
 msgid ""
 "The help viewer could not be found. To be able to view help you need to "
 "install the 'yelp' package."
 msgstr ""
-"Nie można odnaleźć przeglądarki pomocy. Aby wyświetlić pomoc, należy "
-"zainstalować pakiet \"yelp\"."
+"Дапамога не знойдзена. Каб праглядзець дапамогу вам трэба ўсталяваць пакет "
+"'yelp'."
 
 #: ../src/mainWindow.py:95
 #, python-format
 msgid "No helper application for the URL '%(url)s can be found."
-msgstr "Nie można odnaleźć aplikacji pomocniczej dla adresu URL '%(url)s."
+msgstr "Ня знойдзена аніводнага дапаможнага прыкладання па адрасе %(url)s"
 
 #: ../src/mainWindow.py:120
 #, python-format
 msgid "Error saving settings to %s"
-msgstr "Błąd podczas zapisywania ustawień do %s"
+msgstr "Памылка захавання наладаў у %s"
 
 #: ../src/mainWindow.py:130
 msgid "Users and Groups"
-msgstr "Użytkownicy i grupy"
+msgstr "Карыстальнікі і групы"
 
 #: ../src/mainWindow.py:131
 msgid "Add or remove users and groups"
-msgstr "Dodawanie lub usuwanie użytkowników i grupy"
+msgstr "Стварыць альбо выдаліць карыстальніка ці группу"
 
 #: ../src/mainWindow.py:156
 msgid "User Name"
-msgstr "Nazwa użytkownika"
+msgstr "Імя карыстальніка"
 
 #: ../src/mainWindow.py:160
 msgid "User ID"
-msgstr "Identyfikator użytkownika"
+msgstr "Ідэнтыфікатар карыстальніка"
 
 #: ../src/mainWindow.py:164
 msgid "Primary Group"
-msgstr "Podstawowa grupa"
+msgstr "Асноўная група"
 
 #: ../src/mainWindow.py:168
 msgid "Full Name"
-msgstr "Imię i nazwisko"
+msgstr "Поўнае імя"
 
 #: ../src/mainWindow.py:172
 msgid "Login Shell"
-msgstr "Powłoka logowania"
+msgstr "Камандная абалонка"
 
 #: ../src/mainWindow.py:176
 msgid "Home Directory"
-msgstr "Katalog domowy"
+msgstr "Хатні каталаг"
 
 #: ../src/mainWindow.py:194
 msgid "Group Name"
-msgstr "Nazwa grupy"
+msgstr "імя групы"
 
 #: ../src/mainWindow.py:198
 msgid "Group ID"
-msgstr "Identyfikator grupy"
+msgstr "Ідэнтыфікатар групы"
 
 #: ../src/mainWindow.py:202
 msgid "Group Members"
-msgstr "Członkowie grupy"
+msgstr "Члены групы"
 
 #: ../src/mainWindow.py:436
 #, python-format
@@ -264,7 +266,7 @@ msgid ""
 "I couldn't find the numerical ID of the user '%(user)s'.\n"
 "\n"
 msgstr ""
-"Nie można odnaleźć numerycznego identyfikatora użytkownika \"%(user)s\".\n"
+"Не магу знайсці лічбавы ідэнтыфікатар карыстальніка %(user)s.\n"
 "\n"
 
 #: ../src/mainWindow.py:437
@@ -274,7 +276,7 @@ msgid ""
 "%(users)s\n"
 "\n"
 msgstr ""
-"Nie można odnaleźć numerycznego identyfikatora tych użytkowników:\n"
+"Не магу знайсці лічбавыя ідэнтыфікатары карыстальнікаў:\n"
 "%(users)s\n"
 "\n"
 
@@ -284,7 +286,7 @@ msgid ""
 "I couldn't find the numerical ID of the group '%(group)s'.\n"
 "\n"
 msgstr ""
-"Nie można odnaleźć numerycznego identyfikatora grupy \"%(group)s\".\n"
+"Не магу знайсці лічбавы ідэнтыфікатар групы '%(group)s'.\n"
 "\n"
 
 #: ../src/mainWindow.py:449
@@ -294,7 +296,7 @@ msgid ""
 "%(groups)s\n"
 "\n"
 msgstr ""
-"Nie można odnaleźć numerycznego identyfikatora tych grup:\n"
+"Не магу знайсці лічбавыя ідэнтыфікатары груп:\n"
 "%(groups)s\n"
 "\n"
 
@@ -309,11 +311,11 @@ msgid ""
 "soon as possible."
 msgstr ""
 "%(msg_users)s%(msg_groups)s\n"
-"W większości przypadków jest to spowodowane niezgodnością bazy danych "
-"użytkowników lub grup, np. między plikami /etc/passwd, /etc/group oraz ich "
-"odpowiednimi plikami shadow /etc/shadow i /etc/gshadow. Program spróbuje na "
-"razie zignorować te wpisy i kontynuować, ale proszę naprawić te niezgodności "
-"tak szybko, jak to możliwe."
+"У большасці выпадкаў гэта можа быць выклікана праблемамі з базай даных "
+"карыстальнікаў альбо груп , напрыклад рассінхранізацыяй паміж файламі /etc/"
+"passwd, /etc/group і іх ценявымі адпаведнікамі /etc/shadow і /etc/gshadow. Я "
+"паспрабую ігнараваць гэткія запісы і працягну працу, але, калі ласка, "
+"пафіксіце гэтыя несупадзеннні як мага хутчэй."
 
 #: ../src/mainWindow.py:578 system-config-users.gladestrings:88
 msgid "system-config-users"
@@ -322,12 +324,12 @@ msgstr "system-config-users"
 #: ../src/mainWindow.py:588
 #, python-format
 msgid "Copyright © %(years)s %(holder)s <%(email)s>"
-msgstr "Copyright © %(years)s %(holder)s <%(email)s>"
+msgstr "Капірайт © %(years)s %(holder)s <%(email)s>"
 
 #: ../src/mainWindow.py:590
 #, python-format
 msgid "Copyright © %(years)s %(holder)s"
-msgstr "Copyright © %(years)s %(holder)s"
+msgstr "Капірайт © %(years)s %(holder)s"
 
 #: ../src/mainWindow.py:598
 #, python-format
@@ -341,28 +343,28 @@ msgstr "%(author)s"
 
 #: ../src/mainWindow.py:648
 msgid "Deleting the root user is not allowed."
-msgstr "Usuwanie użytkownika root jest niedozwolone."
+msgstr "Выдаленне карстальніка root не дазваляецца."
 
 #: ../src/mainWindow.py:657
 msgid "- An installed software package contains this directory."
-msgstr "- Zainstalowany pakiet oprogramowania zawiera ten katalog."
+msgstr "- Усталяваны пакет утрымлівае гэты каталаг."
 
 #: ../src/mainWindow.py:659
 msgid ""
 "- A system user owns this directory and removing it may impair the system's "
 "integrity."
 msgstr ""
-"- Ten katalog należy do użytkownika systemowego, jego usunięcie może "
-"uszkodzić integralność systemu."
+"- Сістэмны карыстальнік валодае гэтым каталогам. Такім чынам яе выдаленне "
+"можа паўплываць на працаздольнасць сістэмы."
 
 #: ../src/mainWindow.py:661
 msgid "- This directory doesn't exist or isn't writable."
-msgstr "- Ten katalog nie istnieje lub nie jest zapisywalny."
+msgstr "Дырэкторыя не існуе альбо няма праў на запіс у яе"
 
 #: ../src/mainWindow.py:663
 #, python-format
 msgid "- The user '%s' doesn't own this directory."
-msgstr "- Użytkownik \"%s\" nie jest właścicielem tego katalogu."
+msgstr "- Карыстальнік '%s' не валодае гэтай дырэкторыяй."
 
 #: ../src/mainWindow.py:670
 #, python-format
@@ -370,20 +372,18 @@ msgid ""
 "<b>There are currently processes running that are owned by '%s'!</b>  This "
 "user is probably still logged in.  "
 msgstr ""
-"<b>Obecnie uruchomione są procesy przez użytkownika \"%s\".</b> Ten "
-"użytkownik jest prawdopodobnie ciągle zalogowany.  "
+"<b>На дадзены момант запушчаны працэсы, якімі валодае '%s'!</b>  Напэўна "
+"гэты карыстальнік залагінены ў сістэму"
 
 #: ../src/mainWindow.py:672
 #, python-format
 msgid "Do you really want to remove the user '%s'?"
-msgstr "Na pewno usunąć użytkownika \"%s\"?"
+msgstr "Сапраўды жадаеце выдаліць карыстальніка '%s'?"
 
 #: ../src/mainWindow.py:681
 #, python-format
 msgid "Delete %(user)s's home directory ('%(homedir)s') and temporary files."
-msgstr ""
-"Usuń katalog domowy (\"%(homedir)s\") użytkownika %(user)s oraz pliki "
-"tymczasowe."
+msgstr "Выдаліць хатні каталог ('%(homedir)s') і часовыя файлы %(user)s."
 
 #: ../src/mainWindow.py:683
 #, python-format
@@ -391,8 +391,8 @@ msgid ""
 "Delete %(user)s's home directory ('%(homedir)s'), mail spool "
 "('%(mailspool)s') and temporary files."
 msgstr ""
-"Usuń katalog domowy (\"%(homedir)s\") użytkownika %(user)s, kolejkę poczty "
-"(\"%(mailspool)s\") oraz pliki tymczasowe."
+"Выдаліць хатні каталог ('%(homedir)s'), паштовую скрыню ('%(mailspool)s') і "
+"часовыя файлы %(user)s."
 
 #: ../src/mainWindow.py:690
 #, python-format
@@ -400,8 +400,8 @@ msgid ""
 "I won't delete %(user)s's home directory ('%(homedir)s') for this reason:\n"
 "%(reason)s"
 msgstr ""
-"Nie można usunąć katalogu domowego (\"%(homedir)s\") użytkownika %(user)s z "
-"powodu:\n"
+"Я не выдалю хатні каталог ('%(homedir)s') карыстальніка %(user)s па "
+"наступнай прычыне:\n"
 "%(reason)s"
 
 #: ../src/mainWindow.py:691
@@ -410,68 +410,66 @@ msgid ""
 "I won't delete %(user)s's home directory ('%(homedir)s') for these reasons:\n"
 "%(reason)s"
 msgstr ""
-"Nie można usunąć katalogu domowego (\"%(homedir)s\") użytkownika %(user)s z "
-"powodu:\n"
+"Я не выдалю хатні каталог ('%(homedir)s') карыстальніка %(user)s па "
+"наступных прычынах:\n"
 "%(reason)s"
 
 #: ../src/mainWindow.py:764
 #, python-format
 msgid "Are you sure you want to delete the group '%s'?"
-msgstr "Na pewno usunąć grupę \"%s\"?"
+msgstr "Сапраўды жадаеце выдаліць групу '%s'?"
 
 #. The passwords don't match, so complain
 #: ../src/userWindow.py:192
 msgid "The passwords do not match."
-msgstr "Hasła nie zgadzają się."
+msgstr "Паролі не супадаюць"
 
 #. The user name is blank, so complain
 #: ../src/userWindow.py:223
 msgid "Please specify a user name"
-msgstr "Proszę podać nazwę użytkownika"
+msgstr "Калі ласка, укажыце імя карыстальніка"
 
 #. This user already exists, so complain
 #: ../src/userWindow.py:231
 #, python-format
 msgid "An account with username '%s' already exists."
-msgstr "Konto o nazwie użytkownika \"%s\" już istnieje."
+msgstr "Аккаунт за іменем '%s' ужо існуе."
 
 #. This uid already exists, so complain
 #: ../src/userWindow.py:267
 #, python-format
 msgid "The uid %s is already in use."
-msgstr "UID %s jest już używany."
+msgstr "Uid %s ужо выкарыстоўваецца."
 
 #: ../src/userWindow.py:285
 #, python-format
 msgid ""
 "Error finding suitable user id not exceeding maximum value of %(maxid)s."
-msgstr ""
-"Błąd podczas wyszukiwania odpowiedniego identyfikatora użytkownika "
-"nieprzekraczającego maksymalnej wartości %(maxid)s."
+msgstr "Памылка пошуку карыстальніка з ідэнтыфікатарам меншым за %(maxid)s."
 
 #: ../src/userWindow.py:297
 msgid ""
 "Creating a user with a UID less than 500 is not recommended.  Are you sure "
 "you want to do this?"
 msgstr ""
-"Tworzenie użytkownika z UID mniejszym niż 500 nie jest zalecane. Na pewno to "
-"zrobić?"
+"Стварэнне карыстальніка з UID меншым за 500 не рэкамендавана. Жадаеце "
+"працягваць?"
 
 #: ../src/userWindow.py:327
 msgid "A group with this gid already exists.  What would you like to do?"
-msgstr "Grupa z tym GID już istnieje. Co zrobić?"
+msgstr "Група з гэткім ідэнтыфікатарам ужо існуе. Што жадаеце зрабіць?"
 
 #: ../src/userWindow.py:329
 msgid "A group with this name already exists.  What would you like to do?"
-msgstr "Grupa z tą nazwą już istnieje. Co zrobić?"
+msgstr "Група з гэткай назвай ужо існуе. Што жадаеце зрабіць?"
 
 #: ../src/userWindow.py:333
 msgid "Add to the existing group"
-msgstr "Dodanie do istniejącej grupy"
+msgstr "Далучыць у існуючую групу"
 
 #: ../src/userWindow.py:334
 msgid "Add to the 'users' group"
-msgstr "Dodanie do grupy \"users\""
+msgstr "Далучыць у групу 'users'"
 
 #. Uh-oh.  It looks like /etc/group and /etc/gshadow are out of sync.  Give up and quit.
 #: ../src/userWindow.py:416
@@ -480,18 +478,18 @@ msgid ""
 "caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
 "now."
 msgstr ""
-"Nie można odczytać bazy danych grup systemu. Problem ten jest prawdopodobnie "
-"spowodowany niezgodnością między plikami /etc/group i /etc/gshadow. Program "
-"zakończy działanie."
+"База даных, што ўтрымлівае спіс сістэмных груп не можа быць прачытана. "
+"Хутчэй за ўсё праблема выклікана розніцай паміж /etc/group і /etc/gshadow.  "
+"Праграмма зараз завяршыцца. "
 
 #: ../src/system-config-users.py:38
 msgid "system-config-users requires a currently running X server."
-msgstr "system-config-users wymaga aktualnie uruchomionego serwera X."
+msgstr "system-config-users патрабуе запушчаны X сервер"
 
 #: ../src/userGroupCheck.py:55
 #, python-format
 msgid "The user name must not exceed %d characters."
-msgstr "Nazwa użytkownika nie może być dłuższa niż %d znaki."
+msgstr "Імя карыстальніка не павінна быць даўжэй за %d сімвалы."
 
 #: ../src/userGroupCheck.py:56
 #, python-format
@@ -499,8 +497,8 @@ msgid ""
 "The user name '%s' contains whitespace. Please do not include whitespace in "
 "the user name."
 msgstr ""
-"Nazwa użytkownika \"%s\" zawiera biały znak. Nie należy umieszczać białych "
-"znaków w nazwie użytkownika."
+"Імя карыстальніка '%s' утрымлівае прабелы. Калі ласка, не выкарыстоўвайце "
+"прабелы."
 
 #: ../src/userGroupCheck.py:57
 #, python-format
@@ -509,9 +507,9 @@ msgid ""
 "use dollar signs only at the end of user names to indicate Samba machine "
 "accounts."
 msgstr ""
-"Nazwa użytkownika \"%s\" zawiera znak dolara, który nie jest umieszczony na "
-"końcu. Należy używaj znaku dolara tylko na końcu nazw użytkowników, aby "
-"wskazać konta Samby."
+"Імя карысталльніка '%s' утрымлівае сімвал даляра што знаходзіцца не ў канцы. "
+"Калі ласка, выкарыстоўвайце сімвал даляра толькі ў канцы імя каб адзначыць "
+"карыстальніка Samba."
 
 #: ../src/userGroupCheck.py:58
 #, python-format
@@ -521,10 +519,11 @@ msgid ""
 "problems with some software. Is the account in question a Samba machine "
 "account?"
 msgstr ""
-"Nazwa użytkownika \"%s\" zawiera znak dolara na końcu. Powinien on być "
-"używany tylko dla kont na komputerze Samby. Użycie go dla normalnego konta "
-"użytkownika może spowodować problemy z niektórym oprogramowaniem. Czy te "
-"konto jest kontem na komputerze Samby?"
+"Імя карысталльніка '%s' утрымлівае сімвал даляра што знаходзіцца ў канцы. "
+"Гэткая канструкцыя можа быць выкарыстана сімвал толькі для аккаунтаў Samba. "
+"Выкарыстанне сімвала даляра ў канцы для звычайнага карыстальніка можа "
+"выклікаць праблемы з некаторым праграмным забеспячэннем. Цi з'яўляецца гэты "
+"аккаунт аккаунтам Samba?"
 
 #: ../src/userGroupCheck.py:59
 #, python-format
@@ -532,7 +531,7 @@ msgid ""
 "The user name '%(name)s' contains an invalid character at position "
 "%(position)d."
 msgstr ""
-"Nazwa użytkownika \"%(name)s\" zawiera nieprawidłowe znaki w miejscu "
+"Імя карыстальніка '%(name)s' утрымлівае недазволеныя сімвалы ў пазіцыі "
 "%(position)d."
 
 #: ../src/userGroupCheck.py:60
@@ -541,14 +540,14 @@ msgid ""
 "user name or numerical user id is meant. Do you really want to use a "
 "numerical-only user name?"
 msgstr ""
-"Używanie samych liczb jako nazwy użytkownika może powodować zamieszanie, co "
-"oznacza nazwę użytkownika, a co numeryczny identyfikator użytkownika. Na "
-"pewno użyć numerycznej nazwy użytkownika?"
+"Выкарыстоўванне толькі лічбаў у імені карыстальніка можа выклікаць "
+"непаразуменне наконт таго. што выкарыстоўваецца імя альбо ідэнтыфікатар "
+"карыстальніка. Жадаеце працягваць з імем утрымліваючым выключна лічбы?"
 
 #: ../src/userGroupCheck.py:65
 #, python-format
 msgid "The group name must not exceed %d characters."
-msgstr "Nazwa grupy nie może być dłuższa niż %d znaków."
+msgstr "Назва групы не павінна быць даўжэй за %d сімвалы."
 
 #: ../src/userGroupCheck.py:66
 #, python-format
@@ -556,8 +555,7 @@ msgid ""
 "The group name '%s' contains whitespace. Please do not include whitespace in "
 "the group name."
 msgstr ""
-"Nazwa grupy \"%s\" zawiera biały znak. Nie należy umieszczać białych znaków "
-"w nazwie grupy."
+"Назва групы '%s' утрымлівае прабелы. Калі ласка, не выкарыстоўвайце прабелы."
 
 #: ../src/userGroupCheck.py:67
 #, python-format
@@ -565,7 +563,8 @@ msgid ""
 "The group name '%(name)s' contains an invalid character at position "
 "%(position)d."
 msgstr ""
-"Nazwa grupy \"%(name)s\" zawiera nieprawidłowy znak w miejscu %(position)d."
+"Назва групы '%(name)s' утрымлівае недазволеныя сімвалы ў пазіцыі "
+"%(position)d."
 
 #: ../src/userGroupCheck.py:68
 msgid ""
@@ -573,9 +572,9 @@ msgid ""
 "group name or numerical group id is meant. Do you really want to use a "
 "numerical-only group name?"
 msgstr ""
-"Używanie samych liczb jako nazwy grupy może powodować zamieszanie, co "
-"oznacza nazwę grupy, a co numeryczny identyfikator grupy. Na pewno użyć "
-"numerycznej nazwy grupy?"
+"Выкарыстоўванне толькі лічбаў у назве групы можа выклікаць непаразуменне "
+"наконт таго. што выкарыстоўваецца назва альбо ідэнтыфікатар групы. Жадаеце "
+"працягваць з назвай утрымліваючай выключна лічбы?"
 
 #: ../src/userGroupCheck.py:157
 msgid ""
@@ -585,16 +584,12 @@ msgid ""
 "characters (e.g. comma, full stop) and the space character in the password. "
 "Do you want to use this password anyway?"
 msgstr ""
-"Wybrane hasło zawiera znaki, które mogą być trudne lub niemożliwe do "
-"napisania w niektórych sytuacjach. Aby upewnić się, że hasło można wpisywać "
-"w każdym miejscu, należy używać w haśle tylko znaków z alfabetu łacińskiego "
-"bez akcentu (A-Z, a-z), cyfr (0-9), znaków interpunkcyjnych (przecinek, "
-"kropka) i znaku spacji. Użyć tego hasła mimo to?"
 
 #: ../src/userGroupCheck.py:185
 #, python-format
 msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
-msgstr "Wybrane hasło jest za słabe: %s. Użyć je mimo to?"
+msgstr ""
+"Абраны пароль занадта слабы: %s. Жадаеце выкарыстоўваць яго ў любым выпадку?"
 
 #. have to check for whitespace for gecos, since whitespace is ok
 #: ../src/userGroupCheck.py:196
@@ -602,17 +597,20 @@ msgstr "Wybrane hasło jest za słabe: %s. Użyć je mimo to?"
 msgid ""
 "The name '%s' contains invalid characters.  Please use only UTF-8 characters."
 msgstr ""
-"Nazwa \"%s\" zawiera nieprawidłowe znaki. Należy używać tylko znaków UTF-8."
+"Імя '%s' утрымлівае недазволеныя сімвалы.  Калі ласка, выкарыстоўвайце "
+"толькі UTF-8 сімвалы."
 
 #. have to check for colons since /etc/passwd is a colon delimited file
 #: ../src/userGroupCheck.py:204
 #, python-format
 msgid "The name '%s' contains a colon.  Please do not use colons in the name."
-msgstr "Nazwa \"%s\" zawiera dwukropek. Nie należy używać dwukropków w nazwie."
+msgstr ""
+"Імя '%s' утрымлівае двухкроп'е.  Калі ласка, не выкарыстоўвайце двухкроп'е ў "
+"імені."
 
 #: ../src/userGroupCheck.py:213
 msgid "Please enter a home directory."
-msgstr "Proszę podać katalog domowy."
+msgstr "Калі ласка, ўвядзіце хатні каталог."
 
 #. have to check for colons since /etc/passwd is a colon delimited file
 #: ../src/userGroupCheck.py:220
@@ -621,8 +619,8 @@ msgid ""
 "The directory name '%s' contains a colon.  Please do not use colons in the "
 "directory name."
 msgstr ""
-"Nazwa katalogu \"%s\" zawiera dwukropek. Nie należy używać dwukropków w "
-"nazwie katalogu."
+"Імя каталога '%s' утрымлівае двухкроп'е. Калі ласка, не выкарыстоўвайце "
+"двухкроп'е ў імені каталога."
 
 #: ../src/userGroupCheck.py:229
 #, python-format
@@ -630,8 +628,8 @@ msgid ""
 "The directory name '%s' doesn't begin with a '/'. Please specify an absolute "
 "path for the home directory."
 msgstr ""
-"Nazwa katalogu \"%s\" nie zaczyna się od \"/\". Proszę podać bezwzględną "
-"ścieżkę do katalogu domowego."
+"Назва каталога '%s' не пачынаецца з '/'. Калі ласка, ўкажыце абсалютны шлях "
+"да хатняга каталога."
 
 #: ../src/userGroupCheck.py:235
 #, python-format
@@ -639,8 +637,8 @@ msgid ""
 "The directory name '%s' has path components which are too long. Please use "
 "shorter path components for the home directory."
 msgstr ""
-"Nazwa katalogu \"%s\" zawiera składniki ścieżki, które są za długie. Proszę "
-"używać krótszych składników ścieżek dla katalogu domowego."
+"Назва каталога '%s' утрымлівае надта доўгія часткі шляху. Калі ласка, "
+"зрабіце кампанеты шляху да хатняга каталогу карацей."
 
 #: ../src/userGroupCheck.py:242
 #, python-format
@@ -648,8 +646,8 @@ msgid ""
 "The directory name '%s' contains empty path components. Please specify a "
 "home directory name without empty path components."
 msgstr ""
-"Nazwa katalogu \"%s\" zawiera puste składniki ścieżki. Proszę podać nazwę "
-"katalogu domowego bez pustych składników ścieżki."
+"Назва каталога '%s' утрымлівае пустыя кампаненты. Калі ласка, ўкажыце шлях "
+"да хатняга каталогу без пустых кампанент."
 
 #: ../src/userGroupCheck.py:251
 #, python-format
@@ -657,8 +655,9 @@ msgid ""
 "The directory name '%s' contains illegal path components. Please don't use "
 "'.' or '..' as path components for the home directory."
 msgstr ""
-"Nazwa katalogu \"%s\" zawiera niedozwolone składniki ścieżki. Nie należy "
-"używać \".\" lub \"..\" jako składników ścieżki do katalogu domowego."
+"Назва каталога '%s' утрымлівае некарэктныя кампаненты. Калі ласка, не "
+"выкарыстоўвайце '.' альбо '..' у якасці кампанентаў шляха да хатняга "
+"каталогу."
 
 #: ../src/userGroupCheck.py:267
 #, python-format
@@ -666,8 +665,6 @@ msgid ""
 "The directory '%(dir)s' cannot be created ('%(parent_dir)s' is not "
 "writable). Please choose a writable location."
 msgstr ""
-"Nie można utworzyć katalogu \"%(dir)s\" (katalog \"%(parent_dir)s\" nie jest "
-"zapisywalny). Proszę wybrać zapisywalne położenie."
 
 #.
 #. * Translatable strings file generated by Glade.
@@ -676,59 +673,59 @@ msgstr ""
 #.
 #: system-config-users.gladestrings:7
 msgid "Add New Group"
-msgstr "Dodanie nowej grupy"
+msgstr "Стварыць новую групу"
 
 #: system-config-users.gladestrings:8 system-config-users.gladestrings:37
 msgid "_Group Name:"
-msgstr "_Nazwa grupy:"
+msgstr "Імя _Групы:"
 
 #: system-config-users.gladestrings:9 system-config-users.gladestrings:73
 msgid "Specify g_roup ID manually:"
-msgstr "Proszę _ręcznie podać identyfikator grupy:"
+msgstr "Задаць ідэнтыфікатар г_рупы"
 
 #: system-config-users.gladestrings:10
 msgid "User Properties"
-msgstr "Właściwości użytkownika"
+msgstr "Налады Карыстальніка"
 
 #: system-config-users.gladestrings:11
 msgid "User _Name:"
-msgstr "_Nazwa użytkownika:"
+msgstr "_Імя Карыстальніка"
 
 #: system-config-users.gladestrings:12 system-config-users.gladestrings:63
 msgid "_Full Name:"
-msgstr "_Imię i nazwisko:"
+msgstr "Поўнае Імя"
 
 #: system-config-users.gladestrings:13
 msgid "Pass_word:"
-msgstr "_Hasło:"
+msgstr "Пар_оль"
 
 #: system-config-users.gladestrings:14 system-config-users.gladestrings:65
 msgid "Confir_m Password:"
-msgstr "_Potwierdzenie hasła:"
+msgstr "Пад_цверджанне Пароля:"
 
 #: system-config-users.gladestrings:15 system-config-users.gladestrings:66
 msgid "_Login Shell:"
-msgstr "Powłoka l_ogowania:"
+msgstr "_Камандная абалонка"
 
 #: system-config-users.gladestrings:16
 msgid "_Home Directory:"
-msgstr "Katalog _domowy:"
+msgstr "Хатні каталог"
 
 #: system-config-users.gladestrings:17 system-config-users.gladestrings:67
 msgid "S_ELinux role:"
-msgstr "Rola S_ELinuksa:"
+msgstr "Роля S_ELinux"
 
 #: system-config-users.gladestrings:18
 msgid "_User Data"
-msgstr "Dane _użytkownika"
+msgstr "Дадаткова"
 
 #: system-config-users.gladestrings:19
 msgid "_Enable account expiration"
-msgstr "Wygasani_e konta"
+msgstr "_Уключыць заканчэнне аккаунту"
 
 #: system-config-users.gladestrings:20
 msgid "Account e_xpires (YYYY-MM-DD):"
-msgstr "_Konto wygasa (RRRR-MM-DD):"
+msgstr "Аккаунт заканчвае дзеянне (ГГГГ-ММ-ДД):"
 
 #: system-config-users.gladestrings:21
 msgid "     "
@@ -740,151 +737,151 @@ msgstr "-"
 
 #: system-config-users.gladestrings:24
 msgid "_Local password is locked"
-msgstr "_Lokalne hasło jest zablokowane"
+msgstr ""
 
 #: system-config-users.gladestrings:25
 msgid "_Account Info"
-msgstr "Inform_acje o koncie"
+msgstr "Інфармацыя пра _аккаунт"
 
 #: system-config-users.gladestrings:26
 msgid "_Enable password expiration"
-msgstr "_Wygasanie hasła"
+msgstr "_Уключыць заканчэнне аккаунту"
 
 #: system-config-users.gladestrings:27
 msgid "Days before change a_llowed:"
-msgstr "_Liczba dni, zanim możliwa będzie zmiana hasła:"
+msgstr "Дзён перад _зменай:"
 
 #: system-config-users.gladestrings:28
 msgid "Days before change _required:"
-msgstr "Liczba dni p_rzed wymaganą zmianą hasła:"
+msgstr "Дзён перад _патрабаваннем аб _змене:"
 
 #: system-config-users.gladestrings:29
 msgid "Days _warning before change:"
-msgstr "Liczba dni ostrzegania przed _zmianą:"
+msgstr "Дзён з папяр_эджаннем перад зменай:"
 
 #: system-config-users.gladestrings:30
 msgid "Days before account _inactive:"
-msgstr "Liczba dni do deaktywacj_i konta:"
+msgstr "Дзён перед _дэактывацыяй"
 
 #: system-config-users.gladestrings:31
 msgid "Password last changed on..."
-msgstr "Ostatnia zmiana hasła..."
+msgstr ""
 
 #: system-config-users.gladestrings:32
 msgid "Force password change on next login"
-msgstr "Wymuszenie zmiany hasło podczas następnego logowania"
+msgstr ""
 
 #: system-config-users.gladestrings:33
 msgid "_Password Info"
-msgstr "Informacje o _haśle"
+msgstr "Ін_фармацыя пра пароль"
 
 #: system-config-users.gladestrings:34
 msgid "Select the groups that the user will be a member of:"
-msgstr "Proszę wybrać grupy, do których użytkownik będzie należał:"
+msgstr "Абярыце групы, ў якіх павінен удзельнічаць карыстальнік:"
 
 #: system-config-users.gladestrings:35
 msgid "_Groups"
-msgstr "_Grupy"
+msgstr "_Групы"
 
 #: system-config-users.gladestrings:36
 msgid "Group Properties"
-msgstr "Właściwości grupy"
+msgstr "Налады Группы"
 
 #: system-config-users.gladestrings:38
 msgid "Group _Data"
-msgstr "_Dane grupy"
+msgstr "Дадаткова"
 
 #: system-config-users.gladestrings:39
 msgid "Select the users to join this group:"
-msgstr "Proszę wybrać użytkowników do dołączenia do tej grupy:"
+msgstr "Абярыце карыстальнік для далучэння да гэтай групы:"
 
 #: system-config-users.gladestrings:40
 msgid "Group _Users"
-msgstr "_Użytkownicy grupy"
+msgstr "_Карыстальнікі Групы"
 
 #: system-config-users.gladestrings:41
 msgid "User Manager"
-msgstr "Menedżer użytkowników"
+msgstr "Менеджер Карыстальнікаў"
 
 #: system-config-users.gladestrings:42
 msgid "_File"
-msgstr "_Plik"
+msgstr "_Файл"
 
 #: system-config-users.gladestrings:43 system-config-users.gladestrings:48
 msgid "Add _User"
-msgstr "Dodaj _użytkownika"
+msgstr "Стварыць _карыстальніка"
 
 #: system-config-users.gladestrings:44 system-config-users.gladestrings:49
 msgid "Add _Group"
-msgstr "_Dodaj grupę"
+msgstr "Стварыць _групу"
 
 #: system-config-users.gladestrings:45
 msgid "_Edit"
-msgstr "_Edycja"
+msgstr "_Рэдагаваць"
 
 #: system-config-users.gladestrings:46 system-config-users.gladestrings:56
 msgid "_Help"
-msgstr "Pomo_c"
+msgstr "_Дапамога"
 
 #: system-config-users.gladestrings:47
 msgid "_Contents"
-msgstr "_Spis treści"
+msgstr "_Змест"
 
 #: system-config-users.gladestrings:50
 msgid "Edit properties"
-msgstr "Modyfikuje właściwości"
+msgstr "Рэдагаваць налады"
 
 #: system-config-users.gladestrings:51
 msgid "Proper_ties"
-msgstr "Właściw_ości"
+msgstr "Налад_ы"
 
 #: system-config-users.gladestrings:52
 msgid "_Delete"
-msgstr "_Usuń"
+msgstr "_Выдаліць"
 
 #: system-config-users.gladestrings:53
 msgid "Reload"
-msgstr "Wczytuje ponownie"
+msgstr ""
 
 #: system-config-users.gladestrings:54
 msgid "_Refresh"
-msgstr "_Odśwież"
+msgstr "_Перазагрузіць"
 
 #: system-config-users.gladestrings:55
 msgid "Help"
-msgstr "Pomoc"
+msgstr "Дапамога"
 
 #: system-config-users.gladestrings:57
 msgid "Sea_rch filter:"
-msgstr "Filtr _wyszukiwania:"
+msgstr "Пош_укавы фільтр:"
 
 #: system-config-users.gladestrings:58
 msgid "_Apply filter"
-msgstr "Z_astosuj filtr"
+msgstr "_Ужыць фільтр"
 
 #: system-config-users.gladestrings:59
 msgid "U_sers"
-msgstr "_Użytkownicy"
+msgstr "К_арыстальнікі"
 
 #: system-config-users.gladestrings:60
 msgid "Gr_oups"
-msgstr "_Grupy"
+msgstr "Гр_упы"
 
 #: system-config-users.gladestrings:61
 msgid "Add New User"
-msgstr "Dodanie nowego użytkownika"
+msgstr "Стварыць карыстальніка"
 
 #: system-config-users.gladestrings:62
 msgid "_User Name:"
-msgstr "Nazwa _użytkownika:"
+msgstr "_Імя Карыстальніка:"
 
 #: system-config-users.gladestrings:64
 msgid "_Password:"
-msgstr "_Hasło:"
+msgstr "_Пароль"
 
 #: system-config-users.gladestrings:68
 msgid "Create _home directory"
-msgstr "Utworzenie _katalogu domowego"
+msgstr "Стварыць _хатні каталаг"
 
 #: system-config-users.gladestrings:69
 msgid "    "
@@ -892,19 +889,19 @@ msgstr "    "
 
 #: system-config-users.gladestrings:70
 msgid "Home _Directory:"
-msgstr "Katalog _domowy:"
+msgstr "Хатн_і Каталаг:"
 
 #: system-config-users.gladestrings:71
 msgid "Create a private _group for the user"
-msgstr "_Utworzenie dla użytkownika prywatnej grupy"
+msgstr "Стварыць прыватную _групу для карыстальніка:"
 
 #: system-config-users.gladestrings:72
 msgid "Specify u_ser ID manually:"
-msgstr "Pro_szę ręcznie podać identyfikator użytkownika:"
+msgstr "Задаць ідэнтыфікатар кары_стальніка"
 
 #: system-config-users.gladestrings:74
 msgid "About system-config-users"
-msgstr "O programie system-config-users"
+msgstr "Пра system-config-users"
 
 #: system-config-users.gladestrings:75
 msgid "<b>system-config-users</b>"
@@ -912,69 +909,68 @@ msgstr "<b>system-config-users</b>"
 
 #: system-config-users.gladestrings:76
 msgid "Version @VERSION@"
-msgstr "Wersja @VERSION@"
+msgstr "Версія @VERSION@"
 
 #: system-config-users.gladestrings:77
 msgid "Copyright (c) 2001 - 2005 Red Hat, Inc."
-msgstr "Copyright (c) 2001 - 2005 Red Hat, Inc."
+msgstr "Капірайт (c) 2001 - 2005 Red Hat, Inc."
 
 #: system-config-users.gladestrings:78
 msgid "This software is distributed under the GNU General Public License."
 msgstr ""
-"Te oprogramowanie rozpowszechniane jest na Powszechnej Licencji Publicznej "
-"GNU."
+"Гэтае праграмнае забеспячэнне рапаўсюджваецца пад GNU General Public License."
 
 #: system-config-users.gladestrings:79
 msgid "Preferences"
-msgstr "Preferencje"
+msgstr "Налады"
 
 #: system-config-users.gladestrings:80
 msgid "_Hide system users and groups"
-msgstr "_Ukrycie użytkowników i grup systemowych"
+msgstr "_Схаваць сістэмныя карыстальнікі і групы"
 
 #: system-config-users.gladestrings:81
 msgid "<b>User and Group Lists</b>"
-msgstr "<b>Listy użytkowników i grup</b>"
+msgstr "<b>Спіс карыстальнікаў і груп</b>"
 
 #: system-config-users.gladestrings:82
 msgid ""
 "Ensure that a new user gets a higher UID than all existing users, if not set "
 "manually."
 msgstr ""
-"Należy upewnić się, że nowy użytkownik dostał wyższy UID niż wszyscy "
-"istniejący użytkownicy. Jeśli tak nie jest, należy ustawić go ręcznie."
+"Упэўніцеся што новы карыстальнік мае UID большы чым усе існуючыя "
+"карыстальнікі, калі не ўводзіце UID самастойна."
 
 #: system-config-users.gladestrings:83
 msgid "Automatically assigned _UID must be highest"
-msgstr "Automatycznie przydzielony _UID musi być najwyższy"
+msgstr "Аўтаматычна сгенерыраваны _UID павінен быць найвялікшым."
 
 #: system-config-users.gladestrings:84
 msgid ""
 "Ensure that a new group gets a higher GID than all existing groups, if not "
 "set manually."
 msgstr ""
-"Należy upewnić się, że nowa grupa dostała wyższy GID niż wszystkie "
-"istniejące grupy. Jeśli tak nie jest, należy ustawić go ręcznie."
+"Упэўніцеся што новая група мае GID большы чым усе існуючыя групы, калі не "
+"ўводзіце GID самастойна."
 
 #: system-config-users.gladestrings:85
 msgid "Automatically assigned _GID must be highest"
-msgstr "Automatycznie przydzielony _GID musi być najwyższy"
+msgstr "Аўтаматычна сгенерыраваны _GID павінен быць найвялікшым."
 
 #: system-config-users.gladestrings:86
 msgid "Prefer that private group GID is the _same as UID"
-msgstr "Preferowanie, aby GID prywatnej grupy był taki _sam jak UID"
+msgstr "Аддаць перавагу G_ID для прыватнай групы супадаючаму з UID"
 
 #: system-config-users.gladestrings:87
 msgid "<b>New Users</b>"
-msgstr "<b>Nowi użytkownicy</b>"
+msgstr "<b>Новыя Карыстальнікі</b>"
 
 #: system-config-users.gladestrings:89
 msgid "Copyright © 2001-2007 Red Hat, Inc."
-msgstr "Copyright © 2001-2007 Red Hat, Inc."
+msgstr "Капірайт © 2001-2007 Red Hat, Inc."
 
 #: system-config-users.gladestrings:90
 msgid "Manages users and groups on your system."
-msgstr "Zarządzanie użytkownikami i grupami w systemie."
+msgstr "Кіруе карыстальнікамі і групамі Вашай сістэмы."
 
 #: system-config-users.gladestrings:91
 msgid ""
@@ -992,28 +988,33 @@ msgid ""
 "system-config-users; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
 msgstr ""
-"Program system-config-users jest wolnym oprogramowaniem; można go "
-"rozprowadzać dalej i/lub modyfikować na warunkach Powszechnej Licencji "
-"Publicznej GNU, wydanej przez Fundację Wolnego Oprogramowania (Free Software "
-"Foundation) - według wersji drugiej tej Licencji lub którejś z późniejszych "
-"wersji.\n"
-"\n"
-"Program system-config-users rozpowszechniany jest z nadzieją, iż będzie on "
-"użyteczny - jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej gwarancji "
-"PRZYDATNOŚCI HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu "
-"uzyskania bliższych informacji należy zapoznać się z Powszechną Licencją "
-"Publiczną GNU.\n"
-"\n"
-"Z pewnością wraz z programem system-config-users dostarczono także "
-"egzemplarz Powszechnej Licencji Publicznej GNU (GNU General Public License); "
-"jeśli nie - proszę napisać do Free Software Foundation, Inc., 51 Franklin "
-"Street, Fifth Floor, Boston, MA 02110-130159 USA."
 
 #: system-config-users.gladestrings:96
 msgid "translator-credits"
-msgstr ""
-"Radosław Zawartko <radzaw@lnet.szn.pl>, 2004\n"
-"Andrzej Olszewski <andrzej.olszewski@ifj.edu.pl>, 2004\n"
-"Tom Berner <tom@man.lodz.pl>, 2004\n"
-"Rajmund Paczkowski <Rajmund.Paczkowski@gmail.com>, 2004\n"
-"Piotr Drąg <piotrdrag@gmail.com>, 2007"
+msgstr "Andrey Panasyuk"
+
+#~ msgid "User last changed password on:"
+#~ msgstr "Апошняя змена пароля:"
+
+#~ msgid "Unknown"
+#~ msgstr "Невядома"
+
+#~ msgid ""
+#~ "The password contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "Пароль утрымлівае недазволеныя сімвалы. Калі ласка, выкарыстоўвайце "
+#~ "толькі ASCII сімвалы."
+
+#~ msgid ""
+#~ "The directory name '%s' cannot be created ('%s' is not writable). Please "
+#~ "chose a writable location."
+#~ msgstr ""
+#~ "Каталог '%s' ня можа быць створаны (намя праў на запіс '%s'). Калі ласка, "
+#~ "абярыце іншае месца."
+
+#~ msgid "Please enter a password for the user."
+#~ msgstr "Калі ласка, абярыце пароль для карыстальніка."
+
+#~ msgid "The password is too short.  Please use at least 6 characters."
+#~ msgstr "Пароль занадта кароткі. Калі ласка, ўвядзіце не менш за 6 сімвалаў."

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-20 16:08+0200\n"
+"POT-Creation-Date: 2010-11-30 16:08+0100\n"
 "PO-Revision-Date: 2005-04-27 13:38+0200\n"
 "Last-Translator: Arangel Angov <ufo@linux.net.mk>\n"
 "Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../src/groupProperties.py:108 ../src/groupWindow.py:108
-#: ../src/userGroupCheck.py:61
+#: ../src/userGroupCheck.py:64
 msgid "Please enter a group name."
 msgstr "Ве молам внесете име на групата."
 
@@ -33,6 +33,140 @@ msgstr "Годината е надвор од опсегот.  Ве молам �
 msgid "You cannot remove user '%s' from their primary group."
 msgstr "Не можете да го отстраните корисникот '%s' од неговата примарна група."
 
+#: ../src/userProperties.py:113 ../src/userWindow.py:85
+msgid "User"
+msgstr "Корисник"
+
+#: ../src/userProperties.py:113 ../src/userWindow.py:85
+msgid "Staff"
+msgstr "Екипа"
+
+#: ../src/userProperties.py:114 ../src/userWindow.py:86
+msgid "System Administrator"
+msgstr "Систем администратор"
+
+#: ../src/userProperties.py:144
+msgid "Primary Group:"
+msgstr "Примарна група:"
+
+#: ../src/userProperties.py:226
+#, python-format
+msgid "Password last changed on: %x"
+msgstr ""
+
+#: ../src/userProperties.py:306 ../src/userGroupCheck.py:54
+msgid "Please enter a user name."
+msgstr "Ве молам внесете корисничко име"
+
+#: ../src/userProperties.py:325
+#, fuzzy, python-format
+msgid "The user '%s' already exists. Please choose a different name."
+msgstr "Годината е надвор од опсегот.  Ве молам изберете друга година."
+
+#: ../src/userProperties.py:346
+msgid "Passwords do not match."
+msgstr "Лозинките не се совпаѓаат."
+
+#: ../src/userProperties.py:423
+msgid "Please select at least one group for the user."
+msgstr "Ве молам изберете барем една група за корисникот."
+
+#: ../src/userProperties.py:442
+msgid "Please specify the month that the password will expire."
+msgstr "Ве молам одредете го месецот до кој што истекува лозинката."
+
+#: ../src/userProperties.py:450
+msgid "Please specify the day that the password will expire."
+msgstr "Ве молам одредете го дењот до кој што истекува лозинката."
+
+#: ../src/userProperties.py:458
+msgid "Please specify the year that the password will expire."
+msgstr "Ве молам одредете ја годината до која што истекува лозинката."
+
+#. mktime will throw an OverflowError if the year is too big.
+#: ../src/userProperties.py:474
+msgid "The year is out of range.  Please select a different year."
+msgstr "Годината е надвор од опсегот.  Ве молам изберете друга година."
+
+#: ../src/userProperties.py:504
+msgid ""
+"Please specify the number of days before changing the password is allowed."
+msgstr ""
+"Ве молам одредете го бројот на денови пред да биде дозволена промената на "
+"лозинката."
+
+#: ../src/userProperties.py:506
+#, fuzzy, python-format
+msgid ""
+"The number of days before changing the password is allowed must be between "
+"%(min)d and %(max)d."
+msgstr ""
+"Ве молам одредете го бројот на денови пред да биде дозволена промената на "
+"лозинката."
+
+#: ../src/userProperties.py:511
+msgid ""
+"Please specify the number of days before changing the password is required."
+msgstr ""
+"Ве молам одредете го бројот на денови пред да биде побарана промена на "
+"лозинката."
+
+#: ../src/userProperties.py:513
+#, fuzzy, python-format
+msgid ""
+"The number of days before changing the password is required must be between "
+"%(min)d and %(max)d."
+msgstr ""
+"Ве молам одредете го бројот на денови пред да биде побарана промена на "
+"лозинката."
+
+#: ../src/userProperties.py:517
+msgid ""
+"Please specify the number of days to warn the user before changing the "
+"password is required."
+msgstr ""
+"Ве молам одредете го бројот на денови за предупредување на корисникот пред "
+"да биде потребна промена на лозинката."
+
+#: ../src/userProperties.py:519
+#, fuzzy, python-format
+msgid ""
+"The number of days to warn the user before changing the password is required "
+"must be between %(min)d and %(max)d."
+msgstr ""
+"Ве молам одредете го бројот на денови за предупредување на корисникот пред "
+"да биде потребна промена на лозинката."
+
+#: ../src/userProperties.py:525
+msgid ""
+"Please specify the number of days until the user account becomes inactive "
+"after password has expired."
+msgstr ""
+"Ве молам одредете го бројот на денови, по истекувањето на лозинката, за кој "
+"што корисничката сметка станува неактивна."
+
+#: ../src/userProperties.py:527
+#, fuzzy, python-format
+msgid ""
+"The number of days until the user account becomes inactive after the "
+"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
+"means the account won't become inactive."
+msgstr ""
+"Ве молам одредете го бројот на денови, по истекувањето на лозинката, за кој "
+"што корисничката сметка станува неактивна."
+
+#: ../src/userProperties.py:593
+#, python-format
+msgid ""
+"Unlocking the user failed because:\n"
+"\n"
+"%(errmsg)s"
+msgstr ""
+
+#: ../src/userProperties.py:596
+msgid "Unlocking the user failed due to an unknown reason."
+msgstr ""
+
 #: ../src/groupWindow.py:116
 #, python-format
 msgid "A group with name '%s' already exists."
@@ -40,7 +174,7 @@ msgstr "Веќе постои група со името '%s'."
 
 #. This uid already exists, so complain
 #. This (chosen) gid already exists, so complain
-#: ../src/groupWindow.py:131 ../src/userWindow.py:292
+#: ../src/groupWindow.py:131 ../src/userWindow.py:274
 #, python-format
 msgid "The gid %s is already in use."
 msgstr "Gid %s е веќе во употреба."
@@ -53,7 +187,7 @@ msgstr ""
 "Креирање на група со GID помалку од 500 не е препорачливо.  Дали сте сигурни "
 "дека сакате да го направите ова?"
 
-#: ../src/groupWindow.py:160 ../src/userWindow.py:305
+#: ../src/groupWindow.py:160 ../src/userWindow.py:287
 #, python-format
 msgid ""
 "Error finding suitable group id not exceeding maximum value of %(maxid)s."
@@ -160,7 +294,7 @@ msgid ""
 "soon as possible."
 msgstr ""
 
-#: ../src/mainWindow.py:578 system-config-users.gladestrings:89
+#: ../src/mainWindow.py:578 system-config-users.gladestrings:88
 #, fuzzy
 msgid "system-config-users"
 msgstr "За system-config-users"
@@ -266,20 +400,79 @@ msgstr ""
 msgid "Are you sure you want to delete the group '%s'?"
 msgstr "Дали сте сигурни дека сакате да ја избришете групата '%s'?"
 
+#. The passwords don't match, so complain
+#: ../src/userWindow.py:192
+msgid "The passwords do not match."
+msgstr "Лозинките не се совпаѓаат."
+
+#. The user name is blank, so complain
+#: ../src/userWindow.py:223
+msgid "Please specify a user name"
+msgstr "Ве молам одредете корисничко име"
+
+#. This user already exists, so complain
+#: ../src/userWindow.py:231
+#, python-format
+msgid "An account with username '%s' already exists."
+msgstr "Сметка со корисничкото име '%s' веќе постои."
+
+#. This uid already exists, so complain
+#: ../src/userWindow.py:267
+#, python-format
+msgid "The uid %s is already in use."
+msgstr "Uid %s е веќе во употреба."
+
+#: ../src/userWindow.py:285
+#, python-format
+msgid ""
+"Error finding suitable user id not exceeding maximum value of %(maxid)s."
+msgstr ""
+
+#: ../src/userWindow.py:297
+msgid ""
+"Creating a user with a UID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+msgstr ""
+"Креирањето на корисник со UID помал од 500 не е препорачливо.  Дали сте "
+"сигурни дека сакате да го направите ова?"
+
+#: ../src/userWindow.py:327
+#, fuzzy
+msgid "A group with this gid already exists.  What would you like to do?"
+msgstr "Група со ова име веќе постои.  Што сакате да направите?"
+
+#: ../src/userWindow.py:329
+msgid "A group with this name already exists.  What would you like to do?"
+msgstr "Група со ова име веќе постои.  Што сакате да направите?"
+
+#: ../src/userWindow.py:333
+msgid "Add to the existing group"
+msgstr "Додај до постоечката група"
+
+#: ../src/userWindow.py:334
+msgid "Add to the 'users' group"
+msgstr "Додај во групата корисници"
+
+#. Uh-oh.  It looks like /etc/group and /etc/gshadow are out of sync.  Give up and quit.
+#: ../src/userWindow.py:416
+msgid ""
+"The system group database cannot be read.  This problem is most likely "
+"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
+"now."
+msgstr ""
+"Системската база за групи е нечитлива.  Проблемот најверојатно е "
+"несовпаѓањето на /etc/group и /etc/gshadow.  Сега програмата ќе се исклучи."
+
 #: ../src/system-config-users.py:38
 msgid "system-config-users requires a currently running X server."
 msgstr "system-config-users има потреба од подигнат X сервер."
 
-#: ../src/userGroupCheck.py:51 ../src/userProperties.py:295
-msgid "Please enter a user name."
-msgstr "Ве молам внесете корисничко име"
-
-#: ../src/userGroupCheck.py:52
+#: ../src/userGroupCheck.py:55
 #, fuzzy, python-format
 msgid "The user name must not exceed %d characters."
 msgstr "Корисничкото име мора да биде пократко од %s карактери"
 
-#: ../src/userGroupCheck.py:53
+#: ../src/userGroupCheck.py:56
 #, fuzzy, python-format
 msgid ""
 "The user name '%s' contains whitespace. Please do not include whitespace in "
@@ -288,7 +481,7 @@ msgstr ""
 "Корисничкото име '%s' содржи бели места.  Ве молам не употребувајте бели "
 "места во корисничкото име."
 
-#: ../src/userGroupCheck.py:54
+#: ../src/userGroupCheck.py:57
 #, python-format
 msgid ""
 "The user name '%s' contains a dollar sign which is not at the end. Please "
@@ -296,7 +489,7 @@ msgid ""
 "accounts."
 msgstr ""
 
-#: ../src/userGroupCheck.py:55
+#: ../src/userGroupCheck.py:58
 #, python-format
 msgid ""
 "The user name '%s' contains a trailing dollar sign. This should only be used "
@@ -305,7 +498,7 @@ msgid ""
 "account?"
 msgstr ""
 
-#: ../src/userGroupCheck.py:56
+#: ../src/userGroupCheck.py:59
 #, fuzzy, python-format
 msgid ""
 "The user name '%(name)s' contains an invalid character at position "
@@ -314,19 +507,19 @@ msgstr ""
 "Корисничкото име '%s' содржи невалидни карактери.  Ве молам употребувајте "
 "само ASCII карактери."
 
-#: ../src/userGroupCheck.py:57
+#: ../src/userGroupCheck.py:60
 msgid ""
 "Using all numbers as the user name can cause confusion about whether the "
 "user name or numerical user id is meant. Do you really want to use a "
 "numerical-only user name?"
 msgstr ""
 
-#: ../src/userGroupCheck.py:62
+#: ../src/userGroupCheck.py:65
 #, fuzzy, python-format
 msgid "The group name must not exceed %d characters."
 msgstr "Името на групата мора да биде пократко од %s карактери."
 
-#: ../src/userGroupCheck.py:63
+#: ../src/userGroupCheck.py:66
 #, fuzzy, python-format
 msgid ""
 "The group name '%s' contains whitespace. Please do not include whitespace in "
@@ -335,7 +528,7 @@ msgstr ""
 "Името на групата '%s' содржи бели места.  Ве молам не употребувајте бели "
 "места во името на групата."
 
-#: ../src/userGroupCheck.py:64
+#: ../src/userGroupCheck.py:67
 #, fuzzy, python-format
 msgid ""
 "The group name '%(name)s' contains an invalid character at position "
@@ -344,27 +537,29 @@ msgstr ""
 "Името на групата '%s' содржи невалидни карактери.  Ве молам употребувајте "
 "само ASCII карактери."
 
-#: ../src/userGroupCheck.py:65
+#: ../src/userGroupCheck.py:68
 msgid ""
 "Using all numbers as the group name can cause confusion about whether the "
 "group name or numerical group id is meant. Do you really want to use a "
 "numerical-only group name?"
 msgstr ""
 
-#: ../src/userGroupCheck.py:144
+#: ../src/userGroupCheck.py:157
 msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+"The chosen password contains characters which may be hard or impossible to "
+"type in certain situations. To ensure the password can be typed everywhere "
+"use only unaccented Latin letters (A-Z, a-z), digits (0-9), punctuation "
+"characters (e.g. comma, full stop) and the space character in the password. "
+"Do you want to use this password anyway?"
 msgstr ""
-"Лозинката содржи невалидни карактери.  Ве молам употребувајте само ASCII "
-"карактери."
 
-#: ../src/userGroupCheck.py:167
+#: ../src/userGroupCheck.py:185
 #, python-format
 msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
 msgstr ""
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/userGroupCheck.py:178
+#: ../src/userGroupCheck.py:196
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only UTF-8 characters."
@@ -373,17 +568,17 @@ msgstr ""
 "карактери."
 
 #. have to check for colons since /etc/passwd is a colon delimited file
-#: ../src/userGroupCheck.py:186
+#: ../src/userGroupCheck.py:204
 #, python-format
 msgid "The name '%s' contains a colon.  Please do not use colons in the name."
 msgstr "Името '%s' содржи колона.  Ве молам не употребувајте колони во името."
 
-#: ../src/userGroupCheck.py:195
+#: ../src/userGroupCheck.py:213
 msgid "Please enter a home directory."
 msgstr "Ве молам внесете домашен директориум."
 
 #. have to check for colons since /etc/passwd is a colon delimited file
-#: ../src/userGroupCheck.py:202
+#: ../src/userGroupCheck.py:220
 #, python-format
 msgid ""
 "The directory name '%s' contains a colon.  Please do not use colons in the "
@@ -392,7 +587,7 @@ msgstr ""
 "Името на дирекотриумот '%s' содржи колона.  Ве молам не употребувајте колони "
 "во името на директориумот."
 
-#: ../src/userGroupCheck.py:211
+#: ../src/userGroupCheck.py:229
 #, fuzzy, python-format
 msgid ""
 "The directory name '%s' doesn't begin with a '/'. Please specify an absolute "
@@ -401,7 +596,7 @@ msgstr ""
 "Името на дирекотриумот '%s' содржи колона.  Ве молам не употребувајте колони "
 "во името на директориумот."
 
-#: ../src/userGroupCheck.py:217
+#: ../src/userGroupCheck.py:235
 #, fuzzy, python-format
 msgid ""
 "The directory name '%s' has path components which are too long. Please use "
@@ -410,7 +605,7 @@ msgstr ""
 "Името на дирекотриумот '%s' содржи колона.  Ве молам не употребувајте колони "
 "во името на директориумот."
 
-#: ../src/userGroupCheck.py:224
+#: ../src/userGroupCheck.py:242
 #, fuzzy, python-format
 msgid ""
 "The directory name '%s' contains empty path components. Please specify a "
@@ -419,7 +614,7 @@ msgstr ""
 "Името на дирекотриумот '%s' содржи колона.  Ве молам не употребувајте колони "
 "во името на директориумот."
 
-#: ../src/userGroupCheck.py:233
+#: ../src/userGroupCheck.py:251
 #, fuzzy, python-format
 msgid ""
 "The directory name '%s' contains illegal path components. Please don't use "
@@ -428,207 +623,12 @@ msgstr ""
 "Името на дирекотриумот '%s' содржи колона.  Ве молам не употребувајте колони "
 "во името на директориумот."
 
-#: ../src/userGroupCheck.py:241
+#: ../src/userGroupCheck.py:267
 #, python-format
 msgid ""
-"The directory name '%s' cannot be created ('%s' is not writable). Please "
-"chose a writable location."
+"The directory '%(dir)s' cannot be created ('%(parent_dir)s' is not "
+"writable). Please choose a writable location."
 msgstr ""
-
-#: ../src/userProperties.py:108 ../src/userWindow.py:82
-msgid "User"
-msgstr "Корисник"
-
-#: ../src/userProperties.py:108 ../src/userWindow.py:82
-msgid "Staff"
-msgstr "Екипа"
-
-#: ../src/userProperties.py:109 ../src/userWindow.py:83
-msgid "System Administrator"
-msgstr "Систем администратор"
-
-#: ../src/userProperties.py:139
-msgid "Primary Group:"
-msgstr "Примарна група:"
-
-#: ../src/userProperties.py:314
-#, fuzzy, python-format
-msgid "The user '%s' already exists. Please choose a different name."
-msgstr "Годината е надвор од опсегот.  Ве молам изберете друга година."
-
-#: ../src/userProperties.py:336 ../src/userWindow.py:193
-msgid "Please enter a password for the user."
-msgstr "Ве молам внесете лозинка за корисникот."
-
-#: ../src/userProperties.py:345 ../src/userWindow.py:201
-msgid "The password is too short.  Please use at least 6 characters."
-msgstr "Лозинката е прекратка.  Ве молам користете најмалку 6 карактери."
-
-#: ../src/userProperties.py:354
-msgid "Passwords do not match."
-msgstr "Лозинките не се совпаѓаат."
-
-#: ../src/userProperties.py:431
-msgid "Please select at least one group for the user."
-msgstr "Ве молам изберете барем една група за корисникот."
-
-#: ../src/userProperties.py:450
-msgid "Please specify the month that the password will expire."
-msgstr "Ве молам одредете го месецот до кој што истекува лозинката."
-
-#: ../src/userProperties.py:458
-msgid "Please specify the day that the password will expire."
-msgstr "Ве молам одредете го дењот до кој што истекува лозинката."
-
-#: ../src/userProperties.py:466
-msgid "Please specify the year that the password will expire."
-msgstr "Ве молам одредете ја годината до која што истекува лозинката."
-
-#. mktime will throw an OverflowError if the year is too big.
-#: ../src/userProperties.py:482
-msgid "The year is out of range.  Please select a different year."
-msgstr "Годината е надвор од опсегот.  Ве молам изберете друга година."
-
-#: ../src/userProperties.py:511
-msgid ""
-"Please specify the number of days before changing the password is allowed."
-msgstr ""
-"Ве молам одредете го бројот на денови пред да биде дозволена промената на "
-"лозинката."
-
-#: ../src/userProperties.py:513
-#, fuzzy, python-format
-msgid ""
-"The number of days before changing the password is allowed must be between "
-"%(min)d and %(max)d."
-msgstr ""
-"Ве молам одредете го бројот на денови пред да биде дозволена промената на "
-"лозинката."
-
-#: ../src/userProperties.py:518
-msgid ""
-"Please specify the number of days before changing the password is required."
-msgstr ""
-"Ве молам одредете го бројот на денови пред да биде побарана промена на "
-"лозинката."
-
-#: ../src/userProperties.py:520
-#, fuzzy, python-format
-msgid ""
-"The number of days before changing the password is required must be between "
-"%(min)d and %(max)d."
-msgstr ""
-"Ве молам одредете го бројот на денови пред да биде побарана промена на "
-"лозинката."
-
-#: ../src/userProperties.py:524
-msgid ""
-"Please specify the number of days to warn the user before changing the "
-"password is required."
-msgstr ""
-"Ве молам одредете го бројот на денови за предупредување на корисникот пред "
-"да биде потребна промена на лозинката."
-
-#: ../src/userProperties.py:526
-#, fuzzy, python-format
-msgid ""
-"The number of days to warn the user before changing the password is required "
-"must be between %(min)d and %(max)d."
-msgstr ""
-"Ве молам одредете го бројот на денови за предупредување на корисникот пред "
-"да биде потребна промена на лозинката."
-
-#: ../src/userProperties.py:532
-msgid ""
-"Please specify the number of days until the user account becomes inactive "
-"after password has expired."
-msgstr ""
-"Ве молам одредете го бројот на денови, по истекувањето на лозинката, за кој "
-"што корисничката сметка станува неактивна."
-
-#: ../src/userProperties.py:534
-#, fuzzy, python-format
-msgid ""
-"The number of days until the user account becomes inactive after the "
-"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
-"means the account won't become inactive."
-msgstr ""
-"Ве молам одредете го бројот на денови, по истекувањето на лозинката, за кој "
-"што корисничката сметка станува неактивна."
-
-#: ../src/userProperties.py:592
-#, python-format
-msgid ""
-"Unlocking the user failed because:\n"
-"\n"
-"%(errmsg)s"
-msgstr ""
-
-#: ../src/userProperties.py:595
-msgid "Unlocking the user failed due to an unknown reason."
-msgstr ""
-
-#: ../src/userWindow.py:210
-msgid "The passwords do not match."
-msgstr "Лозинките не се совпаѓаат."
-
-#. The user name is blank, so complain
-#: ../src/userWindow.py:241
-msgid "Please specify a user name"
-msgstr "Ве молам одредете корисничко име"
-
-#. This user already exists, so complain
-#: ../src/userWindow.py:249
-#, python-format
-msgid "An account with username '%s' already exists."
-msgstr "Сметка со корисничкото име '%s' веќе постои."
-
-#. This uid already exists, so complain
-#: ../src/userWindow.py:285
-#, python-format
-msgid "The uid %s is already in use."
-msgstr "Uid %s е веќе во употреба."
-
-#: ../src/userWindow.py:303
-#, python-format
-msgid ""
-"Error finding suitable user id not exceeding maximum value of %(maxid)s."
-msgstr ""
-
-#: ../src/userWindow.py:315
-msgid ""
-"Creating a user with a UID less than 500 is not recommended.  Are you sure "
-"you want to do this?"
-msgstr ""
-"Креирањето на корисник со UID помал од 500 не е препорачливо.  Дали сте "
-"сигурни дека сакате да го направите ова?"
-
-#: ../src/userWindow.py:345
-#, fuzzy
-msgid "A group with this gid already exists.  What would you like to do?"
-msgstr "Група со ова име веќе постои.  Што сакате да направите?"
-
-#: ../src/userWindow.py:347
-msgid "A group with this name already exists.  What would you like to do?"
-msgstr "Група со ова име веќе постои.  Што сакате да направите?"
-
-#: ../src/userWindow.py:351
-msgid "Add to the existing group"
-msgstr "Додај до постоечката група"
-
-#: ../src/userWindow.py:352
-msgid "Add to the 'users' group"
-msgstr "Додај во групата корисници"
-
-#. Uh-oh.  It looks like /etc/group and /etc/gshadow are out of sync.  Give up and quit.
-#: ../src/userWindow.py:434
-msgid ""
-"The system group database cannot be read.  This problem is most likely "
-"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
-"now."
-msgstr ""
-"Системската база за групи е нечитлива.  Проблемот најверојатно е "
-"несовпаѓањето на /etc/group и /etc/gshadow.  Сега програмата ќе се исклучи."
 
 #.
 #. * Translatable strings file generated by Glade.
@@ -639,11 +639,11 @@ msgstr ""
 msgid "Add New Group"
 msgstr ""
 
-#: system-config-users.gladestrings:8 system-config-users.gladestrings:38
+#: system-config-users.gladestrings:8 system-config-users.gladestrings:37
 msgid "_Group Name:"
 msgstr "_Име на група:"
 
-#: system-config-users.gladestrings:9 system-config-users.gladestrings:74
+#: system-config-users.gladestrings:9 system-config-users.gladestrings:73
 #, fuzzy
 msgid "Specify g_roup ID manually:"
 msgstr "_Рачно одреди ID на група"
@@ -656,7 +656,7 @@ msgstr "Кориснички својства"
 msgid "User _Name:"
 msgstr "Корисничко _име:"
 
-#: system-config-users.gladestrings:12 system-config-users.gladestrings:64
+#: system-config-users.gladestrings:12 system-config-users.gladestrings:63
 msgid "_Full Name:"
 msgstr "_Целосно име:"
 
@@ -664,11 +664,11 @@ msgstr "_Целосно име:"
 msgid "Pass_word:"
 msgstr ""
 
-#: system-config-users.gladestrings:14 system-config-users.gladestrings:66
+#: system-config-users.gladestrings:14 system-config-users.gladestrings:65
 msgid "Confir_m Password:"
 msgstr "Потврд_и лозинка:"
 
-#: system-config-users.gladestrings:15 system-config-users.gladestrings:67
+#: system-config-users.gladestrings:15 system-config-users.gladestrings:66
 msgid "_Login Shell:"
 msgstr "_Школка за најава:"
 
@@ -676,7 +676,7 @@ msgstr "_Школка за најава:"
 msgid "_Home Directory:"
 msgstr "_Домашен директориум:"
 
-#: system-config-users.gladestrings:17 system-config-users.gladestrings:68
+#: system-config-users.gladestrings:17 system-config-users.gladestrings:67
 msgid "S_ELinux role:"
 msgstr "Улога на S_ELinux:"
 
@@ -692,7 +692,7 @@ msgstr "_Овозможи истекување на сметка"
 msgid "Account e_xpires (YYYY-MM-DD):"
 msgstr ""
 
-#: system-config-users.gladestrings:21 system-config-users.gladestrings:29
+#: system-config-users.gladestrings:21
 msgid "     "
 msgstr "     "
 
@@ -709,237 +709,237 @@ msgid "_Account Info"
 msgstr "_Информации за сметка"
 
 #: system-config-users.gladestrings:26
-msgid "User last changed password on:"
-msgstr "Корисникот последен пат ја променил лозинката на:"
-
-#: system-config-users.gladestrings:27
-msgid "Unknown"
-msgstr "Непознато"
-
-#: system-config-users.gladestrings:28
 msgid "_Enable password expiration"
 msgstr "_Овозможи истекување на лозинка"
 
-#: system-config-users.gladestrings:30
+#: system-config-users.gladestrings:27
 msgid "Days before change a_llowed:"
 msgstr "Денови пред да биде дозволена п_ромена:"
 
-#: system-config-users.gladestrings:31
+#: system-config-users.gladestrings:28
 msgid "Days before change _required:"
 msgstr "Денови пред да биде побарана _промена:"
 
-#: system-config-users.gladestrings:32
+#: system-config-users.gladestrings:29
 msgid "Days _warning before change:"
 msgstr "Денови _пред предупредување за промена:"
 
-#: system-config-users.gladestrings:33
+#: system-config-users.gladestrings:30
 msgid "Days before account _inactive:"
 msgstr "Денови пред сметката да стане _неактивна:"
 
-#: system-config-users.gladestrings:34
+#: system-config-users.gladestrings:31
+msgid "Password last changed on..."
+msgstr ""
+
+#: system-config-users.gladestrings:32
+msgid "Force password change on next login"
+msgstr ""
+
+#: system-config-users.gladestrings:33
 msgid "_Password Info"
 msgstr "_Информации за лозинка"
 
-#: system-config-users.gladestrings:35
+#: system-config-users.gladestrings:34
 msgid "Select the groups that the user will be a member of:"
 msgstr "Изберете ја групата на која што ќе биде член корисникот:"
 
-#: system-config-users.gladestrings:36
+#: system-config-users.gladestrings:35
 msgid "_Groups"
 msgstr "_Групи"
 
-#: system-config-users.gladestrings:37
+#: system-config-users.gladestrings:36
 msgid "Group Properties"
 msgstr "Својства на групата"
 
-#: system-config-users.gladestrings:39
+#: system-config-users.gladestrings:38
 msgid "Group _Data"
 msgstr "Податоци _за групата"
 
-#: system-config-users.gladestrings:40
+#: system-config-users.gladestrings:39
 msgid "Select the users to join this group:"
 msgstr "Изберете ги корисниците кои што сакате да се вклучат во групата:"
 
-#: system-config-users.gladestrings:41
+#: system-config-users.gladestrings:40
 msgid "Group _Users"
 msgstr "Корисници _на групата"
 
-#: system-config-users.gladestrings:42
+#: system-config-users.gladestrings:41
 msgid "User Manager"
 msgstr "Менаџер за корисници"
 
-#: system-config-users.gladestrings:43
+#: system-config-users.gladestrings:42
 msgid "_File"
 msgstr "_Датотека"
 
-#: system-config-users.gladestrings:44 system-config-users.gladestrings:49
+#: system-config-users.gladestrings:43 system-config-users.gladestrings:48
 msgid "Add _User"
 msgstr "Додај _корисник"
 
-#: system-config-users.gladestrings:45 system-config-users.gladestrings:50
+#: system-config-users.gladestrings:44 system-config-users.gladestrings:49
 msgid "Add _Group"
 msgstr "Додај _група"
 
-#: system-config-users.gladestrings:46
+#: system-config-users.gladestrings:45
 #, fuzzy
 msgid "_Edit"
 msgstr "_Излез"
 
-#: system-config-users.gladestrings:47 system-config-users.gladestrings:57
+#: system-config-users.gladestrings:46 system-config-users.gladestrings:56
 msgid "_Help"
 msgstr "_Помош"
 
-#: system-config-users.gladestrings:48
+#: system-config-users.gladestrings:47
 msgid "_Contents"
 msgstr "_Содржини"
 
-#: system-config-users.gladestrings:51
+#: system-config-users.gladestrings:50
 msgid "Edit properties"
 msgstr "Уреди својства"
 
-#: system-config-users.gladestrings:52
+#: system-config-users.gladestrings:51
 msgid "Proper_ties"
 msgstr "Свој_ства"
 
-#: system-config-users.gladestrings:53
+#: system-config-users.gladestrings:52
 msgid "_Delete"
 msgstr "_Избриши"
 
-#: system-config-users.gladestrings:54
+#: system-config-users.gladestrings:53
 msgid "Reload"
 msgstr "Вчитај повторно"
 
-#: system-config-users.gladestrings:55
+#: system-config-users.gladestrings:54
 msgid "_Refresh"
 msgstr "_Освежи"
 
-#: system-config-users.gladestrings:56
+#: system-config-users.gladestrings:55
 msgid "Help"
 msgstr "Помош"
 
-#: system-config-users.gladestrings:58
+#: system-config-users.gladestrings:57
 msgid "Sea_rch filter:"
 msgstr ""
 
-#: system-config-users.gladestrings:59
+#: system-config-users.gladestrings:58
 msgid "_Apply filter"
 msgstr "_Примени филтер"
 
-#: system-config-users.gladestrings:60
+#: system-config-users.gladestrings:59
 msgid "U_sers"
 msgstr "К_орисници"
 
-#: system-config-users.gladestrings:61
+#: system-config-users.gladestrings:60
 msgid "Gr_oups"
 msgstr "Гр_упи"
 
-#: system-config-users.gladestrings:62
+#: system-config-users.gladestrings:61
 msgid "Add New User"
 msgstr ""
 
-#: system-config-users.gladestrings:63
+#: system-config-users.gladestrings:62
 msgid "_User Name:"
 msgstr "_Корисничко име:"
 
-#: system-config-users.gladestrings:65
+#: system-config-users.gladestrings:64
 msgid "_Password:"
 msgstr "_Лозинка:"
 
-#: system-config-users.gladestrings:69
+#: system-config-users.gladestrings:68
 msgid "Create _home directory"
 msgstr "Креирај _домашен директориум"
 
-#: system-config-users.gladestrings:70
+#: system-config-users.gladestrings:69
 msgid "    "
 msgstr "    "
 
-#: system-config-users.gladestrings:71
+#: system-config-users.gladestrings:70
 msgid "Home _Directory:"
 msgstr "Домашен директориум:"
 
-#: system-config-users.gladestrings:72
+#: system-config-users.gladestrings:71
 msgid "Create a private _group for the user"
 msgstr "Креирај приватна _група за корисникот"
 
-#: system-config-users.gladestrings:73
+#: system-config-users.gladestrings:72
 #, fuzzy
 msgid "Specify u_ser ID manually:"
 msgstr "_Рачно одреди ID на корисник"
 
-#: system-config-users.gladestrings:75
+#: system-config-users.gladestrings:74
 msgid "About system-config-users"
 msgstr "За system-config-users"
 
-#: system-config-users.gladestrings:76
+#: system-config-users.gladestrings:75
 msgid "<b>system-config-users</b>"
 msgstr "<b>system-config-users</b>"
 
-#: system-config-users.gladestrings:77
+#: system-config-users.gladestrings:76
 msgid "Version @VERSION@"
 msgstr "Верзија @VERSION@"
 
-#: system-config-users.gladestrings:78
+#: system-config-users.gladestrings:77
 msgid "Copyright (c) 2001 - 2005 Red Hat, Inc."
 msgstr "Copyright (c) 2001 - 2005 Red Hat, Inc."
 
-#: system-config-users.gladestrings:79
+#: system-config-users.gladestrings:78
 msgid "This software is distributed under the GNU General Public License."
 msgstr "Овој софтверот се дистрибуира под GNU General Public License."
 
-#: system-config-users.gladestrings:80
+#: system-config-users.gladestrings:79
 #, fuzzy
 msgid "Preferences"
 msgstr "_Преференци"
 
-#: system-config-users.gladestrings:81
+#: system-config-users.gladestrings:80
 #, fuzzy
 msgid "_Hide system users and groups"
 msgstr "_Филтрирај ги системските корисници и групи"
 
-#: system-config-users.gladestrings:82
+#: system-config-users.gladestrings:81
 msgid "<b>User and Group Lists</b>"
 msgstr ""
 
-#: system-config-users.gladestrings:83
+#: system-config-users.gladestrings:82
 msgid ""
 "Ensure that a new user gets a higher UID than all existing users, if not set "
 "manually."
 msgstr ""
 
-#: system-config-users.gladestrings:84
+#: system-config-users.gladestrings:83
 msgid "Automatically assigned _UID must be highest"
 msgstr ""
 
-#: system-config-users.gladestrings:85
+#: system-config-users.gladestrings:84
 msgid ""
 "Ensure that a new group gets a higher GID than all existing groups, if not "
 "set manually."
 msgstr ""
 
-#: system-config-users.gladestrings:86
+#: system-config-users.gladestrings:85
 msgid "Automatically assigned _GID must be highest"
 msgstr ""
 
-#: system-config-users.gladestrings:87
+#: system-config-users.gladestrings:86
 #, fuzzy
 msgid "Prefer that private group GID is the _same as UID"
 msgstr "Креирај приватна _група за корисникот"
 
-#: system-config-users.gladestrings:88
+#: system-config-users.gladestrings:87
 #, fuzzy
 msgid "<b>New Users</b>"
 msgstr "Нов корисник"
 
-#: system-config-users.gladestrings:90
+#: system-config-users.gladestrings:89
 #, fuzzy
 msgid "Copyright © 2001-2007 Red Hat, Inc."
 msgstr "Copyright (c) 2001 - 2005 Red Hat, Inc."
 
-#: system-config-users.gladestrings:91
+#: system-config-users.gladestrings:90
 msgid "Manages users and groups on your system."
 msgstr ""
 
-#: system-config-users.gladestrings:92
+#: system-config-users.gladestrings:91
 msgid ""
 "system-config-users is free software; you can redistribute it and/or modify "
 "it under the terms of the GNU General Public License as published by the "
@@ -956,9 +956,28 @@ msgid ""
 "Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
 msgstr ""
 
-#: system-config-users.gladestrings:97
+#: system-config-users.gladestrings:96
 msgid "translator-credits"
 msgstr ""
+
+#~ msgid "User last changed password on:"
+#~ msgstr "Корисникот последен пат ја променил лозинката на:"
+
+#~ msgid "Unknown"
+#~ msgstr "Непознато"
+
+#~ msgid ""
+#~ "The password contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "Лозинката содржи невалидни карактери.  Ве молам употребувајте само ASCII "
+#~ "карактери."
+
+#~ msgid "Please enter a password for the user."
+#~ msgstr "Ве молам внесете лозинка за корисникот."
+
+#~ msgid "The password is too short.  Please use at least 6 characters."
+#~ msgstr "Лозинката е прекратка.  Ве молам користете најмалку 6 карактери."
 
 #~ msgid "Con_firm Password:"
 #~ msgstr "Пот_врди лозинка:"

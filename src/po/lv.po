@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE lv VERSION 8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-20 16:08+0200\n"
+"POT-Creation-Date: 2010-11-30 16:08+0100\n"
 "PO-Revision-Date: 2008-06-14 17:15+0100\n"
 "Last-Translator: Mr Janis Ozolins <johnij@fedoraproject.org>\n"
 "Language-Team: Latvian\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../src/groupProperties.py:108 ../src/groupWindow.py:108
-#: ../src/userGroupCheck.py:61
+#: ../src/userGroupCheck.py:64
 msgid "Please enter a group name."
 msgstr "Lūdzu ievadīet grupas vārdu."
 
@@ -32,6 +32,138 @@ msgstr "Grupa '%s' jau eksistē. Lūdzu izvēlieties savadāku nosaukumu."
 msgid "You cannot remove user '%s' from their primary group."
 msgstr "Jūs nevarat dzēst lietotāju '%s' no viņa galvenās grupas."
 
+#: ../src/userProperties.py:113 ../src/userWindow.py:85
+msgid "User"
+msgstr "Lietotājs"
+
+#: ../src/userProperties.py:113 ../src/userWindow.py:85
+msgid "Staff"
+msgstr "Personāls"
+
+#: ../src/userProperties.py:114 ../src/userWindow.py:86
+msgid "System Administrator"
+msgstr "Sistēmas administrators"
+
+#: ../src/userProperties.py:144
+msgid "Primary Group:"
+msgstr "Galvenā grupa:"
+
+#: ../src/userProperties.py:226
+#, python-format
+msgid "Password last changed on: %x"
+msgstr ""
+
+#: ../src/userProperties.py:306 ../src/userGroupCheck.py:54
+msgid "Please enter a user name."
+msgstr "Lūdzu ievadiet lietotāja vārdu."
+
+#: ../src/userProperties.py:325
+#, python-format
+msgid "The user '%s' already exists. Please choose a different name."
+msgstr "Lietotājs '%s' jau ir. Lūdzu izvēlieties citu lietotāja nosaukumu."
+
+#: ../src/userProperties.py:346
+msgid "Passwords do not match."
+msgstr "Paroles nesakrīt"
+
+#: ../src/userProperties.py:423
+msgid "Please select at least one group for the user."
+msgstr "Izvēlaties lietotājam vismaz vienu grupu."
+
+#: ../src/userProperties.py:442
+msgid "Please specify the month that the password will expire."
+msgstr "Norādiet mēnesi, kurā beidzas paroles darbības termiņš."
+
+#: ../src/userProperties.py:450
+msgid "Please specify the day that the password will expire."
+msgstr "Norādiet dienu, kurā beidzas paroles darbības termiņš."
+
+#: ../src/userProperties.py:458
+msgid "Please specify the year that the password will expire."
+msgstr "Norādiet gadu, kurā beidzas paroles darbības termiņš."
+
+#. mktime will throw an OverflowError if the year is too big.
+#: ../src/userProperties.py:474
+msgid "The year is out of range.  Please select a different year."
+msgstr "Norādīts nepieļaujams gads. Lūdzu izvēlaties citu gadu."
+
+#: ../src/userProperties.py:504
+msgid ""
+"Please specify the number of days before changing the password is allowed."
+msgstr "Norādiet pirms cik dienām būs atļauta paroles maiņa."
+
+#: ../src/userProperties.py:506
+#, python-format
+msgid ""
+"The number of days before changing the password is allowed must be between "
+"%(min)d and %(max)d."
+msgstr ""
+"Dienu skaitam, pirms ir atļauts nomainīt paroli, ir jābūt no '%(min)d' līdz "
+"'%(max)d'."
+
+#: ../src/userProperties.py:511
+msgid ""
+"Please specify the number of days before changing the password is required."
+msgstr ""
+"Norādiet dienu skaitu pirms paroles maiņas, kad parole ir nepieciešama."
+
+#: ../src/userProperties.py:513
+#, python-format
+msgid ""
+"The number of days before changing the password is required must be between "
+"%(min)d and %(max)d."
+msgstr ""
+"Nepieciešamais dienu·skaits,·pirms·paroli·nepieciešams·nomainīt, "
+"ir·jābūt·no·'%(min)d'·līdz·'%(max)d'."
+
+#: ../src/userProperties.py:517
+msgid ""
+"Please specify the number of days to warn the user before changing the "
+"password is required."
+msgstr ""
+"Norādiet pirms cik dienām brīdināt lietotāju par paroles maiņas "
+"nepieciešamību."
+
+#: ../src/userProperties.py:519
+#, python-format
+msgid ""
+"The number of days to warn the user before changing the password is required "
+"must be between %(min)d and %(max)d."
+msgstr ""
+"Nepieciešajam dienu skaitam, lai brīdinātu lietotāju par paroles maiņu, ir "
+"jābūt no %(min)d līdz %(max)d."
+
+#: ../src/userProperties.py:525
+msgid ""
+"Please specify the number of days until the user account becomes inactive "
+"after password has expired."
+msgstr ""
+"Norādiet pēc cik dienām lietotāja·konts·kļūs neaktīvs,pēc paroles termiņa "
+"beigām."
+
+#: ../src/userProperties.py:527
+#, python-format
+msgid ""
+"The number of days until the user account becomes inactive after the "
+"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
+"means the account won't become inactive."
+msgstr ""
+"Dienu skaitam kamēr lietotāja konts tiks bloķēts, pēc paroles derīguma "
+"termiņaizbeigšanās, ir jābūt no %(min)d līdz %(max)d. Uzstādot to -1 nozīmē, "
+"ka kontsnetiks bloķēts."
+
+#: ../src/userProperties.py:593
+#, python-format
+msgid ""
+"Unlocking the user failed because:\n"
+"\n"
+"%(errmsg)s"
+msgstr ""
+
+#: ../src/userProperties.py:596
+msgid "Unlocking the user failed due to an unknown reason."
+msgstr ""
+
 #: ../src/groupWindow.py:116
 #, python-format
 msgid "A group with name '%s' already exists."
@@ -39,7 +171,7 @@ msgstr "Grupa ar vārdu '%s' jau eksistē."
 
 #. This uid already exists, so complain
 #. This (chosen) gid already exists, so complain
-#: ../src/groupWindow.py:131 ../src/userWindow.py:292
+#: ../src/groupWindow.py:131 ../src/userWindow.py:274
 #, python-format
 msgid "The gid %s is already in use."
 msgstr "Grupas identifikators %s jau tiek lietots."
@@ -52,7 +184,7 @@ msgstr ""
 "Izveidot grupu, ar GID mazāku par 500 nav ieteicams. Vai Jūs esat "
 "pārliecināts, ka vēlaties to darīt?"
 
-#: ../src/groupWindow.py:160 ../src/userWindow.py:305
+#: ../src/groupWindow.py:160 ../src/userWindow.py:287
 #, python-format
 msgid ""
 "Error finding suitable group id not exceeding maximum value of %(maxid)s."
@@ -176,7 +308,7 @@ msgstr ""
 "failiem /etc/shadow un /etc/gshadow. Mēģināšu ignorēt šos datus un pagaidām "
 "turpināšu, bet lūdzu novērsiet šīs nesavienojamības pēc iespējas ātrāk."
 
-#: ../src/mainWindow.py:578 system-config-users.gladestrings:89
+#: ../src/mainWindow.py:578 system-config-users.gladestrings:88
 msgid "system-config-users"
 msgstr "system-config-users"
 
@@ -278,20 +410,81 @@ msgstr ""
 msgid "Are you sure you want to delete the group '%s'?"
 msgstr "Vai esat pārliecināts, ka vēlaties dzēst grupu '%s'?"
 
+#. The passwords don't match, so complain
+#: ../src/userWindow.py:192
+msgid "The passwords do not match."
+msgstr "Paroles nesakrīt."
+
+#. The user name is blank, so complain
+#: ../src/userWindow.py:223
+msgid "Please specify a user name"
+msgstr "Lūdzu norādiet lietotāja vārdu"
+
+#. This user already exists, so complain
+#: ../src/userWindow.py:231
+#, python-format
+msgid "An account with username '%s' already exists."
+msgstr ""
+"Norādiet pēc cik dienām lietotāja '%s'·konts·kļūs neaktīvs,\"\"pēc paroles "
+"termiņa beigām"
+
+#. This uid already exists, so complain
+#: ../src/userWindow.py:267
+#, python-format
+msgid "The uid %s is already in use."
+msgstr "Identifikators %s tiek·jau izmatots."
+
+#: ../src/userWindow.py:285
+#, python-format
+msgid ""
+"Error finding suitable user id not exceeding maximum value of %(maxid)s."
+msgstr ""
+
+#: ../src/userWindow.py:297
+msgid ""
+"Creating a user with a UID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+msgstr ""
+"Nav ieteicams izveidot lietotāju ar UID mazāku par 500. Vai Jūs tik tiešām "
+"vēlaties izveidot tādu lietotāju?"
+
+#: ../src/userWindow.py:327
+msgid "A group with this gid already exists.  What would you like to do?"
+msgstr "Grupa ar šādu idetifikatoru jau eksistē. Ko Jūs vēlaties darīt?"
+
+#: ../src/userWindow.py:329
+msgid "A group with this name already exists.  What would you like to do?"
+msgstr "Grupa ar šādu vārdu jau eksistē. Ko Jūs vēlaties darīt?"
+
+#: ../src/userWindow.py:333
+msgid "Add to the existing group"
+msgstr "Pievienot jau esošai grupai"
+
+#: ../src/userWindow.py:334
+msgid "Add to the 'users' group"
+msgstr "Pievienot grupai 'users'"
+
+#. Uh-oh.  It looks like /etc/group and /etc/gshadow are out of sync.  Give up and quit.
+#: ../src/userWindow.py:416
+msgid ""
+"The system group database cannot be read.  This problem is most likely "
+"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
+"now."
+msgstr ""
+"Nevar nolasīt sistēmas grupas datubāzi. Iespējamā problēma varētu būt, "
+"neatbilstība starp failiem /etc/group un /etc/shadow. Tūlīt programma beigs "
+"darbu."
+
 #: ../src/system-config-users.py:38
 msgid "system-config-users requires a currently running X server."
 msgstr "system-config-users darbībai ir nepieciešams strādājošs X serveris."
 
-#: ../src/userGroupCheck.py:51 ../src/userProperties.py:295
-msgid "Please enter a user name."
-msgstr "Lūdzu ievadiet lietotāja vārdu."
-
-#: ../src/userGroupCheck.py:52
+#: ../src/userGroupCheck.py:55
 #, python-format
 msgid "The user name must not exceed %d characters."
 msgstr "Lietotāja vārds nedrīkst pārsniegt %d simbolus."
 
-#: ../src/userGroupCheck.py:53
+#: ../src/userGroupCheck.py:56
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace. Please do not include whitespace in "
@@ -300,7 +493,7 @@ msgstr ""
 "Lietotāja '%s' vārdā ir atstarpes. Lūdzu neiekļaujiet atstarpes lietotāja "
 "vārdā"
 
-#: ../src/userGroupCheck.py:54
+#: ../src/userGroupCheck.py:57
 #, python-format
 msgid ""
 "The user name '%s' contains a dollar sign which is not at the end. Please "
@@ -311,7 +504,7 @@ msgstr ""
 "izmantojiet dolāra zīmi tikai lietotāja vārda beigās,lai apzīmētu Samba "
 "lietotāju."
 
-#: ../src/userGroupCheck.py:55
+#: ../src/userGroupCheck.py:58
 #, python-format
 msgid ""
 "The user name '%s' contains a trailing dollar sign. This should only be used "
@@ -320,7 +513,7 @@ msgid ""
 "account?"
 msgstr ""
 
-#: ../src/userGroupCheck.py:56
+#: ../src/userGroupCheck.py:59
 #, python-format
 msgid ""
 "The user name '%(name)s' contains an invalid character at position "
@@ -329,7 +522,7 @@ msgstr ""
 "\"Lietotāja vārdā '%(name)s' %(position)d-ā rakstzīme nav derīga!\"\"Lūdzu "
 "lietojiet citu.\""
 
-#: ../src/userGroupCheck.py:57
+#: ../src/userGroupCheck.py:60
 msgid ""
 "Using all numbers as the user name can cause confusion about whether the "
 "user name or numerical user id is meant. Do you really want to use a "
@@ -339,12 +532,12 @@ msgstr ""
 "domāts lietotāja vārds, vai skaitliskais identifikators. Vai Jums tik tiešām "
 "nepieciešams izmantot tikai skaitļus lietotāja vārdā?"
 
-#: ../src/userGroupCheck.py:62
+#: ../src/userGroupCheck.py:65
 #, python-format
 msgid "The group name must not exceed %d characters."
 msgstr "Grupas nosaukums nedrīkst saturēt vairāk kā %d simbolus."
 
-#: ../src/userGroupCheck.py:63
+#: ../src/userGroupCheck.py:66
 #, python-format
 msgid ""
 "The group name '%s' contains whitespace. Please do not include whitespace in "
@@ -353,7 +546,7 @@ msgstr ""
 "Grupas nosaukumā '%s' ir atstarpes. Lūdzu neiekļaujiet atstarpes grupas "
 "vārdā."
 
-#: ../src/userGroupCheck.py:64
+#: ../src/userGroupCheck.py:67
 #, python-format
 msgid ""
 "The group name '%(name)s' contains an invalid character at position "
@@ -361,7 +554,7 @@ msgid ""
 msgstr ""
 "Grupas  '%(name)s' nosaukumā ir nederīgs simbols %(position)d-ā pozīcijā."
 
-#: ../src/userGroupCheck.py:65
+#: ../src/userGroupCheck.py:68
 msgid ""
 "Using all numbers as the group name can cause confusion about whether the "
 "group name or numerical group id is meant. Do you really want to use a "
@@ -371,20 +564,23 @@ msgstr ""
 "domāts grupas vārds, vai tās skaitliskais identifikators. Vai Jums tik "
 "tiešām nepieciešams izmantot tikai skaitļus grupas vārdā?"
 
-#: ../src/userGroupCheck.py:144
+#: ../src/userGroupCheck.py:157
 msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+"The chosen password contains characters which may be hard or impossible to "
+"type in certain situations. To ensure the password can be typed everywhere "
+"use only unaccented Latin letters (A-Z, a-z), digits (0-9), punctuation "
+"characters (e.g. comma, full stop) and the space character in the password. "
+"Do you want to use this password anyway?"
 msgstr ""
-"Parole satur aizliegtus simbolus. Lūdzu izmantojiet tikai ASCII simbolus."
 
-#: ../src/userGroupCheck.py:167
+#: ../src/userGroupCheck.py:185
 #, python-format
 msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
 msgstr ""
 "Izvēlētā parole ir pārāk vāja: %s. Vai tik tiešām Jūs to gribat lietot?"
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/userGroupCheck.py:178
+#: ../src/userGroupCheck.py:196
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only UTF-8 characters."
@@ -392,18 +588,18 @@ msgstr ""
 "Vārds '%s' satur aizliegtus simbolus. Lūdzu izmantojiet tikai UTF-8 simbolus."
 
 #. have to check for colons since /etc/passwd is a colon delimited file
-#: ../src/userGroupCheck.py:186
+#: ../src/userGroupCheck.py:204
 #, python-format
 msgid "The name '%s' contains a colon.  Please do not use colons in the name."
 msgstr ""
 "Vārdā '%s' ir izmantots kols. Lūdzu neizmantojiet kola simbolu šajā vārdā."
 
-#: ../src/userGroupCheck.py:195
+#: ../src/userGroupCheck.py:213
 msgid "Please enter a home directory."
 msgstr "Lūdzu norādiet mājas mapi."
 
 #. have to check for colons since /etc/passwd is a colon delimited file
-#: ../src/userGroupCheck.py:202
+#: ../src/userGroupCheck.py:220
 #, python-format
 msgid ""
 "The directory name '%s' contains a colon.  Please do not use colons in the "
@@ -412,7 +608,7 @@ msgstr ""
 "Mapes nosaukumā '%s' ir izmantots kols. Lūdzu neizmantojiet kola simbolu "
 "mapes nosaukumā."
 
-#: ../src/userGroupCheck.py:211
+#: ../src/userGroupCheck.py:229
 #, python-format
 msgid ""
 "The directory name '%s' doesn't begin with a '/'. Please specify an absolute "
@@ -421,7 +617,7 @@ msgstr ""
 "Mapes '%s' nosaukums nevar sākties ar zīmi \"/\". Lūdzu noteikt pilnu ceļu "
 "mājas mapei."
 
-#: ../src/userGroupCheck.py:217
+#: ../src/userGroupCheck.py:235
 #, python-format
 msgid ""
 "The directory name '%s' has path components which are too long. Please use "
@@ -429,7 +625,7 @@ msgid ""
 msgstr ""
 "Ceļš līdz mapei '%s' ir pārāk garš. Lūdzu lietojiet īsākus ceļus mājas mapei."
 
-#: ../src/userGroupCheck.py:224
+#: ../src/userGroupCheck.py:242
 #, python-format
 msgid ""
 "The directory name '%s' contains empty path components. Please specify a "
@@ -438,7 +634,7 @@ msgstr ""
 "Mapes nosaukumā '%s' ir atstarpes. Lūdzu norādiet mapes nosaukumu bez "
 "atstarpēm."
 
-#: ../src/userGroupCheck.py:233
+#: ../src/userGroupCheck.py:251
 #, python-format
 msgid ""
 "The directory name '%s' contains illegal path components. Please don't use "
@@ -447,207 +643,12 @@ msgstr ""
 "Mape '%s' satur nepareizus ceļa elementus. Lūdzu nelietojiet, '.' or '....' "
 "kā ceļu \"\"mājas mapei."
 
-#: ../src/userGroupCheck.py:241
+#: ../src/userGroupCheck.py:267
 #, python-format
 msgid ""
-"The directory name '%s' cannot be created ('%s' is not writable). Please "
-"chose a writable location."
+"The directory '%(dir)s' cannot be created ('%(parent_dir)s' is not "
+"writable). Please choose a writable location."
 msgstr ""
-
-#: ../src/userProperties.py:108 ../src/userWindow.py:82
-msgid "User"
-msgstr "Lietotājs"
-
-#: ../src/userProperties.py:108 ../src/userWindow.py:82
-msgid "Staff"
-msgstr "Personāls"
-
-#: ../src/userProperties.py:109 ../src/userWindow.py:83
-msgid "System Administrator"
-msgstr "Sistēmas administrators"
-
-#: ../src/userProperties.py:139
-msgid "Primary Group:"
-msgstr "Galvenā grupa:"
-
-#: ../src/userProperties.py:314
-#, python-format
-msgid "The user '%s' already exists. Please choose a different name."
-msgstr "Lietotājs '%s' jau ir. Lūdzu izvēlieties citu lietotāja nosaukumu."
-
-#: ../src/userProperties.py:336 ../src/userWindow.py:193
-msgid "Please enter a password for the user."
-msgstr "Ievadiet lietotājam paroli"
-
-#: ../src/userProperties.py:345 ../src/userWindow.py:201
-msgid "The password is too short.  Please use at least 6 characters."
-msgstr "Parole ir pārāk īsa. Lūdzu izmantojiet vismaz 6 simbolus."
-
-#: ../src/userProperties.py:354
-msgid "Passwords do not match."
-msgstr "Paroles nesakrīt"
-
-#: ../src/userProperties.py:431
-msgid "Please select at least one group for the user."
-msgstr "Izvēlaties lietotājam vismaz vienu grupu."
-
-#: ../src/userProperties.py:450
-msgid "Please specify the month that the password will expire."
-msgstr "Norādiet mēnesi, kurā beidzas paroles darbības termiņš."
-
-#: ../src/userProperties.py:458
-msgid "Please specify the day that the password will expire."
-msgstr "Norādiet dienu, kurā beidzas paroles darbības termiņš."
-
-#: ../src/userProperties.py:466
-msgid "Please specify the year that the password will expire."
-msgstr "Norādiet gadu, kurā beidzas paroles darbības termiņš."
-
-#. mktime will throw an OverflowError if the year is too big.
-#: ../src/userProperties.py:482
-msgid "The year is out of range.  Please select a different year."
-msgstr "Norādīts nepieļaujams gads. Lūdzu izvēlaties citu gadu."
-
-#: ../src/userProperties.py:511
-msgid ""
-"Please specify the number of days before changing the password is allowed."
-msgstr "Norādiet pirms cik dienām būs atļauta paroles maiņa."
-
-#: ../src/userProperties.py:513
-#, python-format
-msgid ""
-"The number of days before changing the password is allowed must be between "
-"%(min)d and %(max)d."
-msgstr ""
-"Dienu skaitam, pirms ir atļauts nomainīt paroli, ir jābūt no '%(min)d' līdz "
-"'%(max)d'."
-
-#: ../src/userProperties.py:518
-msgid ""
-"Please specify the number of days before changing the password is required."
-msgstr ""
-"Norādiet dienu skaitu pirms paroles maiņas, kad parole ir nepieciešama."
-
-#: ../src/userProperties.py:520
-#, python-format
-msgid ""
-"The number of days before changing the password is required must be between "
-"%(min)d and %(max)d."
-msgstr ""
-"Nepieciešamais dienu·skaits,·pirms·paroli·nepieciešams·nomainīt, "
-"ir·jābūt·no·'%(min)d'·līdz·'%(max)d'."
-
-#: ../src/userProperties.py:524
-msgid ""
-"Please specify the number of days to warn the user before changing the "
-"password is required."
-msgstr ""
-"Norādiet pirms cik dienām brīdināt lietotāju par paroles maiņas "
-"nepieciešamību."
-
-#: ../src/userProperties.py:526
-#, python-format
-msgid ""
-"The number of days to warn the user before changing the password is required "
-"must be between %(min)d and %(max)d."
-msgstr ""
-"Nepieciešajam dienu skaitam, lai brīdinātu lietotāju par paroles maiņu, ir "
-"jābūt no %(min)d līdz %(max)d."
-
-#: ../src/userProperties.py:532
-msgid ""
-"Please specify the number of days until the user account becomes inactive "
-"after password has expired."
-msgstr ""
-"Norādiet pēc cik dienām lietotāja·konts·kļūs neaktīvs,pēc paroles termiņa "
-"beigām."
-
-#: ../src/userProperties.py:534
-#, python-format
-msgid ""
-"The number of days until the user account becomes inactive after the "
-"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
-"means the account won't become inactive."
-msgstr ""
-"Dienu skaitam kamēr lietotāja konts tiks bloķēts, pēc paroles derīguma "
-"termiņaizbeigšanās, ir jābūt no %(min)d līdz %(max)d. Uzstādot to -1 nozīmē, "
-"ka kontsnetiks bloķēts."
-
-#: ../src/userProperties.py:592
-#, python-format
-msgid ""
-"Unlocking the user failed because:\n"
-"\n"
-"%(errmsg)s"
-msgstr ""
-
-#: ../src/userProperties.py:595
-msgid "Unlocking the user failed due to an unknown reason."
-msgstr ""
-
-#: ../src/userWindow.py:210
-msgid "The passwords do not match."
-msgstr "Paroles nesakrīt."
-
-#. The user name is blank, so complain
-#: ../src/userWindow.py:241
-msgid "Please specify a user name"
-msgstr "Lūdzu norādiet lietotāja vārdu"
-
-#. This user already exists, so complain
-#: ../src/userWindow.py:249
-#, python-format
-msgid "An account with username '%s' already exists."
-msgstr ""
-"Norādiet pēc cik dienām lietotāja '%s'·konts·kļūs neaktīvs,\"\"pēc paroles "
-"termiņa beigām"
-
-#. This uid already exists, so complain
-#: ../src/userWindow.py:285
-#, python-format
-msgid "The uid %s is already in use."
-msgstr "Identifikators %s tiek·jau izmatots."
-
-#: ../src/userWindow.py:303
-#, python-format
-msgid ""
-"Error finding suitable user id not exceeding maximum value of %(maxid)s."
-msgstr ""
-
-#: ../src/userWindow.py:315
-msgid ""
-"Creating a user with a UID less than 500 is not recommended.  Are you sure "
-"you want to do this?"
-msgstr ""
-"Nav ieteicams izveidot lietotāju ar UID mazāku par 500. Vai Jūs tik tiešām "
-"vēlaties izveidot tādu lietotāju?"
-
-#: ../src/userWindow.py:345
-msgid "A group with this gid already exists.  What would you like to do?"
-msgstr "Grupa ar šādu idetifikatoru jau eksistē. Ko Jūs vēlaties darīt?"
-
-#: ../src/userWindow.py:347
-msgid "A group with this name already exists.  What would you like to do?"
-msgstr "Grupa ar šādu vārdu jau eksistē. Ko Jūs vēlaties darīt?"
-
-#: ../src/userWindow.py:351
-msgid "Add to the existing group"
-msgstr "Pievienot jau esošai grupai"
-
-#: ../src/userWindow.py:352
-msgid "Add to the 'users' group"
-msgstr "Pievienot grupai 'users'"
-
-#. Uh-oh.  It looks like /etc/group and /etc/gshadow are out of sync.  Give up and quit.
-#: ../src/userWindow.py:434
-msgid ""
-"The system group database cannot be read.  This problem is most likely "
-"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
-"now."
-msgstr ""
-"Nevar nolasīt sistēmas grupas datubāzi. Iespējamā problēma varētu būt, "
-"neatbilstība starp failiem /etc/group un /etc/shadow. Tūlīt programma beigs "
-"darbu."
 
 #.
 #. * Translatable strings file generated by Glade.
@@ -658,11 +659,11 @@ msgstr ""
 msgid "Add New Group"
 msgstr ""
 
-#: system-config-users.gladestrings:8 system-config-users.gladestrings:38
+#: system-config-users.gladestrings:8 system-config-users.gladestrings:37
 msgid "_Group Name:"
 msgstr "_Grupas nosaukums:"
 
-#: system-config-users.gladestrings:9 system-config-users.gladestrings:74
+#: system-config-users.gladestrings:9 system-config-users.gladestrings:73
 msgid "Specify g_roup ID manually:"
 msgstr "Norādīt g_rupas ID manuāli"
 
@@ -674,7 +675,7 @@ msgstr "Lietotāja īpašības"
 msgid "User _Name:"
 msgstr "Lietotāja vārds:"
 
-#: system-config-users.gladestrings:12 system-config-users.gladestrings:64
+#: system-config-users.gladestrings:12 system-config-users.gladestrings:63
 msgid "_Full Name:"
 msgstr "Pilns vārds:"
 
@@ -682,11 +683,11 @@ msgstr "Pilns vārds:"
 msgid "Pass_word:"
 msgstr ""
 
-#: system-config-users.gladestrings:14 system-config-users.gladestrings:66
+#: system-config-users.gladestrings:14 system-config-users.gladestrings:65
 msgid "Confir_m Password:"
 msgstr ""
 
-#: system-config-users.gladestrings:15 system-config-users.gladestrings:67
+#: system-config-users.gladestrings:15 system-config-users.gladestrings:66
 msgid "_Login Shell:"
 msgstr "Čaula:"
 
@@ -694,7 +695,7 @@ msgstr "Čaula:"
 msgid "_Home Directory:"
 msgstr "Mājas mape:"
 
-#: system-config-users.gladestrings:17 system-config-users.gladestrings:68
+#: system-config-users.gladestrings:17 system-config-users.gladestrings:67
 msgid "S_ELinux role:"
 msgstr "S_ELinux loma:"
 
@@ -710,7 +711,7 @@ msgstr "Atļaut konta termiņa izbeigšanos"
 msgid "Account e_xpires (YYYY-MM-DD):"
 msgstr ""
 
-#: system-config-users.gladestrings:21 system-config-users.gladestrings:29
+#: system-config-users.gladestrings:21
 msgid "     "
 msgstr "     "
 
@@ -727,196 +728,196 @@ msgid "_Account Info"
 msgstr "Kont_a informācija"
 
 #: system-config-users.gladestrings:26
-msgid "User last changed password on:"
-msgstr "Lietotājs paroli pēdējoreiz mainījis:"
-
-#: system-config-users.gladestrings:27
-msgid "Unknown"
-msgstr "Nezināms"
-
-#: system-config-users.gladestrings:28
 msgid "_Enable password expiration"
 msgstr "Pi_elietot paroles darbības ilgumu"
 
-#: system-config-users.gladestrings:30
+#: system-config-users.gladestrings:27
 msgid "Days before change a_llowed:"
 msgstr "Maiņa atļauta ne ātrāk kā pēc (dienas):"
 
-#: system-config-users.gladestrings:31
+#: system-config-users.gladestrings:28
 msgid "Days before change _required:"
 msgstr "Maiņa nepieciešama pēc (dienas(ām)):"
 
-#: system-config-users.gladestrings:32
+#: system-config-users.gladestrings:29
 msgid "Days _warning before change:"
 msgstr "Tiks brīdināts pirms maiņas (dienas):"
 
-#: system-config-users.gladestrings:33
+#: system-config-users.gladestrings:30
 msgid "Days before account _inactive:"
 msgstr "Dienas pirms konta bloķēšanas:"
 
-#: system-config-users.gladestrings:34
+#: system-config-users.gladestrings:31
+msgid "Password last changed on..."
+msgstr ""
+
+#: system-config-users.gladestrings:32
+msgid "Force password change on next login"
+msgstr ""
+
+#: system-config-users.gladestrings:33
 msgid "_Password Info"
 msgstr "_Paroles informācija"
 
-#: system-config-users.gladestrings:35
+#: system-config-users.gladestrings:34
 msgid "Select the groups that the user will be a member of:"
 msgstr "Izvēlaties grupas, kuru biedrs būs lietotājs:"
 
-#: system-config-users.gladestrings:36
+#: system-config-users.gladestrings:35
 msgid "_Groups"
 msgstr "_Grupas"
 
-#: system-config-users.gladestrings:37
+#: system-config-users.gladestrings:36
 msgid "Group Properties"
 msgstr "Grupas īpašības"
 
-#: system-config-users.gladestrings:39
+#: system-config-users.gladestrings:38
 msgid "Group _Data"
 msgstr "Grupas _dati"
 
-#: system-config-users.gladestrings:40
+#: system-config-users.gladestrings:39
 msgid "Select the users to join this group:"
 msgstr "Izvēlaties lietotājus kurus iekļaut šajā grupā:"
 
-#: system-config-users.gladestrings:41
+#: system-config-users.gladestrings:40
 msgid "Group _Users"
 msgstr "Grupas lietotāji"
 
-#: system-config-users.gladestrings:42
+#: system-config-users.gladestrings:41
 msgid "User Manager"
 msgstr "Lietotāju pārvaldnieks"
 
-#: system-config-users.gladestrings:43
+#: system-config-users.gladestrings:42
 msgid "_File"
 msgstr "_Fails"
 
-#: system-config-users.gladestrings:44 system-config-users.gladestrings:49
+#: system-config-users.gladestrings:43 system-config-users.gladestrings:48
 msgid "Add _User"
 msgstr "Pievienot lietotāj_u"
 
-#: system-config-users.gladestrings:45 system-config-users.gladestrings:50
+#: system-config-users.gladestrings:44 system-config-users.gladestrings:49
 msgid "Add _Group"
 msgstr "Pievienot _grupu"
 
-#: system-config-users.gladestrings:46
+#: system-config-users.gladestrings:45
 msgid "_Edit"
 msgstr "Labot"
 
-#: system-config-users.gladestrings:47 system-config-users.gladestrings:57
+#: system-config-users.gladestrings:46 system-config-users.gladestrings:56
 msgid "_Help"
 msgstr "Palīdzība"
 
-#: system-config-users.gladestrings:48
+#: system-config-users.gladestrings:47
 msgid "_Contents"
 msgstr "Saturs"
 
-#: system-config-users.gladestrings:51
+#: system-config-users.gladestrings:50
 msgid "Edit properties"
 msgstr "Labot īpašības"
 
-#: system-config-users.gladestrings:52
+#: system-config-users.gladestrings:51
 msgid "Proper_ties"
 msgstr "Īpašības"
 
-#: system-config-users.gladestrings:53
+#: system-config-users.gladestrings:52
 msgid "_Delete"
 msgstr "_Dzēst"
 
-#: system-config-users.gladestrings:54
+#: system-config-users.gladestrings:53
 msgid "Reload"
 msgstr "Atjaunināt"
 
-#: system-config-users.gladestrings:55
+#: system-config-users.gladestrings:54
 msgid "_Refresh"
 msgstr "Atjaunināt"
 
-#: system-config-users.gladestrings:56
+#: system-config-users.gladestrings:55
 msgid "Help"
 msgstr "Palīdzība"
 
-#: system-config-users.gladestrings:58
+#: system-config-users.gladestrings:57
 msgid "Sea_rch filter:"
 msgstr ""
 
-#: system-config-users.gladestrings:59
+#: system-config-users.gladestrings:58
 msgid "_Apply filter"
 msgstr "Uzstādīt filtru"
 
-#: system-config-users.gladestrings:60
+#: system-config-users.gladestrings:59
 msgid "U_sers"
 msgstr "Lietotāji"
 
-#: system-config-users.gladestrings:61
+#: system-config-users.gladestrings:60
 msgid "Gr_oups"
 msgstr "Grupas"
 
-#: system-config-users.gladestrings:62
+#: system-config-users.gladestrings:61
 msgid "Add New User"
 msgstr ""
 
-#: system-config-users.gladestrings:63
+#: system-config-users.gladestrings:62
 msgid "_User Name:"
 msgstr "Lietotāja vārds:"
 
-#: system-config-users.gladestrings:65
+#: system-config-users.gladestrings:64
 msgid "_Password:"
 msgstr "_Parole:"
 
-#: system-config-users.gladestrings:69
+#: system-config-users.gladestrings:68
 msgid "Create _home directory"
 msgstr "Izveidot mājas mapi"
 
-#: system-config-users.gladestrings:70
+#: system-config-users.gladestrings:69
 msgid "    "
 msgstr "    "
 
-#: system-config-users.gladestrings:71
+#: system-config-users.gladestrings:70
 msgid "Home _Directory:"
 msgstr "Mājas mape:"
 
-#: system-config-users.gladestrings:72
+#: system-config-users.gladestrings:71
 msgid "Create a private _group for the user"
 msgstr "Izveidot lietotājam privātu _grupu"
 
-#: system-config-users.gladestrings:73
+#: system-config-users.gladestrings:72
 msgid "Specify u_ser ID manually:"
 msgstr "Norādīt lietotāja ID manuāli"
 
-#: system-config-users.gladestrings:75
+#: system-config-users.gladestrings:74
 msgid "About system-config-users"
 msgstr "Par system-config-users"
 
-#: system-config-users.gladestrings:76
+#: system-config-users.gladestrings:75
 msgid "<b>system-config-users</b>"
 msgstr "<b>system-config-users</b>"
 
-#: system-config-users.gladestrings:77
+#: system-config-users.gladestrings:76
 msgid "Version @VERSION@"
 msgstr "Versija @VERSION@"
 
-#: system-config-users.gladestrings:78
+#: system-config-users.gladestrings:77
 msgid "Copyright (c) 2001 - 2005 Red Hat, Inc."
 msgstr "Autortiesības (c) 2001 - 2005 Red Hat, Inc."
 
-#: system-config-users.gladestrings:79
+#: system-config-users.gladestrings:78
 msgid "This software is distributed under the GNU General Public License."
 msgstr ""
 "Šī programma tiek izplatīta zem vispārējās publiskās licences(GPL) "
 "noteikumiem."
 
-#: system-config-users.gladestrings:80
+#: system-config-users.gladestrings:79
 msgid "Preferences"
 msgstr "Iestatījumi"
 
-#: system-config-users.gladestrings:81
+#: system-config-users.gladestrings:80
 msgid "_Hide system users and groups"
 msgstr "Paslēpt sistēmas lietotājus un grupas"
 
-#: system-config-users.gladestrings:82
+#: system-config-users.gladestrings:81
 msgid "<b>User and Group Lists</b>"
 msgstr ""
 
-#: system-config-users.gladestrings:83
+#: system-config-users.gladestrings:82
 msgid ""
 "Ensure that a new user gets a higher UID than all existing users, if not set "
 "manually."
@@ -924,11 +925,11 @@ msgstr ""
 "Pārliecinieties, ka jaunajam lietotājam ir lielāks UID nekā jau esošajiem "
 "lietotājiem."
 
-#: system-config-users.gladestrings:84
+#: system-config-users.gladestrings:83
 msgid "Automatically assigned _UID must be highest"
 msgstr "Automātiski piešķirtam UID jābūt lielākajam"
 
-#: system-config-users.gladestrings:85
+#: system-config-users.gladestrings:84
 msgid ""
 "Ensure that a new group gets a higher GID than all existing groups, if not "
 "set manually."
@@ -936,27 +937,27 @@ msgstr ""
 "Pārliecinieties, ka jaunajai grupai ir lielāks GID nekā esošajiem "
 "lietotājiem, ja nav, uzstādiet manuāli."
 
-#: system-config-users.gladestrings:86
+#: system-config-users.gladestrings:85
 msgid "Automatically assigned _GID must be highest"
 msgstr "Automātiski piešķirtam GID jābūt lielākajam."
 
-#: system-config-users.gladestrings:87
+#: system-config-users.gladestrings:86
 msgid "Prefer that private group GID is the _same as UID"
 msgstr "Pārliecinieties, ka privātas grupas GID ir tād_s pats kā UID"
 
-#: system-config-users.gladestrings:88
+#: system-config-users.gladestrings:87
 msgid "<b>New Users</b>"
 msgstr "<b>Jauni lietotāji</b>"
 
-#: system-config-users.gladestrings:90
+#: system-config-users.gladestrings:89
 msgid "Copyright © 2001-2007 Red Hat, Inc."
 msgstr "Autortiesības ©·2001-2007·Red·Hat,·Inc."
 
-#: system-config-users.gladestrings:91
+#: system-config-users.gladestrings:90
 msgid "Manages users and groups on your system."
 msgstr "Pārvalda lietotājus un grupas uz Jūsu sistēmas."
 
-#: system-config-users.gladestrings:92
+#: system-config-users.gladestrings:91
 msgid ""
 "system-config-users is free software; you can redistribute it and/or modify "
 "it under the terms of the GNU General Public License as published by the "
@@ -984,9 +985,27 @@ msgstr ""
 "ja nav, tad rakstiet uz: Free·Software·Foundation,·Inc.,·51·Franklin·Street,"
 "·Fifth·Floor,·Boston,·MA·02110-130159·USA"
 
-#: system-config-users.gladestrings:97
+#: system-config-users.gladestrings:96
 msgid "translator-credits"
 msgstr "Tulkoja"
+
+#~ msgid "User last changed password on:"
+#~ msgstr "Lietotājs paroli pēdējoreiz mainījis:"
+
+#~ msgid "Unknown"
+#~ msgstr "Nezināms"
+
+#~ msgid ""
+#~ "The password contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "Parole satur aizliegtus simbolus. Lūdzu izmantojiet tikai ASCII simbolus."
+
+#~ msgid "Please enter a password for the user."
+#~ msgstr "Ievadiet lietotājam paroli"
+
+#~ msgid "The password is too short.  Please use at least 6 characters."
+#~ msgstr "Parole ir pārāk īsa. Lūdzu izmantojiet vismaz 6 simbolus."
 
 #~ msgid "C_onfirm Password:"
 #~ msgstr "Apstipriniet par_oli:"

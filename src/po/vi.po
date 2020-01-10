@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-users VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-20 16:08+0200\n"
+"POT-Creation-Date: 2010-11-30 16:08+0100\n"
 "PO-Revision-Date: 2003-09-21 16:28+0700\n"
 "Last-Translator: pclouds <pclouds@gmx.net>\n"
 "Language-Team: GnomeVI <gnomevi-list@lists.sourceforge.net>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Generated-By: pygettext.py 1.1\n"
 
 #: ../src/groupProperties.py:108 ../src/groupWindow.py:108
-#: ../src/userGroupCheck.py:61
+#: ../src/userGroupCheck.py:64
 msgid "Please enter a group name."
 msgstr "Vui lòng nhập tên nhóm."
 
@@ -31,6 +31,131 @@ msgstr "Năm nằm ngoài phạm vi. Vui lòng chọn năm khác."
 msgid "You cannot remove user '%s' from their primary group."
 msgstr "Bạn không thể loại bỏ người dùng '%s' khỏi nhóm chính của họ."
 
+#: ../src/userProperties.py:113 ../src/userWindow.py:85
+#, fuzzy
+msgid "User"
+msgstr "N_gười dùng"
+
+#: ../src/userProperties.py:113 ../src/userWindow.py:85
+msgid "Staff"
+msgstr ""
+
+#: ../src/userProperties.py:114 ../src/userWindow.py:86
+msgid "System Administrator"
+msgstr ""
+
+#: ../src/userProperties.py:144
+msgid "Primary Group:"
+msgstr "Nhóm chính:"
+
+#: ../src/userProperties.py:226
+#, python-format
+msgid "Password last changed on: %x"
+msgstr ""
+
+#: ../src/userProperties.py:306 ../src/userGroupCheck.py:54
+msgid "Please enter a user name."
+msgstr "Vui lòng nhập tên người dùng."
+
+#: ../src/userProperties.py:325
+#, fuzzy, python-format
+msgid "The user '%s' already exists. Please choose a different name."
+msgstr "Năm nằm ngoài phạm vi. Vui lòng chọn năm khác."
+
+#: ../src/userProperties.py:346
+msgid "Passwords do not match."
+msgstr "Mật khẩu không khớp."
+
+#: ../src/userProperties.py:423
+msgid "Please select at least one group for the user."
+msgstr "Vui lòng chọn ít nhất một nhóm cho người dùng."
+
+#: ../src/userProperties.py:442
+msgid "Please specify the month that the password will expire."
+msgstr "Vui lòng xác định tháng mật khẩu sẽ hết hạn sử dụng."
+
+#: ../src/userProperties.py:450
+msgid "Please specify the day that the password will expire."
+msgstr "Vui lòng xác định ngày mật khẩu sẽ hết hạn sử dụng."
+
+#: ../src/userProperties.py:458
+msgid "Please specify the year that the password will expire."
+msgstr "Vui lòng xác định năm mật khẩu sẽ hết hạn sử dụng."
+
+#. mktime will throw an OverflowError if the year is too big.
+#: ../src/userProperties.py:474
+msgid "The year is out of range.  Please select a different year."
+msgstr "Năm nằm ngoài phạm vi. Vui lòng chọn năm khác."
+
+#: ../src/userProperties.py:504
+msgid ""
+"Please specify the number of days before changing the password is allowed."
+msgstr "Vui lòng xác định số ngày trước khi được phép đổi mật khẩu."
+
+#: ../src/userProperties.py:506
+#, fuzzy, python-format
+msgid ""
+"The number of days before changing the password is allowed must be between "
+"%(min)d and %(max)d."
+msgstr "Vui lòng xác định số ngày trước khi được phép đổi mật khẩu."
+
+#: ../src/userProperties.py:511
+msgid ""
+"Please specify the number of days before changing the password is required."
+msgstr "Vui lòng xác định số ngày trước khi yêu cầu đổi mật khẩu."
+
+#: ../src/userProperties.py:513
+#, fuzzy, python-format
+msgid ""
+"The number of days before changing the password is required must be between "
+"%(min)d and %(max)d."
+msgstr "Vui lòng xác định số ngày trước khi yêu cầu đổi mật khẩu."
+
+#: ../src/userProperties.py:517
+msgid ""
+"Please specify the number of days to warn the user before changing the "
+"password is required."
+msgstr ""
+"Vui lòng xác định số ngày trước khi cảnh báo người dùng yêu cầu đổi mật khẩu."
+
+#: ../src/userProperties.py:519
+#, fuzzy, python-format
+msgid ""
+"The number of days to warn the user before changing the password is required "
+"must be between %(min)d and %(max)d."
+msgstr ""
+"Vui lòng xác định số ngày trước khi cảnh báo người dùng yêu cầu đổi mật khẩu."
+
+#: ../src/userProperties.py:525
+msgid ""
+"Please specify the number of days until the user account becomes inactive "
+"after password has expired."
+msgstr ""
+"Vui lòng xác định số ngày trước khi tài khoản bị vô hiệu hóa, sau khi mật "
+"khẩu đã hết hạn."
+
+#: ../src/userProperties.py:527
+#, fuzzy, python-format
+msgid ""
+"The number of days until the user account becomes inactive after the "
+"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
+"means the account won't become inactive."
+msgstr ""
+"Vui lòng xác định số ngày trước khi tài khoản bị vô hiệu hóa, sau khi mật "
+"khẩu đã hết hạn."
+
+#: ../src/userProperties.py:593
+#, python-format
+msgid ""
+"Unlocking the user failed because:\n"
+"\n"
+"%(errmsg)s"
+msgstr ""
+
+#: ../src/userProperties.py:596
+msgid "Unlocking the user failed due to an unknown reason."
+msgstr ""
+
 #: ../src/groupWindow.py:116
 #, python-format
 msgid "A group with name '%s' already exists."
@@ -38,7 +163,7 @@ msgstr "Đã có nhóm tên '%s' rồi."
 
 #. This uid already exists, so complain
 #. This (chosen) gid already exists, so complain
-#: ../src/groupWindow.py:131 ../src/userWindow.py:292
+#: ../src/groupWindow.py:131 ../src/userWindow.py:274
 #, python-format
 msgid "The gid %s is already in use."
 msgstr "GID %s đã được dùng rồi."
@@ -50,7 +175,7 @@ msgid ""
 msgstr ""
 "Không nên tạo nhóm với GID nhỏ hơn 500. Bạn có chắc muốn thực hiện không?"
 
-#: ../src/groupWindow.py:160 ../src/userWindow.py:305
+#: ../src/groupWindow.py:160 ../src/userWindow.py:287
 #, python-format
 msgid ""
 "Error finding suitable group id not exceeding maximum value of %(maxid)s."
@@ -157,7 +282,7 @@ msgid ""
 "soon as possible."
 msgstr ""
 
-#: ../src/mainWindow.py:578 system-config-users.gladestrings:89
+#: ../src/mainWindow.py:578 system-config-users.gladestrings:88
 msgid "system-config-users"
 msgstr ""
 
@@ -247,21 +372,79 @@ msgstr ""
 msgid "Are you sure you want to delete the group '%s'?"
 msgstr "Bạn có chắc muốn xóa nhóm '%s' không?"
 
+#. The passwords don't match, so complain
+#: ../src/userWindow.py:192
+msgid "The passwords do not match."
+msgstr "Mật khẩu không khớp."
+
+#. The user name is blank, so complain
+#: ../src/userWindow.py:223
+msgid "Please specify a user name"
+msgstr "Vui lòng nhập tên người dùng"
+
+#. This user already exists, so complain
+#: ../src/userWindow.py:231
+#, python-format
+msgid "An account with username '%s' already exists."
+msgstr "Đã có tài khoản với tên người dùng '%s' rồi."
+
+#. This uid already exists, so complain
+#: ../src/userWindow.py:267
+#, python-format
+msgid "The uid %s is already in use."
+msgstr "Đã dùng UID %s rồi."
+
+#: ../src/userWindow.py:285
+#, python-format
+msgid ""
+"Error finding suitable user id not exceeding maximum value of %(maxid)s."
+msgstr ""
+
+#: ../src/userWindow.py:297
+msgid ""
+"Creating a user with a UID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+msgstr ""
+"Không nên tạo nhóm với UID nhỏ hơn 500. Bạn có chắc muốn thực hiện không?"
+
+#: ../src/userWindow.py:327
+#, fuzzy
+msgid "A group with this gid already exists.  What would you like to do?"
+msgstr "Đã có nhóm tên này rồi. Bạn muốn làm gì?"
+
+#: ../src/userWindow.py:329
+msgid "A group with this name already exists.  What would you like to do?"
+msgstr "Đã có nhóm tên này rồi. Bạn muốn làm gì?"
+
+#: ../src/userWindow.py:333
+msgid "Add to the existing group"
+msgstr "Thêm vào nhóm đã có"
+
+#: ../src/userWindow.py:334
+msgid "Add to the 'users' group"
+msgstr "Thêm vào nhóm 'users'"
+
+#. Uh-oh.  It looks like /etc/group and /etc/gshadow are out of sync.  Give up and quit.
+#: ../src/userWindow.py:416
+msgid ""
+"The system group database cannot be read.  This problem is most likely "
+"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
+"now."
+msgstr ""
+"Không thể đọc cơ sở dữ liệu nhóm hệ thống. Vấn đề này thường do tập tin /etc/"
+"group và /etc/gshadow không khớp nhau. Chương trình sẽ kết thúc ngay."
+
 #: ../src/system-config-users.py:38
 #, fuzzy
 msgid "system-config-users requires a currently running X server."
 msgstr "system-config-users yêu cầu X Server đang hoạt động."
 
-#: ../src/userGroupCheck.py:51 ../src/userProperties.py:295
-msgid "Please enter a user name."
-msgstr "Vui lòng nhập tên người dùng."
-
-#: ../src/userGroupCheck.py:52
+#: ../src/userGroupCheck.py:55
 #, fuzzy, python-format
 msgid "The user name must not exceed %d characters."
 msgstr "Tên người dùng phải ngắn hơn %s ký tự."
 
-#: ../src/userGroupCheck.py:53
+#: ../src/userGroupCheck.py:56
 #, fuzzy, python-format
 msgid ""
 "The user name '%s' contains whitespace. Please do not include whitespace in "
@@ -270,7 +453,7 @@ msgstr ""
 "Tên người dùng '%s' chứa khoảng trắng. Vui lòng không dùng khoảng trắng "
 "trong tên người dùng."
 
-#: ../src/userGroupCheck.py:54
+#: ../src/userGroupCheck.py:57
 #, python-format
 msgid ""
 "The user name '%s' contains a dollar sign which is not at the end. Please "
@@ -278,7 +461,7 @@ msgid ""
 "accounts."
 msgstr ""
 
-#: ../src/userGroupCheck.py:55
+#: ../src/userGroupCheck.py:58
 #, python-format
 msgid ""
 "The user name '%s' contains a trailing dollar sign. This should only be used "
@@ -287,7 +470,7 @@ msgid ""
 "account?"
 msgstr ""
 
-#: ../src/userGroupCheck.py:56
+#: ../src/userGroupCheck.py:59
 #, fuzzy, python-format
 msgid ""
 "The user name '%(name)s' contains an invalid character at position "
@@ -295,19 +478,19 @@ msgid ""
 msgstr ""
 "Tên người dùng '%s' chứa ký tự không hợp lệ. Vui lòng chỉ dùng ký tự ASCII."
 
-#: ../src/userGroupCheck.py:57
+#: ../src/userGroupCheck.py:60
 msgid ""
 "Using all numbers as the user name can cause confusion about whether the "
 "user name or numerical user id is meant. Do you really want to use a "
 "numerical-only user name?"
 msgstr ""
 
-#: ../src/userGroupCheck.py:62
+#: ../src/userGroupCheck.py:65
 #, fuzzy, python-format
 msgid "The group name must not exceed %d characters."
 msgstr "Tên nhóm phải ngắn hơn %s ký tự."
 
-#: ../src/userGroupCheck.py:63
+#: ../src/userGroupCheck.py:66
 #, fuzzy, python-format
 msgid ""
 "The group name '%s' contains whitespace. Please do not include whitespace in "
@@ -316,50 +499,54 @@ msgstr ""
 "Tên nhóm '%s' chứa khoảng trắng. Vui lòng không dùng khoảng trắng trong tên "
 "nhóm."
 
-#: ../src/userGroupCheck.py:64
+#: ../src/userGroupCheck.py:67
 #, fuzzy, python-format
 msgid ""
 "The group name '%(name)s' contains an invalid character at position "
 "%(position)d."
 msgstr "Tên nhóm '%s' chứa ký tự không hợp lệ. Vui lòng chỉ dùng ký tự ASCII."
 
-#: ../src/userGroupCheck.py:65
+#: ../src/userGroupCheck.py:68
 msgid ""
 "Using all numbers as the group name can cause confusion about whether the "
 "group name or numerical group id is meant. Do you really want to use a "
 "numerical-only group name?"
 msgstr ""
 
-#: ../src/userGroupCheck.py:144
+#: ../src/userGroupCheck.py:157
 msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
-msgstr "Mật khẩu chứa ký tự không hợp lệ. Vui lòng chỉ dùng ký tự ASCII."
+"The chosen password contains characters which may be hard or impossible to "
+"type in certain situations. To ensure the password can be typed everywhere "
+"use only unaccented Latin letters (A-Z, a-z), digits (0-9), punctuation "
+"characters (e.g. comma, full stop) and the space character in the password. "
+"Do you want to use this password anyway?"
+msgstr ""
 
-#: ../src/userGroupCheck.py:167
+#: ../src/userGroupCheck.py:185
 #, python-format
 msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
 msgstr ""
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/userGroupCheck.py:178
+#: ../src/userGroupCheck.py:196
 #, fuzzy, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only UTF-8 characters."
 msgstr "Tên '%s' chứa ký tự không hợp lệ. Vui lòng chỉ dùng ký tự UTF-8."
 
 #. have to check for colons since /etc/passwd is a colon delimited file
-#: ../src/userGroupCheck.py:186
+#: ../src/userGroupCheck.py:204
 #, python-format
 msgid "The name '%s' contains a colon.  Please do not use colons in the name."
 msgstr ""
 "Tên '%s' chứa dấu hai chấm. Vui lòng không dùng dấu hai chấm trong tên."
 
-#: ../src/userGroupCheck.py:195
+#: ../src/userGroupCheck.py:213
 msgid "Please enter a home directory."
 msgstr "Vui lòng nhập thư mục home."
 
 #. have to check for colons since /etc/passwd is a colon delimited file
-#: ../src/userGroupCheck.py:202
+#: ../src/userGroupCheck.py:220
 #, python-format
 msgid ""
 "The directory name '%s' contains a colon.  Please do not use colons in the "
@@ -368,7 +555,7 @@ msgstr ""
 "Tên thư mục '%s' chứa dấu hai chấm. Vui lòng không dùng dấu hai chấm trong "
 "tên thư mục."
 
-#: ../src/userGroupCheck.py:211
+#: ../src/userGroupCheck.py:229
 #, fuzzy, python-format
 msgid ""
 "The directory name '%s' doesn't begin with a '/'. Please specify an absolute "
@@ -377,7 +564,7 @@ msgstr ""
 "Tên thư mục '%s' chứa dấu hai chấm. Vui lòng không dùng dấu hai chấm trong "
 "tên thư mục."
 
-#: ../src/userGroupCheck.py:217
+#: ../src/userGroupCheck.py:235
 #, fuzzy, python-format
 msgid ""
 "The directory name '%s' has path components which are too long. Please use "
@@ -386,7 +573,7 @@ msgstr ""
 "Tên thư mục '%s' chứa dấu hai chấm. Vui lòng không dùng dấu hai chấm trong "
 "tên thư mục."
 
-#: ../src/userGroupCheck.py:224
+#: ../src/userGroupCheck.py:242
 #, fuzzy, python-format
 msgid ""
 "The directory name '%s' contains empty path components. Please specify a "
@@ -395,7 +582,7 @@ msgstr ""
 "Tên thư mục '%s' chứa dấu hai chấm. Vui lòng không dùng dấu hai chấm trong "
 "tên thư mục."
 
-#: ../src/userGroupCheck.py:233
+#: ../src/userGroupCheck.py:251
 #, fuzzy, python-format
 msgid ""
 "The directory name '%s' contains illegal path components. Please don't use "
@@ -404,197 +591,12 @@ msgstr ""
 "Tên thư mục '%s' chứa dấu hai chấm. Vui lòng không dùng dấu hai chấm trong "
 "tên thư mục."
 
-#: ../src/userGroupCheck.py:241
+#: ../src/userGroupCheck.py:267
 #, python-format
 msgid ""
-"The directory name '%s' cannot be created ('%s' is not writable). Please "
-"chose a writable location."
+"The directory '%(dir)s' cannot be created ('%(parent_dir)s' is not "
+"writable). Please choose a writable location."
 msgstr ""
-
-#: ../src/userProperties.py:108 ../src/userWindow.py:82
-#, fuzzy
-msgid "User"
-msgstr "N_gười dùng"
-
-#: ../src/userProperties.py:108 ../src/userWindow.py:82
-msgid "Staff"
-msgstr ""
-
-#: ../src/userProperties.py:109 ../src/userWindow.py:83
-msgid "System Administrator"
-msgstr ""
-
-#: ../src/userProperties.py:139
-msgid "Primary Group:"
-msgstr "Nhóm chính:"
-
-#: ../src/userProperties.py:314
-#, fuzzy, python-format
-msgid "The user '%s' already exists. Please choose a different name."
-msgstr "Năm nằm ngoài phạm vi. Vui lòng chọn năm khác."
-
-#: ../src/userProperties.py:336 ../src/userWindow.py:193
-msgid "Please enter a password for the user."
-msgstr "Vui lòng nhập mật khẩu cho người dùng."
-
-#: ../src/userProperties.py:345 ../src/userWindow.py:201
-msgid "The password is too short.  Please use at least 6 characters."
-msgstr "Mật khẩu quá ngắn. Vui lòng nhập ít nhất 6 ký tự."
-
-#: ../src/userProperties.py:354
-msgid "Passwords do not match."
-msgstr "Mật khẩu không khớp."
-
-#: ../src/userProperties.py:431
-msgid "Please select at least one group for the user."
-msgstr "Vui lòng chọn ít nhất một nhóm cho người dùng."
-
-#: ../src/userProperties.py:450
-msgid "Please specify the month that the password will expire."
-msgstr "Vui lòng xác định tháng mật khẩu sẽ hết hạn sử dụng."
-
-#: ../src/userProperties.py:458
-msgid "Please specify the day that the password will expire."
-msgstr "Vui lòng xác định ngày mật khẩu sẽ hết hạn sử dụng."
-
-#: ../src/userProperties.py:466
-msgid "Please specify the year that the password will expire."
-msgstr "Vui lòng xác định năm mật khẩu sẽ hết hạn sử dụng."
-
-#. mktime will throw an OverflowError if the year is too big.
-#: ../src/userProperties.py:482
-msgid "The year is out of range.  Please select a different year."
-msgstr "Năm nằm ngoài phạm vi. Vui lòng chọn năm khác."
-
-#: ../src/userProperties.py:511
-msgid ""
-"Please specify the number of days before changing the password is allowed."
-msgstr "Vui lòng xác định số ngày trước khi được phép đổi mật khẩu."
-
-#: ../src/userProperties.py:513
-#, fuzzy, python-format
-msgid ""
-"The number of days before changing the password is allowed must be between "
-"%(min)d and %(max)d."
-msgstr "Vui lòng xác định số ngày trước khi được phép đổi mật khẩu."
-
-#: ../src/userProperties.py:518
-msgid ""
-"Please specify the number of days before changing the password is required."
-msgstr "Vui lòng xác định số ngày trước khi yêu cầu đổi mật khẩu."
-
-#: ../src/userProperties.py:520
-#, fuzzy, python-format
-msgid ""
-"The number of days before changing the password is required must be between "
-"%(min)d and %(max)d."
-msgstr "Vui lòng xác định số ngày trước khi yêu cầu đổi mật khẩu."
-
-#: ../src/userProperties.py:524
-msgid ""
-"Please specify the number of days to warn the user before changing the "
-"password is required."
-msgstr ""
-"Vui lòng xác định số ngày trước khi cảnh báo người dùng yêu cầu đổi mật khẩu."
-
-#: ../src/userProperties.py:526
-#, fuzzy, python-format
-msgid ""
-"The number of days to warn the user before changing the password is required "
-"must be between %(min)d and %(max)d."
-msgstr ""
-"Vui lòng xác định số ngày trước khi cảnh báo người dùng yêu cầu đổi mật khẩu."
-
-#: ../src/userProperties.py:532
-msgid ""
-"Please specify the number of days until the user account becomes inactive "
-"after password has expired."
-msgstr ""
-"Vui lòng xác định số ngày trước khi tài khoản bị vô hiệu hóa, sau khi mật "
-"khẩu đã hết hạn."
-
-#: ../src/userProperties.py:534
-#, fuzzy, python-format
-msgid ""
-"The number of days until the user account becomes inactive after the "
-"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
-"means the account won't become inactive."
-msgstr ""
-"Vui lòng xác định số ngày trước khi tài khoản bị vô hiệu hóa, sau khi mật "
-"khẩu đã hết hạn."
-
-#: ../src/userProperties.py:592
-#, python-format
-msgid ""
-"Unlocking the user failed because:\n"
-"\n"
-"%(errmsg)s"
-msgstr ""
-
-#: ../src/userProperties.py:595
-msgid "Unlocking the user failed due to an unknown reason."
-msgstr ""
-
-#: ../src/userWindow.py:210
-msgid "The passwords do not match."
-msgstr "Mật khẩu không khớp."
-
-#. The user name is blank, so complain
-#: ../src/userWindow.py:241
-msgid "Please specify a user name"
-msgstr "Vui lòng nhập tên người dùng"
-
-#. This user already exists, so complain
-#: ../src/userWindow.py:249
-#, python-format
-msgid "An account with username '%s' already exists."
-msgstr "Đã có tài khoản với tên người dùng '%s' rồi."
-
-#. This uid already exists, so complain
-#: ../src/userWindow.py:285
-#, python-format
-msgid "The uid %s is already in use."
-msgstr "Đã dùng UID %s rồi."
-
-#: ../src/userWindow.py:303
-#, python-format
-msgid ""
-"Error finding suitable user id not exceeding maximum value of %(maxid)s."
-msgstr ""
-
-#: ../src/userWindow.py:315
-msgid ""
-"Creating a user with a UID less than 500 is not recommended.  Are you sure "
-"you want to do this?"
-msgstr ""
-"Không nên tạo nhóm với UID nhỏ hơn 500. Bạn có chắc muốn thực hiện không?"
-
-#: ../src/userWindow.py:345
-#, fuzzy
-msgid "A group with this gid already exists.  What would you like to do?"
-msgstr "Đã có nhóm tên này rồi. Bạn muốn làm gì?"
-
-#: ../src/userWindow.py:347
-msgid "A group with this name already exists.  What would you like to do?"
-msgstr "Đã có nhóm tên này rồi. Bạn muốn làm gì?"
-
-#: ../src/userWindow.py:351
-msgid "Add to the existing group"
-msgstr "Thêm vào nhóm đã có"
-
-#: ../src/userWindow.py:352
-msgid "Add to the 'users' group"
-msgstr "Thêm vào nhóm 'users'"
-
-#. Uh-oh.  It looks like /etc/group and /etc/gshadow are out of sync.  Give up and quit.
-#: ../src/userWindow.py:434
-msgid ""
-"The system group database cannot be read.  This problem is most likely "
-"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
-"now."
-msgstr ""
-"Không thể đọc cơ sở dữ liệu nhóm hệ thống. Vấn đề này thường do tập tin /etc/"
-"group và /etc/gshadow không khớp nhau. Chương trình sẽ kết thúc ngay."
 
 #.
 #. * Translatable strings file generated by Glade.
@@ -605,12 +607,12 @@ msgstr ""
 msgid "Add New Group"
 msgstr ""
 
-#: system-config-users.gladestrings:8 system-config-users.gladestrings:38
+#: system-config-users.gladestrings:8 system-config-users.gladestrings:37
 #, fuzzy
 msgid "_Group Name:"
 msgstr "Tên Nhóm:"
 
-#: system-config-users.gladestrings:9 system-config-users.gladestrings:74
+#: system-config-users.gladestrings:9 system-config-users.gladestrings:73
 #, fuzzy
 msgid "Specify g_roup ID manually:"
 msgstr "Xác định GID bằng tay"
@@ -624,7 +626,7 @@ msgstr "Thuộc tính Người dùng"
 msgid "User _Name:"
 msgstr "Tên Người dùng:"
 
-#: system-config-users.gladestrings:12 system-config-users.gladestrings:64
+#: system-config-users.gladestrings:12 system-config-users.gladestrings:63
 #, fuzzy
 msgid "_Full Name:"
 msgstr "Họ và tên:"
@@ -633,12 +635,12 @@ msgstr "Họ và tên:"
 msgid "Pass_word:"
 msgstr ""
 
-#: system-config-users.gladestrings:14 system-config-users.gladestrings:66
+#: system-config-users.gladestrings:14 system-config-users.gladestrings:65
 #, fuzzy
 msgid "Confir_m Password:"
 msgstr "Xác nhận mật khẩu:"
 
-#: system-config-users.gladestrings:15 system-config-users.gladestrings:67
+#: system-config-users.gladestrings:15 system-config-users.gladestrings:66
 #, fuzzy
 msgid "_Login Shell:"
 msgstr "Shell Đăng nhập:"
@@ -648,7 +650,7 @@ msgstr "Shell Đăng nhập:"
 msgid "_Home Directory:"
 msgstr "Thư mục Home:"
 
-#: system-config-users.gladestrings:17 system-config-users.gladestrings:68
+#: system-config-users.gladestrings:17 system-config-users.gladestrings:67
 msgid "S_ELinux role:"
 msgstr ""
 
@@ -665,7 +667,7 @@ msgstr "Bật hết hạn tài khoản"
 msgid "Account e_xpires (YYYY-MM-DD):"
 msgstr ""
 
-#: system-config-users.gladestrings:21 system-config-users.gladestrings:29
+#: system-config-users.gladestrings:21
 msgid "     "
 msgstr "     "
 
@@ -683,248 +685,248 @@ msgid "_Account Info"
 msgstr "Thông tin _tài khoản"
 
 #: system-config-users.gladestrings:26
-msgid "User last changed password on:"
-msgstr "Người dùng thay đổi mật khẩu lần cuối lúc:"
-
-#: system-config-users.gladestrings:27
-msgid "Unknown"
-msgstr ""
-
-#: system-config-users.gladestrings:28
 #, fuzzy
 msgid "_Enable password expiration"
 msgstr "Bật hết hạn mật khẩu"
 
-#: system-config-users.gladestrings:30
+#: system-config-users.gladestrings:27
 #, fuzzy
 msgid "Days before change a_llowed:"
 msgstr "Số ngày trước khi cho phép đổi:"
 
-#: system-config-users.gladestrings:31
+#: system-config-users.gladestrings:28
 #, fuzzy
 msgid "Days before change _required:"
 msgstr "Số ngày trước khi yêu cầu đổi:"
 
-#: system-config-users.gladestrings:32
+#: system-config-users.gladestrings:29
 #, fuzzy
 msgid "Days _warning before change:"
 msgstr "Số ngày cảnh báo trước khi đổi:"
 
-#: system-config-users.gladestrings:33
+#: system-config-users.gladestrings:30
 #, fuzzy
 msgid "Days before account _inactive:"
 msgstr "Số ngày trước khi vô hiệu tài khoản:"
 
-#: system-config-users.gladestrings:34
+#: system-config-users.gladestrings:31
+msgid "Password last changed on..."
+msgstr ""
+
+#: system-config-users.gladestrings:32
+msgid "Force password change on next login"
+msgstr ""
+
+#: system-config-users.gladestrings:33
 msgid "_Password Info"
 msgstr "_Thông tin Mật khẩu"
 
-#: system-config-users.gladestrings:35
+#: system-config-users.gladestrings:34
 msgid "Select the groups that the user will be a member of:"
 msgstr "Chọn nhóm mà người dùng sẽ là thành viên:"
 
-#: system-config-users.gladestrings:36
+#: system-config-users.gladestrings:35
 msgid "_Groups"
 msgstr "_Nhóm"
 
-#: system-config-users.gladestrings:37
+#: system-config-users.gladestrings:36
 msgid "Group Properties"
 msgstr "Thuộc tính nhóm"
 
-#: system-config-users.gladestrings:39
+#: system-config-users.gladestrings:38
 msgid "Group _Data"
 msgstr "Dữ liệu _Nhóm"
 
-#: system-config-users.gladestrings:40
+#: system-config-users.gladestrings:39
 msgid "Select the users to join this group:"
 msgstr "Chọn người dùng tham gia nhóm này:"
 
-#: system-config-users.gladestrings:41
+#: system-config-users.gladestrings:40
 msgid "Group _Users"
 msgstr "Người dùng _Nhóm"
 
-#: system-config-users.gladestrings:42
+#: system-config-users.gladestrings:41
 #, fuzzy
 msgid "User Manager"
 msgstr "Trình quản lý Người dùng Red Hat"
 
-#: system-config-users.gladestrings:43
+#: system-config-users.gladestrings:42
 msgid "_File"
 msgstr "_Tập tin"
 
-#: system-config-users.gladestrings:44 system-config-users.gladestrings:49
+#: system-config-users.gladestrings:43 system-config-users.gladestrings:48
 msgid "Add _User"
 msgstr "Thêm _Người dùng"
 
-#: system-config-users.gladestrings:45 system-config-users.gladestrings:50
+#: system-config-users.gladestrings:44 system-config-users.gladestrings:49
 msgid "Add _Group"
 msgstr "Thêm _Nhóm"
 
-#: system-config-users.gladestrings:46
+#: system-config-users.gladestrings:45
 #, fuzzy
 msgid "_Edit"
 msgstr "T_hoát"
 
-#: system-config-users.gladestrings:47 system-config-users.gladestrings:57
+#: system-config-users.gladestrings:46 system-config-users.gladestrings:56
 msgid "_Help"
 msgstr "_Trợ giúp"
 
-#: system-config-users.gladestrings:48
+#: system-config-users.gladestrings:47
 msgid "_Contents"
 msgstr "_Nội dung"
 
-#: system-config-users.gladestrings:51
+#: system-config-users.gladestrings:50
 msgid "Edit properties"
 msgstr "Sửa thuộc tính"
 
-#: system-config-users.gladestrings:52
+#: system-config-users.gladestrings:51
 msgid "Proper_ties"
 msgstr "_Thuộc tính"
 
-#: system-config-users.gladestrings:53
+#: system-config-users.gladestrings:52
 msgid "_Delete"
 msgstr "_Xoá"
 
-#: system-config-users.gladestrings:54
+#: system-config-users.gladestrings:53
 msgid "Reload"
 msgstr "Nạp lại"
 
-#: system-config-users.gladestrings:55
+#: system-config-users.gladestrings:54
 msgid "_Refresh"
 msgstr "Cập nhật mới"
 
-#: system-config-users.gladestrings:56
+#: system-config-users.gladestrings:55
 msgid "Help"
 msgstr "Trợ giúp"
 
-#: system-config-users.gladestrings:58
+#: system-config-users.gladestrings:57
 msgid "Sea_rch filter:"
 msgstr ""
 
-#: system-config-users.gladestrings:59
+#: system-config-users.gladestrings:58
 #, fuzzy
 msgid "_Apply filter"
 msgstr "Áp dụn bộ lọc"
 
-#: system-config-users.gladestrings:60
+#: system-config-users.gladestrings:59
 msgid "U_sers"
 msgstr "N_gười dùng"
 
-#: system-config-users.gladestrings:61
+#: system-config-users.gladestrings:60
 msgid "Gr_oups"
 msgstr "N_hóm"
 
-#: system-config-users.gladestrings:62
+#: system-config-users.gladestrings:61
 msgid "Add New User"
 msgstr ""
 
-#: system-config-users.gladestrings:63
+#: system-config-users.gladestrings:62
 #, fuzzy
 msgid "_User Name:"
 msgstr "Tên Người dùng:"
 
-#: system-config-users.gladestrings:65
+#: system-config-users.gladestrings:64
 #, fuzzy
 msgid "_Password:"
 msgstr "Mật khẩu:"
 
-#: system-config-users.gladestrings:69
+#: system-config-users.gladestrings:68
 #, fuzzy
 msgid "Create _home directory"
 msgstr "Tạo thư mục home"
 
-#: system-config-users.gladestrings:70
+#: system-config-users.gladestrings:69
 msgid "    "
 msgstr "    "
 
-#: system-config-users.gladestrings:71
+#: system-config-users.gladestrings:70
 #, fuzzy
 msgid "Home _Directory:"
 msgstr "Thư mục Home:"
 
-#: system-config-users.gladestrings:72
+#: system-config-users.gladestrings:71
 #, fuzzy
 msgid "Create a private _group for the user"
 msgstr "Tạo nhóm cá nhân cho người dùng"
 
-#: system-config-users.gladestrings:73
+#: system-config-users.gladestrings:72
 #, fuzzy
 msgid "Specify u_ser ID manually:"
 msgstr "Xác định thủ công mã ID Người dùng"
 
-#: system-config-users.gladestrings:75
+#: system-config-users.gladestrings:74
 msgid "About system-config-users"
 msgstr ""
 
-#: system-config-users.gladestrings:76
+#: system-config-users.gladestrings:75
 msgid "<b>system-config-users</b>"
 msgstr ""
 
-#: system-config-users.gladestrings:77
+#: system-config-users.gladestrings:76
 msgid "Version @VERSION@"
 msgstr ""
 
-#: system-config-users.gladestrings:78
+#: system-config-users.gladestrings:77
 msgid "Copyright (c) 2001 - 2005 Red Hat, Inc."
 msgstr ""
 
-#: system-config-users.gladestrings:79
+#: system-config-users.gladestrings:78
 msgid "This software is distributed under the GNU General Public License."
 msgstr ""
 
-#: system-config-users.gladestrings:80
+#: system-config-users.gladestrings:79
 #, fuzzy
 msgid "Preferences"
 msgstr "_Tùy chỉnh"
 
-#: system-config-users.gladestrings:81
+#: system-config-users.gladestrings:80
 #, fuzzy
 msgid "_Hide system users and groups"
 msgstr "_Lọc nhòm và người dùng hệ thống"
 
-#: system-config-users.gladestrings:82
+#: system-config-users.gladestrings:81
 msgid "<b>User and Group Lists</b>"
 msgstr ""
 
-#: system-config-users.gladestrings:83
+#: system-config-users.gladestrings:82
 msgid ""
 "Ensure that a new user gets a higher UID than all existing users, if not set "
 "manually."
 msgstr ""
 
-#: system-config-users.gladestrings:84
+#: system-config-users.gladestrings:83
 msgid "Automatically assigned _UID must be highest"
 msgstr ""
 
-#: system-config-users.gladestrings:85
+#: system-config-users.gladestrings:84
 msgid ""
 "Ensure that a new group gets a higher GID than all existing groups, if not "
 "set manually."
 msgstr ""
 
-#: system-config-users.gladestrings:86
+#: system-config-users.gladestrings:85
 msgid "Automatically assigned _GID must be highest"
 msgstr ""
 
-#: system-config-users.gladestrings:87
+#: system-config-users.gladestrings:86
 #, fuzzy
 msgid "Prefer that private group GID is the _same as UID"
 msgstr "Tạo nhóm cá nhân cho người dùng"
 
-#: system-config-users.gladestrings:88
+#: system-config-users.gladestrings:87
 #, fuzzy
 msgid "<b>New Users</b>"
 msgstr "Tạo Người dùng Mới"
 
-#: system-config-users.gladestrings:90
+#: system-config-users.gladestrings:89
 msgid "Copyright © 2001-2007 Red Hat, Inc."
 msgstr ""
 
-#: system-config-users.gladestrings:91
+#: system-config-users.gladestrings:90
 msgid "Manages users and groups on your system."
 msgstr ""
 
-#: system-config-users.gladestrings:92
+#: system-config-users.gladestrings:91
 msgid ""
 "system-config-users is free software; you can redistribute it and/or modify "
 "it under the terms of the GNU General Public License as published by the "
@@ -941,9 +943,23 @@ msgid ""
 "Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
 msgstr ""
 
-#: system-config-users.gladestrings:97
+#: system-config-users.gladestrings:96
 msgid "translator-credits"
 msgstr ""
+
+#~ msgid "User last changed password on:"
+#~ msgstr "Người dùng thay đổi mật khẩu lần cuối lúc:"
+
+#~ msgid ""
+#~ "The password contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr "Mật khẩu chứa ký tự không hợp lệ. Vui lòng chỉ dùng ký tự ASCII."
+
+#~ msgid "Please enter a password for the user."
+#~ msgstr "Vui lòng nhập mật khẩu cho người dùng."
+
+#~ msgid "The password is too short.  Please use at least 6 characters."
+#~ msgstr "Mật khẩu quá ngắn. Vui lòng nhập ít nhất 6 ký tự."
 
 #, fuzzy
 #~ msgid "Con_firm Password:"

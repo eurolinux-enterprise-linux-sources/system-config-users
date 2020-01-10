@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-users.tip\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-20 16:08+0200\n"
+"POT-Creation-Date: 2010-11-30 16:08+0100\n"
 "PO-Revision-Date: 2010-02-17 15:05+0200\n"
 "Last-Translator: Thalia Papoutsaki <saliyath@gmail.com>\n"
 "Language-Team: Greek Fedora team <fedora-trans-el@redhat.com>\n"
@@ -30,7 +30,7 @@ msgstr ""
 "X-Poedit-Language: Greek\n"
 
 #: ../src/groupProperties.py:108 ../src/groupWindow.py:108
-#: ../src/userGroupCheck.py:61
+#: ../src/userGroupCheck.py:64
 msgid "Please enter a group name."
 msgstr "Παρακαλώ εισάγετε ένα όνομα για την ομάδα."
 
@@ -44,6 +44,139 @@ msgstr "Η ομάδα '%s' ήδη υπάρχει. Παρακαλώ επιλέξ�
 msgid "You cannot remove user '%s' from their primary group."
 msgstr "Δε μπορείτε να αφαιρέσετε το χρήστη '%s' από την κύρια ομάδα του."
 
+#: ../src/userProperties.py:113 ../src/userWindow.py:85
+msgid "User"
+msgstr "Χρήστης"
+
+#: ../src/userProperties.py:113 ../src/userWindow.py:85
+msgid "Staff"
+msgstr "Προσωπικό"
+
+#: ../src/userProperties.py:114 ../src/userWindow.py:86
+msgid "System Administrator"
+msgstr "Διαχειριστής συστήματος"
+
+#: ../src/userProperties.py:144
+msgid "Primary Group:"
+msgstr "Κύρια ομάδα:"
+
+#: ../src/userProperties.py:226
+#, python-format
+msgid "Password last changed on: %x"
+msgstr ""
+
+#: ../src/userProperties.py:306 ../src/userGroupCheck.py:54
+msgid "Please enter a user name."
+msgstr "Παρακαλώ εισάγετε ένα όνομα χρήστη."
+
+#: ../src/userProperties.py:325
+#, python-format
+msgid "The user '%s' already exists. Please choose a different name."
+msgstr "Ο χρήστης '%s' ήδη υπάρχει. Παρακαλώ επιλέξτε ένα διαφορετικό όνομα."
+
+#: ../src/userProperties.py:346
+msgid "Passwords do not match."
+msgstr "Τα συνθηματικά δε συμφωνούν."
+
+#: ../src/userProperties.py:423
+msgid "Please select at least one group for the user."
+msgstr "Παρακαλώ επιλέξτε μία τουλάχιστον ομάδα για το χρήστη."
+
+#: ../src/userProperties.py:442
+msgid "Please specify the month that the password will expire."
+msgstr "Παρακαλώ καθορίστε το μήνα που θα λήξει το συνθηματικό."
+
+#: ../src/userProperties.py:450
+msgid "Please specify the day that the password will expire."
+msgstr "Παρακαλώ καθορίστε την ημέρα που θα λήξει το συνθηματικό."
+
+#: ../src/userProperties.py:458
+msgid "Please specify the year that the password will expire."
+msgstr "Παρακαλώ καθορίστε το έτος που θα λήξει το συνθηματικό."
+
+#. mktime will throw an OverflowError if the year is too big.
+#: ../src/userProperties.py:474
+msgid "The year is out of range.  Please select a different year."
+msgstr "Το έτος είναι εκτός ορίων.  Παρακαλώ επιλέξτε διαφορετικό έτος."
+
+#: ../src/userProperties.py:504
+msgid ""
+"Please specify the number of days before changing the password is allowed."
+msgstr ""
+"Παρακαλώ καθορίστε πόσες ημέρες πριν υπάρχει δυνατότητα αλλαγής συνθηματικού."
+
+#: ../src/userProperties.py:506
+#, python-format
+msgid ""
+"The number of days before changing the password is allowed must be between "
+"%(min)d and %(max)d."
+msgstr ""
+"Ο αριθμός των ημερών πριν υπάρξει η δυνατότητα αλλαγής συνθηματικού πρέπει "
+"να είναι μεταξύ %(min)d και %(max)d."
+
+#: ../src/userProperties.py:511
+msgid ""
+"Please specify the number of days before changing the password is required."
+msgstr ""
+"Παρακαλώ καθορίστε πόσες ημέρες πριν υπάρχει  απαίτηση αλλαγής συνθηματικού."
+
+#: ../src/userProperties.py:513
+#, python-format
+msgid ""
+"The number of days before changing the password is required must be between "
+"%(min)d and %(max)d."
+msgstr ""
+"Ο αριθμός των ημερών πριν απαιτηθεί η αλλαγή του συνθηματικού πρέπει να "
+"είναι μεταξύ %(min)d και %(max)d."
+
+#: ../src/userProperties.py:517
+msgid ""
+"Please specify the number of days to warn the user before changing the "
+"password is required."
+msgstr ""
+"Παρακαλώ καθορίστε πόσες  ημέρες πριν θα γίνει προειδοποίηση στο χρήστη για "
+"να αλλάξει συνθηματικό."
+
+#: ../src/userProperties.py:519
+#, python-format
+msgid ""
+"The number of days to warn the user before changing the password is required "
+"must be between %(min)d and %(max)d."
+msgstr ""
+"O αριθμός των ημερών για την προειδοποίηση του χρήστη πριν απαιτηθεί η "
+"αλλαγή του συνθηματικού πρέπει να είναι μεταξύ %(min)d και %(max)d."
+
+#: ../src/userProperties.py:525
+msgid ""
+"Please specify the number of days until the user account becomes inactive "
+"after password has expired."
+msgstr ""
+"Παρακαλώ καθορίστε πόσες ημέρες μετά τη λήξη του συνθηματικού  "
+"απενεργοποιείται ο λογαριασμός χρήστη."
+
+#: ../src/userProperties.py:527
+#, python-format
+msgid ""
+"The number of days until the user account becomes inactive after the "
+"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
+"means the account won't become inactive."
+msgstr ""
+"O αριθμός των ημερών μέχρι να απενεργοποιηθεί ο λογαριασμός χρήστη μετά την "
+"λήξη του συνθηματικού πρέπει να είναι μεταξύ %(min)d και %(max)d. Αν τεθεί "
+"στο -1 ο λογαριασμός δεν θα ενεργοποιηθεί."
+
+#: ../src/userProperties.py:593
+#, python-format
+msgid ""
+"Unlocking the user failed because:\n"
+"\n"
+"%(errmsg)s"
+msgstr ""
+
+#: ../src/userProperties.py:596
+msgid "Unlocking the user failed due to an unknown reason."
+msgstr ""
+
 #: ../src/groupWindow.py:116
 #, python-format
 msgid "A group with name '%s' already exists."
@@ -51,7 +184,7 @@ msgstr "Υπάρχει ήδη ομάδα με το όνομα '%s'."
 
 #. This uid already exists, so complain
 #. This (chosen) gid already exists, so complain
-#: ../src/groupWindow.py:131 ../src/userWindow.py:292
+#: ../src/groupWindow.py:131 ../src/userWindow.py:274
 #, python-format
 msgid "The gid %s is already in use."
 msgstr "Το gid %s χρησιμοποιείται ήδη."
@@ -64,7 +197,7 @@ msgstr ""
 "Η δημιουργία ομάδας με GID μικρότερο του 500 δε συστήνεται.  Είστε σίγουροι "
 "ότι το θέλετε να το κάνετε αυτό;"
 
-#: ../src/groupWindow.py:160 ../src/userWindow.py:305
+#: ../src/groupWindow.py:160 ../src/userWindow.py:287
 #, python-format
 msgid ""
 "Error finding suitable group id not exceeding maximum value of %(maxid)s."
@@ -189,7 +322,7 @@ msgstr ""
 "προσπαθήσω να αγνοήσω αυτές τις καταχωρήσεις και να συνεχίσω για τώρα, "
 "παρακαλώ διορθώστε αυτές τις ασυνέπειες το γρηγορότερο δυνατό."
 
-#: ../src/mainWindow.py:578 system-config-users.gladestrings:89
+#: ../src/mainWindow.py:578 system-config-users.gladestrings:88
 msgid "system-config-users"
 msgstr "system-config-users"
 
@@ -293,20 +426,79 @@ msgstr ""
 msgid "Are you sure you want to delete the group '%s'?"
 msgstr "Είστε σίγουροι για τη διαγραφή της ομάδας '%s';"
 
+#. The passwords don't match, so complain
+#: ../src/userWindow.py:192
+msgid "The passwords do not match."
+msgstr "Τα συνθηματικά δε συμφωνούν."
+
+#. The user name is blank, so complain
+#: ../src/userWindow.py:223
+msgid "Please specify a user name"
+msgstr "Παρακαλώ προσδιορίστε ένα όνομα χρήστη"
+
+#. This user already exists, so complain
+#: ../src/userWindow.py:231
+#, python-format
+msgid "An account with username '%s' already exists."
+msgstr "Υπάρχει ήδη ένας λογαριασμός με όνομα χρήστη %s ."
+
+#. This uid already exists, so complain
+#: ../src/userWindow.py:267
+#, python-format
+msgid "The uid %s is already in use."
+msgstr "Το uid %s χρησιμοποιείται ήδη."
+
+#: ../src/userWindow.py:285
+#, python-format
+msgid ""
+"Error finding suitable user id not exceeding maximum value of %(maxid)s."
+msgstr ""
+
+#: ../src/userWindow.py:297
+msgid ""
+"Creating a user with a UID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+msgstr ""
+"Η δημιουργία χρήστη με UID μικρότερο του 500 δε συστήνεται.  Είστε σίγουροι "
+"ότι το θέλετε να το κάνετε αυτό;"
+
+#: ../src/userWindow.py:327
+msgid "A group with this gid already exists.  What would you like to do?"
+msgstr "Μια ομάδα με αυτό το gid υπάρχει ήδη.  Τι θα θέλατε να κάνετε;"
+
+#: ../src/userWindow.py:329
+msgid "A group with this name already exists.  What would you like to do?"
+msgstr "Υπάρχει ήδη ομάδα με αυτό το όνομα. Τι θα θέλατε να κάνετε;"
+
+#: ../src/userWindow.py:333
+msgid "Add to the existing group"
+msgstr "Προσθήκη στην υπάρχουσα ομάδα"
+
+#: ../src/userWindow.py:334
+msgid "Add to the 'users' group"
+msgstr "Προσθήκη στην ομάδα 'users'"
+
+#. Uh-oh.  It looks like /etc/group and /etc/gshadow are out of sync.  Give up and quit.
+#: ../src/userWindow.py:416
+msgid ""
+"The system group database cannot be read.  This problem is most likely "
+"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
+"now."
+msgstr ""
+"Η βάση ομάδων δε μπόρεσε να αναγνωσθεί.  Το πρόβλημα πιθανόν προκαλείται από "
+"ασυμφωνία μεταξύ /etc/group και /etc/group/gshadow. Το πρόγραμμα θα "
+"τερματιστεί τώρα."
+
 #: ../src/system-config-users.py:38
 msgid "system-config-users requires a currently running X server."
 msgstr "Το system-config-users απαιτεί ένα ενεργό εξυπηρετητή X."
 
-#: ../src/userGroupCheck.py:51 ../src/userProperties.py:295
-msgid "Please enter a user name."
-msgstr "Παρακαλώ εισάγετε ένα όνομα χρήστη."
-
-#: ../src/userGroupCheck.py:52
+#: ../src/userGroupCheck.py:55
 #, python-format
 msgid "The user name must not exceed %d characters."
 msgstr "Το όνομα χρήστη δεν πρέπει να ξεπερνά τους %d χαρακτήρες."
 
-#: ../src/userGroupCheck.py:53
+#: ../src/userGroupCheck.py:56
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace. Please do not include whitespace in "
@@ -315,7 +507,7 @@ msgstr ""
 "Το όνομα χρήστη '%s' περιέχει κενά. Παρακαλώ μη χρησιμοποιήσετε κενά στο "
 "όνομα χρήστη."
 
-#: ../src/userGroupCheck.py:54
+#: ../src/userGroupCheck.py:57
 #, python-format
 msgid ""
 "The user name '%s' contains a dollar sign which is not at the end. Please "
@@ -326,7 +518,7 @@ msgstr ""
 "τέλος. Παρακαλώ χρησιμοποιήστε σύμβολα δολαρίου μόνο στο τέλος των ονομάτων "
 "χρήσης για να ορίσετε λογαριασμούς σε μηχανήματα Samba."
 
-#: ../src/userGroupCheck.py:55
+#: ../src/userGroupCheck.py:58
 #, python-format
 msgid ""
 "The user name '%s' contains a trailing dollar sign. This should only be used "
@@ -339,7 +531,7 @@ msgstr ""
 "κανονικούς λογαριασμούς χρηστών μπορεί να προκαλέσει προβλήματα σε κάποια "
 "λογισμικά. Είναι ο εν λόγω λογαριασμός ένας λογαριασμός μηχανημάτων Samba? "
 
-#: ../src/userGroupCheck.py:56
+#: ../src/userGroupCheck.py:59
 #, python-format
 msgid ""
 "The user name '%(name)s' contains an invalid character at position "
@@ -348,7 +540,7 @@ msgstr ""
 "Το όνομα χρήστη '%(name)s' περιέχει ένα μη έγκυρο χαρακτήρα στη θέση "
 "%(position)d."
 
-#: ../src/userGroupCheck.py:57
+#: ../src/userGroupCheck.py:60
 msgid ""
 "Using all numbers as the user name can cause confusion about whether the "
 "user name or numerical user id is meant. Do you really want to use a "
@@ -358,12 +550,12 @@ msgstr ""
 "αν εννοείται το όνομα της ομάδας ή το αριθμητικό αναγνωριστικό της. Είστε "
 "βέβαιοι πως θέλετε να χρησιμοποιήσετε ένα όνομα με μόνο αριθμούς;"
 
-#: ../src/userGroupCheck.py:62
+#: ../src/userGroupCheck.py:65
 #, python-format
 msgid "The group name must not exceed %d characters."
 msgstr "Το όνομα ομάδας δεν πρέπει να ξεπερνά τους %d χαρακτήρες."
 
-#: ../src/userGroupCheck.py:63
+#: ../src/userGroupCheck.py:66
 #, python-format
 msgid ""
 "The group name '%s' contains whitespace. Please do not include whitespace in "
@@ -372,7 +564,7 @@ msgstr ""
 "Το όνομα ομάδας '%s' περιέχει κενά. Παρακαλώ μη χρησιμοποιήσετε κενά στο "
 "όνομα ομάδας."
 
-#: ../src/userGroupCheck.py:64
+#: ../src/userGroupCheck.py:67
 #, python-format
 msgid ""
 "The group name '%(name)s' contains an invalid character at position "
@@ -381,7 +573,7 @@ msgstr ""
 "Το όνομα ομάδας '%(name)s' περιέχει ένα μη έγκυρο χαρακτήρα στη θέση "
 "%(position)d."
 
-#: ../src/userGroupCheck.py:65
+#: ../src/userGroupCheck.py:68
 msgid ""
 "Using all numbers as the group name can cause confusion about whether the "
 "group name or numerical group id is meant. Do you really want to use a "
@@ -391,14 +583,16 @@ msgstr ""
 "αν εννοείται το όνομα της ομάδας ή το αριθμητικό αναγνωριστικό της. Είστε "
 "βέβαιοι πως θέλετε να χρησιμοποιήσετε ένα όνομα με μόνο αριθμούς;"
 
-#: ../src/userGroupCheck.py:144
+#: ../src/userGroupCheck.py:157
 msgid ""
-"The password contains invalid characters.  Please use only ASCII characters."
+"The chosen password contains characters which may be hard or impossible to "
+"type in certain situations. To ensure the password can be typed everywhere "
+"use only unaccented Latin letters (A-Z, a-z), digits (0-9), punctuation "
+"characters (e.g. comma, full stop) and the space character in the password. "
+"Do you want to use this password anyway?"
 msgstr ""
-"Το συνθηματικό περιέχει χαρακτήρες που δεν είναι έγκυροι.  Παρακαλώ "
-"χρησιμοποιείστε μόνο ASCII χαρακτήρες."
 
-#: ../src/userGroupCheck.py:167
+#: ../src/userGroupCheck.py:185
 #, python-format
 msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
 msgstr ""
@@ -406,7 +600,7 @@ msgstr ""
 "χρησιμοποιήσετε έτσι κι αλλιώς;"
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/userGroupCheck.py:178
+#: ../src/userGroupCheck.py:196
 #, python-format
 msgid ""
 "The name '%s' contains invalid characters.  Please use only UTF-8 characters."
@@ -415,19 +609,19 @@ msgstr ""
 "χαρακτήρες UTF-8."
 
 #. have to check for colons since /etc/passwd is a colon delimited file
-#: ../src/userGroupCheck.py:186
+#: ../src/userGroupCheck.py:204
 #, python-format
 msgid "The name '%s' contains a colon.  Please do not use colons in the name."
 msgstr ""
 "Το όνομα  '%s' περιέχει άνω και κάτω τελεία.  Παρακαλώ να μη χρησιμοποιήσετε "
 "άνω και κάτω τελεία στο όνομα."
 
-#: ../src/userGroupCheck.py:195
+#: ../src/userGroupCheck.py:213
 msgid "Please enter a home directory."
 msgstr "Παρακαλώ εισάγετε ένα αρχικό κατάλογο."
 
 #. have to check for colons since /etc/passwd is a colon delimited file
-#: ../src/userGroupCheck.py:202
+#: ../src/userGroupCheck.py:220
 #, python-format
 msgid ""
 "The directory name '%s' contains a colon.  Please do not use colons in the "
@@ -436,7 +630,7 @@ msgstr ""
 "Το όνομα καταλόγου  '%s' περιέχει άνω και κάτω τελεία.  Παρακαλώ να μη "
 "χρησιμοποιήσετε άνω και κάτω τελεία στο όνομα καταλόγου."
 
-#: ../src/userGroupCheck.py:211
+#: ../src/userGroupCheck.py:229
 #, python-format
 msgid ""
 "The directory name '%s' doesn't begin with a '/'. Please specify an absolute "
@@ -445,7 +639,7 @@ msgstr ""
 "Το όνομα καταλόγου  '%s' δεν ξεκινά με ένα '/'.  Παρακαλώ ορίστε μια απόλυτη "
 "διαδρομή για τον αρχικό κατάλογο."
 
-#: ../src/userGroupCheck.py:217
+#: ../src/userGroupCheck.py:235
 #, python-format
 msgid ""
 "The directory name '%s' has path components which are too long. Please use "
@@ -454,7 +648,7 @@ msgstr ""
 "Το όνομα καταλόγου  '%s' περιέχει στοιχεία διαδρομής μεγάλου μήκους.  "
 "Παρακαλώ χρησιμοποιήστε μικρότερα στοιχεία διαδρομής για τον αρχικό κατάλογο."
 
-#: ../src/userGroupCheck.py:224
+#: ../src/userGroupCheck.py:242
 #, python-format
 msgid ""
 "The directory name '%s' contains empty path components. Please specify a "
@@ -463,7 +657,7 @@ msgstr ""
 "Το όνομα καταλόγου  '%s' περιέχει κενά στοιχεία διαδρομής.  Παρακαλώ ορίστε "
 "ένα όνομα αρχικού καταλόγου χωρίς κενά στοιχεία διαδρομής."
 
-#: ../src/userGroupCheck.py:233
+#: ../src/userGroupCheck.py:251
 #, python-format
 msgid ""
 "The directory name '%s' contains illegal path components. Please don't use "
@@ -472,208 +666,12 @@ msgstr ""
 "Το όνομα καταλόγου  '%s' περιέχει ακατάλληλα στοιχεία διαδρομής. Παρακαλώ να "
 "μη χρησιμοποιήσετε '.' ή '..' ως στοιχεία διαδρομής για τον αρχικό κατάλογο."
 
-#: ../src/userGroupCheck.py:241
+#: ../src/userGroupCheck.py:267
 #, python-format
 msgid ""
-"The directory name '%s' cannot be created ('%s' is not writable). Please "
-"chose a writable location."
+"The directory '%(dir)s' cannot be created ('%(parent_dir)s' is not "
+"writable). Please choose a writable location."
 msgstr ""
-
-#: ../src/userProperties.py:108 ../src/userWindow.py:82
-msgid "User"
-msgstr "Χρήστης"
-
-#: ../src/userProperties.py:108 ../src/userWindow.py:82
-msgid "Staff"
-msgstr "Προσωπικό"
-
-#: ../src/userProperties.py:109 ../src/userWindow.py:83
-msgid "System Administrator"
-msgstr "Διαχειριστής συστήματος"
-
-#: ../src/userProperties.py:139
-msgid "Primary Group:"
-msgstr "Κύρια ομάδα:"
-
-#: ../src/userProperties.py:314
-#, python-format
-msgid "The user '%s' already exists. Please choose a different name."
-msgstr "Ο χρήστης '%s' ήδη υπάρχει. Παρακαλώ επιλέξτε ένα διαφορετικό όνομα."
-
-#: ../src/userProperties.py:336 ../src/userWindow.py:193
-msgid "Please enter a password for the user."
-msgstr "Παρακαλώ εισάγετε ένα συνθηματικό για το χρήστη."
-
-#: ../src/userProperties.py:345 ../src/userWindow.py:201
-msgid "The password is too short.  Please use at least 6 characters."
-msgstr ""
-"Το συνθηματικό είναι πολύ μικρό.  Παρακαλώ χρησιμοποιείστε τουλάχιστον 6 "
-"χαρακτήρες."
-
-#: ../src/userProperties.py:354
-msgid "Passwords do not match."
-msgstr "Τα συνθηματικά δε συμφωνούν."
-
-#: ../src/userProperties.py:431
-msgid "Please select at least one group for the user."
-msgstr "Παρακαλώ επιλέξτε μία τουλάχιστον ομάδα για το χρήστη."
-
-#: ../src/userProperties.py:450
-msgid "Please specify the month that the password will expire."
-msgstr "Παρακαλώ καθορίστε το μήνα που θα λήξει το συνθηματικό."
-
-#: ../src/userProperties.py:458
-msgid "Please specify the day that the password will expire."
-msgstr "Παρακαλώ καθορίστε την ημέρα που θα λήξει το συνθηματικό."
-
-#: ../src/userProperties.py:466
-msgid "Please specify the year that the password will expire."
-msgstr "Παρακαλώ καθορίστε το έτος που θα λήξει το συνθηματικό."
-
-#. mktime will throw an OverflowError if the year is too big.
-#: ../src/userProperties.py:482
-msgid "The year is out of range.  Please select a different year."
-msgstr "Το έτος είναι εκτός ορίων.  Παρακαλώ επιλέξτε διαφορετικό έτος."
-
-#: ../src/userProperties.py:511
-msgid ""
-"Please specify the number of days before changing the password is allowed."
-msgstr ""
-"Παρακαλώ καθορίστε πόσες ημέρες πριν υπάρχει δυνατότητα αλλαγής συνθηματικού."
-
-#: ../src/userProperties.py:513
-#, python-format
-msgid ""
-"The number of days before changing the password is allowed must be between "
-"%(min)d and %(max)d."
-msgstr ""
-"Ο αριθμός των ημερών πριν υπάρξει η δυνατότητα αλλαγής συνθηματικού πρέπει "
-"να είναι μεταξύ %(min)d και %(max)d."
-
-#: ../src/userProperties.py:518
-msgid ""
-"Please specify the number of days before changing the password is required."
-msgstr ""
-"Παρακαλώ καθορίστε πόσες ημέρες πριν υπάρχει  απαίτηση αλλαγής συνθηματικού."
-
-#: ../src/userProperties.py:520
-#, python-format
-msgid ""
-"The number of days before changing the password is required must be between "
-"%(min)d and %(max)d."
-msgstr ""
-"Ο αριθμός των ημερών πριν απαιτηθεί η αλλαγή του συνθηματικού πρέπει να "
-"είναι μεταξύ %(min)d και %(max)d."
-
-#: ../src/userProperties.py:524
-msgid ""
-"Please specify the number of days to warn the user before changing the "
-"password is required."
-msgstr ""
-"Παρακαλώ καθορίστε πόσες  ημέρες πριν θα γίνει προειδοποίηση στο χρήστη για "
-"να αλλάξει συνθηματικό."
-
-#: ../src/userProperties.py:526
-#, python-format
-msgid ""
-"The number of days to warn the user before changing the password is required "
-"must be between %(min)d and %(max)d."
-msgstr ""
-"O αριθμός των ημερών για την προειδοποίηση του χρήστη πριν απαιτηθεί η "
-"αλλαγή του συνθηματικού πρέπει να είναι μεταξύ %(min)d και %(max)d."
-
-#: ../src/userProperties.py:532
-msgid ""
-"Please specify the number of days until the user account becomes inactive "
-"after password has expired."
-msgstr ""
-"Παρακαλώ καθορίστε πόσες ημέρες μετά τη λήξη του συνθηματικού  "
-"απενεργοποιείται ο λογαριασμός χρήστη."
-
-#: ../src/userProperties.py:534
-#, python-format
-msgid ""
-"The number of days until the user account becomes inactive after the "
-"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
-"means the account won't become inactive."
-msgstr ""
-"O αριθμός των ημερών μέχρι να απενεργοποιηθεί ο λογαριασμός χρήστη μετά την "
-"λήξη του συνθηματικού πρέπει να είναι μεταξύ %(min)d και %(max)d. Αν τεθεί "
-"στο -1 ο λογαριασμός δεν θα ενεργοποιηθεί."
-
-#: ../src/userProperties.py:592
-#, python-format
-msgid ""
-"Unlocking the user failed because:\n"
-"\n"
-"%(errmsg)s"
-msgstr ""
-
-#: ../src/userProperties.py:595
-msgid "Unlocking the user failed due to an unknown reason."
-msgstr ""
-
-#: ../src/userWindow.py:210
-msgid "The passwords do not match."
-msgstr "Τα συνθηματικά δε συμφωνούν."
-
-#. The user name is blank, so complain
-#: ../src/userWindow.py:241
-msgid "Please specify a user name"
-msgstr "Παρακαλώ προσδιορίστε ένα όνομα χρήστη"
-
-#. This user already exists, so complain
-#: ../src/userWindow.py:249
-#, python-format
-msgid "An account with username '%s' already exists."
-msgstr "Υπάρχει ήδη ένας λογαριασμός με όνομα χρήστη %s ."
-
-#. This uid already exists, so complain
-#: ../src/userWindow.py:285
-#, python-format
-msgid "The uid %s is already in use."
-msgstr "Το uid %s χρησιμοποιείται ήδη."
-
-#: ../src/userWindow.py:303
-#, python-format
-msgid ""
-"Error finding suitable user id not exceeding maximum value of %(maxid)s."
-msgstr ""
-
-#: ../src/userWindow.py:315
-msgid ""
-"Creating a user with a UID less than 500 is not recommended.  Are you sure "
-"you want to do this?"
-msgstr ""
-"Η δημιουργία χρήστη με UID μικρότερο του 500 δε συστήνεται.  Είστε σίγουροι "
-"ότι το θέλετε να το κάνετε αυτό;"
-
-#: ../src/userWindow.py:345
-msgid "A group with this gid already exists.  What would you like to do?"
-msgstr "Μια ομάδα με αυτό το gid υπάρχει ήδη.  Τι θα θέλατε να κάνετε;"
-
-#: ../src/userWindow.py:347
-msgid "A group with this name already exists.  What would you like to do?"
-msgstr "Υπάρχει ήδη ομάδα με αυτό το όνομα. Τι θα θέλατε να κάνετε;"
-
-#: ../src/userWindow.py:351
-msgid "Add to the existing group"
-msgstr "Προσθήκη στην υπάρχουσα ομάδα"
-
-#: ../src/userWindow.py:352
-msgid "Add to the 'users' group"
-msgstr "Προσθήκη στην ομάδα 'users'"
-
-#. Uh-oh.  It looks like /etc/group and /etc/gshadow are out of sync.  Give up and quit.
-#: ../src/userWindow.py:434
-msgid ""
-"The system group database cannot be read.  This problem is most likely "
-"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
-"now."
-msgstr ""
-"Η βάση ομάδων δε μπόρεσε να αναγνωσθεί.  Το πρόβλημα πιθανόν προκαλείται από "
-"ασυμφωνία μεταξύ /etc/group και /etc/group/gshadow. Το πρόγραμμα θα "
-"τερματιστεί τώρα."
 
 #.
 #. * Translatable strings file generated by Glade.
@@ -684,11 +682,11 @@ msgstr ""
 msgid "Add New Group"
 msgstr "Προσθήκη Νέας Ομάδας"
 
-#: system-config-users.gladestrings:8 system-config-users.gladestrings:38
+#: system-config-users.gladestrings:8 system-config-users.gladestrings:37
 msgid "_Group Name:"
 msgstr "Όνομα _ομάδας:"
 
-#: system-config-users.gladestrings:9 system-config-users.gladestrings:74
+#: system-config-users.gladestrings:9 system-config-users.gladestrings:73
 msgid "Specify g_roup ID manually:"
 msgstr "Καθ_ορισμός ID ομάδας χειρωνακτικά:"
 
@@ -700,7 +698,7 @@ msgstr "Ιδιότητες χρήστη"
 msgid "User _Name:"
 msgstr "Ό_νομα χρήστη:"
 
-#: system-config-users.gladestrings:12 system-config-users.gladestrings:64
+#: system-config-users.gladestrings:12 system-config-users.gladestrings:63
 msgid "_Full Name:"
 msgstr "Ονοματε_πώνυμο:"
 
@@ -708,11 +706,11 @@ msgstr "Ονοματε_πώνυμο:"
 msgid "Pass_word:"
 msgstr ""
 
-#: system-config-users.gladestrings:14 system-config-users.gladestrings:66
+#: system-config-users.gladestrings:14 system-config-users.gladestrings:65
 msgid "Confir_m Password:"
 msgstr ""
 
-#: system-config-users.gladestrings:15 system-config-users.gladestrings:67
+#: system-config-users.gladestrings:15 system-config-users.gladestrings:66
 msgid "_Login Shell:"
 msgstr "_Κέλυφος σύνδεσης:"
 
@@ -720,7 +718,7 @@ msgstr "_Κέλυφος σύνδεσης:"
 msgid "_Home Directory:"
 msgstr "_Αρχικός κατάλογος:"
 
-#: system-config-users.gladestrings:17 system-config-users.gladestrings:68
+#: system-config-users.gladestrings:17 system-config-users.gladestrings:67
 msgid "S_ELinux role:"
 msgstr "Ρόλος S_ELinux:"
 
@@ -736,7 +734,7 @@ msgstr "_Ενεργοποίηση λήξης λογαριασμού"
 msgid "Account e_xpires (YYYY-MM-DD):"
 msgstr "Λήξη λογαριασμού (EEEE-MM-ΗΗ):"
 
-#: system-config-users.gladestrings:21 system-config-users.gladestrings:29
+#: system-config-users.gladestrings:21
 msgid "     "
 msgstr "     "
 
@@ -753,194 +751,194 @@ msgid "_Account Info"
 msgstr "Πληροφορίες _λογαριασμού"
 
 #: system-config-users.gladestrings:26
-msgid "User last changed password on:"
-msgstr "Τελευταία αλλαγή συνθηματικού χρήστη την:"
-
-#: system-config-users.gladestrings:27
-msgid "Unknown"
-msgstr "Άγνωστο"
-
-#: system-config-users.gladestrings:28
 msgid "_Enable password expiration"
 msgstr "_Ενεργοποίηση λήξης συνθηματικού"
 
-#: system-config-users.gladestrings:30
+#: system-config-users.gladestrings:27
 msgid "Days before change a_llowed:"
 msgstr "Ημέρες πριν την _δυνατότητα αλλαγής:"
 
-#: system-config-users.gladestrings:31
+#: system-config-users.gladestrings:28
 msgid "Days before change _required:"
 msgstr "Ημέρες πριν την απαίτ_ηση αλλαγής:"
 
-#: system-config-users.gladestrings:32
+#: system-config-users.gladestrings:29
 msgid "Days _warning before change:"
 msgstr "Ημέρες _προειδοποίησης πριν την αλλαγή:"
 
-#: system-config-users.gladestrings:33
+#: system-config-users.gladestrings:30
 msgid "Days before account _inactive:"
 msgstr "Ημέρες πριν την _απενεργοποίηση λογαριασμού:"
 
-#: system-config-users.gladestrings:34
+#: system-config-users.gladestrings:31
+msgid "Password last changed on..."
+msgstr ""
+
+#: system-config-users.gladestrings:32
+msgid "Force password change on next login"
+msgstr ""
+
+#: system-config-users.gladestrings:33
 msgid "_Password Info"
 msgstr "_Πληροφορίες συνθηματικού"
 
-#: system-config-users.gladestrings:35
+#: system-config-users.gladestrings:34
 msgid "Select the groups that the user will be a member of:"
 msgstr "Επιλέξτε τις ομάδες στις οποίες θα είναι μέλος ο χρήστης:"
 
-#: system-config-users.gladestrings:36
+#: system-config-users.gladestrings:35
 msgid "_Groups"
 msgstr "_Ομάδες"
 
-#: system-config-users.gladestrings:37
+#: system-config-users.gladestrings:36
 msgid "Group Properties"
 msgstr "Ιδιότητες ομάδας"
 
-#: system-config-users.gladestrings:39
+#: system-config-users.gladestrings:38
 msgid "Group _Data"
 msgstr "Στοιχεία _ομάδας"
 
-#: system-config-users.gladestrings:40
+#: system-config-users.gladestrings:39
 msgid "Select the users to join this group:"
 msgstr "Επιλέξτε τους χρήστες που θα ενταχθούν σε αυτήν την ομάδα:"
 
-#: system-config-users.gladestrings:41
+#: system-config-users.gladestrings:40
 msgid "Group _Users"
 msgstr "_Χρήστες ομάδας"
 
-#: system-config-users.gladestrings:42
+#: system-config-users.gladestrings:41
 msgid "User Manager"
 msgstr "Διαχείριση χρηστών"
 
-#: system-config-users.gladestrings:43
+#: system-config-users.gladestrings:42
 msgid "_File"
 msgstr "_Αρχείο"
 
-#: system-config-users.gladestrings:44 system-config-users.gladestrings:49
+#: system-config-users.gladestrings:43 system-config-users.gladestrings:48
 msgid "Add _User"
 msgstr "Προσθήκη _χρήστη"
 
-#: system-config-users.gladestrings:45 system-config-users.gladestrings:50
+#: system-config-users.gladestrings:44 system-config-users.gladestrings:49
 msgid "Add _Group"
 msgstr "Προσθήκη _ομάδας"
 
-#: system-config-users.gladestrings:46
+#: system-config-users.gladestrings:45
 msgid "_Edit"
 msgstr "Επε_ξεργασία"
 
-#: system-config-users.gladestrings:47 system-config-users.gladestrings:57
+#: system-config-users.gladestrings:46 system-config-users.gladestrings:56
 msgid "_Help"
 msgstr "_Βοήθεια"
 
-#: system-config-users.gladestrings:48
+#: system-config-users.gladestrings:47
 msgid "_Contents"
 msgstr "_Περιεχόμενα"
 
-#: system-config-users.gladestrings:51
+#: system-config-users.gladestrings:50
 msgid "Edit properties"
 msgstr "Επεξεργασία ιδιοτήτων"
 
-#: system-config-users.gladestrings:52
+#: system-config-users.gladestrings:51
 msgid "Proper_ties"
 msgstr "Ιδιό_τητες"
 
-#: system-config-users.gladestrings:53
+#: system-config-users.gladestrings:52
 msgid "_Delete"
 msgstr "_Διαγραφή"
 
-#: system-config-users.gladestrings:54
+#: system-config-users.gladestrings:53
 msgid "Reload"
 msgstr "Επαναφόρτωση"
 
-#: system-config-users.gladestrings:55
+#: system-config-users.gladestrings:54
 msgid "_Refresh"
 msgstr "Α_νανέωση"
 
-#: system-config-users.gladestrings:56
+#: system-config-users.gladestrings:55
 msgid "Help"
 msgstr "Βοήθεια"
 
-#: system-config-users.gladestrings:58
+#: system-config-users.gladestrings:57
 msgid "Sea_rch filter:"
 msgstr "Φίλτρο ανα_ζήτησης:"
 
-#: system-config-users.gladestrings:59
+#: system-config-users.gladestrings:58
 msgid "_Apply filter"
 msgstr "_Εφαρμογή φίλτρου"
 
-#: system-config-users.gladestrings:60
+#: system-config-users.gladestrings:59
 msgid "U_sers"
 msgstr "Χ_ρήστες"
 
-#: system-config-users.gladestrings:61
+#: system-config-users.gladestrings:60
 msgid "Gr_oups"
 msgstr "Ο_μάδες"
 
-#: system-config-users.gladestrings:62
+#: system-config-users.gladestrings:61
 msgid "Add New User"
 msgstr "Προσθήκη Νέου Χρήστη"
 
-#: system-config-users.gladestrings:63
+#: system-config-users.gladestrings:62
 msgid "_User Name:"
 msgstr "Όνομα _χρήστη:"
 
-#: system-config-users.gladestrings:65
+#: system-config-users.gladestrings:64
 msgid "_Password:"
 msgstr "_Συνθηματικό:"
 
-#: system-config-users.gladestrings:69
+#: system-config-users.gladestrings:68
 msgid "Create _home directory"
 msgstr "Δημιουργία _αρχικού καταλόγου"
 
-#: system-config-users.gladestrings:70
+#: system-config-users.gladestrings:69
 msgid "    "
 msgstr "    "
 
-#: system-config-users.gladestrings:71
+#: system-config-users.gladestrings:70
 msgid "Home _Directory:"
 msgstr "Αρχικός _κατάλογος:"
 
-#: system-config-users.gladestrings:72
+#: system-config-users.gladestrings:71
 msgid "Create a private _group for the user"
 msgstr "Δημιουργία ιδιωτικής _ομάδας για το χρήστη"
 
-#: system-config-users.gladestrings:73
+#: system-config-users.gladestrings:72
 msgid "Specify u_ser ID manually:"
 msgstr "Καθ_ορισμός ID χρήστη χειρωνακτικά:"
 
-#: system-config-users.gladestrings:75
+#: system-config-users.gladestrings:74
 msgid "About system-config-users"
 msgstr "Περί του system-config-users"
 
-#: system-config-users.gladestrings:76
+#: system-config-users.gladestrings:75
 msgid "<b>system-config-users</b>"
 msgstr "<b>system-config-users</b>"
 
-#: system-config-users.gladestrings:77
+#: system-config-users.gladestrings:76
 msgid "Version @VERSION@"
 msgstr "Έκδοση @VERSION@"
 
-#: system-config-users.gladestrings:78
+#: system-config-users.gladestrings:77
 msgid "Copyright (c) 2001 - 2005 Red Hat, Inc."
 msgstr "Πνευματικά δικαιώματα (c) 2001 - 2005 Red Hat, Inc."
 
-#: system-config-users.gladestrings:79
+#: system-config-users.gladestrings:78
 msgid "This software is distributed under the GNU General Public License."
 msgstr "Αυτό το λογισμικό διανέμεται κάτω από την GNU General Public License."
 
-#: system-config-users.gladestrings:80
+#: system-config-users.gladestrings:79
 msgid "Preferences"
 msgstr "Προτιμήσεις"
 
-#: system-config-users.gladestrings:81
+#: system-config-users.gladestrings:80
 msgid "_Hide system users and groups"
 msgstr "Απόκρ_υψη χρηστών και ομάδων συστήματος"
 
-#: system-config-users.gladestrings:82
+#: system-config-users.gladestrings:81
 msgid "<b>User and Group Lists</b>"
 msgstr "<b>Λίστες χρηστών και ομάδων</b>"
 
-#: system-config-users.gladestrings:83
+#: system-config-users.gladestrings:82
 msgid ""
 "Ensure that a new user gets a higher UID than all existing users, if not set "
 "manually."
@@ -948,11 +946,11 @@ msgstr ""
 "Βεβαιωθείτε πως ένας νέος χρήστης θα πάρει μεγαλύτερο UID από όλους τους "
 "υπάρχοντες χρήστες, αν δεν οριστεί χειρωνακτικά."
 
-#: system-config-users.gladestrings:84
+#: system-config-users.gladestrings:83
 msgid "Automatically assigned _UID must be highest"
 msgstr "Το UID που _θα ανατεθεί αυτομάτως πρέπει να είναι το μεγαλύτερο"
 
-#: system-config-users.gladestrings:85
+#: system-config-users.gladestrings:84
 msgid ""
 "Ensure that a new group gets a higher GID than all existing groups, if not "
 "set manually."
@@ -960,27 +958,27 @@ msgstr ""
 "Βεβαιωθείτε πως η νέα ομάδα θα πάρει μεγαλύτερο GID από άλλες υπάρχοντες "
 "ομάδες, αν δεν οριστεί χειρωνακτικά."
 
-#: system-config-users.gladestrings:86
+#: system-config-users.gladestrings:85
 msgid "Automatically assigned _GID must be highest"
 msgstr "Το _GID που θα ανατεθεί πρέπει να είναι το μεγαλύτερο"
 
-#: system-config-users.gladestrings:87
+#: system-config-users.gladestrings:86
 msgid "Prefer that private group GID is the _same as UID"
 msgstr "Να π_ροτιμηθεί το GID προσωπικής ομάδας να είναι το ίδιο με το UID"
 
-#: system-config-users.gladestrings:88
+#: system-config-users.gladestrings:87
 msgid "<b>New Users</b>"
 msgstr "<b>Νέοι χρήστες</b>"
 
-#: system-config-users.gladestrings:90
+#: system-config-users.gladestrings:89
 msgid "Copyright © 2001-2007 Red Hat, Inc."
 msgstr "Πνευματικά δικαιώματα (c) 2001 - 2007 Red Hat, Inc."
 
-#: system-config-users.gladestrings:91
+#: system-config-users.gladestrings:90
 msgid "Manages users and groups on your system."
 msgstr "Χειρίζεται χρήστες και ομάδες χρηστών στο σύστημα σας."
 
-#: system-config-users.gladestrings:92
+#: system-config-users.gladestrings:91
 msgid ""
 "system-config-users is free software; you can redistribute it and/or modify "
 "it under the terms of the GNU General Public License as published by the "
@@ -1009,9 +1007,30 @@ msgstr ""
 "με το system-config-users. Αν όχι γράψτε στο Free Software Foundation, Inc., "
 "51 Franklin  Street, Fifth Floor, Boston, MA 02110-1301 USA"
 
-#: system-config-users.gladestrings:97
+#: system-config-users.gladestrings:96
 msgid "translator-credits"
 msgstr "Dimitris Glezos <dimitris@glezos.com>, 2007"
+
+#~ msgid "User last changed password on:"
+#~ msgstr "Τελευταία αλλαγή συνθηματικού χρήστη την:"
+
+#~ msgid "Unknown"
+#~ msgstr "Άγνωστο"
+
+#~ msgid ""
+#~ "The password contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "Το συνθηματικό περιέχει χαρακτήρες που δεν είναι έγκυροι.  Παρακαλώ "
+#~ "χρησιμοποιείστε μόνο ASCII χαρακτήρες."
+
+#~ msgid "Please enter a password for the user."
+#~ msgstr "Παρακαλώ εισάγετε ένα συνθηματικό για το χρήστη."
+
+#~ msgid "The password is too short.  Please use at least 6 characters."
+#~ msgstr ""
+#~ "Το συνθηματικό είναι πολύ μικρό.  Παρακαλώ χρησιμοποιείστε τουλάχιστον 6 "
+#~ "χαρακτήρες."
 
 #~ msgid "C_onfirm Password:"
 #~ msgstr "Επι_βεβαίωση συνθηματικού:"

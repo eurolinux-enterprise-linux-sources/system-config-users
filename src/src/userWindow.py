@@ -62,7 +62,10 @@ class userWindow:
         self.homeDirHbox = xml.get_widget('homeDirHbox')
         self.homeDirCheck = xml.get_widget('homeDirCheck')
 
-        uidNumber, gidNumber = userGroupFind.find_uid_gid (self.parent.ADMIN, self.parent.preferences)
+        try:
+            uidNumber, gidNumber = userGroupFind.find_uid_gid (self.parent.ADMIN, self.parent.preferences)
+        except userGroupFind.IdSpaceExceededError:
+            uidNumber, gidNumber = userGroupFind.find_uid_gid (self.parent.ADMIN, { 'ASSIGN_HIGHEST_UID': False, 'ASSIGN_HIGHEST_GID': False, 'PREFER_SAME_UID_GID': self.parent.preferences['PREFER_SAME_UID_GID'] })
 
         self.newUidCheckButton = xml.get_widget('newUidCheckButton')
         self.newUidSpinButton = xml.get_widget('newUidSpinButton')
@@ -184,35 +187,14 @@ class userWindow:
         createHomeDir = self.homeDirCheck.get_active ()
         homeDir = self.userWinHomeDir.get_text ()
 
-        if pw == confirm and len (pw) >= 6:
-            #If the passwords match, go on
-            pass
-        else:
+        if pw != confirm:
             #The passwords don't match, so complain
-            if not pw and not confirm:
-                messageDialog.show_message_dialog(_("Please enter a password for the user."))
-                self.ready()
-                self.userWinPassword.set_text("")
-                self.userWinConfirm.set_text("")                
-                self.userWinPassword.grab_focus()
-                return
-
-            elif len (pw) < 6:
-                messageDialog.show_message_dialog(_("The password is too short.  Please "
-                                                    "use at least 6 characters."))
-                self.ready()
-                self.userWinPassword.set_text("")
-                self.userWinConfirm.set_text("")                
-                self.userWinPassword.grab_focus()
-                return
-
-            else:
-                messageDialog.show_message_dialog(_("The passwords do not match."))
-                self.ready()
-                self.userWinPassword.set_text("")
-                self.userWinConfirm.set_text("")                
-                self.userWinPassword.grab_focus()
-                return
+            messageDialog.show_message_dialog(_("The passwords do not match."))
+            self.ready()
+            self.userWinPassword.set_text("")
+            self.userWinConfirm.set_text("")
+            self.userWinPassword.grab_focus()
+            return
 
         #Check for ascii-only strings
         if not userGroupCheck.isUsernameOk(userName, self.userWinUserName):

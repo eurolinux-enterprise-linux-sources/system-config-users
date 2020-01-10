@@ -35,7 +35,7 @@
 
 Summary: A graphical interface for administering users and groups
 Name: system-config-users
-Version: 1.2.104
+Version: 1.2.106
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
 License: GPLv2+
@@ -82,6 +82,7 @@ Requires: cracklib-python >= 2.8.6
 Requires: cracklib >= 2.8.6
 %endif
 %endif
+Requires: libselinux-python
 
 BuildRequires: python >= 2.0
 
@@ -122,6 +123,20 @@ rm -rf $RPM_BUILD_ROOT
 %config(noreplace) %{_sysconfdir}/sysconfig/system-config-users
 
 %changelog
+* Wed Jan 26 2011 Nils Philippsen <nils@redhat.com> - 1.2.106-1
+- fix startup if max uid/gid is allocated
+- attempt to mkdir home directory instead of using os.access()
+- cope better with deleting auto-mounted home directories
+- restore context of home directories after creating, also use umask of 0700
+  (u=rwx,go=)
+- make most password problems warnings, not errors (#656356)
+- ask if non-ASCII password should be used (#646876)
+- add forced password change on next login (#656219)
+- pick up translation updates
+
+* Tue Aug 24 2010 Nils Philippsen <nils@redhat.com> - 1.2.105-1
+- pick up translation updates
+
 * Wed Aug 11 2010 Nils Philippsen <nils@redhat.com> - 1.2.104-1
 - pick up translation updates
 

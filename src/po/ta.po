@@ -12,34 +12,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-users.master.ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-20 16:08+0200\n"
-"PO-Revision-Date: 2010-08-11 16:54+0530\n"
+"POT-Creation-Date: 2010-11-30 16:08+0100\n"
+"PO-Revision-Date: 2010-12-07 11:18+0530\n"
 "Last-Translator: I Felix <ifelix@redhat.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ta\n"
-"X-Generator: Lokalize 1.0\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
+"X-Generator: Lokalize 1.1\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\\n\n"
 
-#: ../src/groupProperties.py:108 ../src/groupWindow.py:108
-#: ../src/userGroupCheck.py:61
+#: ../src/groupProperties.py:108
+#: ../src/groupWindow.py:108
+#: ../src/userGroupCheck.py:64
 msgid "Please enter a group name."
 msgstr "ஒரு குழு பெயரை உள்ளிடவும்."
 
@@ -48,10 +34,121 @@ msgstr "ஒரு குழு பெயரை உள்ளிடவும்."
 msgid "The group '%s' already exists. Please choose a different name."
 msgstr "'%s' குழு ஏற்கனவே உள்ளது.வேறு பெயரை தேர்ந்தெடுக்கவும்."
 
-#: ../src/groupProperties.py:164 ../src/mainWindow.py:760
+#: ../src/groupProperties.py:164
+#: ../src/mainWindow.py:760
 #, python-format
 msgid "You cannot remove user '%s' from their primary group."
 msgstr "'%s' பயனரை முதன்மை குழுவிலிருந்து விலக்க முடியாது."
+
+#: ../src/userProperties.py:113
+#: ../src/userWindow.py:85
+msgid "User"
+msgstr "பயனர்"
+
+#: ../src/userProperties.py:113
+#: ../src/userWindow.py:85
+msgid "Staff"
+msgstr "பணியாளர்"
+
+#: ../src/userProperties.py:114
+#: ../src/userWindow.py:86
+msgid "System Administrator"
+msgstr "கணிணி நிர்வாகி"
+
+#: ../src/userProperties.py:144
+msgid "Primary Group:"
+msgstr "முதன்மை குழு:"
+
+#: ../src/userProperties.py:226
+#, python-format
+msgid "Password last changed on: %x"
+msgstr "கடவுச்சொல் கடைசியாக மாற்றப்பட்டது: %x"
+
+#: ../src/userProperties.py:306
+#: ../src/userGroupCheck.py:54
+msgid "Please enter a user name."
+msgstr "ஒரு பயனர் பெயரை உள்ளிடவும்."
+
+#: ../src/userProperties.py:325
+#, python-format
+msgid "The user '%s' already exists. Please choose a different name."
+msgstr "பயனர் '%s' ஏற்கனவே உள்ளார். வேறு பெயரை தேர்ந்தெடுக்கவும்."
+
+#: ../src/userProperties.py:346
+msgid "Passwords do not match."
+msgstr "கடவுச்சொல் பொருந்தவில்லை."
+
+#: ../src/userProperties.py:423
+msgid "Please select at least one group for the user."
+msgstr "பயனருக்கான குறைந்தது ஒரு குழுவையாவது தேர்ந்தெடுக்கவும்."
+
+#: ../src/userProperties.py:442
+msgid "Please specify the month that the password will expire."
+msgstr "கடவுச்சொல் முடிந்து போகும் மாதத்தை குறிப்பிடவும்."
+
+#: ../src/userProperties.py:450
+msgid "Please specify the day that the password will expire."
+msgstr "கடவுச்சொல் முடிந்து போகும் தினத்தை குறிப்பிடவும்."
+
+#: ../src/userProperties.py:458
+msgid "Please specify the year that the password will expire."
+msgstr "கடவுச்சொல் முடிந்து போகும் வருடத்தை குறிப்பிடவும்."
+
+#. mktime will throw an OverflowError if the year is too big.
+#: ../src/userProperties.py:474
+msgid "The year is out of range.  Please select a different year."
+msgstr "ஆண்டு வரையறைக்குள் இல்லை.வேறு ஆண்டினை குறிப்பிடவும்."
+
+#: ../src/userProperties.py:504
+msgid "Please specify the number of days before changing the password is allowed."
+msgstr "அனுமதிக்கப்பட்ட கடவுச்சொல்லை மாற்றுவதற்கு முன் உள்ள நாட்களின் எண்ணிக்கையை குறிப்பிடவும்."
+
+#: ../src/userProperties.py:506
+#, python-format
+msgid "The number of days before changing the password is allowed must be between %(min)d and %(max)d."
+msgstr "அனுமதிக்கப்பட்ட கடவுச்சொல்லை மாற்றுவதற்கு முன் உள்ள நாட்களின் எண்ணிக்கை %(min)d மற்றும் %(max)d க்கும் இடையே இருக்க வேண்டும்."
+
+#: ../src/userProperties.py:511
+msgid "Please specify the number of days before changing the password is required."
+msgstr "தேவைப்பட்ட கடவுச்சொல்லை மாற்றுவதற்கு முன் உள்ள நாட்களின் எண்ணிக்கையை குறிப்பிடவும்."
+
+#: ../src/userProperties.py:513
+#, python-format
+msgid "The number of days before changing the password is required must be between %(min)d and %(max)d."
+msgstr "தேவைப்பட்ட கடவுச்சொல்லை மாற்றுவதற்கு முன் உள்ள நாட்களின் எண்ணிக்கை %(min)d மற்றும் %(max)dக்கு இடையே இருக்க வேண்டும்."
+
+#: ../src/userProperties.py:517
+msgid "Please specify the number of days to warn the user before changing the password is required."
+msgstr "தேவைப்பட்ட கடவுச்சொல்லை மாற்றுவதற்கு முன் பயனரை எச்சரிக்கும் நாட்களின் எண்ணிக்கையை குறிப்பிடவும்."
+
+#: ../src/userProperties.py:519
+#, python-format
+msgid "The number of days to warn the user before changing the password is required must be between %(min)d and %(max)d."
+msgstr "தேவைப்பட்ட கடவுச்சொல்லை மாற்றுவதற்கு முன் பயனரை எச்சரிக்கும் நாட்களின் எண்ணிக்கை %(min)d மற்றும் %(max)dக்கு இடையில் இருக்க வேண்டும்."
+
+#: ../src/userProperties.py:525
+msgid "Please specify the number of days until the user account becomes inactive after password has expired."
+msgstr "கடவுச்சொல் முடிவுற்றதும் பயனர் கணக்கு செயலிழக்கப்படும் வரை உள்ள நாள்களின் எண்ணிக்கையை குறிப்பிடவும்."
+
+#: ../src/userProperties.py:527
+#, python-format
+msgid "The number of days until the user account becomes inactive after the password has expired must be between %(min)d and %(max)d. Setting it to -1 means the account won't become inactive."
+msgstr "கடவுச்சொல் முடிவுற்றதும் பயனர் கணக்கு செயலிழக்கப்படும் வரை உள்ள நாள்களின் எண்ணிக்கை %(min)d மற்றும் %(max)dக்கு இடையே இருக்க வேண்டும். -1 என அமைத்தால் கணக்கு செயலிழக்கப்படாது."
+
+#: ../src/userProperties.py:593
+#, python-format
+msgid ""
+"Unlocking the user failed because:\n"
+"\n"
+"%(errmsg)s"
+msgstr ""
+"தோல்வியுற்ற பயனரை பூட்டுநீக்குகிறது ஏனெனில்:\n"
+"\n"
+"%(errmsg)s"
+
+#: ../src/userProperties.py:596
+msgid "Unlocking the user failed due to an unknown reason."
+msgstr "தெரியாத காரணத்தால் பூட்டு நீக்கும் பயனர் தோல்வியுற்றது."
 
 #: ../src/groupWindow.py:116
 #, python-format
@@ -60,26 +157,24 @@ msgstr "'%s' பெயர்கொண்ட குழு ஏற்கனவே �
 
 #. This uid already exists, so complain
 #. This (chosen) gid already exists, so complain
-#: ../src/groupWindow.py:131 ../src/userWindow.py:292
+#: ../src/groupWindow.py:131
+#: ../src/userWindow.py:274
 #, python-format
 msgid "The gid %s is already in use."
 msgstr "குழு அடையாளம் %s ஏற்கனவே உபயோகத்தில் உள்ளது."
 
 #: ../src/groupWindow.py:138
-msgid ""
-"Creating a group with a GID less than 500 is not recommended.  Are you sure "
-"you want to do this?"
+msgid "Creating a group with a GID less than 500 is not recommended.  Are you sure you want to do this?"
 msgstr "GID 500க்கும் குறைவாக குழுக்களை உருவாக்க வேண்டாம். இதை செய்ய வேண்டுமா?"
 
-#: ../src/groupWindow.py:160 ../src/userWindow.py:305
+#: ../src/groupWindow.py:160
+#: ../src/userWindow.py:287
 #, python-format
 msgid "Error finding suitable group id not exceeding maximum value of %(maxid)s."
 msgstr "சரியான குழு id அதிகபட்ச மதிப்பு %(maxid)s க்கு மேல் இருப்பதை கண்டுபிடிப்பதில் பிழை."
 
 #: ../src/mainWindow.py:80
-msgid ""
-"The help viewer could not be found. To be able to view help you need to "
-"install the 'yelp' package."
+msgid "The help viewer could not be found. To be able to view help you need to install the 'yelp' package."
 msgstr "உதவி காட்டி இல்லை. இதனை பார்க்க நீங்கள் 'yelp' தொகுப்பை நிறுவ வேண்டும்."
 
 #: ../src/mainWindow.py:95
@@ -180,20 +275,13 @@ msgstr ""
 #, python-format
 msgid ""
 "%(msg_users)s%(msg_groups)s\n"
-"In most cases this is caused by inconsistencies in the user or group "
-"database, e.g. between the files /etc/passwd, /etc/group and their "
-"respective shadow files /etc/shadow and /etc/gshadow. I will try to ignore "
-"these entries and continue for now, but please fix these inconsistencies as "
-"soon as possible."
+"In most cases this is caused by inconsistencies in the user or group database, e.g. between the files /etc/passwd, /etc/group and their respective shadow files /etc/shadow and /etc/gshadow. I will try to ignore these entries and continue for now, but please fix these inconsistencies as soon as possible."
 msgstr ""
 "%(msg_users)s%(msg_groups)s\n"
-"In most cases this is caused by inconsistencies in the user or group "
-"database, e.g. between the files /etc/passwd, /etc/group and their "
-"respective shadow files /etc/shadow and /etc/gshadow. I will try to ignore "
-"these entries and continue for now, but please fix these inconsistencies as "
-"soon as possible."
+"இது பல இடங்களில் பயனர் அல்லது குழு தரவுத்தளத்தில் நிலையற்றதாக இருக்கிறது, எ.கா கோப்புகள் /etc/passwd, /etc/group மற்றும் அதன் நிழல் கோப்புகளான /etc/shadow மற்றும் /etc/gshadow இல். நான் இந்த உள்ளீடுகளை தவிர்த்து இப்போது தொடர்கிறேன், ஆனால் சீக்கரமே இதனை சரி செய்யவும்."
 
-#: ../src/mainWindow.py:578 system-config-users.gladestrings:89
+#: ../src/mainWindow.py:578
+#: system-config-users.gladestrings:88
 msgid "system-config-users"
 msgstr "system-config-users"
 
@@ -226,11 +314,8 @@ msgid "- An installed software package contains this directory."
 msgstr "- இந்த அடைவை நிறுவப்பட்ட தொகுப்பு கொண்டுள்ளது."
 
 #: ../src/mainWindow.py:659
-msgid ""
-"- A system user owns this directory and removing it may impair the system's "
-"integrity."
-msgstr ""
-"- இந்த அடைவு கணினி பயனருக்கு சொந்தமானது. அதனை நீக்கினால் கணினியின் இயல்பினை பாதிக்கும்."
+msgid "- A system user owns this directory and removing it may impair the system's integrity."
+msgstr "- இந்த அடைவு கணினி பயனருக்கு சொந்தமானது. அதனை நீக்கினால் கணினியின் இயல்பினை பாதிக்கும்."
 
 #: ../src/mainWindow.py:661
 msgid "- This directory doesn't exist or isn't writable."
@@ -243,12 +328,8 @@ msgstr "- பயனர் '%s' இந்த அடைவினை சொந்�
 
 #: ../src/mainWindow.py:670
 #, python-format
-msgid ""
-"<b>There are currently processes running that are owned by '%s'!</b>  This "
-"user is probably still logged in.  "
-msgstr ""
-"<b>தற்போது '%s'! க்கு சொந்தமான செயல்கள் இயங்கிக்கொண்டிருக்கிறது</b>. இந்தப் பயனர் இன்னும் "
-"புகுபதிவில் உள்ளார்."
+msgid "<b>There are currently processes running that are owned by '%s'!</b>  This user is probably still logged in.  "
+msgstr "<b>தற்போது '%s'! க்கு சொந்தமான செயல்கள் இயங்கிக்கொண்டிருக்கிறது</b>. இந்தப் பயனர் இன்னும் புகுபதிவில் உள்ளார்."
 
 #: ../src/mainWindow.py:672
 #, python-format
@@ -262,12 +343,8 @@ msgstr "%(user)s களின் இல்ல அடைவு ('%(homedir)s') �
 
 #: ../src/mainWindow.py:683
 #, python-format
-msgid ""
-"Delete %(user)s's home directory ('%(homedir)s'), mail spool ('%(mailspool)"
-"s') and temporary files."
-msgstr ""
-"%(user)s's களின் இல்ல அடைவு ('%(homedir)s'), mail spool ('%(mailspool)s')மற்றும் "
-"தற்காலிக கோப்புகளை அழிக்கவும்."
+msgid "Delete %(user)s's home directory ('%(homedir)s'), mail spool ('%(mailspool)s') and temporary files."
+msgstr "%(user)s's களின் இல்ல அடைவு ('%(homedir)s'), mail spool ('%(mailspool)s')மற்றும் தற்காலிக கோப்புகளை அழிக்கவும்."
 
 #: ../src/mainWindow.py:690
 #, python-format
@@ -292,363 +369,165 @@ msgstr ""
 msgid "Are you sure you want to delete the group '%s'?"
 msgstr "நீங்கள் '%s' குழுவை அழிக்க வேண்டுமா?"
 
-#: ../src/system-config-users.py:38
-msgid "system-config-users requires a currently running X server."
-msgstr "system-config-usersக்கு தற்போது இயங்கிக்கொண்டிருக்கும் X சேவையகம் தேவைப்படுகிறது."
-
-#: ../src/userGroupCheck.py:51 ../src/userProperties.py:295
-msgid "Please enter a user name."
-msgstr "ஒரு பயனர் பெயரை உள்ளிடவும்."
-
-#: ../src/userGroupCheck.py:52
-#, python-format
-msgid "The user name must not exceed %d characters."
-msgstr "பயனர் பெயர் %d எழுத்துக்களுக்கு மேல் இருக்கக்கூடாது."
-
-#: ../src/userGroupCheck.py:53
-#, python-format
-msgid ""
-"The user name '%s' contains whitespace. Please do not include whitespace in "
-"the user name."
-msgstr "பயனர் பெயர் '%s' இல் இடைவெளி உள்ளது. பயனர் பெயரில் இடைவெளியை இருக்கக்கூடாது."
-
-#: ../src/userGroupCheck.py:54
-#, python-format
-msgid ""
-"The user name '%s' contains a dollar sign which is not at the end. Please "
-"use dollar signs only at the end of user names to indicate Samba machine "
-"accounts."
-msgstr ""
-"பயனர் பெயர் '%s' ஒரு டாலர் குறியீட்டை கொண்டுள்ளது, அது கடைசியில் இல்லை. எனவே சம்பா "
-"கணினி கணக்கினை குறிப்பிடும் டாலர் குறியீட்டை கடைசியில் இடவும்."
-
-#: ../src/userGroupCheck.py:55
-#, python-format
-msgid ""
-"The user name '%s' contains a trailing dollar sign. This should only be used "
-"for Samba machine accounts, using this for a normal user account can cause "
-"problems with some software. Is the account in question a Samba machine "
-"account?"
-msgstr ""
-"பயனர் பெயர் '%s' ஒரு டாலர் குறியை கொண்டுள்ளது. இது சம்பா கணினி கணக்குகளுக்கு மட்டும் "
-"பயன்படுத்த வேண்டும், இதை சாதாரண பயனர் கணக்கிற்கு பயன்படுத்தினால் சில மென்பொருளில் சிக்கல் "
-"ஏற்படும். வினாவிலுள்ள கணக்கு சம்பா கணினி கணக்கா?"
-
-#: ../src/userGroupCheck.py:56
-#, python-format
-msgid ""
-"The user name '%(name)s' contains an invalid character at position %"
-"(position)d."
-msgstr "'%(name)s' பயனர் பெயர் முறையற்ற எழுத்தை %(position)d இடத்தில் கொண்டுள்ளது."
-
-#: ../src/userGroupCheck.py:57
-msgid ""
-"Using all numbers as the user name can cause confusion about whether the "
-"user name or numerical user id is meant. Do you really want to use a "
-"numerical-only user name?"
-msgstr ""
-"எண்களை முழுவதும் பயனர் பெயருக்குப் பயன்படுத்துவதால் பயனர் பெயர் அல்லது எண் பயனர் பெயரில் "
-"குழப்பம் ஏற்பட வாய்ப்புள்ளது. நீங்கள் உண்மையிலேயே எண் மட்டும் கொண்ட பயனர் பெயரை பயன்படுத்த "
-"வேண்டுமா?"
-
-#: ../src/userGroupCheck.py:62
-#, python-format
-msgid "The group name must not exceed %d characters."
-msgstr "குழுப்பெயர் கண்டிப்பாக %d க்கு மேல் இருக்கக்கூடாது."
-
-#: ../src/userGroupCheck.py:63
-#, python-format
-msgid ""
-"The group name '%s' contains whitespace. Please do not include whitespace in "
-"the group name."
-msgstr " '%s' குழுப் பெயர் இடைவெளியை கொண்டுள்ளது. அவற்றை நீக்கவும்."
-
-#: ../src/userGroupCheck.py:64
-#, python-format
-msgid ""
-"The group name '%(name)s' contains an invalid character at position %"
-"(position)d."
-msgstr "'%(name)s' குழுப்பெயர் தவறான எழுத்துக்களை %(position)d இடத்தில் கொண்டுள்ளது."
-
-#: ../src/userGroupCheck.py:65
-msgid ""
-"Using all numbers as the group name can cause confusion about whether the "
-"group name or numerical group id is meant. Do you really want to use a "
-"numerical-only group name?"
-msgstr ""
-"எண்களை முழுவதும் குழு பெயருக்கு பயன்படுத்துவதால் குழு பெயரா அல்லது எண் குழு பெயரா என "
-"குழப்பம் ஏற்பட வாய்ப்புள்ளது. நீங்கள் உண்மையிலேயே எண் மட்டும் கொண்ட குழு பெயரை பயன்படுத்த "
-"வேண்டுமா?"
-
-#: ../src/userGroupCheck.py:144
-msgid "The password contains invalid characters.  Please use only ASCII characters."
-msgstr "கடவுச்சொல்லில் தவறான எழுத்துக்கள் உள்ளது. ASCII எழுத்துக்களை மட்டும் பயன்படுத்தவும்."
-
-#: ../src/userGroupCheck.py:167
-#, python-format
-msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
-msgstr ""
-"தேர்ந்தெடுக்கப்பட்ட கடவுச்சொல் மிகவும் சாதாரணது: %s. இதனை எப்படியும் பயன்படுத்த வேண்டுமா?"
-
-#. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/userGroupCheck.py:178
-#, python-format
-msgid "The name '%s' contains invalid characters.  Please use only UTF-8 characters."
-msgstr " '%s' பெயர் தவறான எழுத்தை கொண்டுள்ளது. UTF-8 எழுத்துக்களை மட்டும் பயன்படுத்தவும்."
-
-#. have to check for colons since /etc/passwd is a colon delimited file
-#: ../src/userGroupCheck.py:186
-#, python-format
-msgid "The name '%s' contains a colon.  Please do not use colons in the name."
-msgstr ""
-"'%s' பயனர் பெயரில் முக்காற் புள்ளி உள்ளது. பெயரில் முக்காற் புள்ளி பயன்படுத்தக்கூடாது."
-
-#: ../src/userGroupCheck.py:195
-msgid "Please enter a home directory."
-msgstr "ஒரு இல்ல அடைவை உள்ளிடவும்."
-
-#. have to check for colons since /etc/passwd is a colon delimited file
-#: ../src/userGroupCheck.py:202
-#, python-format
-msgid ""
-"The directory name '%s' contains a colon.  Please do not use colons in the "
-"directory name."
-msgstr ""
-"'%s' அடைவின் பெயரில் முக்காற் புள்ளி உள்ளது, அடைவின் பெயரில் முக்காற் புள்ளி பயன்படுத்த "
-"வேண்டாம்."
-
-#: ../src/userGroupCheck.py:211
-#, python-format
-msgid ""
-"The directory name '%s' doesn't begin with a '/'. Please specify an absolute "
-"path for the home directory."
-msgstr ""
-"'%s' அடைவின் பெயர்  '/' ஆல் துவங்கவில்லை. இல்ல அடைவின் முழு பாதையையும் குறிப்பிடவும்."
-
-#: ../src/userGroupCheck.py:217
-#, python-format
-msgid ""
-"The directory name '%s' has path components which are too long. Please use "
-"shorter path components for the home directory."
-msgstr ""
-"'%s' அடைவு பெயரின் பாதை கூறுகள் மிக நீளமாக உள்ளது. இல்ல அடைவுக்கு குறைந்த பாதை "
-"கூறுகளை பயன்படுத்தவும்."
-
-#: ../src/userGroupCheck.py:224
-#, python-format
-msgid ""
-"The directory name '%s' contains empty path components. Please specify a "
-"home directory name without empty path components."
-msgstr ""
-"'%s' அடைவு பெயரின் வெற்று பாதை கூறுகள் உள்ளது. இல்ல அடைவுக்கு வெற்றில்லாத கூறுகளை "
-"பயன்படுத்தவும்."
-
-#: ../src/userGroupCheck.py:233
-#, python-format
-msgid ""
-"The directory name '%s' contains illegal path components. Please don't use "
-"'.' or '..' as path components for the home directory."
-msgstr ""
-"'%s' அடைவு பெயரின் தவறான பாதை கூறுகள் உள்ளது. இல்ல அடைவுக்கு '.' அல்லது '..'  போன்ற "
-"பாதை கூறுகளை பயன்படுத்த வேண்டாம்."
-
-#: ../src/userGroupCheck.py:241
-#, python-format
-msgid ""
-"The directory name '%s' cannot be created ('%s' is not writable). Please "
-"chose a writable location."
-msgstr ""
-"அடைவு பெயர் '%s'ஐ உருவாக்க முடியவில்லை ('%s' எழுதக்கூடியது). எழுதக்கூடிய இடத்தை தேர்ந்தெடு."
-
-#: ../src/userProperties.py:108 ../src/userWindow.py:82
-msgid "User"
-msgstr "பயனர்"
-
-#: ../src/userProperties.py:108 ../src/userWindow.py:82
-msgid "Staff"
-msgstr "பணியாளர்"
-
-#: ../src/userProperties.py:109 ../src/userWindow.py:83
-msgid "System Administrator"
-msgstr "கணிணி நிர்வாகி"
-
-#: ../src/userProperties.py:139
-msgid "Primary Group:"
-msgstr "முதன்மை குழு:"
-
-#: ../src/userProperties.py:314
-#, python-format
-msgid "The user '%s' already exists. Please choose a different name."
-msgstr "பயனர் '%s' ஏற்கனவே உள்ளார். வேறு பெயரை தேர்ந்தெடுக்கவும்."
-
-#: ../src/userProperties.py:336 ../src/userWindow.py:193
-msgid "Please enter a password for the user."
-msgstr "பயனர் கடவுச்சொல்லை உள்ளிடவும்."
-
-#: ../src/userProperties.py:345 ../src/userWindow.py:201
-msgid "The password is too short.  Please use at least 6 characters."
-msgstr "கடவுச்சொல் மிகவும் சிறியதாக உள்ளது. குறைந்தது 6 எழுத்துக்களையாவது பயன்படுத்தவும்."
-
-#: ../src/userProperties.py:354
-msgid "Passwords do not match."
-msgstr "கடவுச்சொல் பொருந்தவில்லை."
-
-#: ../src/userProperties.py:431
-msgid "Please select at least one group for the user."
-msgstr "பயனருக்கான குறைந்தது ஒரு குழுவையாவது தேர்ந்தெடுக்கவும்."
-
-#: ../src/userProperties.py:450
-msgid "Please specify the month that the password will expire."
-msgstr "கடவுச்சொல் முடிந்து போகும் மாதத்தை குறிப்பிடவும்."
-
-#: ../src/userProperties.py:458
-msgid "Please specify the day that the password will expire."
-msgstr "கடவுச்சொல் முடிந்து போகும் தினத்தை குறிப்பிடவும்."
-
-#: ../src/userProperties.py:466
-msgid "Please specify the year that the password will expire."
-msgstr "கடவுச்சொல் முடிந்து போகும் வருடத்தை குறிப்பிடவும்."
-
-#. mktime will throw an OverflowError if the year is too big.
-#: ../src/userProperties.py:482
-msgid "The year is out of range.  Please select a different year."
-msgstr "ஆண்டு வரையறைக்குள் இல்லை.வேறு ஆண்டினை குறிப்பிடவும்."
-
-#: ../src/userProperties.py:511
-msgid "Please specify the number of days before changing the password is allowed."
-msgstr ""
-"அனுமதிக்கப்பட்ட கடவுச்சொல்லை மாற்றுவதற்கு முன் உள்ள நாட்களின் எண்ணிக்கையை குறிப்பிடவும்."
-
-#: ../src/userProperties.py:513
-#, python-format
-msgid ""
-"The number of days before changing the password is allowed must be between %"
-"(min)d and %(max)d."
-msgstr ""
-"அனுமதிக்கப்பட்ட கடவுச்சொல்லை மாற்றுவதற்கு முன் உள்ள நாட்களின் எண்ணிக்கை %(min)d மற்றும் %"
-"(max)d க்கும் இடையே இருக்க வேண்டும்."
-
-#: ../src/userProperties.py:518
-msgid "Please specify the number of days before changing the password is required."
-msgstr "தேவைப்பட்ட கடவுச்சொல்லை மாற்றுவதற்கு முன் உள்ள நாட்களின் எண்ணிக்கையை குறிப்பிடவும்."
-
-#: ../src/userProperties.py:520
-#, python-format
-msgid ""
-"The number of days before changing the password is required must be between %"
-"(min)d and %(max)d."
-msgstr ""
-"தேவைப்பட்ட கடவுச்சொல்லை மாற்றுவதற்கு முன் உள்ள நாட்களின் எண்ணிக்கை %(min)d மற்றும் %(max)"
-"dக்கு இடையே இருக்க வேண்டும்."
-
-#: ../src/userProperties.py:524
-msgid ""
-"Please specify the number of days to warn the user before changing the "
-"password is required."
-msgstr ""
-"தேவைப்பட்ட கடவுச்சொல்லை மாற்றுவதற்கு முன் பயனரை எச்சரிக்கும் நாட்களின் எண்ணிக்கையை "
-"குறிப்பிடவும்."
-
-#: ../src/userProperties.py:526
-#, python-format
-msgid ""
-"The number of days to warn the user before changing the password is required "
-"must be between %(min)d and %(max)d."
-msgstr ""
-"தேவைப்பட்ட கடவுச்சொல்லை மாற்றுவதற்கு முன் பயனரை எச்சரிக்கும் நாட்களின் எண்ணிக்கை %(min)d "
-"மற்றும் %(max)dக்கு இடையில் இருக்க வேண்டும்."
-
-#: ../src/userProperties.py:532
-msgid ""
-"Please specify the number of days until the user account becomes inactive "
-"after password has expired."
-msgstr ""
-"கடவுச்சொல் முடிவுற்றதும் பயனர் கணக்கு செயலிழக்கப்படும் வரை உள்ள நாள்களின் எண்ணிக்கையை "
-"குறிப்பிடவும்."
-
-#: ../src/userProperties.py:534
-#, python-format
-msgid ""
-"The number of days until the user account becomes inactive after the "
-"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
-"means the account won't become inactive."
-msgstr ""
-"கடவுச்சொல் முடிவுற்றதும் பயனர் கணக்கு செயலிழக்கப்படும் வரை உள்ள நாள்களின் எண்ணிக்கை %(min)"
-"d மற்றும் %(max)dக்கு இடையே இருக்க வேண்டும். -1 என அமைத்தால் கணக்கு செயலிழக்கப்படாது."
-
-#: ../src/userProperties.py:592
-#, python-format
-msgid ""
-"Unlocking the user failed because:\n"
-"\n"
-"%(errmsg)s"
-msgstr ""
-"தோல்வியுற்ற பயனரை பூட்டுநீக்குகிறது ஏனெனில்:\n"
-"\n"
-"%(errmsg)s"
-
-#: ../src/userProperties.py:595
-msgid "Unlocking the user failed due to an unknown reason."
-msgstr "தெரியாத காரணத்தால் பூட்டு நீக்கும் பயனர் தோல்வியுற்றது."
-
-#: ../src/userWindow.py:210
+#. The passwords don't match, so complain
+#: ../src/userWindow.py:192
 msgid "The passwords do not match."
 msgstr "கடவுச்சொற்கள் பொருந்தவில்லை."
 
 #. The user name is blank, so complain
-#: ../src/userWindow.py:241
+#: ../src/userWindow.py:223
 msgid "Please specify a user name"
 msgstr "ஒரு பயனர் பெயரை குறிப்பிடவும்"
 
 #. This user already exists, so complain
-#: ../src/userWindow.py:249
+#: ../src/userWindow.py:231
 #, python-format
 msgid "An account with username '%s' already exists."
 msgstr "'%s'பயனர் பெயர் கொண்ட கணக்கு ஏற்கெனவே உள்ளது."
 
 #. This uid already exists, so complain
-#: ../src/userWindow.py:285
+#: ../src/userWindow.py:267
 #, python-format
 msgid "The uid %s is already in use."
 msgstr "uid %s ஏற்கனவே பயனில் உள்ளது."
 
-#: ../src/userWindow.py:303
+#: ../src/userWindow.py:285
 #, python-format
 msgid "Error finding suitable user id not exceeding maximum value of %(maxid)s."
 msgstr "சரியான பயனர் id அதிகபட்ச மதிப்பு %(maxid)s க்கு மேல் இருப்பதை கண்டுபிடிப்பதில் பிழை."
 
-#: ../src/userWindow.py:315
-msgid ""
-"Creating a user with a UID less than 500 is not recommended.  Are you sure "
-"you want to do this?"
-msgstr ""
-"UID 500 க்கும் குறைவாக பயனரை உருவாக்க பரிந்துரைக்கப்படவில்லை. நீங்கள் இதை செய்ய வேண்டுமா?"
+#: ../src/userWindow.py:297
+msgid "Creating a user with a UID less than 500 is not recommended.  Are you sure you want to do this?"
+msgstr "UID 500 க்கும் குறைவாக பயனரை உருவாக்க பரிந்துரைக்கப்படவில்லை. நீங்கள் இதை செய்ய வேண்டுமா?"
 
-#: ../src/userWindow.py:345
+#: ../src/userWindow.py:327
 msgid "A group with this gid already exists.  What would you like to do?"
 msgstr "இந்த gidஇல் குழு ஏற்கனவே உள்ளது. இப்போது என்ன செய்ய வேண்டும்?"
 
-#: ../src/userWindow.py:347
+#: ../src/userWindow.py:329
 msgid "A group with this name already exists.  What would you like to do?"
 msgstr "இந்த பெயரில் குழு ஏற்கனவே உள்ளது. இப்போது என்ன செய்ய வேண்டும்?"
 
-#: ../src/userWindow.py:351
+#: ../src/userWindow.py:333
 msgid "Add to the existing group"
 msgstr "ஏற்கனவே இருக்கும் குழுவில் சேர்க்கவும்"
 
-#: ../src/userWindow.py:352
+#: ../src/userWindow.py:334
 msgid "Add to the 'users' group"
 msgstr "'பயனர்' குழுவில் சேர்க்கவும்"
 
 #. Uh-oh.  It looks like /etc/group and /etc/gshadow are out of sync.  Give up and quit.
-#: ../src/userWindow.py:434
-msgid ""
-"The system group database cannot be read.  This problem is most likely "
-"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
-"now."
-msgstr ""
-"கணிணி குழு தரவுத்தளத்தை வாசிக்க முடியவில்லை. /etc/group மற்றும் /etc/gshadow "
-"பொருத்தம் இல்லாததால் இந்த சிக்கல் ஏற்பட்டிருக்கும். நிரல் இப்போது வெளியேற்றப்படும்."
+#: ../src/userWindow.py:416
+msgid "The system group database cannot be read.  This problem is most likely caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit now."
+msgstr "கணிணி குழு தரவுத்தளத்தை வாசிக்க முடியவில்லை. /etc/group மற்றும் /etc/gshadow பொருத்தம் இல்லாததால் இந்த சிக்கல் ஏற்பட்டிருக்கும். நிரல் இப்போது வெளியேற்றப்படும்."
+
+#: ../src/system-config-users.py:38
+msgid "system-config-users requires a currently running X server."
+msgstr "system-config-usersக்கு தற்போது இயங்கிக்கொண்டிருக்கும் X சேவையகம் தேவைப்படுகிறது."
+
+#: ../src/userGroupCheck.py:55
+#, python-format
+msgid "The user name must not exceed %d characters."
+msgstr "பயனர் பெயர் %d எழுத்துக்களுக்கு மேல் இருக்கக்கூடாது."
+
+#: ../src/userGroupCheck.py:56
+#, python-format
+msgid "The user name '%s' contains whitespace. Please do not include whitespace in the user name."
+msgstr "பயனர் பெயர் '%s' இல் இடைவெளி உள்ளது. பயனர் பெயரில் இடைவெளியை இருக்கக்கூடாது."
+
+#: ../src/userGroupCheck.py:57
+#, python-format
+msgid "The user name '%s' contains a dollar sign which is not at the end. Please use dollar signs only at the end of user names to indicate Samba machine accounts."
+msgstr "பயனர் பெயர் '%s' ஒரு டாலர் குறியீட்டை கொண்டுள்ளது, அது கடைசியில் இல்லை. எனவே சம்பா கணினி கணக்கினை குறிப்பிடும் டாலர் குறியீட்டை கடைசியில் இடவும்."
+
+#: ../src/userGroupCheck.py:58
+#, python-format
+msgid "The user name '%s' contains a trailing dollar sign. This should only be used for Samba machine accounts, using this for a normal user account can cause problems with some software. Is the account in question a Samba machine account?"
+msgstr "பயனர் பெயர் '%s' ஒரு டாலர் குறியை கொண்டுள்ளது. இது சம்பா கணினி கணக்குகளுக்கு மட்டும் பயன்படுத்த வேண்டும், இதை சாதாரண பயனர் கணக்கிற்கு பயன்படுத்தினால் சில மென்பொருளில் சிக்கல் ஏற்படும். வினாவிலுள்ள கணக்கு சம்பா கணினி கணக்கா?"
+
+#: ../src/userGroupCheck.py:59
+#, python-format
+msgid "The user name '%(name)s' contains an invalid character at position %(position)d."
+msgstr "'%(name)s' பயனர் பெயர் முறையற்ற எழுத்தை %(position)d இடத்தில் கொண்டுள்ளது."
+
+#: ../src/userGroupCheck.py:60
+msgid "Using all numbers as the user name can cause confusion about whether the user name or numerical user id is meant. Do you really want to use a numerical-only user name?"
+msgstr "எண்களை முழுவதும் பயனர் பெயருக்குப் பயன்படுத்துவதால் பயனர் பெயர் அல்லது எண் பயனர் பெயரில் குழப்பம் ஏற்பட வாய்ப்புள்ளது. நீங்கள் உண்மையிலேயே எண் மட்டும் கொண்ட பயனர் பெயரை பயன்படுத்த வேண்டுமா?"
+
+#: ../src/userGroupCheck.py:65
+#, python-format
+msgid "The group name must not exceed %d characters."
+msgstr "குழுப்பெயர் கண்டிப்பாக %d க்கு மேல் இருக்கக்கூடாது."
+
+#: ../src/userGroupCheck.py:66
+#, python-format
+msgid "The group name '%s' contains whitespace. Please do not include whitespace in the group name."
+msgstr " '%s' குழுப் பெயர் இடைவெளியை கொண்டுள்ளது. அவற்றை நீக்கவும்."
+
+#: ../src/userGroupCheck.py:67
+#, python-format
+msgid "The group name '%(name)s' contains an invalid character at position %(position)d."
+msgstr "'%(name)s' குழுப்பெயர் தவறான எழுத்துக்களை %(position)d இடத்தில் கொண்டுள்ளது."
+
+#: ../src/userGroupCheck.py:68
+msgid "Using all numbers as the group name can cause confusion about whether the group name or numerical group id is meant. Do you really want to use a numerical-only group name?"
+msgstr "எண்களை முழுவதும் குழு பெயருக்கு பயன்படுத்துவதால் குழு பெயரா அல்லது எண் குழு பெயரா என குழப்பம் ஏற்பட வாய்ப்புள்ளது. நீங்கள் உண்மையிலேயே எண் மட்டும் கொண்ட குழு பெயரை பயன்படுத்த வேண்டுமா?"
+
+#: ../src/userGroupCheck.py:157
+msgid "The chosen password contains characters which may be hard or impossible to type in certain situations. To ensure the password can be typed everywhere use only unaccented Latin letters (A-Z, a-z), digits (0-9), punctuation characters (e.g. comma, full stop) and the space character in the password. Do you want to use this password anyway?"
+msgstr "தேர்ந்தெடுக்கப்பட்ட கடவுச்சொல் கொண்ட எழுத்துக்கள் கடினமானது அல்லது சில நேரங்களில் தட்டச்சு செய்ய முடியாது. உறுதிப்படுத்த கடவுச்சொல் எல்லா இடத்திலும் லத்தின் எழுத்துக்களில் மட்டுமே (A-Z, a-z), இலக்கங்கள் (0-9), நிறுத்தல் குறிகள் (எ.கா. கால்புள்ளி, நிறுத்தல் புள்ளி) மற்றும் இடைவெளி என இருக்க வேண்டும். இந்த கடவுச்சொல்லை எப்படியேனும் பயன்படுத்த வேண்டுமா?"
+
+#: ../src/userGroupCheck.py:185
+#, python-format
+msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
+msgstr "தேர்ந்தெடுக்கப்பட்ட கடவுச்சொல் மிகவும் சாதாரணது: %s. இதனை எப்படியும் பயன்படுத்த வேண்டுமா?"
+
+#. have to check for whitespace for gecos, since whitespace is ok
+#: ../src/userGroupCheck.py:196
+#, python-format
+msgid "The name '%s' contains invalid characters.  Please use only UTF-8 characters."
+msgstr " '%s' பெயர் தவறான எழுத்தை கொண்டுள்ளது. UTF-8 எழுத்துக்களை மட்டும் பயன்படுத்தவும்."
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: ../src/userGroupCheck.py:204
+#, python-format
+msgid "The name '%s' contains a colon.  Please do not use colons in the name."
+msgstr "'%s' பயனர் பெயரில் முக்காற் புள்ளி உள்ளது. பெயரில் முக்காற் புள்ளி பயன்படுத்தக்கூடாது."
+
+#: ../src/userGroupCheck.py:213
+msgid "Please enter a home directory."
+msgstr "ஒரு இல்ல அடைவை உள்ளிடவும்."
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: ../src/userGroupCheck.py:220
+#, python-format
+msgid "The directory name '%s' contains a colon.  Please do not use colons in the directory name."
+msgstr "'%s' அடைவின் பெயரில் முக்காற் புள்ளி உள்ளது, அடைவின் பெயரில் முக்காற் புள்ளி பயன்படுத்த வேண்டாம்."
+
+#: ../src/userGroupCheck.py:229
+#, python-format
+msgid "The directory name '%s' doesn't begin with a '/'. Please specify an absolute path for the home directory."
+msgstr "'%s' அடைவின் பெயர்  '/' ஆல் துவங்கவில்லை. இல்ல அடைவின் முழு பாதையையும் குறிப்பிடவும்."
+
+#: ../src/userGroupCheck.py:235
+#, python-format
+msgid "The directory name '%s' has path components which are too long. Please use shorter path components for the home directory."
+msgstr "'%s' அடைவு பெயரின் பாதை கூறுகள் மிக நீளமாக உள்ளது. இல்ல அடைவுக்கு குறைந்த பாதை கூறுகளை பயன்படுத்தவும்."
+
+#: ../src/userGroupCheck.py:242
+#, python-format
+msgid "The directory name '%s' contains empty path components. Please specify a home directory name without empty path components."
+msgstr "'%s' அடைவு பெயரின் வெற்று பாதை கூறுகள் உள்ளது. இல்ல அடைவுக்கு வெற்றில்லாத கூறுகளை பயன்படுத்தவும்."
+
+#: ../src/userGroupCheck.py:251
+#, python-format
+msgid "The directory name '%s' contains illegal path components. Please don't use '.' or '..' as path components for the home directory."
+msgstr "'%s' அடைவு பெயரின் தவறான பாதை கூறுகள் உள்ளது. இல்ல அடைவுக்கு '.' அல்லது '..'  போன்ற பாதை கூறுகளை பயன்படுத்த வேண்டாம்."
+
+#: ../src/userGroupCheck.py:267
+#, python-format
+msgid "The directory '%(dir)s' cannot be created ('%(parent_dir)s' is not writable). Please choose a writable location."
+msgstr "இந்த அடைவு '%(dir)s'-ஐ உருவாக்க முடியாது ('%(parent_dir)s' எழுதக்கூடியதல்ல). ஒரு எழுதக்கூடிய இடத்தை தேர்ந்தெடுக்கவும்."
 
 #.
 #. * Translatable strings file generated by Glade.
@@ -659,11 +538,13 @@ msgstr ""
 msgid "Add New Group"
 msgstr "புதிய குழுவை சேர்"
 
-#: system-config-users.gladestrings:8 system-config-users.gladestrings:38
+#: system-config-users.gladestrings:8
+#: system-config-users.gladestrings:37
 msgid "_Group Name:"
 msgstr "குழுப் பெயர் (_G):"
 
-#: system-config-users.gladestrings:9 system-config-users.gladestrings:74
+#: system-config-users.gladestrings:9
+#: system-config-users.gladestrings:73
 msgid "Specify g_roup ID manually:"
 msgstr "கைமுறையாக குழு குறியீட்டை குறிப்பிடவும் (_r)"
 
@@ -675,7 +556,8 @@ msgstr "பயனர் பண்புகள்"
 msgid "User _Name:"
 msgstr "பயனர் பெயர் (_N):"
 
-#: system-config-users.gladestrings:12 system-config-users.gladestrings:64
+#: system-config-users.gladestrings:12
+#: system-config-users.gladestrings:63
 msgid "_Full Name:"
 msgstr "முழுப் பெயர் (_F):"
 
@@ -683,11 +565,13 @@ msgstr "முழுப் பெயர் (_F):"
 msgid "Pass_word:"
 msgstr "கடவுச்சொல் (_w):"
 
-#: system-config-users.gladestrings:14 system-config-users.gladestrings:66
+#: system-config-users.gladestrings:14
+#: system-config-users.gladestrings:65
 msgid "Confir_m Password:"
 msgstr "கடவுச்சொல்லை உறுதிப்படுத்து (_m):"
 
-#: system-config-users.gladestrings:15 system-config-users.gladestrings:67
+#: system-config-users.gladestrings:15
+#: system-config-users.gladestrings:66
 msgid "_Login Shell:"
 msgstr "புகுபதிவு ஷெல் (_L):"
 
@@ -695,7 +579,8 @@ msgstr "புகுபதிவு ஷெல் (_L):"
 msgid "_Home Directory:"
 msgstr "இல்ல அடைவு (_H):"
 
-#: system-config-users.gladestrings:17 system-config-users.gladestrings:68
+#: system-config-users.gladestrings:17
+#: system-config-users.gladestrings:67
 msgid "S_ELinux role:"
 msgstr "S_ELinux பங்கு:"
 
@@ -711,11 +596,12 @@ msgstr "கணக்கு முடிவுறுதலை செயல்ப�
 msgid "Account e_xpires (YYYY-MM-DD):"
 msgstr "கணக்கு காலாவதி (_x) (YYYY-MM-DD):"
 
-#: system-config-users.gladestrings:21 system-config-users.gladestrings:29
+#: system-config-users.gladestrings:21
 msgid "     "
 msgstr "     "
 
-#: system-config-users.gladestrings:22 system-config-users.gladestrings:23
+#: system-config-users.gladestrings:22
+#: system-config-users.gladestrings:23
 msgid "-"
 msgstr "-"
 
@@ -728,266 +614,271 @@ msgid "_Account Info"
 msgstr "கணக்கு தகவல் (_A)"
 
 #: system-config-users.gladestrings:26
-msgid "User last changed password on:"
-msgstr "பயனர் கடைசியாக கடவுச்சொல் மாற்றியது:"
-
-#: system-config-users.gladestrings:27
-msgid "Unknown"
-msgstr "தெரியாதது"
-
-#: system-config-users.gladestrings:28
 msgid "_Enable password expiration"
 msgstr "கடவுச்சொல் முடிவுற்றதை செயல்படுத்தவும் (_E)"
 
-#: system-config-users.gladestrings:30
+#: system-config-users.gladestrings:27
 msgid "Days before change a_llowed:"
 msgstr "மாற்றம் அனுமதிக்கப்படுவதற்கு முன் நாட்கள்:"
 
-#: system-config-users.gladestrings:31
+#: system-config-users.gladestrings:28
 msgid "Days before change _required:"
 msgstr "முந்தைய நாட்களின் மாற்றம் தேவைப்படுகிறது (_r):"
 
-#: system-config-users.gladestrings:32
+#: system-config-users.gladestrings:29
 msgid "Days _warning before change:"
 msgstr "மாற்றத்திற்கு முன் எச்சரிக்கையின் நாட்கள் (_w):"
 
-#: system-config-users.gladestrings:33
+#: system-config-users.gladestrings:30
 msgid "Days before account _inactive:"
 msgstr "கணக்கு செயலிழக்கப்படுவதற்கு முன் நாட்கள் (_i):"
 
-#: system-config-users.gladestrings:34
+#: system-config-users.gladestrings:31
+msgid "Password last changed on..."
+msgstr "கடவுச்சொல் கடைசியாக மாற்றியது..."
+
+#: system-config-users.gladestrings:32
+msgid "Force password change on next login"
+msgstr "கடவுச்சொல்லை மாற்ற வலியுறுத்துதல் அடுத்த புகுபதிவில்"
+
+#: system-config-users.gladestrings:33
 msgid "_Password Info"
 msgstr "கடவுச்சொல் விவரம் (_P)"
 
-#: system-config-users.gladestrings:35
+#: system-config-users.gladestrings:34
 msgid "Select the groups that the user will be a member of:"
 msgstr "பயனர் உறுப்பினர் இருக்கும் குழுவை தேர்ந்தெடுக்கவும்:"
 
-#: system-config-users.gladestrings:36
+#: system-config-users.gladestrings:35
 msgid "_Groups"
 msgstr "குழுக்கள் (_G)"
 
-#: system-config-users.gladestrings:37
+#: system-config-users.gladestrings:36
 msgid "Group Properties"
 msgstr "குழு பண்புகள்"
 
-#: system-config-users.gladestrings:39
+#: system-config-users.gladestrings:38
 msgid "Group _Data"
 msgstr "குழு தகவல் (_D)"
 
-#: system-config-users.gladestrings:40
+#: system-config-users.gladestrings:39
 msgid "Select the users to join this group:"
 msgstr "இந்த குழுவில் சேரும் பயனரை தேர்ந்தெடுக்கவும்:"
 
-#: system-config-users.gladestrings:41
+#: system-config-users.gladestrings:40
 msgid "Group _Users"
 msgstr "குழுப் பயனர்கள் (_U)"
 
-#: system-config-users.gladestrings:42
+#: system-config-users.gladestrings:41
 msgid "User Manager"
 msgstr "பயனர் மேலாளர்"
 
-#: system-config-users.gladestrings:43
+#: system-config-users.gladestrings:42
 msgid "_File"
 msgstr "கோப்பு (_F)"
 
-#: system-config-users.gladestrings:44 system-config-users.gladestrings:49
+#: system-config-users.gladestrings:43
+#: system-config-users.gladestrings:48
 msgid "Add _User"
 msgstr "பயனரை சேர்க்கவும் (_U)"
 
-#: system-config-users.gladestrings:45 system-config-users.gladestrings:50
+#: system-config-users.gladestrings:44
+#: system-config-users.gladestrings:49
 msgid "Add _Group"
 msgstr "குழுவை சேர்க்கவும் (_G)"
 
-#: system-config-users.gladestrings:46
+#: system-config-users.gladestrings:45
 msgid "_Edit"
 msgstr "திருத்தவும் (_E)"
 
-#: system-config-users.gladestrings:47 system-config-users.gladestrings:57
+#: system-config-users.gladestrings:46
+#: system-config-users.gladestrings:56
 msgid "_Help"
 msgstr "உதவி (_H)"
 
-#: system-config-users.gladestrings:48
+#: system-config-users.gladestrings:47
 msgid "_Contents"
 msgstr "பொருளடக்கங்கள் (_C)"
 
-#: system-config-users.gladestrings:51
+#: system-config-users.gladestrings:50
 msgid "Edit properties"
 msgstr "பண்புகளை திருத்தவும்"
 
-#: system-config-users.gladestrings:52
+#: system-config-users.gladestrings:51
 msgid "Proper_ties"
 msgstr "பண்புகள் (_t)"
 
-#: system-config-users.gladestrings:53
+#: system-config-users.gladestrings:52
 msgid "_Delete"
 msgstr "அழிக்கவும் (_D)"
 
-#: system-config-users.gladestrings:54
+#: system-config-users.gladestrings:53
 msgid "Reload"
 msgstr "மீண்டும் ஏற்றவும்"
 
-#: system-config-users.gladestrings:55
+#: system-config-users.gladestrings:54
 msgid "_Refresh"
 msgstr "புதுப்பிக்கவும் (_R)"
 
-#: system-config-users.gladestrings:56
+#: system-config-users.gladestrings:55
 msgid "Help"
 msgstr "உதவி"
 
-#: system-config-users.gladestrings:58
+#: system-config-users.gladestrings:57
 msgid "Sea_rch filter:"
 msgstr "வடிப்பி தேடுதல் (_r):"
 
-#: system-config-users.gladestrings:59
+#: system-config-users.gladestrings:58
 msgid "_Apply filter"
 msgstr "வடிப்பியை செயல்படுத்தவும் (_A)"
 
-#: system-config-users.gladestrings:60
+#: system-config-users.gladestrings:59
 msgid "U_sers"
 msgstr "பயனர்கள் (_s)"
 
-#: system-config-users.gladestrings:61
+#: system-config-users.gladestrings:60
 msgid "Gr_oups"
 msgstr "குழுக்கள் (_o)"
 
-#: system-config-users.gladestrings:62
+#: system-config-users.gladestrings:61
 msgid "Add New User"
 msgstr "புதிய பயனரை சேர்"
 
-#: system-config-users.gladestrings:63
+#: system-config-users.gladestrings:62
 msgid "_User Name:"
 msgstr "பயனர் பெயர் (_U):"
 
-#: system-config-users.gladestrings:65
+#: system-config-users.gladestrings:64
 msgid "_Password:"
 msgstr "கடவுச்சொல் (_P):"
 
-#: system-config-users.gladestrings:69
+#: system-config-users.gladestrings:68
 msgid "Create _home directory"
 msgstr "இல்ல அடைவை உருவாக்கவும் (_h)"
 
-#: system-config-users.gladestrings:70
+#: system-config-users.gladestrings:69
 msgid "    "
 msgstr "    "
 
-#: system-config-users.gladestrings:71
+#: system-config-users.gladestrings:70
 msgid "Home _Directory:"
 msgstr "இல்ல அடைவு (_D):"
 
-#: system-config-users.gladestrings:72
+#: system-config-users.gladestrings:71
 msgid "Create a private _group for the user"
 msgstr "பயனருக்கு தனிப்பட்ட குழுவை உருவாக்கவும் (_g)"
 
-#: system-config-users.gladestrings:73
+#: system-config-users.gladestrings:72
 msgid "Specify u_ser ID manually:"
 msgstr "பயனர் குறியீட்டை கைமுறையாக குறிப்பிடவும் (_s)"
 
-#: system-config-users.gladestrings:75
+#: system-config-users.gladestrings:74
 msgid "About system-config-users"
 msgstr "system-config-users பற்றி"
 
-#: system-config-users.gladestrings:76
+#: system-config-users.gladestrings:75
 msgid "<b>system-config-users</b>"
 msgstr "<b>system-config-users</b>"
 
-#: system-config-users.gladestrings:77
+#: system-config-users.gladestrings:76
 msgid "Version @VERSION@"
 msgstr "பதிப்பு @VERSION@"
 
-#: system-config-users.gladestrings:78
+#: system-config-users.gladestrings:77
 msgid "Copyright (c) 2001 - 2005 Red Hat, Inc."
 msgstr "காப்புரிமை (c) 2001 - 2005 Red Hat, Inc."
 
-#: system-config-users.gladestrings:79
+#: system-config-users.gladestrings:78
 msgid "This software is distributed under the GNU General Public License."
 msgstr "GNU General Public License அடிப்படையில் இந்த மென்பொருள் விநியோகிக்கப்படுகிறது."
 
-#: system-config-users.gladestrings:80
+#: system-config-users.gladestrings:79
 msgid "Preferences"
 msgstr "முன்னுரிமைகள்"
 
-#: system-config-users.gladestrings:81
+#: system-config-users.gladestrings:80
 msgid "_Hide system users and groups"
 msgstr "கணினி பயனர்கள் மற்றும் குழுக்களை மறைக்கவும் (_H)"
 
-#: system-config-users.gladestrings:82
+#: system-config-users.gladestrings:81
 msgid "<b>User and Group Lists</b>"
 msgstr "<b>பயனர் மற்றும் குழு பட்டியல்கள்</b>"
 
-#: system-config-users.gladestrings:83
-msgid ""
-"Ensure that a new user gets a higher UID than all existing users, if not set "
-"manually."
-msgstr ""
-"கைமுறையாக அமைக்காவிட்டால், ஏற்கெனவே இருக்கும் அனைத்து பயனர்களையும் விட ஒரு புதிய பயனர் "
-"உயர்ந்த UIDஐ பெற்றிருக்கும்."
+#: system-config-users.gladestrings:82
+msgid "Ensure that a new user gets a higher UID than all existing users, if not set manually."
+msgstr "கைமுறையாக அமைக்காவிட்டால், ஏற்கெனவே இருக்கும் அனைத்து பயனர்களையும் விட ஒரு புதிய பயனர் உயர்ந்த UIDஐ பெற்றிருக்கும்."
 
-#: system-config-users.gladestrings:84
+#: system-config-users.gladestrings:83
 msgid "Automatically assigned _UID must be highest"
 msgstr "தானாக ஒதுக்கப்பட்ட _UID உயர்ந்ததாக இருக்க வேண்டும்"
 
-#: system-config-users.gladestrings:85
-msgid ""
-"Ensure that a new group gets a higher GID than all existing groups, if not "
-"set manually."
-msgstr ""
-"கைமுறையாக அமைக்காவிட்டால், ஏற்கெனவே இருக்கும் அனைத்து குழுக்களையும் விட ஒரு புதிய "
-"குழு உயர்ந்த GIDஐ பெற்றிருக்கும்."
+#: system-config-users.gladestrings:84
+msgid "Ensure that a new group gets a higher GID than all existing groups, if not set manually."
+msgstr "கைமுறையாக அமைக்காவிட்டால், ஏற்கெனவே இருக்கும் அனைத்து குழுக்களையும் விட ஒரு புதிய குழு உயர்ந்த GIDஐ பெற்றிருக்கும்."
 
-#: system-config-users.gladestrings:86
+#: system-config-users.gladestrings:85
 msgid "Automatically assigned _GID must be highest"
 msgstr "தானாக ஒதுக்கப்பட்ட _GID உயர்ந்ததாக இருக்க வேண்டும்"
 
-#: system-config-users.gladestrings:87
+#: system-config-users.gladestrings:86
 msgid "Prefer that private group GID is the _same as UID"
 msgstr "தனிப்பட்ட குழு GID யானது UIDஐ போல இருக்கும் (_s)"
 
-#: system-config-users.gladestrings:88
+#: system-config-users.gladestrings:87
 msgid "<b>New Users</b>"
 msgstr "<b>புதிய பயனர்கள்</b>"
 
-#: system-config-users.gladestrings:90
+#: system-config-users.gladestrings:89
 msgid "Copyright © 2001-2007 Red Hat, Inc."
 msgstr "பதிப்புரிமை © 2001-2007 Red Hat, Inc."
 
-#: system-config-users.gladestrings:91
+#: system-config-users.gladestrings:90
 msgid "Manages users and groups on your system."
 msgstr "பயனர்கள் மற்றும் குழுக்களை உங்கள் கணினியில் மேலாண்மை செய்கிறது."
 
-#: system-config-users.gladestrings:92
+#: system-config-users.gladestrings:91
 msgid ""
-"system-config-users is free software; you can redistribute it and/or modify "
-"it under the terms of the GNU General Public License as published by the "
-"Free Software Foundation; either version 2 of the License, or (at your "
-"option) any later version.\n"
+"system-config-users is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"system-config-users is distributed in the hope that it will be useful, but "
-"WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
-"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-"more details.\n"
+"system-config-users is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"system-config-users; if not, write to the Free Software Foundation, Inc., 51 "
-"Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+"You should have received a copy of the GNU General Public License along with system-config-users; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
 msgstr ""
-"system-config-users is free software; you can redistribute it and/or modify "
-"it under the terms of the GNU General Public License as published by the "
-"Free Software Foundation; either version 2 of the License, or (at your "
-"option) any later version.\n"
+"system-config-users is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"system-config-users is distributed in the hope that it will be useful, but "
-"WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY "
-"or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-"more details.\n"
+"system-config-users is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"system-config-users; if not, write to the Free Software Foundation, Inc., 51 "
-"Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+"You should have received a copy of the GNU General Public License along with system-config-users; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
 
-#: system-config-users.gladestrings:97
+#: system-config-users.gladestrings:96
 msgid "translator-credits"
 msgstr "I. Felix <ifelix@redhat.com> 2008"
+
+#~ msgid ""
+#~ "The password contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "கடவுச்சொல்லில் தவறான எழுத்துக்கள் உள்ளது. ASCII எழுத்துக்களை மட்டும் பயன்படுத்தவும்."
+
+#~ msgid ""
+#~ "The directory name '%s' cannot be created ('%s' is not writable). Please "
+#~ "chose a writable location."
+#~ msgstr ""
+#~ "அடைவு பெயர் '%s'ஐ உருவாக்க முடியவில்லை ('%s' எழுதக்கூடியது). எழுதக்கூடிய இடத்தை "
+#~ "தேர்ந்தெடு."
+
+#~ msgid "Please enter a password for the user."
+#~ msgstr "பயனர் கடவுச்சொல்லை உள்ளிடவும்."
+
+#~ msgid "The password is too short.  Please use at least 6 characters."
+#~ msgstr ""
+#~ "கடவுச்சொல் மிகவும் சிறியதாக உள்ளது. குறைந்தது 6 எழுத்துக்களையாவது பயன்படுத்தவும்."
+
+#~ msgid "User last changed password on:"
+#~ msgstr "பயனர் கடைசியாக கடவுச்சொல் மாற்றியது:"
+
+#~ msgid "Unknown"
+#~ msgstr "தெரியாதது"
 
 #~ msgid "C_onfirm Password:"
 #~ msgstr "கடவுச்சொல்லை உறுதிப்படுத்தவும் (_o):"

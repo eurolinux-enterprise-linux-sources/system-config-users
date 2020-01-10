@@ -345,7 +345,7 @@ class mainWindow:
 
             # /etc/group <-> /etc/gshadow inconsistency canary
             try:
-                gidNumber = group.get (libuser.GIDNUMBER)[0]
+                group.get (libuser.GIDNUMBER)[0]
             except IndexError:
                 if groupName not in inconsistent_groups:
                     inconsistent_groups.append (groupName)
@@ -470,15 +470,15 @@ class mainWindow:
         for user in self.user_dict.keys():
             userEnt = self.user_dict[user]
             uid = userEnt.get(libuser.USERNAME)[0]
-            consistent = True
             uidNumber = -1
             gidNumber = -1
             try:
                 uidNumber = userEnt.get(libuser.UIDNUMBER)[0]
                 gidNumber = userEnt.get(libuser.GIDNUMBER)[0]
             except IndexError:
-                # user present in /etc/shadow but not /etc/passwd
-                consistent = False
+                # skip inconsistent user present in /etc/shadow but not
+                # in /etc/passwd
+                continue
 
             if userEnt.get(libuser.GECOS):
                 gecos = userEnt.get(libuser.GECOS)[0]
@@ -705,9 +705,9 @@ class mainWindow:
                     #Ok, we're going to delete the user
                     if filesDeleteCheckButton and filesDeleteCheckButton.get_active() == 1:
                         #Let's delete the home directory too
-                        self.rmrf(homeDir)
+                        self.rmhomedir(homeDir)
                         if os.access (mailSpool, os.W_OK) and os.lstat (mailSpool).st_uid == uid:
-                            self.rmrf(mailSpool)
+                            os.remove(mailSpool)
                         self.rmtmpfiles (("/tmp", "/var/tmp"), uid)
                     self.ADMIN.deleteUser(userEnt)
                     dlg.destroy()
@@ -870,24 +870,32 @@ class mainWindow:
         else:
             self.preferences['PREFER_SAME_UID_GID'] = False
             
-    def rmrf(self, path):
+    def rmhomedir(self, path):
         # only allow absolute paths to be deleted
         if not os.path.isabs(path):
-            raise RuntimeError("rmrf(): path must be absolute")
+            raise RuntimeError("rmhomedir(): path must be absolute")
 
         path = os.path.abspath (path)
         pathcomps = path.split (os.path.sep)
 
+        def onerror_chown_homedir(errfunc, errpath, exc_info):
+            if errfunc == os.rmdir and errpath == path:
+                # If just rmdir() on the actual home directory entry failed,
+                # assume that it's e.g. an automounted home directory which
+                # can't be removed normally (automounter needs to be
+                # reconfigured for that). In this case, change ownership back
+                # to root.
+                os.chown(path, 0, 0)
+            else:
+                # In all other cases, re-raise the exception
+                raise
+
         # Don't allow the system root or anything beneath /dev to be deleted
         if path != os.path.sep and len (pathcomps) >= 2 and pathcomps[1] != "dev" \
                 and os.path.lexists (path):
-            try:
-                os.remove (path)
-            except OSError:
-                # possibly a directory
-                shutil.rmtree (path)
-            except:
-                raise
+            # ignore errors because the home directory may be an auto-mounted
+            # directory which can't be removed with normal means
+            shutil.rmtree (path, onerror=onerror_chown_homedir)
 
     def do_rm_userowned (self, path, uid):
         if os.path.isdir (path) and not os.path.islink (path):

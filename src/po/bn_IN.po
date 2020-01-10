@@ -9,35 +9,172 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-users.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-20 16:08+0200\n"
-"PO-Revision-Date: 2010-07-23 17:20+0530\n"
+"POT-Creation-Date: 2010-11-30 16:08+0100\n"
+"PO-Revision-Date: 2010-12-07 12:16+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
-"Language-Team: Bengali INDIA <anubad@lists.ankur.org.in>\n"
+"Language-Team: American English <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: \n"
 "Generated-By: pygettext.py 1.1\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "\n"
 "\n"
 "\n"
 
 #: ../src/groupProperties.py:108 ../src/groupWindow.py:108
-#: ../src/userGroupCheck.py:61
+#: ../src/userGroupCheck.py:64
 msgid "Please enter a group name."
 msgstr "অনুগ্রহ করে দলের নাম লিখুন।"
 
 #: ../src/groupProperties.py:122
 #, python-format
 msgid "The group '%s' already exists. Please choose a different name."
-msgstr "'%s' নামক একটি দল বর্তমানে উপস্থিত রয়েছে। অনুগ্রহ করে একটি পৃথক নাম নির্বাচন করুন।"
+msgstr ""
+"'%s' নামক একটি দল বর্তমানে উপস্থিত রয়েছে। অনুগ্রহ করে একটি পৃথক নাম নির্বাচন করুন।"
 
 #: ../src/groupProperties.py:164 ../src/mainWindow.py:760
 #, python-format
 msgid "You cannot remove user '%s' from their primary group."
 msgstr "'%s' ব্যবহারকারীকে নিজের প্রাথমিক দল থেকে সরিয়ে ফেলা সম্ভব নয়।"
+
+#: ../src/userProperties.py:113 ../src/userWindow.py:85
+msgid "User"
+msgstr "ব্যবহারকারী"
+
+#: ../src/userProperties.py:113 ../src/userWindow.py:85
+msgid "Staff"
+msgstr "কর্মচারী"
+
+#: ../src/userProperties.py:114 ../src/userWindow.py:86
+msgid "System Administrator"
+msgstr "সিস্টেম অ্যাডমিনিস্ট্রেটর"
+
+#: ../src/userProperties.py:144
+msgid "Primary Group:"
+msgstr "প্রাথমিক দল:"
+
+#: ../src/userProperties.py:226
+#, python-format
+msgid "Password last changed on: %x"
+msgstr "পাসওয়ার্ড সর্বশেষ পরিবর্তনের সময়: %x"
+
+#: ../src/userProperties.py:306 ../src/userGroupCheck.py:54
+msgid "Please enter a user name."
+msgstr "অনুগ্রহ করে ব্যবহারকারীর নাম লিখুন।"
+
+#: ../src/userProperties.py:325
+#, python-format
+msgid "The user '%s' already exists. Please choose a different name."
+msgstr "'%s' নামক ব্যবহারকারী বর্তমানে উপস্থিত। অনুগ্রহ করে পৃথক নাম নির্বাচন করুন।"
+
+#: ../src/userProperties.py:346
+msgid "Passwords do not match."
+msgstr "পাসওয়ার্ডে গরমিল।"
+
+#: ../src/userProperties.py:423
+msgid "Please select at least one group for the user."
+msgstr "ব্যবহারকারীর জন্য অনুগ্রহ করে অন্তত একটি দল বাছাই করুন।"
+
+#: ../src/userProperties.py:442
+msgid "Please specify the month that the password will expire."
+msgstr "যে মাসে পাসওয়ার্ডের মেয়াদ পূর্ণ হবে তা অনুগ্রহ করে নির্দিষ্ট করুন।"
+
+#: ../src/userProperties.py:450
+msgid "Please specify the day that the password will expire."
+msgstr "যে দিন পাসওয়ার্ডের মেয়াদ পূর্ণ হবে তা অনুগ্রহ করে নির্দিষ্ট করুন।"
+
+#: ../src/userProperties.py:458
+msgid "Please specify the year that the password will expire."
+msgstr "যে বৎসর পাসওয়ার্ডের মেয়াদ পূর্ণ হবে তা অনুগ্রহ করে নির্দিষ্ট করুন।"
+
+#. mktime will throw an OverflowError if the year is too big.
+#: ../src/userProperties.py:474
+msgid "The year is out of range.  Please select a different year."
+msgstr "উল্লিখিত বৎসর নির্দিষ্ট সীমা বহিরভূত।  অনুগ্রহ করে অন্য একটি বৎসর নির্বাচন করুন।"
+
+#: ../src/userProperties.py:504
+msgid "Please specify the number of days before changing the password is allowed."
+msgstr ""
+"যে সংখ্যক দিনের অতিক্রান্ত হওয়ার পরে পাসওয়ার্ড পরিবর্তন করা যাবে তা অনুগ্রহ করে "
+"নির্দিষ্ট করুন।"
+
+#: ../src/userProperties.py:506
+#, python-format
+msgid ""
+"The number of days before changing the password is allowed must be between %"
+"(min)d and %(max)d."
+msgstr ""
+"যে সংখ্যক দিনের অতিক্রান্ত হওয়ার পরে পাসওয়ার্ড পরিবর্তন করা যাবে তা %(min)d ও %"
+"(max)d-র মধ্যে হওয়া আবশ্যক।"
+
+#: ../src/userProperties.py:511
+msgid "Please specify the number of days before changing the password is required."
+msgstr ""
+"যে সংখ্যক দিনের অতিক্রান্ত হওয়ার পরে পাসওয়ার্ড পরিবর্তন করা আবশ্যক হবে তা অনুগ্রহ "
+"করে নির্দিষ্ট করুন।"
+
+#: ../src/userProperties.py:513
+#, python-format
+msgid ""
+"The number of days before changing the password is required must be between %"
+"(min)d and %(max)d."
+msgstr ""
+"যে সংখ্যক দিনের অতিক্রান্ত হওয়ার পরে পাসওয়ার্ড পরিবর্তন করা আবশ্যক তা %(min)d ও %"
+"(max)d-র মধ্যে হওয়া আবশ্যক।"
+
+#: ../src/userProperties.py:517
+msgid ""
+"Please specify the number of days to warn the user before changing the "
+"password is required."
+msgstr ""
+"পাসওয়ার্ড বদল করার নির্দেশ সম্বন্ধে কতদিন পূর্বে ব্যবহারকারীকে সতর্কবার্তা দেওয়া হবে "
+"তা অনুগ্রহ করে নির্দিষ্ট করুন।"
+
+#: ../src/userProperties.py:519
+#, python-format
+msgid ""
+"The number of days to warn the user before changing the password is required "
+"must be between %(min)d and %(max)d."
+msgstr ""
+"যে সংখ্যক দিনের অতিক্রান্ত হওয়ার পরে পাসওয়ার্ড পরিবর্তন সম্পর্কে সচেতন করা যাবে তা %"
+"(min)d ও %(max)d-র মধ্যে হওয়া আবশ্যক।"
+
+#: ../src/userProperties.py:525
+msgid ""
+"Please specify the number of days until the user account becomes inactive "
+"after password has expired."
+msgstr ""
+"পাসওয়ার্ড শেষ হয়ে যাওয়ার কতদিন পরে ব্যবহারকারীর অ্যাকাউন্ট নিষ্ক্রিয় হয়ে যাবে তা "
+"দয়া করে নির্দিষ্ট করুন।"
+
+#: ../src/userProperties.py:527
+#, python-format
+msgid ""
+"The number of days until the user account becomes inactive after the "
+"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
+"means the account won't become inactive."
+msgstr ""
+"পাসওয়ার্ডের মেয়াদ শেষ হয়ে যাওয়ার পরে যে সংখ্যক দিন পরে ব্যবহারকারীর অ্যাকাউন্ট "
+"নিষ্ক্রিয় হয়ে যাবে তা %(min)d ও %(max)d-র মধ্যে হওয়া আবশ্যক। এই ক্ষেত্রে -1 "
+"নির্ধারতি হলে অ্যাকাউন্টটি কখনো নিষ্ক্রিয় হবে না।"
+
+#: ../src/userProperties.py:593
+#, python-format
+msgid ""
+"Unlocking the user failed because:\n"
+"\n"
+"%(errmsg)s"
+msgstr ""
+"নিম্নলিখিত কারণবসত ব্যবহারকারীর অ্যাকাউন্ট আন-লক করা সম্ভব হয়নি:\n"
+"\n"
+"%(errmsg)s"
+
+#: ../src/userProperties.py:596
+msgid "Unlocking the user failed due to an unknown reason."
+msgstr "অজানা কারণবসত ব্যবহারকারীর অ্যাকাউন্ট আন-লক করা সম্ভব হয়নি।"
 
 #: ../src/groupWindow.py:116
 #, python-format
@@ -46,7 +183,7 @@ msgstr " '%s' নামের একটি দল বর্তমানে উ�
 
 #. This uid already exists, so complain
 #. This (chosen) gid already exists, so complain
-#: ../src/groupWindow.py:131 ../src/userWindow.py:292
+#: ../src/groupWindow.py:131 ../src/userWindow.py:274
 #, python-format
 msgid "The gid %s is already in use."
 msgstr "gid %s বর্তমানে ব্যবহৃত হচ্ছে।"
@@ -59,7 +196,7 @@ msgstr ""
 "৫০০-র নিম্নস্ত কোনো সংখ্যার GID মান ব্যবহার করে দল তৈরি করা বাঞ্ছনীয় নয়। আপনি কি "
 "নিশ্চিতরূপে এই কাজ করতে ইচ্ছুক?"
 
-#: ../src/groupWindow.py:160 ../src/userWindow.py:305
+#: ../src/groupWindow.py:160 ../src/userWindow.py:287
 #, python-format
 msgid "Error finding suitable group id not exceeding maximum value of %(maxid)s."
 msgstr "%(maxid)s-র সর্বাধিক মান অতিক্রম না করা দলের id সন্ধান করতে ত্রুটি।"
@@ -182,7 +319,7 @@ msgstr ""
 "ফাইল, যথাক্রমে /etc/shadow ও /etc/gshadow ফাইলের মধ্যে বিসংগতি। এই মুহূর্তে এই "
 "তথ্যগুলি অগ্রাহ্য করা হলেও, এই সমস্যাগুলি যথাশীঘ্র সংশোধন করা আবশ্যক।"
 
-#: ../src/mainWindow.py:578 system-config-users.gladestrings:89
+#: ../src/mainWindow.py:578 system-config-users.gladestrings:88
 msgid "system-config-users"
 msgstr "system-config-users"
 
@@ -282,20 +419,77 @@ msgstr ""
 msgid "Are you sure you want to delete the group '%s'?"
 msgstr "আপনি কি নিশ্চিতরূপে '%s' দলটি মুছে ফেলতে ইচ্ছুক?"
 
+#. The passwords don't match, so complain
+#: ../src/userWindow.py:192
+msgid "The passwords do not match."
+msgstr "পাসওয়ার্ডগুলি মেলেনি।"
+
+#. The user name is blank, so complain
+#: ../src/userWindow.py:223
+msgid "Please specify a user name"
+msgstr "অনুগ্রহ করে ব্যবহারকারীর নাম উল্লেখ করুন"
+
+#. This user already exists, so complain
+#: ../src/userWindow.py:231
+#, python-format
+msgid "An account with username '%s' already exists."
+msgstr "'%s' নামের এক ব্যবহারকারীর অ্যাকাউন্ট বর্তমানে উপস্থিত আছে।"
+
+#. This uid already exists, so complain
+#: ../src/userWindow.py:267
+#, python-format
+msgid "The uid %s is already in use."
+msgstr "uid %s বর্তমানে ব্যবহার হচ্ছে।"
+
+#: ../src/userWindow.py:285
+#, python-format
+msgid "Error finding suitable user id not exceeding maximum value of %(maxid)s."
+msgstr "%(maxid)s-র সর্বাধিক মান অতিক্রম না করা ব্যবহারকারীর id সন্ধান করতে ত্রুটি।"
+
+#: ../src/userWindow.py:297
+msgid ""
+"Creating a user with a UID less than 500 is not recommended.  Are you sure "
+"you want to do this?"
+msgstr ""
+"৫০০-র নিম্নস্ত কোনো সংখ্যার UID মান ব্যবহার করে কোনো ব্যবহারকারী তৈরি করা বাঞ্ছনীয় "
+"নয়। আপনি কি নিশ্চিতরূপে এই কাজ করতে ইচ্ছুক?"
+
+#: ../src/userWindow.py:327
+msgid "A group with this gid already exists.  What would you like to do?"
+msgstr "এই gid সহ একটি দল বর্তমানে আছে। আপনি কী করতে ইচ্ছুক?"
+
+#: ../src/userWindow.py:329
+msgid "A group with this name already exists.  What would you like to do?"
+msgstr "এই নামের একটি দল বর্তমানে আছে। আপনি কী করতে ইচ্ছুক?"
+
+#: ../src/userWindow.py:333
+msgid "Add to the existing group"
+msgstr "বর্তমান দলে যোগ করুন"
+
+#: ../src/userWindow.py:334
+msgid "Add to the 'users' group"
+msgstr "'users' নামক দলে যোগ করুন"
+
+#. Uh-oh.  It looks like /etc/group and /etc/gshadow are out of sync.  Give up and quit.
+#: ../src/userWindow.py:416
+msgid ""
+"The system group database cannot be read.  This problem is most likely "
+"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
+"now."
+msgstr ""
+"সিস্টেম গ্রুপের ডাটাবেস পড়া সম্ভব হয়নি।  সম্ভবত /etc/group এবং /etc/shadow-তে "
+"গরমিল হওয়ার দরুন এই সমস্যা দেখা দিয়েছে।  প্রোগ্রামটি এখন বন্ধ করা হবে।"
+
 #: ../src/system-config-users.py:38
 msgid "system-config-users requires a currently running X server."
 msgstr "system-config-users-র জন্য একটি চলমান X সার্ভার প্রয়োজন।"
 
-#: ../src/userGroupCheck.py:51 ../src/userProperties.py:295
-msgid "Please enter a user name."
-msgstr "অনুগ্রহ করে ব্যবহারকারীর নাম লিখুন।"
-
-#: ../src/userGroupCheck.py:52
+#: ../src/userGroupCheck.py:55
 #, python-format
 msgid "The user name must not exceed %d characters."
 msgstr "ব্যবহারকারীর নামে সর্বোচ্চ %d সংখ্যক অক্ষর ব্যবহার করা যাবে।"
 
-#: ../src/userGroupCheck.py:53
+#: ../src/userGroupCheck.py:56
 #, python-format
 msgid ""
 "The user name '%s' contains whitespace. Please do not include whitespace in "
@@ -304,7 +498,7 @@ msgstr ""
 "'%s' ব্যবহারকারীর নামের মাঝে শূন্যস্থান রয়েছে। অনুগ্রহ করে ব্যবহারকারীর নামে কোনো "
 "শূন্যস্থান লিখবেন না।"
 
-#: ../src/userGroupCheck.py:54
+#: ../src/userGroupCheck.py:57
 #, python-format
 msgid ""
 "The user name '%s' contains a dollar sign which is not at the end. Please "
@@ -315,7 +509,7 @@ msgstr ""
 "ব্যবহার করা হয়নি।  Samba মেশিনের অ্যাকাউন্ট উল্লেখ করতে অনুগ্রহ করে ব্যবহারকারীর "
 "নামের শেষে ডলার চিহ্ন যোগ করুন।"
 
-#: ../src/userGroupCheck.py:55
+#: ../src/userGroupCheck.py:58
 #, python-format
 msgid ""
 "The user name '%s' contains a trailing dollar sign. This should only be used "
@@ -328,14 +522,14 @@ msgstr ""
 "ক্ষেত্রে এটি ব্যবহার করা হলে কিছু সফ্টওয়্যারের মধ্যে সমস্যা দেখা দিতে পারে। সংশ্লিষ্ট "
 "অ্যাকাউন্টটি কোনো Samba মেশিনের অংশ?"
 
-#: ../src/userGroupCheck.py:56
+#: ../src/userGroupCheck.py:59
 #, python-format
 msgid ""
 "The user name '%(name)s' contains an invalid character at position %"
 "(position)d."
 msgstr "'%(name)s' ব্যবহারকারীর নামের মাঝে %(position)d অবস্থানে অবৈধ অক্ষর রয়েছে।"
 
-#: ../src/userGroupCheck.py:57
+#: ../src/userGroupCheck.py:60
 msgid ""
 "Using all numbers as the user name can cause confusion about whether the "
 "user name or numerical user id is meant. Do you really want to use a "
@@ -345,12 +539,12 @@ msgstr ""
 "user id-র সংখ্যার উল্লেখ সম্বন্ধে ভ্রান্তি সৃষ্টি হতে পারে। আপনি কি নিশ্চিতরূপে "
 "ব্যবহারকারীর জন্য শুধুমাত্র সংখ্যাবিশিষ্ট  নাম প্রয়োগ করতে ইচ্ছুক?"
 
-#: ../src/userGroupCheck.py:62
+#: ../src/userGroupCheck.py:65
 #, python-format
 msgid "The group name must not exceed %d characters."
 msgstr "দলের নাম %d থেকে কম সংখ্যক অক্ষর ব্যবহার করে লেখা আবশ্যক।"
 
-#: ../src/userGroupCheck.py:63
+#: ../src/userGroupCheck.py:66
 #, python-format
 msgid ""
 "The group name '%s' contains whitespace. Please do not include whitespace in "
@@ -359,14 +553,14 @@ msgstr ""
 "'%s' দলের নামের মাঝে শূন্যস্থান রয়েছে। অনুগ্রহ করে দলের নামে কোনো শূন্যস্থান লিখবেন "
 "না।"
 
-#: ../src/userGroupCheck.py:64
+#: ../src/userGroupCheck.py:67
 #, python-format
 msgid ""
 "The group name '%(name)s' contains an invalid character at position %"
 "(position)d."
 msgstr "'%(name)s' দলের নামের মধ্যে %(position)d অবস্থানে অবৈধ অক্ষর উপস্থিত রয়েছে।"
 
-#: ../src/userGroupCheck.py:65
+#: ../src/userGroupCheck.py:68
 msgid ""
 "Using all numbers as the group name can cause confusion about whether the "
 "group name or numerical group id is meant. Do you really want to use a "
@@ -376,19 +570,27 @@ msgstr ""
 "উল্লেখ সম্বন্ধে ভ্রান্তি সৃষ্টি হতে পারে। আপনি কি নিশ্চিতরূপে দলের জন্য শুধুমাত্র "
 "সংখ্যাবিশিষ্ট  নাম প্রয়োগ করতে ইচ্ছুক?"
 
-#: ../src/userGroupCheck.py:144
-msgid "The password contains invalid characters.  Please use only ASCII characters."
+#: ../src/userGroupCheck.py:157
+msgid ""
+"The chosen password contains characters which may be hard or impossible to "
+"type in certain situations. To ensure the password can be typed everywhere "
+"use only unaccented Latin letters (A-Z, a-z), digits (0-9), punctuation "
+"characters (e.g. comma, full stop) and the space character in the password. "
+"Do you want to use this password anyway?"
 msgstr ""
-"পাসওয়ার্ডে অবৈধ অক্ষর ব্যবহার করা হয়েছে। অনুগ্রহ করে শুধুমাত্র ASCII অক্ষরমালার অক্ষর "
-"ব্যবহার করুন।"
+"নির্বাচিত পাসওয়ার্ডের মধ্যে উপস্থিত কয়েকটি অক্ষর কিছু পরিস্থিতিতে লেখা কঠিন অথবা অসম্ভব "
+"হতে পারে। যে কোনো ক্ষেত্রে সহজে পাসওয়ার্ড লেখার সুবিধা উপলব্ধ করার জন্য শুধুমাত্র "
+"স্বরচিহ্নবিহীন লাতিন অক্ষর (A-Z, a-z), সংখ্যা (0-9), যতিচিহ্ন (যেমন, কমা অথবা সম্পূর্ণ "
+"বিরাম) ও শূণ্যস্থান ব্যবহার করে পাসওয়ার্ড প্রস্তুত করা বাঞ্ছনীয়। উল্লিখিত পাসওয়ার্ডটি "
+"তথাপি ব্যবহার করা হবে কি?"
 
-#: ../src/userGroupCheck.py:167
+#: ../src/userGroupCheck.py:185
 #, python-format
 msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
 msgstr "নির্বাচিত পাসওয়ার্ড অত্যন্ত দুর্বল: %s। তথাপি ব্যবহার করা হবে কি?"
 
 #. have to check for whitespace for gecos, since whitespace is ok
-#: ../src/userGroupCheck.py:178
+#: ../src/userGroupCheck.py:196
 #, python-format
 msgid "The name '%s' contains invalid characters.  Please use only UTF-8 characters."
 msgstr ""
@@ -396,19 +598,19 @@ msgstr ""
 "ব্যবহার করুন।"
 
 #. have to check for colons since /etc/passwd is a colon delimited file
-#: ../src/userGroupCheck.py:186
+#: ../src/userGroupCheck.py:204
 #, python-format
 msgid "The name '%s' contains a colon.  Please do not use colons in the name."
 msgstr ""
 "'%s' নামটিতে একটি কোলোন চিহ্ন ব্যবহার করা হয়েছে। অনুগ্রহ করে নামে কোনো কোলোন "
 "চিহ্ন লিখবেন না।"
 
-#: ../src/userGroupCheck.py:195
+#: ../src/userGroupCheck.py:213
 msgid "Please enter a home directory."
 msgstr "অনুগ্রহ করে ব্যক্তিগত ডিরেক্টরির নাম লিখুন।"
 
 #. have to check for colons since /etc/passwd is a colon delimited file
-#: ../src/userGroupCheck.py:202
+#: ../src/userGroupCheck.py:220
 #, python-format
 msgid ""
 "The directory name '%s' contains a colon.  Please do not use colons in the "
@@ -417,7 +619,7 @@ msgstr ""
 "'%s' ডিরেক্টরির নামের মাঝে একটি কোলোন চিহ্ন রয়েছে। অনুগ্রহ করে ডিরেক্টরির নামে "
 "কোনো কোলোন চিহ্ন ব্যবহার করবেন না।"
 
-#: ../src/userGroupCheck.py:211
+#: ../src/userGroupCheck.py:229
 #, python-format
 msgid ""
 "The directory name '%s' doesn't begin with a '/'. Please specify an absolute "
@@ -426,7 +628,7 @@ msgstr ""
 "'%s' ডিরেক্টরির নামের প্রারম্ভে '/' চিহ্ন নেই। অনুগ্রহ করে ব্যক্তিগত ডিরেক্টরির "
 "সুনির্দিষ্ট পাথ উল্লেখ করুন।"
 
-#: ../src/userGroupCheck.py:217
+#: ../src/userGroupCheck.py:235
 #, python-format
 msgid ""
 "The directory name '%s' has path components which are too long. Please use "
@@ -435,7 +637,7 @@ msgstr ""
 "'%s' ডিরেক্টরির নামের মাঝে উপস্থিত পাথের ক্ষেত্রে অত্যাধিক লম্বা তথ্য উল্লিখিত "
 "হয়েছে। অনুগ্রহ করে ব্যক্তিগত ডিরেক্টরির নামের জন্য কম দৈর্ঘ্যে পাথের তথ্য লিখুন।"
 
-#: ../src/userGroupCheck.py:224
+#: ../src/userGroupCheck.py:242
 #, python-format
 msgid ""
 "The directory name '%s' contains empty path components. Please specify a "
@@ -444,7 +646,7 @@ msgstr ""
 "'%s' ডিরেক্টরির নামের মাঝে উপস্থিত পাথের ক্ষেত্রে তথ্য উল্লিখিত হয়নি। অনুগ্রহ করে "
 "ব্যক্তিগত ডিরেক্টরির জন্য পাথের তথ্যবিশিষ্ট নাম লিখুন।"
 
-#: ../src/userGroupCheck.py:233
+#: ../src/userGroupCheck.py:251
 #, python-format
 msgid ""
 "The directory name '%s' contains illegal path components. Please don't use "
@@ -453,207 +655,14 @@ msgstr ""
 "'%s' ডিরেক্টরির নামের মাঝে উপস্থিত পাথের মধ্যে অবৈধ তথ্য উল্লিখিত হয়েছে। অনুগ্রহ "
 "করে ব্যক্তিগত ডিরেক্টরির জন্য পাথের তথ্যবিশিষ্ট নাম লিখুন।"
 
-#: ../src/userGroupCheck.py:241
+#: ../src/userGroupCheck.py:267
 #, python-format
 msgid ""
-"The directory name '%s' cannot be created ('%s' is not writable). Please "
-"chose a writable location."
-msgstr "'%s' নামক ডিরেক্টরি নির্মাণ করা সম্ভব নয় ('%s'-র মধ্যে লেখা সম্ভব নয়)। অনুগ্রহ করে লিখনযোগ্য কোনো অবস্থান নির্বাচন করুন।"
-
-#: ../src/userProperties.py:108 ../src/userWindow.py:82
-msgid "User"
-msgstr "ব্যবহারকারী"
-
-#: ../src/userProperties.py:108 ../src/userWindow.py:82
-msgid "Staff"
-msgstr "কর্মচারী"
-
-#: ../src/userProperties.py:109 ../src/userWindow.py:83
-msgid "System Administrator"
-msgstr "সিস্টেম অ্যাডমিনিস্ট্রেটর"
-
-#: ../src/userProperties.py:139
-msgid "Primary Group:"
-msgstr "প্রাথমিক দল:"
-
-#: ../src/userProperties.py:314
-#, python-format
-msgid "The user '%s' already exists. Please choose a different name."
-msgstr "'%s' নামক ব্যবহারকারী বর্তমানে উপস্থিত। অনুগ্রহ করে পৃথক নাম নির্বাচন করুন।"
-
-#: ../src/userProperties.py:336 ../src/userWindow.py:193
-msgid "Please enter a password for the user."
-msgstr "অনুগ্রহ করে ব্যবহারকারীর জন্য একটি পাসওয়ার্ড লিখুন।"
-
-#: ../src/userProperties.py:345 ../src/userWindow.py:201
-msgid "The password is too short.  Please use at least 6 characters."
-msgstr "পাসওয়ার্ডটি অত্যন্ত ছোট। অনুগ্রহ করে অন্তত ৬ অক্ষর বিশিষ্ট একটি পাসওয়ার্ড লিখুন।"
-
-#: ../src/userProperties.py:354
-msgid "Passwords do not match."
-msgstr "পাসওয়ার্ডে গরমিল।"
-
-#: ../src/userProperties.py:431
-msgid "Please select at least one group for the user."
-msgstr "ব্যবহারকারীর জন্য অনুগ্রহ করে অন্তত একটি দল বাছাই করুন।"
-
-#: ../src/userProperties.py:450
-msgid "Please specify the month that the password will expire."
-msgstr "যে মাসে পাসওয়ার্ডের মেয়াদ পূর্ণ হবে তা অনুগ্রহ করে নির্দিষ্ট করুন।"
-
-#: ../src/userProperties.py:458
-msgid "Please specify the day that the password will expire."
-msgstr "যে দিন পাসওয়ার্ডের মেয়াদ পূর্ণ হবে তা অনুগ্রহ করে নির্দিষ্ট করুন।"
-
-#: ../src/userProperties.py:466
-msgid "Please specify the year that the password will expire."
-msgstr "যে বৎসর পাসওয়ার্ডের মেয়াদ পূর্ণ হবে তা অনুগ্রহ করে নির্দিষ্ট করুন।"
-
-#. mktime will throw an OverflowError if the year is too big.
-#: ../src/userProperties.py:482
-msgid "The year is out of range.  Please select a different year."
-msgstr "উল্লিখিত বৎসর নির্দিষ্ট সীমা বহিরভূত।  অনুগ্রহ করে অন্য একটি বৎসর নির্বাচন করুন।"
-
-#: ../src/userProperties.py:511
-msgid "Please specify the number of days before changing the password is allowed."
+"The directory '%(dir)s' cannot be created ('%(parent_dir)s' is not "
+"writable). Please choose a writable location."
 msgstr ""
-"যে সংখ্যক দিনের অতিক্রান্ত হওয়ার পরে পাসওয়ার্ড পরিবর্তন করা যাবে তা অনুগ্রহ করে "
-"নির্দিষ্ট করুন।"
-
-#: ../src/userProperties.py:513
-#, python-format
-msgid ""
-"The number of days before changing the password is allowed must be between %"
-"(min)d and %(max)d."
-msgstr ""
-"যে সংখ্যক দিনের অতিক্রান্ত হওয়ার পরে পাসওয়ার্ড পরিবর্তন করা যাবে তা %(min)d ও %"
-"(max)d-র মধ্যে হওয়া আবশ্যক।"
-
-#: ../src/userProperties.py:518
-msgid "Please specify the number of days before changing the password is required."
-msgstr ""
-"যে সংখ্যক দিনের অতিক্রান্ত হওয়ার পরে পাসওয়ার্ড পরিবর্তন করা আবশ্যক হবে তা অনুগ্রহ "
-"করে নির্দিষ্ট করুন।"
-
-#: ../src/userProperties.py:520
-#, python-format
-msgid ""
-"The number of days before changing the password is required must be between %"
-"(min)d and %(max)d."
-msgstr ""
-"যে সংখ্যক দিনের অতিক্রান্ত হওয়ার পরে পাসওয়ার্ড পরিবর্তন করা আবশ্যক তা %(min)d ও %"
-"(max)d-র মধ্যে হওয়া আবশ্যক।"
-
-#: ../src/userProperties.py:524
-msgid ""
-"Please specify the number of days to warn the user before changing the "
-"password is required."
-msgstr ""
-"পাসওয়ার্ড বদল করার নির্দেশ সম্বন্ধে কতদিন পূর্বে ব্যবহারকারীকে সতর্কবার্তা দেওয়া হবে "
-"তা অনুগ্রহ করে নির্দিষ্ট করুন।"
-
-#: ../src/userProperties.py:526
-#, python-format
-msgid ""
-"The number of days to warn the user before changing the password is required "
-"must be between %(min)d and %(max)d."
-msgstr ""
-"যে সংখ্যক দিনের অতিক্রান্ত হওয়ার পরে পাসওয়ার্ড পরিবর্তন সম্পর্কে সচেতন করা যাবে তা %"
-"(min)d ও %(max)d-র মধ্যে হওয়া আবশ্যক।"
-
-#: ../src/userProperties.py:532
-msgid ""
-"Please specify the number of days until the user account becomes inactive "
-"after password has expired."
-msgstr ""
-"পাসওয়ার্ড শেষ হয়ে যাওয়ার কতদিন পরে ব্যবহারকারীর অ্যাকাউন্ট নিষ্ক্রিয় হয়ে যাবে তা "
-"দয়া করে নির্দিষ্ট করুন।"
-
-#: ../src/userProperties.py:534
-#, python-format
-msgid ""
-"The number of days until the user account becomes inactive after the "
-"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
-"means the account won't become inactive."
-msgstr ""
-"পাসওয়ার্ডের মেয়াদ শেষ হয়ে যাওয়ার পরে যে সংখ্যক দিন পরে ব্যবহারকারীর অ্যাকাউন্ট "
-"নিষ্ক্রিয় হয়ে যাবে তা %(min)d ও %(max)d-র মধ্যে হওয়া আবশ্যক। এই ক্ষেত্রে -1 "
-"নির্ধারতি হলে অ্যাকাউন্টটি কখনো নিষ্ক্রিয় হবে না।"
-
-#: ../src/userProperties.py:592
-#, python-format
-msgid ""
-"Unlocking the user failed because:\n"
-"\n"
-"%(errmsg)s"
-msgstr ""
-"নিম্নলিখিত কারণবসত ব্যবহারকারীর অ্যাকাউন্ট আন-লক করা সম্ভব হয়নি:\n"
-"\n"
-"%(errmsg)s"
-
-#: ../src/userProperties.py:595
-msgid "Unlocking the user failed due to an unknown reason."
-msgstr "অজানা কারণবসত ব্যবহারকারীর অ্যাকাউন্ট আন-লক করা সম্ভব হয়নি।"
-
-#: ../src/userWindow.py:210
-msgid "The passwords do not match."
-msgstr "পাসওয়ার্ডগুলি মেলেনি।"
-
-#. The user name is blank, so complain
-#: ../src/userWindow.py:241
-msgid "Please specify a user name"
-msgstr "অনুগ্রহ করে ব্যবহারকারীর নাম উল্লেখ করুন"
-
-#. This user already exists, so complain
-#: ../src/userWindow.py:249
-#, python-format
-msgid "An account with username '%s' already exists."
-msgstr "'%s' নামের এক ব্যবহারকারীর অ্যাকাউন্ট বর্তমানে উপস্থিত আছে।"
-
-#. This uid already exists, so complain
-#: ../src/userWindow.py:285
-#, python-format
-msgid "The uid %s is already in use."
-msgstr "uid %s বর্তমানে ব্যবহার হচ্ছে।"
-
-#: ../src/userWindow.py:303
-#, python-format
-msgid "Error finding suitable user id not exceeding maximum value of %(maxid)s."
-msgstr "%(maxid)s-র সর্বাধিক মান অতিক্রম না করা ব্যবহারকারীর id সন্ধান করতে ত্রুটি।"
-
-#: ../src/userWindow.py:315
-msgid ""
-"Creating a user with a UID less than 500 is not recommended.  Are you sure "
-"you want to do this?"
-msgstr ""
-"৫০০-র নিম্নস্ত কোনো সংখ্যার UID মান ব্যবহার করে কোনো ব্যবহারকারী তৈরি করা বাঞ্ছনীয় "
-"নয়। আপনি কি নিশ্চিতরূপে এই কাজ করতে ইচ্ছুক?"
-
-#: ../src/userWindow.py:345
-msgid "A group with this gid already exists.  What would you like to do?"
-msgstr "এই gid সহ একটি দল বর্তমানে আছে। আপনি কী করতে ইচ্ছুক?"
-
-#: ../src/userWindow.py:347
-msgid "A group with this name already exists.  What would you like to do?"
-msgstr "এই নামের একটি দল বর্তমানে আছে। আপনি কী করতে ইচ্ছুক?"
-
-#: ../src/userWindow.py:351
-msgid "Add to the existing group"
-msgstr "বর্তমান দলে যোগ করুন"
-
-#: ../src/userWindow.py:352
-msgid "Add to the 'users' group"
-msgstr "'users' নামক দলে যোগ করুন"
-
-#. Uh-oh.  It looks like /etc/group and /etc/gshadow are out of sync.  Give up and quit.
-#: ../src/userWindow.py:434
-msgid ""
-"The system group database cannot be read.  This problem is most likely "
-"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
-"now."
-msgstr ""
-"সিস্টেম গ্রুপের ডাটাবেস পড়া সম্ভব হয়নি।  সম্ভবত /etc/group এবং /etc/shadow-তে "
-"গরমিল হওয়ার দরুন এই সমস্যা দেখা দিয়েছে।  প্রোগ্রামটি এখন বন্ধ করা হবে।"
+"'%(dir)s' ডিরেক্টরিটি নির্মাণ করা সম্ভব নয় ('%(parent_dir)s' লিখনযোগ্য নয়)। অনুগ্রহ করে "
+"লিখনযোগ্য কোনো অবস্থান নির্বাচন করুন।"
 
 #.
 #. * Translatable strings file generated by Glade.
@@ -664,11 +673,11 @@ msgstr ""
 msgid "Add New Group"
 msgstr "নতুন দল যোগ করুন"
 
-#: system-config-users.gladestrings:8 system-config-users.gladestrings:38
+#: system-config-users.gladestrings:8 system-config-users.gladestrings:37
 msgid "_Group Name:"
 msgstr "দলের নাম: (_G)"
 
-#: system-config-users.gladestrings:9 system-config-users.gladestrings:74
+#: system-config-users.gladestrings:9 system-config-users.gladestrings:73
 msgid "Specify g_roup ID manually:"
 msgstr "দলের ID স্বয়ং নির্ধারণ করুন: (_r)"
 
@@ -680,7 +689,7 @@ msgstr "ব্যবহারকারীর বৈশিষ্ট্য"
 msgid "User _Name:"
 msgstr "ব্যবহারকারীর নাম: (_N)"
 
-#: system-config-users.gladestrings:12 system-config-users.gladestrings:64
+#: system-config-users.gladestrings:12 system-config-users.gladestrings:63
 msgid "_Full Name:"
 msgstr "সম্পূর্ণ নাম: (_F)"
 
@@ -688,11 +697,11 @@ msgstr "সম্পূর্ণ নাম: (_F)"
 msgid "Pass_word:"
 msgstr "পাসওয়ার্ড: (_w)"
 
-#: system-config-users.gladestrings:14 system-config-users.gladestrings:66
+#: system-config-users.gladestrings:14 system-config-users.gladestrings:65
 msgid "Confir_m Password:"
 msgstr "পাসওয়ার্ড নিশ্চায়ণ: (_m)"
 
-#: system-config-users.gladestrings:15 system-config-users.gladestrings:67
+#: system-config-users.gladestrings:15 system-config-users.gladestrings:66
 msgid "_Login Shell:"
 msgstr "লগিন শেল: (_L)"
 
@@ -700,7 +709,7 @@ msgstr "লগিন শেল: (_L)"
 msgid "_Home Directory:"
 msgstr "ব্যক্তিগত ডিরেক্টরি: (_H)"
 
-#: system-config-users.gladestrings:17 system-config-users.gladestrings:68
+#: system-config-users.gladestrings:17 system-config-users.gladestrings:67
 msgid "S_ELinux role:"
 msgstr "S_ELinux role:"
 
@@ -716,7 +725,7 @@ msgstr "অ্যাকাউন্টের মেয়াদপূর্তী �
 msgid "Account e_xpires (YYYY-MM-DD):"
 msgstr "অ্যাকাউন্টের মেয়াদপূর্তী (YYYY-MM-DD): (_x)"
 
-#: system-config-users.gladestrings:21 system-config-users.gladestrings:29
+#: system-config-users.gladestrings:21
 msgid "     "
 msgstr "     "
 
@@ -733,194 +742,194 @@ msgid "_Account Info"
 msgstr "অ্যাকাউন্ট সম্বন্ধীয় তথ্য (_A)"
 
 #: system-config-users.gladestrings:26
-msgid "User last changed password on:"
-msgstr "সর্বশেষ যে তারিখে ব্যবহারকারী পাসওয়ার্ড পরিবর্তন করেছেন:"
-
-#: system-config-users.gladestrings:27
-msgid "Unknown"
-msgstr "অজানা"
-
-#: system-config-users.gladestrings:28
 msgid "_Enable password expiration"
 msgstr "পাসওয়ার্ডের মেয়াদপূর্তী ব্যবস্থা সক্রিয় করা হবে (_E)"
 
-#: system-config-users.gladestrings:30
+#: system-config-users.gladestrings:27
 msgid "Days before change a_llowed:"
 msgstr "যে সংখ্যাক দিন অতিক্রান্ত হলে পরিবর্তন করা সম্ভব: (_l)"
 
-#: system-config-users.gladestrings:31
+#: system-config-users.gladestrings:28
 msgid "Days before change _required:"
 msgstr "যে সংখ্যাক দিন অতিক্রান্ত হলে পরিবর্তন করা আবশ্যক: (_r)"
 
-#: system-config-users.gladestrings:32
+#: system-config-users.gladestrings:29
 msgid "Days _warning before change:"
 msgstr "যে সংখ্যাক দিন পূর্বে পরিবর্তন সংক্রান্ত সতর্কবার্তা প্রেরিত হবে: (_w)"
 
-#: system-config-users.gladestrings:33
+#: system-config-users.gladestrings:30
 msgid "Days before account _inactive:"
 msgstr "যে সংখ্যাক দিন অতিক্রান্ত হলে অ্যাকাউন্ট নিষ্ক্রিয় হবে: (_i)"
 
-#: system-config-users.gladestrings:34
+#: system-config-users.gladestrings:31
+msgid "Password last changed on..."
+msgstr "পাসওয়ার্ড সর্বশেষ পরিবর্তিত হয়েছে..."
+
+#: system-config-users.gladestrings:32
+msgid "Force password change on next login"
+msgstr "পরিবর্তী লগ-ইনের সময় বাধ্যতামূলকভাবে পাসওয়ার্ড পরিবর্তন করা হবে"
+
+#: system-config-users.gladestrings:33
 msgid "_Password Info"
 msgstr "পাসওয়ার্ড সম্বন্ধীয় তথ্য (_P)"
 
-#: system-config-users.gladestrings:35
+#: system-config-users.gladestrings:34
 msgid "Select the groups that the user will be a member of:"
 msgstr "ব্যবহারকারীকে অন্তর্ভুক্ত করার জন্য দল নির্বাচন করুন:"
 
-#: system-config-users.gladestrings:36
+#: system-config-users.gladestrings:35
 msgid "_Groups"
 msgstr "দল (_G)"
 
-#: system-config-users.gladestrings:37
+#: system-config-users.gladestrings:36
 msgid "Group Properties"
 msgstr "দলের বৈশিষ্ট্য"
 
-#: system-config-users.gladestrings:39
+#: system-config-users.gladestrings:38
 msgid "Group _Data"
 msgstr "দল সংক্রান্ত তথ্য (_D)"
 
-#: system-config-users.gladestrings:40
+#: system-config-users.gladestrings:39
 msgid "Select the users to join this group:"
 msgstr "উল্লিখিত দলে যে সকল ব্যবহারকারীদের অন্তর্ভুক্ত করা হবে তা নির্দিষ্ট করে দিন:"
 
-#: system-config-users.gladestrings:41
+#: system-config-users.gladestrings:40
 msgid "Group _Users"
 msgstr "দলের ব্যবহারকারীবৃন্দ (_U)"
 
-#: system-config-users.gladestrings:42
+#: system-config-users.gladestrings:41
 msgid "User Manager"
 msgstr "ব্যবহারকারী পরিচালনা"
 
-#: system-config-users.gladestrings:43
+#: system-config-users.gladestrings:42
 msgid "_File"
 msgstr "ফাইল (_F)"
 
-#: system-config-users.gladestrings:44 system-config-users.gladestrings:49
+#: system-config-users.gladestrings:43 system-config-users.gladestrings:48
 msgid "Add _User"
 msgstr "নতুন ব্যবহারকারী (_U)"
 
-#: system-config-users.gladestrings:45 system-config-users.gladestrings:50
+#: system-config-users.gladestrings:44 system-config-users.gladestrings:49
 msgid "Add _Group"
 msgstr "নতুন দল (_G)"
 
-#: system-config-users.gladestrings:46
+#: system-config-users.gladestrings:45
 msgid "_Edit"
 msgstr "সম্পাদনা (_E)"
 
-#: system-config-users.gladestrings:47 system-config-users.gladestrings:57
+#: system-config-users.gladestrings:46 system-config-users.gladestrings:56
 msgid "_Help"
 msgstr "সাহায্য (_H)"
 
-#: system-config-users.gladestrings:48
+#: system-config-users.gladestrings:47
 msgid "_Contents"
 msgstr "সূচিপত্র (_C)"
 
-#: system-config-users.gladestrings:51
+#: system-config-users.gladestrings:50
 msgid "Edit properties"
 msgstr "বৈশিষ্ট্য সম্পাদনা"
 
-#: system-config-users.gladestrings:52
+#: system-config-users.gladestrings:51
 msgid "Proper_ties"
 msgstr "বিবিধ বৈশিষ্ট্য (_t)"
 
-#: system-config-users.gladestrings:53
+#: system-config-users.gladestrings:52
 msgid "_Delete"
 msgstr "মুছে ফেলুন (_D)"
 
-#: system-config-users.gladestrings:54
+#: system-config-users.gladestrings:53
 msgid "Reload"
 msgstr "নতুন করে লোড করা হবে"
 
-#: system-config-users.gladestrings:55
+#: system-config-users.gladestrings:54
 msgid "_Refresh"
 msgstr "নতুন করে প্রদর্শন (_R)"
 
-#: system-config-users.gladestrings:56
+#: system-config-users.gladestrings:55
 msgid "Help"
 msgstr "সাহায্য"
 
-#: system-config-users.gladestrings:58
+#: system-config-users.gladestrings:57
 msgid "Sea_rch filter:"
 msgstr "অনুসন্ধানের ফিল্টার: (_r)"
 
-#: system-config-users.gladestrings:59
+#: system-config-users.gladestrings:58
 msgid "_Apply filter"
 msgstr "ফিল্টার প্রয়োগ করুন (_A)"
 
-#: system-config-users.gladestrings:60
+#: system-config-users.gladestrings:59
 msgid "U_sers"
 msgstr "ব্যবহারকারী (_s)"
 
-#: system-config-users.gladestrings:61
+#: system-config-users.gladestrings:60
 msgid "Gr_oups"
 msgstr "দল (_o)"
 
-#: system-config-users.gladestrings:62
+#: system-config-users.gladestrings:61
 msgid "Add New User"
 msgstr "নতুন ব্যবহারকারী যোগ করুন"
 
-#: system-config-users.gladestrings:63
+#: system-config-users.gladestrings:62
 msgid "_User Name:"
 msgstr "ব্যবহারকারীর নাম: (_U)"
 
-#: system-config-users.gladestrings:65
+#: system-config-users.gladestrings:64
 msgid "_Password:"
 msgstr "পাসওয়ার্ড: (_P)"
 
-#: system-config-users.gladestrings:69
+#: system-config-users.gladestrings:68
 msgid "Create _home directory"
 msgstr "ব্যক্তিগত ডিরেক্টরি তৈরি করুন (_h)"
 
-#: system-config-users.gladestrings:70
+#: system-config-users.gladestrings:69
 msgid "    "
 msgstr "    "
 
-#: system-config-users.gladestrings:71
+#: system-config-users.gladestrings:70
 msgid "Home _Directory:"
 msgstr "ব্যক্তিগত ডিরেক্টরি: (_D)"
 
-#: system-config-users.gladestrings:72
+#: system-config-users.gladestrings:71
 msgid "Create a private _group for the user"
 msgstr "ব্যবহারকারীর জন্য একটি ব্যক্তিগত দল তৈরি করুন (_g)"
 
-#: system-config-users.gladestrings:73
+#: system-config-users.gladestrings:72
 msgid "Specify u_ser ID manually:"
 msgstr "ব্যবহারকারীর ID স্বয়ং নির্ধারণ করুন: (_s)"
 
-#: system-config-users.gladestrings:75
+#: system-config-users.gladestrings:74
 msgid "About system-config-users"
 msgstr "system-config-users পরিচিতি"
 
-#: system-config-users.gladestrings:76
+#: system-config-users.gladestrings:75
 msgid "<b>system-config-users</b>"
 msgstr "<b>system-config-users</b>"
 
-#: system-config-users.gladestrings:77
+#: system-config-users.gladestrings:76
 msgid "Version @VERSION@"
 msgstr "সংস্করণ @VERSION@"
 
-#: system-config-users.gladestrings:78
+#: system-config-users.gladestrings:77
 msgid "Copyright (c) 2001 - 2005 Red Hat, Inc."
 msgstr "স্বত্বাধিকার (c) ২০০১ - ২০০৫ Red Hat, Inc."
 
-#: system-config-users.gladestrings:79
+#: system-config-users.gladestrings:78
 msgid "This software is distributed under the GNU General Public License."
 msgstr "এই সফ্টওয়্যারটি GNU General Public License-র অধীন বিতরণ করা হয়েছে।"
 
-#: system-config-users.gladestrings:80
+#: system-config-users.gladestrings:79
 msgid "Preferences"
 msgstr "পছন্দ"
 
-#: system-config-users.gladestrings:81
+#: system-config-users.gladestrings:80
 msgid "_Hide system users and groups"
 msgstr "সিস্টেম ব্যবহারকারী ও দল প্রদর্শন করা হবে না (_H)"
 
-#: system-config-users.gladestrings:82
+#: system-config-users.gladestrings:81
 msgid "<b>User and Group Lists</b>"
 msgstr "<b>ব্যবহারকারী ও দলের তালিকা</b>"
 
-#: system-config-users.gladestrings:83
+#: system-config-users.gladestrings:82
 msgid ""
 "Ensure that a new user gets a higher UID than all existing users, if not set "
 "manually."
@@ -928,11 +937,11 @@ msgstr ""
 "অন্যান্য সকল ব্যবহারকারীর তুলনায় নতুন ব্যবহারকারীর জন্য আবশ্যকরূপে অধিক UID স্থাপন "
 "করার নির্দেশ দেওয়া হবে, না হলে স্বয়ং তা করুন।"
 
-#: system-config-users.gladestrings:84
+#: system-config-users.gladestrings:83
 msgid "Automatically assigned _UID must be highest"
 msgstr "স্বয়ংক্রিয়রূপে সর্বোচ্চ UID'র মান স্থাপন করা হবে (_U)"
 
-#: system-config-users.gladestrings:85
+#: system-config-users.gladestrings:84
 msgid ""
 "Ensure that a new group gets a higher GID than all existing groups, if not "
 "set manually."
@@ -940,27 +949,28 @@ msgstr ""
 "অন্যান্য সকল দলের তুলনায় নতুন দলের জন্য আবশ্যকরূপে অধিক GID স্থাপন করার নির্দেশ দেওয়া "
 "হবে, না হলে স্বয়ং তা করুন।"
 
-#: system-config-users.gladestrings:86
+#: system-config-users.gladestrings:85
 msgid "Automatically assigned _GID must be highest"
 msgstr "স্বয়ংক্রিয়রূপে সর্বোচ্চ UID'র মান স্থাপন করা হবে (_G)"
 
-#: system-config-users.gladestrings:87
+#: system-config-users.gladestrings:86
 msgid "Prefer that private group GID is the _same as UID"
 msgstr "UID ও ব্যক্তিগত দলের GID সমান হওয়া বাঞ্ছনীয় (_s)"
 
-#: system-config-users.gladestrings:88
+#: system-config-users.gladestrings:87
 msgid "<b>New Users</b>"
 msgstr "<b>নতুন ব্যবহারকারী</b>"
 
-#: system-config-users.gladestrings:90
+#: system-config-users.gladestrings:89
 msgid "Copyright © 2001-2007 Red Hat, Inc."
 msgstr "স্বত্বাধিকার (c) ২০০১ - ২০০৭ Red Hat, Inc."
 
-#: system-config-users.gladestrings:91
+#: system-config-users.gladestrings:90
 msgid "Manages users and groups on your system."
-msgstr "সিস্টেমের মধ্যে উপস্থিত ব্যবহারকারীদের অ্যাকাউন্ট ও দল পরিচালনার জন্য ব্যবহার করা হয়।"
+msgstr ""
+"সিস্টেমের মধ্যে উপস্থিত ব্যবহারকারীদের অ্যাকাউন্ট ও দল পরিচালনার জন্য ব্যবহার করা হয়।"
 
-#: system-config-users.gladestrings:92
+#: system-config-users.gladestrings:91
 msgid ""
 "system-config-users is free software; you can redistribute it and/or modify "
 "it under the terms of the GNU General Public License as published by the "
@@ -990,7 +1000,33 @@ msgstr ""
 "Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 "
 "USA।"
 
-#: system-config-users.gladestrings:97
+#: system-config-users.gladestrings:96
 msgid "translator-credits"
 msgstr "রুণা ভট্টাচার্য্য (runab@fedoraproject.org)"
 
+#~ msgid "User last changed password on:"
+#~ msgstr "সর্বশেষ যে তারিখে ব্যবহারকারী পাসওয়ার্ড পরিবর্তন করেছেন:"
+
+#~ msgid "Unknown"
+#~ msgstr "অজানা"
+
+#~ msgid ""
+#~ "The password contains invalid characters.  Please use only ASCII "
+#~ "characters."
+#~ msgstr ""
+#~ "পাসওয়ার্ডে অবৈধ অক্ষর ব্যবহার করা হয়েছে। অনুগ্রহ করে শুধুমাত্র ASCII অক্ষরমালার "
+#~ "অক্ষর ব্যবহার করুন।"
+
+#~ msgid ""
+#~ "The directory name '%s' cannot be created ('%s' is not writable). Please "
+#~ "chose a writable location."
+#~ msgstr ""
+#~ "'%s' নামক ডিরেক্টরি নির্মাণ করা সম্ভব নয় ('%s'-র মধ্যে লেখা সম্ভব নয়)। অনুগ্রহ "
+#~ "করে লিখনযোগ্য কোনো অবস্থান নির্বাচন করুন।"
+
+#~ msgid "Please enter a password for the user."
+#~ msgstr "অনুগ্রহ করে ব্যবহারকারীর জন্য একটি পাসওয়ার্ড লিখুন।"
+
+#~ msgid "The password is too short.  Please use at least 6 characters."
+#~ msgstr ""
+#~ "পাসওয়ার্ডটি অত্যন্ত ছোট। অনুগ্রহ করে অন্তত ৬ অক্ষর বিশিষ্ট একটি পাসওয়ার্ড লিখুন।"

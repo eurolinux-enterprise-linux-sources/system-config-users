@@ -35,16 +35,17 @@
 
 Summary: A graphical interface for administering users and groups
 Name: system-config-users
-Version: 1.2.104
-Release: 1%{?dist}.3
+Version: 1.2.106
+Release: 5%{?dist}
 URL: http://fedorahosted.org/%{name}
 License: GPLv2+
 Group: Applications/System
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch: noarch
 Source: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
-Patch0: system-config-users-1.2.104-homedir-creation.patch
-Patch1: system-config-users-1.2.104-selinux-module.patch
+Patch0: system-config-users-1.2.106-selinux.patch
+Patch1: system-config-users-1.2.106-filter.patch
+Patch2: system-config-users-1.2.106-translations.patch
 BuildRequires: desktop-file-utils
 BuildRequires: gettext
 BuildRequires: intltool
@@ -94,9 +95,12 @@ users and groups.  It depends on the libuser library.
 
 %prep
 %setup -q
-%patch0 -p1 -b .homedir-creation
+
 # no backup, this patch only removes a file
-%patch1 -p1
+%patch0 -p1
+
+%patch1 -p1 -b .filter
+%patch2 -p1 -b .translations
 
 %build
 make %{?with_console_util:CONSOLE_USE_CONFIG_UTIL=1} %{?_smp_mflags}
@@ -128,14 +132,29 @@ rm -rf $RPM_BUILD_ROOT
 %config(noreplace) %{_sysconfdir}/sysconfig/system-config-users
 
 %changelog
-* Fri Feb 11 2011 Nils Philippsen <nils@redhat.com> - 1.2.104-1%{?dist}.3
-- require libselinux-python
+* Wed Apr 27 2011 Nils Philippsen <nils@redhat.com> - 1.2.106-5
+- include updated Assamese translations (#629469)
 
-* Wed Feb 09 2011 Nils Philippsen <nils@redhat.com> - 1.2.104-1%{?dist}.2
+* Tue Apr 19 2011 Nils Philippsen <nils@redhat.com> - 1.2.106-4
+- include updated Korean translations (#629469)
+
+* Tue Feb 01 2011 Nils Philippsen <nils@redhat.com> - 1.2.106-3
 - remove obsolete selinux module
+- search for substrings (#612172)
 
-* Wed Jan 26 2011 Nils Philippsen <nils@redhat.com> - 1.2.104-1%{?dist}.1
-- cope better with uncreatable home directory locations (#672822)
+* Wed Jan 26 2011 Nils Philippsen <nils@redhat.com> - 1.2.106-1
+- fix startup if max uid/gid is allocated
+- attempt to mkdir home directory instead of using os.access()
+- cope better with deleting auto-mounted home directories
+- restore context of home directories after creating, also use umask of 0700
+  (u=rwx,go=)
+- make most password problems warnings, not errors (#656356)
+- ask if non-ASCII password should be used (#646876)
+- add forced password change on next login (#656219)
+- pick up translation updates
+
+* Tue Aug 24 2010 Nils Philippsen <nils@redhat.com> - 1.2.105-1
+- pick up translation updates
 
 * Wed Aug 11 2010 Nils Philippsen <nils@redhat.com> - 1.2.104-1
 - pick up translation updates

@@ -24,6 +24,7 @@
 import gtk
 import gobject
 import time
+from datetime import date, timedelta
 import string
 import math
 import locale
@@ -34,6 +35,8 @@ import userGroupCheck
 
 import gettext
 _ = lambda x: gettext.ldgettext ("system-config-users", x)
+
+epoch = date(1970, 1, 1)
 
 busy_cursor = gtk.gdk.Cursor(gtk.gdk.WATCH)
 ready_cursor = gtk.gdk.Cursor(gtk.gdk.LEFT_PTR)
@@ -84,7 +87,6 @@ class userProperties:
         self.selinuxPropCombo.entry.set_property('editable', False)        
         self.selinuxPropLabel = xml.get_widget("selinuxPropLabel")
         self.userNotebook = xml.get_widget('userNotebook')
-        self.lastChangedLabel = xml.get_widget('lastChangedLabel')
 
         self.accountLockCheck = xml.get_widget('accountLockCheck')
         self.accountExpireCheck = xml.get_widget('accountExpireCheck')
@@ -99,6 +101,9 @@ class userProperties:
         self.pwRequireEntry = xml.get_widget('pwRequireEntry')
         self.pwWarnEntry = xml.get_widget('pwWarnEntry')
         self.pwInactiveEntry = xml.get_widget('pwInactiveEntry')
+        self.pwForceChangeCheckButton = xml.get_widget(
+                'pwForceChangeCheckButton')
+        self.pwLastChangedLabel = xml.get_widget('pwLastChangedLabel')
         self.groupVBox = xml.get_widget('userPropGroupVBox')
 
         if not selinuxEnabled:
@@ -210,17 +215,19 @@ class userProperties:
             self.loginShellCombo.set_popdown_strings(self.shells)
         self.loginShellCombo.list.select_item(self.shells.index(shell))
 
-        lastChange = self.userEnt.get(libuser.SHADOWLASTCHANGE)
-        if lastChange:
-            daysSinceEpoch = lastChange[0]
-            secondsPerDay = 24 * 60 * 60
-            secondsSinceEpoch = int(daysSinceEpoch) * int(secondsPerDay)
-            age = time.strftime("%c", time.gmtime(secondsSinceEpoch))
-            age = unicode (age, locale.nl_langinfo (locale.CODESET)).encode ("utf-8")
-            self.lastChangedLabel.set_text(age)
-
         if "shadow" in self.userEnt.modules () \
             or "ldap" in self.userEnt.modules ():
+            lastchange = self.userEnt.get(libuser.SHADOWLASTCHANGE)[0]
+            if lastchange == 0:
+                self.pwLastChangedLabel.set_text("")
+            else:
+                dateLastChanged = epoch + timedelta(days=lastchange)
+                age_text = dateLastChanged.strftime(
+                        _("Password last changed on: %x"))
+                age_text = unicode (age_text,
+                        locale.nl_langinfo (locale.CODESET)).encode ("utf-8")
+                self.pwLastChangedLabel.set_text(age_text)
+
             expire = self.userEnt.get(libuser.SHADOWEXPIRE)
 
             if expire:
@@ -228,7 +235,7 @@ class userProperties:
                     if int(expire[0]) != self.pwInactiveDefault:
                         self.accountExpireCheck.set_active(True)
                         days = int (self.userEnt.get(libuser.SHADOWEXPIRE)[0])
-                        tmp = days * int(secondsPerDay)
+                        tmp = days * int(24 * 60 * 60)
                         age = time.localtime(tmp)
                         year = str(age[0])
                         month = str(age[1])
@@ -243,18 +250,22 @@ class userProperties:
             max = self.userEnt.get (libuser.SHADOWMAX, [self.pwRequireDefault])
             warning = self.userEnt.get (libuser.SHADOWWARNING, [self.pwWarnDefault])
             inactive = self.userEnt.get (libuser.SHADOWINACTIVE, [self.pwInactiveDefault])
+            forcechange = (lastchange == 0)
 
-            if int(min[0]) == self.pwAllowUnset \
-                and int(max[0]) == self.pwRequireUnset \
-                and int(warning[0]) == self.pwWarnUnset \
-                and int(inactive[0]) == self.pwInactiveUnset:
+            if (int(min[0]) == self.pwAllowUnset
+                and int(max[0]) == self.pwRequireUnset
+                and int(warning[0]) == self.pwWarnUnset
+                and int(inactive[0]) == self.pwInactiveUnset
+                and not forcechange):
                 self.pwExpireCheck.set_active(False)
+                self.pwForceChangeCheckButton.set_active(False)
             else:
                 self.pwExpireCheck.set_active(True)
                 self.pwAllowEntry.set_text(str(min[0]))
                 self.pwRequireEntry.set_text(str(max[0]))
                 self.pwWarnEntry.set_text(str(warning[0]))
                 self.pwInactiveEntry.set_text(str(inactive[0]))
+                self.pwForceChangeCheckButton.set_active(forcechange)
 
         if self.parent.ADMIN.userIsLocked(self.userEnt) == 1:
             self.accountLockCheck.set_active(True)
@@ -323,8 +334,8 @@ class userProperties:
 
         if pw == confirm == '     ':
             pass
-        elif pw == confirm and len (pw) >= 6:
-            #Check for ascii-only strings
+        elif pw == confirm:
+            # Check for weak passwords
             if not userGroupCheck.isPasswordOk(pw, self.userWinPassword):
                 self.ready()
                 self.userWinPassword.grab_focus()
@@ -332,33 +343,14 @@ class userProperties:
 
             self.parent.ADMIN.setpassUser(self.userEnt, pw, 0)
         else:
-            if not pw and not confirm:
-                messageDialog.show_message_dialog(_("Please enter a password for the user."))
-            
-                self.ready()
-                self.userNotebook.set_current_page(0)
-                self.userWinPassword.set_text("")
-                self.userWinConfirm.set_text("")
-                self.userWinPassword.grab_focus()
-                return
-            elif len (pw) < 6:
-                messageDialog.show_message_dialog(_("The password is too short.  Please "
-                                                    "use at least 6 characters."))
-                self.ready()
-                self.userNotebook.set_current_page(0)
-                self.userWinPassword.set_text("")
-                self.userWinConfirm.set_text("")
-                self.userWinPassword.grab_focus()
-                return
-            else:
-                messageDialog.show_message_dialog(_("Passwords do not match."))
+            messageDialog.show_message_dialog(_("Passwords do not match."))
 
-                self.ready()
-                self.userNotebook.set_current_page(0)
-                self.userWinPassword.set_text("")
-                self.userWinConfirm.set_text("")
-                self.userWinPassword.grab_focus()                
-                return
+            self.ready()
+            self.userNotebook.set_current_page(0)
+            self.userWinPassword.set_text("")
+            self.userWinConfirm.set_text("")
+            self.userWinPassword.grab_focus()
+            return
 
         if not userGroupCheck.isHomedirOk(hd, self.userWinHomeDir, need_homedir = False):
             self.ready()
@@ -504,6 +496,7 @@ class userProperties:
             required = string.strip(self.pwRequireEntry.get_text())
             warning = string.strip(self.pwWarnEntry.get_text())
             inactive = string.strip(self.pwInactiveEntry.get_text())
+            forcechange = self.pwForceChangeCheckButton.get_active()
 
             for (var, widget, min, max, emptytext, invalidtext) in (
                     (allowed, self.pwAllowEntry,
@@ -568,11 +561,19 @@ class userProperties:
             self.userEnt.set(libuser.SHADOWMAX, int(required))
             self.userEnt.set(libuser.SHADOWWARNING, int(warning))
             self.userEnt.set(libuser.SHADOWINACTIVE, int(inactive))
+            if forcechange:
+                self.userEnt.set(libuser.SHADOWLASTCHANGE, [0])
+            elif self.userEnt.get(libuser.SHADOWLASTCHANGE)[0] == 0:
+                self.userEnt.set(libuser.SHADOWLASTCHANGE,
+                        [(date.today() - epoch).days])
         else:
             self.userEnt.set(libuser.SHADOWMIN, self.pwAllowUnset)
             self.userEnt.set(libuser.SHADOWMAX, self.pwRequireUnset)
             self.userEnt.set(libuser.SHADOWWARNING, self.pwWarnUnset)
             self.userEnt.set(libuser.SHADOWINACTIVE, self.pwInactiveUnset)
+            if self.userEnt.get(libuser.SHADOWLASTCHANGE)[0] == 0:
+                self.userEnt.set(libuser.SHADOWLASTCHANGE,
+                        (date.today() - epoch).days)
 
         self.parent.ADMIN.modifyUser(self.userEnt)
 
