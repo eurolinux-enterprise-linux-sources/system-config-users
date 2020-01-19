@@ -1,0 +1,880 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Automatically generated, 2004.
+# Danishka Navin <snavin@redhat.com>, 2007.
+# Nils Philippsen <nils@redhat.com>, 2011.
+# Tyronne Wickramarathne <tywickra@redhat.com>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-users\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-users/\n"
+"POT-Creation-Date: 2012-11-02 10:51+0100\n"
+"PO-Revision-Date: 2012-11-02 09:59+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"Language-Team: Sinhala (http://www.transifex.com/projects/p/fedora/language/si/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: si\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/groupProperties.py:114 src/userGroupCheck.py:78 src/groupWindow.py:120
+msgid "Please enter a group name."
+msgstr "කරුණාකර කණ්ඩායමේ නම ඇතුලත් කරන්න"
+
+#: src/groupProperties.py:131
+#, python-format
+msgid "The group '%s' already exists. Please choose a different name."
+msgstr ""
+
+#: src/groupProperties.py:178 src/mainWindow.py:889
+#, python-format
+msgid "You cannot remove user '%s' from their primary group."
+msgstr "ඔබ හට '%s' පරිශීලකව ප්‍රාථමික කණ්ඩායමෙන් ඉවත් කල නොහැක."
+
+#: src/userWindow.py:100 src/userProperties.py:122
+msgid "User"
+msgstr "පරිශීලක"
+
+#: src/userWindow.py:101 src/userProperties.py:123
+msgid "Staff"
+msgstr "කාර්ය මණ්ඩලය"
+
+#: src/userWindow.py:102 src/userProperties.py:124
+msgid "System Administrator"
+msgstr "පද්ධතියේ කළමණාකරු"
+
+#. The passwords don't match, so complain
+#: src/userWindow.py:216
+msgid "The passwords do not match."
+msgstr "රහස්පදයන් සමාන නොවේ"
+
+#. The user name is blank, so complain
+#: src/userWindow.py:248
+msgid "Please specify a user name"
+msgstr "කරුණාකර පරිශීලක නාමයක් නිර්දේශ කරන්න"
+
+#. This user already exists, so complain
+#: src/userWindow.py:256
+#, python-format
+msgid "An account with username '%s' already exists."
+msgstr "'%s' පරිශීලක නම සඳහන් ගිණුමක් මේ වන විට භාවිතයේ ඇත."
+
+#. This uid already exists, so complain
+#: src/userWindow.py:294
+#, python-format
+msgid "The uid %s is already in use."
+msgstr "පරිශීලක හඳුනාගැනීමේ අංකය %s මේ වන විට භාවිතයේ ඇත."
+
+#. This (chosen) gid already exists, so complain
+#: src/userWindow.py:302 src/groupWindow.py:144
+#, python-format
+msgid "The gid %s is already in use."
+msgstr "gid %s මේ වන විට භාවිතයේ ඇත"
+
+#: src/userWindow.py:315
+#, python-format
+msgid ""
+"Error finding suitable user id not exceeding maximum value of %(maxid)s."
+msgstr ""
+
+#: src/userWindow.py:318 src/groupWindow.py:177
+#, python-format
+msgid ""
+"Error finding suitable group id not exceeding maximum value of %(maxid)s."
+msgstr ""
+
+#: src/userWindow.py:331
+#, python-format
+msgid ""
+"Creating a user with a UID less than %(uid_min)s is not recommended.  Are "
+"you sure you want to do this?"
+msgstr "අගය %(uid_min)s ට අඩු අංකයක් පරිශීලකයෙකු සෑදීමට භාවිතා කිරීම රෙකමදාරු කරන්නේ නැත. මෙය කිරීමට අවශ්‍ය බව ඔබට විශ්වාසද?"
+
+#: src/userWindow.py:364
+msgid "A group with this gid already exists.  What would you like to do?"
+msgstr ""
+
+#: src/userWindow.py:368
+msgid "A group with this name already exists.  What would you like to do?"
+msgstr "මෙම නම සඳහන් කණ්ඩායමක් මේ වන විට භාවිතයේ ඇත. ඔබට කිරීමට අවශ්‍ය වන්නේ කුමක්ද?"
+
+#: src/userWindow.py:374
+msgid "Add to the existing group"
+msgstr "දැනට තිබෙන කණ්ඩායමට එකතු කරන්න"
+
+#: src/userWindow.py:376
+msgid "Add to the 'users' group"
+msgstr "'users' කණ්ඩායමට එකතු කරන්න"
+
+#. Uh-oh. It looks like /etc/group and /etc/gshadow are out of
+#. sync. Give up and quit.
+#: src/userWindow.py:460
+msgid ""
+"The system group database cannot be read.  This problem is most likely "
+"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
+"now."
+msgstr "පද්ධතියේ කණ්ඩායම් විස්තර ඇතුලත් දත්ත ගබඩාව කියවිය නොහැක.  මෙම ගැටළුවට බොහෝ දුරට හෙතු විය හැක්කේ /etc/group සහ /etc/gshadow යන ගොනු වල තිබෙන අසමාන කම් වේ.  මෙම වැඩසටහන මින් නික්මයනු. ඇත."
+
+#: src/userProperties.py:157
+msgid "Primary Group:"
+msgstr "ප්‍රාථමික කණ්ඩායම:"
+
+#: src/userProperties.py:244
+#, python-format
+msgid "Password last changed on: %x"
+msgstr ""
+
+#: src/userProperties.py:327 src/userGroupCheck.py:57
+msgid "Please enter a user name."
+msgstr "කරුණාකර පරිශීලක නම ඇතුලත් කරන්න"
+
+#: src/userProperties.py:348
+#, python-format
+msgid "The user '%s' already exists. Please choose a different name."
+msgstr ""
+
+#: src/userProperties.py:371
+msgid "Passwords do not match."
+msgstr "රහස්පදයන් සමාන නොවේ"
+
+#: src/userProperties.py:451
+msgid "Please select at least one group for the user."
+msgstr "කරුණාකර පරිශීලක සඳහා අවම වශයෙන් එක් කණ්ඩායමක් වත් තෝරා ගන්න."
+
+#: src/userProperties.py:472
+msgid "Please specify the month that the password will expire."
+msgstr "කරුණාකර රහස්පදය ඉකුත් වන මාසය සඳහන් කරන්න."
+
+#: src/userProperties.py:482
+msgid "Please specify the day that the password will expire."
+msgstr "කරුණාකර රහස්පදය ඉකුත් වන දිනය සඳහන් කරන්න."
+
+#: src/userProperties.py:492
+msgid "Please specify the year that the password will expire."
+msgstr "කරුණාකර රහස්පදය ඉකුත් වන වසර සඳහන් කරන්න."
+
+#. mktime will throw an OverflowError if the year is too big.
+#: src/userProperties.py:509
+msgid "The year is out of range.  Please select a different year."
+msgstr "ඔබ විසින් තෝරා ගන්නා ලද වසර අදාල පරාසය තුල නොවේ. කරුණාකර වෙනත් වසරක් තෝරාගන්න."
+
+#: src/userProperties.py:540
+msgid ""
+"Please specify the number of days before changing the password is allowed."
+msgstr "රහස්පදය සංශෝධනය කිරීමට ඉඩ දීමට ප්‍රථම සම්පූර්ණ කලයුතු දින ගණන නියම කරන්න."
+
+#: src/userProperties.py:542
+#, python-format
+msgid ""
+"The number of days before changing the password is allowed must be between "
+"%(min)d and %(max)d."
+msgstr ""
+
+#: src/userProperties.py:547
+msgid ""
+"Please specify the number of days before changing the password is required."
+msgstr "රහස්පදය සංශෝධනය කිරීම සඳහා විමසීමට ප්‍රථම සම්පූර්ණ කල යුතු දින ගණන නියම කරන්න."
+
+#: src/userProperties.py:549
+#, python-format
+msgid ""
+"The number of days before changing the password is required must be between "
+"%(min)d and %(max)d."
+msgstr ""
+
+#: src/userProperties.py:554
+msgid ""
+"Please specify the number of days to warn the user before changing the "
+"password is required."
+msgstr "රහස්පදය වෙනස් කිරීමට පෙර පරිශීලක හට ඒ සඳහා අවවාද කල යුතු දින ගණන සඳහන් කරන්න. "
+
+#: src/userProperties.py:556
+#, python-format
+msgid ""
+"The number of days to warn the user before changing the password is required"
+" must be between %(min)d and %(max)d."
+msgstr ""
+
+#: src/userProperties.py:562
+msgid ""
+"Please specify the number of days until the user account becomes inactive "
+"after password has expired."
+msgstr "රහස්පදය කල් ඉක්මවූ පසුව පරිශීලකගේ ගිණුම අක්‍රීය වීමට පෙර සක්‍රීයව තබා ගත යුතු දින ගණන කරුණාකර නියම කරන්න."
+
+#: src/userProperties.py:565
+#, python-format
+msgid ""
+"The number of days until the user account becomes inactive after the "
+"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
+"means the account won't become inactive."
+msgstr ""
+
+#: src/userProperties.py:629
+#, python-format
+msgid ""
+"Unlocking the user failed because:\n"
+"\n"
+"%(errmsg)s"
+msgstr ""
+
+#: src/userProperties.py:632
+msgid "Unlocking the user failed due to an unknown reason."
+msgstr ""
+
+#: src/userGroupCheck.py:58
+#, python-format
+msgid "The user name must not exceed %d characters."
+msgstr "පරිශීලක නම අකුරු %d නොඉක්මවිය යුතුය."
+
+#: src/userGroupCheck.py:59
+#, python-format
+msgid ""
+"The user name '%s' contains whitespace. Please do not include whitespace in "
+"the user name."
+msgstr "'%s' පරිශීලක නාමය තුල හිස් ඉඩක් ඇතුලත්ව තිබේ. කරුණාකර පරිශීලක නාමය තුල හිස් අවකාශයන් නොතබන්න."
+
+#: src/userGroupCheck.py:61
+#, python-format
+msgid ""
+"The user name '%s' contains a dollar sign which is not at the end. Please "
+"use dollar signs only at the end of user names to indicate Samba machine "
+"accounts."
+msgstr "'%s' පරිශීලක නම අවසාන වීමට පෙර එය තුල ඩොලර් ලකුණක් අන්තර්ගතව ඇත. කරුණාකර සම්බා (Samba) පද්ධති සඳහා වන පරිශීලක ගිණුම් හඳුනා ගැනීම සඳහා පමණක් පරිශීලක නම අවසානයේ ඩොලර් ලකුණ භාවිත කරන්න."
+
+#: src/userGroupCheck.py:64
+#, python-format
+msgid ""
+"The user name '%s' contains a trailing dollar sign. This should only be used"
+" for Samba machine accounts, using this for a normal user account can cause "
+"problems with some software. Is the account in question a Samba machine "
+"account?"
+msgstr ""
+
+#: src/userGroupCheck.py:69
+#, python-format
+msgid ""
+"The user name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr "'%(name)s' පරිශීලක නාමය තුල %(position)d ස්ථානයේ වලංගු නැති අක්‍ෂරයක් ඇතුලත්ව තිබේ."
+
+#: src/userGroupCheck.py:71
+msgid ""
+"Using all numbers as the user name can cause confusion about whether the "
+"user name or numerical user id is meant. Do you really want to use a "
+"numerical-only user name?"
+msgstr "පරිශීලක නාමයන් සඳහා අංක පමණක් භාවිතා කිරීම ව්‍යාකූල තාවයන් ඇතිවීමට ඉවහල් වේ, එමඟින් පරිශීලක නම හා පරිශීලකගේ හඳුනාගැනීමේ අංකය වෙන්කර හඳුනාගැනීම වඩාත් අපහසු වේ. ඔබහට අංකයන් ගෙන් පමණක් සමන්විත පරිශීලක නාමයක් භාවිත කිරීමට සැබැවින්ම අවශ්‍යද?"
+
+#: src/userGroupCheck.py:79
+#, python-format
+msgid "The group name must not exceed %d characters."
+msgstr "කණ්ඩායමේ නම අක්‍ෂර %d වඩා නොඉක්මවිය යුතුයි."
+
+#: src/userGroupCheck.py:80
+#, python-format
+msgid ""
+"The group name '%s' contains whitespace. Please do not include whitespace in"
+" the group name."
+msgstr "'%s' කණ්ඩායම් නාමය තුල හිස් තැනක් අන්තර්ගතව ඇත. කරුණාකර කණ්ඩායම් නාමය තුල හිස් තැන් ඇතුල් කිරීමෙන් වලකින්න."
+
+#: src/userGroupCheck.py:82
+#, python-format
+msgid ""
+"The group name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr "'%(name)s' කණ්ඩායම් නාමය තුළ %(position)d ස්ථානයේ වලංගු නැති අක්‍ෂරයක් ඇතුලත්ව තිබේ."
+
+#: src/userGroupCheck.py:84
+msgid ""
+"Using all numbers as the group name can cause confusion about whether the "
+"group name or numerical group id is meant. Do you really want to use a "
+"numerical-only group name?"
+msgstr "කණ්ඩායම් නාමයන් සඳහා අංක පමණක් භාවිතා කිරීම ව්‍යාකූල තාවයන් ඇතිවීමට ඉවහල් වේ, එමඟින් කණ්ඩායම් නම හා කණ්ඩායමේ හඳුනාගැනීමේ අංකය වෙන්කර හඳුනාගැනීම වඩාත් අපහසු වේ. ඔබහට අංකයන් ගෙන් පමණක් සමන්විත කණ්ඩායම් නාමයක් භාවිත කිරීමට සැබැවින්ම අවශ්‍යද?"
+
+#: src/userGroupCheck.py:172
+#, python-format
+msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
+msgstr ""
+
+#: src/userGroupCheck.py:192
+msgid ""
+"The chosen password contains characters which may be hard or impossible to "
+"type in certain situations. To ensure the password can be typed everywhere "
+"use only unaccented Latin letters (A-Z, a-z), digits (0-9), punctuation "
+"characters (e.g. comma, full stop) and the space character in the password. "
+"Do you want to use this password anyway?"
+msgstr ""
+
+#. have to check for whitespace for gecos, since whitespace is ok
+#: src/userGroupCheck.py:240
+#, python-format
+msgid ""
+"The name '%s' contains invalid characters.  Please use only UTF-8 "
+"characters."
+msgstr "'%s' නම තුල වලංගු නොවන අක්‍ෂරයන් ඇතුලත්ව තිබේ.  කරුණාකර UTF-8 අක්‍ෂර පමණක් භාවිත කරන්න."
+
+#. We have to check for colons as /etc/passwd is a colon delimited
+#. file.
+#: src/userGroupCheck.py:249
+#, python-format
+msgid "The name '%s' contains a colon.  Please do not use colons in the name."
+msgstr "'%s' නම තුල කෝලන් ලකුණක් ඇන්තර් ගතව ඇත.  කරුණාකර නාමයක් තුල කෝලන් ලකුණ භාාවිත නොකරන්න."
+
+#: src/userGroupCheck.py:259
+msgid "Please enter a home directory."
+msgstr "කරුණාකර නිවෙස් බහලුමක් තෝරාගන්න"
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: src/userGroupCheck.py:266
+#, python-format
+msgid ""
+"The directory name '%s' contains a colon.  Please do not use colons in the "
+"directory name."
+msgstr "'%s' බහලුම් නාමය තුල කෝලන් ලකුණක් අන්තර් ගතව ඇත..  කරුණාකර බහලුම් නාමයක් තුල කෝලන් ලකුණ භාවිත නොකරන්න."
+
+#: src/userGroupCheck.py:277
+#, python-format
+msgid ""
+"The directory name '%s' doesn't begin with a '/'. Please specify an absolute"
+" path for the home directory."
+msgstr ""
+
+#: src/userGroupCheck.py:286
+#, python-format
+msgid ""
+"The directory name '%s' has path components which are too long. Please use "
+"shorter path components for the home directory."
+msgstr ""
+
+#: src/userGroupCheck.py:296
+#, python-format
+msgid ""
+"The directory name '%s' contains empty path components. Please specify a "
+"home directory name without empty path components."
+msgstr ""
+
+#: src/userGroupCheck.py:308
+#, python-format
+msgid ""
+"The directory name '%s' contains illegal path components. Please don't use "
+"'.' or '..' as path components for the home directory."
+msgstr ""
+
+#: src/userGroupCheck.py:326
+#, python-format
+msgid ""
+"The directory '%(dir)s' cannot be created ('%(parent_dir)s' is not "
+"writable). Please choose a writable location."
+msgstr ""
+
+#: src/groupWindow.py:129
+#, python-format
+msgid "A group with name '%s' already exists."
+msgstr "'%s' නම මේවන විට කණ්ඩායමක් සඳහා භාවිතයේ යොදවා ඇත."
+
+#: src/groupWindow.py:153
+#, python-format
+msgid ""
+"Creating a group with a GID less than %(gid_min)s is not recommended.  Are "
+"you sure you want to do this?"
+msgstr "කණ්ඩායමක් සෑදීමේදී එහි කණ්ඩායම් හඳුනා ගැනීමේ අංකයේ (GID) අගය %(gid_min)s වඩා අවම ලෙස තිබීම රෙකමදාරු කරණු නොලැබේ. මෙය සිදු කිරීමට ඔබට සැබැවින්ම අවශ්‍යද?"
+
+#: src/mainWindow.py:91
+msgid ""
+"The help viewer could not be found. To be able to view help you need to "
+"install the 'yelp' package."
+msgstr ""
+
+#: src/mainWindow.py:109
+#, python-format
+msgid "No helper application for the URL '%(url)s can be found."
+msgstr ""
+
+#: src/mainWindow.py:138
+#, python-format
+msgid "Error saving settings to %s"
+msgstr "පරිස්ථිතියන් %s වෙත ගබඩා කිරීමේදී දෝශයක් ඇති විය."
+
+#: src/mainWindow.py:179
+msgid "User Name"
+msgstr "පරිශීලක නම"
+
+#: src/mainWindow.py:184
+msgid "User ID"
+msgstr "පරිශීලක හැඳුනාගැනීමේ අංකය"
+
+#: src/mainWindow.py:188
+msgid "Primary Group"
+msgstr "ප්‍රාථමික කණ්ඩායම"
+
+#: src/mainWindow.py:193
+msgid "Full Name"
+msgstr "සම්පූර්ණ නම"
+
+#: src/mainWindow.py:198
+msgid "Login Shell"
+msgstr "පිවිසුම් විධාන පුවරුව"
+
+#: src/mainWindow.py:203
+msgid "Home Directory"
+msgstr "නිවෙස් බහලුම"
+
+#: src/mainWindow.py:223
+msgid "Group Name"
+msgstr "කණ්ඩායම් නම"
+
+#: src/mainWindow.py:228
+msgid "Group ID"
+msgstr "කණ්ඩායම් හඳුනාගැනීමේ අංකය"
+
+#: src/mainWindow.py:232
+msgid "Group Members"
+msgstr "කණ්ඩායමේ සාමාජිකයින්"
+
+#: src/mainWindow.py:502
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the user '%(user)s'.\n"
+"\n"
+msgstr ""
+
+#: src/mainWindow.py:504
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these users:\n"
+"%(users)s\n"
+"\n"
+msgstr ""
+
+#: src/mainWindow.py:516
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the group '%(group)s'.\n"
+"\n"
+msgstr ""
+
+#: src/mainWindow.py:518
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these groups:\n"
+"%(groups)s\n"
+"\n"
+msgstr ""
+
+#: src/mainWindow.py:529
+#, python-format
+msgid ""
+"%(msg_users)s%(msg_groups)s\n"
+"In most cases this is caused by inconsistencies in the user or group database, e.g. between the files /etc/passwd, /etc/group and their respective shadow files /etc/shadow and /etc/gshadow. I will try to ignore these entries and continue for now, but please fix these inconsistencies as soon as possible."
+msgstr ""
+
+#: src/mainWindow.py:662 src/system-config-users.glade.h:71
+msgid "system-config-users"
+msgstr "system-config-users"
+
+#: src/mainWindow.py:673
+#, python-format
+msgid "Copyright © %(years)s %(holder)s <%(email)s>"
+msgstr "සියළුම හිමිකම් සමඟ © %(years)s %(holder)s <%(email)s>"
+
+#: src/mainWindow.py:676
+#, python-format
+msgid "Copyright © %(years)s %(holder)s"
+msgstr "සියළුම හිමිකම් සමඟ © %(years)s %(holder)s"
+
+#: src/mainWindow.py:685
+#, python-format
+msgid "%(author)s <%(email)s>"
+msgstr ""
+
+#: src/mainWindow.py:688
+#, python-format
+msgid "%(author)s"
+msgstr ""
+
+#: src/mainWindow.py:740
+msgid "Deleting the root user is not allowed."
+msgstr "root පරිශීලකව මකා දැමීම සඳහා ඉඩ දිය නොහැක."
+
+#: src/mainWindow.py:753
+msgid "- An installed software package contains this directory."
+msgstr "- ස්ථාපිත මෘදුකාංග ඇසුරුමක් තුල මෙම බහලුම අන්තර් ගත වේ."
+
+#: src/mainWindow.py:758
+msgid ""
+"- A system user owns this directory and removing it may impair the system's "
+"integrity."
+msgstr "- මෙම බහලුම පද්ධතියට අයත් පරිශීලකයකු සතු වෙයි, මෙම බහලුම මකා දැමීම පද්ධතියේ ආර්ජවයට හානි වීමට ඉඩ ඇත."
+
+#: src/mainWindow.py:762
+msgid "- This directory doesn't exist or isn't writable."
+msgstr "- මෙම බහලුම භාවිතයේ නොමැත නැතහොත් ඊට ලිවිය නොහැක."
+
+#: src/mainWindow.py:765
+#, python-format
+msgid "- The user '%s' doesn't own this directory."
+msgstr "- '%s' පරිශීලක හට මෙම බහලුම අයත් නොවේ."
+
+#: src/mainWindow.py:775
+#, python-format
+msgid ""
+"<b>There are currently processes running that are owned by '%s'!</b>  This "
+"user is probably still logged in.  "
+msgstr "<b>'%s' සතුව දැනට ක්‍රියාත්මක වෙමින් පවතින කාර්යයන් පවතී!</b>  මෙම පරිශීලක බොහෝ දුරට පද්ධතිය තුල පිවිසෙමින් සිටියි.  "
+
+#: src/mainWindow.py:779
+#, python-format
+msgid "Do you really want to remove the user '%s'?"
+msgstr "ඔබට සැබවින්ම '%s' පරිශීලකව ඉවත් කිරීමට අවශ්‍යද?"
+
+#: src/mainWindow.py:791
+#, python-format
+msgid "Delete %(user)s's home directory ('%(homedir)s') and temporary files."
+msgstr " %(user)s සතු ('%(homedir)s') නිවෙස් බහලුම සහ තාවකාලික ගොනු මකා දමන්න."
+
+#: src/mainWindow.py:797
+#, python-format
+msgid ""
+"Delete %(user)s's home directory ('%(homedir)s'), mail spool "
+"('%(mailspool)s') and temporary files."
+msgstr "%(user)s සතු ('%(homedir)s නිවෙස් බහලුම, තැපැල් එකතුව ('%(mailspool)s') සහ තාවකාලික ගොනු සියල්ල මකා දමන්න."
+
+#: src/mainWindow.py:809
+#, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for this reason:\n"
+"%(reason)s"
+msgstr "මා විසින් %(user)s හට අයත් නිවෙස් බහලුම ('%(homedir)s') ඉවත් කරනු නොලැබේ, මීට හේතු වන්නේ :\n%(reason)s"
+
+#: src/mainWindow.py:811
+#, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for these reasons:\n"
+"%(reason)s"
+msgstr "මා විසින් %(user)s හට අයත් නිවෙස් බහලුම ('%(homedir)s') ඉවත් කරනු නොලැබේ, මීට හේතු වන්නේ :\n%(reason)s"
+
+#: src/mainWindow.py:894
+#, python-format
+msgid "Are you sure you want to delete the group '%s'?"
+msgstr "ඔබ හට සැබවින්ම '%s' කණ්ඩායම මකා දැමීමට අවශ්‍යද?"
+
+#: src/system-config-users.py:38
+msgid "system-config-users requires a currently running X server."
+msgstr "system-config-users හට දැනට ක්‍රියාත්මක වෙමින් පවතින X සේවා දායකය අවශ්‍ය වේ."
+
+#: src/system-config-users.glade.h:1
+msgid "Add New Group"
+msgstr ""
+
+#: src/system-config-users.glade.h:2
+msgid "_Group Name:"
+msgstr "කණ්ඩායමේ නම(_G):"
+
+#: src/system-config-users.glade.h:3
+msgid "Specify g_roup ID manually:"
+msgstr ""
+
+#: src/system-config-users.glade.h:4
+msgid "User Properties"
+msgstr "පරිශීලක අංගයන්"
+
+#: src/system-config-users.glade.h:5
+msgid "User _Name:"
+msgstr "පරිශීලක නම(_N):"
+
+#: src/system-config-users.glade.h:6
+msgid "_Full Name:"
+msgstr "සම්පූර්ණ නම(_F):"
+
+#: src/system-config-users.glade.h:7
+msgid "Pass_word:"
+msgstr ""
+
+#: src/system-config-users.glade.h:8
+msgid "Confir_m Password:"
+msgstr ""
+
+#: src/system-config-users.glade.h:9
+msgid "_Login Shell:"
+msgstr "පිවිසුම් විධාන පුවරුව(_L):"
+
+#: src/system-config-users.glade.h:10
+msgid "_Home Directory:"
+msgstr "නිවෙස් බහලුම(_H):"
+
+#: src/system-config-users.glade.h:11
+msgid "S_ELinux role:"
+msgstr "S_ELinux සතු කාර්ය:"
+
+#: src/system-config-users.glade.h:12
+msgid "_User Data"
+msgstr "පරිශීලක දත්තයන්(_U)"
+
+#: src/system-config-users.glade.h:13
+msgid "_Enable account expiration"
+msgstr "ගිණුම කල් ඉකුත්ව අවලංගු වීම සක්‍රීය කරන්න(_E)"
+
+#: src/system-config-users.glade.h:14
+msgid "Account e_xpires (YYYY-MM-DD):"
+msgstr ""
+
+#: src/system-config-users.glade.h:15
+msgid "     "
+msgstr "     "
+
+#: src/system-config-users.glade.h:16
+msgid "-"
+msgstr "-"
+
+#: src/system-config-users.glade.h:17
+msgid "_Local password is locked"
+msgstr "දේශීය රහස්පදය අගුළු දමා ඇත(_L)"
+
+#: src/system-config-users.glade.h:18
+msgid "_Account Info"
+msgstr "ගිණුමේ තොරතුරු(_A)"
+
+#: src/system-config-users.glade.h:19
+msgid "_Enable password expiration"
+msgstr "රහස්පදයේ කල් ඉකුත් වීම සක්‍රීය කරන්න(_E)"
+
+#: src/system-config-users.glade.h:20
+msgid "Days before change a_llowed:"
+msgstr "සංශෝධනය කිරීමට ඉඩ ලබාගැනීම සඳහා සම්පූර්ණ කලයුතු දින ගණන(_l):"
+
+#: src/system-config-users.glade.h:21
+msgid "Days before change _required:"
+msgstr "සංශෝධනය කිරීමට විමසීම සඳහා සම්පූර්ණ විය යුතු දින ගණන(_r):"
+
+#: src/system-config-users.glade.h:22
+msgid "Days _warning before change:"
+msgstr "සංශෝධනය කිරීමට පෙර අවවාද කලයුතු දින ගණන(_w):"
+
+#: src/system-config-users.glade.h:23
+msgid "Days before account _inactive:"
+msgstr "ගිණුම අක්‍රීය වීමට පෙර සක්‍රීයව තිබිය යුතු දින ගණන(_i):"
+
+#: src/system-config-users.glade.h:24
+msgid "Force password change on next login"
+msgstr ""
+
+#: src/system-config-users.glade.h:25
+msgid "_Password Info"
+msgstr "රහස්පදයේ තොරතුරු(_P)"
+
+#: src/system-config-users.glade.h:26
+msgid "Select the groups that the user will be a member of:"
+msgstr "පරිශීලක සමාජිකත්වය ලබා ගත යුතු කණ්ඩායම් තෝරන්න:"
+
+#: src/system-config-users.glade.h:27
+msgid "_Groups"
+msgstr "කණ්ඩායම්(_G)"
+
+#: src/system-config-users.glade.h:28
+msgid "Group Properties"
+msgstr "කණ්ඩායමේ අංගයන්"
+
+#: src/system-config-users.glade.h:29
+msgid "Group _Data"
+msgstr "කණ්ඩායමේ දත්තයන්(_D)"
+
+#: src/system-config-users.glade.h:30
+msgid "Select the users to join this group:"
+msgstr "මෙම කණ්ඩායමට සම්බන්ධ කර ගැනීමට අවශ්‍ය පරිශීලකයින් තෝරාගන්න:"
+
+#: src/system-config-users.glade.h:31
+msgid "Group _Users"
+msgstr "කණ්ඩායම් පරිශීලකයින්(_U)"
+
+#: src/system-config-users.glade.h:32
+msgid "User Manager"
+msgstr "පරිශීලක කළමණාකරු"
+
+#: src/system-config-users.glade.h:33
+msgid "_File"
+msgstr "ගොනු(_F)"
+
+#: src/system-config-users.glade.h:34
+msgid "Add _User"
+msgstr "පරිශීලක එකතු කරන්න(_U)"
+
+#: src/system-config-users.glade.h:35
+msgid "Add _Group"
+msgstr "කණ්ඩායම එකතු කරන්න(_G)"
+
+#: src/system-config-users.glade.h:36
+msgid "_Edit"
+msgstr "සැකසුම්(_E)"
+
+#: src/system-config-users.glade.h:37
+msgid "_Help"
+msgstr "උදව්(_H)"
+
+#: src/system-config-users.glade.h:38
+msgid "_Contents"
+msgstr "අන්තර්ගතයන්(_C)"
+
+#: src/system-config-users.glade.h:39
+msgid "Edit properties"
+msgstr "අංගයන් සංශෝධනය කරන්න"
+
+#: src/system-config-users.glade.h:40
+msgid "Proper_ties"
+msgstr "අංගයන්(_t)"
+
+#: src/system-config-users.glade.h:41
+msgid "_Delete"
+msgstr "මකා දමන්න(_D)"
+
+#: src/system-config-users.glade.h:42
+msgid "Reload"
+msgstr "නැවත රුවන්න"
+
+#: src/system-config-users.glade.h:43
+msgid "_Refresh"
+msgstr "අළුත් කරන්න(_R)"
+
+#: src/system-config-users.glade.h:44
+msgid "Help"
+msgstr "උදව්"
+
+#: src/system-config-users.glade.h:45
+msgid "Sea_rch filter:"
+msgstr ""
+
+#: src/system-config-users.glade.h:46
+msgid "_Apply filter"
+msgstr "පෙරහනය භාවිතයේ යොදන්න(_A)"
+
+#: src/system-config-users.glade.h:47
+msgid "U_sers"
+msgstr "පරිශීලකයන්(_s)"
+
+#: src/system-config-users.glade.h:48
+msgid "Gr_oups"
+msgstr "කණ්ඩායම්(_o)"
+
+#: src/system-config-users.glade.h:49
+msgid "Add New User"
+msgstr ""
+
+#: src/system-config-users.glade.h:50
+msgid "_User Name:"
+msgstr "පරිශීලක නම(_U):"
+
+#: src/system-config-users.glade.h:51
+msgid "_Password:"
+msgstr "රහස්පදය(_P):"
+
+#: src/system-config-users.glade.h:52
+msgid "Create _home directory"
+msgstr "නිවෙස් බහලුම සාදන්න(_h)"
+
+#: src/system-config-users.glade.h:53
+msgid "    "
+msgstr "    "
+
+#: src/system-config-users.glade.h:54
+msgid "Home _Directory:"
+msgstr "නිවෙස් බහලුම(_D):"
+
+#: src/system-config-users.glade.h:55
+msgid "Create a private _group for the user"
+msgstr "පරිශීලක සඳහා පෞද්ගලික කණ්ඩායමක් සාදන්න(_g)"
+
+#: src/system-config-users.glade.h:56
+msgid "Specify u_ser ID manually:"
+msgstr ""
+
+#: src/system-config-users.glade.h:57
+msgid "About system-config-users"
+msgstr "system-config-users සම්බන්ධව"
+
+#: src/system-config-users.glade.h:58
+msgid "<b>system-config-users</b>"
+msgstr "<b>system-config-users</b>"
+
+#: src/system-config-users.glade.h:59
+msgid "Version @VERSION@"
+msgstr "වෙළුම @VERSION@"
+
+#: src/system-config-users.glade.h:60
+msgid "Copyright (c) 2001 - 2005 Red Hat, Inc."
+msgstr "සියළුම හිමිකම් සමඟ (c) 2001 - 2005 Red Hat, Inc."
+
+#: src/system-config-users.glade.h:61
+msgid "This software is distributed under the GNU General Public License."
+msgstr "GNU සාමාන්‍ය පොදු බලපත්‍රය (General Public License) යටතේ මෙම මෘදුකාංගය බෙදාහරින ලදී ."
+
+#: src/system-config-users.glade.h:62
+msgid "Preferences"
+msgstr "රුචි අරුචි"
+
+#: src/system-config-users.glade.h:63
+msgid "_Hide system users and groups"
+msgstr "පද්ධතිය සතු පරිශීලකයනින් සහ කණ්ඩායම් සඟවන්න(_H)"
+
+#: src/system-config-users.glade.h:64
+msgid "<b>User and Group Lists</b>"
+msgstr ""
+
+#: src/system-config-users.glade.h:65
+msgid ""
+"Ensure that a new user gets a higher UID than all existing users, if not set"
+" manually."
+msgstr ""
+
+#: src/system-config-users.glade.h:66
+msgid "Automatically assigned _UID must be highest"
+msgstr "ස්වයංක්‍රීයව යොදවා තිබෙන පරිශීලක හඳුනාගැනීමේ අංකය(UID) ඉතා ඉහල අගයකින් යුතු වේ(_U)"
+
+#: src/system-config-users.glade.h:67
+msgid ""
+"Ensure that a new group gets a higher GID than all existing groups, if not "
+"set manually."
+msgstr ""
+
+#: src/system-config-users.glade.h:68
+msgid "Automatically assigned _GID must be highest"
+msgstr "ස්වයංක්‍රීයව යොදවා තිබෙන කණ්ඩායම් හඳුනාගැනීමේ අංකය(GID) ඉතා ඉහල අගයකින් යුතු වේ(_G)"
+
+#: src/system-config-users.glade.h:69
+msgid "Prefer that private group GID is the _same as UID"
+msgstr ""
+
+#: src/system-config-users.glade.h:70
+msgid "<b>New Users</b>"
+msgstr "<b>නව පරිශීලකයින්</b>"
+
+#: src/system-config-users.glade.h:72
+msgid "Copyright © 2001-2007 Red Hat, Inc."
+msgstr ""
+
+#: src/system-config-users.glade.h:73
+msgid "Manages users and groups on your system."
+msgstr ""
+
+#: src/system-config-users.glade.h:74
+msgid ""
+"system-config-users is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
+"\n"
+"system-config-users is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with system-config-users; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+msgstr ""
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: src/system-config-users.glade.h:80
+msgid "translator-credits"
+msgstr ""
+
+#: config/system-config-users.desktop.in.h:1
+msgid "Users and Groups"
+msgstr "පරිශීලකයන් සහ කණ්ඩායම්"
+
+#: config/system-config-users.desktop.in.h:2
+msgid "Add or remove users and groups"
+msgstr "පරිශීලකයන් සහ කණ්ඩායම් එකතු කිරීම හෝ ඉවත් කිරීම"

@@ -1,0 +1,883 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Automatically generated, 2004.
+# Nils Philippsen <nils@redhat.com>, 2011.
+# Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006.
+# Rahul Bhalerao <rbhalera@redhat.com>, 2006.
+# sandeep shedmake <sandeep.shedmake@gmail.com>, 2007.
+# Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008-2009.
+# Sandeep Shedmake <sshedmak@redhat.com>, 2009-2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-users\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-users/\n"
+"POT-Creation-Date: 2012-11-02 10:51+0100\n"
+"PO-Revision-Date: 2012-11-02 09:59+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"Language-Team: Marathi (http://www.transifex.com/projects/p/fedora/language/mr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: mr\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/groupProperties.py:114 src/userGroupCheck.py:78 src/groupWindow.py:120
+msgid "Please enter a group name."
+msgstr "कृपया गट नाव दाखल करा."
+
+#: src/groupProperties.py:131
+#, python-format
+msgid "The group '%s' already exists. Please choose a different name."
+msgstr "'%s' गट आधिपासूनच अस्तित्वात आहे. कृपया दुसरे एखादे नाव नीवडा."
+
+#: src/groupProperties.py:178 src/mainWindow.py:889
+#, python-format
+msgid "You cannot remove user '%s' from their primary group."
+msgstr "तुम्हा '%s' या उपयोक्त्यास त्यांच्या प्राथमिक गटातून काढू शकत नाही."
+
+#: src/userWindow.py:100 src/userProperties.py:122
+msgid "User"
+msgstr "वापरकर्ता"
+
+#: src/userWindow.py:101 src/userProperties.py:123
+msgid "Staff"
+msgstr "स्टाफ"
+
+#: src/userWindow.py:102 src/userProperties.py:124
+msgid "System Administrator"
+msgstr "प्रणाली प्रशासक"
+
+#. The passwords don't match, so complain
+#: src/userWindow.py:216
+msgid "The passwords do not match."
+msgstr "पासवर्ड जुळत नाहीत."
+
+#. The user name is blank, so complain
+#: src/userWindow.py:248
+msgid "Please specify a user name"
+msgstr "कृपया वापरकर्तानाम दाखवा"
+
+#. This user already exists, so complain
+#: src/userWindow.py:256
+#, python-format
+msgid "An account with username '%s' already exists."
+msgstr "'%s' वापरकर्तानामासह खाते आधिच अस्तित्वात आहे."
+
+#. This uid already exists, so complain
+#: src/userWindow.py:294
+#, python-format
+msgid "The uid %s is already in use."
+msgstr "%s हे uid आधिच अस्तित्वात आहे."
+
+#. This (chosen) gid already exists, so complain
+#: src/userWindow.py:302 src/groupWindow.py:144
+#, python-format
+msgid "The gid %s is already in use."
+msgstr "'%s' हा gid आधिच वापरात आहे."
+
+#: src/userWindow.py:315
+#, python-format
+msgid ""
+"Error finding suitable user id not exceeding maximum value of %(maxid)s."
+msgstr "%(maxid)s चे कमाल मुल्यापेक्षा जास्त नसलेले योग्य यूजर id शोधतेवेळी त्रुटी."
+
+#: src/userWindow.py:318 src/groupWindow.py:177
+#, python-format
+msgid ""
+"Error finding suitable group id not exceeding maximum value of %(maxid)s."
+msgstr "%(maxid)s चे कमाल मुल्यापेक्षा जास्त नसलेले योग्य ग्रुप id शोधतेवेळी त्रुटी."
+
+#: src/userWindow.py:331
+#, python-format
+msgid ""
+"Creating a user with a UID less than %(uid_min)s is not recommended.  Are "
+"you sure you want to do this?"
+msgstr "UID %(uid_min)s पेक्षा लहान ठेवून वापरकर्ता निर्माण करणे शिफारसीय नाही.  तुमची खात्री आहे तुम्ही हे करू इच्छिता?"
+
+#: src/userWindow.py:364
+msgid "A group with this gid already exists.  What would you like to do?"
+msgstr "या gid नामांकीत एक गट आधिपासूनच अस्तित्वात आहे.  तुम्हास काय करणे आवडेल?"
+
+#: src/userWindow.py:368
+msgid "A group with this name already exists.  What would you like to do?"
+msgstr "या नावाने एक गट आधिच अस्तित्वात आहे.  तुम्हास काय करणे आवडेल?"
+
+#: src/userWindow.py:374
+msgid "Add to the existing group"
+msgstr "अस्तित्वात असलेल्या गटास जोडा"
+
+#: src/userWindow.py:376
+msgid "Add to the 'users' group"
+msgstr "'users' गटास जोडा"
+
+#. Uh-oh. It looks like /etc/group and /etc/gshadow are out of
+#. sync. Give up and quit.
+#: src/userWindow.py:460
+msgid ""
+"The system group database cannot be read.  This problem is most likely "
+"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
+"now."
+msgstr "प्रणाली गट डेटाबेस वाचते येत नाही.  ही समस्या बहुतांश /etc/group आणि /etc/gshadow यांमधील विजोडतेमुळे निर्माण झाली असावी. कार्यक्रम आता बाहेर पडेल."
+
+#: src/userProperties.py:157
+msgid "Primary Group:"
+msgstr "प्राथमिक गट:"
+
+#: src/userProperties.py:244
+#, python-format
+msgid "Password last changed on: %x"
+msgstr "पासवर्ड शेवटच्यावेळी बदलले: %x"
+
+#: src/userProperties.py:327 src/userGroupCheck.py:57
+msgid "Please enter a user name."
+msgstr "कृपया वापरकर्तानाम दाखल करा."
+
+#: src/userProperties.py:348
+#, python-format
+msgid "The user '%s' already exists. Please choose a different name."
+msgstr "'%s' वापरकर्ता आधिपासूनच अस्तित्वात आहे.  कृपया दुसरे एखादे नाव नीवडा."
+
+#: src/userProperties.py:371
+msgid "Passwords do not match."
+msgstr "पासवर्ड जुळत नाहीत."
+
+#: src/userProperties.py:451
+msgid "Please select at least one group for the user."
+msgstr "कृपया उपयोक्त्यासाठी किमान एक गट नीवडा."
+
+#: src/userProperties.py:472
+msgid "Please specify the month that the password will expire."
+msgstr "कृपया ज्या महिन्यात पासवर्ड बाद होईल तो दाखल करा."
+
+#: src/userProperties.py:482
+msgid "Please specify the day that the password will expire."
+msgstr "कृपया ज्या दिवशी पासवर्ड बाद होईल तो दाखल करा."
+
+#: src/userProperties.py:492
+msgid "Please specify the year that the password will expire."
+msgstr "कृपया ज्या वर्षी पासवर्ड बाद होईल तो दाखल करा."
+
+#. mktime will throw an OverflowError if the year is too big.
+#: src/userProperties.py:509
+msgid "The year is out of range.  Please select a different year."
+msgstr "वर्ष परिसीमेच्या बाहेर आहे.  कृपया दुसरे एखादे वर्ष नीवडा."
+
+#: src/userProperties.py:540
+msgid ""
+"Please specify the number of days before changing the password is allowed."
+msgstr "कृपया पासवर्ड बदलण्याची संमती असण्याआधीच्या दिवसांची संख्या दाखवा."
+
+#: src/userProperties.py:542
+#, python-format
+msgid ""
+"The number of days before changing the password is allowed must be between "
+"%(min)d and %(max)d."
+msgstr "कृपया पासवर्ड बदलण्याची संमती असण्याआधीच्या दिवसांची संख्या %(min)d व %(max)d च्या दरम्यान असायला हवी."
+
+#: src/userProperties.py:547
+msgid ""
+"Please specify the number of days before changing the password is required."
+msgstr "पासवर्ड बदलण्याची गरज असण्यापूर्वीच्या दिवसांची संख्या दाखवा."
+
+#: src/userProperties.py:549
+#, python-format
+msgid ""
+"The number of days before changing the password is required must be between "
+"%(min)d and %(max)d."
+msgstr "पासवर्ड बदलण्याची गरज असण्यापूर्वीच्या दिवसांची संख्या %(min)d व %(max)d दरम्यान असायला हवी."
+
+#: src/userProperties.py:554
+msgid ""
+"Please specify the number of days to warn the user before changing the "
+"password is required."
+msgstr "पासवर्ड बदलणे गरजेचे असण्यापूर्वी उपयोक्त्यास सुचना देण्यासाठी दिवसांची संख्या दाखवा."
+
+#: src/userProperties.py:556
+#, python-format
+msgid ""
+"The number of days to warn the user before changing the password is required"
+" must be between %(min)d and %(max)d."
+msgstr "पासवर्ड बदलणे गरजेचे असण्यापूर्वी उपयोक्त्यास सुचना देण्यासाठी दिवसांची संख्या %(min)d व %(max)d च्या दरम्यान असायला हवी."
+
+#: src/userProperties.py:562
+msgid ""
+"Please specify the number of days until the user account becomes inactive "
+"after password has expired."
+msgstr "पासवर्ड बाद झाल्यानंतर वापरकर्ता खाते निष्क्रीय होईपर्यंतच्या दिवसांची संख्या दाखवा."
+
+#: src/userProperties.py:565
+#, python-format
+msgid ""
+"The number of days until the user account becomes inactive after the "
+"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
+"means the account won't become inactive."
+msgstr "पासवर्ड बाद झाल्यानंतर वापरकर्ता खाते निष्क्रीय होईपर्यंतच्या दिवसांची संख्या %(min)d व %(max)d च्या दरम्यान असायला हवी. -1 संख्येस निश्चित केल्यावर खाते सक्रिय होणार नाही."
+
+#: src/userProperties.py:629
+#, python-format
+msgid ""
+"Unlocking the user failed because:\n"
+"\n"
+"%(errmsg)s"
+msgstr "खालील कारणास्तव वापरकर्ता कुलूपबंद अशक्य अपयशी झाले:\n\n%(errmsg)s"
+
+#: src/userProperties.py:632
+msgid "Unlocking the user failed due to an unknown reason."
+msgstr "अपरिचीत कारणास्तव वापरकर्ता कुलूपबंद अशक्य अपयशी झाले."
+
+#: src/userGroupCheck.py:58
+#, python-format
+msgid "The user name must not exceed %d characters."
+msgstr "वापरकर्तानाम %d अक्षरांपेक्षा मोठे असू शकत नाही."
+
+#: src/userGroupCheck.py:59
+#, python-format
+msgid ""
+"The user name '%s' contains whitespace. Please do not include whitespace in "
+"the user name."
+msgstr "वापरकर्तानाम '%s' मध्ये मोकळी जागा आहे. कृपया वापरकर्तानामात मोकळ्या जागा टाकू नका."
+
+#: src/userGroupCheck.py:61
+#, python-format
+msgid ""
+"The user name '%s' contains a dollar sign which is not at the end. Please "
+"use dollar signs only at the end of user names to indicate Samba machine "
+"accounts."
+msgstr "वापरकर्तानाम '%s' मध्ये डॉलरची खूण आहे जी शेवटी नाही. कृपया डॉलर खूणेचा उपयोग फक्त वापरकर्तानामाच्या शेवटी Samba मशीन खाते दर्शवण्यासाठी करा."
+
+#: src/userGroupCheck.py:64
+#, python-format
+msgid ""
+"The user name '%s' contains a trailing dollar sign. This should only be used"
+" for Samba machine accounts, using this for a normal user account can cause "
+"problems with some software. Is the account in question a Samba machine "
+"account?"
+msgstr "वापरकर्ता नाव '%s' मध्ये ट्रैलिंग डॉलर चिन्ह समाविष्टीत आहे. याचा वापर फक्त Samba मशीन खात्यांसाठीच व्हायला हवे, सर्वसाधारण वापरकर्ता खात्यासाठी वापर केल्यास काहिक सॉफ्टवेअरसह अडचणी निर्माण होऊ शकतात. विश्लेषणकरीता खाते Samba मशीनचे खाते आहे?"
+
+#: src/userGroupCheck.py:69
+#, python-format
+msgid ""
+"The user name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr "वापरकर्तानाम '%(name)s' मध्ये %(position)d या जागेवर अवैध अक्षर आहे."
+
+#: src/userGroupCheck.py:71
+msgid ""
+"Using all numbers as the user name can cause confusion about whether the "
+"user name or numerical user id is meant. Do you really want to use a "
+"numerical-only user name?"
+msgstr "सर्व संख्या वापरकर्तानाम म्हणून वापरल्याने वापरकर्तानाम किंवा साख्यीक वापरकर्ता id यांत गोंधळ होऊ शकतो. तुम्हास खरच केवळ सांख्यीक वापरकर्तानाम वापरायचे आहे?"
+
+#: src/userGroupCheck.py:79
+#, python-format
+msgid "The group name must not exceed %d characters."
+msgstr "गट नाव %d अक्षरांपेक्षा मोठे असू शकत नाही."
+
+#: src/userGroupCheck.py:80
+#, python-format
+msgid ""
+"The group name '%s' contains whitespace. Please do not include whitespace in"
+" the group name."
+msgstr "गट नाव '%s' मध्ये मोकळी जागा आहे. कृपया गट नावात मोकळ्या जागा टाकू नका."
+
+#: src/userGroupCheck.py:82
+#, python-format
+msgid ""
+"The group name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr "गट नाव '%(name)s' मध्ये %(position)d या जागेवर अवैध अक्षर आहे."
+
+#: src/userGroupCheck.py:84
+msgid ""
+"Using all numbers as the group name can cause confusion about whether the "
+"group name or numerical group id is meant. Do you really want to use a "
+"numerical-only group name?"
+msgstr "सर्व संख्या गट नाव म्हणून वापरल्याने गट नाव किंवा साख्यीक गट id यांत गोंधळ होऊ शकतो. तुम्हास खरच केवळ सांख्यीक गट नाव वापरायचे आहे?"
+
+#: src/userGroupCheck.py:172
+#, python-format
+msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
+msgstr "निवडलेले पासवर्ड सोपे आहे: %s. तुम्हाला तरी सुध्दा ते वापरायचे?"
+
+#: src/userGroupCheck.py:192
+msgid ""
+"The chosen password contains characters which may be hard or impossible to "
+"type in certain situations. To ensure the password can be typed everywhere "
+"use only unaccented Latin letters (A-Z, a-z), digits (0-9), punctuation "
+"characters (e.g. comma, full stop) and the space character in the password. "
+"Do you want to use this password anyway?"
+msgstr "नीवडलेल्या पासवर्डमध्ये काहिक अक्षरे आहेत ज्यांस ठराविक स्थितीत टाइप करणे कठिण किंवा किंवा अशक्य आहे. पासवर्ड कुठेही टाइप करणे शक्य आहे याची खात्री करण्यासाठी फक्त विनाउच्चार लॅटिन अक्षरे (A-Z, a-z), अंक (0-9), विरामचिन्हे अक्षरे (उ.दा. स्वल्पविराम, पूर्णविराम) व पासवर्डमधील मधील स्पेस् अक्षरांचाच वापर करा. तुम्हाला या पासवर्डचे तरिही वापर करायचे?"
+
+#. have to check for whitespace for gecos, since whitespace is ok
+#: src/userGroupCheck.py:240
+#, python-format
+msgid ""
+"The name '%s' contains invalid characters.  Please use only UTF-8 "
+"characters."
+msgstr "'%s' या नावात अवैध अक्षरे आहेत.  कृपया फक्त UTF-8 अक्षरे वापरा."
+
+#. We have to check for colons as /etc/passwd is a colon delimited
+#. file.
+#: src/userGroupCheck.py:249
+#, python-format
+msgid "The name '%s' contains a colon.  Please do not use colons in the name."
+msgstr "'%s' या नावात कोलन आहे. कृपया नावात कोलन वापरू नका."
+
+#: src/userGroupCheck.py:259
+msgid "Please enter a home directory."
+msgstr "कृपया गृह डिरेक्ट्री दाखल करा."
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: src/userGroupCheck.py:266
+#, python-format
+msgid ""
+"The directory name '%s' contains a colon.  Please do not use colons in the "
+"directory name."
+msgstr "डिरेक्ट्री नाम '%s' मध्ये कोलन आहे.  कृपया डिरेक्ट्री नामात कोलन वापरू नका."
+
+#: src/userGroupCheck.py:277
+#, python-format
+msgid ""
+"The directory name '%s' doesn't begin with a '/'. Please specify an absolute"
+" path for the home directory."
+msgstr "'%s' संचयीका नाम '/' पासुन सुरू होत नाही. कृपया मुख्य संचयीकेकरीता पूर्ण मार्ग नमुद करा."
+
+#: src/userGroupCheck.py:286
+#, python-format
+msgid ""
+"The directory name '%s' has path components which are too long. Please use "
+"shorter path components for the home directory."
+msgstr "डिरेक्ट्री नाम '%s' मध्ये लांबलचक मार्गीय घटक आहेत.  कृपया मुख्य संचयीकेकरीता लहान मार्गीय घटक नमुद करा."
+
+#: src/userGroupCheck.py:296
+#, python-format
+msgid ""
+"The directory name '%s' contains empty path components. Please specify a "
+"home directory name without empty path components."
+msgstr "डिरेक्ट्री नाम '%s' मध्ये रिक्त घटके आहेत.  कृपया मुख्य डिरेक्ट्री नामात रिक्त घटके नमूद करा."
+
+#: src/userGroupCheck.py:308
+#, python-format
+msgid ""
+"The directory name '%s' contains illegal path components. Please don't use "
+"'.' or '..' as path components for the home directory."
+msgstr "डिरेक्ट्री नाम '%s' मध्ये कोलन आहे.  कृपया डिरेक्ट्री नामात '.' किंवा '..' मार्गीय घटकाच्या स्वरूपात वापरू नका."
+
+#: src/userGroupCheck.py:326
+#, python-format
+msgid ""
+"The directory '%(dir)s' cannot be created ('%(parent_dir)s' is not "
+"writable). Please choose a writable location."
+msgstr "डिरेक्ट्री '%(dir)s' निर्माण करणे शक्य नाही ('%(parent_dir)s' लेखनजोगी नाही). कृपया लेखनजोगी स्थान नीवडा."
+
+#: src/groupWindow.py:129
+#, python-format
+msgid "A group with name '%s' already exists."
+msgstr "'%s' नावाचा गट आधिच अस्तित्वात आहे."
+
+#: src/groupWindow.py:153
+#, python-format
+msgid ""
+"Creating a group with a GID less than %(gid_min)s is not recommended.  Are "
+"you sure you want to do this?"
+msgstr "%(gid_min)s पेक्षा लहान GID चा गट बनवणे शिफारसीय नाही. तुमची खात्री आहे तुम्ही हे करू इच्छिता?"
+
+#: src/mainWindow.py:91
+msgid ""
+"The help viewer could not be found. To be able to view help you need to "
+"install the 'yelp' package."
+msgstr "मदत दर्शक आढळले नाही. मदत पहाण्याकरीता तुम्हाला 'yelp' संकुल प्रतिष्ठापीत करावे लागेल."
+
+#: src/mainWindow.py:109
+#, python-format
+msgid "No helper application for the URL '%(url)s can be found."
+msgstr "'%(url)s URL करीता सहकारीय अनुप्रयोग आढळले नाही."
+
+#: src/mainWindow.py:138
+#, python-format
+msgid "Error saving settings to %s"
+msgstr "%s मध्ये रचना सुरक्षित करण्यात चूक"
+
+#: src/mainWindow.py:179
+msgid "User Name"
+msgstr "वापरकर्ता नाम"
+
+#: src/mainWindow.py:184
+msgid "User ID"
+msgstr "वापरकर्ता ID"
+
+#: src/mainWindow.py:188
+msgid "Primary Group"
+msgstr "प्राथमिक गट"
+
+#: src/mainWindow.py:193
+msgid "Full Name"
+msgstr "पूर्ण नाव"
+
+#: src/mainWindow.py:198
+msgid "Login Shell"
+msgstr "लॉगीन शेल"
+
+#: src/mainWindow.py:203
+msgid "Home Directory"
+msgstr "गृह डिरेक्ट्री"
+
+#: src/mainWindow.py:223
+msgid "Group Name"
+msgstr "गट नाव"
+
+#: src/mainWindow.py:228
+msgid "Group ID"
+msgstr "गट ID"
+
+#: src/mainWindow.py:232
+msgid "Group Members"
+msgstr "गट सदस्य"
+
+#: src/mainWindow.py:502
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the user '%(user)s'.\n"
+"\n"
+msgstr "मला '%(user)s' वापरकर्त्याचे संख्यात्मक ID आढळले नाही.\n\n"
+
+#: src/mainWindow.py:504
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these users:\n"
+"%(users)s\n"
+"\n"
+msgstr "मला ह्या वापरकर्त्यांचे संख्यात्मक IDs आढळले नाही:\n%(users)s\n\n"
+
+#: src/mainWindow.py:516
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the group '%(group)s'.\n"
+"\n"
+msgstr "मला '%(group)s' गटाचे संख्यात्मक ID आढळले नाही.\n\n"
+
+#: src/mainWindow.py:518
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these groups:\n"
+"%(groups)s\n"
+"\n"
+msgstr "मला ह्या गटांचे संख्यात्मक IDs आढळले नाही:\n%(groups)s\n\n"
+
+#: src/mainWindow.py:529
+#, python-format
+msgid ""
+"%(msg_users)s%(msg_groups)s\n"
+"In most cases this is caused by inconsistencies in the user or group database, e.g. between the files /etc/passwd, /etc/group and their respective shadow files /etc/shadow and /etc/gshadow. I will try to ignore these entries and continue for now, but please fix these inconsistencies as soon as possible."
+msgstr "%(msg_users)s%(msg_groups)s\nबऱ्याच उदाहरणात हे सहसा वापरकर्ता किंवा संचयीका डाटाबेस मध्ये विसंगती आढाळल्यामुळे होते, उ.दा. /etc/passwd, /etc/group फाइल व त्याच्या परस्पर गोपनीय /etc/shadow व /etc/gshadow मध्ये. मी हे प्रविष्ट सद्याकरीता दुर्लक्ष करतो व पुढे जातो, पण कृपया विसंगत्ता त्वारीत सुस्थित करा."
+
+#: src/mainWindow.py:662 src/system-config-users.glade.h:71
+msgid "system-config-users"
+msgstr "system-config-users"
+
+#: src/mainWindow.py:673
+#, python-format
+msgid "Copyright © %(years)s %(holder)s <%(email)s>"
+msgstr "सर्वहक्काधिकार © %(years)s %(holder)s <%(email)s>"
+
+#: src/mainWindow.py:676
+#, python-format
+msgid "Copyright © %(years)s %(holder)s"
+msgstr "सर्वहक्काधिकार © %(years)s %(holder)s"
+
+#: src/mainWindow.py:685
+#, python-format
+msgid "%(author)s <%(email)s>"
+msgstr "%(author)s <%(email)s>"
+
+#: src/mainWindow.py:688
+#, python-format
+msgid "%(author)s"
+msgstr "%(author)s"
+
+#: src/mainWindow.py:740
+msgid "Deleting the root user is not allowed."
+msgstr "रूट वापरकर्ता नष्ट करायला परवानगी नाही."
+
+#: src/mainWindow.py:753
+msgid "- An installed software package contains this directory."
+msgstr "- प्रतिष्ठापित सॉफ्टवेयर संकुलात ही डिरेक्ट्री समाविष्ट असते."
+
+#: src/mainWindow.py:758
+msgid ""
+"- A system user owns this directory and removing it may impair the system's "
+"integrity."
+msgstr "- ही डिरेक्ट्री प्रणाली वापरकर्त्याच्या मालकीची आहे आणि तिला काढून टाकल्याने प्रणालीची एकसंधता बिघडू शकते."
+
+#: src/mainWindow.py:762
+msgid "- This directory doesn't exist or isn't writable."
+msgstr "- ही डिरेक्ट्री अस्तित्वात नाही किंवा लिहीण्याजोगी नाही."
+
+#: src/mainWindow.py:765
+#, python-format
+msgid "- The user '%s' doesn't own this directory."
+msgstr "- ही डिरेक्ट्री %s या वापरकर्त्याच्या मालकीची नाही."
+
+#: src/mainWindow.py:775
+#, python-format
+msgid ""
+"<b>There are currently processes running that are owned by '%s'!</b>  This "
+"user is probably still logged in.  "
+msgstr "<b>सध्या चालू असलेल्या काही प्रक्रिया अशा आहेत ज्या '%s' च्या मालकीच्या आहेत!</b> हा वापरकर्ता बहुदा अजुनही लॉग्डइन आहे.  "
+
+#: src/mainWindow.py:779
+#, python-format
+msgid "Do you really want to remove the user '%s'?"
+msgstr "तुम्हाला नक्की वापरकर्ता '%s' काढून टाकायचे?"
+
+#: src/mainWindow.py:791
+#, python-format
+msgid "Delete %(user)s's home directory ('%(homedir)s') and temporary files."
+msgstr "%(user)s ची मुख्य डिरेक्ट्री ('%(homedir)s') आणि तात्पुरत्या फाइली नष्ट करा."
+
+#: src/mainWindow.py:797
+#, python-format
+msgid ""
+"Delete %(user)s's home directory ('%(homedir)s'), mail spool "
+"('%(mailspool)s') and temporary files."
+msgstr "%(user)s ची मुख्य डिरेक्ट्री ('%(homedir)s'), मेल स्पूल ('%(mailspool)s') आणि तात्पुरत्या फाइली नष्ट करा."
+
+#: src/mainWindow.py:809
+#, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for this reason:\n"
+"%(reason)s"
+msgstr "मी %(user)s ची मुख्य डिरेक्ट्री ('%(homedir)s') या कारणास्तव नष्ट करणार नाही:\n%(reason)s"
+
+#: src/mainWindow.py:811
+#, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for these reasons:\n"
+"%(reason)s"
+msgstr "मी %(user)s ची मुख्य डिरेक्ट्री ('%(homedir)s') या कारणास्तव नष्ट करणार नाही:\n%(reason)s"
+
+#: src/mainWindow.py:894
+#, python-format
+msgid "Are you sure you want to delete the group '%s'?"
+msgstr "तुमची खात्री आहे की तुम्ही '%s' हा गट नष्ट करू इच्छिता?"
+
+#: src/system-config-users.py:38
+msgid "system-config-users requires a currently running X server."
+msgstr "system-config-users सध्या चालू असलेल्या X सेवकाची गरज आहे."
+
+#: src/system-config-users.glade.h:1
+msgid "Add New Group"
+msgstr "नवीन गट समावेश करा"
+
+#: src/system-config-users.glade.h:2
+msgid "_Group Name:"
+msgstr "गट नाव (_G):"
+
+#: src/system-config-users.glade.h:3
+msgid "Specify g_roup ID manually:"
+msgstr "गट ID स्वहस्ते दाखवा (_r):"
+
+#: src/system-config-users.glade.h:4
+msgid "User Properties"
+msgstr "वापरकर्ता गुणधर्म"
+
+#: src/system-config-users.glade.h:5
+msgid "User _Name:"
+msgstr "वापरकर्ता नाम(_N):"
+
+#: src/system-config-users.glade.h:6
+msgid "_Full Name:"
+msgstr "पूर्ण नाव(_F):"
+
+#: src/system-config-users.glade.h:7
+msgid "Pass_word:"
+msgstr "पासवर्ड (_w):"
+
+#: src/system-config-users.glade.h:8
+msgid "Confir_m Password:"
+msgstr "पासवर्डची खात्री करा (_m):"
+
+#: src/system-config-users.glade.h:9
+msgid "_Login Shell:"
+msgstr "लॉगीन शेल (_L):"
+
+#: src/system-config-users.glade.h:10
+msgid "_Home Directory:"
+msgstr "गृह डिरेक्ट्री (_H):"
+
+#: src/system-config-users.glade.h:11
+msgid "S_ELinux role:"
+msgstr "SELinux भूमिका (_E):"
+
+#: src/system-config-users.glade.h:12
+msgid "_User Data"
+msgstr "वापरकर्ता माहिती (_U)"
+
+#: src/system-config-users.glade.h:13
+msgid "_Enable account expiration"
+msgstr "खाते बाद होणे कार्यान्वीत करा (_E)"
+
+#: src/system-config-users.glade.h:14
+msgid "Account e_xpires (YYYY-MM-DD):"
+msgstr "खाते वेळ समाप्ती (YYYY-MM-DD) (_x):"
+
+#: src/system-config-users.glade.h:15
+msgid "     "
+msgstr "     "
+
+#: src/system-config-users.glade.h:16
+msgid "-"
+msgstr "-"
+
+#: src/system-config-users.glade.h:17
+msgid "_Local password is locked"
+msgstr "स्थानिक पासवर्ड ताळेबंद आहे (_L)"
+
+#: src/system-config-users.glade.h:18
+msgid "_Account Info"
+msgstr "खाते माहिती (_A)"
+
+#: src/system-config-users.glade.h:19
+msgid "_Enable password expiration"
+msgstr "पासवर्ड बाद होणे कार्यान्वित(_E)"
+
+#: src/system-config-users.glade.h:20
+msgid "Days before change a_llowed:"
+msgstr "बदल संमत होण्यापूर्वीचे दिवस (_l):"
+
+#: src/system-config-users.glade.h:21
+msgid "Days before change _required:"
+msgstr "बदल आवश्यक होण्यापूर्वीचे दिवस (_r):"
+
+#: src/system-config-users.glade.h:22
+msgid "Days _warning before change:"
+msgstr "बदलपूर्व सुचनेसाठी दिवस (_w):"
+
+#: src/system-config-users.glade.h:23
+msgid "Days before account _inactive:"
+msgstr "खाते निष्क्रीय होण्यापूर्वीचे दिवस (_i):"
+
+#: src/system-config-users.glade.h:24
+msgid "Force password change on next login"
+msgstr "पुढच्यावेळी प्रवेश करताना पासवर्ड बदल जबरनपणे लागू करा"
+
+#: src/system-config-users.glade.h:25
+msgid "_Password Info"
+msgstr "पासवर्ड (_P)"
+
+#: src/system-config-users.glade.h:26
+msgid "Select the groups that the user will be a member of:"
+msgstr "वापरकर्ता ज्यांचा सदस्य बनावा ते गट नीवडा:"
+
+#: src/system-config-users.glade.h:27
+msgid "_Groups"
+msgstr "गट (_G)"
+
+#: src/system-config-users.glade.h:28
+msgid "Group Properties"
+msgstr "गट गुणधर्म"
+
+#: src/system-config-users.glade.h:29
+msgid "Group _Data"
+msgstr "गट माहिती(_D)"
+
+#: src/system-config-users.glade.h:30
+msgid "Select the users to join this group:"
+msgstr "या गटात दाखल होण्यासाठी वापरकर्ते नीवडा:"
+
+#: src/system-config-users.glade.h:31
+msgid "Group _Users"
+msgstr "गट वापरकर्ते(_U)"
+
+#: src/system-config-users.glade.h:32
+msgid "User Manager"
+msgstr "वापरकर्ता व्यवस्थापक"
+
+#: src/system-config-users.glade.h:33
+msgid "_File"
+msgstr "फाइल(_F)"
+
+#: src/system-config-users.glade.h:34
+msgid "Add _User"
+msgstr "वापरकर्ता जोडा(_U)"
+
+#: src/system-config-users.glade.h:35
+msgid "Add _Group"
+msgstr "गट जोडा(_G)"
+
+#: src/system-config-users.glade.h:36
+msgid "_Edit"
+msgstr "संपादा(_E)"
+
+#: src/system-config-users.glade.h:37
+msgid "_Help"
+msgstr "मदत(_H)"
+
+#: src/system-config-users.glade.h:38
+msgid "_Contents"
+msgstr "अंतर्भूत बाबी(_C)"
+
+#: src/system-config-users.glade.h:39
+msgid "Edit properties"
+msgstr "गुणधर्म संपादन करा"
+
+#: src/system-config-users.glade.h:40
+msgid "Proper_ties"
+msgstr "गुणधर्म(_t)"
+
+#: src/system-config-users.glade.h:41
+msgid "_Delete"
+msgstr "नष्ट करा(_D)"
+
+#: src/system-config-users.glade.h:42
+msgid "Reload"
+msgstr "पुनः भारित करा"
+
+#: src/system-config-users.glade.h:43
+msgid "_Refresh"
+msgstr "पुनः ताजे करा(_R)"
+
+#: src/system-config-users.glade.h:44
+msgid "Help"
+msgstr "मदत"
+
+#: src/system-config-users.glade.h:45
+msgid "Sea_rch filter:"
+msgstr "फिल्टर शोधा (_r):"
+
+#: src/system-config-users.glade.h:46
+msgid "_Apply filter"
+msgstr "गाळण लावा(_A)"
+
+#: src/system-config-users.glade.h:47
+msgid "U_sers"
+msgstr "वापरकर्ते(_s)"
+
+#: src/system-config-users.glade.h:48
+msgid "Gr_oups"
+msgstr "गट(_o)"
+
+#: src/system-config-users.glade.h:49
+msgid "Add New User"
+msgstr "नवीन वापरकर्ता समावेश करा"
+
+#: src/system-config-users.glade.h:50
+msgid "_User Name:"
+msgstr "वापरकर्ता नाव(_U):"
+
+#: src/system-config-users.glade.h:51
+msgid "_Password:"
+msgstr "पासवर्ड (_P):"
+
+#: src/system-config-users.glade.h:52
+msgid "Create _home directory"
+msgstr "गृह डिरेक्ट्री निर्माण करा(_h)"
+
+#: src/system-config-users.glade.h:53
+msgid "    "
+msgstr "    "
+
+#: src/system-config-users.glade.h:54
+msgid "Home _Directory:"
+msgstr "गृह डिरेक्ट्री(_D):"
+
+#: src/system-config-users.glade.h:55
+msgid "Create a private _group for the user"
+msgstr "उपयोक्त्यासाठी खाजगी गट निर्माण करा(_g)"
+
+#: src/system-config-users.glade.h:56
+msgid "Specify u_ser ID manually:"
+msgstr "स्वहस्ते वापरकर्ता ID नमूद करा (_s):"
+
+#: src/system-config-users.glade.h:57
+msgid "About system-config-users"
+msgstr "system-config-users विषयी"
+
+#: src/system-config-users.glade.h:58
+msgid "<b>system-config-users</b>"
+msgstr "<b>system-config-users</b>"
+
+#: src/system-config-users.glade.h:59
+msgid "Version @VERSION@"
+msgstr "आवृत्ती @VERSION@"
+
+#: src/system-config-users.glade.h:60
+msgid "Copyright (c) 2001 - 2005 Red Hat, Inc."
+msgstr "सर्वहक्काधिकार (c) 2001 - 2005 Red Hat, Inc."
+
+#: src/system-config-users.glade.h:61
+msgid "This software is distributed under the GNU General Public License."
+msgstr "हे सॉफ्टवेयर GNU General Public License अंतर्गत वितरित केले आहे."
+
+#: src/system-config-users.glade.h:62
+msgid "Preferences"
+msgstr "पसंती"
+
+#: src/system-config-users.glade.h:63
+msgid "_Hide system users and groups"
+msgstr "प्रणाली वापरकर्ते आणि गट लपवा (_H)"
+
+#: src/system-config-users.glade.h:64
+msgid "<b>User and Group Lists</b>"
+msgstr "<b>वापरकर्ता व गट यादी</b>"
+
+#: src/system-config-users.glade.h:65
+msgid ""
+"Ensure that a new user gets a higher UID than all existing users, if not set"
+" manually."
+msgstr "नवीन उपयोक्त्यास मिळणारा UID सर्व अस्तित्वात असलेल्या उपयोक्त्यांपेक्षा मोठा असल्याची खात्री करा, तसे नसल्यास स्वहस्ते निर्धारित करा."
+
+#: src/system-config-users.glade.h:66
+msgid "Automatically assigned _UID must be highest"
+msgstr "आपोआप लागू केलेले UID सर्वांत मोठे असायला हवे (_U)"
+
+#: src/system-config-users.glade.h:67
+msgid ""
+"Ensure that a new group gets a higher GID than all existing groups, if not "
+"set manually."
+msgstr "नवीन गटास मिळणारा GID सर्व अस्तित्वात असलेल्या गटांपेक्षा मोठा असल्याची खात्री करा, तसे नसल्यास स्वहस्ते निर्धारित करा."
+
+#: src/system-config-users.glade.h:68
+msgid "Automatically assigned _GID must be highest"
+msgstr "आपोआप लागू केलेले सर्वांत मोठे GID असायला हवे (_G)"
+
+#: src/system-config-users.glade.h:69
+msgid "Prefer that private group GID is the _same as UID"
+msgstr "खाजगी गट GID हा UID समानच असण्यास प्राधान्य द्या (_s)"
+
+#: src/system-config-users.glade.h:70
+msgid "<b>New Users</b>"
+msgstr "<b>नवीन वापरकर्ते</b>"
+
+#: src/system-config-users.glade.h:72
+msgid "Copyright © 2001-2007 Red Hat, Inc."
+msgstr "सर्वहक्काधिकार © 2001-2007 Red Hat, Inc."
+
+#: src/system-config-users.glade.h:73
+msgid "Manages users and groups on your system."
+msgstr "आपल्या प्रणालीवर वापरकर्ते व गट नियंत्रीत करा."
+
+#: src/system-config-users.glade.h:74
+msgid ""
+"system-config-users is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
+"\n"
+"system-config-users is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with system-config-users; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+msgstr "system-config-users is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n\nsystem-config-users is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with system-config-users; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: src/system-config-users.glade.h:80
+msgid "translator-credits"
+msgstr "संदिप शेडमाके <sandeep.shedmake@gmail.com> 2008, 2009; संदिप शेडमाके <sshedmak@redhat.com> 2009, 2010."
+
+#: config/system-config-users.desktop.in.h:1
+msgid "Users and Groups"
+msgstr "वापरकर्ते आणि गट"
+
+#: config/system-config-users.desktop.in.h:2
+msgid "Add or remove users and groups"
+msgstr "वापरकर्ते आणि गट जोडा किंवा काढा"

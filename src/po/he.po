@@ -1,0 +1,882 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Automatically generated, 2004.
+# Elad Alfassa <el.il@doom.co.il>, 2011.
+# elad <el.il@doom.co.il>, 2010.
+# Nils Philippsen <nils@redhat.com>, 2011.
+# Oron Peled <oron@actcom.co.il>, 2009.
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-users\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-users/\n"
+"POT-Creation-Date: 2012-11-02 10:51+0100\n"
+"PO-Revision-Date: 2012-11-02 09:59+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"Language-Team: Hebrew <he-users@lists.fedoraproject.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: he\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/groupProperties.py:114 src/userGroupCheck.py:78 src/groupWindow.py:120
+msgid "Please enter a group name."
+msgstr "נא להקליד שם קבוצה."
+
+#: src/groupProperties.py:131
+#, python-format
+msgid "The group '%s' already exists. Please choose a different name."
+msgstr "הקבוצה ‎%s כבר קיימת. נא לבחור שם שונה."
+
+#: src/groupProperties.py:178 src/mainWindow.py:889
+#, python-format
+msgid "You cannot remove user '%s' from their primary group."
+msgstr "לא ניתן להסיר את המשתמש '%s' מקבוצתו העיקרית."
+
+#: src/userWindow.py:100 src/userProperties.py:122
+msgid "User"
+msgstr "משתמש"
+
+#: src/userWindow.py:101 src/userProperties.py:123
+msgid "Staff"
+msgstr "סגל"
+
+#: src/userWindow.py:102 src/userProperties.py:124
+msgid "System Administrator"
+msgstr "מנהל מערכת"
+
+#. The passwords don't match, so complain
+#: src/userWindow.py:216
+msgid "The passwords do not match."
+msgstr "הססמאות אינן זהות."
+
+#. The user name is blank, so complain
+#: src/userWindow.py:248
+msgid "Please specify a user name"
+msgstr "נא להקליד שם משתמש"
+
+#. This user already exists, so complain
+#: src/userWindow.py:256
+#, python-format
+msgid "An account with username '%s' already exists."
+msgstr "חשבון משתמש בשם '‎%s‎' כבר קיים."
+
+#. This uid already exists, so complain
+#: src/userWindow.py:294
+#, python-format
+msgid "The uid %s is already in use."
+msgstr "מזהה המשתמש ‎%s כבר בשימוש."
+
+#. This (chosen) gid already exists, so complain
+#: src/userWindow.py:302 src/groupWindow.py:144
+#, python-format
+msgid "The gid %s is already in use."
+msgstr "מזהה הקבוצה %s כבר נמצא בשימוש."
+
+#: src/userWindow.py:315
+#, python-format
+msgid ""
+"Error finding suitable user id not exceeding maximum value of %(maxid)s."
+msgstr "שגיאה במציאת מזהה משתמש מתאים שלא חורג מהערך המקסימלי %(maxid)s."
+
+#: src/userWindow.py:318 src/groupWindow.py:177
+#, python-format
+msgid ""
+"Error finding suitable group id not exceeding maximum value of %(maxid)s."
+msgstr "אירעה שגיאה בעת חיפוש מספר קבוצה שאינו חורג מהערך המרבי %(maxid)s."
+
+#: src/userWindow.py:331
+#, python-format
+msgid ""
+"Creating a user with a UID less than %(uid_min)s is not recommended.  Are "
+"you sure you want to do this?"
+msgstr "יצירת משתמש עם מזהה קטן מ־%(uid_min)s אינה מומלצת. האם ברצונך לבצע זאת בכל אופן?"
+
+#: src/userWindow.py:364
+msgid "A group with this gid already exists.  What would you like to do?"
+msgstr "קבוצה עם מזהה קבוצה זה כבר קיימת. מה ברצונך לעשות?"
+
+#: src/userWindow.py:368
+msgid "A group with this name already exists.  What would you like to do?"
+msgstr "קבוצה עם שם זה כבר קיימת. מה ברצונך לעשות?"
+
+#: src/userWindow.py:374
+msgid "Add to the existing group"
+msgstr "הוסף לקבוצה הקיימת"
+
+#: src/userWindow.py:376
+msgid "Add to the 'users' group"
+msgstr "הוסף לקבוצה 'users'"
+
+#. Uh-oh. It looks like /etc/group and /etc/gshadow are out of
+#. sync. Give up and quit.
+#: src/userWindow.py:460
+msgid ""
+"The system group database cannot be read.  This problem is most likely "
+"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
+"now."
+msgstr "לא ניתן לקורא את מסד הנתונים של הקבוצות במערכת.הבעייה הזאת בד\"כ נובעת מחוסר התאמה בין הקבצים ‎/‎etc/group ​ו-‎/‎etc/gshadow. ​התוכנה הזאת תצא עכשיו."
+
+#: src/userProperties.py:157
+msgid "Primary Group:"
+msgstr "קבוצה עיקרית"
+
+#: src/userProperties.py:244
+#, python-format
+msgid "Password last changed on: %x"
+msgstr "הססמה שונתה לאחרונה ב: %x"
+
+#: src/userProperties.py:327 src/userGroupCheck.py:57
+msgid "Please enter a user name."
+msgstr "נא להקליד שם משתמש."
+
+#: src/userProperties.py:348
+#, python-format
+msgid "The user '%s' already exists. Please choose a different name."
+msgstr "המשתמש '‎%s' כבר קיים. נא לבחור שם שונה."
+
+#: src/userProperties.py:371
+msgid "Passwords do not match."
+msgstr "הססמאות אינן זהות."
+
+#: src/userProperties.py:451
+msgid "Please select at least one group for the user."
+msgstr "נא לבחור לפחות קבוצה אחת עבור המשתמש."
+
+#: src/userProperties.py:472
+msgid "Please specify the month that the password will expire."
+msgstr "נא לציין את החודש בו יפוג תוקפה של הססמה."
+
+#: src/userProperties.py:482
+msgid "Please specify the day that the password will expire."
+msgstr "נא לציין את היום בו יפוג תוקפה של הססמה."
+
+#: src/userProperties.py:492
+msgid "Please specify the year that the password will expire."
+msgstr "נא לציין את השנה בה יפוג תוקפה של הססמה."
+
+#. mktime will throw an OverflowError if the year is too big.
+#: src/userProperties.py:509
+msgid "The year is out of range.  Please select a different year."
+msgstr "שנה מחוץ לתחום המותר. נא לבחור שנה אחרת."
+
+#: src/userProperties.py:540
+msgid ""
+"Please specify the number of days before changing the password is allowed."
+msgstr "נא לציין את מספר הימים המזערי המותר בין החלפות ססמה."
+
+#: src/userProperties.py:542
+#, python-format
+msgid ""
+"The number of days before changing the password is allowed must be between "
+"%(min)d and %(max)d."
+msgstr "מספר הימים המזערי בין החלפות ססמה חייב להיות בתחום בין ‎%(min)d ו־‎%(max)d."
+
+#: src/userProperties.py:547
+msgid ""
+"Please specify the number of days before changing the password is required."
+msgstr "נא לציין את מספר הימים לפני שהחלפת ססמה נדרשת."
+
+#: src/userProperties.py:549
+#, python-format
+msgid ""
+"The number of days before changing the password is required must be between "
+"%(min)d and %(max)d."
+msgstr "מספר הימים המרבי בין החלפות ססמה חייב להיות בתחום בין ‎%(min)d ו־‎%(max)d."
+
+#: src/userProperties.py:554
+msgid ""
+"Please specify the number of days to warn the user before changing the "
+"password is required."
+msgstr "נא לציין את כמה ימים לפני פקיעת תוקף הססמה יש להזהיר את המשתמש."
+
+#: src/userProperties.py:556
+#, python-format
+msgid ""
+"The number of days to warn the user before changing the password is required"
+" must be between %(min)d and %(max)d."
+msgstr "מספר ימי האזהרה לפני החלפת ססמה חייב להיות בתחום בין ‎%(min)d ו־‎%(max)d."
+
+#: src/userProperties.py:562
+msgid ""
+"Please specify the number of days until the user account becomes inactive "
+"after password has expired."
+msgstr "נא לציין כמה ימים אחרי פקיעת הססמה ינעל חשבון המשתמש."
+
+#: src/userProperties.py:565
+#, python-format
+msgid ""
+"The number of days until the user account becomes inactive after the "
+"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
+"means the account won't become inactive."
+msgstr "מספר הימים מפקיעת ססמה עד לנעילת חשבון משתמש חייב להיות בתחום בין ‎%(min)d ו־‎%(max)d."
+
+#: src/userProperties.py:629
+#, python-format
+msgid ""
+"Unlocking the user failed because:\n"
+"\n"
+"%(errmsg)s"
+msgstr "שחרור נעילת המשתמש נכשל בגלל:\n\n%(errmsg)s"
+
+#: src/userProperties.py:632
+msgid "Unlocking the user failed due to an unknown reason."
+msgstr "שחרור המשתמש נכשל בגלל סיבה לא ידוע"
+
+#: src/userGroupCheck.py:58
+#, python-format
+msgid "The user name must not exceed %d characters."
+msgstr "אסור ששם משתמש יהיה ארוך מ־‎%d תווים."
+
+#: src/userGroupCheck.py:59
+#, python-format
+msgid ""
+"The user name '%s' contains whitespace. Please do not include whitespace in "
+"the user name."
+msgstr "שם המשתמש '‎%s' מכיל רווחים. נא לא לכלול רווחים בשם משתמש."
+
+#: src/userGroupCheck.py:61
+#, python-format
+msgid ""
+"The user name '%s' contains a dollar sign which is not at the end. Please "
+"use dollar signs only at the end of user names to indicate Samba machine "
+"accounts."
+msgstr "שם המשתמש '‎%s' מכיל את התו דולר באמצע השם. תו זה מיועד לסימון חשבונות מחשבים עבור Samba ואז הוא מופיע רק בסוף שם המשתמש."
+
+#: src/userGroupCheck.py:64
+#, python-format
+msgid ""
+"The user name '%s' contains a trailing dollar sign. This should only be used"
+" for Samba machine accounts, using this for a normal user account can cause "
+"problems with some software. Is the account in question a Samba machine "
+"account?"
+msgstr "שם המשתמש '%s' כולל סימן דולר עוקב. צריך להשתמש בסימן זה רק עבור חשבונות של מכונות Samba. שימוש בזה עבור חשבון משתמש רגיל יכול ליצור בעיות עם חלק מהתוכנות. האם החשבון המדובר הוא חשבון של מכונת Samba?"
+
+#: src/userGroupCheck.py:69
+#, python-format
+msgid ""
+"The user name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr "שם המשתמש '‎%(name)s‎' מכיל במקום ‎%(position)d תו לא חוקי."
+
+#: src/userGroupCheck.py:71
+msgid ""
+"Using all numbers as the user name can cause confusion about whether the "
+"user name or numerical user id is meant. Do you really want to use a "
+"numerical-only user name?"
+msgstr "קביעת שם משתמש המכיל ספרות בלבד עלולה להטעות בהמשך, כאשר לא יהיה ברור אם מספר מתייחס לשם המשתמש או למזהה המספרי שלו. האם למרות זאת ברצונך לקבוע שם משתמש המכיל ספרות בלבד?"
+
+#: src/userGroupCheck.py:79
+#, python-format
+msgid "The group name must not exceed %d characters."
+msgstr "אסור ששם קבוצה יהיה ארוך מ־‎%d תווים."
+
+#: src/userGroupCheck.py:80
+#, python-format
+msgid ""
+"The group name '%s' contains whitespace. Please do not include whitespace in"
+" the group name."
+msgstr "שם הקבוצה '‎%s' מכיל רווחים. נא לא לכלול רווחים בשם קבוצה."
+
+#: src/userGroupCheck.py:82
+#, python-format
+msgid ""
+"The group name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr "שם הקבוצה '‎%(name)s‎' מכיל במקום ‎%(position)d תו לא חוקי."
+
+#: src/userGroupCheck.py:84
+msgid ""
+"Using all numbers as the group name can cause confusion about whether the "
+"group name or numerical group id is meant. Do you really want to use a "
+"numerical-only group name?"
+msgstr "קביעת שם קבוצה המכיל ספרות בלבד עלולה להטעות בהמשך, כאשר לא יהיה ברור אם מספר מתייחס לשם הקבוצה או למזהה המספרי שלה. האם למרות זאת ברצונך לקבוע שם קבוצה המכיל ספרות בלבד?"
+
+#: src/userGroupCheck.py:172
+#, python-format
+msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
+msgstr "הססמה שנבחרה חלשה מדי ‎%s. האם ברצונך להשתמש בה למרות זאת?"
+
+#: src/userGroupCheck.py:192
+msgid ""
+"The chosen password contains characters which may be hard or impossible to "
+"type in certain situations. To ensure the password can be typed everywhere "
+"use only unaccented Latin letters (A-Z, a-z), digits (0-9), punctuation "
+"characters (e.g. comma, full stop) and the space character in the password. "
+"Do you want to use this password anyway?"
+msgstr "הססמה שנבחרה מכילה תווים שקשה או בלתי אפשרי להקליד במצבים מסוימים. כדי לוודא שאפשר להקליד את הססמה בכל מצב, יש להשתמש רק באותיות לטיניות (A-Z, a-z), ספרות (0-9), סימני פיסוק (לדוגמה פסיק או נקודה) ותו הרווח בססמה. האם ברצונך להשתמש בססמה זו למרות זאת?"
+
+#. have to check for whitespace for gecos, since whitespace is ok
+#: src/userGroupCheck.py:240
+#, python-format
+msgid ""
+"The name '%s' contains invalid characters.  Please use only UTF-8 "
+"characters."
+msgstr "השם '‎%s‎' מכיל תווים לא חוקיים. נא להשתמש רק בתווים בקידוד UTF-8."
+
+#. We have to check for colons as /etc/passwd is a colon delimited
+#. file.
+#: src/userGroupCheck.py:249
+#, python-format
+msgid "The name '%s' contains a colon.  Please do not use colons in the name."
+msgstr "השם '‎%s‎' מכיל את התו נקודתיים. אין לכלול תו זה בשם."
+
+#: src/userGroupCheck.py:259
+msgid "Please enter a home directory."
+msgstr "נא להקליד שם תיקיית בית."
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: src/userGroupCheck.py:266
+#, python-format
+msgid ""
+"The directory name '%s' contains a colon.  Please do not use colons in the "
+"directory name."
+msgstr "שם התיקייה '‎%s‎' מכיל את התו נקודתיים. אין לכלול תו זה בשם תיקיית הבית."
+
+#: src/userGroupCheck.py:277
+#, python-format
+msgid ""
+"The directory name '%s' doesn't begin with a '/'. Please specify an absolute"
+" path for the home directory."
+msgstr "שם התיקייה '‎%s‎' אינו מתחיל ב־'/'. יש להשתמש בשם מסלול מלא עבור תיקיית הבית."
+
+#: src/userGroupCheck.py:286
+#, python-format
+msgid ""
+"The directory name '%s' has path components which are too long. Please use "
+"shorter path components for the home directory."
+msgstr "שם התיקייה '‎%s‎' מכיל חלקי מסלול ארוכים מדי. נא להשתמש בחלקים קצרים יותר עבוד מסלול תיקיית הבית."
+
+#: src/userGroupCheck.py:296
+#, python-format
+msgid ""
+"The directory name '%s' contains empty path components. Please specify a "
+"home directory name without empty path components."
+msgstr "שם התיקייה '‎%s‎' מכיל חלקי מסלול ריקים. אין לציין חלקים ריקים במסלול תיקיית הבית."
+
+#: src/userGroupCheck.py:308
+#, python-format
+msgid ""
+"The directory name '%s' contains illegal path components. Please don't use "
+"'.' or '..' as path components for the home directory."
+msgstr "שם התיקייה '‎%s‎' מכיל חלקי מסלול לא חוקיים. אין להשתמש ב־'.' או '..' כחלקי מסלול של תיקיית הבית."
+
+#: src/userGroupCheck.py:326
+#, python-format
+msgid ""
+"The directory '%(dir)s' cannot be created ('%(parent_dir)s' is not "
+"writable). Please choose a writable location."
+msgstr "לא ניתן ליצור את התיקייה '%(dir)s' ‏('%(parent_dir)s' אינה ניתנת לכתיבה). נא לבחור במיקום שניתן לכתוב אליו."
+
+#: src/groupWindow.py:129
+#, python-format
+msgid "A group with name '%s' already exists."
+msgstr "כבר קיימת קבוצה בשם ‎'%s'‎."
+
+#: src/groupWindow.py:153
+#, python-format
+msgid ""
+"Creating a group with a GID less than %(gid_min)s is not recommended.  Are "
+"you sure you want to do this?"
+msgstr "יצירת קבוצה עם מזהה קטן מ־%(gid_min)s אינה מומלצת. האם ברצונך לבצע זאת בכל אופן?"
+
+#: src/mainWindow.py:91
+msgid ""
+"The help viewer could not be found. To be able to view help you need to "
+"install the 'yelp' package."
+msgstr "לא נמצאה התכנה המציגה דפי עזרה. כדי לראות דפי עזרה נדרש להתקין את החבילה yelp."
+
+#: src/mainWindow.py:109
+#, python-format
+msgid "No helper application for the URL '%(url)s can be found."
+msgstr "לא נמצאה תכנת עזר להצגת הכתובת ‎%(url)s."
+
+#: src/mainWindow.py:138
+#, python-format
+msgid "Error saving settings to %s"
+msgstr "שגיאה בשמירת העדפות ל־‎%s"
+
+#: src/mainWindow.py:179
+msgid "User Name"
+msgstr "שם משתמש"
+
+#: src/mainWindow.py:184
+msgid "User ID"
+msgstr "מזהה משתמש"
+
+#: src/mainWindow.py:188
+msgid "Primary Group"
+msgstr "קבוצה עיקרית"
+
+#: src/mainWindow.py:193
+msgid "Full Name"
+msgstr "שם מלא"
+
+#: src/mainWindow.py:198
+msgid "Login Shell"
+msgstr "מעטפת כניסה"
+
+#: src/mainWindow.py:203
+msgid "Home Directory"
+msgstr "תיקיית בית"
+
+#: src/mainWindow.py:223
+msgid "Group Name"
+msgstr "שם קבוצה"
+
+#: src/mainWindow.py:228
+msgid "Group ID"
+msgstr "מזהה קבוצה"
+
+#: src/mainWindow.py:232
+msgid "Group Members"
+msgstr "חברי הקבוצה"
+
+#: src/mainWindow.py:502
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the user '%(user)s'.\n"
+"\n"
+msgstr "מספר מזהה של המשתמש '%(user)s' לא נמצא.\n\n"
+
+#: src/mainWindow.py:504
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these users:\n"
+"%(users)s\n"
+"\n"
+msgstr "לא נמצאו מספרים מזהים של המשתמשים הבאים:\n%(users)s\n\n"
+
+#: src/mainWindow.py:516
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the group '%(group)s'.\n"
+"\n"
+msgstr "מספר מזהה של הקבוצה '%(group)s' לא נמצא.\n\n"
+
+#: src/mainWindow.py:518
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these groups:\n"
+"%(groups)s\n"
+"\n"
+msgstr "לא נמצאו מספרים מזהים של הקבוצות הבאות:\n%(groups)s\n\n"
+
+#: src/mainWindow.py:529
+#, python-format
+msgid ""
+"%(msg_users)s%(msg_groups)s\n"
+"In most cases this is caused by inconsistencies in the user or group database, e.g. between the files /etc/passwd, /etc/group and their respective shadow files /etc/shadow and /etc/gshadow. I will try to ignore these entries and continue for now, but please fix these inconsistencies as soon as possible."
+msgstr "%(msg_users)s%(msg_groups)s\nברוב המקרים השגיאות נובעות מחוסר עקביות בין נתוני המשתמשים והקבוצות. לדוגמה בין קבצי ‎/etc/passwd, /etc/group וקבצי הצל שלהם ‎/etc/shadow ו־‎/etc/gshadow בהתאמה. לעת עתה, אנסה להתעלם מהנתונים הללו ולהמשיך כרגיל, אולם עליך לתקן שגיאות אלו בהקדם האפשרי."
+
+#: src/mainWindow.py:662 src/system-config-users.glade.h:71
+msgid "system-config-users"
+msgstr "system-config-users"
+
+#: src/mainWindow.py:673
+#, python-format
+msgid "Copyright © %(years)s %(holder)s <%(email)s>"
+msgstr "Copyright © %(years)s %(holder)s <%(email)s>"
+
+#: src/mainWindow.py:676
+#, python-format
+msgid "Copyright © %(years)s %(holder)s"
+msgstr "Copyright © %(years)s %(holder)s"
+
+#: src/mainWindow.py:685
+#, python-format
+msgid "%(author)s <%(email)s>"
+msgstr "%(author)s <%(email)s>"
+
+#: src/mainWindow.py:688
+#, python-format
+msgid "%(author)s"
+msgstr "%(author)s"
+
+#: src/mainWindow.py:740
+msgid "Deleting the root user is not allowed."
+msgstr "מחיקת משתמש השורש (root) אסורה."
+
+#: src/mainWindow.py:753
+msgid "- An installed software package contains this directory."
+msgstr "- תיקייה זו היא חלק מחבילת תכנה מותקנת."
+
+#: src/mainWindow.py:758
+msgid ""
+"- A system user owns this directory and removing it may impair the system's "
+"integrity."
+msgstr "- תיקיה זו היא בבעלות משתמש מערכת ומחיקתה עלולה לפגוע בשלמות המערכת."
+
+#: src/mainWindow.py:762
+msgid "- This directory doesn't exist or isn't writable."
+msgstr "- תיקיה זו אינה ניתנת לכתיבה או שאינה קיימת כלל."
+
+#: src/mainWindow.py:765
+#, python-format
+msgid "- The user '%s' doesn't own this directory."
+msgstr "- תיקיה זו אינה בבעלות המשתמש ‎%s."
+
+#: src/mainWindow.py:775
+#, python-format
+msgid ""
+"<b>There are currently processes running that are owned by '%s'!</b>  This "
+"user is probably still logged in.  "
+msgstr "<b>יש עדיין תהליכים רצים בבעלות המשתמש ‎'%s'!</b> סביר להניח שהוא עדיין מחובר למערכת."
+
+#: src/mainWindow.py:779
+#, python-format
+msgid "Do you really want to remove the user '%s'?"
+msgstr "האם באמת ברצונך למחוק את המשתמש ‎%s?"
+
+#: src/mainWindow.py:791
+#, python-format
+msgid "Delete %(user)s's home directory ('%(homedir)s') and temporary files."
+msgstr "מחק קבצים זמניים בבעלות המשתמש ‎%(user)s וגם את תיקיית הבית שלו (‎'%(homedir)s‎‎'‎)."
+
+#: src/mainWindow.py:797
+#, python-format
+msgid ""
+"Delete %(user)s's home directory ('%(homedir)s'), mail spool "
+"('%(mailspool)s') and temporary files."
+msgstr "מחק קבצים זמניים בבעלות המשתמש ‎%(user)s וגם את תיקיית הבית שלו (‎'%(homedir)s‎‎'‎) ותיבת הדואר הנכנס שלו (‎'%(mailspool)s‎'‎)."
+
+#: src/mainWindow.py:809
+#, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for this reason:\n"
+"%(reason)s"
+msgstr "עבור המשתמש ‎%(user)s לא תימחק תיקיית הבית (‎'%(homedir)s‎'‎) עקב הסיבה הבאה:\n%(reason)s"
+
+#: src/mainWindow.py:811
+#, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for these reasons:\n"
+"%(reason)s"
+msgstr "עבור המשתמש ‎%(user)s לא תימחק תיקיית הבית (‎'%(homedir)s‎'‎) מהסיבות הבאות:\n%(reason)s"
+
+#: src/mainWindow.py:894
+#, python-format
+msgid "Are you sure you want to delete the group '%s'?"
+msgstr "האם ברצונך למחוק את הקבוצה '‎%s'?"
+
+#: src/system-config-users.py:38
+msgid "system-config-users requires a currently running X server."
+msgstr "להרצת תכנת system-config-users נדרש שרת תצוגת X פעיל."
+
+#: src/system-config-users.glade.h:1
+msgid "Add New Group"
+msgstr "הוסף קבוצה חדשה"
+
+#: src/system-config-users.glade.h:2
+msgid "_Group Name:"
+msgstr "שם _קבוצה:"
+
+#: src/system-config-users.glade.h:3
+msgid "Specify g_roup ID manually:"
+msgstr "בחירה ידנית של מזהה ק_בוצה:"
+
+#: src/system-config-users.glade.h:4
+msgid "User Properties"
+msgstr "תכונות משתמש"
+
+#: src/system-config-users.glade.h:5
+msgid "User _Name:"
+msgstr "שם מ_שתמש:"
+
+#: src/system-config-users.glade.h:6
+msgid "_Full Name:"
+msgstr "שם _מלא:"
+
+#: src/system-config-users.glade.h:7
+msgid "Pass_word:"
+msgstr "סיסמה:"
+
+#: src/system-config-users.glade.h:8
+msgid "Confir_m Password:"
+msgstr "אישור סיסמה:"
+
+#: src/system-config-users.glade.h:9
+msgid "_Login Shell:"
+msgstr "מ_עטפת כניסה:"
+
+#: src/system-config-users.glade.h:10
+msgid "_Home Directory:"
+msgstr "תיקיית _בית:"
+
+#: src/system-config-users.glade.h:11
+msgid "S_ELinux role:"
+msgstr "תפקיד S_ELinux:"
+
+#: src/system-config-users.glade.h:12
+msgid "_User Data"
+msgstr "_נתוני משתמש:"
+
+#: src/system-config-users.glade.h:13
+msgid "_Enable account expiration"
+msgstr "אפשר _פקיעת חשבון"
+
+#: src/system-config-users.glade.h:14
+msgid "Account e_xpires (YYYY-MM-DD):"
+msgstr "פקיעת _חשבון ‎(YYYY-MM-DDT)‎:"
+
+#: src/system-config-users.glade.h:15
+msgid "     "
+msgstr "     "
+
+#: src/system-config-users.glade.h:16
+msgid "-"
+msgstr "-"
+
+#: src/system-config-users.glade.h:17
+msgid "_Local password is locked"
+msgstr "ססמה מקומית נעו_לה"
+
+#: src/system-config-users.glade.h:18
+msgid "_Account Info"
+msgstr "פ_רטי חשבון"
+
+#: src/system-config-users.glade.h:19
+msgid "_Enable password expiration"
+msgstr "אפ_שר פקיעת ססמה"
+
+#: src/system-config-users.glade.h:20
+msgid "Days before change a_llowed:"
+msgstr "ימים לפני שהשינוי מותר:"
+
+#: src/system-config-users.glade.h:21
+msgid "Days before change _required:"
+msgstr "ימים לפני שהשינוי דרוש:"
+
+#: src/system-config-users.glade.h:22
+msgid "Days _warning before change:"
+msgstr "ימים לאזהרה לפני השינוי:"
+
+#: src/system-config-users.glade.h:23
+msgid "Days before account _inactive:"
+msgstr "ימים לפני נעילת החשבון:"
+
+#: src/system-config-users.glade.h:24
+msgid "Force password change on next login"
+msgstr "הכרח שינוי ססמה בהתחברות הבאה"
+
+#: src/system-config-users.glade.h:25
+msgid "_Password Info"
+msgstr "מידע סיסמה"
+
+#: src/system-config-users.glade.h:26
+msgid "Select the groups that the user will be a member of:"
+msgstr "בחר את הקבוצות שהמשתמש יהיה חבר בהן:"
+
+#: src/system-config-users.glade.h:27
+msgid "_Groups"
+msgstr "קבוצות"
+
+#: src/system-config-users.glade.h:28
+msgid "Group Properties"
+msgstr "מאפייני קבוצה"
+
+#: src/system-config-users.glade.h:29
+msgid "Group _Data"
+msgstr "מידע קבוצה"
+
+#: src/system-config-users.glade.h:30
+msgid "Select the users to join this group:"
+msgstr "בחר משתמשים לצירוף לקבוצה זו:"
+
+#: src/system-config-users.glade.h:31
+msgid "Group _Users"
+msgstr "משתמשי בקבוצה"
+
+#: src/system-config-users.glade.h:32
+msgid "User Manager"
+msgstr "מנהל המשתמשים"
+
+#: src/system-config-users.glade.h:33
+msgid "_File"
+msgstr "קובץ_"
+
+#: src/system-config-users.glade.h:34
+msgid "Add _User"
+msgstr "הוספת מ_שתמש"
+
+#: src/system-config-users.glade.h:35
+msgid "Add _Group"
+msgstr "הוספת _קבוצה"
+
+#: src/system-config-users.glade.h:36
+msgid "_Edit"
+msgstr "ע_ריכה"
+
+#: src/system-config-users.glade.h:37
+msgid "_Help"
+msgstr "_עזרה"
+
+#: src/system-config-users.glade.h:38
+msgid "_Contents"
+msgstr "_תוכן"
+
+#: src/system-config-users.glade.h:39
+msgid "Edit properties"
+msgstr "ערוך מאפיינים"
+
+#: src/system-config-users.glade.h:40
+msgid "Proper_ties"
+msgstr "מאפיינים"
+
+#: src/system-config-users.glade.h:41
+msgid "_Delete"
+msgstr "_מחק"
+
+#: src/system-config-users.glade.h:42
+msgid "Reload"
+msgstr "טען מחדש"
+
+#: src/system-config-users.glade.h:43
+msgid "_Refresh"
+msgstr "_רענן"
+
+#: src/system-config-users.glade.h:44
+msgid "Help"
+msgstr "עזרה"
+
+#: src/system-config-users.glade.h:45
+msgid "Sea_rch filter:"
+msgstr "מסנן חיפוש:"
+
+#: src/system-config-users.glade.h:46
+msgid "_Apply filter"
+msgstr "החל מסנן"
+
+#: src/system-config-users.glade.h:47
+msgid "U_sers"
+msgstr "משתמשים"
+
+#: src/system-config-users.glade.h:48
+msgid "Gr_oups"
+msgstr "קבוצות"
+
+#: src/system-config-users.glade.h:49
+msgid "Add New User"
+msgstr "הוספת משתמש חדש"
+
+#: src/system-config-users.glade.h:50
+msgid "_User Name:"
+msgstr "שם משתמש:"
+
+#: src/system-config-users.glade.h:51
+msgid "_Password:"
+msgstr "_ססמה:"
+
+#: src/system-config-users.glade.h:52
+msgid "Create _home directory"
+msgstr "צור תיקיית בית"
+
+#: src/system-config-users.glade.h:53
+msgid "    "
+msgstr "    "
+
+#: src/system-config-users.glade.h:54
+msgid "Home _Directory:"
+msgstr "תיקיית בית"
+
+#: src/system-config-users.glade.h:55
+msgid "Create a private _group for the user"
+msgstr "צור קבוצה פרטית עבור המשתמש"
+
+#: src/system-config-users.glade.h:56
+msgid "Specify u_ser ID manually:"
+msgstr "כתוב את מזהה המשתש ידנית:"
+
+#: src/system-config-users.glade.h:57
+msgid "About system-config-users"
+msgstr "אודות system-config-users"
+
+#: src/system-config-users.glade.h:58
+msgid "<b>system-config-users</b>"
+msgstr "<b>system-config-users</b>"
+
+#: src/system-config-users.glade.h:59
+msgid "Version @VERSION@"
+msgstr "Version @VERSION@"
+
+#: src/system-config-users.glade.h:60
+msgid "Copyright (c) 2001 - 2005 Red Hat, Inc."
+msgstr "Copyright (c) 2001 - 2005 Red Hat, Inc."
+
+#: src/system-config-users.glade.h:61
+msgid "This software is distributed under the GNU General Public License."
+msgstr "This software is distributed under the GNU General Public License."
+
+#: src/system-config-users.glade.h:62
+msgid "Preferences"
+msgstr "העדפות"
+
+#: src/system-config-users.glade.h:63
+msgid "_Hide system users and groups"
+msgstr "הסתר קבוצות ומשתמשים של המערכת"
+
+#: src/system-config-users.glade.h:64
+msgid "<b>User and Group Lists</b>"
+msgstr "<b>רשימת משתמשים וקבוצות</b>"
+
+#: src/system-config-users.glade.h:65
+msgid ""
+"Ensure that a new user gets a higher UID than all existing users, if not set"
+" manually."
+msgstr "וודא שהמשתמש החדש מקבל מזהה גבוה יותר מהמזהה של כל המשתמשים האחרים. אם לא, קבע את המזהה ידנית."
+
+#: src/system-config-users.glade.h:66
+msgid "Automatically assigned _UID must be highest"
+msgstr "מזהה משתמש ששוייך אוטומטית חייב ליהיות הגבוה ביותר"
+
+#: src/system-config-users.glade.h:67
+msgid ""
+"Ensure that a new group gets a higher GID than all existing groups, if not "
+"set manually."
+msgstr "וודא שהקבוצה החדשה מקבלת מזהה קבוצה גבוה יותר ממזהה הקבוצה של כל הקבוצות האחרות. אם לא, קבע את מזהה הקבוצה ידנית."
+
+#: src/system-config-users.glade.h:68
+msgid "Automatically assigned _GID must be highest"
+msgstr "מזהה משתמש ש"
+
+#: src/system-config-users.glade.h:69
+msgid "Prefer that private group GID is the _same as UID"
+msgstr "העדף שמזהה הקבוצה הפרטית יהיה זהה למזהה המשתמש"
+
+#: src/system-config-users.glade.h:70
+msgid "<b>New Users</b>"
+msgstr "<b>משתמשים חדשים</b>"
+
+#: src/system-config-users.glade.h:72
+msgid "Copyright © 2001-2007 Red Hat, Inc."
+msgstr "Copyright © 2001-2007 Red Hat, Inc."
+
+#: src/system-config-users.glade.h:73
+msgid "Manages users and groups on your system."
+msgstr "מנהל משתמשים וקבוצות במערכת שלך"
+
+#: src/system-config-users.glade.h:74
+msgid ""
+"system-config-users is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
+"\n"
+"system-config-users is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with system-config-users; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+msgstr "system-config-users is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n\nsystem-config-users is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with system-config-users; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: src/system-config-users.glade.h:80
+msgid "translator-credits"
+msgstr "Oron Peled <oron@actcom.co.il>\nאלעד אלפסה <el.il@doom.co.il>"
+
+#: config/system-config-users.desktop.in.h:1
+msgid "Users and Groups"
+msgstr "משתמשים וקבוצות"
+
+#: config/system-config-users.desktop.in.h:2
+msgid "Add or remove users and groups"
+msgstr "הוספת או מחיקת משתמשים וקבוצות"

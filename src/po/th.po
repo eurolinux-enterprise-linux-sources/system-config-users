@@ -1,0 +1,878 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# , 2009.
+# Nils Philippsen <nils@redhat.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-users\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-users/\n"
+"POT-Creation-Date: 2012-11-02 10:51+0100\n"
+"PO-Revision-Date: 2012-11-02 09:59+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: th\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/groupProperties.py:114 src/userGroupCheck.py:78 src/groupWindow.py:120
+msgid "Please enter a group name."
+msgstr "กรุณาใส่ชื่อกลุ่ม"
+
+#: src/groupProperties.py:131
+#, python-format
+msgid "The group '%s' already exists. Please choose a different name."
+msgstr "กลุ่ม '%s' มีอยู่แล้ว โปรดใส่ชื่ออื่น"
+
+#: src/groupProperties.py:178 src/mainWindow.py:889
+#, python-format
+msgid "You cannot remove user '%s' from their primary group."
+msgstr "คุณไม่สามารถลบผู้ใช้ '%s' ออกจากกลุ่มหลักของเขา"
+
+#: src/userWindow.py:100 src/userProperties.py:122
+msgid "User"
+msgstr "ผู้ใช้"
+
+#: src/userWindow.py:101 src/userProperties.py:123
+msgid "Staff"
+msgstr "พนักงาน"
+
+#: src/userWindow.py:102 src/userProperties.py:124
+msgid "System Administrator"
+msgstr "ผู้บริหารระบบ"
+
+#. The passwords don't match, so complain
+#: src/userWindow.py:216
+msgid "The passwords do not match."
+msgstr "รหัสผ่านไม่ตรงกัน"
+
+#. The user name is blank, so complain
+#: src/userWindow.py:248
+msgid "Please specify a user name"
+msgstr "กรุณาระบุชื่อผู้ใช้"
+
+#. This user already exists, so complain
+#: src/userWindow.py:256
+#, python-format
+msgid "An account with username '%s' already exists."
+msgstr "บัญชี '%s' มีอยู่แล้ว"
+
+#. This uid already exists, so complain
+#: src/userWindow.py:294
+#, python-format
+msgid "The uid %s is already in use."
+msgstr "UID %s มีใช้อยู่แล้ว"
+
+#. This (chosen) gid already exists, so complain
+#: src/userWindow.py:302 src/groupWindow.py:144
+#, python-format
+msgid "The gid %s is already in use."
+msgstr "GID %s มีใช้อยู่แล้ว"
+
+#: src/userWindow.py:315
+#, python-format
+msgid ""
+"Error finding suitable user id not exceeding maximum value of %(maxid)s."
+msgstr ""
+
+#: src/userWindow.py:318 src/groupWindow.py:177
+#, python-format
+msgid ""
+"Error finding suitable group id not exceeding maximum value of %(maxid)s."
+msgstr ""
+
+#: src/userWindow.py:331
+#, python-format
+msgid ""
+"Creating a user with a UID less than %(uid_min)s is not recommended.  Are "
+"you sure you want to do this?"
+msgstr "ไม่แนะนำให้สร้างผู้ใช้ที่มี UID น้อยกว่า %(uid_min)s ต้องการทำจริงๆ หรือไม่?"
+
+#: src/userWindow.py:364
+msgid "A group with this gid already exists.  What would you like to do?"
+msgstr "กลุ่มที่มี GID นี้มีอยู่แล้ว คุณต้องการทำอะไร?"
+
+#: src/userWindow.py:368
+msgid "A group with this name already exists.  What would you like to do?"
+msgstr "กลุ่มชื่อนี้มีอยู่แล้ว คุณต้องการทำอะไร?"
+
+#: src/userWindow.py:374
+msgid "Add to the existing group"
+msgstr "เพิ่มเข้ากลุ่มที่มีอยู่"
+
+#: src/userWindow.py:376
+msgid "Add to the 'users' group"
+msgstr "เพิ่มเข้ากลุ่ม 'users'"
+
+#. Uh-oh. It looks like /etc/group and /etc/gshadow are out of
+#. sync. Give up and quit.
+#: src/userWindow.py:460
+msgid ""
+"The system group database cannot be read.  This problem is most likely "
+"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
+"now."
+msgstr "ไม่สามารถอ่านฐานข้อมูลผู้ใช้ของระบบ อาจจะเพราะข้อมูลที่ /etc/group และ /etc/gshadow ไม่ตรงกัน โปรแกรมจะออกทันที"
+
+#: src/userProperties.py:157
+msgid "Primary Group:"
+msgstr "กลุ่มหลัก:"
+
+#: src/userProperties.py:244
+#, python-format
+msgid "Password last changed on: %x"
+msgstr ""
+
+#: src/userProperties.py:327 src/userGroupCheck.py:57
+msgid "Please enter a user name."
+msgstr "โปรดใส่ชื่อผู้ใช้"
+
+#: src/userProperties.py:348
+#, python-format
+msgid "The user '%s' already exists. Please choose a different name."
+msgstr "ผู้ใช้ '%s' มีอยู่แล้ว โปรดเลือกใช้ชื่ออื่น"
+
+#: src/userProperties.py:371
+msgid "Passwords do not match."
+msgstr "รหัสผ่านไม่ตรงกัน"
+
+#: src/userProperties.py:451
+msgid "Please select at least one group for the user."
+msgstr "กรุณาเลือกอย่างน้อย 1 กลุ่มสำหรับผู้ใช้"
+
+#: src/userProperties.py:472
+msgid "Please specify the month that the password will expire."
+msgstr "กรุณาระบุเดือนที่รหัสผ่านจะหมดอายุ"
+
+#: src/userProperties.py:482
+msgid "Please specify the day that the password will expire."
+msgstr "กรุณาระบุวันที่รหัสผ่านจะหมดอายุ"
+
+#: src/userProperties.py:492
+msgid "Please specify the year that the password will expire."
+msgstr "กรุณาระบุปีที่รหัสผ่านจะหมดอายุ"
+
+#. mktime will throw an OverflowError if the year is too big.
+#: src/userProperties.py:509
+msgid "The year is out of range.  Please select a different year."
+msgstr "ปีอยู่นอกขอบเขต กรุณาเลือกปีอื่นๆ"
+
+#: src/userProperties.py:540
+msgid ""
+"Please specify the number of days before changing the password is allowed."
+msgstr "กรุณาระบุจำนวนวันก่อนที่จะอนุญาตให้เปลี่ยนรหัสผ่านได้เอง"
+
+#: src/userProperties.py:542
+#, python-format
+msgid ""
+"The number of days before changing the password is allowed must be between "
+"%(min)d and %(max)d."
+msgstr "จำนวนวันก่อนที่จะอนุญาตให้เปลี่ยนรหัสผ่านได้ต้องอยู่ระหว่าง %(min)d และ %(max)d"
+
+#: src/userProperties.py:547
+msgid ""
+"Please specify the number of days before changing the password is required."
+msgstr "กรุณาระบุจำนวนวันก่อนที่จะต้องเปลี่ยนรหัสผ่าน"
+
+#: src/userProperties.py:549
+#, python-format
+msgid ""
+"The number of days before changing the password is required must be between "
+"%(min)d and %(max)d."
+msgstr "จำนวนวันก่อนต้องเปลี่ยนรหัสผ่านต้องอยู่ระหว่าง %(min)d และ %(max)d"
+
+#: src/userProperties.py:554
+msgid ""
+"Please specify the number of days to warn the user before changing the "
+"password is required."
+msgstr "กรุณาระบุจำนวนวันที่จะเตือนผู้ใช้ก่อนจะต้องเปลี่ยนรหัสผ่าน"
+
+#: src/userProperties.py:556
+#, python-format
+msgid ""
+"The number of days to warn the user before changing the password is required"
+" must be between %(min)d and %(max)d."
+msgstr "จำนวนวันที่จะเตือนผู้ใช้ก่อนจะต้องเปลี่ยนรหัสผ่านจะต้องอยู่ในช่วง %(min)d และ %(max)d"
+
+#: src/userProperties.py:562
+msgid ""
+"Please specify the number of days until the user account becomes inactive "
+"after password has expired."
+msgstr "กรุณาระบุจำนวนวันที่บัญชีจะไม่เคลื่อนไหวหลังจากรหัสผ่านหมดอายุ"
+
+#: src/userProperties.py:565
+#, python-format
+msgid ""
+"The number of days until the user account becomes inactive after the "
+"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
+"means the account won't become inactive."
+msgstr "จำนวนวันจนบัญชีจะไม่เคลื่อนไหวหลังรหัสผ่านหมดอายุต้องอยู่ระหว่าง %(min)d และ %(max)d กำหนดเป็น -1 บัญชีจะไม่กลายเป็นบัญชีไม่เคลื่อนไหว"
+
+#: src/userProperties.py:629
+#, python-format
+msgid ""
+"Unlocking the user failed because:\n"
+"\n"
+"%(errmsg)s"
+msgstr ""
+
+#: src/userProperties.py:632
+msgid "Unlocking the user failed due to an unknown reason."
+msgstr ""
+
+#: src/userGroupCheck.py:58
+#, python-format
+msgid "The user name must not exceed %d characters."
+msgstr "ชื่อผู้ใช้ต้องไม่เกิน %d ตัวอักษร"
+
+#: src/userGroupCheck.py:59
+#, python-format
+msgid ""
+"The user name '%s' contains whitespace. Please do not include whitespace in "
+"the user name."
+msgstr "ชื่อผู้ใช้ '%s' ประกอบด้วยเว้นวรรค ซึ่งไม่อนุญาตให้ใช้ในชื่อผู้ใช้"
+
+#: src/userGroupCheck.py:61
+#, python-format
+msgid ""
+"The user name '%s' contains a dollar sign which is not at the end. Please "
+"use dollar signs only at the end of user names to indicate Samba machine "
+"accounts."
+msgstr "ชื่อผู้ใช้ '%s' ประกอบด้วยสัญลักษณ์ดอลล่า($) กรุณาใช้สัญลักษณ์นี้เฉพาะด้านท้ายชื่อผู้ใช้เพื่อบ่งบอกว่าเป็นบัญชีระบบ Samba"
+
+#: src/userGroupCheck.py:64
+#, python-format
+msgid ""
+"The user name '%s' contains a trailing dollar sign. This should only be used"
+" for Samba machine accounts, using this for a normal user account can cause "
+"problems with some software. Is the account in question a Samba machine "
+"account?"
+msgstr ""
+
+#: src/userGroupCheck.py:69
+#, python-format
+msgid ""
+"The user name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr "ชื่อผู้ใช้ '%(name)s' ประกอบด้วยตัวอักษรประหลาดที่ตำแหน่ง %(position)d"
+
+#: src/userGroupCheck.py:71
+msgid ""
+"Using all numbers as the user name can cause confusion about whether the "
+"user name or numerical user id is meant. Do you really want to use a "
+"numerical-only user name?"
+msgstr "ใช้ตัวเลขเป็นชื่อผู้ใช้อาจทำให้สับสันระหว่างชื่อผู้ใช้หรือเลขผู้ใช้ คุณต้องการใช้ตัวเลขเป็นชื่อผู้ใช้จริงๆ หรือ?"
+
+#: src/userGroupCheck.py:79
+#, python-format
+msgid "The group name must not exceed %d characters."
+msgstr "ชื่อกลุ่มต้องไม่เกิน %d อักษร"
+
+#: src/userGroupCheck.py:80
+#, python-format
+msgid ""
+"The group name '%s' contains whitespace. Please do not include whitespace in"
+" the group name."
+msgstr "ชื่อกลุ่ม '%s' ประกอบด้วยเว้นวรรค ซึ่งไม่อนุญาตให้ใช้ในชื่อกลุ่ม"
+
+#: src/userGroupCheck.py:82
+#, python-format
+msgid ""
+"The group name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr "ชื่อกลุ่ม '%(name)s' ประกอบด้วยตัวอักษรประหลาดที่ตำแหน่ง %(position)d"
+
+#: src/userGroupCheck.py:84
+msgid ""
+"Using all numbers as the group name can cause confusion about whether the "
+"group name or numerical group id is meant. Do you really want to use a "
+"numerical-only group name?"
+msgstr "ใช้ตัวเลขเป็นชื่อกลุ่มอาจทำให้สับสนระหว่างชื่อกลุ่มหรือเลขกลุ่ม คุณต้องการใช้ตัวเลขเป็นชื่อกลุ่มจริงๆ หรือ?"
+
+#: src/userGroupCheck.py:172
+#, python-format
+msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
+msgstr "รหัสผ่านที่เลือกง่ายเกินไป: %s คุณต้องการใช้มันหรือไม่?"
+
+#: src/userGroupCheck.py:192
+msgid ""
+"The chosen password contains characters which may be hard or impossible to "
+"type in certain situations. To ensure the password can be typed everywhere "
+"use only unaccented Latin letters (A-Z, a-z), digits (0-9), punctuation "
+"characters (e.g. comma, full stop) and the space character in the password. "
+"Do you want to use this password anyway?"
+msgstr ""
+
+#. have to check for whitespace for gecos, since whitespace is ok
+#: src/userGroupCheck.py:240
+#, python-format
+msgid ""
+"The name '%s' contains invalid characters.  Please use only UTF-8 "
+"characters."
+msgstr "ชื่อ '%s' มีอักษรประหลาด กรุณาใช้ตัวอักษรในชุด UTF-8 เท่านั้น"
+
+#. We have to check for colons as /etc/passwd is a colon delimited
+#. file.
+#: src/userGroupCheck.py:249
+#, python-format
+msgid "The name '%s' contains a colon.  Please do not use colons in the name."
+msgstr "ชื่อ '%s' มีตัวทวิภาค(:) ซึ่งไม่อนุญาตให้ใช้ในชื่อผู้ใช้"
+
+#: src/userGroupCheck.py:259
+msgid "Please enter a home directory."
+msgstr "กรุณาป้อนไดเรคทอรีบ้าน"
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: src/userGroupCheck.py:266
+#, python-format
+msgid ""
+"The directory name '%s' contains a colon.  Please do not use colons in the "
+"directory name."
+msgstr "ชื่อไดเรคทอรี '%s' ประกอบด้วยตัวทวิภาค(:) ซึ่งไม่อนุญาตให้ใช้ในชื่อไดเรคทอรี"
+
+#: src/userGroupCheck.py:277
+#, python-format
+msgid ""
+"The directory name '%s' doesn't begin with a '/'. Please specify an absolute"
+" path for the home directory."
+msgstr "ชื่อไดเรคทอรี '%s' ไม่ได้ขึ้นด้วย '/' กรุณาใส่พาธสัมบูรณ์สำหรับไดเรคทอรีบ้าน"
+
+#: src/userGroupCheck.py:286
+#, python-format
+msgid ""
+"The directory name '%s' has path components which are too long. Please use "
+"shorter path components for the home directory."
+msgstr "ชื่อไดเรคทอรี '%s' มีพาธยาวเกินไป กรุณาใช้พาธที่สั้นลง"
+
+#: src/userGroupCheck.py:296
+#, python-format
+msgid ""
+"The directory name '%s' contains empty path components. Please specify a "
+"home directory name without empty path components."
+msgstr "ไดเรคทอรี '%s' มีส่วนหนึ่งที่ว่างเปล่า กรุณาระบุชื่อไดเรคทอรีบ้านที่ไม่มีส่วนประกอบพาธที่ว่างเปล่า"
+
+#: src/userGroupCheck.py:308
+#, python-format
+msgid ""
+"The directory name '%s' contains illegal path components. Please don't use "
+"'.' or '..' as path components for the home directory."
+msgstr "ไดเรคทอรี '%s' มีส่วนประกอบพาธที่ไม่อนุญาตให้ใช้ โดยไม่อนุญาตให้ใช้ '.' หรือ '..' เป็นส่วนประกอบของพาธไปยังไดเรคทอรีบ้าน"
+
+#: src/userGroupCheck.py:326
+#, python-format
+msgid ""
+"The directory '%(dir)s' cannot be created ('%(parent_dir)s' is not "
+"writable). Please choose a writable location."
+msgstr ""
+
+#: src/groupWindow.py:129
+#, python-format
+msgid "A group with name '%s' already exists."
+msgstr "กลุ่มชื่อ '%s' มีอยู่แล้ว"
+
+#: src/groupWindow.py:153
+#, python-format
+msgid ""
+"Creating a group with a GID less than %(gid_min)s is not recommended.  Are "
+"you sure you want to do this?"
+msgstr "ไม่แนะนำให้สร้างกลุ่มที่มี GID น้อยกว่า %(gid_min)s ต้องการทำจริงๆ หรือไม่?"
+
+#: src/mainWindow.py:91
+msgid ""
+"The help viewer could not be found. To be able to view help you need to "
+"install the 'yelp' package."
+msgstr "ไม่สามารถเรียกโปรแกรมอ่านความช่วยเหลือ หากคุณต้องการอ่านความช่วยเหลือกรุณาติดตั้งแพคเกจ 'yelp'"
+
+#: src/mainWindow.py:109
+#, python-format
+msgid "No helper application for the URL '%(url)s can be found."
+msgstr "ไม่มีโปรแกรมช่วยเหลือสำหรับ URL '%(url)s"
+
+#: src/mainWindow.py:138
+#, python-format
+msgid "Error saving settings to %s"
+msgstr "มีข้อผิดพลาดในการบันทึกค่าไปยัง %s"
+
+#: src/mainWindow.py:179
+msgid "User Name"
+msgstr "ชื่อผู้ใช้"
+
+#: src/mainWindow.py:184
+msgid "User ID"
+msgstr "ID ผู้ใช้"
+
+#: src/mainWindow.py:188
+msgid "Primary Group"
+msgstr "กลุ่มหลัก"
+
+#: src/mainWindow.py:193
+msgid "Full Name"
+msgstr "ชื่อเต็ม"
+
+#: src/mainWindow.py:198
+msgid "Login Shell"
+msgstr "เชลล์เข้าระบบ"
+
+#: src/mainWindow.py:203
+msgid "Home Directory"
+msgstr "ไดเรคทอรีบ้าน"
+
+#: src/mainWindow.py:223
+msgid "Group Name"
+msgstr "ชื่อกลุ่ม"
+
+#: src/mainWindow.py:228
+msgid "Group ID"
+msgstr "ID กลุ่ม"
+
+#: src/mainWindow.py:232
+msgid "Group Members"
+msgstr "สมาชิกกลุ่ม"
+
+#: src/mainWindow.py:502
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the user '%(user)s'.\n"
+"\n"
+msgstr "เราไม่สามารถหาเลข ID ของผู้ใช้ '%(user)s'.\n\n"
+
+#: src/mainWindow.py:504
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these users:\n"
+"%(users)s\n"
+"\n"
+msgstr "เราไม่สามารถหาเลข ID ของผู้ใช้ต่อไปนี้:\n%(users)s\n\n"
+
+#: src/mainWindow.py:516
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the group '%(group)s'.\n"
+"\n"
+msgstr "เราไม่สามารถหาเลขไอดีของกลุ่ม '%(group)s'\n\n"
+
+#: src/mainWindow.py:518
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these groups:\n"
+"%(groups)s\n"
+"\n"
+msgstr "เราไม่สามารถหาเลข ID ของกลุ่มต่อไปนี้:\n%(groups)s\n\n"
+
+#: src/mainWindow.py:529
+#, python-format
+msgid ""
+"%(msg_users)s%(msg_groups)s\n"
+"In most cases this is caused by inconsistencies in the user or group database, e.g. between the files /etc/passwd, /etc/group and their respective shadow files /etc/shadow and /etc/gshadow. I will try to ignore these entries and continue for now, but please fix these inconsistencies as soon as possible."
+msgstr "%(msg_users)s%(msg_groups)s\nในกรณีส่วนมากแล้วจะเกิดจากฐานข้อมูลผู้ใช้และกลุ่มไม่ตรงกัน เช่นไฟล์ /etc/passwd, /etc/group และไฟล์เงา /etc/shadow และ /etc/gshadow เราจะข้ามรายการเหล่านี้และดำเนินการต่อ แต่โปรดแก้ไขโดยเร็วที่สุด"
+
+#: src/mainWindow.py:662 src/system-config-users.glade.h:71
+msgid "system-config-users"
+msgstr "system-config-user"
+
+#: src/mainWindow.py:673
+#, python-format
+msgid "Copyright © %(years)s %(holder)s <%(email)s>"
+msgstr "สงวนลิขสิทธิ์ © %(years)s %(holder)s <%(email)s>"
+
+#: src/mainWindow.py:676
+#, python-format
+msgid "Copyright © %(years)s %(holder)s"
+msgstr "สงวนลิขสิทธิ์ © %(years)s %(holder)s"
+
+#: src/mainWindow.py:685
+#, python-format
+msgid "%(author)s <%(email)s>"
+msgstr "%(author)s <%(email)s>"
+
+#: src/mainWindow.py:688
+#, python-format
+msgid "%(author)s"
+msgstr "%(author)s"
+
+#: src/mainWindow.py:740
+msgid "Deleting the root user is not allowed."
+msgstr "ไม่อนุญาตให้ลบผู้ใช้ root"
+
+#: src/mainWindow.py:753
+msgid "- An installed software package contains this directory."
+msgstr "- แพคเกจซอฟต์แวร์ที่ติดตั้งอยู่ประกอบด้วยไดเรคทอรีนี้"
+
+#: src/mainWindow.py:758
+msgid ""
+"- A system user owns this directory and removing it may impair the system's "
+"integrity."
+msgstr "- ผู้ใช้ระบบเป็นเจ้าของไดเรคทอรีนี้ และการลบมันอาจจะทำให้ระบบเสียหาย"
+
+#: src/mainWindow.py:762
+msgid "- This directory doesn't exist or isn't writable."
+msgstr "- ไดเรคทอรีนี้ไม่มีอยู่ หรือเขียนไม่ได้"
+
+#: src/mainWindow.py:765
+#, python-format
+msgid "- The user '%s' doesn't own this directory."
+msgstr "- ผู้ใช้ '%s' ไม่ได้เป็นเจ้าของไดเรคทอรีนี้"
+
+#: src/mainWindow.py:775
+#, python-format
+msgid ""
+"<b>There are currently processes running that are owned by '%s'!</b>  This "
+"user is probably still logged in.  "
+msgstr "<b> ยังมีโพรเซสที่รันโดย '%s'!</b> ผู้ใช้นี้ยังอาจจะอยู่ในระบบอยู่"
+
+#: src/mainWindow.py:779
+#, python-format
+msgid "Do you really want to remove the user '%s'?"
+msgstr "คุณต้องการลบผู้ใช้ '%s' จริงๆ หรือ?"
+
+#: src/mainWindow.py:791
+#, python-format
+msgid "Delete %(user)s's home directory ('%(homedir)s') and temporary files."
+msgstr "ลบไดเรคทอรีบ้านของ %(user)s ('%(homedir)s') และไฟล์ชั่วคราว"
+
+#: src/mainWindow.py:797
+#, python-format
+msgid ""
+"Delete %(user)s's home directory ('%(homedir)s'), mail spool "
+"('%(mailspool)s') and temporary files."
+msgstr "ลบไดเรคทอรีบ้านของ %(user)s ('%(homedir)s'), อีเมล ('%(mailspool)s') และไฟล์ชั่วคราว"
+
+#: src/mainWindow.py:809
+#, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for this reason:\n"
+"%(reason)s"
+msgstr "เราจะไม่ลบไดเรคทอรีบ้านของ %(user)s ('%(homedir)s') ด้วยเหตุผลดังนี้:\n%(reason)s"
+
+#: src/mainWindow.py:811
+#, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for these reasons:\n"
+"%(reason)s"
+msgstr "เราจะไม่ลบไดเรคทอรีบ้านของ %(user)s ('%(homedir)s') ด้วยเหตุผลต่อไปนี้:\n%(reason)s"
+
+#: src/mainWindow.py:894
+#, python-format
+msgid "Are you sure you want to delete the group '%s'?"
+msgstr "คุณต้องการลบผู้ใช้ '%s' จริงๆ หรือ?"
+
+#: src/system-config-users.py:38
+msgid "system-config-users requires a currently running X server."
+msgstr "system-config-users ต้องการเซิร์ฟเวอร์ X ที่ทำงานอยู่"
+
+#: src/system-config-users.glade.h:1
+msgid "Add New Group"
+msgstr ""
+
+#: src/system-config-users.glade.h:2
+msgid "_Group Name:"
+msgstr "_ชื่อกลุ่ม:"
+
+#: src/system-config-users.glade.h:3
+msgid "Specify g_roup ID manually:"
+msgstr "_ระบุเลขกลุ่มเอง:"
+
+#: src/system-config-users.glade.h:4
+msgid "User Properties"
+msgstr "คุณสมบัติผู้ใช้"
+
+#: src/system-config-users.glade.h:5
+msgid "User _Name:"
+msgstr "ชื่อ_ผู้ใช้:"
+
+#: src/system-config-users.glade.h:6
+msgid "_Full Name:"
+msgstr "ชื่อ_จริง:"
+
+#: src/system-config-users.glade.h:7
+msgid "Pass_word:"
+msgstr ""
+
+#: src/system-config-users.glade.h:8
+msgid "Confir_m Password:"
+msgstr ""
+
+#: src/system-config-users.glade.h:9
+msgid "_Login Shell:"
+msgstr "_เชลล์เข้าระบบ:"
+
+#: src/system-config-users.glade.h:10
+msgid "_Home Directory:"
+msgstr "_ไดเรคทอรีบ้าน:"
+
+#: src/system-config-users.glade.h:11
+msgid "S_ELinux role:"
+msgstr "บทบาท _SELinux:"
+
+#: src/system-config-users.glade.h:12
+msgid "_User Data"
+msgstr "_ข้อมูลผู้ใช้"
+
+#: src/system-config-users.glade.h:13
+msgid "_Enable account expiration"
+msgstr "_อนุญาตให้บัญชีหมดอายุ"
+
+#: src/system-config-users.glade.h:14
+msgid "Account e_xpires (YYYY-MM-DD):"
+msgstr "_บัญชีหมดอายุ (YYYY-MM-DD):"
+
+#: src/system-config-users.glade.h:15
+msgid "     "
+msgstr "     "
+
+#: src/system-config-users.glade.h:16
+msgid "-"
+msgstr "-"
+
+#: src/system-config-users.glade.h:17
+msgid "_Local password is locked"
+msgstr "_รหัสผ่านบนเครื่องถูกล็อค"
+
+#: src/system-config-users.glade.h:18
+msgid "_Account Info"
+msgstr "_ข้อมูลบัญชี"
+
+#: src/system-config-users.glade.h:19
+msgid "_Enable password expiration"
+msgstr "_อนุญาตให้รหัสผ่านหมดอายุ"
+
+#: src/system-config-users.glade.h:20
+msgid "Days before change a_llowed:"
+msgstr "_จำนวนวันก่อนอนุญาตให้เปลี่ยน:"
+
+#: src/system-config-users.glade.h:21
+msgid "Days before change _required:"
+msgstr "จำนวนวัน_ก่อนต้องเปลี่ยน:"
+
+#: src/system-config-users.glade.h:22
+msgid "Days _warning before change:"
+msgstr "จำนวนวันก่อนจะเ_ตือนให้เปลี่ยน:"
+
+#: src/system-config-users.glade.h:23
+msgid "Days before account _inactive:"
+msgstr "จำนวนวันก่อนบัญชีจะ_ไม่เคลื่อนไหว:"
+
+#: src/system-config-users.glade.h:24
+msgid "Force password change on next login"
+msgstr ""
+
+#: src/system-config-users.glade.h:25
+msgid "_Password Info"
+msgstr "_ข้อมูลรหัสผ่าน"
+
+#: src/system-config-users.glade.h:26
+msgid "Select the groups that the user will be a member of:"
+msgstr "เลือกกลุ่มที่ผู้ใช้นี้จะเป็นสมาชิก"
+
+#: src/system-config-users.glade.h:27
+msgid "_Groups"
+msgstr "_กลุ่ม"
+
+#: src/system-config-users.glade.h:28
+msgid "Group Properties"
+msgstr "คุณสมบัติกลุ่ม"
+
+#: src/system-config-users.glade.h:29
+msgid "Group _Data"
+msgstr "_ข้อมูลกลุ่ม"
+
+#: src/system-config-users.glade.h:30
+msgid "Select the users to join this group:"
+msgstr "เลือกผู้ใช้ที่จะเข้ากลุ่มนี้:"
+
+#: src/system-config-users.glade.h:31
+msgid "Group _Users"
+msgstr "_ผู้ใช้ในกลุ่ม"
+
+#: src/system-config-users.glade.h:32
+msgid "User Manager"
+msgstr "เครื่องมือจัดการผู้ใช้"
+
+#: src/system-config-users.glade.h:33
+msgid "_File"
+msgstr "_แฟ้ม"
+
+#: src/system-config-users.glade.h:34
+msgid "Add _User"
+msgstr "_เพิ่มผู้ใช้"
+
+#: src/system-config-users.glade.h:35
+msgid "Add _Group"
+msgstr "เพิ่ม_กลุ่ม"
+
+#: src/system-config-users.glade.h:36
+msgid "_Edit"
+msgstr "_แก้ไข"
+
+#: src/system-config-users.glade.h:37
+msgid "_Help"
+msgstr "_ช่วยเหลือ"
+
+#: src/system-config-users.glade.h:38
+msgid "_Contents"
+msgstr "_สารบัญ"
+
+#: src/system-config-users.glade.h:39
+msgid "Edit properties"
+msgstr "แก้ไขคุณสมบัติ"
+
+#: src/system-config-users.glade.h:40
+msgid "Proper_ties"
+msgstr "_คุณสมบัติ"
+
+#: src/system-config-users.glade.h:41
+msgid "_Delete"
+msgstr "_ลบ"
+
+#: src/system-config-users.glade.h:42
+msgid "Reload"
+msgstr "เรียกใหม่"
+
+#: src/system-config-users.glade.h:43
+msgid "_Refresh"
+msgstr "_เรียกใหม่"
+
+#: src/system-config-users.glade.h:44
+msgid "Help"
+msgstr "ช่วยเหลือ"
+
+#: src/system-config-users.glade.h:45
+msgid "Sea_rch filter:"
+msgstr ""
+
+#: src/system-config-users.glade.h:46
+msgid "_Apply filter"
+msgstr "_ใช้ตัวกรอง"
+
+#: src/system-config-users.glade.h:47
+msgid "U_sers"
+msgstr "_ผู้ใช้"
+
+#: src/system-config-users.glade.h:48
+msgid "Gr_oups"
+msgstr "_กลุ่ม"
+
+#: src/system-config-users.glade.h:49
+msgid "Add New User"
+msgstr ""
+
+#: src/system-config-users.glade.h:50
+msgid "_User Name:"
+msgstr "_ชื่อผู้ใช้"
+
+#: src/system-config-users.glade.h:51
+msgid "_Password:"
+msgstr "_รหัสผ่าน:"
+
+#: src/system-config-users.glade.h:52
+msgid "Create _home directory"
+msgstr "_สร้างไดเรคทอรีบ้าน"
+
+#: src/system-config-users.glade.h:53
+msgid "    "
+msgstr "    "
+
+#: src/system-config-users.glade.h:54
+msgid "Home _Directory:"
+msgstr "_ไดเรคทอรีบ้าน:"
+
+#: src/system-config-users.glade.h:55
+msgid "Create a private _group for the user"
+msgstr "_สร้างกลุ่มส่วนตัวสำหรับผู้ใช้"
+
+#: src/system-config-users.glade.h:56
+msgid "Specify u_ser ID manually:"
+msgstr "_ระบุเลขผู้ใช้เอง:"
+
+#: src/system-config-users.glade.h:57
+msgid "About system-config-users"
+msgstr "เกี่ยวกับ system-config-users"
+
+#: src/system-config-users.glade.h:58
+msgid "<b>system-config-users</b>"
+msgstr "<b>system-config-users</b>"
+
+#: src/system-config-users.glade.h:59
+msgid "Version @VERSION@"
+msgstr "รุ่น @VERSION@"
+
+#: src/system-config-users.glade.h:60
+msgid "Copyright (c) 2001 - 2005 Red Hat, Inc."
+msgstr "สงวนลิขสิทธิ์ (c) 2544 - 2548 Red Hat, Inc."
+
+#: src/system-config-users.glade.h:61
+msgid "This software is distributed under the GNU General Public License."
+msgstr "ซอฟต์แวร์นี้เผยแพร่ภายใต้สัญญาอนุญาต GNU General Public License"
+
+#: src/system-config-users.glade.h:62
+msgid "Preferences"
+msgstr "ตั้งค่า"
+
+#: src/system-config-users.glade.h:63
+msgid "_Hide system users and groups"
+msgstr "_ซ่อนผู้ใช้และกลุ่มของระบบ"
+
+#: src/system-config-users.glade.h:64
+msgid "<b>User and Group Lists</b>"
+msgstr "<b>รายการผู้ใช้และกลุ่ม</b>"
+
+#: src/system-config-users.glade.h:65
+msgid ""
+"Ensure that a new user gets a higher UID than all existing users, if not set"
+" manually."
+msgstr "ให้ผู้ใช้ใหม่มี UID สูงกว่าผู้ใช้เดิมหากไม่ได้ระบุเอง"
+
+#: src/system-config-users.glade.h:66
+msgid "Automatically assigned _UID must be highest"
+msgstr "_UID ที่กำหนดให้อัตโนมัติจะต้องสูงที่สุด"
+
+#: src/system-config-users.glade.h:67
+msgid ""
+"Ensure that a new group gets a higher GID than all existing groups, if not "
+"set manually."
+msgstr "ให้กลุ่มของผู้ใช้มี GID สูงกว่ากลุ่มเดิมหากไม่ได้ระบุเอง"
+
+#: src/system-config-users.glade.h:68
+msgid "Automatically assigned _GID must be highest"
+msgstr "_GID ที่กำหนดให้จะต้องสูงที่สุด"
+
+#: src/system-config-users.glade.h:69
+msgid "Prefer that private group GID is the _same as UID"
+msgstr "เลข _GID ควรจะเหมือนกับ UID"
+
+#: src/system-config-users.glade.h:70
+msgid "<b>New Users</b>"
+msgstr "<b>ผู้ใช้ใหม่</b>"
+
+#: src/system-config-users.glade.h:72
+msgid "Copyright © 2001-2007 Red Hat, Inc."
+msgstr "สงวนลิขสิทธิ์ © 2544-2548 Red Hat, Inc."
+
+#: src/system-config-users.glade.h:73
+msgid "Manages users and groups on your system."
+msgstr "จัดการผู้ใช้และกลุ่มบนระบบของคุณ"
+
+#: src/system-config-users.glade.h:74
+msgid ""
+"system-config-users is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
+"\n"
+"system-config-users is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with system-config-users; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+msgstr "system-config-users เป็นซอฟต์แวร์เสรี คุณสามารถแจกจ่ายต่อ และ/หรือ แก้ไขโปรแกรมได้ ภายใต้เงื่อนไขของ GNU General Public License ที่เผยแพร่โดยมูลนิธิซอฟต์แวร์เสรี ไม่ว่าจะเป็นสัญญาอนุญาตรุ่นที่ 2 หรือรุ่นถัดมา (ตามแต่คุณจะเลือก)\n\nsystem-config-users เผยแพร่ด้วยความหวังว่าโปรแกรมจะมีประโยชน์ แต่ _ไม่มีการรับประกันใดๆ_ ไม่มีแม้การรับประกัน _อรรถประโยชน์เชิงพาณิชย์_ หรือ _ความเหมาะสมสำหรับวัตถุประสงค์เฉพาะกิจใดๆ_ กรุณาอ่าน GNU General Public License เพื่อดูรายละเอียดเพิ่มเติม\n\nคุณควรจะได้รับสำเนาของ GNU General Public License มาพร้อมกับ system-config-users ถ้าคุณไม่ได้รับ กรุณาติดต่อไปที่ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA"
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: src/system-config-users.glade.h:80
+msgid "translator-credits"
+msgstr "Manatsawin Hanmongkolchai <manatsawin@gmail.com>"
+
+#: config/system-config-users.desktop.in.h:1
+msgid "Users and Groups"
+msgstr "ผู้ใช้และกลุ่ม"
+
+#: config/system-config-users.desktop.in.h:2
+msgid "Add or remove users and groups"
+msgstr "เพิ่มหรือลบผู้ใช้และกลุ่ม"

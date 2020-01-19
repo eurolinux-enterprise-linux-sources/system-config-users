@@ -1,0 +1,9 @@
+/system-config-users-*.tar.bz2
+/config/system-config-users.desktop.in.h
+/config/system-config-users.desktop
+/config/org.fedoraproject.config.users.policy
+/src/system-config-users.sh
+/src/system-config-users.glade.h
+*.bak
+*.pyc
+*.pyo

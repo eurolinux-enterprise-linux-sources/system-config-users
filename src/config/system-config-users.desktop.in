@@ -1,0 +1,8 @@
+[Desktop Entry]
+_Name=Users and Groups
+_Comment=Add or remove users and groups
+Categories=System;Settings;
+Icon=system-users
+Exec=/usr/bin/system-config-users
+Type=Application
+Terminal=false

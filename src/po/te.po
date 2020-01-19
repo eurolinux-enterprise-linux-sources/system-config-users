@@ -1,0 +1,879 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER, 2006.
+# Krishna Babu K <kkrothap@redhat.com>, 2007-2010.
+# Nils Philippsen <nils@redhat.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-users\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-users/\n"
+"POT-Creation-Date: 2012-11-02 10:51+0100\n"
+"PO-Revision-Date: 2012-11-02 09:59+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"Language-Team: Telugu (http://www.transifex.com/projects/p/fedora/language/te/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: te\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/groupProperties.py:114 src/userGroupCheck.py:78 src/groupWindow.py:120
+msgid "Please enter a group name."
+msgstr "దయచేసి ఒక సమూహం పేరును ఇవ్వండి."
+
+#: src/groupProperties.py:131
+#, python-format
+msgid "The group '%s' already exists. Please choose a different name."
+msgstr "సమూహం %s ఇప్పటికే ఉంది.దయచేసి వేరే నామమును ఎన్నుకోండి."
+
+#: src/groupProperties.py:178 src/mainWindow.py:889
+#, python-format
+msgid "You cannot remove user '%s' from their primary group."
+msgstr "'%s' వినియోగదారుని వారి ప్రాధమిక సమూహంనుండీ తొలగించలేరు."
+
+#: src/userWindow.py:100 src/userProperties.py:122
+msgid "User"
+msgstr "వినియోగదారుడు"
+
+#: src/userWindow.py:101 src/userProperties.py:123
+msgid "Staff"
+msgstr "సిబ్బంది"
+
+#: src/userWindow.py:102 src/userProperties.py:124
+msgid "System Administrator"
+msgstr "కంప్యూటరు నిర్వహణదారు"
+
+#. The passwords don't match, so complain
+#: src/userWindow.py:216
+msgid "The passwords do not match."
+msgstr "ఈ అనుమతిపదం సరిపోలలేదు."
+
+#. The user name is blank, so complain
+#: src/userWindow.py:248
+msgid "Please specify a user name"
+msgstr "దయచేసి ఒక వినియోగదారుని పేరును తెల్పండి"
+
+#. This user already exists, so complain
+#: src/userWindow.py:256
+#, python-format
+msgid "An account with username '%s' already exists."
+msgstr "ఈ '%s' వినియోగదారుని పేరుతో ఖాతా ఇప్పటికే ఉంది."
+
+#. This uid already exists, so complain
+#: src/userWindow.py:294
+#, python-format
+msgid "The uid %s is already in use."
+msgstr "uid %s ఇప్పటికే వినియోగంలో ఉంది."
+
+#. This (chosen) gid already exists, so complain
+#: src/userWindow.py:302 src/groupWindow.py:144
+#, python-format
+msgid "The gid %s is already in use."
+msgstr "%s ఈ గిడ్ ఇప్పటికే ఉపయోగంలో ఉంది."
+
+#: src/userWindow.py:315
+#, python-format
+msgid ""
+"Error finding suitable user id not exceeding maximum value of %(maxid)s."
+msgstr "గరిష్ట విలువ %(maxid)s కు మించని సరిగాసూటగు వినియోగదారి id కనుగొనుటలో దోషము."
+
+#: src/userWindow.py:318 src/groupWindow.py:177
+#, python-format
+msgid ""
+"Error finding suitable group id not exceeding maximum value of %(maxid)s."
+msgstr "గరిష్ట విలువ %(maxid)s కు మించని సరిగాసూటగు సమూహపు id ను కనుగొనుటలో దోషము."
+
+#: src/userWindow.py:331
+#, python-format
+msgid ""
+"Creating a user with a UID less than %(uid_min)s is not recommended.  Are "
+"you sure you want to do this?"
+msgstr "%(uid_min)s కంటే తక్కువ UIDతో వినియోగదారుని సృష్టించటానికి మద్దతివ్వబడదు.  మీరు దీన్ని చేయాలనుకుంటున్నారా?"
+
+#: src/userWindow.py:364
+msgid "A group with this gid already exists.  What would you like to do?"
+msgstr "ఈ‌gid తో ఒక సమూహ ఇప్పటికే ఉంది.  మీరు ఏమి చేయాలనుకుంటునారు?"
+
+#: src/userWindow.py:368
+msgid "A group with this name already exists.  What would you like to do?"
+msgstr "ఈ‌పేరుతో ఒక సమూహ ఇప్పటికే ఉంది.  మీరు ఏమి చేయాలనుకుంటునారు?"
+
+#: src/userWindow.py:374
+msgid "Add to the existing group"
+msgstr "ఉన్న సమూహానికి కలుపు"
+
+#: src/userWindow.py:376
+msgid "Add to the 'users' group"
+msgstr "'వినియోగదారుల' సమూహానికి కలుపు"
+
+#. Uh-oh. It looks like /etc/group and /etc/gshadow are out of
+#. sync. Give up and quit.
+#: src/userWindow.py:460
+msgid ""
+"The system group database cannot be read.  This problem is most likely "
+"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
+"now."
+msgstr "ఈ కంప్యూటరు ఆధారిత సమాచారనిధిని చదవలేము.  ఈ సమస్య ప్రధానంగా /etc/group and /etc/gshadow మధ్య సరిపోలనితనం వల్ల కావచ్చు.  ఆ పరిక్రమం ఇప్పుడు ఉంది."
+
+#: src/userProperties.py:157
+msgid "Primary Group:"
+msgstr "ప్రాధమిక సమూహం:"
+
+#: src/userProperties.py:244
+#, python-format
+msgid "Password last changed on: %x"
+msgstr "సంకేతపదము చివరిసారిగా మార్చబడింది: %x"
+
+#: src/userProperties.py:327 src/userGroupCheck.py:57
+msgid "Please enter a user name."
+msgstr "దయచేసి ఒక వినియోగదారుని పేరును ఇవ్వండి."
+
+#: src/userProperties.py:348
+#, python-format
+msgid "The user '%s' already exists. Please choose a different name."
+msgstr "వినియోగదారి '%s' ఇప్పటికే ఉంది.దయచేసి వేరే నామమును ఎన్నకొనుము."
+
+#: src/userProperties.py:371
+msgid "Passwords do not match."
+msgstr "అనుమతిపదం సరిపోలలేదు."
+
+#: src/userProperties.py:451
+msgid "Please select at least one group for the user."
+msgstr "వినియోగదారుని కోసం దయచేసి కనీసం ఒక సమూహాన్ని ఎన్నుకోండి."
+
+#: src/userProperties.py:472
+msgid "Please specify the month that the password will expire."
+msgstr "దయచేసి అనుమతిపదం యొక్క ముగింపు నెలను తెల్పండి."
+
+#: src/userProperties.py:482
+msgid "Please specify the day that the password will expire."
+msgstr "దయచేసి అనుమతిపదం యొక్క ముగింపు తేదీని తెల్పండి."
+
+#: src/userProperties.py:492
+msgid "Please specify the year that the password will expire."
+msgstr "దయచేసి అనుమతిపదం యొక్క ముగింపు సంవత్సరాన్ని తెల్పండి."
+
+#. mktime will throw an OverflowError if the year is too big.
+#: src/userProperties.py:509
+msgid "The year is out of range.  Please select a different year."
+msgstr "ఈ సంవత్సరం స్థాయికి మించి ఉంది.  దయచేసి వేరే సంవత్సరాన్ని తెల్పండి."
+
+#: src/userProperties.py:540
+msgid ""
+"Please specify the number of days before changing the password is allowed."
+msgstr "మార్చిన అనుమతిపదం అనుమతించబడటానికి ముందు వినియోగించే రోజులను తెల్పండి."
+
+#: src/userProperties.py:542
+#, python-format
+msgid ""
+"The number of days before changing the password is allowed must be between "
+"%(min)d and %(max)d."
+msgstr "అనుమతిపదం మార్చుటకు మునుపు అనుమతించబడు రోజులు తప్పక  %(min)d మరియు %(max)d ల మద్య మాత్రమే ఉండవలెను."
+
+#: src/userProperties.py:547
+msgid ""
+"Please specify the number of days before changing the password is required."
+msgstr "దయచేసి అనుమతిపదం మార్చటం అవసరమైతే ముందే వినియోగించే రోజులసంఖ్యను తెల్పండి."
+
+#: src/userProperties.py:549
+#, python-format
+msgid ""
+"The number of days before changing the password is required must be between "
+"%(min)d and %(max)d."
+msgstr "అనుమతిపదం మార్చటకు మునుపు అవసరమగు రోజులు తప్పక  %(min)d మరియు %(max)d మద్య ఉండవలెను."
+
+#: src/userProperties.py:554
+msgid ""
+"Please specify the number of days to warn the user before changing the "
+"password is required."
+msgstr "అనుమతిపదం మార్పు అవసరం అయ్యినప్పుడు వినియోగదారుని హెచ్చరించటానికి కావలసిన రోజులను తెల్పండి."
+
+#: src/userProperties.py:556
+#, python-format
+msgid ""
+"The number of days to warn the user before changing the password is required"
+" must be between %(min)d and %(max)d."
+msgstr "అనుమతిపదం మార్పు అవసరం అయ్యినప్పుడు వినియోగదారుని హెచ్చరించటానికి కావలసిన రోజులను తప్పక  %(min)d మరియు %(max)d ల మద్య ఉండాలి."
+
+#: src/userProperties.py:562
+msgid ""
+"Please specify the number of days until the user account becomes inactive "
+"after password has expired."
+msgstr "దయచేసి అనుమతిపద కాలం చెల్లినతరువాత వినియోగదారుని ఖాతా క్రియారహితం చేయటానికి ఎన్ని రోజులు కావాలో తెల్పండి."
+
+#: src/userProperties.py:565
+#, python-format
+msgid ""
+"The number of days until the user account becomes inactive after the "
+"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
+"means the account won't become inactive."
+msgstr "అనుమతిపద కాలం చెల్లినతరువాత వినియోగదారుని ఖాతా క్రియారహితం చేయటానికి ఉన్న రోజులు తప్పక  %(min)d మరియు %(max)d మద్య ఉండాలి.దానిని -1 అమర్చటలో అర్దం ఖాతా క్రియారహితం కాబోదు అని."
+
+#: src/userProperties.py:629
+#, python-format
+msgid ""
+"Unlocking the user failed because:\n"
+"\n"
+"%(errmsg)s"
+msgstr "వినియోగదారిని అన్‌లాక్ చేయుట విఫలమైంది యెంచేతంటే:\n\n%(errmsg)s"
+
+#: src/userProperties.py:632
+msgid "Unlocking the user failed due to an unknown reason."
+msgstr "వినియోగదారిని అన్‌లాక్ చేయుట అనునది యేదో తెలియని కారణంవలన విఫలమైంది."
+
+#: src/userGroupCheck.py:58
+#, python-format
+msgid "The user name must not exceed %d characters."
+msgstr "ఆ వినియోగదారుని పేరు తప్పక %d అక్షరాలను మించకూడదు."
+
+#: src/userGroupCheck.py:59
+#, python-format
+msgid ""
+"The user name '%s' contains whitespace. Please do not include whitespace in "
+"the user name."
+msgstr "ఈ '%s' వినియోగదారుని పేరు ఖాళీలను కలిగి ఉంది. వినియోగదారుని పేరులో దయచేసి ఖాళీలను చేర్చకండి."
+
+#: src/userGroupCheck.py:61
+#, python-format
+msgid ""
+"The user name '%s' contains a dollar sign which is not at the end. Please "
+"use dollar signs only at the end of user names to indicate Samba machine "
+"accounts."
+msgstr "ఈ '%s' వినియోగదారుని పేరు చివర ఉండకూడని డాలర్ చిహ్నాన్ని కలిగి ఉంది. సాంబా కంప్యూటర్ల ఖాతాలను తెలియ చేయటానికి మాత్రమే డాలర్ చిహ్నాన్ని వినియోగదారు పేరు చివర ఉపయోగిస్తారు."
+
+#: src/userGroupCheck.py:64
+#, python-format
+msgid ""
+"The user name '%s' contains a trailing dollar sign. This should only be used"
+" for Samba machine accounts, using this for a normal user account can cause "
+"problems with some software. Is the account in question a Samba machine "
+"account?"
+msgstr "వినియోగదారి నామము '%s' ట్రెయిలింగ్ డాలర్ గుర్తును కలిగివుంది. ఇది సాంబా మిషన్ ఖాతాలకు మాత్రమే వుపయోగించాలి, దీనిని సాధారణ వినియోగదారి ఖాతాకు వుపయోగించుట వలన కొన్ని సాఫ్టువేర్లతో సమస్య కలుగును. ప్రశ్న నందలి ఖాతా సాంబా మిషన్ ఖాతానా?"
+
+#: src/userGroupCheck.py:69
+#, python-format
+msgid ""
+"The user name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr "ఈ '%(name)s' వినియోగదారుని పేరు చెల్లని అక్షరాలను %(position)d స్థానంలో కలిగి ఉంది."
+
+#: src/userGroupCheck.py:71
+msgid ""
+"Using all numbers as the user name can cause confusion about whether the "
+"user name or numerical user id is meant. Do you really want to use a "
+"numerical-only user name?"
+msgstr "సంఖ్యలను వినియోగదారుని పెరుగా ఉపయోగించటం అన్నది అది వినియోగదారుని పేరో లేదా సంఖ్యా వినియోగదారుని ఐడినో సందిగ్ధతకి గురికావలసి వస్తుంది. మీరు నిజంగా సంఖ్యాపర-వినియోగదారుని పేరును మాత్రమే వాడాలనుకుంటున్నారా?"
+
+#: src/userGroupCheck.py:79
+#, python-format
+msgid "The group name must not exceed %d characters."
+msgstr "సమూహం పేరు తప్పక %d అక్షరాలను మించకూడదు."
+
+#: src/userGroupCheck.py:80
+#, python-format
+msgid ""
+"The group name '%s' contains whitespace. Please do not include whitespace in"
+" the group name."
+msgstr "ఈ '%s' సమూహంపేరు ఖాళీలను కలిగి ఉంది. దయచేసి సమూహం పేరులో ఖాళీలను చేర్చకండి."
+
+#: src/userGroupCheck.py:82
+#, python-format
+msgid ""
+"The group name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr "ఈ '%(name)s' సమూహం పేరు ఈ %(position)d స్థానంలో చెల్లని అక్షరాలను కలిగిఉంది."
+
+#: src/userGroupCheck.py:84
+msgid ""
+"Using all numbers as the group name can cause confusion about whether the "
+"group name or numerical group id is meant. Do you really want to use a "
+"numerical-only group name?"
+msgstr "సంఖ్యలను వినియోగదారుని పెరుగా ఉపయోగించటం అన్నది అది వినియోగదారుని పేరో లేదా సంఖ్యా వినియోగదారుని ఐడినో సందిగ్ధతకి గురికావలసి వస్తుంది. మీరు నిజంగా సంఖ్యాపర-వినియోగదారుని పేరును మాత్రమే వాడాలనుకుంటున్నారా?"
+
+#: src/userGroupCheck.py:172
+#, python-format
+msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
+msgstr "మీరు ఎన్నుకున్న అనుమతిపదం బలహీనంగాఉంది:%s.మీరు ఏమైనా దీనినే ఉపయోగించాలి అనుకుంటున్నారా?"
+
+#: src/userGroupCheck.py:192
+msgid ""
+"The chosen password contains characters which may be hard or impossible to "
+"type in certain situations. To ensure the password can be typed everywhere "
+"use only unaccented Latin letters (A-Z, a-z), digits (0-9), punctuation "
+"characters (e.g. comma, full stop) and the space character in the password. "
+"Do you want to use this password anyway?"
+msgstr "ఎంచుకున్న సంకేతపదము నందలి అక్షరములు కొన్ని సందర్భములలో టైపు చేయుటకు కష్టము లేదా అసాధ్యము. సంకేతపదము యెచటనైనాటైపు చేయ దగినదిగా యెంచుటకు లాటిన్ అక్షరములు (A-Z, a-z), అంకెలు (0-9), విరామ చిహ్నాలు (ఉ.దా. కామా, ఫుల్ స్టాప్)మరియు స్పేస్‌ను సంకేతపదమునందు వుపయోగించుము. మీరు యేమైనాసరే యీ సంకేతపదమును వుపయోగించాలని అనుకొనుచున్నారా?"
+
+#. have to check for whitespace for gecos, since whitespace is ok
+#: src/userGroupCheck.py:240
+#, python-format
+msgid ""
+"The name '%s' contains invalid characters.  Please use only UTF-8 "
+"characters."
+msgstr "ఈ '%s' పేరు చెల్లని అక్షరాలను కలిగి ఉంది.  దయచేసి UTF-8 అక్షరాలను మాత్రమే వాడండి."
+
+#. We have to check for colons as /etc/passwd is a colon delimited
+#. file.
+#: src/userGroupCheck.py:249
+#, python-format
+msgid "The name '%s' contains a colon.  Please do not use colons in the name."
+msgstr "ఈ '%s' పేరు ఒక కోలను కలిగి ఉంది.  దయచేసి పేరులో కోలనులను వాడకండి."
+
+#: src/userGroupCheck.py:259
+msgid "Please enter a home directory."
+msgstr "దయచేసి ఒక హోమ్ డైరెక్టరీని ఇవ్వండి."
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: src/userGroupCheck.py:266
+#, python-format
+msgid ""
+"The directory name '%s' contains a colon.  Please do not use colons in the "
+"directory name."
+msgstr "ఈ '%s' డైరెక్టరీ పేరు ఒక కోలనును కలిగి ఉంది.  దయచేసి కోలన్లను డైరెక్టరీ పేర్లలో వాడకండి."
+
+#: src/userGroupCheck.py:277
+#, python-format
+msgid ""
+"The directory name '%s' doesn't begin with a '/'. Please specify an absolute"
+" path for the home directory."
+msgstr "ఈ '%s' డైరెక్టరీ పేరు '/' తో ప్రారంభమవుటలేదు.  దయచేసి హోమ్ డైరెక్టరీ కొరకు పూర్తి పాత్ ను తెలుపండి."
+
+#: src/userGroupCheck.py:286
+#, python-format
+msgid ""
+"The directory name '%s' has path components which are too long. Please use "
+"shorter path components for the home directory."
+msgstr "ఈ '%s' డైరెక్టరీ పేరు పొడవైన పాత్ కాంపొనెంటులను కలిగిఉంది.  దయచేసి హోమ్ డైరెక్టరీ కొరకు పొట్టి కాంపోనెంట్లను వాడండి."
+
+#: src/userGroupCheck.py:296
+#, python-format
+msgid ""
+"The directory name '%s' contains empty path components. Please specify a "
+"home directory name without empty path components."
+msgstr "ఈ '%s' డైరెక్టరీ పేరు ఖాళీ కాంపోనెంట్లను కలిగిఉంది.  దయచేసి హోమ్ డైరెక్టరీ పేరును ఖాళీ కాంపోనెంట్లు లేకుండా తెలుపండి."
+
+#: src/userGroupCheck.py:308
+#, python-format
+msgid ""
+"The directory name '%s' contains illegal path components. Please don't use "
+"'.' or '..' as path components for the home directory."
+msgstr "ఈ '%s' డైరెక్టరీ పేరు వాడకూడని పాత్ కాంపోనెంట్లను కలిగి ఉంది.  దయచేసి '.'లేదా'..' లను పాత్ కాంపోనెంట్లగా హోమ్ డైరెక్టరీ కొరకు వాడవద్దు."
+
+#: src/userGroupCheck.py:326
+#, python-format
+msgid ""
+"The directory '%(dir)s' cannot be created ('%(parent_dir)s' is not "
+"writable). Please choose a writable location."
+msgstr "డైరెక్టరీ '%(dir)s' సృష్టించబడలేదు ('%(parent_dir)s' వ్రాయదగునది కాదు). దయచేసి వ్రాయదగుస్థానమును యెంచుకొనుము."
+
+#: src/groupWindow.py:129
+#, python-format
+msgid "A group with name '%s' already exists."
+msgstr "'%s' పేరుతో ఉన్న సమూహం ఇప్పటికే ఉంది."
+
+#: src/groupWindow.py:153
+#, python-format
+msgid ""
+"Creating a group with a GID less than %(gid_min)s is not recommended.  Are "
+"you sure you want to do this?"
+msgstr "GIDతో %(gid_min)s కంటే తక్కువతో ఒక సమూహాన్ని సృష్టించంటానికి మద్దతివ్వబడదు.  మీరు నిజంగా దీన్ని చేయాలనుకుంటున్నారా?"
+
+#: src/mainWindow.py:91
+msgid ""
+"The help viewer could not be found. To be able to view help you need to "
+"install the 'yelp' package."
+msgstr "సహాయ దర్శని కనుగొనబడలేదు. సహాయాన్ని చూడగలుగుటకు మీరు 'yelp' సంకలనాన్ని సంస్థపించవలసి ఉంటుంది."
+
+#: src/mainWindow.py:109
+#, python-format
+msgid "No helper application for the URL '%(url)s can be found."
+msgstr "URL '%(url)s కొరకు  వేరే సహాయక అప్లికేషన్ కనపడలేదు."
+
+#: src/mainWindow.py:138
+#, python-format
+msgid "Error saving settings to %s"
+msgstr "%sకి దోష భద్రపరుపు అమర్పులు"
+
+#: src/mainWindow.py:179
+msgid "User Name"
+msgstr "వినియోగదారుని పేరు"
+
+#: src/mainWindow.py:184
+msgid "User ID"
+msgstr "వినియోగదారుని ఐడి"
+
+#: src/mainWindow.py:188
+msgid "Primary Group"
+msgstr "ప్రాధమిక సమూహం"
+
+#: src/mainWindow.py:193
+msgid "Full Name"
+msgstr "పూర్తి పేరు"
+
+#: src/mainWindow.py:198
+msgid "Login Shell"
+msgstr "షల్ ప్రవేశం"
+
+#: src/mainWindow.py:203
+msgid "Home Directory"
+msgstr "హోమ్ డైరెక్టరీ"
+
+#: src/mainWindow.py:223
+msgid "Group Name"
+msgstr "సమూహం పేరు"
+
+#: src/mainWindow.py:228
+msgid "Group ID"
+msgstr "సమూహం ఐడి"
+
+#: src/mainWindow.py:232
+msgid "Group Members"
+msgstr "సమూహం సభ్యులు"
+
+#: src/mainWindow.py:502
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the user '%(user)s'.\n"
+"\n"
+msgstr "వినియోగదారుని '%(user)s' కొరకు నేను సంఖ్యా ID ని కనుగొనలేకపోయాను.\n"
+
+#: src/mainWindow.py:504
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these users:\n"
+"%(users)s\n"
+"\n"
+msgstr "ఈ వినియోగదారులకు నేను సంఖ్యా ID లను కనుగొనలేకపోయాను:\n%(users)s\n\n"
+
+#: src/mainWindow.py:516
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the group '%(group)s'.\n"
+"\n"
+msgstr "సమూహం '%(group)s' కొరకు నేను సంఖ్యా ID ని కనుగొనలేకపోయాను.\n\n"
+
+#: src/mainWindow.py:518
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these groups:\n"
+"%(groups)s\n"
+"\n"
+msgstr "ఈ సమూహాల కొరకు నేను సంఖ్యా ID లను కనుగొనలేక పోయాను:\n%(groups)s\n\n"
+
+#: src/mainWindow.py:529
+#, python-format
+msgid ""
+"%(msg_users)s%(msg_groups)s\n"
+"In most cases this is caused by inconsistencies in the user or group database, e.g. between the files /etc/passwd, /etc/group and their respective shadow files /etc/shadow and /etc/gshadow. I will try to ignore these entries and continue for now, but please fix these inconsistencies as soon as possible."
+msgstr "%(msg_users)s%(msg_groups)s\nచాలాసందర్బాలలో  ఇది వినియోగదారుని లేదా సమూహ డాటాబేస్ లోని అసమానతలకారణంగా జరుగుతోంది,ఉ.దా. /etc/passwd, /etc/group మరియు వాటి సంభందిత షాడో ఫైళ్ళు /etc/shadow మరియు /etc/gshadow మద్య.నేను ఇప్పడు వీటిని పట్టించుకోకుండా కొనసాగించుటకు ప్రయత్నిస్తాను,అయితే ఈ అసమానతలను దయచేసి వీలైనంత త్వరగా సరిచేయండి."
+
+#: src/mainWindow.py:662 src/system-config-users.glade.h:71
+msgid "system-config-users"
+msgstr "system-config-users "
+
+#: src/mainWindow.py:673
+#, python-format
+msgid "Copyright © %(years)s %(holder)s <%(email)s>"
+msgstr "Copyright © %(years)s %(holder)s <%(email)s>"
+
+#: src/mainWindow.py:676
+#, python-format
+msgid "Copyright © %(years)s %(holder)s"
+msgstr "Copyright © %(years)s %(holder)s"
+
+#: src/mainWindow.py:685
+#, python-format
+msgid "%(author)s <%(email)s>"
+msgstr "%(author)s <%(email)s>"
+
+#: src/mainWindow.py:688
+#, python-format
+msgid "%(author)s"
+msgstr "%(author)s"
+
+#: src/mainWindow.py:740
+msgid "Deleting the root user is not allowed."
+msgstr "రూట్ వినియోగదారుని తొలగించటం అనుమతించబడదు."
+
+#: src/mainWindow.py:753
+msgid "- An installed software package contains this directory."
+msgstr "- ఒక సంస్థాపించిన సాఫ్టువేరు ప్యాకేజీ ఈ డైరెక్టరీని కలిగిఉంది."
+
+#: src/mainWindow.py:758
+msgid ""
+"- A system user owns this directory and removing it may impair the system's "
+"integrity."
+msgstr "- కంప్యూటరు వినియోగదారుడు ఈ డైరెక్టరీని సొంతంగా కలిగిఉన్నాడు మరియూ అది కంప్యూటరు విధానాన్ని చెడగొడితే తొలగించవచ్చు."
+
+#: src/mainWindow.py:762
+msgid "- This directory doesn't exist or isn't writable."
+msgstr "- ఈ డైరెక్టరీ ఉండదు లేదా ఇది రాయటానికి వీలుకానిదై ఉంటుంది."
+
+#: src/mainWindow.py:765
+#, python-format
+msgid "- The user '%s' doesn't own this directory."
+msgstr "- ఈ వినియోగదారుడు '%s' ఈ డైరెక్టరీ సొంతదారుడు కాదు."
+
+#: src/mainWindow.py:775
+#, python-format
+msgid ""
+"<b>There are currently processes running that are owned by '%s'!</b>  This "
+"user is probably still logged in.  "
+msgstr "<b>ఇప్పుడు ప్రస్తుత విధానాలు నుడుస్తున్నాయి ఇవి '%s'!</b> సొంతం  ఈ వినియోగదారుడు ఇంకా ప్రవేశించి ఉంటాడవచ్చు.  "
+
+#: src/mainWindow.py:779
+#, python-format
+msgid "Do you really want to remove the user '%s'?"
+msgstr "మీరు నిజంగా '%s' వినియోగదారుని తొలగించాలనుకుంటున్నారా?"
+
+#: src/mainWindow.py:791
+#, python-format
+msgid "Delete %(user)s's home directory ('%(homedir)s') and temporary files."
+msgstr "%(user)s యొక్క హోమ్ డైరెక్టరీ ('%(homedir)s') మరియూ తాత్కాలిక ఫైళ్లను తొలగించండి."
+
+#: src/mainWindow.py:797
+#, python-format
+msgid ""
+"Delete %(user)s's home directory ('%(homedir)s'), mail spool "
+"('%(mailspool)s') and temporary files."
+msgstr "%(user)s యొక్క హోమ్ డైక్టరీ ('%(homedir)s'), మెయిల్ స్పూల్ ('%(mailspool)s') మరియూ తాత్కాలిక ఫైళ్లను తొలగించండి."
+
+#: src/mainWindow.py:809
+#, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for this reason:\n"
+"%(reason)s"
+msgstr "%(user)sయొక్క హోమ్ డైరెక్టరీని ('%(homedir)s') ఈ కారణం వల్ల తొలగించలేదు:\n%(reason)s"
+
+#: src/mainWindow.py:811
+#, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for these reasons:\n"
+"%(reason)s"
+msgstr "%(user)s యొక్క హోమ్ డైరెక్టరీని ('%(homedir)s') ఈ కారణం వల్ల తొలగించలేదు:\n%(reason)s"
+
+#: src/mainWindow.py:894
+#, python-format
+msgid "Are you sure you want to delete the group '%s'?"
+msgstr "మీరు నిజంగా ఈ '%s' సమూహాన్ని తొలగించాలనుకుంటునారా?"
+
+#: src/system-config-users.py:38
+msgid "system-config-users requires a currently running X server."
+msgstr "system-config-users ప్రస్తుతం నడుస్తున్న X సర్వరును కలిగుండాలి."
+
+#: src/system-config-users.glade.h:1
+msgid "Add New Group"
+msgstr "కొత్త సమూహాన్ని జతచేయి"
+
+#: src/system-config-users.glade.h:2
+msgid "_Group Name:"
+msgstr "సమూహం పేరు: (_G)"
+
+#: src/system-config-users.glade.h:3
+msgid "Specify g_roup ID manually:"
+msgstr "సమూహం ID ని మానవీయంగా తెల్పండి (_r)"
+
+#: src/system-config-users.glade.h:4
+msgid "User Properties"
+msgstr "వినియోగదారుని లక్షణాలు"
+
+#: src/system-config-users.glade.h:5
+msgid "User _Name:"
+msgstr "వినియోగదారుని పేరు: (_N)"
+
+#: src/system-config-users.glade.h:6
+msgid "_Full Name:"
+msgstr "పూర్తి పేరు: (_F)"
+
+#: src/system-config-users.glade.h:7
+msgid "Pass_word:"
+msgstr "సంకేతపదము (_w):"
+
+#: src/system-config-users.glade.h:8
+msgid "Confir_m Password:"
+msgstr "సంకేతపదమును నిర్ధారించుము (_m):"
+
+#: src/system-config-users.glade.h:9
+msgid "_Login Shell:"
+msgstr "షల్ ప్రవేశం: (_L)"
+
+#: src/system-config-users.glade.h:10
+msgid "_Home Directory:"
+msgstr "హోమ్ డైరెక్టరీ: (_H)"
+
+#: src/system-config-users.glade.h:11
+msgid "S_ELinux role:"
+msgstr "S_ELinux రోలే: (_E)"
+
+#: src/system-config-users.glade.h:12
+msgid "_User Data"
+msgstr "వినియోగదారుని సమాచారం (_U)"
+
+#: src/system-config-users.glade.h:13
+msgid "_Enable account expiration"
+msgstr "ఖాతా సమాప్తి అయ్యింది (_E)"
+
+#: src/system-config-users.glade.h:14
+msgid "Account e_xpires (YYYY-MM-DD):"
+msgstr "ఖాతా ముగియుకాలం (YYYY-MM-DD) (_x):"
+
+#: src/system-config-users.glade.h:15
+msgid "     "
+msgstr "     "
+
+#: src/system-config-users.glade.h:16
+msgid "-"
+msgstr "-"
+
+#: src/system-config-users.glade.h:17
+msgid "_Local password is locked"
+msgstr "స్థానిక అనుమతిపదం లాకయ్యింది (_L)"
+
+#: src/system-config-users.glade.h:18
+msgid "_Account Info"
+msgstr "ఖాతా సమాచారం (_A)"
+
+#: src/system-config-users.glade.h:19
+msgid "_Enable password expiration"
+msgstr "అనుమతిపద గడువు సాధ్యంకాదు (_E)"
+
+#: src/system-config-users.glade.h:20
+msgid "Days before change a_llowed:"
+msgstr "మార్చటానికి ముందు రోజులు అనుమతించబడతాయి: (_l)"
+
+#: src/system-config-users.glade.h:21
+msgid "Days before change _required:"
+msgstr "మార్చటానికి ముందు రోజులు కావాలి: (_r)"
+
+#: src/system-config-users.glade.h:22
+msgid "Days _warning before change:"
+msgstr "మార్చటానికి ముందు రోజుల హెచ్చరిక: (_w)"
+
+#: src/system-config-users.glade.h:23
+msgid "Days before account _inactive:"
+msgstr "ఖాతా క్రియారహితం కావటానికి ముందు రోజులు: (_i)"
+
+#: src/system-config-users.glade.h:24
+msgid "Force password change on next login"
+msgstr "తరువాతి లాగిన్ నందు సంకేతపదము మార్పుకై వత్తిడిచేయి"
+
+#: src/system-config-users.glade.h:25
+msgid "_Password Info"
+msgstr "అనుమతిపద సమాచారం (_P)"
+
+#: src/system-config-users.glade.h:26
+msgid "Select the groups that the user will be a member of:"
+msgstr "వినియోగదారుడు సభ్యుడుగా ఉండే సమూహాన్ని ఎన్నుకోండి:"
+
+#: src/system-config-users.glade.h:27
+msgid "_Groups"
+msgstr "సమూహాలు (_G)"
+
+#: src/system-config-users.glade.h:28
+msgid "Group Properties"
+msgstr "సముహ లక్షణాలు"
+
+#: src/system-config-users.glade.h:29
+msgid "Group _Data"
+msgstr "సమూహ సమాచారం (_D)"
+
+#: src/system-config-users.glade.h:30
+msgid "Select the users to join this group:"
+msgstr "ఈ సమూహంలో చేరటానికి వినియోగదారులను ఎన్నుకో:"
+
+#: src/system-config-users.glade.h:31
+msgid "Group _Users"
+msgstr "సమూహ వినియోగదారులు (_U)"
+
+#: src/system-config-users.glade.h:32
+msgid "User Manager"
+msgstr "వినియోగదారుని నిర్వహణాధికారి"
+
+#: src/system-config-users.glade.h:33
+msgid "_File"
+msgstr "ఫైలు (_F)"
+
+#: src/system-config-users.glade.h:34
+msgid "Add _User"
+msgstr "వినియోగదారుని కలుపు (_U)"
+
+#: src/system-config-users.glade.h:35
+msgid "Add _Group"
+msgstr "సమూహాన్ని కలుపు (_G)"
+
+#: src/system-config-users.glade.h:36
+msgid "_Edit"
+msgstr "కూర్చు (_E)"
+
+#: src/system-config-users.glade.h:37
+msgid "_Help"
+msgstr "సహాయం (_H)"
+
+#: src/system-config-users.glade.h:38
+msgid "_Contents"
+msgstr "విషయాలు (_C)"
+
+#: src/system-config-users.glade.h:39
+msgid "Edit properties"
+msgstr "గుణాలను కూర్చు"
+
+#: src/system-config-users.glade.h:40
+msgid "Proper_ties"
+msgstr "లక్షణాలు (_t)"
+
+#: src/system-config-users.glade.h:41
+msgid "_Delete"
+msgstr "తొలగించు (_D)"
+
+#: src/system-config-users.glade.h:42
+msgid "Reload"
+msgstr "తిరిగి లోడుచేయి"
+
+#: src/system-config-users.glade.h:43
+msgid "_Refresh"
+msgstr "రిఫ్రెష్ (_R)"
+
+#: src/system-config-users.glade.h:44
+msgid "Help"
+msgstr "సహాయం"
+
+#: src/system-config-users.glade.h:45
+msgid "Sea_rch filter:"
+msgstr "శోధన ఫిల్టర్:"
+
+#: src/system-config-users.glade.h:46
+msgid "_Apply filter"
+msgstr "ఫిల్టరును అనువర్తించు (_A)"
+
+#: src/system-config-users.glade.h:47
+msgid "U_sers"
+msgstr "వినియోగదారులు (_s)"
+
+#: src/system-config-users.glade.h:48
+msgid "Gr_oups"
+msgstr "సమూహాలు (_o)"
+
+#: src/system-config-users.glade.h:49
+msgid "Add New User"
+msgstr "కొత్త వినియోగదారిని జతచేయి"
+
+#: src/system-config-users.glade.h:50
+msgid "_User Name:"
+msgstr "వినియోగదారుని పేరు (_U)"
+
+#: src/system-config-users.glade.h:51
+msgid "_Password:"
+msgstr "అనుమతిపదం: (_P)"
+
+#: src/system-config-users.glade.h:52
+msgid "Create _home directory"
+msgstr "హోం డైరెక్టరీని సృష్టించు (_h)"
+
+#: src/system-config-users.glade.h:53
+msgid "    "
+msgstr "    "
+
+#: src/system-config-users.glade.h:54
+msgid "Home _Directory:"
+msgstr "హోం డైరెక్టరీ: (_D)"
+
+#: src/system-config-users.glade.h:55
+msgid "Create a private _group for the user"
+msgstr "వినియోగదారుని కోసం ఒక ప్రవేట్ సముహాన్ని సృష్టించు (_g)"
+
+#: src/system-config-users.glade.h:56
+msgid "Specify u_ser ID manually:"
+msgstr "మానవీయంగా వినియోగదారుని ID ని తెల్పండి (_s)"
+
+#: src/system-config-users.glade.h:57
+msgid "About system-config-users"
+msgstr "system-config-users గురించి"
+
+#: src/system-config-users.glade.h:58
+msgid "<b>system-config-users</b>"
+msgstr "<b>system-config-users</b>"
+
+#: src/system-config-users.glade.h:59
+msgid "Version @VERSION@"
+msgstr "ప్రతి @VERSION@"
+
+#: src/system-config-users.glade.h:60
+msgid "Copyright (c) 2001 - 2005 Red Hat, Inc."
+msgstr "కాపీహక్కు (c) 2001 - 2005 Red Hat, Inc."
+
+#: src/system-config-users.glade.h:61
+msgid "This software is distributed under the GNU General Public License."
+msgstr "ఈ సాఫ్టువేరు GNU సాధారణ పబ్లిక్ లైసెన్సు కింద పంపిణీ చేయబడుతోంది."
+
+#: src/system-config-users.glade.h:62
+msgid "Preferences"
+msgstr "అభీష్టాలు"
+
+#: src/system-config-users.glade.h:63
+msgid "_Hide system users and groups"
+msgstr "కంప్యూటరు వినియోగదారులను మరియూ సమూహాలను దాయి (_H)"
+
+#: src/system-config-users.glade.h:64
+msgid "<b>User and Group Lists</b>"
+msgstr "<b>వినియోగదారి మరియు సమూహం జాబితాలు</b>"
+
+#: src/system-config-users.glade.h:65
+msgid ""
+"Ensure that a new user gets a higher UID than all existing users, if not set"
+" manually."
+msgstr "ఉన్న వినియోగదారుల కంటే కొత్త వినియోగదారుడుఎక్కువ UIDని పొందునట్లు చూడండి. ఒకవేళ అది మానవీయంగా అమర్చకపోతే."
+
+#: src/system-config-users.glade.h:66
+msgid "Automatically assigned _UID must be highest"
+msgstr "స్వయంచాలకంగా అమర్చిన UID తప్పక ఎక్కువై ఉంటుంది (_U)"
+
+#: src/system-config-users.glade.h:67
+msgid ""
+"Ensure that a new group gets a higher GID than all existing groups, if not "
+"set manually."
+msgstr "ఒక కొత్త సమూహం ఉన్న సమూహాలకంటే తప్పక ఎక్కువ GIDని పొందునట్లు చూడండి, ఒకవేళ అది మానవీయంగా అమర్చకపోతే."
+
+#: src/system-config-users.glade.h:68
+msgid "Automatically assigned _GID must be highest"
+msgstr "స్వయంచాలకంగా అమర్చిన GID తప్పక ఎక్కువై ఉంటుంది (_G)"
+
+#: src/system-config-users.glade.h:69
+msgid "Prefer that private group GID is the _same as UID"
+msgstr " ప్రైవేటు సమూహ GID ని  UID లాగే ఉంచుటకు మొగ్గుచూపండి (_s)"
+
+#: src/system-config-users.glade.h:70
+msgid "<b>New Users</b>"
+msgstr "<b>కొత్త వినియోగదారులు</b>"
+
+#: src/system-config-users.glade.h:72
+msgid "Copyright © 2001-2007 Red Hat, Inc."
+msgstr "Copyright © 2001-2007 Red Hat, Inc."
+
+#: src/system-config-users.glade.h:73
+msgid "Manages users and groups on your system."
+msgstr "మీ సిస్టమ్ నందలి వినియోగదారులని మరియు సమూహాలను నిర్వహిస్తుంది."
+
+#: src/system-config-users.glade.h:74
+msgid ""
+"system-config-users is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
+"\n"
+"system-config-users is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with system-config-users; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+msgstr "system-config-users ఉచిత సాఫ్టువేరు మీరు దీనిని తిరిగి పంపిణీచేయవచ్చు మరియు/లేదా ఉచిత సాఫ్టువేరు మూలస్థభం చేత ప్రచురించబడినటువంటి GNU జనరల్ పబ్లిక్ లైసెన్సు; వర్షన్ 2 గాని, లేదా(మీ ఐచ్చికం) ఏ తర్వాతి వర్షన్ నియమాలను అనుసరించి సవరించవచ్చు.\n\nsystem-config-users అది ఉపయోగపడుతుందనే నమ్మకంతో పంపిణిచేయబడింది, అయితే ఎటువంటి పూచీ వహించుటలేదు; ఏ వ్యాపారసంభందమైన లేదా సంభందిత ఉపయోగం కొరకు అనిగాని కూడా పూచీ ఇవ్వబడుటలేదు.ఎక్కువ సమాచారం కొరకు GNU జనరల్ పబ్లిక్ లైసెన్సు ను చూడండి.\n\nమీరు system-config-users తోటి ఒక GNU జనరల్ పబ్లిక్ లైసెన్సు ను పొందుతారు; పొందకపోతే, Free Software Foundation, Inc.,51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA కు వ్రాయండి."
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: src/system-config-users.glade.h:80
+msgid "translator-credits"
+msgstr "<KrishnaBabu K><kkrothap@redhat.com>"
+
+#: config/system-config-users.desktop.in.h:1
+msgid "Users and Groups"
+msgstr "వినియోగదారులు మరియూ సమూహాలు"
+
+#: config/system-config-users.desktop.in.h:2
+msgid "Add or remove users and groups"
+msgstr "వినియోగదారులనూ మరియూ సమూహాలనూ కలుపు లేదా తొలగించు"

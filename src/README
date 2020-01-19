@@ -1,0 +1,3 @@
+7-10-2001 - Brent Fox <bfox@redhat.com>
+
+system-config-users relies on libuser.  Some things don't currently work in libuser, such as adding additional users to existing groups.  Since they don't work in libuser, they don't work in system-config-users.  This should get sorted out soon.

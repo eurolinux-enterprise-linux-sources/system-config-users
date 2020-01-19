@@ -1,0 +1,884 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Arpad Biro <biro_arpad@yahoo.com>, 2004-2005,2007.
+# Gábor Szentiványi <szenti@ulx.hu>, 2006.
+# Nikolas Slivka <snicore@gmail.com>, 2010.
+# Nils Philippsen <nils@redhat.com>, 2011.
+# Sulyok Péter <peti@fedoraproject.org>, 2008-2009.
+# Széll Tamás <tomi@digiflex.hu>, 2004.
+# Tamas Szanto <tszanto@mol.hu>, 2003.
+# Zoltan Hoppár <hopparz@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-users\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-users/\n"
+"POT-Creation-Date: 2012-11-02 10:51+0100\n"
+"PO-Revision-Date: 2012-12-05 04:53+0000\n"
+"Last-Translator: Zoltan Hoppár <hopparz@gmail.com>\n"
+"Language-Team: Hungarian <trans-hu@lists.fedoraproject.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/groupProperties.py:114 src/userGroupCheck.py:78 src/groupWindow.py:120
+msgid "Please enter a group name."
+msgstr "Kérem adja meg a csoport nevét."
+
+#: src/groupProperties.py:131
+#, python-format
+msgid "The group '%s' already exists. Please choose a different name."
+msgstr "„%s” csoport már van. Kérem válasszon más nevet!"
+
+#: src/groupProperties.py:178 src/mainWindow.py:889
+#, python-format
+msgid "You cannot remove user '%s' from their primary group."
+msgstr "%s felhasználót nem veheti el az elsődleges csoportjából"
+
+#: src/userWindow.py:100 src/userProperties.py:122
+msgid "User"
+msgstr "Felhasználó"
+
+#: src/userWindow.py:101 src/userProperties.py:123
+msgid "Staff"
+msgstr "Személyzet"
+
+#: src/userWindow.py:102 src/userProperties.py:124
+msgid "System Administrator"
+msgstr "Rendszergazda"
+
+#. The passwords don't match, so complain
+#: src/userWindow.py:216
+msgid "The passwords do not match."
+msgstr "A jelszavak nem egyeznek."
+
+#. The user name is blank, so complain
+#: src/userWindow.py:248
+msgid "Please specify a user name"
+msgstr "Kérem adjon meg felhasználót"
+
+#. This user already exists, so complain
+#: src/userWindow.py:256
+#, python-format
+msgid "An account with username '%s' already exists."
+msgstr "„%s” felhasználó nevű számla már van."
+
+#. This uid already exists, so complain
+#: src/userWindow.py:294
+#, python-format
+msgid "The uid %s is already in use."
+msgstr "%s UID (felhasználó azonosító) már foglalt."
+
+#. This (chosen) gid already exists, so complain
+#: src/userWindow.py:302 src/groupWindow.py:144
+#, python-format
+msgid "The gid %s is already in use."
+msgstr " %s GID már foglalt."
+
+#: src/userWindow.py:315
+#, python-format
+msgid ""
+"Error finding suitable user id not exceeding maximum value of %(maxid)s."
+msgstr "Nem sikerült megfelelő felhasználói azonosítót találni, amelyik ne haladná meg a maximumértéket: %(maxid)s."
+
+#: src/userWindow.py:318 src/groupWindow.py:177
+#, python-format
+msgid ""
+"Error finding suitable group id not exceeding maximum value of %(maxid)s."
+msgstr "Nem sikerült megfelelő csoport-azonosítót találni, amelyik ne haladná meg a maximumértéket: %(maxid)s."
+
+#: src/userWindow.py:331
+#, python-format
+msgid ""
+"Creating a user with a UID less than %(uid_min)s is not recommended.  Are "
+"you sure you want to do this?"
+msgstr "Nem ajánlott %(uid_min)s-nál kisebb azonosítójú felhasználót létrehozni.  Biztosan ezt szeretné?"
+
+#: src/userWindow.py:364
+msgid "A group with this gid already exists.  What would you like to do?"
+msgstr "Már van ilyen azonosítójú csoport.  Mit szeretne tenni?"
+
+#: src/userWindow.py:368
+msgid "A group with this name already exists.  What would you like to do?"
+msgstr "Már van ilyen nevű csoport.  Mit szeretne tenni?"
+
+#: src/userWindow.py:374
+msgid "Add to the existing group"
+msgstr "Hozzáadás a meglévő csoporthoz"
+
+#: src/userWindow.py:376
+msgid "Add to the 'users' group"
+msgstr "Hozzáadás a „users” nevű csoporthoz"
+
+#. Uh-oh. It looks like /etc/group and /etc/gshadow are out of
+#. sync. Give up and quit.
+#: src/userWindow.py:460
+msgid ""
+"The system group database cannot be read.  This problem is most likely "
+"caused by a mismatch in /etc/group and /etc/gshadow.  The program will exit "
+"now."
+msgstr "A rendszer csoport listája nem olvasható be. A hibát valószínűleg az /etc/group és az /etc/gshadow fájlok közötti inkonzisztencia okozza.  A program most leáll."
+
+#: src/userProperties.py:157
+msgid "Primary Group:"
+msgstr "Elsődleges csoport:"
+
+#: src/userProperties.py:244
+#, python-format
+msgid "Password last changed on: %x"
+msgstr "Jelszó utoljára megváltozott: %x"
+
+#: src/userProperties.py:327 src/userGroupCheck.py:57
+msgid "Please enter a user name."
+msgstr "Kérem adjon meg egy felhasználónevet."
+
+#: src/userProperties.py:348
+#, python-format
+msgid "The user '%s' already exists. Please choose a different name."
+msgstr "„%s” nevű felhasználó már létezik, válasszon másik nevet."
+
+#: src/userProperties.py:371
+msgid "Passwords do not match."
+msgstr "A jelszavak nem egyeznek meg."
+
+#: src/userProperties.py:451
+msgid "Please select at least one group for the user."
+msgstr "Legalább egy csoportot meg kell adni."
+
+#: src/userProperties.py:472
+msgid "Please specify the month that the password will expire."
+msgstr "Adja meg a jelszó lejárásának hónapját."
+
+#: src/userProperties.py:482
+msgid "Please specify the day that the password will expire."
+msgstr "Adja meg a jelszó lejárásának napját."
+
+#: src/userProperties.py:492
+msgid "Please specify the year that the password will expire."
+msgstr "Adja meg a jelszó lejárásának évét."
+
+#. mktime will throw an OverflowError if the year is too big.
+#: src/userProperties.py:509
+msgid "The year is out of range.  Please select a different year."
+msgstr "Az év nem érvényes.  Kérem adjon meg más évszámot."
+
+#: src/userProperties.py:540
+msgid ""
+"Please specify the number of days before changing the password is allowed."
+msgstr "Kérem adja meg hány nap elteltével lehet megváltoztatni a jelszót."
+
+#: src/userProperties.py:542
+#, python-format
+msgid ""
+"The number of days before changing the password is allowed must be between "
+"%(min)d and %(max)d."
+msgstr "Napok száma, miután a jelszót meg kell változtatni, %(min)d és %(max)d között kell legyen."
+
+#: src/userProperties.py:547
+msgid ""
+"Please specify the number of days before changing the password is required."
+msgstr "Kérem adja meg, hány nap elteltével kell megváltoztatni a jelszót."
+
+#: src/userProperties.py:549
+#, python-format
+msgid ""
+"The number of days before changing the password is required must be between "
+"%(min)d and %(max)d."
+msgstr "Napok száma, miután a jelszót meg kell változtatni, %(min)d és %(max)d között kell legyen."
+
+#: src/userProperties.py:554
+msgid ""
+"Please specify the number of days to warn the user before changing the "
+"password is required."
+msgstr "Adja meg, hány nappal a jelszó lejárta előtt figyelmeztessük a felhasználót, hogy változtasson jelszót."
+
+#: src/userProperties.py:556
+#, python-format
+msgid ""
+"The number of days to warn the user before changing the password is required"
+" must be between %(min)d and %(max)d."
+msgstr "Napok száma, amennyivel a jelszó lejárta előtt figyelmeztetik a felhasználót, %(min)d és %(max)d között kell legyen."
+
+#: src/userProperties.py:562
+msgid ""
+"Please specify the number of days until the user account becomes inactive "
+"after password has expired."
+msgstr "Kérem adja meg, hány nappal a jelszó lejárta után válik érvénytelenné a felhasználó számlája."
+
+#: src/userProperties.py:565
+#, python-format
+msgid ""
+"The number of days until the user account becomes inactive after the "
+"password has expired must be between %(min)d and %(max)d. Setting it to -1 "
+"means the account won't become inactive."
+msgstr "Jelszó lejárta után ennyi nappal legyen letiltva a számla, %(min)d és %(max)d között kell legyen. -1 beállítás jelenti, hogy a számlát nem érvénytelenítik."
+
+#: src/userProperties.py:629
+#, python-format
+msgid ""
+"Unlocking the user failed because:\n"
+"\n"
+"%(errmsg)s"
+msgstr "A felhasználó nem oldható fel:\n\n%(errmsg)s"
+
+#: src/userProperties.py:632
+msgid "Unlocking the user failed due to an unknown reason."
+msgstr "A felhasználó feloldása ismeretlen ok miatt nem sikerült."
+
+#: src/userGroupCheck.py:58
+#, python-format
+msgid "The user name must not exceed %d characters."
+msgstr "A felhasználónév nem lehet hosszabb %d karakternél."
+
+#: src/userGroupCheck.py:59
+#, python-format
+msgid ""
+"The user name '%s' contains whitespace. Please do not include whitespace in "
+"the user name."
+msgstr "„%s” felhasználónév üreshely (whitespace) karaktereket tartalmaz. Kérem ne használjon ilyeneket!"
+
+#: src/userGroupCheck.py:61
+#, python-format
+msgid ""
+"The user name '%s' contains a dollar sign which is not at the end. Please "
+"use dollar signs only at the end of user names to indicate Samba machine "
+"accounts."
+msgstr "„%s” felhasználónév dollár jelet tartalmaz, mely nem a név végén szerepel. Dollár jelet csak a felhasználónév végére tegyen Samba gép fiók jelzésére."
+
+#: src/userGroupCheck.py:64
+#, python-format
+msgid ""
+"The user name '%s' contains a trailing dollar sign. This should only be used"
+" for Samba machine accounts, using this for a normal user account can cause "
+"problems with some software. Is the account in question a Samba machine "
+"account?"
+msgstr "A(z) '%s' felhasználónév tartalmaz egy záró dollár jelet ($-t). Ez csak Samba fiókokhoz használható fel, ellenkező esetben probléma lehet egyes szofverek használatakor. A kérdésben szereplő fiók egy Samba-fiók?"
+
+#: src/userGroupCheck.py:69
+#, python-format
+msgid ""
+"The user name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr "„%(name)s” felhasználónév érvénytelen karaktert tartalmaz a következő pozícióban: %(position)d."
+
+#: src/userGroupCheck.py:71
+msgid ""
+"Using all numbers as the user name can cause confusion about whether the "
+"user name or numerical user id is meant. Do you really want to use a "
+"numerical-only user name?"
+msgstr "Ha csak számokból áll felhasználónév, az zavart okozhat abban, hogy a felhasználóról vagy a felhasználó azonosítójáról van-e szó. Valóban csak számokból álló nevet akar?"
+
+#: src/userGroupCheck.py:79
+#, python-format
+msgid "The group name must not exceed %d characters."
+msgstr "A csoport névnek kevesebb mint %d jelből kell állnia."
+
+#: src/userGroupCheck.py:80
+#, python-format
+msgid ""
+"The group name '%s' contains whitespace. Please do not include whitespace in"
+" the group name."
+msgstr "A(z) „%s” csoport neve üreshely (whitespace) karaktert tartalmaz. A csoport nevében ne használjon ilyet."
+
+#: src/userGroupCheck.py:82
+#, python-format
+msgid ""
+"The group name '%(name)s' contains an invalid character at position "
+"%(position)d."
+msgstr "„%(name)s” csoport neve érvénytelen jeleket tartalmaz a következő pozícióban: %(position)d."
+
+#: src/userGroupCheck.py:84
+msgid ""
+"Using all numbers as the group name can cause confusion about whether the "
+"group name or numerical group id is meant. Do you really want to use a "
+"numerical-only group name?"
+msgstr "Ha csak számok szerepelnek a csoport névben, az zavart okozhat abban, hogy a csoport névről vagy a csoport azonosítóról van-e szó. Valóban csak számokból álló csoport nevet akar használni?"
+
+#: src/userGroupCheck.py:172
+#, python-format
+msgid "The chosen password is too weak: %s. Do you want to use it anyway?"
+msgstr "A választott jelszó túl gyenge: „%s”. Mégis használni szeretné azt?"
+
+#: src/userGroupCheck.py:192
+msgid ""
+"The chosen password contains characters which may be hard or impossible to "
+"type in certain situations. To ensure the password can be typed everywhere "
+"use only unaccented Latin letters (A-Z, a-z), digits (0-9), punctuation "
+"characters (e.g. comma, full stop) and the space character in the password. "
+"Do you want to use this password anyway?"
+msgstr "A választott jelszó olyan karaktereket tartalmaz, amelyeket nehéz vagy lehetetlen bizonyos helyzetekben begépelni. Hogy biztosítsa a könnyebb bevitelt, csak ékezet nélküli latin betűket alkalmazzon (A-Z, a-z), számokat (0-9), megszakító karaktereket (pl. pont, vessző) és szóközöket a jelszavában. Mindezek ellenére használni kívánja a jelszavát?"
+
+#. have to check for whitespace for gecos, since whitespace is ok
+#: src/userGroupCheck.py:240
+#, python-format
+msgid ""
+"The name '%s' contains invalid characters.  Please use only UTF-8 "
+"characters."
+msgstr "A(z) „%s” név érvénytelen karaktereket tartalmaz.  Kérem csak UTF-8 karaktereket használjon!"
+
+#. We have to check for colons as /etc/passwd is a colon delimited
+#. file.
+#: src/userGroupCheck.py:249
+#, python-format
+msgid "The name '%s' contains a colon.  Please do not use colons in the name."
+msgstr "„%s” név kettőspontot tartalmaz.  Kérem ne használjon kettőspontot a névben!"
+
+#: src/userGroupCheck.py:259
+msgid "Please enter a home directory."
+msgstr "Kérem adjon meg saját mappát!"
+
+#. have to check for colons since /etc/passwd is a colon delimited file
+#: src/userGroupCheck.py:266
+#, python-format
+msgid ""
+"The directory name '%s' contains a colon.  Please do not use colons in the "
+"directory name."
+msgstr "„%s” mappa név kettőspontot tartalmaz.  Kérem ne használjon kettőspontot a névben!"
+
+#: src/userGroupCheck.py:277
+#, python-format
+msgid ""
+"The directory name '%s' doesn't begin with a '/'. Please specify an absolute"
+" path for the home directory."
+msgstr "„%s” mappa név nem „/”-rel kezdődik. Kérem abszolút elérési utat adjon meg a saját mappának!"
+
+#: src/userGroupCheck.py:286
+#, python-format
+msgid ""
+"The directory name '%s' has path components which are too long. Please use "
+"shorter path components for the home directory."
+msgstr "„%s” mappa név túl hosszú elérési útvonal-összetevőket tartalmaz. Kérem használjon rövidebb útvonal összetevőket a saját mappához!"
+
+#: src/userGroupCheck.py:296
+#, python-format
+msgid ""
+"The directory name '%s' contains empty path components. Please specify a "
+"home directory name without empty path components."
+msgstr "„%s” mappanévben üres elérési útvonal-összetevő van. Kérem üres útvonal-összetevők nélkül adjon meg saját mappát!"
+
+#: src/userGroupCheck.py:308
+#, python-format
+msgid ""
+"The directory name '%s' contains illegal path components. Please don't use "
+"'.' or '..' as path components for the home directory."
+msgstr "„%s” mappa névben érvénytelen elérési útvonal-összetevő van. Kérem ne használjon „.” vagy „..” jeleket az útvonalban."
+
+#: src/userGroupCheck.py:326
+#, python-format
+msgid ""
+"The directory '%(dir)s' cannot be created ('%(parent_dir)s' is not "
+"writable). Please choose a writable location."
+msgstr "A '%(dir)s' könyvtár nem létrehozható ('%(parent_dir)s' nem írható). Kérem válasszon másik írható helyet."
+
+#: src/groupWindow.py:129
+#, python-format
+msgid "A group with name '%s' already exists."
+msgstr "„%s” nevű csoport már van."
+
+#: src/groupWindow.py:153
+#, python-format
+msgid ""
+"Creating a group with a GID less than %(gid_min)s is not recommended.  Are "
+"you sure you want to do this?"
+msgstr "Nem ajánlott %(gid_min)s-nál kisebb azonosítójú csoportot alakítani. Biztosan ezt szeretné?"
+
+#: src/mainWindow.py:91
+msgid ""
+"The help viewer could not be found. To be able to view help you need to "
+"install the 'yelp' package."
+msgstr "A súgó megjelenítője nincs telepítve. Telepítse a „yelp” csomagot, hogy súgót megtekinthesse."
+
+#: src/mainWindow.py:109
+#, python-format
+msgid "No helper application for the URL '%(url)s can be found."
+msgstr "Nincs segéd alkalmazás %(url)s URL-hez."
+
+#: src/mainWindow.py:138
+#, python-format
+msgid "Error saving settings to %s"
+msgstr "Hiba a beállítások %s fájlba mentésekor"
+
+#: src/mainWindow.py:179
+msgid "User Name"
+msgstr "Felhasználónév"
+
+#: src/mainWindow.py:184
+msgid "User ID"
+msgstr "Felhasználó azonosító"
+
+#: src/mainWindow.py:188
+msgid "Primary Group"
+msgstr "Elsődleges csoport"
+
+#: src/mainWindow.py:193
+msgid "Full Name"
+msgstr "Teljes név"
+
+#: src/mainWindow.py:198
+msgid "Login Shell"
+msgstr "Bejelentkezési parancsértelmező"
+
+#: src/mainWindow.py:203
+msgid "Home Directory"
+msgstr "Saját mappa"
+
+#: src/mainWindow.py:223
+msgid "Group Name"
+msgstr "Csoport név"
+
+#: src/mainWindow.py:228
+msgid "Group ID"
+msgstr "Csoport azonosító"
+
+#: src/mainWindow.py:232
+msgid "Group Members"
+msgstr "Csoport tagjai"
+
+#: src/mainWindow.py:502
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the user '%(user)s'.\n"
+"\n"
+msgstr "Nem található „%(user)s” felhasználói azonosítója (ID).\n\n"
+
+#: src/mainWindow.py:504
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these users:\n"
+"%(users)s\n"
+"\n"
+msgstr "Nem található az alábbi felhasználók azonosítója (ID):\n%(users)s\n\n"
+
+#: src/mainWindow.py:516
+#, python-format
+msgid ""
+"I couldn't find the numerical ID of the group '%(group)s'.\n"
+"\n"
+msgstr "Nem található „%(group)s” csoport azonosító száma.\n\n"
+
+#: src/mainWindow.py:518
+#, python-format
+msgid ""
+"I couldn't find the numerical IDs of these groups:\n"
+"%(groups)s\n"
+"\n"
+msgstr "Nem található a szám azonosítójuk e csoportoknak:\n%(groups)s\n\n"
+
+#: src/mainWindow.py:529
+#, python-format
+msgid ""
+"%(msg_users)s%(msg_groups)s\n"
+"In most cases this is caused by inconsistencies in the user or group database, e.g. between the files /etc/passwd, /etc/group and their respective shadow files /etc/shadow and /etc/gshadow. I will try to ignore these entries and continue for now, but please fix these inconsistencies as soon as possible."
+msgstr "%(msg_users)s%(msg_groups)s\nA legtöbb esetben ezt a felhasználó - vagy csoport adatbázis inkonzisztenciája okozza, pl. a /etc/passwd, /etc/group fájlok, és azok /etc/shadow and /etc/gshadow árnyékfájljai. Most megpróbálom mellőzni e bejegyzéseket és folytatni. Kérem javítsa meg ezeket az inkonzisztenciákat amint lehet."
+
+#: src/mainWindow.py:662 src/system-config-users.glade.h:71
+msgid "system-config-users"
+msgstr "system-config-users"
+
+#: src/mainWindow.py:673
+#, python-format
+msgid "Copyright © %(years)s %(holder)s <%(email)s>"
+msgstr "Szerzői jog © %(years)s %(holder)s <%(email)s>"
+
+#: src/mainWindow.py:676
+#, python-format
+msgid "Copyright © %(years)s %(holder)s"
+msgstr "Szerzői jog © %(years)s %(holder)s"
+
+#: src/mainWindow.py:685
+#, python-format
+msgid "%(author)s <%(email)s>"
+msgstr "%(author)s <%(email)s>"
+
+#: src/mainWindow.py:688
+#, python-format
+msgid "%(author)s"
+msgstr "%(author)s"
+
+#: src/mainWindow.py:740
+msgid "Deleting the root user is not allowed."
+msgstr "Rendszergazda törlése nem engedélyezett."
+
+#: src/mainWindow.py:753
+msgid "- An installed software package contains this directory."
+msgstr "- Ez a mappa egy telepített szoftvercsomag része."
+
+#: src/mainWindow.py:758
+msgid ""
+"- A system user owns this directory and removing it may impair the system's "
+"integrity."
+msgstr "- Ez a mappa egy szolgáltatáshoz tartozik; az eltávolítása veszélyeztetheti a rendszer épségét."
+
+#: src/mainWindow.py:762
+msgid "- This directory doesn't exist or isn't writable."
+msgstr "- Ez a mappa nem létezik vagy nem írható."
+
+#: src/mainWindow.py:765
+#, python-format
+msgid "- The user '%s' doesn't own this directory."
+msgstr "- Ez a mappa nincs „%s” felhasználó tulajdonában."
+
+#: src/mainWindow.py:775
+#, python-format
+msgid ""
+"<b>There are currently processes running that are owned by '%s'!</b>  This "
+"user is probably still logged in.  "
+msgstr "<b>Vannak futó folyamatok, amelyeknek „%s” a tulajdonosa!</b>  Ez a felhasználó valószínűleg még be van jelentkezve.  "
+
+#: src/mainWindow.py:779
+#, python-format
+msgid "Do you really want to remove the user '%s'?"
+msgstr "Biztosan szeretné eltávolítani „%s” felhasználót?"
+
+#: src/mainWindow.py:791
+#, python-format
+msgid "Delete %(user)s's home directory ('%(homedir)s') and temporary files."
+msgstr "„%(user)s” saját mappájának („%(homedir)s”) és ideiglenes fájljainak törlése."
+
+#: src/mainWindow.py:797
+#, python-format
+msgid ""
+"Delete %(user)s's home directory ('%(homedir)s'), mail spool "
+"('%(mailspool)s') and temporary files."
+msgstr "„%(user)s” saját mappájának („%(homedir)s”), leveleinek („%(mailspool)s”) és ideiglenes fájljainak törlése."
+
+#: src/mainWindow.py:809
+#, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for this reason:\n"
+"%(reason)s"
+msgstr "Nem törlöm „%(user)s”  („%(homedir)s”) saját mappáját a következő okból:\n%(reason)s"
+
+#: src/mainWindow.py:811
+#, python-format
+msgid ""
+"I won't delete %(user)s's home directory ('%(homedir)s') for these reasons:\n"
+"%(reason)s"
+msgstr "Nem törlöm „%(user)s”  („%(homedir)s”) saját mappáját a következő okokból:\n%(reason)s"
+
+#: src/mainWindow.py:894
+#, python-format
+msgid "Are you sure you want to delete the group '%s'?"
+msgstr "Biztosan törölni szeretné „%s” csoportot?"
+
+#: src/system-config-users.py:38
+msgid "system-config-users requires a currently running X server."
+msgstr "system-config-users csak X grafikus rendszerben futtatható."
+
+#: src/system-config-users.glade.h:1
+msgid "Add New Group"
+msgstr "Új csoport hozzáadása"
+
+#: src/system-config-users.glade.h:2
+msgid "_Group Name:"
+msgstr "_Csoport név:"
+
+#: src/system-config-users.glade.h:3
+msgid "Specify g_roup ID manually:"
+msgstr "Csopo_rt azonosító:"
+
+#: src/system-config-users.glade.h:4
+msgid "User Properties"
+msgstr "Felhasználó tulajdonságai"
+
+#: src/system-config-users.glade.h:5
+msgid "User _Name:"
+msgstr "_Felhasználó:"
+
+#: src/system-config-users.glade.h:6
+msgid "_Full Name:"
+msgstr "_Teljes név:"
+
+#: src/system-config-users.glade.h:7
+msgid "Pass_word:"
+msgstr "_Jelszó:"
+
+#: src/system-config-users.glade.h:8
+msgid "Confir_m Password:"
+msgstr "Jelszó _megerősítése"
+
+#: src/system-config-users.glade.h:9
+msgid "_Login Shell:"
+msgstr "Parancsérte_lmező:"
+
+#: src/system-config-users.glade.h:10
+msgid "_Home Directory:"
+msgstr "Saját mappa:"
+
+#: src/system-config-users.glade.h:11
+msgid "S_ELinux role:"
+msgstr "S_ELinux szerepkör:"
+
+#: src/system-config-users.glade.h:12
+msgid "_User Data"
+msgstr "Felasználó adatai"
+
+#: src/system-config-users.glade.h:13
+msgid "_Enable account expiration"
+msgstr "Azonosító l_ejáratának engedélyezése"
+
+#: src/system-config-users.glade.h:14
+msgid "Account e_xpires (YYYY-MM-DD):"
+msgstr "Az azonosító lejá_r (ÉÉÉÉ-HH-NN):"
+
+#: src/system-config-users.glade.h:15
+msgid "     "
+msgstr "     "
+
+#: src/system-config-users.glade.h:16
+msgid "-"
+msgstr "-"
+
+#: src/system-config-users.glade.h:17
+msgid "_Local password is locked"
+msgstr "A helyi jelszó záro_lva van"
+
+#: src/system-config-users.glade.h:18
+msgid "_Account Info"
+msgstr "Fiók információk"
+
+#: src/system-config-users.glade.h:19
+msgid "_Enable password expiration"
+msgstr "L_ejáró jelszó"
+
+#: src/system-config-users.glade.h:20
+msgid "Days before change a_llowed:"
+msgstr "Napok száma miután változtatni le_het:"
+
+#: src/system-config-users.glade.h:21
+msgid "Days before change _required:"
+msgstr "Napok száma miután változtatni _kell:"
+
+#: src/system-config-users.glade.h:22
+msgid "Days _warning before change:"
+msgstr "Napok száma a lejáratra _figyelmeztetéshez:"
+
+#: src/system-config-users.glade.h:23
+msgid "Days before account _inactive:"
+msgstr "Napok száma miután a számla _érvénytelenné válik:"
+
+#: src/system-config-users.glade.h:24
+msgid "Force password change on next login"
+msgstr "Kötelező jelszó váltás a következő bejelentkezéskor"
+
+#: src/system-config-users.glade.h:25
+msgid "_Password Info"
+msgstr "_Jelszó információk"
+
+#: src/system-config-users.glade.h:26
+msgid "Select the groups that the user will be a member of:"
+msgstr "Válassza ki a csoportokat, melyeknek tagja legyen a felhasználó:"
+
+#: src/system-config-users.glade.h:27
+msgid "_Groups"
+msgstr "_Csoportok"
+
+#: src/system-config-users.glade.h:28
+msgid "Group Properties"
+msgstr "A csoport tulajdonságai"
+
+#: src/system-config-users.glade.h:29
+msgid "Group _Data"
+msgstr "Csoport a_datai"
+
+#: src/system-config-users.glade.h:30
+msgid "Select the users to join this group:"
+msgstr "Válassza ki a csoportba bekerülő felhasználókat:"
+
+#: src/system-config-users.glade.h:31
+msgid "Group _Users"
+msgstr "Csoport _tagjai"
+
+#: src/system-config-users.glade.h:32
+msgid "User Manager"
+msgstr "Felhasználók és csoportok beállítása"
+
+#: src/system-config-users.glade.h:33
+msgid "_File"
+msgstr "_Fájl"
+
+#: src/system-config-users.glade.h:34
+msgid "Add _User"
+msgstr "Új felhasználó hozzáadása"
+
+#: src/system-config-users.glade.h:35
+msgid "Add _Group"
+msgstr "Új csoport"
+
+#: src/system-config-users.glade.h:36
+msgid "_Edit"
+msgstr "Sz_erkesztés"
+
+#: src/system-config-users.glade.h:37
+msgid "_Help"
+msgstr "Súgó"
+
+#: src/system-config-users.glade.h:38
+msgid "_Contents"
+msgstr "Tartalom"
+
+#: src/system-config-users.glade.h:39
+msgid "Edit properties"
+msgstr "Tulajdonságok szerkesztése"
+
+#: src/system-config-users.glade.h:40
+msgid "Proper_ties"
+msgstr "_Tulajdonságok"
+
+#: src/system-config-users.glade.h:41
+msgid "_Delete"
+msgstr "Tör_lés"
+
+#: src/system-config-users.glade.h:42
+msgid "Reload"
+msgstr "Újratöltés"
+
+#: src/system-config-users.glade.h:43
+msgid "_Refresh"
+msgstr "_Frissítés"
+
+#: src/system-config-users.glade.h:44
+msgid "Help"
+msgstr "Segítség"
+
+#: src/system-config-users.glade.h:45
+msgid "Sea_rch filter:"
+msgstr "Ke_resési szűrő:"
+
+#: src/system-config-users.glade.h:46
+msgid "_Apply filter"
+msgstr "Szűrés"
+
+#: src/system-config-users.glade.h:47
+msgid "U_sers"
+msgstr "_Felhasználók"
+
+#: src/system-config-users.glade.h:48
+msgid "Gr_oups"
+msgstr "Cs_oportok"
+
+#: src/system-config-users.glade.h:49
+msgid "Add New User"
+msgstr "Új felhasználó hozzáadása"
+
+#: src/system-config-users.glade.h:50
+msgid "_User Name:"
+msgstr "Felhasználó neve:"
+
+#: src/system-config-users.glade.h:51
+msgid "_Password:"
+msgstr "Jelszó:"
+
+#: src/system-config-users.glade.h:52
+msgid "Create _home directory"
+msgstr "Saját mappa létrehozása"
+
+#: src/system-config-users.glade.h:53
+msgid "    "
+msgstr "    "
+
+#: src/system-config-users.glade.h:54
+msgid "Home _Directory:"
+msgstr "Sajá_t mappa:"
+
+#: src/system-config-users.glade.h:55
+msgid "Create a private _group for the user"
+msgstr "Saját csoport alakítás"
+
+#: src/system-config-users.glade.h:56
+msgid "Specify u_ser ID manually:"
+msgstr "Felhasználó azonosító kézzel:"
+
+#: src/system-config-users.glade.h:57
+msgid "About system-config-users"
+msgstr "A system-config-users névjegye"
+
+#: src/system-config-users.glade.h:58
+msgid "<b>system-config-users</b>"
+msgstr "<b>system-config-users</b>"
+
+#: src/system-config-users.glade.h:59
+msgid "Version @VERSION@"
+msgstr "Változat: @VERSION@"
+
+#: src/system-config-users.glade.h:60
+msgid "Copyright (c) 2001 - 2005 Red Hat, Inc."
+msgstr "Szerzői jog © 2001 - 2005 Red Hat, Inc."
+
+#: src/system-config-users.glade.h:61
+msgid "This software is distributed under the GNU General Public License."
+msgstr "E programot a GNU General Public License-ben foglaltak szerint terjesztik."
+
+#: src/system-config-users.glade.h:62
+msgid "Preferences"
+msgstr "Beállítások"
+
+#: src/system-config-users.glade.h:63
+msgid "_Hide system users and groups"
+msgstr "Szolgáltatók és csoportjaik rejtése"
+
+#: src/system-config-users.glade.h:64
+msgid "<b>User and Group Lists</b>"
+msgstr "<b>Felhasználó és csoport listák</b>"
+
+#: src/system-config-users.glade.h:65
+msgid ""
+"Ensure that a new user gets a higher UID than all existing users, if not set"
+" manually."
+msgstr "Győződjön meg arról, hogy az új felhasználó nagyobb azonosítót (UID) kap, mint minden meglévő felhasználó, hacsak nem saját kezűleg állítja be."
+
+#: src/system-config-users.glade.h:66
+msgid "Automatically assigned _UID must be highest"
+msgstr "Önműködően kiosztott _UID legyen a legnagyobb"
+
+#: src/system-config-users.glade.h:67
+msgid ""
+"Ensure that a new group gets a higher GID than all existing groups, if not "
+"set manually."
+msgstr "Győződjön meg arról, hogy az új csoport nagyobb GID-et kapjon, mint minden meglévő csoport, hacsak nem saját kezűleg állítja be."
+
+#: src/system-config-users.glade.h:68
+msgid "Automatically assigned _GID must be highest"
+msgstr "Önműködően kiosztott csoport _GID legyen a legnagyobb"
+
+#: src/system-config-users.glade.h:69
+msgid "Prefer that private group GID is the _same as UID"
+msgstr "Saját csoport GID egyezzen meg a felha_sználó UID-vel"
+
+#: src/system-config-users.glade.h:70
+msgid "<b>New Users</b>"
+msgstr "<b>Új felhasználók</b>"
+
+#: src/system-config-users.glade.h:72
+msgid "Copyright © 2001-2007 Red Hat, Inc."
+msgstr "Szerzői jog © 2001-2007 Red Hat, Inc."
+
+#: src/system-config-users.glade.h:73
+msgid "Manages users and groups on your system."
+msgstr "Felhasználókat és csoportokat kezel a rendszerében."
+
+#: src/system-config-users.glade.h:74
+msgid ""
+"system-config-users is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
+"\n"
+"system-config-users is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with system-config-users; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+msgstr "system-config-users szabad szoftver, terjesztheti és/vagy módosíthatja a Free Software Foundation által kiadott GNU General Public License második (vagy bármely későbbi) változatában foglaltak szerint.\n\nsystem-config-users-t úgy terjesztjük, hogy reméljük, hasznos lesz, de BÁRMILYEN GARANCIA NÉLKÜL; adásvételkor szokásos nem kifejezett garanciák nélkül, illetve anélkül, hogy VALAMELY FELADAT ELVÉGZÉSÉRE VALÓ ALKALMASSÁGÁT garantálnánk.További részletekért ld. GNU GPL-t.\n\nA programhoz a GNU General Public License egy példánya is jár, ha nem kapta meg, írjon a Free Software Foundation Inc.-nek. Levélcímük: 51 Franklin Street,Fifth Floor, Boston, MA 02110-130159 USA"
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: src/system-config-users.glade.h:80
+msgid "translator-credits"
+msgstr "Tamas Szanto <tszanto@mol.hu>, 2003.Arpad Biro <biro_arpad@yahoo.com>, 2004, 2005, 2007.Széll Tamás <tomi@digiflex.hu>, 2004.Gábor Szentiványi <szenti@ulx.hu>, 2006.Sulyok Péter <peti@fedoraproject.org>, 2008, 2009., Nikolas Slivka <snicore@gmail.com>, 2010., Bojtos Péter <ptr at ulx.hu>, 2010"
+
+#: config/system-config-users.desktop.in.h:1
+msgid "Users and Groups"
+msgstr "Felhasználók és csoportok"
+
+#: config/system-config-users.desktop.in.h:2
+msgid "Add or remove users and groups"
+msgstr "Felhasználók és csoportok hozzáadása vagy elvétele"
