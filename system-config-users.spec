@@ -36,13 +36,15 @@
 Summary: A graphical interface for administering users and groups
 Name: system-config-users
 Version: 1.3.5
-Release: 2%{?dist}
-URL: http://fedorahosted.org/%{name}
+Release: 4%{?dist}
+URL: https://than.fedorapeople.org/%{name}
 License: GPLv2+
 Group: Applications/System
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch: noarch
-Source: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
+Source: https://than.fedorapeople.org/%{name}/%{name}-%{version}.tar.bz2
+# don't use exec in pkexec wrapper script which caused Refusing to render service to dead parents
+Patch0: system-config-users-1.3.5-bz#1563896.patch
 BuildRequires: desktop-file-utils
 BuildRequires: gettext
 BuildRequires: intltool
@@ -91,6 +93,7 @@ users and groups.  It depends on the libuser library.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 make %{?_smp_mflags}
@@ -121,6 +124,12 @@ rm -rf $RPM_BUILD_ROOT
 %config(noreplace) %{_sysconfdir}/sysconfig/system-config-users
 
 %changelog
+* Tue Jul 31 2018 Than Ngo <than@redhat.com> - 1.3.5-4
+- Related: #1502438
+
+* Fri Apr 13 2018 Than Ngo <than@redhat.com> - 1.3.5-3
+- Resolves: #1563896 - don't use exec in pkexec wrapper script
+
 * Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.3.5-2
 - Mass rebuild 2013-12-27
 
