@@ -36,7 +36,7 @@
 Summary: A graphical interface for administering users and groups
 Name: system-config-users
 Version: 1.3.5
-Release: 1%{?dist}
+Release: 2%{?dist}
 URL: http://fedorahosted.org/%{name}
 License: GPLv2+
 Group: Applications/System
@@ -121,6 +121,9 @@ rm -rf $RPM_BUILD_ROOT
 %config(noreplace) %{_sysconfdir}/sysconfig/system-config-users
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.3.5-2
+- Mass rebuild 2013-12-27
+
 * Tue Aug 13 2013 Nils Philippsen <nils@redhat.com> - 1.3.5-1
 - cope with changes handling empty shadow fields in libuser (patches by
   Miloslav Trmač)
